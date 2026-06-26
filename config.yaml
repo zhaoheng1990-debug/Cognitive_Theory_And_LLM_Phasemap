@@ -1,0 +1,342 @@
+schema_version: hpm_rt1_trust_gateway_config_v1
+deployment:
+  profile: chat_only
+  product_surface: chat_hpm_gateway
+  enabled_modules:
+    chat_hpm: true
+    agent_hpm: false
+    ide_hpm: false
+  package_targets:
+    launcher: true
+    dependency_installer: true
+    module_deployer: true
+runtime:
+  output_dir: outputs/hpm_rt1_trust_gateway
+  default_policy_profile: balanced
+  default_policy_version: v1
+  default_provider: qwen_local_transformers
+  active_hpm_config: hpm_rt1_beta/config/rt1_active_config.json
+  audit_log_name: hpm_rt1_trust_gateway_audit_log.jsonl
+  provider_timeout_seconds: 30
+  provider_retry_count: 0
+  degrade_on_provider_error: true
+reference_verification:
+  mode: offline
+  enable_network: false
+  timeout_seconds: 4
+  crossref_base_url: https://api.crossref.org/works/
+  mailto: ""
+premise_auditor:
+  enabled: true
+  mode: online_api
+  apply_to_gateway_audit: true
+  apply_to_precheck: true
+  ollama:
+    model: qwen2.5:3b-instruct
+    endpoint: http://127.0.0.1:11434/api/generate
+    timeout_seconds: 6
+  transformers:
+    model_path: "D:/model/models--Qwen--Qwen2.5-1.5B-Instruct/main"
+    device_map: auto
+    trust_remote_code: false
+  online_api:
+    provider: deepseek
+    model: deepseek-chat
+    endpoint: https://api.deepseek.com/chat/completions
+    api_key_env: DEEPSEEK_API_KEY
+    timeout_seconds: 30
+response_auditor:
+  enabled: true
+  mode: online_api
+  apply_to_postaudit: true
+  online_api:
+    provider: deepseek
+    model: deepseek-chat
+    endpoint: https://api.deepseek.com/chat/completions
+    api_key_env: DEEPSEEK_API_KEY
+    timeout_seconds: 30
+admin_api:
+  auth_enabled: false
+  token_env: HPM_RT1_ADMIN_TOKEN
+  allow_bearer: true
+  allow_header_token: true
+  profiles:
+    ops_read:
+      token_env: HPM_RT1_OPS_READ_TOKEN
+    ops_write:
+      token_env: HPM_RT1_OPS_WRITE_TOKEN
+    admin_full:
+      token_env: HPM_RT1_ADMIN_TOKEN
+compliance:
+  enabled: true
+  baseline_version: v0.1
+  mode: advisory
+  secure_by_default_template: false
+  redaction:
+    enabled: true
+    mask_email: true
+    mask_phone: true
+    mask_id_like: true
+    mask_api_keys: true
+  retention:
+    enabled: false
+    raw_log_days: 30
+    redacted_log_days: 180
+    delete_policy: advisory_only_pending
+  interfaces:
+    chat_hpm:
+      enabled: true
+      enforcement_mode: advisory_only
+    agent_hpm:
+      enabled: true
+      reserved: true
+      enforcement_mode: advisory_only
+    ide_hpm:
+      enabled: true
+      reserved: true
+      enforcement_mode: advisory_only
+providers:
+  mock:
+    type: mock
+    model_provider: local_or_other
+    model_family: mock
+    model_id: mock-trust-gateway
+    deployment_type: local
+    parameter_scale: none
+  echo:
+    type: echo
+    model_provider: local_or_other
+    model_family: echo
+    model_id: echo-adapter
+    deployment_type: local
+    parameter_scale: none
+  openai_compatible:
+    type: openai_compatible
+    model_provider: openai_compatible
+    model_family: api
+    model_id: gpt-compatible
+    deployment_type: api
+    parameter_scale: api
+    endpoint: https://api.openai.com/v1/chat/completions
+    api_key_env: OPENAI_API_KEY
+    timeout_seconds: 60
+  local_ollama_qwen:
+    type: ollama
+    model_provider: local_ollama
+    model_family: qwen
+    model_id: qwen2.5:3b-instruct
+    deployment_type: local
+    parameter_scale: small
+    model: qwen2.5:3b-instruct
+    endpoint: http://127.0.0.1:11434/api/chat
+    timeout_seconds: 60
+  local_ollama_deepseek:
+    type: ollama
+    model_provider: local_ollama
+    model_family: deepseek
+    model_id: deepseek-r1:7b
+    deployment_type: local
+    parameter_scale: small
+    model: deepseek-r1:7b
+    endpoint: http://127.0.0.1:11434/api/chat
+    timeout_seconds: 60
+  qwen_local_transformers:
+    type: local_transformers
+    model_provider: local_transformers
+    model_family: qwen
+    model_id: Qwen2.5-Instruct
+    deployment_type: local
+    parameter_scale: small
+    model_path: "D:/model/models--Qwen--Qwen2.5-1.5B-Instruct/main"
+    device_map: auto
+    trust_remote_code: false
+    timeout_seconds: 120
+    max_new_tokens: 256
+  deepseek_local_transformers:
+    type: local_transformers
+    model_provider: local_transformers
+    model_family: deepseek
+    model_id: DeepSeek-R1-Distill
+    deployment_type: local
+    parameter_scale: small
+    model_path: ""
+    device_map: auto
+    trust_remote_code: false
+    max_new_tokens: 256
+  openai_gpt_api:
+    type: openai_compatible
+    model_provider: openai
+    model_family: gpt
+    model_id: gpt-4.1-mini
+    deployment_type: api
+    parameter_scale: api
+    endpoint: https://api.openai.com/v1/chat/completions
+    api_key_env: OPENAI_API_KEY
+    timeout_seconds: 60
+  gemini_api:
+    type: openai_compatible
+    model_provider: google
+    model_family: gemini
+    model_id: gemini-2.5-flash
+    deployment_type: api
+    parameter_scale: api
+    endpoint: ""
+    api_key_env: GEMINI_API_KEY
+    timeout_seconds: 60
+  deepseek_api:
+    type: openai_compatible
+    model_provider: deepseek
+    model_family: deepseek
+    model_id: deepseek-chat
+    deployment_type: api
+    parameter_scale: api
+    endpoint: ""
+    api_key_env: DEEPSEEK_API_KEY
+    timeout_seconds: 60
+  kimi_api:
+    type: openai_compatible
+    model_provider: moonshot
+    model_family: kimi
+    model_id: kimi-k2
+    deployment_type: api
+    parameter_scale: api
+    endpoint: ""
+    api_key_env: KIMI_API_KEY
+    timeout_seconds: 60
+  doubao_api:
+    type: openai_compatible
+    model_provider: bytedance
+    model_family: doubao
+    model_id: doubao-seed
+    deployment_type: api
+    parameter_scale: api
+    endpoint: ""
+    api_key_env: DOUBAO_API_KEY
+    timeout_seconds: 60
+  minimax_api:
+    type: openai_compatible
+    model_provider: minimax
+    model_family: minimax
+    model_id: minimax-text
+    deployment_type: api
+    parameter_scale: api
+    endpoint: ""
+    api_key_env: MINIMAX_API_KEY
+    timeout_seconds: 60
+policy_registry:
+  industrial_realtime:
+    v1:
+      description: Industrial real-time deployment baseline.
+      thresholds:
+        block_risk_threshold: 0.62
+        warn_risk_threshold: 0.34
+        pass_trust_threshold: 0.72
+        precheck_block_threshold: 0.62
+        precheck_warn_threshold: 0.28
+        escape_cost: 5.0
+        false_positive_cost: 1.0
+  conservative:
+    v1:
+      description: High-sensitivity conservative profile.
+      thresholds:
+        block_risk_threshold: 0.55
+        warn_risk_threshold: 0.30
+        pass_trust_threshold: 0.75
+        precheck_block_threshold: 0.55
+        precheck_warn_threshold: 0.25
+        escape_cost: 5.0
+        false_positive_cost: 1.0
+  balanced:
+    v1:
+      description: Default balanced production profile.
+      thresholds:
+        block_risk_threshold: 0.65
+        warn_risk_threshold: 0.35
+        pass_trust_threshold: 0.70
+        precheck_block_threshold: 0.65
+        precheck_warn_threshold: 0.30
+        escape_cost: 4.0
+        false_positive_cost: 1.0
+  low_friction:
+    v1:
+      description: Low interruption profile for smoother user flow.
+      thresholds:
+        block_risk_threshold: 0.75
+        warn_risk_threshold: 0.45
+        pass_trust_threshold: 0.65
+        precheck_block_threshold: 0.75
+        precheck_warn_threshold: 0.40
+        escape_cost: 3.0
+        false_positive_cost: 1.0
+  developer:
+    v1:
+      description: Developer profile with lower interruption cost.
+      thresholds:
+        block_risk_threshold: 0.80
+        warn_risk_threshold: 0.50
+        pass_trust_threshold: 0.60
+        precheck_block_threshold: 0.80
+        precheck_warn_threshold: 0.45
+        escape_cost: 2.5
+        false_positive_cost: 0.8
+  research:
+    v1:
+      description: Research-oriented profile with stricter warning tendency.
+      thresholds:
+        block_risk_threshold: 0.50
+        warn_risk_threshold: 0.20
+        pass_trust_threshold: 0.80
+        precheck_block_threshold: 0.50
+        precheck_warn_threshold: 0.20
+        escape_cost: 5.0
+        false_positive_cost: 0.5
+# Legacy compatibility mirror. Runtime will prefer policy_registry when present.
+policy_profiles:
+  industrial_realtime:
+    block_risk_threshold: 0.62
+    warn_risk_threshold: 0.34
+    pass_trust_threshold: 0.72
+    precheck_block_threshold: 0.62
+    precheck_warn_threshold: 0.28
+    escape_cost: 5.0
+    false_positive_cost: 1.0
+  conservative:
+    block_risk_threshold: 0.55
+    warn_risk_threshold: 0.30
+    pass_trust_threshold: 0.75
+    precheck_block_threshold: 0.55
+    precheck_warn_threshold: 0.25
+    escape_cost: 5.0
+    false_positive_cost: 1.0
+  balanced:
+    block_risk_threshold: 0.65
+    warn_risk_threshold: 0.35
+    pass_trust_threshold: 0.70
+    precheck_block_threshold: 0.65
+    precheck_warn_threshold: 0.30
+    escape_cost: 4.0
+    false_positive_cost: 1.0
+  low_friction:
+    block_risk_threshold: 0.75
+    warn_risk_threshold: 0.45
+    pass_trust_threshold: 0.65
+    precheck_block_threshold: 0.75
+    precheck_warn_threshold: 0.40
+    escape_cost: 3.0
+    false_positive_cost: 1.0
+  developer:
+    block_risk_threshold: 0.80
+    warn_risk_threshold: 0.50
+    pass_trust_threshold: 0.60
+    precheck_block_threshold: 0.80
+    precheck_warn_threshold: 0.45
+    escape_cost: 2.5
+    false_positive_cost: 0.8
+  research:
+    block_risk_threshold: 0.50
+    warn_risk_threshold: 0.20
+    pass_trust_threshold: 0.80
+    precheck_block_threshold: 0.50
+    precheck_warn_threshold: 0.20
+    escape_cost: 5.0
+    false_positive_cost: 0.5
