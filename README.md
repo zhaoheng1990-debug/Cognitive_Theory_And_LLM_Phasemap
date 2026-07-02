@@ -2,40 +2,125 @@
 
 ## English
 
-AgentOS CoreSlim is a lightweight, governance-first runtime base for cross-project AgentOS work. This branch preserves a clean base-maintenance line separated from research self-evolution outputs.
+AgentOS CoreSlim is a lightweight, governance-first runtime base for building cross-project AgentOS systems. It is designed to provide reusable kernel policies, local execution boundaries, candidate-only evolution flows, and validation artifacts that downstream AgentOS projects can start from without inheriting unstable research-line mutations.
 
-This repository currently packages the CoreSlim kernel primitives, tests, configuration templates, seed packs, project baselines, and local validation artifacts needed to bootstrap downstream AgentOS projects.
+This branch is the clean **base-maintenance** line. It is intentionally separated from research-AgentOS self-evolution outputs. Research outputs may be used as evidence, but they are not promoted into the base unless a future PM-approved sync seed explicitly imports a stable patch.
+
+### What AgentOS Is
+
+AgentOS is an operating layer for governed cognitive workflows. It is not a single chatbot, document parser, workflow script, or model wrapper. Its purpose is to coordinate roles, evidence, policies, candidate changes, and human review gates so that an AgentOS project can evolve safely across domains.
+
+In the CoreSlim base, the emphasis is on:
+
+- bounded local execution rather than uncontrolled automation;
+- kernel-owned authorization rather than tool-owned decisions;
+- candidate-only evolution rather than direct mutation of accepted registries;
+- replayable evidence rather than unverifiable memory claims;
+- rollback and audit trails rather than silent state changes;
+- cross-project portability rather than one-off project scripts.
 
 ### Current Status
 
-- Status: base-maintenance candidate for review
+- Status: base-maintenance candidate for PM / human review
 - Branch: `AgentOS`
-- Scope: CoreSlim infrastructure, bounded kernel policies, candidate-only evolution flows, tests, and handoff materials
-- Not included: production deployment, global registry activation, official theory-baseline mutation, or AGI achievement claims
+- Validation: local tests pass
+- Intended use: bootstrap downstream AgentOS projects and maintain the CoreSlim base
+- Not claimed: production release, global registry activation, official theory-baseline mutation, AGI achievement, or autonomous production deployment
 
 ### Core Capabilities
 
-- Bounded Codex tool bridge for local execution under kernel authorization
-- Project-scoped autonomous ICM evolution policy with rollback/replay metadata
-- Baseline evolution proposal protocol for human-authorized promotion review
-- DomainObjectModeler role for candidate-only domain object model evolution
-- Synthetic boundary tests for permission, schema, registry, promotion, and evidence constraints
+#### 1. Kernel-Bounded Tool Execution
+
+`CodexToolBridge` provides a bounded local execution bridge. It can read artifacts, run local scripts/tests, package files, generate hash inventories, replay receipts, and roll back local writes when explicitly authorized by a kernel dispatch envelope.
+
+Boundary:
+
+- The bridge is a Harness Plane executor, not a final decision owner.
+- It cannot authorize itself.
+- It blocks forbidden capabilities such as external API mutation, production deploy, global memory write, global ICM write, git push, legal signature, investment commitment, and unbounded web action.
+
+#### 2. Project-Scoped ICM Evolution
+
+`AutonomousICMEvolutionPolicy` allows mature, evidence-backed candidates to become project-scoped durable artifacts, such as memory units, operator memory, policy priors, applicability gates, or quarantine records.
+
+Boundary:
+
+- Writes are project-scoped only.
+- Global memory, production ICM, official theory baseline, and accepted evidence are not mutated.
+- Rollback and replay metadata are required.
+- Weak evidence stays candidate-only.
+- Negative-transfer candidates route to quarantine rather than promotion.
+
+#### 3. Baseline Evolution Proposal Protocol
+
+`BaselineEvolutionProposalProtocol` converts mature project-scoped learning into human-reviewable baseline update proposals.
+
+Boundary:
+
+- It proposes S3/S4 or theory-baseline updates.
+- It does not apply them.
+- Signed human authorization remains required before any official/global baseline write.
+- Candidates with insufficient evidence, unresolved conflicts, or high negative-transfer risk are deferred or routed to review.
+
+#### 4. Domain Object Modeling
+
+`DomainObjectModeler` is a cross-domain role for candidate-only domain object model evolution. It observes synthetic or project-scoped operational signals and proposes missing objects, relation candidates, state candidates, lifecycle delta candidates, permission delta candidates, conflict records, and retention decisions.
+
+Boundary:
+
+- All generated outputs remain `PENDING`.
+- Accepted object registries are not mutated.
+- Harness workers cannot promote object candidates.
+- Every candidate requires evidence lineage.
+- Permission-relevant candidates require permission impact notes.
+- Patch candidates require schema impact review.
+- Private or confidential source material cannot enter shared/global models without an explicit review marker.
+
+#### 5. Seed Pack and Return Pack Discipline
+
+The repository preserves PM seed packs, incoming patch seeds, return manifests, hash inventories, rollback pointers, and validation reports.
+
+Boundary:
+
+- Seed packs are treated as instructions or evidence, not automatic authority.
+- Return packs document what was changed and how it was verified.
+- Cross-project pointer updates remain candidates until approved.
+
+### What AgentOS CoreSlim Can Do
+
+- Bootstrap a clean AgentOS base for downstream domain projects.
+- Run local tests and scripts under explicit bounded authorization.
+- Generate candidate-only governance artifacts.
+- Preserve rollback and replay evidence.
+- Validate kernel boundaries with synthetic tests.
+- Package return materials with manifests and hash inventories.
+- Separate base-maintenance work from research self-evolution work.
+
+### What AgentOS CoreSlim Must Not Do
+
+- Mutate official theory baselines without explicit authorization.
+- Activate production or global registries automatically.
+- Promote candidates into accepted state without human or PM gate.
+- Use private material to update shared/global models without permission review.
+- Treat Harness output as a final governance decision.
+- Claim AGI achievement or production readiness from test passage alone.
+- Import research-AgentOS outputs into the base without a signed sync seed.
 
 ### Repository Layout
 
 ```text
-agentos_core_slim_v0/   CoreSlim kernel code and tests
+agentos_core_slim_v0/   CoreSlim kernel modules and tests
 configs/                Local configuration templates
 project_baselines/      Project baseline pointers and notes
 scripts/                Historical and validation runner scripts
 seedpacks/              PM seed packs and patch handoff materials
-outputs/                Return packs, validation reports, and release-size checks
-_incoming/              Received seed packs awaiting or documenting integration
+outputs/                Return packs, validation reports, hash inventories
+_incoming/              Received seed packs and integration evidence
 ```
 
 ### Validation
 
-The current local validation passed:
+Current local validation:
 
 ```text
 pytest -q agentos_core_slim_v0/tests
@@ -47,50 +132,137 @@ passed
 
 ### Release Boundary
 
-This branch is suitable as an internal base-maintenance candidate. Before a formal public release, add or review:
+This branch is suitable as an internal base-maintenance candidate. Before a formal public release, review:
 
-- license policy
-- CI workflow
-- package metadata
-- release tags
-- signed pointer approval
+- license and distribution policy;
+- CI workflow;
+- package metadata;
+- release tag;
+- signed pointer approval;
+- public/private data boundary;
+- whether `outputs/` should remain in the repository or move to release artifacts.
 
 ## 中文
 
-AgentOS CoreSlim 是一个轻量级、以治理边界优先的跨项目 AgentOS 运行时基座。本分支保存的是干净的 base-maintenance 线，与 research-AgentOS self-evolution 输出明确隔离。
+AgentOS CoreSlim 是一个轻量级、以治理边界优先的跨项目 AgentOS 运行时基座。它的目标不是做一个单一聊天机器人、文档解析器、工作流脚本或模型封装，而是为不同领域的 AgentOS 项目提供可复用的内核策略、本地执行边界、候选态演化流程和可审计验证材料。
 
-当前仓库打包了 CoreSlim 内核原语、测试、配置模板、seed pack、项目基线和本地验证材料，可用于下游 AgentOS 项目的启动与基座复用。
+本分支是干净的 **base-maintenance** 线，刻意与 research-AgentOS self-evolution 输出隔离。研究线输出可以作为证据保存，但不会自动进入基座；只有未来存在 PM 明确批准的同步 seed 时，稳定 patch 才能被导入基座线。
+
+### AgentOS 是什么
+
+AgentOS 是一个面向“有治理的认知工作流”的操作层。它负责协调角色、证据、策略、候选变更、人类审查门和回滚审计，使一个 AgentOS 项目能够在不同领域中安全演化。
+
+在 CoreSlim 基座中，重点是：
+
+- 有边界的本地执行，而不是无约束自动化；
+- 由 Kernel 授权，而不是由工具自行决定；
+- candidate-only 的演化，而不是直接写入 accepted registry；
+- 可 replay 的证据，而不是不可验证的记忆声明；
+- rollback 和 audit trail，而不是静默状态变化；
+- 跨项目可移植性，而不是一次性项目脚本。
 
 ### 当前状态
 
-- 状态：基座维护候选版本，等待 PM / human review
+- 状态：base-maintenance 候选版本，等待 PM / human review
 - 分支：`AgentOS`
-- 范围：CoreSlim 基础设施、有界内核策略、candidate-only 演化流、测试与交接材料
-- 不包含：生产部署、全局 registry 激活、官方理论基线写入、AGI 达成声明
+- 验证：本地测试已通过
+- 用途：启动下游 AgentOS 项目，并维护 CoreSlim 基座
+- 不声明：生产发布、全局 registry 激活、官方理论基线写入、AGI 达成、自治生产部署
 
 ### 核心能力
 
-- 在 AgentOSKernel 授权下运行的本地有界 Codex tool bridge
-- 带 rollback / replay 元数据的项目内 ICM 演化策略
-- 面向人工授权提升的 baseline evolution proposal protocol
-- `DomainObjectModeler` 角色，用于 candidate-only 的领域对象模型演化
-- 覆盖权限、schema、registry、promotion、evidence 边界的合成测试
+#### 1. Kernel 有界工具执行
+
+`CodexToolBridge` 提供有边界的本地执行桥。它可以在 Kernel dispatch envelope 明确授权下读取 artifact、运行本地脚本/测试、打包文件、生成 hash inventory、replay receipt，以及回滚本地写入。
+
+边界：
+
+- Tool bridge 是 Harness Plane executor，不是最终决策者。
+- 它不能给自己授权。
+- 它会阻断外部 API mutation、production deploy、global memory write、global ICM write、git push、legal signature、investment commitment、unbounded web action 等高风险能力。
+
+#### 2. 项目内 ICM 演化
+
+`AutonomousICMEvolutionPolicy` 允许成熟、证据充分的候选项进入项目内 durable artifact，例如 memory unit、operator memory、policy prior、applicability gate 或 quarantine record。
+
+边界：
+
+- 只能写项目内作用域。
+- 不写 global memory、production ICM、official theory baseline 或 accepted evidence。
+- 必须带 rollback 和 replay 元数据。
+- 弱证据保持候选态。
+- negative-transfer candidate 进入 quarantine，而不是提升。
+
+#### 3. 基线演化提案协议
+
+`BaselineEvolutionProposalProtocol` 把成熟的项目内学习转化为可供人类审查的 baseline update proposal。
+
+边界：
+
+- 它只提出 S3/S4 或 theory-baseline 更新候选。
+- 它不直接应用这些更新。
+- 任何 official/global baseline write 仍然需要签署式 human authorization。
+- 证据不足、冲突未解决或 negative-transfer 风险高的候选会被延迟或路由到审查。
+
+#### 4. 领域对象建模
+
+`DomainObjectModeler` 是一个跨领域角色，用于 candidate-only 的领域对象模型演化。它从合成或项目内操作信号中发现缺失对象、关系候选、状态候选、生命周期变化候选、权限变化候选、冲突记录和保留决策。
+
+边界：
+
+- 所有输出保持 `PENDING`。
+- 不写 accepted object registry。
+- Harness worker 不能提升 object candidate。
+- 每个 candidate 都必须有 evidence lineage。
+- 权限相关候选必须有 permission impact notes。
+- Patch candidate 必须经过 schema impact review。
+- private/confidential 材料不能在没有显式审查 marker 的情况下进入 shared/global model。
+
+#### 5. Seed Pack 与 Return Pack 纪律
+
+仓库保存 PM seed pack、incoming patch seed、return manifest、hash inventory、rollback pointer 和 validation report。
+
+边界：
+
+- Seed pack 是指令或证据，不是自动授权。
+- Return pack 记录改了什么、如何验证。
+- Cross-project pointer update 在批准前只能是 candidate。
+
+### AgentOS CoreSlim 能做什么
+
+- 为下游领域项目启动一个干净的 AgentOS 基座。
+- 在显式授权下运行本地测试和脚本。
+- 生成 candidate-only 的治理 artifact。
+- 保存 rollback 和 replay 证据。
+- 用合成测试验证内核边界。
+- 用 manifest 和 hash inventory 打包回传材料。
+- 将 base-maintenance 工作与 research self-evolution 工作分离。
+
+### AgentOS CoreSlim 不能做什么
+
+- 未经明确授权写入官方理论基线。
+- 自动激活生产或全局 registry。
+- 绕过 human / PM gate 把候选提升为 accepted。
+- 未经权限审查，用 private material 更新 shared/global model。
+- 把 Harness 输出当作最终治理决策。
+- 因测试通过就宣称 AGI 达成或生产就绪。
+- 未经签署式 sync seed，把 research-AgentOS 输出导入基座。
 
 ### 仓库结构
 
 ```text
-agentos_core_slim_v0/   CoreSlim 内核代码与测试
+agentos_core_slim_v0/   CoreSlim 内核模块与测试
 configs/                本地配置模板
 project_baselines/      项目基线指针与说明
 scripts/                历史 runner 与验证脚本
 seedpacks/              PM seed pack 与 patch 交接材料
-outputs/                return pack、验证报告和体量检查
-_incoming/              已接收的 seed pack 与集成记录
+outputs/                return pack、验证报告、hash inventory
+_incoming/              已接收的 seed pack 与集成证据
 ```
 
 ### 验证结果
 
-当前本地验证已通过：
+当前本地验证：
 
 ```text
 pytest -q agentos_core_slim_v0/tests
@@ -102,10 +274,12 @@ passed
 
 ### 发布边界
 
-本分支适合作为内部基座维护候选版本。正式公开 release 前，建议补齐或复核：
+本分支适合作为内部基座维护候选版本。正式公开 release 前，建议复核：
 
-- license 策略
-- CI workflow
-- Python package 元数据
-- release tag
-- 经签署/确认的 pointer approval
+- license 与分发策略；
+- CI workflow；
+- package 元数据；
+- release tag；
+- 经签署/确认的 pointer approval；
+- public/private 数据边界；
+- `outputs/` 是否应保留在仓库中，或改为 release artifact。
