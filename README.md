@@ -2,153 +2,167 @@
 
 ## English
 
-AgentOS CoreSlim is a lightweight, governance-first runtime base for building cross-project AgentOS systems. It is designed to provide reusable kernel policies, local execution boundaries, candidate-only evolution flows, and validation artifacts that downstream AgentOS projects can start from without inheriting unstable research-line mutations.
+AgentOS is a project operating layer for AI-assisted work that needs memory, evidence, review, rollback, and repeatable execution. It is not trying to replace Codex, Claude Code, WorkBuddy, or any other runner. It gives those runners a governed place to work.
 
-This branch is the clean **base-maintenance** line. It is intentionally separated from research-AgentOS self-evolution outputs. Research outputs may be used as evidence, but they are not promoted into the base unless a future PM-approved sync seed explicitly imports a stable patch.
+The CoreSlim base is the small, clean starting point for that operating layer. It is meant for people who want to build domain AgentOS projects without carrying over unstable research experiments, private context leaks, or one-off automation habits.
 
-### What AgentOS Is
+### The Short Version
 
-AgentOS is an operating layer for governed cognitive workflows. It is not a single chatbot, document parser, workflow script, or model wrapper. Its purpose is to coordinate roles, evidence, policies, candidate changes, and human review gates so that an AgentOS project can evolve safely across domains.
+AgentOS helps a project answer a few practical questions every time an AI runner does work:
 
-In the CoreSlim base, the emphasis is on:
+- What is the runner allowed to do?
+- What evidence did it use?
+- What changed, and can we replay or roll it back?
+- Is this only a candidate, or has a human/PM approved it?
+- Which Harness checked the result?
+- Can this lesson be reused in another project without importing the wrong context?
 
-- bounded local execution rather than uncontrolled automation;
-- kernel-owned authorization rather than tool-owned decisions;
-- candidate-only evolution rather than direct mutation of accepted registries;
-- replayable evidence rather than unverifiable memory claims;
-- rollback and audit trails rather than silent state changes;
-- cross-project portability rather than one-off project scripts.
+If ordinary agent tooling is the hand that edits, runs, searches, or packages, AgentOS is the layer that keeps the work legible and governable.
 
-### Current Status
+### Why This Exists
 
-- Status: base-maintenance candidate for PM / human review
-- Branch: `AgentOS`
-- Validation: local tests pass
-- Intended use: bootstrap downstream AgentOS projects and maintain the CoreSlim base
-- Not claimed: production release, global registry activation, official theory-baseline mutation, AGI achievement, or autonomous production deployment
+AI coding and workflow tools are already useful, but long-running projects quickly develop a different problem: the work becomes hard to trust.
 
-### Recommended Usage
+Files change. Prompts drift. Local scripts produce outputs. A runner says something has been verified, but the evidence is not packaged. A project learns something useful, but nobody knows whether it belongs only to this project or should become a reusable rule. A research branch produces ideas, but the base system should not quietly absorb them.
 
-AgentOS CoreSlim is best used as a governed base plus one or more replaceable runners. A runner is the interactive coding or operating surface that helps a human or project maintainer execute AgentOS tasks. Recommended runner options include:
+AgentOS CoreSlim exists to make this kind of work calmer. It keeps useful AI execution, but adds a simple discipline around it:
 
-- **Codex**: useful for repository work, local code edits, tests, packaging, return packs, and GitHub handoff.
-- **Claude Code**: useful as an alternate coding runner for local repo navigation, patch work, and review-style workflows.
-- **WorkBuddy**: useful as an operational workspace runner when a project needs task orchestration, handoff tracking, or day-to-day execution support.
+- keep candidates separate from accepted state;
+- keep evidence next to the decision;
+- keep runners replaceable;
+- keep Harnesses as execution layers, not authorities;
+- keep rollback pointers and return packs;
+- keep research evolution separate from the clean base.
 
-The runner is not the AgentOS authority. In the CoreSlim model, runners should be treated as operator interfaces. They may read instructions, edit files, run tests, prepare patches, and call bounded tools, but they should not directly promote candidates, mutate accepted registries, or bypass Kernel / PM / human review gates.
+### The Role AgentOS Plays
 
-A typical setup is:
+AgentOS is best understood as an operating layer around cognitive work. It does not have to be the model, the editor, the browser, the test runner, or the deployment tool. Instead, it coordinates them.
 
-```text
-Human / PM
-  -> Runner: Codex, Claude Code, WorkBuddy, or another local operator surface
-  -> AgentOS Kernel policy layer
-  -> Harness execution layer(s)
-  -> Receipts, hash inventories, rollback pointers, return packs
-```
+In a typical project:
+
+- a human or PM gives the goal;
+- a runner such as Codex, Claude Code, or WorkBuddy performs the local work;
+- AgentOS supplies the policy, role boundaries, candidate rules, and review gates;
+- one or more Harnesses execute checks or domain-specific operations;
+- the result is returned with receipts, hashes, manifests, validation notes, and rollback information.
+
+This makes AgentOS useful when a project needs more than a clever assistant. It is for work where the path matters, not only the final answer.
+
+### What Problems It Helps Solve
+
+**Scattered AI work.** AgentOS turns isolated runner sessions into traceable project cycles with seed inputs, outputs, validation, and return packs.
+
+**Tool overreach.** Runners and Harnesses can do useful work, but they do not get to promote candidates or rewrite accepted registries by themselves.
+
+**Lost context.** Project learning can be stored as project-scoped candidate memory or policy prior, with enough evidence to review later.
+
+**Unsafe reuse.** A lesson from one domain does not automatically become a global rule. AgentOS keeps cross-project transfer explicit.
+
+**Research/base confusion.** Experimental self-evolution outputs can be preserved as evidence without silently entering the clean base.
+
+**Hard rollback.** Changes are easier to inspect and unwind when manifests, hash inventories, receipts, and rollback pointers are produced as part of the workflow.
+
+### How To Use It Without Making Life Miserable
+
+Start small. You do not need a large agent platform before AgentOS becomes useful.
+
+1. Pick a runner you are comfortable using.
+2. Give it a seed, pointer, issue, or task prompt.
+3. Let it work inside the AgentOS rules: candidate-first, evidence-backed, reviewable.
+4. Attach only the Harnesses needed for this task.
+5. Run the checks.
+6. Ask for a return pack: what changed, what was verified, what remains pending, and how to roll back.
+7. Promote only what a human/PM has approved.
+
+The pleasant path is: use your favorite runner for flow, use AgentOS for memory and governance, use Harnesses for execution evidence.
+
+### Recommended Runners
+
+AgentOS CoreSlim works well with replaceable runners. The runner is the interactive surface; AgentOS is the governance layer.
+
+- **Codex** is a good default for repository maintenance, local code edits, tests, packaging, return packs, and GitHub handoff.
+- **Claude Code** is useful as an alternate local coding runner for navigation, patching, and review-style workflows.
+- **WorkBuddy** is useful when the project needs workspace coordination, task tracking, handoff continuity, or day-to-day operating support.
+- Other runners can be used if they can follow the same rules: read the seed, work locally, respect candidate boundaries, run checks, and return evidence.
+
+The runner should not be treated as the final authority. It may edit, test, package, inspect, and propose. It should not directly promote candidates, mutate accepted registries, bypass review gates, or turn private project material into shared/global state.
 
 ### Harness Execution Layers
 
-AgentOS can connect to multiple Harness layers. A Harness is an execution adapter, not a governance owner. Different projects may attach different Harnesses depending on the task:
+A Harness is an execution adapter. It gives AgentOS a way to run or verify something in the outside world, but it does not own the governance decision.
 
-- local shell / Python test Harness;
-- document parsing or extraction Harness;
-- data validation Harness;
-- browser or UI automation Harness;
-- simulation or benchmark Harness;
-- packaging and release Harness;
-- domain-specific Harness, such as VC, education, manufacturing, research, legal, or healthcare adapters.
+Useful Harness layers may include:
 
-Harness outputs should be treated as evidence or execution receipts. They may support a candidate decision, but they do not become accepted truth by themselves. Kernel policy, evidence lineage, permission review, schema review, retention review, and human/PM authorization determine whether anything can be promoted.
+- local shell, Python, pytest, or build Harnesses;
+- document parsing and extraction Harnesses;
+- data validation Harnesses;
+- browser, UI, or app automation Harnesses;
+- simulation, benchmark, or evaluation Harnesses;
+- packaging and release Harnesses;
+- domain Harnesses for VC, education, manufacturing, research, legal, healthcare, or other project worlds.
 
-### Quick Start Pattern
+Harness output is evidence. It can support a decision, but it does not become accepted truth on its own. AgentOS keeps the distinction between "this check ran" and "this change is approved."
 
-1. Start from the `AgentOS` branch or a verified CoreSlim return pack.
-2. Choose a runner, usually Codex for repository maintenance or Claude Code / WorkBuddy for alternate local workflows.
-3. Read the current seed pack, pointer, or task prompt before editing.
-4. Keep all new behavior candidate-only unless explicit authorization says otherwise.
-5. Run the local tests and any task-specific Harness checks.
-6. Emit a return pack with manifest, hash inventory, validation report, and rollback pointer.
-7. Treat pointer updates and accepted-registry updates as review candidates until approved.
+### A Normal Work Cycle
 
-### Core Capabilities
+```text
+Human / PM
+  -> Runner: Codex, Claude Code, WorkBuddy, or another local operator
+  -> AgentOS CoreSlim policy and role boundaries
+  -> Harness execution layer(s)
+  -> Evidence, receipts, validation, hashes, rollback pointer
+  -> Human / PM review
+  -> Candidate stays pending, gets revised, or is approved
+```
 
-#### 1. Kernel-Bounded Tool Execution
+### What Is Inside CoreSlim
 
-`CodexToolBridge` provides a bounded local execution bridge. It can read artifacts, run local scripts/tests, package files, generate hash inventories, replay receipts, and roll back local writes when explicitly authorized by a kernel dispatch envelope.
+CoreSlim currently provides a compact set of base mechanisms:
 
-Boundary:
+- bounded local tool execution through `CodexToolBridge`;
+- project-scoped ICM evolution policy for evidence-backed candidates;
+- baseline evolution proposal protocol for human-reviewable updates;
+- `DomainObjectModeler` for candidate-only domain object modeling;
+- seed pack and return pack discipline;
+- tests that check the main governance boundaries.
 
-- The bridge is a Harness Plane executor, not a final decision owner.
-- It cannot authorize itself.
-- It blocks forbidden capabilities such as external API mutation, production deploy, global memory write, global ICM write, git push, legal signature, investment commitment, and unbounded web action.
-
-#### 2. Project-Scoped ICM Evolution
-
-`AutonomousICMEvolutionPolicy` allows mature, evidence-backed candidates to become project-scoped durable artifacts, such as memory units, operator memory, policy priors, applicability gates, or quarantine records.
-
-Boundary:
-
-- Writes are project-scoped only.
-- Global memory, production ICM, official theory baseline, and accepted evidence are not mutated.
-- Rollback and replay metadata are required.
-- Weak evidence stays candidate-only.
-- Negative-transfer candidates route to quarantine rather than promotion.
-
-#### 3. Baseline Evolution Proposal Protocol
-
-`BaselineEvolutionProposalProtocol` converts mature project-scoped learning into human-reviewable baseline update proposals.
-
-Boundary:
-
-- It proposes S3/S4 or theory-baseline updates.
-- It does not apply them.
-- Signed human authorization remains required before any official/global baseline write.
-- Candidates with insufficient evidence, unresolved conflicts, or high negative-transfer risk are deferred or routed to review.
-
-#### 4. Domain Object Modeling
-
-`DomainObjectModeler` is a cross-domain role for candidate-only domain object model evolution. It observes synthetic or project-scoped operational signals and proposes missing objects, relation candidates, state candidates, lifecycle delta candidates, permission delta candidates, conflict records, and retention decisions.
-
-Boundary:
-
-- All generated outputs remain `PENDING`.
-- Accepted object registries are not mutated.
-- Harness workers cannot promote object candidates.
-- Every candidate requires evidence lineage.
-- Permission-relevant candidates require permission impact notes.
-- Patch candidates require schema impact review.
-- Private or confidential source material cannot enter shared/global models without an explicit review marker.
-
-#### 5. Seed Pack and Return Pack Discipline
-
-The repository preserves PM seed packs, incoming patch seeds, return manifests, hash inventories, rollback pointers, and validation reports.
-
-Boundary:
-
-- Seed packs are treated as instructions or evidence, not automatic authority.
-- Return packs document what was changed and how it was verified.
-- Cross-project pointer updates remain candidates until approved.
+These are intentionally small. CoreSlim is a base, not a finished product suite.
 
 ### What AgentOS CoreSlim Can Do
 
-- Bootstrap a clean AgentOS base for downstream domain projects.
-- Run local tests and scripts under explicit bounded authorization.
-- Generate candidate-only governance artifacts.
-- Preserve rollback and replay evidence.
-- Validate kernel boundaries with synthetic tests.
-- Package return materials with manifests and hash inventories.
-- Separate base-maintenance work from research self-evolution work.
+- Bootstrap a clean AgentOS base for downstream projects.
+- Help a runner operate under explicit boundaries.
+- Keep new behavior candidate-only until reviewed.
+- Preserve evidence, validation notes, hash inventories, and rollback pointers.
+- Support project-scoped learning without mutating global truth.
+- Package handoff materials so another window, runner, or maintainer can continue.
+- Separate base maintenance from research self-evolution.
 
-### What AgentOS CoreSlim Must Not Do
+### What It Should Not Be Used For
 
-- Mutate official theory baselines without explicit authorization.
-- Activate production or global registries automatically.
-- Promote candidates into accepted state without human or PM gate.
-- Use private material to update shared/global models without permission review.
-- Treat Harness output as a final governance decision.
-- Claim AGI achievement or production readiness from test passage alone.
-- Import research-AgentOS outputs into the base without a signed sync seed.
+- Autonomous production deployment.
+- Legal, financial, medical, or operational commitments without human authority.
+- Silent mutation of accepted registries or official baselines.
+- Turning Harness output into final truth without review.
+- Importing private material into shared/global models without permission review.
+- Claiming AGI or production readiness because local tests pass.
+
+### Current Status
+
+- Branch: `AgentOS`
+- Status: base-maintenance candidate for PM/human review
+- Intended use: bootstrap and maintain AgentOS CoreSlim based projects
+- Validation:
+
+```text
+pytest -q agentos_core_slim_v0/tests
+28 passed
+
+python -m compileall -q agentos_core_slim_v0
+passed
+```
+
+Before a formal public release, review license/distribution policy, CI workflow, package metadata, release tags, signed pointer approval, and public/private data boundaries.
 
 ### Repository Layout
 
@@ -162,9 +176,159 @@ outputs/                Return packs, validation reports, hash inventories
 _incoming/              Received seed packs and integration evidence
 ```
 
-### Validation
+## 中文
 
-Current local validation:
+AgentOS 是一个给 AI 协作项目使用的操作层。它关心的不是“换一个聊天机器人”，而是让一个长期项目在使用 Codex、Claude Code、WorkBuddy 或其他 runner 时，仍然能保留记忆、证据、审查、回滚和可复现的执行过程。
+
+CoreSlim 是这个操作层的干净基座。它适合用来启动下游 AgentOS 项目，也适合维护跨项目共用的基础规则。它刻意不把不稳定的 research self-evolution 输出、私人上下文和一次性自动化习惯直接带进基座。
+
+### 一句话说明
+
+每当一个 AI runner 替项目做事时，AgentOS 帮项目回答这些问题：
+
+- 这个 runner 被允许做什么？
+- 它用了什么证据？
+- 它改了什么，能不能 replay 或 rollback？
+- 这是候选结果，还是已经被 human/PM 批准？
+- 哪个 Harness 检查了结果？
+- 这个经验能否跨项目复用，还是只能留在当前项目里？
+
+如果普通 agent 工具负责编辑、运行、搜索、打包，那么 AgentOS 负责让这些工作变得可追踪、可审查、可交接。
+
+### 为什么需要 AgentOS
+
+AI 编码和工作流工具已经很好用，但项目一旦持续变长，问题就会变成：工作越来越难被信任。
+
+文件改了，prompt 变了，本地脚本生成了输出。runner 说已经验证过，但证据没有打包。项目学到了一条经验，却不知道它只适用于本项目，还是可以变成跨项目规则。研究线产生了有价值的想法，但干净基座不应该悄悄吸收它们。
+
+AgentOS CoreSlim 想解决的正是这种混乱。它保留 AI 执行带来的速度，但给它加上一套轻量纪律：
+
+- candidate 和 accepted 分开；
+- 证据和决策放在一起；
+- runner 可以替换；
+- Harness 只是执行层，不是治理权威；
+- return pack、hash inventory、rollback pointer 成为工作流的一部分；
+- research evolution 和 clean base 分开维护。
+
+### AgentOS 扮演什么角色
+
+AgentOS 可以理解为认知工作流外面的一层“项目操作系统”。它不一定亲自做模型、编辑器、浏览器、测试器或部署器。它的作用是协调这些东西。
+
+一个典型项目里：
+
+- human 或 PM 给出目标；
+- Codex、Claude Code、WorkBuddy 等 runner 完成本地操作；
+- AgentOS 提供策略、角色边界、候选态规则和审查门；
+- 一个或多个 Harness 执行检查或领域动作；
+- 最终输出 receipts、hash、manifest、validation notes 和 rollback 信息。
+
+所以 AgentOS 适合的场景，不只是“找一个聪明助手回答问题”，而是那些过程本身也很重要的工作。
+
+### 它能解决哪些实际问题
+
+**AI 工作分散。** AgentOS 把零散 runner 会话整理成带 seed、输出、验证和 return pack 的项目周期。
+
+**工具越权。** runner 和 Harness 可以做事，但不能自己把候选结果提升为 accepted，也不能自己改 accepted registry。
+
+**上下文丢失。** 项目学到的东西可以进入项目内候选记忆或 policy prior，并保留足够证据供以后审查。
+
+**复用不安全。** 一个领域里的经验不会自动变成全局规则。跨项目迁移必须显式发生。
+
+**研究线和基座混在一起。** research self-evolution 输出可以作为证据保存，但不会静默进入 clean base。
+
+**回滚困难。** 当 manifest、hash inventory、receipt 和 rollback pointer 成为固定输出时，后续检查和撤回会轻松很多。
+
+### 怎样愉快地用起来
+
+先从小任务开始，不需要一上来搭一个庞大的 agent 平台。
+
+1. 选择一个你顺手的 runner。
+2. 给它 seed、pointer、issue 或 task prompt。
+3. 让它按 AgentOS 规则工作：先候选、带证据、可审查。
+4. 只接入当前任务真正需要的 Harness。
+5. 运行检查。
+6. 要求输出 return pack：改了什么、验证了什么、什么仍然 pending、如何回滚。
+7. 只有 human/PM 批准的内容才能被提升。
+
+最舒服的使用方式是：用你喜欢的 runner 保持工作流顺畅，用 AgentOS 管记忆和治理，用 Harness 提供执行证据。
+
+### 推荐 Runner
+
+AgentOS CoreSlim 适合搭配可替换 runner 使用。runner 是交互界面，AgentOS 是治理层。
+
+- **Codex**：适合仓库维护、本地代码修改、测试、打包、return pack 和 GitHub 交接。
+- **Claude Code**：适合作为另一种本地编码 runner，用于仓库导航、patch 实现和 review 风格工作流。
+- **WorkBuddy**：适合需要任务编排、交接连续性、日常执行支持的 workspace。
+- 其他 runner 也可以使用，只要它能遵守同一套规则：读取 seed，本地执行，尊重候选边界，运行检查，返回证据。
+
+runner 不应该被当作最终权威。它可以编辑、测试、打包、检查和提出建议；但不应该直接提升 candidate、修改 accepted registry、绕过审查门，或把私人项目材料写入 shared/global state。
+
+### Harness 执行层
+
+Harness 是执行适配器。它让 AgentOS 能在外部世界运行或验证某件事，但它不拥有治理决策权。
+
+可接入的 Harness 包括：
+
+- 本地 shell、Python、pytest 或 build Harness；
+- 文档解析与抽取 Harness；
+- 数据验证 Harness；
+- 浏览器、UI 或 app 自动化 Harness；
+- 仿真、benchmark 或 evaluation Harness；
+- 打包与发布 Harness；
+- 面向 VC、教育、制造、研究、法律、医疗等领域的专用 Harness。
+
+Harness 输出是证据。它可以支持决策，但不会自动成为 accepted truth。AgentOS 保留“检查已经运行”和“变更已经批准”之间的区别。
+
+### 一个正常工作周期
+
+```text
+Human / PM
+  -> Runner: Codex、Claude Code、WorkBuddy 或其他本地操作界面
+  -> AgentOS CoreSlim policy 与 role boundary
+  -> Harness execution layer(s)
+  -> Evidence、receipts、validation、hashes、rollback pointer
+  -> Human / PM review
+  -> Candidate 保持 pending、继续修改，或被批准
+```
+
+### CoreSlim 里面有什么
+
+CoreSlim 当前提供一组小而干净的基座机制：
+
+- 通过 `CodexToolBridge` 进行有边界的本地工具执行；
+- 项目内 ICM 演化策略，用于有证据支撑的候选项；
+- baseline evolution proposal protocol，用于生成可由人类审查的基线更新提案；
+- `DomainObjectModeler`，用于 candidate-only 的领域对象建模；
+- seed pack 和 return pack 纪律；
+- 覆盖主要治理边界的测试。
+
+这些能力刻意保持小。CoreSlim 是基座，不是一个已经完成的产品套件。
+
+### AgentOS CoreSlim 能做什么
+
+- 为下游项目启动一个干净的 AgentOS 基座。
+- 帮 runner 在明确边界内工作。
+- 让新行为在审查前保持 candidate-only。
+- 保存证据、验证说明、hash inventory 和 rollback pointer。
+- 支持项目内学习，但不直接改写全局真值。
+- 打包交接材料，让另一个窗口、runner 或维护者可以继续。
+- 将 base maintenance 与 research self-evolution 分开。
+
+### 不应该用它做什么
+
+- 自治生产部署。
+- 在没有人类授权时做法律、金融、医疗或运营承诺。
+- 静默修改 accepted registry 或官方 baseline。
+- 把 Harness 输出直接当作最终真值。
+- 未经权限审查，把私人材料写入 shared/global model。
+- 因为本地测试通过就宣称 AGI 达成或生产就绪。
+
+### 当前状态
+
+- 分支：`AgentOS`
+- 状态：base-maintenance 候选版本，等待 PM/human review
+- 用途：启动和维护基于 AgentOS CoreSlim 的项目
+- 验证：
 
 ```text
 pytest -q agentos_core_slim_v0/tests
@@ -174,167 +338,7 @@ python -m compileall -q agentos_core_slim_v0
 passed
 ```
 
-### Release Boundary
-
-This branch is suitable as an internal base-maintenance candidate. Before a formal public release, review:
-
-- license and distribution policy;
-- CI workflow;
-- package metadata;
-- release tag;
-- signed pointer approval;
-- public/private data boundary;
-- whether `outputs/` should remain in the repository or move to release artifacts.
-
-## 中文
-
-AgentOS CoreSlim 是一个轻量级、以治理边界优先的跨项目 AgentOS 运行时基座。它的目标不是做一个单一聊天机器人、文档解析器、工作流脚本或模型封装，而是为不同领域的 AgentOS 项目提供可复用的内核策略、本地执行边界、候选态演化流程和可审计验证材料。
-
-本分支是干净的 **base-maintenance** 线，刻意与 research-AgentOS self-evolution 输出隔离。研究线输出可以作为证据保存，但不会自动进入基座；只有未来存在 PM 明确批准的同步 seed 时，稳定 patch 才能被导入基座线。
-
-### AgentOS 是什么
-
-AgentOS 是一个面向“有治理的认知工作流”的操作层。它负责协调角色、证据、策略、候选变更、人类审查门和回滚审计，使一个 AgentOS 项目能够在不同领域中安全演化。
-
-在 CoreSlim 基座中，重点是：
-
-- 有边界的本地执行，而不是无约束自动化；
-- 由 Kernel 授权，而不是由工具自行决定；
-- candidate-only 的演化，而不是直接写入 accepted registry；
-- 可 replay 的证据，而不是不可验证的记忆声明；
-- rollback 和 audit trail，而不是静默状态变化；
-- 跨项目可移植性，而不是一次性项目脚本。
-
-### 当前状态
-
-- 状态：base-maintenance 候选版本，等待 PM / human review
-- 分支：`AgentOS`
-- 验证：本地测试已通过
-- 用途：启动下游 AgentOS 项目，并维护 CoreSlim 基座
-- 不声明：生产发布、全局 registry 激活、官方理论基线写入、AGI 达成、自治生产部署
-
-### 推荐使用方式
-
-AgentOS CoreSlim 最适合以“治理基座 + 可替换 runner”的方式使用。runner 是人类或项目维护者操作 AgentOS 任务的交互式编码/执行界面。推荐 runner 包括：
-
-- **Codex**：适合仓库维护、本地代码修改、测试、打包、return pack 和 GitHub 交接。
-- **Claude Code**：适合作为另一种本地代码 runner，用于仓库导航、patch 实现和 review 风格工作流。
-- **WorkBuddy**：适合偏运营型的 workspace runner，用于任务编排、交接跟踪和日常执行支持。
-
-runner 不是 AgentOS 的最终权威。在 CoreSlim 模型中，runner 应被视为 operator interface。它可以读取指令、编辑文件、运行测试、准备 patch、调用有边界工具，但不能直接提升 candidate、修改 accepted registry，或绕过 Kernel / PM / human review gate。
-
-典型结构是：
-
-```text
-Human / PM
-  -> Runner: Codex、Claude Code、WorkBuddy 或其他本地操作界面
-  -> AgentOS Kernel policy layer
-  -> Harness execution layer(s)
-  -> Receipts、hash inventories、rollback pointers、return packs
-```
-
-### Harness 执行层
-
-AgentOS 可以外接多个 Harness 执行层。Harness 是执行适配器，不是治理权威。不同项目可以根据任务连接不同 Harness：
-
-- 本地 shell / Python test Harness；
-- 文档解析或抽取 Harness；
-- 数据验证 Harness；
-- 浏览器或 UI 自动化 Harness；
-- 仿真或 benchmark Harness；
-- 打包与发布 Harness；
-- 领域专用 Harness，例如 VC、教育、制造、研究、法律、医疗等适配器。
-
-Harness 输出应被视为证据或 execution receipt。它可以支持候选决策，但不会自动成为 accepted truth。是否能够提升，取决于 Kernel policy、evidence lineage、permission review、schema review、retention review，以及 human / PM authorization。
-
-### 快速启动模式
-
-1. 从 `AgentOS` 分支或经过验证的 CoreSlim return pack 开始。
-2. 选择 runner，仓库维护通常推荐 Codex，其他本地工作流可选择 Claude Code 或 WorkBuddy。
-3. 修改前先读取当前 seed pack、pointer 或 task prompt。
-4. 除非有明确授权，否则所有新行为保持 candidate-only。
-5. 运行本地测试和任务要求的 Harness 检查。
-6. 输出 return pack，包含 manifest、hash inventory、validation report 和 rollback pointer。
-7. Pointer update 和 accepted-registry update 在批准前都只能作为 review candidate。
-
-### 核心能力
-
-#### 1. Kernel 有界工具执行
-
-`CodexToolBridge` 提供有边界的本地执行桥。它可以在 Kernel dispatch envelope 明确授权下读取 artifact、运行本地脚本/测试、打包文件、生成 hash inventory、replay receipt，以及回滚本地写入。
-
-边界：
-
-- Tool bridge 是 Harness Plane executor，不是最终决策者。
-- 它不能给自己授权。
-- 它会阻断外部 API mutation、production deploy、global memory write、global ICM write、git push、legal signature、investment commitment、unbounded web action 等高风险能力。
-
-#### 2. 项目内 ICM 演化
-
-`AutonomousICMEvolutionPolicy` 允许成熟、证据充分的候选项进入项目内 durable artifact，例如 memory unit、operator memory、policy prior、applicability gate 或 quarantine record。
-
-边界：
-
-- 只能写项目内作用域。
-- 不写 global memory、production ICM、official theory baseline 或 accepted evidence。
-- 必须带 rollback 和 replay 元数据。
-- 弱证据保持候选态。
-- negative-transfer candidate 进入 quarantine，而不是提升。
-
-#### 3. 基线演化提案协议
-
-`BaselineEvolutionProposalProtocol` 把成熟的项目内学习转化为可供人类审查的 baseline update proposal。
-
-边界：
-
-- 它只提出 S3/S4 或 theory-baseline 更新候选。
-- 它不直接应用这些更新。
-- 任何 official/global baseline write 仍然需要签署式 human authorization。
-- 证据不足、冲突未解决或 negative-transfer 风险高的候选会被延迟或路由到审查。
-
-#### 4. 领域对象建模
-
-`DomainObjectModeler` 是一个跨领域角色，用于 candidate-only 的领域对象模型演化。它从合成或项目内操作信号中发现缺失对象、关系候选、状态候选、生命周期变化候选、权限变化候选、冲突记录和保留决策。
-
-边界：
-
-- 所有输出保持 `PENDING`。
-- 不写 accepted object registry。
-- Harness worker 不能提升 object candidate。
-- 每个 candidate 都必须有 evidence lineage。
-- 权限相关候选必须有 permission impact notes。
-- Patch candidate 必须经过 schema impact review。
-- private/confidential 材料不能在没有显式审查 marker 的情况下进入 shared/global model。
-
-#### 5. Seed Pack 与 Return Pack 纪律
-
-仓库保存 PM seed pack、incoming patch seed、return manifest、hash inventory、rollback pointer 和 validation report。
-
-边界：
-
-- Seed pack 是指令或证据，不是自动授权。
-- Return pack 记录改了什么、如何验证。
-- Cross-project pointer update 在批准前只能是 candidate。
-
-### AgentOS CoreSlim 能做什么
-
-- 为下游领域项目启动一个干净的 AgentOS 基座。
-- 在显式授权下运行本地测试和脚本。
-- 生成 candidate-only 的治理 artifact。
-- 保存 rollback 和 replay 证据。
-- 用合成测试验证内核边界。
-- 用 manifest 和 hash inventory 打包回传材料。
-- 将 base-maintenance 工作与 research self-evolution 工作分离。
-
-### AgentOS CoreSlim 不能做什么
-
-- 未经明确授权写入官方理论基线。
-- 自动激活生产或全局 registry。
-- 绕过 human / PM gate 把候选提升为 accepted。
-- 未经权限审查，用 private material 更新 shared/global model。
-- 把 Harness 输出当作最终治理决策。
-- 因测试通过就宣称 AGI 达成或生产就绪。
-- 未经签署式 sync seed，把 research-AgentOS 输出导入基座。
+正式公开 release 前，建议复核 license 与分发策略、CI workflow、package 元数据、release tag、签署式 pointer approval，以及 public/private 数据边界。
 
 ### 仓库结构
 
@@ -347,27 +351,3 @@ seedpacks/              PM seed pack 与 patch 交接材料
 outputs/                return pack、验证报告、hash inventory
 _incoming/              已接收的 seed pack 与集成证据
 ```
-
-### 验证结果
-
-当前本地验证：
-
-```text
-pytest -q agentos_core_slim_v0/tests
-28 passed
-
-python -m compileall -q agentos_core_slim_v0
-passed
-```
-
-### 发布边界
-
-本分支适合作为内部基座维护候选版本。正式公开 release 前，建议复核：
-
-- license 与分发策略；
-- CI workflow；
-- package 元数据；
-- release tag；
-- 经签署/确认的 pointer approval；
-- public/private 数据边界；
-- `outputs/` 是否应保留在仓库中，或改为 release artifact。
