@@ -1,0 +1,8 @@
+{
+  "human_role": "posthoc_review_rollback_scope_escalation",
+  "rollback_pointer": "C:\\Users\\ZH\\Documents\\Logos-AgentOS\\outputs\\7301A7400Z_autonomous_icm_evolution_policy\\project_scoped_icm_store\\rollback\\4877c71d351a7259.rollback.json",
+  "status": "PASS",
+  "target_path": "C:\\Users\\ZH\\Documents\\Logos-AgentOS\\outputs\\7301A7400Z_autonomous_icm_evolution_policy\\project_scoped_icm_store\\operator_memory\\ups_rollback_demo.json",
+  "target_type": "OperatorMemory",
+  "write_id": "evo-ups_rollback_demo-autonomous_project_operatormemory_write"
+}

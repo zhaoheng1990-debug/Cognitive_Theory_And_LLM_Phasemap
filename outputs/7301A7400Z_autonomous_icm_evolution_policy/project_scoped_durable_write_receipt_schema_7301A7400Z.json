@@ -1,0 +1,67 @@
+{
+  "$id": "agentos://schemas/project_scoped_durable_write_receipt_7301A7400Z.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authorized_by": {
+      "const": "AgentOSKernel.ICMEvolutionPolicy"
+    },
+    "policy_violations": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "production_activation": {
+      "const": false
+    },
+    "receipt_hash": {
+      "type": "string"
+    },
+    "replay_manifest_ref": {
+      "type": "string"
+    },
+    "rollback_pointer": {
+      "type": "string"
+    },
+    "sha256_after": {
+      "type": "string"
+    },
+    "sha256_before": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED",
+        "ROLLED_BACK"
+      ]
+    },
+    "target_path": {
+      "type": "string"
+    },
+    "target_scope": {
+      "const": "project_scoped_durable"
+    },
+    "write_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "write_id",
+    "status",
+    "target_path",
+    "sha256_before",
+    "sha256_after",
+    "rollback_pointer",
+    "replay_manifest_ref",
+    "policy_violations",
+    "authorized_by",
+    "target_scope",
+    "production_activation",
+    "receipt_hash"
+  ],
+  "title": "ProjectScopedDurableWriteReceipt",
+  "type": "object"
+}

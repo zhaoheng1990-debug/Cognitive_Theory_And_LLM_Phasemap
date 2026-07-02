@@ -1,0 +1,30 @@
+﻿{
+    "pointer_type":  "CurrentAgentOSCrossProjectCloneBaseUpdateCandidate",
+    "pointer_version":  "v0_1_candidate",
+    "status":  "CANDIDATE_PM_REVIEW_REQUIRED",
+    "generated_at":  "2026-07-03T05:34:14.9794934+08:00",
+    "proposed_active_workspace_dir":  "D:\\Logos_AgentOS_base_maintenance",
+    "proposed_line":  "AgentOS_CoreSlim_BaseMaintenance_0001A0100Z_CleanCloneRestoreSmoke",
+    "proposed_call_convention":  "Call AgentOS slim base from D:\\Logos_AgentOS_base_maintenance after PM approval; this is the clean CoreSlim base-maintenance line, not the research-AgentOS branch.",
+    "source_clean_clone_base":  {
+                                    "backup_zip":  "C:\\Users\\ZH\\Desktop\\AGI\\BKP\\AGOS_PreSelfEvolution_20260703_035535.zip",
+                                    "backup_zip_sha256":  "5eb45072c1d90c75b6793902000c9ae5a5f68bf0b5e15f7f86aaab7cdb26304a",
+                                    "backup_zip_sha256_matches_seed":  true
+                                },
+    "validation_artifact":  "D:\\Logos_AgentOS_base_maintenance\\outputs\\AgentOS_CoreSlim_BaseMaintenance_0001A0100Z_CleanCloneRestoreSmoke\\cross_project_pointer_validation.json",
+    "return_pack":  "AgentOS_CoreSlim_BaseMaintenance_0001A0100Z_Return_Pack_v0_1.zip",
+    "previous_pointers_read":  [
+                                   "D:\\Logos_AgentOS_research\\handoff\\AgentOS_BaseMaintenance_NewWindow_Pointer_20260703.json",
+                                   "D:\\Logos_AgentOS_research\\CROSS_PROJECT_AGENTOS_SLIM_INFRASTRUCTURE_POINTER.json",
+                                   "C:\\Users\\ZH\\Desktop\\AGI\\BKP\\CURRENT_AGENTOS_CROSS_PROJECT_CLONE_BASE.json"
+                               ],
+    "previous_research_workspace":  "D:\\Logos_AgentOS_research",
+    "previous_workspace_archive":  "C:\\Users\\ZH\\Documents\\Logos-AgentOS",
+    "activation_requirements":  [
+                                    "PM/human approval",
+                                    "No unresolved smoke-test failure",
+                                    "No unauthorized theory baseline or production/global write"
+                                ],
+    "no_production_release_claim":  true,
+    "no_baseline_write_by_this_candidate":  true
+}

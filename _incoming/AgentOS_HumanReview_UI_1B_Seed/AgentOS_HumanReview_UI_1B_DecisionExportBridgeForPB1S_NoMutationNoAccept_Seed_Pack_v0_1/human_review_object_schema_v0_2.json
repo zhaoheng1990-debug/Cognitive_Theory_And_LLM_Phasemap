@@ -1,0 +1,29 @@
+{
+  "schema_name": "AgentOS_HumanReviewObject_v0_2",
+  "purpose": "Human-readable review object, not raw machine intake schema.",
+  "required_fields": [
+    "review_id",
+    "candidate_id",
+    "review_type",
+    "decision_question",
+    "current_state",
+    "candidate_summary",
+    "evidence_chain",
+    "metrics",
+    "forbidden_actions",
+    "allowed_decisions",
+    "recommended_decision",
+    "decision_export_contract",
+    "raw_machine_fields"
+  ],
+  "decision_export_contract": {
+    "target_intake": "PB1S",
+    "formats": [
+      "json",
+      "csv"
+    ],
+    "must_validate_against": "PB1S_human_retention_decision_schema_v0_1",
+    "primary_review_surface": "readable_card_buttons",
+    "machine_schema_visibility": "advanced_only"
+  }
+}

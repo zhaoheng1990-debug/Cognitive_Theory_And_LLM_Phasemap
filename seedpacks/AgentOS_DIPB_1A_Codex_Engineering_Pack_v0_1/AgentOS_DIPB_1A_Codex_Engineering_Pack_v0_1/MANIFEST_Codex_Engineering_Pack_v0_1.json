@@ -1,0 +1,99 @@
+{
+  "pack_name": "AgentOS_DIPB_1A_Codex_Engineering_Pack_v0_1",
+  "created_utc": "2026-06-28T11:47:27Z",
+  "source_seed_pack": "AgentOS_DIPB_1_RawDomainMaterialToStructuredInputPack_PM_Seed_Pack_v0_1.zip",
+  "stage": "DIPB-1A_SourceInventory_ProvenanceCapture_NoExtractionNoEligibility",
+  "required_return_pack": "AgentOS_DIPB_1A_RawSourceInventory_ProvenanceCapture_NoExtractionNoEligibility_Return_Pack_v0_1.zip",
+  "files": [
+    {
+      "path": "00_README_Codex_Pack.md",
+      "sha256": "6e4429d2e63983238544dd1d76df23c06c776e4c4cb73640512603218ab2d6b4",
+      "size_bytes": 2033
+    },
+    {
+      "path": "01_PM_Next_Instruction_DIPB1A.md",
+      "sha256": "4b7b6d01f907ea3ebb4b3b71a06556e2f5ac57067e01ef26fd20ab4908856843",
+      "size_bytes": 1688
+    },
+    {
+      "path": "02_Codex_Task_Prompt_DIPB1A.md",
+      "sha256": "d58e62daee303b628b57362ae2b51090b0602db21a6be60bc64882af73235909",
+      "size_bytes": 4596
+    },
+    {
+      "path": "03_Implementation_Contract_DIPB1A.md",
+      "sha256": "c3b8d4f94104724dffdb70ebbadbdce36557fb5fb31d99845184446b8f9bc2d9",
+      "size_bytes": 3033
+    },
+    {
+      "path": "04_Test_Spec_DIPB1A.md",
+      "sha256": "74c9722fc851bef39a4c1953af7a09026f96287a7ac75eb4e6d261288046dfa1",
+      "size_bytes": 1746
+    },
+    {
+      "path": "05_PM_Audit_Checklist_DIPB1A.md",
+      "sha256": "717124b173673e5bcc9749d6124e6904b0a4ab2e1010b7c8f8f37acf97ed8b00",
+      "size_bytes": 1451
+    },
+    {
+      "path": "06_Domain_Boundary_DIPB1A.md",
+      "sha256": "fdcb8bcc08d71fee1298e8dbd20fa9bb24aed2d493000a116b918478b791bae0",
+      "size_bytes": 818
+    },
+    {
+      "path": "MANIFEST_Codex_Engineering_Pack_v0_1.json",
+      "sha256": "78069cc67ff3627c21952f5186c943e94b19a743abf24695892f9b815f1fe270",
+      "size_bytes": 121
+    },
+    {
+      "path": "fixtures/raw_domain_materials_sample/example_config.json",
+      "sha256": "5fd2aead27336c004ad83d6e999a23cd5c0d3e4c09009bc1452a71436e437343",
+      "size_bytes": 94
+    },
+    {
+      "path": "fixtures/raw_domain_materials_sample/example_metrics.csv",
+      "sha256": "2dc9a1ee27314071bdd9dc1afbf93e5c9b9957ff6c74ed13c7f53c3535c5e074",
+      "size_bytes": 29
+    },
+    {
+      "path": "fixtures/raw_domain_materials_sample/example_policy.md",
+      "sha256": "45defac051ae1920ca049a82ed543ecb356c8d382ab3d48dab9f0db4b52d2d8b",
+      "size_bytes": 140
+    },
+    {
+      "path": "return_contract/expected_return_file_list.md",
+      "sha256": "8fe52c97a335d8f493e7586edc41540fb976131c42a17089c4a21dab82a2700a",
+      "size_bytes": 718
+    },
+    {
+      "path": "schemas/domain_input_pack_schema_v0_1.json",
+      "sha256": "97d1698bf93693e6d4b7d39d1b04e7f673a65751bcc7ed50d9b59e4a7a95fdda",
+      "size_bytes": 1222
+    },
+    {
+      "path": "schemas/provenance_ledger_schema_v0_1.json",
+      "sha256": "14943954503622aeeb9647fc54ee25fbabf4de8fe5042c7970dddc72dc067396",
+      "size_bytes": 688
+    },
+    {
+      "path": "schemas/source_inventory_schema_v0_1.json",
+      "sha256": "a7a162832aba827edc7fc4ec41c35d79f02e7e05314adbcda9f3053f8fed7147",
+      "size_bytes": 1104
+    },
+    {
+      "path": "templates/human_review_gate_template.csv",
+      "sha256": "b57658cea06f1666be4aa9c2a91604890077d47e399916de814b21fc59e307a7",
+      "size_bytes": 268
+    },
+    {
+      "path": "templates/raw_source_inventory_template.csv",
+      "sha256": "2b699d91104a5b964c4b69ff62c4172c96eade9121b2d8d21218c969ebb52077",
+      "size_bytes": 445
+    },
+    {
+      "path": "templates/return_files_manifest_DIPB1A.json",
+      "sha256": "4ca6ea53fa90723c16dae78f78af019384bd914df352d632170057f4289214f9",
+      "size_bytes": 666
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+﻿{
+    "pytest_code":  0,
+    "smoke_code":  0,
+    "tree":  "C:\\Users\\ZH\\Documents\\Logos-AgentOS\\_tmp_6901_clean_extract\\portable_dev_rc_source_tree_6901A7000Z",
+    "documented_pytest_command":  "python -m pytest tests -q",
+    "documented_smoke_command":  "python -m agentos_core_slim_portable.smoke",
+    "pytest_output":  ".......                                                                  [100%]\n7 passed in 0.04s",
+    "smoke_output":  "kernel_owner = AgentOSKernel.ICMMetabolismPolicy\nadvisory_only = True\nharness_no_external_effect = True\nreplay_verified = True\nproduction_release = False\ntruthfulness_rows = 2"
+}

@@ -1,0 +1,13 @@
+{
+  "task_id": "AgentOS_OM1A_ObjectModeler_Mainline_Patch",
+  "status": "PASS",
+  "role_added": "DomainObjectModeler",
+  "candidate_only": true,
+  "accepted_registry_mutation": false,
+  "harness_promotion_allowed": false,
+  "private_to_shared_requires_explicit_review_marker": true,
+  "verification": {
+    "object_modeler_boundary_tests": "12 passed",
+    "full_agentos_core_slim_tests": "28 passed"
+  }
+}

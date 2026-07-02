@@ -1,0 +1,32 @@
+{
+  "version": "v0.2",
+  "experiment": "AgentOS_CoreSlim_BaselineEvolutionProposalProtocol_7501A7600Z",
+  "must_pass": [
+    "baseline_update_proposal_schema_present",
+    "proposal_eligibility_policy_present",
+    "periodic_review_state_machine_present",
+    "proposal_queue_behavior_present",
+    "human_review_packet_present",
+    "ups_accept_project_operator_memory_generates_theory_baseline_proposal",
+    "official_baseline_not_written_without_signed_authorization",
+    "insufficient_evidence_no_proposal",
+    "high_negative_transfer_defer_or_quarantine",
+    "baseline_conflict_routes_to_conflict_review",
+    "signed_promotion_authorization_required"
+  ],
+  "forbidden": [
+    "direct_s3_theory_baseline_write_without_authorization",
+    "direct_s4_global_production_write",
+    "proposal_from_user_praise_only",
+    "proposal_without_empirical_validation",
+    "proposal_without_project_scoped_write_ref",
+    "proposal_without_conflict_scan"
+  ],
+  "allowed_verdicts": [
+    "PASS_BASELINE_EVOLUTION_PROPOSAL_PROTOCOL",
+    "PASS_WITH_LIMITED_CAVEATS",
+    "FAIL_UNAUTHORIZED_BASELINE_WRITE",
+    "FAIL_PROPOSAL_ELIGIBILITY_WEAK",
+    "FAIL_CONFLICT_SCAN_MISSING"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "$id": "agentos://schemas/tool_receipt_7201A7300Z.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "artifacts": {
+      "type": "array"
+    },
+    "bridge_owner": {
+      "const": "HarnessPlane"
+    },
+    "codex_tool_bridge_final_decision_owner": {
+      "const": false
+    },
+    "elapsed_seconds": {
+      "type": "number"
+    },
+    "executed_capability": {
+      "type": "string"
+    },
+    "hashes": {
+      "type": "array"
+    },
+    "kernel_policy_owner": {
+      "const": "AgentOSKernel"
+    },
+    "mutation_summary": {
+      "type": "string"
+    },
+    "outputs": {
+      "type": "array"
+    },
+    "parent_harness_envelope_id": {
+      "type": "string"
+    },
+    "policy_violations": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "receipt_hash": {
+      "type": "string"
+    },
+    "rollback_pointer": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED"
+      ]
+    },
+    "stderr_summary": {
+      "type": "string"
+    },
+    "stdout_summary": {
+      "type": "string"
+    },
+    "tool_call_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "tool_call_id",
+    "parent_harness_envelope_id",
+    "status",
+    "executed_capability",
+    "outputs",
+    "artifacts",
+    "hashes",
+    "stdout_summary",
+    "stderr_summary",
+    "mutation_summary",
+    "rollback_pointer",
+    "policy_violations",
+    "bridge_owner",
+    "kernel_policy_owner",
+    "codex_tool_bridge_final_decision_owner",
+    "elapsed_seconds",
+    "receipt_hash"
+  ],
+  "title": "ToolReceipt",
+  "type": "object"
+}

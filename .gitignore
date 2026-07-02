@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+_tmp*/
+_restore_source/
+outputs/release_size_check/stage_*/
+outputs/release_size_check/s1_core/
+outputs/release_size_check/s2_audit/

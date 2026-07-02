@@ -1,0 +1,69 @@
+{
+  "review_id": "PB_RETENTION_REVIEW_WRC_BOUNDARY_001",
+  "candidate_id": "WRC_BOUNDARY_001",
+  "review_type": "pb_retention_review",
+  "decision_question": "PB1R 预检通过后，WRC_BOUNDARY_001 应如何进入下一步 retention review？",
+  "current_state": "PENDING_RETENTION_DECISION_PACKET_READY",
+  "candidate_summary": "该候选已通过 PB1N-PB1R 的人类案例、replay 与 retention preflight 检查，但尚未获准 retention accept。",
+  "evidence_chain": [
+    {
+      "step": "PB1N",
+      "status": "PASS",
+      "summary": "候选冻结为 dormant_pending_grounded_boundary_cases"
+    },
+    {
+      "step": "PB1P/PB1P.1",
+      "status": "PASS",
+      "summary": "人类 grounded boundary cases 已收集并修复 self-contained replay"
+    },
+    {
+      "step": "PB1O rerun",
+      "status": "PASS",
+      "summary": "human batch validation replay gate 通过"
+    },
+    {
+      "step": "PB1Q",
+      "status": "PASS",
+      "summary": "PM 授权 retention preflight"
+    },
+    {
+      "step": "PB1R",
+      "status": "PASS",
+      "summary": "retention preflight ready for human decision packet"
+    }
+  ],
+  "metrics": {
+    "boundary_sensitive_total": "63/30",
+    "benign_or_partial_boundary": "15/15",
+    "partial_boundary": "8/8",
+    "challenge_controls": "10/10",
+    "synthetic_eligible_violation_count": 0,
+    "missing_provenance_count": 0
+  },
+  "forbidden_actions": [
+    "retention_accept",
+    "signed_accept",
+    "accepted_baseline",
+    "accepted_evidence",
+    "memory_write",
+    "operator_promotion",
+    "policy_promotion"
+  ],
+  "allowed_decisions": [
+    "keep_pending_retention_review",
+    "request_more_boundary_cases",
+    "request_scope_revision",
+    "reject_retention",
+    "authorize_retention_accept_preflight_next"
+  ],
+  "recommended_decision": "keep_pending_retention_review",
+  "decision_export_contract": {
+    "target_intake": "PB1S",
+    "export_json": "exported_pb1s_decision_example.json",
+    "export_csv": "exported_pb1s_decision_example.csv"
+  },
+  "raw_machine_fields": {
+    "candidate_id": "WRC_BOUNDARY_001",
+    "pb1r_state": "PENDING_RETENTION_DECISION_PACKET_READY"
+  }
+}

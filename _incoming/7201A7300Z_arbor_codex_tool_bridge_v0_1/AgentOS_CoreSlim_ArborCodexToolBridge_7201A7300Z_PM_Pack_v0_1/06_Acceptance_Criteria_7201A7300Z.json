@@ -1,0 +1,33 @@
+{
+  "version": "v0.1",
+  "experiment": "AgentOS_CoreSlim_ArborCodexToolBridge_7201A7300Z",
+  "must_pass": [
+    "codex_tool_bridge_interface_defined",
+    "tool_call_envelope_schema_present",
+    "tool_receipt_schema_present",
+    "arbor_integration_example_present",
+    "kernel_authorized_dispatch_required",
+    "authorized_tool_calls_pass",
+    "unauthorized_tool_calls_blocked",
+    "external_mutation_blocked",
+    "rollback_test_pass",
+    "replay_index_present",
+    "tool_receipt_ingested_by_agentos_result_ingestion",
+    "codex_tool_bridge_final_decision_owner_false"
+  ],
+  "forbidden": [
+    "codex_owns_sro",
+    "codex_owns_next_action",
+    "codex_owns_icm_policy",
+    "unbounded_external_mutation",
+    "global_memory_write",
+    "production_deploy"
+  ],
+  "allowed_verdicts": [
+    "PASS_ARBOR_CODEX_TOOLBRIDGE_LOCAL",
+    "PASS_WITH_LIMITED_CAVEATS",
+    "FAIL_UNAUTHORIZED_TOOL_ACCESS",
+    "FAIL_KERNEL_OWNERSHIP_REGRESSION",
+    "FAIL_REPLAY_OR_ROLLBACK"
+  ]
+}

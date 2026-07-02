@@ -1,0 +1,21 @@
+{
+  "version": "v0.1",
+  "required_return_files": [
+    "codex_tool_bridge_interface_7201A7300Z.md",
+    "tool_call_envelope_schema_7201A7300Z.json",
+    "tool_receipt_schema_7201A7300Z.json",
+    "arbor_toolbridge_integration_report_7201A7300Z.md",
+    "kernel_authorized_dispatch_report_7201A7300Z.md",
+    "toolbridge_permission_report_7201A7300Z.md",
+    "toolbridge_pass_block_test_report_7201A7300Z.md",
+    "rollback_replay_report_7201A7300Z.md",
+    "result_ingestion_tool_receipt_report_7201A7300Z.md",
+    "kernel_ownership_regression_report_7201A7300Z.md",
+    "forbidden_capability_block_report_7201A7300Z.md",
+    "pytest_report_7201A7300Z.md",
+    "raw_budget_report_7201A7300Z.md",
+    "pm_ready_final_verdict_7201A7300Z.md",
+    "hash_inventory_7201A7300Z.csv",
+    "return_files_manifest_7201A7300Z.json"
+  ]
+}

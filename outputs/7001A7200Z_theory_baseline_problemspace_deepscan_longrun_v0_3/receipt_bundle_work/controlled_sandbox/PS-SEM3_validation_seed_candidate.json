@@ -1,0 +1,13 @@
+{
+  "artifact_type": "ValidationSeedCandidate",
+  "candidate_id": "PS-SEM3",
+  "family": "SEM/Memory/ICM",
+  "next_validation_question": "What minimal deterministic replay would reduce uncertainty for PS-SEM3?",
+  "official_baseline_write": false,
+  "production_icm_update": false,
+  "promotion": false,
+  "source_hash": "10014eb51672bf2a6c082ae19cec182ee61e08db68e819360fb2e1dad6ce6773",
+  "source_path": "Cognitive_Research_Architecture_v3_8_LatestPatchset_20260628/Cognitive_Research_Architecture_v3_8_LatestPatchset_20260628/07_Problem_Space_Baseline_v3_8_LatestPatchset_20260628.md",
+  "title": "CommunicationSubspace Memory",
+  "write_scope": "local_controlled_sandbox_only"
+}

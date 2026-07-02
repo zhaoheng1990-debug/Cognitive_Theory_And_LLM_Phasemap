@@ -1,0 +1,8 @@
+"relative_path","bytes","sha256"
+"base_maintenance_manifest.json","1828","6ac9518439c9e20755a62b9ec278d0798fd85b3b49d627f5b11c9021de8674fa"
+"base_workspace_hash_inventory.csv","85613","edb940e9164fe3c1e2c31c16557011524796f5ead3e4cf9117e684aaa07fdb81"
+"clean_clone_restore_report.md","1675","8d8650b96cf5d7a8eaed3462b66279f3caacb21b9e6d7902fe9958ce53b0179b"
+"cross_project_pointer_update_candidate.json","2265","dd0a461719cba6cb047f155ff562c3dc47bbe77b3340b046d2dd9dd1cfd1f851"
+"cross_project_pointer_validation.json","3096","3d8a2f4f9fbfa03d627ca72dc040f48c0fbdc57bcf02e0c396310ce0295aa38d"
+"pm_ready_report.md","767","94c01a95d66e93990dbfede831f8bad917019a23cf6c9692119f8f52cf1e3b42"
+"rollback_pointer_AgentOS_CoreSlim_BaseMaintenance_0001A0100Z.json","1382","5f6f00fb8300d638270a8299bd4173ac79fb25e809184539c53080b391ae4b87"

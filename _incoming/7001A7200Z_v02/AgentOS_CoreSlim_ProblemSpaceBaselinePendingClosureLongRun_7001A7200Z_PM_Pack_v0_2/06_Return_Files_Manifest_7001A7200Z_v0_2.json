@@ -1,0 +1,23 @@
+{
+  "version": "v0.2",
+  "required_return_files": [
+    "pending_item_inventory_7001A7200Z.csv",
+    "pending_item_sro_report_7001A7200Z.md",
+    "pending_closure_action_ledger_7001A7200Z.csv",
+    "icm_metabolism_policy_decision_ledger_7001A7200Z.csv",
+    "controlled_write_no_write_receipt_bundle_7001A7200Z.zip",
+    "cbit_accounting_by_pending_family_7001A7200Z.md",
+    "negative_route_carryover_report_7001A7200Z.md",
+    "expiration_deprecation_report_7001A7200Z.md",
+    "merge_split_scope_report_7001A7200Z.md",
+    "validation_seed_route_report_7001A7200Z.md",
+    "replay_consistency_report_7001A7200Z.md",
+    "rollback_replay_report_7001A7200Z.md",
+    "raw_budget_report_7001A7200Z.md",
+    "forbidden_claims_check_7001A7200Z.md",
+    "human_problemspace_closure_report_packet_7001A7200Z.md",
+    "pm_ready_final_verdict_7001A7200Z.md",
+    "hash_inventory_7001A7200Z.csv",
+    "return_files_manifest_7001A7200Z.json"
+  ]
+}

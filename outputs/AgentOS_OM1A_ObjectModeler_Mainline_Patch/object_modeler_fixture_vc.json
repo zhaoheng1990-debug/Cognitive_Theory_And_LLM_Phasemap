@@ -1,0 +1,31 @@
+{
+  "fixture_id": "object_modeler_fixture_vc_v0_1",
+  "domain": "VC-AgentOS",
+  "accepted_baseline_objects": [
+    "DealTarget",
+    "IndustryDomain",
+    "BPClaim",
+    "DiligenceTask",
+    "CognitiveAsset"
+  ],
+  "observed_signal": {
+    "signal_id": "vc-fixture-a",
+    "source": "synthetic_vc_fixture",
+    "access_level": "confidential",
+    "target_scope": "project_domain_model",
+    "evidence_refs": [
+      "workflow_ref_001",
+      "permission_denial_ref_001"
+    ],
+    "observed_objects": [
+      "FounderCredibilitySignal",
+      "CustomerBudgetSignal",
+      "CoInvestorInformationBoundary"
+    ]
+  },
+  "expected": {
+    "candidate_status": "PENDING",
+    "permission_impact_required": true,
+    "accepted_registry_mutation": false
+  }
+}

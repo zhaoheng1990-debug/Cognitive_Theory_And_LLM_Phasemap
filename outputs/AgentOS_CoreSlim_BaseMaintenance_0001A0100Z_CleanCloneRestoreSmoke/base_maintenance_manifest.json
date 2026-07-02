@@ -1,0 +1,33 @@
+﻿{
+    "manifest_type":  "AgentOSBaseMaintenanceReturnManifest",
+    "manifest_version":  "v0_1",
+    "status":  "READY_FOR_PM_REVIEW",
+    "generated_at":  "2026-07-03T05:34:14.9850099+08:00",
+    "line":  "AgentOS_CoreSlim_BaseMaintenance_0001A0100Z_CleanCloneRestoreSmoke",
+    "workspace_dir":  "D:\\Logos_AgentOS_base_maintenance",
+    "source_clean_clone_zip":  "C:\\Users\\ZH\\Desktop\\AGI\\BKP\\AGOS_PreSelfEvolution_20260703_035535.zip",
+    "source_clean_clone_zip_sha256":  "5eb45072c1d90c75b6793902000c9ae5a5f68bf0b5e15f7f86aaab7cdb26304a",
+    "deliverables":  [
+                         "clean_clone_restore_report.md",
+                         "base_workspace_hash_inventory.csv",
+                         "cross_project_pointer_validation.json",
+                         "base_maintenance_manifest.json",
+                         "rollback_pointer_AgentOS_CoreSlim_BaseMaintenance_0001A0100Z.json",
+                         "cross_project_pointer_update_candidate.json",
+                         "pm_ready_report.md",
+                         "HASH_INVENTORY.csv"
+                     ],
+    "verification":  {
+                         "backup_sha256_matches_seed":  true,
+                         "workspace_hash_missing_count":  0,
+                         "workspace_hash_mismatched_count":  0,
+                         "pytest_result":  "PASS_16"
+                     },
+    "boundaries":  {
+                       "continued_research_self_evolution_line":  false,
+                       "imported_8001A_8200Z_research_outputs":  false,
+                       "official_theory_baseline_write":  false,
+                       "production_or_global_registry_write":  false,
+                       "external_api_network_browser_connector_calls":  false
+                   }
+}

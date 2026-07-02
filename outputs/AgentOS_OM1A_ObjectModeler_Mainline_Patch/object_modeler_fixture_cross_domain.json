@@ -1,0 +1,27 @@
+{
+  "fixture_id": "object_modeler_fixture_cross_domain_v0_1",
+  "domain": "Education-AgentOS",
+  "accepted_baseline_objects": [
+    "Course",
+    "Student"
+  ],
+  "observed_signal": {
+    "signal_id": "edu-fixture-b",
+    "source": "synthetic_education_fixture",
+    "access_level": "internal",
+    "target_scope": "project_domain_model",
+    "evidence_refs": [
+      "lesson_trace_001"
+    ],
+    "observed_objects": [
+      "LearningBottleneck",
+      "StudentMisconceptionCluster"
+    ]
+  },
+  "expected": {
+    "candidate_status": "PENDING",
+    "conflict_check_required": true,
+    "schema_impact_required": true,
+    "accepted_registry_mutation": false
+  }
+}

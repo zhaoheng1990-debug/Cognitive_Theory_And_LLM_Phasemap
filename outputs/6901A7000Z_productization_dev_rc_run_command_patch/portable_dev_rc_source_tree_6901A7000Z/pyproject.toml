@@ -1,0 +1,9 @@
+[project]
+name = "agentos-core-slim-portable-dev-rc"
+version = "0.1.0"
+description = "Minimal standalone AgentOS CoreSlim portable dev-RC runtime subset"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

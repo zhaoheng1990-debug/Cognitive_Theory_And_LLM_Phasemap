@@ -1,0 +1,17 @@
+{
+  "receipt_id": "RECEIPT-7001-002-controlled_write-BASELINE-PENDING-UTILITY-POLICY-SELECTOR",
+  "run_id": "agentos-core-slim-problemspace-pending-closure-longrun-7001a7200z",
+  "pending_id": "BASELINE-PENDING-UTILITY-POLICY-SELECTOR",
+  "kind": "controlled_write",
+  "icm_decision_id": "ICM-7001-002-BASELINE-PENDING-UTILITY-POLICY-SELECTOR",
+  "closure_action": "PROMOTE_TO_VALIDATION_SEED",
+  "controlled_namespace": "7001A7200Z_local_controlled_sandbox_only",
+  "production_icm_write": false,
+  "global_memory_write": false,
+  "operator_memory_promotion": false,
+  "policy_promotion": false,
+  "baseline_write": false,
+  "created_at": "2026-07-02T18:33:35.709235Z",
+  "artifact_relative_path": "controlled_sandbox/BASELINE-PENDING-UTILITY-POLICY-SELECTOR.validation_seed_candidate.json",
+  "artifact_sha256": "3eaf19a457fd21e9932aa152e24b7270080cd369d4c4148e28dde13ae826b33c"
+}

@@ -1,0 +1,19 @@
+{
+  "version": "v0.2",
+  "required_return_files": [
+    "baseline_update_proposal_schema_7501A7600Z.json",
+    "proposal_eligibility_policy_report_7501A7600Z.md",
+    "periodic_baseline_review_state_machine_7501A7600Z.md",
+    "proposal_queue_behavior_report_7501A7600Z.md",
+    "human_review_packet_template_7501A7600Z.md",
+    "ups_baseline_update_proposal_test_report_7501A7600Z.md",
+    "insufficient_evidence_no_proposal_report_7501A7600Z.md",
+    "negative_transfer_defer_quarantine_report_7501A7600Z.md",
+    "baseline_conflict_review_route_report_7501A7600Z.md",
+    "signed_authorization_required_report_7501A7600Z.md",
+    "forbidden_claims_check_7501A7600Z.md",
+    "pm_ready_final_verdict_7501A7600Z.md",
+    "hash_inventory_7501A7600Z.csv",
+    "return_files_manifest_7501A7600Z.json"
+  ]
+}

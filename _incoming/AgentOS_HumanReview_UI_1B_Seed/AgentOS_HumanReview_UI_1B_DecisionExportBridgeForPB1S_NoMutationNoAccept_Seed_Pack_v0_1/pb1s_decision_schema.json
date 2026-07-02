@@ -1,0 +1,39 @@
+{
+  "schema_name": "PB1S_human_retention_decision_schema_v0_1",
+  "required_columns": [
+    "decision_id",
+    "candidate_id",
+    "reviewer",
+    "reviewer_role",
+    "decision",
+    "decision_rationale",
+    "decision_timestamp",
+    "is_pm_human_supplied",
+    "is_dry_run",
+    "signature_or_confirmation",
+    "notes"
+  ],
+  "candidate_id_required": "WRC_BOUNDARY_001",
+  "allowed_decisions": [
+    "keep_pending_retention_review",
+    "request_more_boundary_cases",
+    "request_scope_revision",
+    "reject_retention",
+    "authorize_retention_accept_preflight_next"
+  ],
+  "forbidden_decisions": [
+    "retention_accept",
+    "signed_accept",
+    "accepted_baseline",
+    "accepted_evidence",
+    "memory_write",
+    "operator_promotion",
+    "policy_promotion"
+  ],
+  "rules": {
+    "is_pm_human_supplied": "must be true",
+    "is_dry_run": "must be false for production-intended export",
+    "signature_or_confirmation": "must be non-empty",
+    "decision_rationale": "must be human-readable, not just a code"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "artifact_type": "NoWriteReceipt",
+  "candidate_id": "PS-LLM4",
+  "decision": "NO_WRITE_KEEP_PENDING_WITH_NEXT_TEST",
+  "official_baseline_write": false,
+  "promotion": false,
+  "reason": "not validation-seed-ready or requires separate/human route"
+}

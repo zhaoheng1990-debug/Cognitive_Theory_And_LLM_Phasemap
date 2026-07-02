@@ -1,0 +1,49 @@
+{
+  "stage": "LAOS-0I",
+  "provider_mode": "mock_shadow",
+  "local_model_enabled": false,
+  "explicit_enable_required": true,
+  "external_api_enabled": false,
+  "shadow_only": true,
+  "selected_model_key": null,
+  "local_files_only": true,
+  "fallback_provider": "mock_shadow",
+  "candidate_lifecycle_required": true,
+  "model_registry": {
+    "qwen2_5_1_5b_instruct": {
+      "path": "D:\\model\\models--Qwen--Qwen2.5-1.5B-Instruct\\main",
+      "enabled_by_default": false
+    },
+    "llama_3_2_1b_instruct": {
+      "path": "D:\\model\\Llama-3.2-1B-Instruct",
+      "enabled_by_default": false
+    },
+    "gemma_2_2b_it": {
+      "path": "D:\\model\\gemma-2-2b-it",
+      "enabled_by_default": false
+    }
+  },
+  "forbidden_effects": [
+    "execute_action",
+    "rewrite_answer",
+    "override_route",
+    "write_memory",
+    "promote_operator",
+    "run_skillkernel",
+    "call_external_api",
+    "auto_retain",
+    "auto_revive",
+    "bypass_humangate",
+    "bypass_candidate_lifecycle"
+  ],
+  "allowed_shadow_outputs": [
+    "shadow_sro_label",
+    "shadow_audit_label",
+    "uncertainty",
+    "comparison_reason",
+    "evidence_need",
+    "humangate_recommendation",
+    "candidate_suggested_state",
+    "candidate_risk_tags"
+  ]
+}

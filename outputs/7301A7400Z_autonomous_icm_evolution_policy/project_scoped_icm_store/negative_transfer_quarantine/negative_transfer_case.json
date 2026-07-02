@@ -1,0 +1,6 @@
+{
+  "candidate_id": "negative_transfer_case",
+  "quarantine_reason": "negative_transfer_detected",
+  "requires_human_or_kernel_repair": true,
+  "reuse_allowed": false
+}

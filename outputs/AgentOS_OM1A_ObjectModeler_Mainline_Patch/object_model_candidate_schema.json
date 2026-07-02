@@ -1,0 +1,41 @@
+{
+  "schema_name": "AgentOS_ObjectModelCandidate_Schema",
+  "schema_version": "v0_1",
+  "candidate_only": true,
+  "required_candidate_types": [
+    "ObjectModelCandidate",
+    "ObjectRelationCandidate",
+    "ObjectStateCandidate",
+    "ObjectLifecycleDeltaCandidate",
+    "ObjectPermissionDeltaCandidate",
+    "ObjectModelConflictRecord",
+    "ObjectModelEvidenceRecord",
+    "ObjectModelPatchCandidate",
+    "ObjectModelRetentionDecision"
+  ],
+  "object_model_candidate_required_fields": [
+    "candidate_id",
+    "kind",
+    "object_name",
+    "status",
+    "source_signal_id",
+    "source_domain",
+    "evidence",
+    "conflict_check",
+    "permission_impact",
+    "schema_impact",
+    "retention_review_required",
+    "accepted_registry_mutation"
+  ],
+  "allowed_status": [
+    "PENDING"
+  ],
+  "forbidden": [
+    "ACCEPT status at generation time",
+    "accepted_registry_mutation=true",
+    "production_activation=true",
+    "candidate without evidence lineage",
+    "permission-relevant candidate without permission impact",
+    "patch candidate without schema impact"
+  ]
+}

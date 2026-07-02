@@ -1,0 +1,2 @@
+source_id,source_path,source_type,file_extension,sha256,size_bytes,last_modified_utc,provided_by,provider_role,authorization_status,provenance_note,parse_status,inventory_only,eligible_for_case_extraction,notes
+src_000001,raw_domain_materials/example.md,document,.md,<sha256>,12345,2026-06-28T00:00:00Z,unknown,unknown,authorization_unknown,missing provenance; PM review required,parsed_metadata_only,true,false,Example row; replace before use.

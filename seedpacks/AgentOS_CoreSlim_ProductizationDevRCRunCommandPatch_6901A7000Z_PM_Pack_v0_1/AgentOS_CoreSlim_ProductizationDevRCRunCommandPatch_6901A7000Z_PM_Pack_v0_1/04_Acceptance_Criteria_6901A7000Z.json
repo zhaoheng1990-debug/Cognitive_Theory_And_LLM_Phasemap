@@ -1,0 +1,22 @@
+{
+  "verdict_target": "PASS_PRODUCTIZATION_DEV_RC_RUN_COMMAND_PATCH_AND_FREEZE",
+  "must_pass": [
+    "README/install guide documented smoke command runs exactly as written from clean extracted source bundle",
+    "clean extracted source bundle pytest passes",
+    "smoke output confirms kernel ownership, advisory-only LLM posture, no external harness effects, replay verified, production_release false",
+    "external preflight evidence integrated as bounded preflight evidence",
+    "no new cognitive capability added",
+    "no forbidden production/AGI/global-write claim made",
+    "return pack contains all required files"
+  ],
+  "forbidden_claims": [
+    "production release complete",
+    "AGI achieved",
+    "AGI Precursor 100%",
+    "unrestricted ICM write",
+    "global MemoryUnit write",
+    "global OperatorMemory write",
+    "full historical configured replay reproduced standalone"
+  ],
+  "expected_next_if_pass": "ProductizationDevRCFinalReview or limited release readiness review; not production release"
+}

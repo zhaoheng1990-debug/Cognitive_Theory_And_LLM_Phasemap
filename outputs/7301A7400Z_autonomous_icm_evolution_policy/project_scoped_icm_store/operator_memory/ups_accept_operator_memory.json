@@ -1,0 +1,29 @@
+{
+  "applicability_gate": {
+    "requires": [
+      "ranked_compatibility_fiber",
+      "utility_signal",
+      "risk_signal",
+      "cbit_gain_signal"
+    ]
+  },
+  "boundary_policy": {
+    "do_not_use_when": [
+      "evidence_missing",
+      "high_negative_transfer",
+      "external_action_required_without_authority"
+    ]
+  },
+  "drift_watch": {
+    "revalidate_on_scope_change": true,
+    "watch_family": "utility_policy_selector"
+  },
+  "operator_family": "PolicySelection",
+  "operator_id": "UtilityPolicySelectorOperator",
+  "purpose": "select lifecycle / next-action / retention policy when structural resolution alone is insufficient",
+  "reuse_policy": {
+    "drift_watch": true,
+    "mode": "project_scoped",
+    "requires_replay": true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "task_id": "AgentOS_OM1A_ObjectModeler_Mainline_Patch",
+  "expected_return_files": [
+    "object_modeler_role_spec.md",
+    "object_model_candidate_schema.json",
+    "object_model_lifecycle_policy.json",
+    "object_model_patch_candidate_contract.json",
+    "object_modeler_boundary_tests.py",
+    "object_modeler_fixture_vc.json",
+    "object_modeler_fixture_cross_domain.json",
+    "object_modeler_validation_report.md",
+    "object_modeler_verdict.json",
+    "pytest_output.txt",
+    "return_files_manifest_AgentOS_OM1A_v0_1.json",
+    "HASH_INVENTORY.csv"
+  ],
+  "hard_boundaries": [
+    "candidate_only",
+    "no_core_rewrite",
+    "no_accepted_registry_mutation",
+    "no_harness_promotion",
+    "no_private_to_global_without_review",
+    "no_live_web",
+    "no_real_company_data"
+  ]
+}

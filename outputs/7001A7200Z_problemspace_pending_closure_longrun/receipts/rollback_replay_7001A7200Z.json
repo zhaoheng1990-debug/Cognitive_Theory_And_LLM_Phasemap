@@ -1,0 +1,8 @@
+{
+  "rollback_id": "ROLLBACK-7001-001-controlled-write-validation-seed",
+  "source_artifact": "controlled_sandbox\\BASELINE-PENDING-RETENTION-UNIFIED-CONDITION.validation_seed_candidate.json",
+  "pre_rollback_sha256": "c85ab45cfcf64a3b15ea26d3940c7ace4b39643e2acf02b1d8edbb386586e991",
+  "post_rollback_absent": true,
+  "replay_verified": true,
+  "production_write_touched": false
+}

@@ -1,0 +1,24 @@
+{
+  "version": "v0.1",
+  "required_return_files": [
+    "autonomous_icm_evolution_policy_report_7301A7400Z.md",
+    "project_scoped_durable_write_envelope_schema_7301A7400Z.json",
+    "project_scoped_durable_write_receipt_schema_7301A7400Z.json",
+    "ups_accept_operator_memory_write_report_7301A7400Z.md",
+    "evidence_weak_user_positive_no_write_report_7301A7400Z.md",
+    "negative_transfer_quarantine_report_7301A7400Z.md",
+    "evolution_ledger_report_7301A7400Z.md",
+    "project_scoped_icm_store_inventory_7301A7400Z.csv",
+    "rollback_replay_report_7301A7400Z.md",
+    "kernel_ownership_report_7301A7400Z.md",
+    "llm_advisory_only_report_7301A7400Z.md",
+    "harness_toolbridge_execution_report_7301A7400Z.md",
+    "human_posthoc_report_7301A7400Z.md",
+    "forbidden_claims_check_7301A7400Z.md",
+    "pytest_report_7301A7400Z.md",
+    "raw_budget_report_7301A7400Z.md",
+    "pm_ready_final_verdict_7301A7400Z.md",
+    "hash_inventory_7301A7400Z.csv",
+    "return_files_manifest_7301A7400Z.json"
+  ]
+}

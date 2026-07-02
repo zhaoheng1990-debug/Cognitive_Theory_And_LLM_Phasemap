@@ -1,0 +1,125 @@
+{
+  "room": "AgentOS_CoreSlim_ProblemSpaceBaselinePendingClosureLongRun_7001A7200Z",
+  "version": "v0.2",
+  "created_at": "2026-07-02T18:33:35.709235Z",
+  "verdict": "PASS_WITH_DEFERRED_ITEMS",
+  "package_name": "AgentOS_CoreSlim_ProblemSpaceBaselinePendingClosureLongRun_7001A7200Z_Return_Pack_v0_2.zip",
+  "pending_inventory_count": 3,
+  "pending_inventory_coverage_percent": 100,
+  "closure_action_count": 3,
+  "icm_decision_count": 3,
+  "receipt_count": 3,
+  "replay_pass_count": 3,
+  "rollback_replay_count": 1,
+  "required_files_present": true,
+  "files": [
+    {
+      "file": "pending_item_inventory_7001A7200Z.csv",
+      "present": true,
+      "size_bytes": 1659,
+      "sha256": "2257598c879f36dbecc83d7ec275ca92d9547fd3442bd684cec3fae990b0216b"
+    },
+    {
+      "file": "pending_item_sro_report_7001A7200Z.md",
+      "present": true,
+      "size_bytes": 2316,
+      "sha256": "6d5a93b4dad2b36617c64cab219e3b62d7218108e47d2014904370437bd28a28"
+    },
+    {
+      "file": "pending_closure_action_ledger_7001A7200Z.csv",
+      "present": true,
+      "size_bytes": 1459,
+      "sha256": "9bec172674fe3bdc798b59b1a81dfffbf84135735579b809d13ebc4bff7e7180"
+    },
+    {
+      "file": "icm_metabolism_policy_decision_ledger_7001A7200Z.csv",
+      "present": true,
+      "size_bytes": 1252,
+      "sha256": "c0b00dd1c8e0bd5ad85668c5bf5f81fa03fbe50f25ec0f7ee6f4b858732e6106"
+    },
+    {
+      "file": "controlled_write_no_write_receipt_bundle_7001A7200Z.zip",
+      "present": true,
+      "size_bytes": 2720,
+      "sha256": "cd781a9a688157e5a4b838e2990d10945d6680187bff806143a54b061bbe7680"
+    },
+    {
+      "file": "cbit_accounting_by_pending_family_7001A7200Z.md",
+      "present": true,
+      "size_bytes": 741,
+      "sha256": "a88ebc4688251f1283da87eccc095fc835a5e413ddfc2bc94556423b1d8dd69e"
+    },
+    {
+      "file": "negative_route_carryover_report_7001A7200Z.md",
+      "present": true,
+      "size_bytes": 464,
+      "sha256": "dfe84545e7ccf881e6fbb46c20b4a281db570d59fbcbf2e7dd573935c322281a"
+    },
+    {
+      "file": "expiration_deprecation_report_7001A7200Z.md",
+      "present": true,
+      "size_bytes": 347,
+      "sha256": "da02a107e7f941d6e2b3a8d20e777c00b7864ac76367f30eec22022d3261ca0a"
+    },
+    {
+      "file": "merge_split_scope_report_7001A7200Z.md",
+      "present": true,
+      "size_bytes": 430,
+      "sha256": "9ad57bb6f1d04cc14502fb95d71127ada592d185faafa0b8f1c3393e11aa7abe"
+    },
+    {
+      "file": "validation_seed_route_report_7001A7200Z.md",
+      "present": true,
+      "size_bytes": 582,
+      "sha256": "7493ce3e439a4912d7fafc5bfb5862ff265a81241440a130316eafe8fb92523c"
+    },
+    {
+      "file": "replay_consistency_report_7001A7200Z.md",
+      "present": true,
+      "size_bytes": 535,
+      "sha256": "0ada6de02f56f896307abd3f5899d0601989123acc3d585495bfe687ad0f5ff7"
+    },
+    {
+      "file": "rollback_replay_report_7001A7200Z.md",
+      "present": true,
+      "size_bytes": 450,
+      "sha256": "8e7f4becadcbdc5b1d7f3f627c9c3109a5dc8343e9eadaa99775183441f92bea"
+    },
+    {
+      "file": "raw_budget_report_7001A7200Z.md",
+      "present": true,
+      "size_bytes": 620,
+      "sha256": "169692ed63bee9dc725955521927be4b28209085b9f25bbe7da4e3efcde0566e"
+    },
+    {
+      "file": "forbidden_claims_check_7001A7200Z.md",
+      "present": true,
+      "size_bytes": 608,
+      "sha256": "1f3395c12cdc7216026a7f437404d6a7ab7aa47c01ff1dd5e727ae646a8748e7"
+    },
+    {
+      "file": "human_problemspace_closure_report_packet_7001A7200Z.md",
+      "present": true,
+      "size_bytes": 1265,
+      "sha256": "ea4c8a34cae787c3f10df70d0d37aa550c10609d70106c5ed12fa531e142c1b9"
+    },
+    {
+      "file": "pm_ready_final_verdict_7001A7200Z.md",
+      "present": true,
+      "size_bytes": 743,
+      "sha256": "f33125bed6e855d8785e05913ed8293bd32ad45caf69c888e6629dc3f2a2b5a2"
+    },
+    {
+      "file": "hash_inventory_7001A7200Z.csv",
+      "present": true,
+      "size_bytes": 2045,
+      "sha256": "ca6eccb57bbd1283d82a5beb1a85cb9f54a499a481bcfeb3c49a69cd4ca5917e"
+    },
+    {
+      "file": "return_files_manifest_7001A7200Z.json",
+      "present": true,
+      "size_bytes": 4354,
+      "sha256": "a5d23d0c69779a6fb3900c46bc6ef3c24be65a4ba14efbd1ee45fa9694befaa2"
+    }
+  ]
+}

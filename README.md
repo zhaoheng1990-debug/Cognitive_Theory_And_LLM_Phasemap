@@ -1,185 +1,111 @@
-# Cognitive Theory and LLM PhaseMap
+# AgentOS CoreSlim Base / AgentOS CoreSlim 基座
 
-This repository documents an independent research program on **Cognitive Theory** and **LLM PhaseMap**, aiming to study cognition, memory, reasoning, hallucination, and controllable trajectory dynamics in large language models.
+## English
 
-The central hypothesis is that cognition can be modeled as **effective compression of a possibility space under constraint fields**.
+AgentOS CoreSlim is a lightweight, governance-first runtime base for cross-project AgentOS work. This branch preserves a clean base-maintenance line separated from research self-evolution outputs.
 
-In this framework, an LLM is not treated merely as a text generator, but as a dynamical cognitive system whose internal trajectories evolve over a learned semantic / relational manifold.
+This repository currently packages the CoreSlim kernel primitives, tests, configuration templates, seed packs, project baselines, and local validation artifacts needed to bootstrap downstream AgentOS projects.
 
----
+### Current Status
 
-## Core Research Directions
+- Status: base-maintenance candidate for review
+- Branch: `AgentOS`
+- Scope: CoreSlim infrastructure, bounded kernel policies, candidate-only evolution flows, tests, and handoff materials
+- Not included: production deployment, global registry activation, official theory-baseline mutation, or AGI achievement claims
 
-This project currently focuses on four connected research layers.
+### Core Capabilities
 
-### 1. Cognitive Theory
+- Bounded Codex tool bridge for local execution under kernel authorization
+- Project-scoped autonomous ICM evolution policy with rollback/replay metadata
+- Baseline evolution proposal protocol for human-authorized promotion review
+- DomainObjectModeler role for candidate-only domain object model evolution
+- Synthetic boundary tests for permission, schema, registry, promotion, and evidence constraints
 
-Cognition is modeled as a coupled structure:
+### Repository Layout
 
-`Pc = (Omega_c, F_c)`
+```text
+agentos_core_slim_v0/   CoreSlim kernel code and tests
+configs/                Local configuration templates
+project_baselines/      Project baseline pointers and notes
+scripts/                Historical and validation runner scripts
+seedpacks/              PM seed packs and patch handoff materials
+outputs/                Return packs, validation reports, and release-size checks
+_incoming/              Received seed packs awaiting or documenting integration
+```
 
-where:
+### Validation
 
-* `Omega_c` is the possibility space.
-* `F_c` is the constraint field.
-* Cognitive progress is measured by effective structural compression.
-* The basic unit of cognitive compression is called `Cbit`.
+The current local validation passed:
 
-In short:
+```text
+pytest -q agentos_core_slim_v0/tests
+28 passed
 
-`Cognition = effective compression of possibility space under constraint fields`
+python -m compileall -q agentos_core_slim_v0
+passed
+```
 
----
+### Release Boundary
 
-### 2. LLM PhaseMap
+This branch is suitable as an internal base-maintenance candidate. Before a formal public release, add or review:
 
-LLM PhaseMap studies how language models move from prompt-induced candidate trajectories toward dominant closure trajectories.
+- license policy
+- CI workflow
+- package metadata
+- release tags
+- signed pointer approval
 
-Key objects include:
+## 中文
 
-* `Delta U`: trajectory advantage observable
-* `O_l_cont`: continuous trajectory advantage flow
-* `B_m`: model-specific competition band
-* `gamma_i`: candidate closure trajectory
-* `gamma_star`: dominant trajectory
-* structured residual dynamics
+AgentOS CoreSlim 是一个轻量级、以治理边界优先的跨项目 AgentOS 运行时基座。本分支保存的是干净的 base-maintenance 线，与 research-AgentOS self-evolution 输出明确隔离。
 
-A simplified process is:
+当前仓库打包了 CoreSlim 内核原语、测试、配置模板、seed pack、项目基线和本地验证材料，可用于下游 AgentOS 项目的启动与基座复用。
 
-`Prompt -> candidate trajectories -> trajectory advantage -> competition band -> dominant trajectory -> answer`
+### 当前状态
 
----
+- 状态：基座维护候选版本，等待 PM / human review
+- 分支：`AgentOS`
+- 范围：CoreSlim 基础设施、有界内核策略、candidate-only 演化流、测试与交接材料
+- 不包含：生产部署、全局 registry 激活、官方理论基线写入、AGI 达成声明
 
-### 3. Semantic / Cognitive Manifold Hypothesis
+### 核心能力
 
-The model vocabulary projection space is treated as a learned semantic / relational manifold:
+- 在 AgentOSKernel 授权下运行的本地有界 Codex tool bridge
+- 带 rollback / replay 元数据的项目内 ICM 演化策略
+- 面向人工授权提升的 baseline evolution proposal protocol
+- `DomainObjectModeler` 角色，用于 candidate-only 的领域对象模型演化
+- 覆盖权限、schema、registry、promotion、evidence 边界的合成测试
 
-`W_m = M_m`
+### 仓库结构
 
-where:
+```text
+agentos_core_slim_v0/   CoreSlim 内核代码与测试
+configs/                本地配置模板
+project_baselines/      项目基线指针与说明
+scripts/                历史 runner 与验证脚本
+seedpacks/              PM seed pack 与 patch 交接材料
+outputs/                return pack、验证报告和体量检查
+_incoming/              已接收的 seed pack 与集成记录
+```
 
-* `W_m` is the model-specific vocabulary projection geometry.
-* `M_m` is the semantic / relational manifold induced by training.
-* Prompt inputs act as seed carriers.
-* A prompt induces an initial semantic position and direction spectrum.
+### 验证结果
 
-A simplified chain is:
+当前本地验证已通过：
 
-`Prompt -> Seed -> (x0, Sigma0) -> local readback geometry -> candidate trajectories`
+```text
+pytest -q agentos_core_slim_v0/tests
+28 passed
 
----
+python -m compileall -q agentos_core_slim_v0
+passed
+```
 
-### 4. Memory, Operators, and Control
+### 发布边界
 
-Long-term memory is not treated as stored prompt text.
+本分支适合作为内部基座维护候选版本。正式公开 release 前，建议补齐或复核：
 
-Instead, memory is modeled as internal trajectory geometry and reusable operator structure.
-
-Important objects include:
-
-* `MemoryUnit`
-* `SeedAnchor`
-* `ExpansionMap`
-* `OperatorRoutingMap`
-* `OperatorMemory`
-* `PolicyMemory`
-* `StructuralResolutionOperator`
-
-The project also studies trajectory-level control, wrong-closure auditing, and closed-loop steering of internal trajectory advantage.
-
----
-
-## Important Methodological Position
-
-This repository strictly distinguishes:
-
-`ontology != observable != proxy`
-
-For example, TopK token sets are no longer treated as semantic neighborhoods themselves.
-
-Instead, they are treated as **PSG-corrected vocabulary readback observables**.
-
-That means:
-
-* TopK is useful.
-* TopK can preserve hidden-state geometry.
-* TopK can support downstream dynamical analysis.
-* But TopK is not the semantic neighborhood itself.
-* TopK is not direct proof of hidden semantic ontology.
-
-A safer formulation is:
-
-`TopK = PSG-corrected vocabulary readback observable`
-
-or:
-
-`TopK = vocabulary-projected readback section of local semantic geometry`
-
-This distinction is central to the project.
-
-Useful observables must be calibrated, audited, and separated from the theoretical objects they approximate.
-
----
-
-## Current Status
-
-This repository is an evolving research archive.
-
-It includes theoretical notes, experiment designs, audit protocols, empirical summaries, and code related to:
-
-* Cognitive Theory
-* LLM PhaseMap
-* Cbit and cognitive compression
-* PSG-corrected readback observables
-* Semantic manifold and near-geodesic trajectory competition
-* SEM long-term memory experiments
-* ASA trajectory-level steering and control
-* Structural resolution and audited reuse
-* Wrong-closure and hallucination auditing
-* Cognitive theory applications beyond LLMs
-
-The goal is not to present a finished theory.
-
-The goal is to build a reproducible and self-correcting research path toward a mathematical theory of cognitive systems and mechanistic LLM dynamics.
-
----
-
-## Research Principle
-
-A guiding rule of this project is:
-
-`Delta Cbit_eff_new > Cost_complexity_new`
-
-New concepts, variables, operators, or experiments are only valuable if they produce positive effective compression of the research possibility space.
-
-When additional complexity no longer yields Cbit gain, the framework must be audited, simplified, or rolled back.
-
-In this sense, the project treats theory-building itself as a cognitive process.
-
----
-
-## Repository Philosophy
-
-This project follows four methodological principles:
-
-1. **Object First**
-   Define the research object before defining metrics.
-
-2. **Observable Calibration**
-   Separate the theoretical object from the observable and from the proxy.
-
-3. **Cbit-Gain Audit**
-   New theoretical additions must reduce the effective possibility space more than they increase complexity.
-
-4. **Theory Retraction as Progress**
-   A theory is allowed, and expected, to downgrade its own claims when better audits reveal that an observable was over-interpreted.
-
----
-
-## Disclaimer
-
-This repository represents an ongoing independent research program.
-
-The terminology, theory, and experiments are actively evolving.
-
-Some claims are established within the project evidence chain, while others remain hypotheses, proposed research directions, or pending validations.
+- license 策略
+- CI workflow
+- Python package 元数据
+- release tag
+- 经签署/确认的 pointer approval

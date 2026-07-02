@@ -1,0 +1,111 @@
+{
+  "all_required_files_present": true,
+  "created_at": "2026-07-02T19:50:58.454502+00:00",
+  "files": [
+    {
+      "bytes": 3069,
+      "relative_path": "baseline_update_proposal_schema_7501A7600Z.json",
+      "sha256": "0e44f8cc31a26837e27f9db378380dbc214b435b9ab86dddbd965296a5923e7e"
+    },
+    {
+      "bytes": 868,
+      "relative_path": "proposal_eligibility_policy_report_7501A7600Z.md",
+      "sha256": "9751038e8250ce9f77918b469aa2715cedb49d39e91f4c6341f04ef84aa6c5f6"
+    },
+    {
+      "bytes": 779,
+      "relative_path": "periodic_baseline_review_state_machine_7501A7600Z.md",
+      "sha256": "0545e3a95e600122921a351e01ab48b5ec9ce144856ddd21d42b58eab02e11b6"
+    },
+    {
+      "bytes": 793,
+      "relative_path": "proposal_queue_behavior_report_7501A7600Z.md",
+      "sha256": "aca1f137e9d50ec3f41216be0a60c9362d9d8ca596c651e6ffdeb1ad1a387c46"
+    },
+    {
+      "bytes": 853,
+      "relative_path": "human_review_packet_template_7501A7600Z.md",
+      "sha256": "bfd2df575d233e89cb6962c366d554250b354bd8c45336e5a8f790113cccb265"
+    },
+    {
+      "bytes": 1994,
+      "relative_path": "ups_baseline_update_proposal_test_report_7501A7600Z.md",
+      "sha256": "9edd903a2269499b965b6c0f2064bfcd486852ff60f96f8faacb75421aedb5b4"
+    },
+    {
+      "bytes": 399,
+      "relative_path": "insufficient_evidence_no_proposal_report_7501A7600Z.md",
+      "sha256": "396c98fe3a0bad5345b5e4d9525de79aa798d4af338c542daf9d688b039d9ac0"
+    },
+    {
+      "bytes": 350,
+      "relative_path": "negative_transfer_defer_quarantine_report_7501A7600Z.md",
+      "sha256": "2aeed537ffb2b8d00c94cd9be41ac737bdc061c0e95e6b2a55a6d039c2c5b8db"
+    },
+    {
+      "bytes": 343,
+      "relative_path": "baseline_conflict_review_route_report_7501A7600Z.md",
+      "sha256": "adf12c132bc196eb32cc16fa4191d10f0a8b679d423410be9ea0904291cf4357"
+    },
+    {
+      "bytes": 444,
+      "relative_path": "signed_authorization_required_report_7501A7600Z.md",
+      "sha256": "80703cd0fa02fa99d0d937e35f66d50802c4b69c49e2a2c1d08861822aeb1c60"
+    },
+    {
+      "bytes": 433,
+      "relative_path": "forbidden_claims_check_7501A7600Z.md",
+      "sha256": "243d03f274ff97cf1df1f9d5f18c23a23914f5758551bbb26fb569626227b731"
+    },
+    {
+      "bytes": 1339,
+      "relative_path": "pm_ready_final_verdict_7501A7600Z.md",
+      "sha256": "e9453b0cb37771a70f18d7db3905cd0b919b8dcf76766e4d521158b9b6e3410e"
+    },
+    {
+      "bytes": 1561,
+      "relative_path": "hash_inventory_7501A7600Z.csv",
+      "sha256": "0a67dd5bcdaab4258a1cf53e7c923f54b8f4b07c7a58945404106e1d266531d4"
+    },
+    {
+      "bytes": 4686,
+      "relative_path": "return_files_manifest_7501A7600Z.json",
+      "sha256": "971375842b549c1719ad4b598be3664444beef6ee5d8b879ae5b1859348d7d2a"
+    }
+  ],
+  "pack_name": "AgentOS_CoreSlim_BaselineEvolutionProposalProtocol_7501A7600Z_Return_Pack_v0_2.zip",
+  "required_files_present": {
+    "baseline_conflict_review_route_report_7501A7600Z.md": true,
+    "baseline_update_proposal_schema_7501A7600Z.json": true,
+    "forbidden_claims_check_7501A7600Z.md": true,
+    "hash_inventory_7501A7600Z.csv": true,
+    "human_review_packet_template_7501A7600Z.md": true,
+    "insufficient_evidence_no_proposal_report_7501A7600Z.md": true,
+    "negative_transfer_defer_quarantine_report_7501A7600Z.md": true,
+    "periodic_baseline_review_state_machine_7501A7600Z.md": true,
+    "pm_ready_final_verdict_7501A7600Z.md": true,
+    "proposal_eligibility_policy_report_7501A7600Z.md": true,
+    "proposal_queue_behavior_report_7501A7600Z.md": true,
+    "return_files_manifest_7501A7600Z.json": true,
+    "signed_authorization_required_report_7501A7600Z.md": true,
+    "ups_baseline_update_proposal_test_report_7501A7600Z.md": true
+  },
+  "required_return_files": [
+    "baseline_update_proposal_schema_7501A7600Z.json",
+    "proposal_eligibility_policy_report_7501A7600Z.md",
+    "periodic_baseline_review_state_machine_7501A7600Z.md",
+    "proposal_queue_behavior_report_7501A7600Z.md",
+    "human_review_packet_template_7501A7600Z.md",
+    "ups_baseline_update_proposal_test_report_7501A7600Z.md",
+    "insufficient_evidence_no_proposal_report_7501A7600Z.md",
+    "negative_transfer_defer_quarantine_report_7501A7600Z.md",
+    "baseline_conflict_review_route_report_7501A7600Z.md",
+    "signed_authorization_required_report_7501A7600Z.md",
+    "forbidden_claims_check_7501A7600Z.md",
+    "pm_ready_final_verdict_7501A7600Z.md",
+    "hash_inventory_7501A7600Z.csv",
+    "return_files_manifest_7501A7600Z.json"
+  ],
+  "verdict": "PASS_BASELINE_EVOLUTION_PROPOSAL_PROTOCOL",
+  "version": "v0.2"
+}

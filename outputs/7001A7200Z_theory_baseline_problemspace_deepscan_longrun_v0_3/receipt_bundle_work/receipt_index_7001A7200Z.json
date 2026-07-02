@@ -1,0 +1,212 @@
+[
+  {
+    "artifact": "no_write_receipts/PS-LM1_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-LM1",
+    "receipt_type": "no_write",
+    "sha256": "6cd5381ccc4232bb7df0000131ced1a3bb34c788e5b2327c95761eebb93c8a14"
+  },
+  {
+    "artifact": "controlled_sandbox/PS-LM2_validation_seed_candidate.json",
+    "boundary": "candidate-only validation seed; no baseline write",
+    "candidate_id": "PS-LM2",
+    "receipt_type": "controlled_local_sandbox_write",
+    "sha256": "cd527ddc3fc3b6c1407ccf35af503d281ff64500ddcd492f68439091193ced5f"
+  },
+  {
+    "artifact": "no_write_receipts/PS-LM3_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-LM3",
+    "receipt_type": "no_write",
+    "sha256": "8181dbf8290cb38aafe16a53af41b7b0e22390b4aa465ce70359d2c8ab915a6d"
+  },
+  {
+    "artifact": "no_write_receipts/PS-CO1_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-CO1",
+    "receipt_type": "no_write",
+    "sha256": "fa02329fd52b25d94d98eb82de30c62db0671929d4020fd7dbf5368bc5c7cedd"
+  },
+  {
+    "artifact": "no_write_receipts/PS-CO2_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-CO2",
+    "receipt_type": "no_write",
+    "sha256": "176de493ca603e3841b3d3fcb7b4c4a98914831d57a93f4ecb76b18c44c5311b"
+  },
+  {
+    "artifact": "no_write_receipts/PS-CO3_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-CO3",
+    "receipt_type": "no_write",
+    "sha256": "7dba88298f9cbb2b24ae7b98ab02604df21872ef1da57fee194bc8a92bee02ab"
+  },
+  {
+    "artifact": "controlled_sandbox/PS-CO4_validation_seed_candidate.json",
+    "boundary": "candidate-only validation seed; no baseline write",
+    "candidate_id": "PS-CO4",
+    "receipt_type": "controlled_local_sandbox_write",
+    "sha256": "2504f53373e5652e37dd116c1885ef972e844d46a731c2dab2f49720f1caf9b3"
+  },
+  {
+    "artifact": "no_write_receipts/PS-LLM1_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-LLM1",
+    "receipt_type": "no_write",
+    "sha256": "8a57dc79646b8767b14663da6d6e47f1e3ef46a03d912de6b92b681248ad5a80"
+  },
+  {
+    "artifact": "no_write_receipts/PS-LLM2_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-LLM2",
+    "receipt_type": "no_write",
+    "sha256": "27e9e37b2def1fa3443e9607bf1b14d37b5de84be5ef84a66b8a5ab6861b9d65"
+  },
+  {
+    "artifact": "no_write_receipts/PS-LLM3_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-LLM3",
+    "receipt_type": "no_write",
+    "sha256": "4d68212469d96569a4f00120865fbce8a9cd19821aab5e06a25b579489e6bb36"
+  },
+  {
+    "artifact": "no_write_receipts/PS-LLM4_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-LLM4",
+    "receipt_type": "no_write",
+    "sha256": "377609552e016e8f23f793a2aa21a3175975bd1ee48724b4f646b81f21bd0acd"
+  },
+  {
+    "artifact": "no_write_receipts/PS-LLM5_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-LLM5",
+    "receipt_type": "no_write",
+    "sha256": "808160f8a80ea9660f1cfc2f8dd40e1b15a4711d371c6987565a8dcb8848e0d8"
+  },
+  {
+    "artifact": "controlled_sandbox/PS-SEM1_validation_seed_candidate.json",
+    "boundary": "candidate-only validation seed; no baseline write",
+    "candidate_id": "PS-SEM1",
+    "receipt_type": "controlled_local_sandbox_write",
+    "sha256": "814d31f83e3ac378d9dd99a9aebcfa7fc2b745c0bb97abd274b30075f9f2d98f"
+  },
+  {
+    "artifact": "controlled_sandbox/PS-SEM2_validation_seed_candidate.json",
+    "boundary": "candidate-only validation seed; no baseline write",
+    "candidate_id": "PS-SEM2",
+    "receipt_type": "controlled_local_sandbox_write",
+    "sha256": "df217bd7fe9dc79d587fe23a3aaaada8553489c8736252e1e9c25525dd7b85e2"
+  },
+  {
+    "artifact": "controlled_sandbox/PS-SEM3_validation_seed_candidate.json",
+    "boundary": "candidate-only validation seed; no baseline write",
+    "candidate_id": "PS-SEM3",
+    "receipt_type": "controlled_local_sandbox_write",
+    "sha256": "0cfdddae6091460575b7823a8c2e21aeab3aeab678e43842c9eddd567fa108cf"
+  },
+  {
+    "artifact": "no_write_receipts/PS-SEM4_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-SEM4",
+    "receipt_type": "no_write",
+    "sha256": "e47dc4e0edf3921122169e08a5c3c9c23b590c7975764c733a3f4adbdea624d9"
+  },
+  {
+    "artifact": "no_write_receipts/PS-CTRL1_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-CTRL1",
+    "receipt_type": "no_write",
+    "sha256": "d5fad57ab3d092b6e97e1ad4937bd4a2e1a342508833bc51662cbf3d259e9783"
+  },
+  {
+    "artifact": "controlled_sandbox/PS-CTRL2_validation_seed_candidate.json",
+    "boundary": "candidate-only validation seed; no baseline write",
+    "candidate_id": "PS-CTRL2",
+    "receipt_type": "controlled_local_sandbox_write",
+    "sha256": "ccf839c31a06d142956302af680c8bdd57c94a4b04005bda44075215a5f5cac2"
+  },
+  {
+    "artifact": "controlled_sandbox/PS-HPM1_validation_seed_candidate.json",
+    "boundary": "candidate-only validation seed; no baseline write",
+    "candidate_id": "PS-HPM1",
+    "receipt_type": "controlled_local_sandbox_write",
+    "sha256": "756fcf67b71501e4185f672bce88e1f0e5648bb361c428f521f731397c469a66"
+  },
+  {
+    "artifact": "no_write_receipts/PS-HPM2_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-HPM2",
+    "receipt_type": "no_write",
+    "sha256": "c1626e9b32871c5a8ddb52daca2afa818b119b871c29b23f254e745b938315a8"
+  },
+  {
+    "artifact": "controlled_sandbox/PS-AOS1_validation_seed_candidate.json",
+    "boundary": "candidate-only validation seed; no baseline write",
+    "candidate_id": "PS-AOS1",
+    "receipt_type": "controlled_local_sandbox_write",
+    "sha256": "6d3d9c7b1631c3ae6f8e9236d6fbbf128acef7a9a7faccd0abdbe59ce766f777"
+  },
+  {
+    "artifact": "no_write_receipts/PS-AOS2_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-AOS2",
+    "receipt_type": "no_write",
+    "sha256": "f3c8ca2de4719f18e5023bd88a06c0b8b6699c2412224177234b50ce32b3addb"
+  },
+  {
+    "artifact": "controlled_sandbox/PS-AOS3_validation_seed_candidate.json",
+    "boundary": "candidate-only validation seed; no baseline write",
+    "candidate_id": "PS-AOS3",
+    "receipt_type": "controlled_local_sandbox_write",
+    "sha256": "021015022e4d1bdcf58ba780cfe5820b2f79338f6ba68558e87e6ce6157025c0"
+  },
+  {
+    "artifact": "no_write_receipts/PS-AOS4_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-AOS4",
+    "receipt_type": "no_write",
+    "sha256": "dc8c6d9fd5e1b00b4ffb8c146f93330ae904f470149b7826501b4ca9beea2c89"
+  },
+  {
+    "artifact": "controlled_sandbox/PS-KPIH1_validation_seed_candidate.json",
+    "boundary": "candidate-only validation seed; no baseline write",
+    "candidate_id": "PS-KPIH1",
+    "receipt_type": "controlled_local_sandbox_write",
+    "sha256": "9ed061e515a22c8120691cb63ab4972a4305b7e32aa8446e175311424e7271d8"
+  },
+  {
+    "artifact": "no_write_receipts/PS-SIMON1_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-SIMON1",
+    "receipt_type": "no_write",
+    "sha256": "1c5d23534d149c3f8f79accf5255e7bcafe662839e3d85e43b013b0f56dbe5ee"
+  },
+  {
+    "artifact": "no_write_receipts/PS-EDU1_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-EDU1",
+    "receipt_type": "no_write",
+    "sha256": "620a4dbda969612e8325300d55e5270d481ff7cae7fd8b89f8018b07976d8403"
+  },
+  {
+    "artifact": "no_write_receipts/PS-ROBOT1_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-ROBOT1",
+    "receipt_type": "no_write",
+    "sha256": "174c28548742122e465b7fb63cc046bf8e96ecebc2b53a2f420c608884f571c9"
+  },
+  {
+    "artifact": "no_write_receipts/PS-ENT1_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-ENT1",
+    "receipt_type": "no_write",
+    "sha256": "8d5148814ecc9a1567cc8e556b48476c4fb428fc0131663bee9aee29437277c4"
+  },
+  {
+    "artifact": "no_write_receipts/PS-BCI1_no_write_receipt.json",
+    "boundary": "no write beyond receipt",
+    "candidate_id": "PS-BCI1",
+    "receipt_type": "no_write",
+    "sha256": "4dd8c54f43fe1d82de06f096b3ec5c7fef33c4e74dd82e314f58a90f6b67436d"
+  }
+]

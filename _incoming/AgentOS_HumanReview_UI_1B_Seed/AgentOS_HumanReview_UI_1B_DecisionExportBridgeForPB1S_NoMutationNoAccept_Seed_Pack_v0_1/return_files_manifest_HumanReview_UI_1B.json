@@ -1,0 +1,25 @@
+{
+  "required_return_pack_name": "AgentOS_HumanReview_UI_1B_DecisionExportBridgeForPB1S_NoMutationNoAccept_Return_Pack_v0_1.zip",
+  "required_files": [
+    "README.md",
+    "human_review_ui_1b_summary.md",
+    "review_surface_export_bridge.html",
+    "human_review_object_schema.json",
+    "pb_retention_review_fixture.json",
+    "pb1s_decision_schema.json",
+    "exported_pb1s_decision_example.json",
+    "exported_pb1s_decision_example.csv",
+    "decision_export_validation_report.md",
+    "ui_to_pb1s_mapping_report.md",
+    "usability_checklist.md",
+    "no_csv_first_review_audit.md",
+    "no_mutation_audit.md",
+    "no_accept_no_promotion_audit.md",
+    "accessibility_notes.md",
+    "render_notes.md",
+    "isolated_replay_report.md",
+    "tests_summary.md",
+    "return_files_manifest_v0_1.json",
+    "command_replay_log.md"
+  ]
+}

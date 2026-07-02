@@ -1,0 +1,18 @@
+﻿{
+    "pointer_type":  "AgentOSBaseMaintenanceRollbackPointer",
+    "pointer_version":  "v0_1",
+    "status":  "ACTIVE_ROLLBACK_SOURCE",
+    "generated_at":  "2026-07-03T05:34:14.9774948+08:00",
+    "line":  "AgentOS_CoreSlim_BaseMaintenance_0001A0100Z_CleanCloneRestoreSmoke",
+    "rollback_to_backup_zip":  "C:\\Users\\ZH\\Desktop\\AGI\\BKP\\AGOS_PreSelfEvolution_20260703_035535.zip",
+    "rollback_to_backup_zip_sha256":  "5eb45072c1d90c75b6793902000c9ae5a5f68bf0b5e15f7f86aaab7cdb26304a",
+    "rollback_restore_source":  "D:\\Logos_AgentOS_base_maintenance\\_restore_source\\AGOS_PreSelfEvolution_20260703_035535",
+    "rollback_workspace_snapshot":  "D:\\Logos_AgentOS_base_maintenance\\_restore_source\\AGOS_PreSelfEvolution_20260703_035535\\workspace_snapshot",
+    "rollback_instruction":  "Restore workspace files from rollback_workspace_snapshot only; do not restore theory_baseline_snapshot unless explicitly authorized by PM/human baseline rollback authorization.",
+    "protected_boundaries":  {
+                                 "preserve_backup_zip_read_only":  true,
+                                 "preserve_restore_source":  true,
+                                 "no_theory_baseline_restore_without_authorization":  true,
+                                 "no_research_line_merge_without_pm_sync_seed":  true
+                             }
+}

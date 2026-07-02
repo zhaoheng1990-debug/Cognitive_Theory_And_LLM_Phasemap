@@ -1,0 +1,108 @@
+{
+  "room": "AgentOS_CoreSlim_ProductizationDevRCRunCommandPatch_6901A7000Z",
+  "verdict": "PASS_PRODUCTIZATION_DEV_RC_RUN_COMMAND_PATCH_AND_FREEZE",
+  "created_at": "2026-07-02T17:52:06.055116Z",
+  "package_name": "AgentOS_CoreSlim_ProductizationDevRCRunCommandPatch_6901A7000Z_Return_Pack_v0_1.zip",
+  "required_files_present": true,
+  "required_file_count": 16,
+  "files": [
+    {
+      "file": "run_command_patch_report_6901A7000Z.md",
+      "size_bytes": 1201,
+      "sha256": "0219c038f3d926d9db2417247420ba9809b65e0e3ea7e71c5de89301652dd93f",
+      "present": true
+    },
+    {
+      "file": "standalone_clean_extract_pytest_report_6901A7000Z.md",
+      "size_bytes": 310,
+      "sha256": "ba9b05c1917f1615b35199bdeb758aeab51cd2664f5272ba5c71185aaa6f6302",
+      "present": true
+    },
+    {
+      "file": "standalone_clean_extract_smoke_report_6901A7000Z.md",
+      "size_bytes": 697,
+      "sha256": "3c50ac19c2c0720d5ba47381dc04a590e9403f81bf81c915d2ce9a4ac9cf7b40",
+      "present": true
+    },
+    {
+      "file": "productization_dev_rc_freeze_report_6901A7000Z.md",
+      "size_bytes": 1006,
+      "sha256": "352ceb42b880fcce10c8c91e4543b9075dd190ebf7d21b69264c37f868165348",
+      "present": true
+    },
+    {
+      "file": "external_preflight_integration_report_6901A7000Z.md",
+      "size_bytes": 608,
+      "sha256": "8dfc8e4d8ca18a8065984c55aea32aa0861ee95c71bf81acf6a076888a2860d4",
+      "present": true
+    },
+    {
+      "file": "replay_truthfulness_dev_rc_matrix_6901A7000Z.md",
+      "size_bytes": 599,
+      "sha256": "75715576fa411c89b5e0df2bc02bedfb00b5b4481b5837093ef28bec90ee8d03",
+      "present": true
+    },
+    {
+      "file": "kernel_harness_boundary_freeze_report_6901A7000Z.md",
+      "size_bytes": 491,
+      "sha256": "616e6ec0bd3b9a7e93ab6c40ecf44672fcbaf588e4840daf9c675cc384fc1326",
+      "present": true
+    },
+    {
+      "file": "known_caveats_forbidden_claims_6901A7000Z.md",
+      "size_bytes": 665,
+      "sha256": "74d4e78373718517345be3178957976e22feaff18ece138ecaf65b1b021c5386",
+      "present": true
+    },
+    {
+      "file": "portable_dev_rc_source_bundle_6901A7000Z.zip",
+      "size_bytes": 10852,
+      "sha256": "a1c5c815b6089555cc46cf10ca8fc04aa8d5abb496ea9623f00770c18c0552ed",
+      "present": true
+    },
+    {
+      "file": "runtime_source_tree_inventory_6901A7000Z.csv",
+      "size_bytes": 1260,
+      "sha256": "4f415f82971a5437c8982b0d23bb2b486b4dec6f0b357a31c3f86bd6babfad62",
+      "present": true
+    },
+    {
+      "file": "hash_inventory_6901A7000Z.csv",
+      "size_bytes": 1832,
+      "sha256": "571405c37c0fd6199df6023c86fc0e70ab1774219ed8b99475827b633ddb7d79",
+      "present": true
+    },
+    {
+      "file": "pack_hygiene_report_6901A7000Z.md",
+      "size_bytes": 684,
+      "sha256": "0682884769c788d6d0933138666988e830095264febd431b192fe0a640f8be2e",
+      "present": true
+    },
+    {
+      "file": "raw_budget_report_6901A7000Z.md",
+      "size_bytes": 427,
+      "sha256": "04f263f56283255d36f204d3dfe043aa3ff4125106a8809688d391f7e6a0ff5b",
+      "present": true
+    },
+    {
+      "file": "bug_report_if_any_6901A7000Z.md",
+      "size_bytes": 783,
+      "sha256": "0595e14015dcb3e84dfe6129d2064a0e213defc39cecc9e1603f573fd93a5dd8",
+      "present": true
+    },
+    {
+      "file": "pm_ready_final_verdict_6901A7000Z.md",
+      "size_bytes": 524,
+      "sha256": "9f3a104f067c35da183fcb3cdf6ca82ed609211fba54292afef7ae65652c9be7",
+      "present": true
+    },
+    {
+      "file": "return_files_manifest_6901A7000Z.json",
+      "size_bytes": 3892,
+      "sha256": "88c6115c3e9b32c8a217aa852bf00f79da1dd0bb4e146b870adc823d0034a0fa",
+      "present": true
+    }
+  ],
+  "documented_pytest_command": "python -m pytest tests -q",
+  "documented_smoke_command": "python -m agentos_core_slim_portable.smoke"
+}

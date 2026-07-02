@@ -1,0 +1,35 @@
+{
+  "contract_name": "AgentOS_ObjectModelPatchCandidate_Contract",
+  "contract_version": "v0_1",
+  "role": "DomainObjectModeler",
+  "patch_candidate_required_fields": [
+    "patch_candidate_id",
+    "kind",
+    "role",
+    "status",
+    "target_scope",
+    "source_access_level",
+    "object_candidates",
+    "relation_candidates",
+    "state_candidates",
+    "lifecycle_delta_candidates",
+    "permission_delta_candidates",
+    "conflict_records",
+    "retention_decisions",
+    "schema_impact",
+    "permission_impact",
+    "lifecycle",
+    "review_required",
+    "accepted_registry_mutation",
+    "production_activation"
+  ],
+  "invariants": [
+    "status must be PENDING",
+    "accepted_registry_mutation must be false",
+    "production_activation must be false",
+    "schema_impact must be present",
+    "every object candidate must contain evidence lineage",
+    "permission-relevant candidates must contain permission impact notes",
+    "confidential/private source cannot target shared/global model without PermissionGovernorReviewedForSharedModel marker"
+  ]
+}

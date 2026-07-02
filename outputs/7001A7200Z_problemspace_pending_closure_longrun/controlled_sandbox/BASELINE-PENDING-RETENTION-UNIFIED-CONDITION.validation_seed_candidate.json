@@ -1,0 +1,8 @@
+{
+  "pending_id": "BASELINE-PENDING-RETENTION-UNIFIED-CONDITION",
+  "title": "Retention unified condition",
+  "closure_action": "PROMOTE_TO_VALIDATION_SEED",
+  "next_test": "Formula candidate with negative-transfer fixtures.",
+  "candidate_only": true,
+  "production_release": false
+}

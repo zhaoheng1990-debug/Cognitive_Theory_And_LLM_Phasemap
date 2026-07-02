@@ -1,0 +1,21 @@
+{
+  "required_files": [
+    "run_command_patch_report_6901A7000Z.md",
+    "standalone_clean_extract_pytest_report_6901A7000Z.md",
+    "standalone_clean_extract_smoke_report_6901A7000Z.md",
+    "productization_dev_rc_freeze_report_6901A7000Z.md",
+    "external_preflight_integration_report_6901A7000Z.md",
+    "replay_truthfulness_dev_rc_matrix_6901A7000Z.md",
+    "kernel_harness_boundary_freeze_report_6901A7000Z.md",
+    "known_caveats_forbidden_claims_6901A7000Z.md",
+    "portable_dev_rc_source_bundle_6901A7000Z.zip",
+    "runtime_source_tree_inventory_6901A7000Z.csv",
+    "hash_inventory_6901A7000Z.csv",
+    "pack_hygiene_report_6901A7000Z.md",
+    "raw_budget_report_6901A7000Z.md",
+    "bug_report_if_any_6901A7000Z.md",
+    "pm_ready_final_verdict_6901A7000Z.md",
+    "return_files_manifest_6901A7000Z.json"
+  ],
+  "package_name": "AgentOS_CoreSlim_ProductizationDevRCRunCommandPatch_6901A7000Z_Return_Pack_v0_1.zip"
+}

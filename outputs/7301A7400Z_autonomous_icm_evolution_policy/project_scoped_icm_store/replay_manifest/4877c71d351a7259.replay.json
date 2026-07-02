@@ -1,0 +1,12 @@
+{
+  "accept_decision_ref": "UPS_ACCEPTDecisionRecord",
+  "evidence_refs": [
+    "SR_series",
+    "UPS_validation",
+    "reuse_gain_records",
+    "negative_transfer_audit"
+  ],
+  "sha256_after": "8e8cc3ec681c1eb845c9b3d4f32b12a0c029ae230727c71ad9c3417883a46242",
+  "target_path": "C:\\Users\\ZH\\Documents\\Logos-AgentOS\\outputs\\7301A7400Z_autonomous_icm_evolution_policy\\project_scoped_icm_store\\operator_memory\\ups_rollback_demo.json",
+  "write_id": "evo-ups_rollback_demo-autonomous_project_operatormemory_write"
+}

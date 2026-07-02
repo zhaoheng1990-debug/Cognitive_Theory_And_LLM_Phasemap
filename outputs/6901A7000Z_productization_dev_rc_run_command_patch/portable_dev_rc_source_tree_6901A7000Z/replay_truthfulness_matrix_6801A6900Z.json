@@ -1,0 +1,16 @@
+[
+  {
+    "capability_block": "portable_dev_rc_runtime_subset",
+    "configured_project_replay": false,
+    "portable_artifact_replay": true,
+    "standalone_portable_dev_rc_source_tree_replay": true,
+    "production_release": false
+  },
+  {
+    "capability_block": "prior_long_run_evidence",
+    "configured_project_replay": true,
+    "portable_artifact_replay": true,
+    "standalone_portable_dev_rc_source_tree_replay": false,
+    "production_release": false
+  }
+]

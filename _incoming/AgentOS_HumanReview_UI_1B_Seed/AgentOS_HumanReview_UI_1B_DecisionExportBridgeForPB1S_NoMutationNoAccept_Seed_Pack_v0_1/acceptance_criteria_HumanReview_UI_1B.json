@@ -1,0 +1,18 @@
+{
+  "verdict_required": "PASS_HUMAN_REVIEW_UI_1B_DECISION_EXPORT_BRIDGE_FOR_PB1S_NO_MUTATION_NO_ACCEPT",
+  "must_pass": [
+    "primary workflow is readable card plus buttons, not CSV-first",
+    "UI can export JSON decision record",
+    "UI can export CSV decision record",
+    "exported records validate against PB1S schema",
+    "allowed decisions are supported",
+    "forbidden decisions are blocked",
+    "raw machine fields are advanced-only",
+    "no backend mutation occurs",
+    "no RetentionAccept or SignedAccept occurs",
+    "no AcceptedBaseline/AcceptedEvidence/Memory/Operator/Policy write occurs",
+    "no external API/web dependency",
+    "isolated replay passes"
+  ],
+  "output_state": "PB1S_DECISION_RECORD_READY_FOR_INTAKE"
+}

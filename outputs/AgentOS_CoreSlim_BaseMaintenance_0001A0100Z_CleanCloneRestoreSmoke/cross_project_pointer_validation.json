@@ -1,0 +1,47 @@
+﻿{
+    "pointer_type":  "AgentOSBaseMaintenancePointerValidation",
+    "pointer_version":  "v0_1",
+    "line":  "AgentOS_CoreSlim_BaseMaintenance_0001A0100Z_CleanCloneRestoreSmoke",
+    "generated_at":  "2026-07-03T05:34:14.9228312+08:00",
+    "workspace_dir":  "D:\\Logos_AgentOS_base_maintenance",
+    "source_seed":  "D:\\Logos_AgentOS_research\\handoff\\AgentOS_BaseMaintenance_NewWindow_Seed_20260703.md",
+    "source_handoff_pointer":  "D:\\Logos_AgentOS_research\\handoff\\AgentOS_BaseMaintenance_NewWindow_Pointer_20260703.json",
+    "source_infrastructure_pointer":  "D:\\Logos_AgentOS_research\\CROSS_PROJECT_AGENTOS_SLIM_INFRASTRUCTURE_POINTER.json",
+    "source_clone_base_pointer":  "C:\\Users\\ZH\\Desktop\\AGI\\BKP\\CURRENT_AGENTOS_CROSS_PROJECT_CLONE_BASE.json",
+    "backup_zip":  "C:\\Users\\ZH\\Desktop\\AGI\\BKP\\AGOS_PreSelfEvolution_20260703_035535.zip",
+    "expected_backup_zip_sha256":  "5eb45072c1d90c75b6793902000c9ae5a5f68bf0b5e15f7f86aaab7cdb26304a",
+    "actual_backup_zip_sha256":  "5eb45072c1d90c75b6793902000c9ae5a5f68bf0b5e15f7f86aaab7cdb26304a",
+    "backup_zip_sha256_matches_seed":  true,
+    "workspace_hash_compare":  {
+                                   "expected_workspace_file_count":  395,
+                                   "verified_workspace_file_count":  395,
+                                   "missing_count":  0,
+                                   "mismatched_count":  0,
+                                   "missing_paths":  [
+
+                                                     ],
+                                   "mismatched_paths":  [
+
+                                                        ],
+                                   "extra_file_detection":  "not_performed; validation is expected-inventory exact hash replay excluding restore/output/temp artifacts"
+                               },
+    "restore_shape":  {
+                          "root_workspace_materialized":  true,
+                          "restore_source_preserved":  true,
+                          "theory_baseline_snapshot_not_restored_to_runtime":  true
+                      },
+    "smoke_test":  {
+                       "command":  "pytest -q agentos_core_slim_v0\\tests --basetemp=D:\\Logos_AgentOS_base_maintenance\\_tmp_pytest_smoke",
+                       "result":  "PASS",
+                       "tests":  "16 passed in 0.08s",
+                       "first_attempt_note":  "Initial pytest run failed at setup because C:\\Users\\ZH\\AppData\\Local\\Temp\\pytest-of-ZH denied access; rerun with workspace-local --basetemp passed."
+                   },
+    "boundaries":  {
+                       "continued_research_self_evolution_line":  false,
+                       "imported_8001A_8200Z_research_outputs":  false,
+                       "official_theory_baseline_write":  false,
+                       "production_or_global_registry_write":  false,
+                       "external_api_network_browser_connector_calls":  false
+                   },
+    "verdict":  "PASS_CLEAN_CLONE_RESTORE_SMOKE"
+}

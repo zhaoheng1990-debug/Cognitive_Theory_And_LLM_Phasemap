@@ -1,0 +1,30 @@
+{
+  "schema_name": "AgentOS_DIPB1A_ProvenanceLedger_JSONL_Schema_v0_1",
+  "record_type": "jsonl_one_record_per_source",
+  "required_fields": [
+    "source_id",
+    "source_path",
+    "sha256",
+    "provenance_status",
+    "provider",
+    "provider_role",
+    "authorization_status",
+    "allowed_use",
+    "forbidden_use",
+    "notes"
+  ],
+  "allowed_use_DIPB1A": [
+    "inventory_only"
+  ],
+  "forbidden_use_required_members": [
+    "accepted_evidence",
+    "accepted_baseline",
+    "memory_write",
+    "operator_promotion",
+    "policy_promotion",
+    "capability_claim",
+    "replay_ready_decision",
+    "case_extraction"
+  ],
+  "provenance_status_DIPB1A": "captured_inventory_only"
+}

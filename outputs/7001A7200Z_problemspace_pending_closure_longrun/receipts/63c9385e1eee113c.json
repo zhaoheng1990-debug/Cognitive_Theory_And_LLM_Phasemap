@@ -1,0 +1,18 @@
+{
+  "receipt_id": "RECEIPT-7001-003-controlled_no_write-BASELINE-PENDING-DIFFERENCE-CONSTRAINT-ACTIONFUNCTIONAL",
+  "run_id": "agentos-core-slim-problemspace-pending-closure-longrun-7001a7200z",
+  "pending_id": "BASELINE-PENDING-DIFFERENCE-CONSTRAINT-ACTIONFUNCTIONAL",
+  "kind": "controlled_no_write",
+  "icm_decision_id": "ICM-7001-003-BASELINE-PENDING-DIFFERENCE-CONSTRAINT-ACTIONFUNCTIONAL",
+  "closure_action": "KEEP_PENDING_WITH_NEXT_TEST",
+  "controlled_namespace": "7001A7200Z_local_controlled_sandbox_only",
+  "production_icm_write": false,
+  "global_memory_write": false,
+  "operator_memory_promotion": false,
+  "policy_promotion": false,
+  "baseline_write": false,
+  "created_at": "2026-07-02T18:33:35.709235Z",
+  "artifact_relative_path": "",
+  "artifact_sha256": "",
+  "no_write_reason": "measurable observable class and operator/empirical validation"
+}

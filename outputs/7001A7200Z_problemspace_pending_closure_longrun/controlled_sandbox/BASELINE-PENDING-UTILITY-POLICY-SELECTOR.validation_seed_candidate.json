@@ -1,0 +1,8 @@
+{
+  "pending_id": "BASELINE-PENDING-UTILITY-POLICY-SELECTOR",
+  "title": "UtilityPolicySelector / UPS",
+  "closure_action": "PROMOTE_TO_VALIDATION_SEED",
+  "next_test": "Heldout decisions where SRO agrees structurally but actions diverge by utility.",
+  "candidate_only": true,
+  "production_release": false
+}

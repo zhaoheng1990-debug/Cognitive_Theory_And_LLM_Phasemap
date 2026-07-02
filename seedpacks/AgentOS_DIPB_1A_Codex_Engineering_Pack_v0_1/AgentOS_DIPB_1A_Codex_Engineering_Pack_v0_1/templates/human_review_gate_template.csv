@@ -1,0 +1,2 @@
+review_id,source_id_or_candidate_id,reviewer,reviewer_role,decision,decision_rationale,allowed_next_state,signed_or_confirmed_by_pm,notes
+review_0001,src_000001,PM,product_manager,needs_more_source,Example only,remain_inventory_only,false,HumanGate starts in DIPB-1D.

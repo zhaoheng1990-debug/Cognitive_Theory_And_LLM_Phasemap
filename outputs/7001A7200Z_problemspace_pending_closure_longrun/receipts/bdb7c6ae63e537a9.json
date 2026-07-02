@@ -1,0 +1,17 @@
+{
+  "receipt_id": "RECEIPT-7001-001-controlled_write-BASELINE-PENDING-RETENTION-UNIFIED-CONDITION",
+  "run_id": "agentos-core-slim-problemspace-pending-closure-longrun-7001a7200z",
+  "pending_id": "BASELINE-PENDING-RETENTION-UNIFIED-CONDITION",
+  "kind": "controlled_write",
+  "icm_decision_id": "ICM-7001-001-BASELINE-PENDING-RETENTION-UNIFIED-CONDITION",
+  "closure_action": "PROMOTE_TO_VALIDATION_SEED",
+  "controlled_namespace": "7001A7200Z_local_controlled_sandbox_only",
+  "production_icm_write": false,
+  "global_memory_write": false,
+  "operator_memory_promotion": false,
+  "policy_promotion": false,
+  "baseline_write": false,
+  "created_at": "2026-07-02T18:33:35.709235Z",
+  "artifact_relative_path": "controlled_sandbox/BASELINE-PENDING-RETENTION-UNIFIED-CONDITION.validation_seed_candidate.json",
+  "artifact_sha256": "c85ab45cfcf64a3b15ea26d3940c7ace4b39643e2acf02b1d8edbb386586e991"
+}

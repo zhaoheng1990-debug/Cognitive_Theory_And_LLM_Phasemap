@@ -1,0 +1,44 @@
+{
+  "schema_name": "AgentOS_DIPB1A_SourceInventory_Schema_v0_1",
+  "required_columns": [
+    "source_id",
+    "source_path",
+    "source_type",
+    "file_extension",
+    "sha256",
+    "size_bytes",
+    "last_modified_utc",
+    "provided_by",
+    "provider_role",
+    "authorization_status",
+    "provenance_note",
+    "parse_status",
+    "inventory_only",
+    "eligible_for_case_extraction",
+    "notes"
+  ],
+  "allowed_authorization_status": [
+    "authorized_by_pm",
+    "authorization_unknown",
+    "restricted_do_not_use",
+    "inventory_only"
+  ],
+  "allowed_parse_status": [
+    "not_parsed_inventory_only",
+    "parsed_metadata_only",
+    "unsupported_inventory_only",
+    "parse_error_inventory_only"
+  ],
+  "defaults_DIPB1A": {
+    "provided_by": "unknown",
+    "provider_role": "unknown",
+    "authorization_status": "authorization_unknown",
+    "inventory_only": true,
+    "eligible_for_case_extraction": false
+  },
+  "hard_rules": [
+    "Every local raw file must appear exactly once.",
+    "Every source must have sha256.",
+    "No case extraction or eligibility judgment in DIPB-1A."
+  ]
+}

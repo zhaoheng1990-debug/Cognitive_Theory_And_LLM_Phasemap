@@ -1,0 +1,27 @@
+{
+  "policy_name": "AgentOS_ObjectModelLifecyclePolicy",
+  "policy_version": "v0_1",
+  "role": "DomainObjectModeler",
+  "lifecycle": [
+    "ObservedSignal",
+    "ObjectModelCandidate",
+    "EvidenceAttachment",
+    "ConflictCheck",
+    "PermissionImpactCheck",
+    "SchemaImpactCheck",
+    "RetentionReview",
+    "HumanReviewIfRequired",
+    "ACCEPT_REVISE_REJECT_ARCHIVE_CANDIDATE"
+  ],
+  "default_generation_status": "PENDING",
+  "accepted_registry_mutation_allowed": false,
+  "harness_promotion_allowed": false,
+  "required_gates": {
+    "evidence_lineage": true,
+    "conflict_check": true,
+    "permission_impact_check": true,
+    "schema_impact_check": true,
+    "retention_review": true,
+    "private_to_shared_permission_review_marker": "PermissionGovernorReviewedForSharedModel"
+  }
+}

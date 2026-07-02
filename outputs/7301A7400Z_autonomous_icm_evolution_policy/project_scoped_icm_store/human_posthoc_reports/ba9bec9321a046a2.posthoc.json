@@ -1,0 +1,8 @@
+{
+  "human_role": "posthoc_review_rollback_scope_escalation",
+  "rollback_pointer": "C:\\Users\\ZH\\Documents\\Logos-AgentOS\\outputs\\7301A7400Z_autonomous_icm_evolution_policy\\project_scoped_icm_store\\rollback\\ba9bec9321a046a2.rollback.json",
+  "status": "PASS",
+  "target_path": "C:\\Users\\ZH\\Documents\\Logos-AgentOS\\outputs\\7301A7400Z_autonomous_icm_evolution_policy\\project_scoped_icm_store\\negative_transfer_quarantine\\negative_transfer_case.json",
+  "target_type": "Quarantine",
+  "write_id": "evo-negative_transfer_case-autonomous_quarantine"
+}

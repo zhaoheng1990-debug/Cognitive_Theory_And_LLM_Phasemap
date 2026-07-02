@@ -1,0 +1,13 @@
+{
+  "README.md": "3353f1c5c9011216b2ffc07ce26332dfa344c8a2fd9e57a64250187c1157c78f",
+  "acceptance_criteria_HumanReview_UI_1B.json": "7356ed82260795216558efe11f76d57566abdff6819d94bc07fb1bc9513eca3d",
+  "codex_task_prompt_HumanReview_UI_1B.md": "44b79ff3f8f49a213b79b7403ce112abceda1e0415f40e583e7551bd8f7d7245",
+  "design_rule_patch_human_review_object_first.md": "ee24ce074587f5bb3077e04f31a51c5bd6683f150068670480c0051823b0111f",
+  "hard_fail_conditions_HumanReview_UI_1B.md": "8e3d92a1b725e9fdd9f5d8907d9266b020377b937b8752fdddb5eac844eb1241",
+  "human_review_object_schema_v0_2.json": "437ecfcd1c5b52b16a5812f96b289891c14c14688c5a5263219c139822b91ec5",
+  "human_review_ui_1b_engineering_seed.md": "5c975e9c085af4b8c49f51e011d3e14ed4c27c84a51f7ae0d4b2317481359320",
+  "pb1s_decision_schema.json": "db6f102eeebf6067c2c713224c780b97923c3548640607535d51106ebbfd6992",
+  "pb_retention_review_fixture_v0_2.json": "470c1ef9d557876a65b1b2e00fcb30c626de07c9723951a27c9ed5ae7cf1156f",
+  "pm_verdict_HumanReview_UI_1A.md": "6ee68a034d376b3dd479a5a020de016dd3955ceb6f593e72bae9ebb741b9c8bc",
+  "return_files_manifest_HumanReview_UI_1B.json": "10d377cc104aa35fa293a854fe7a5807a19dca765074e778766aa55d2f916037"
+}

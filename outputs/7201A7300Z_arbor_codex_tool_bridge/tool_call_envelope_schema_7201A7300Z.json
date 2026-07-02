@@ -1,0 +1,114 @@
+{
+  "$id": "agentos://schemas/tool_call_envelope_7201A7300Z.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "allowed_paths": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "authorized_by": {
+      "const": "AgentOSKernel.HarnessDispatchPolicy"
+    },
+    "budget": {
+      "properties": {
+        "max_output_bytes": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "max_runtime_seconds": {
+          "maximum": 300,
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "max_runtime_seconds",
+        "max_output_bytes"
+      ],
+      "type": "object"
+    },
+    "expected_outputs": {
+      "type": "array"
+    },
+    "forbidden_paths": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "input_artifacts": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "inventory_output": {
+      "type": "string"
+    },
+    "inventory_root": {
+      "type": "string"
+    },
+    "manifest_path": {
+      "type": "string"
+    },
+    "parent_harness_envelope_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "patch": {
+      "type": "object"
+    },
+    "pytest_target": {
+      "type": "string"
+    },
+    "requested_by": {
+      "const": "ArborHarness"
+    },
+    "rollback_pointer": {
+      "type": "string"
+    },
+    "rollback_required": {
+      "type": "boolean"
+    },
+    "script_path": {
+      "type": "string"
+    },
+    "tool_call_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "tool_capability": {
+      "enum": [
+        "READ_ARTIFACT",
+        "WRITE_LOCAL_PATCH",
+        "RUN_PYTEST",
+        "RUN_SCRIPT",
+        "PACKAGE_ZIP",
+        "GENERATE_HASH_INVENTORY",
+        "INSPECT_MANIFEST",
+        "RUN_REPLAY",
+        "ROLLBACK_LOCAL_WRITE"
+      ],
+      "type": "string"
+    },
+    "zip_output": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "tool_call_id",
+    "parent_harness_envelope_id",
+    "requested_by",
+    "authorized_by",
+    "tool_capability",
+    "allowed_paths",
+    "budget",
+    "rollback_required"
+  ],
+  "title": "ToolCallEnvelope",
+  "type": "object"
+}

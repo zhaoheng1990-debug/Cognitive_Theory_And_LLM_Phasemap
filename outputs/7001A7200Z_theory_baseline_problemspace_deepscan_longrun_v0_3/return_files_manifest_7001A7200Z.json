@@ -1,0 +1,153 @@
+{
+  "all_required_files_present": true,
+  "candidate_count": 30,
+  "cluster_count": 30,
+  "created_at": "2026-07-02T18:58:35.638568+00:00",
+  "files": [
+    {
+      "bytes": 10140,
+      "name": "source_inventory_7001A7200Z.csv",
+      "sha256": "50e80280b83f6c05511dac07ff48a98a70159040a59b051bd17742a8365da45f"
+    },
+    {
+      "bytes": 8191,
+      "name": "source_hash_inventory_7001A7200Z.csv",
+      "sha256": "02c9b8e455ec1afeb86f0c6292e624cbcf69cca2ae0ae865ef97911014ef9eac"
+    },
+    {
+      "bytes": 902,
+      "name": "theory_baseline_scan_coverage_report_7001A7200Z.md",
+      "sha256": "87e75aaa72406e51d4aafdc684238611a7e2b025488549c97e211eaaea03d7e5"
+    },
+    {
+      "bytes": 60880,
+      "name": "problemspace_candidate_inventory_7001A7200Z.jsonl",
+      "sha256": "f686fbfcb635d130a0d5aaac9b6f4f5570667a8a16ca3e60fc9a2d6f0fb04f00"
+    },
+    {
+      "bytes": 10405,
+      "name": "pending_cluster_map_7001A7200Z.csv",
+      "sha256": "3974f6820a564561303eb3d18556577cc029a41736be0b351e0d631b45e23ca2"
+    },
+    {
+      "bytes": 441,
+      "name": "problemspace_deduplication_report_7001A7200Z.md",
+      "sha256": "30223cac74616068b81d201cb991f77503fcd52574cc87c662b8dde25f453fed"
+    },
+    {
+      "bytes": 478,
+      "name": "problemspace_family_coverage_report_7001A7200Z.md",
+      "sha256": "5d6aeaee3ca56e95dfd5814475d83c31a05d2903f788c0ec19a04d43673021a4"
+    },
+    {
+      "bytes": 9068,
+      "name": "pending_cluster_sro_report_7001A7200Z.md",
+      "sha256": "b06c6e74549de0f678c1fe189ee6588db5b52c4e1f3911c724cdb928d21cfe00"
+    },
+    {
+      "bytes": 9267,
+      "name": "pending_cluster_closure_action_ledger_7001A7200Z.csv",
+      "sha256": "588ef52cdfb047add4812532046c1f272002d1d9232de9ba74b1c524e008cea6"
+    },
+    {
+      "bytes": 5413,
+      "name": "icm_metabolism_policy_decision_ledger_7001A7200Z.csv",
+      "sha256": "89802a6c91993f878cace0e79d59594d9e3a78d33a309857f7157597632e3888"
+    },
+    {
+      "bytes": 15016,
+      "name": "controlled_write_no_write_receipt_bundle_7001A7200Z.zip",
+      "sha256": "527ca053d0a0254e66360c3e8714e3164c8525143fd6935d4e679dc09965628a"
+    },
+    {
+      "bytes": 810,
+      "name": "cbit_accounting_by_problemspace_family_7001A7200Z.md",
+      "sha256": "a175a58d276b1ecabfdeea6aa351d7363bf4b6fcdd655e83b9b748786bedd8c6"
+    },
+    {
+      "bytes": 1872,
+      "name": "negative_route_carryover_report_7001A7200Z.md",
+      "sha256": "32e7ae2405a08226356c2c2a2a27ea5541091800741e5a112ccbe6c242aa0d6d"
+    },
+    {
+      "bytes": 3664,
+      "name": "expiration_deprecation_report_7001A7200Z.md",
+      "sha256": "7e77962601ac6bc6127a915df18e3af7f244246f36daab515b228546f8e65358"
+    },
+    {
+      "bytes": 1064,
+      "name": "merge_split_scope_report_7001A7200Z.md",
+      "sha256": "7ccdadff561689d8e8463a75b06e125a009f7f294c2dc22418f4e23fdf444fa6"
+    },
+    {
+      "bytes": 1085,
+      "name": "validation_seed_route_report_7001A7200Z.md",
+      "sha256": "1caa4877726e433f2318a44cd1b0e38c41607a9595af0eab5af52aa5f73e3947"
+    },
+    {
+      "bytes": 678,
+      "name": "replay_consistency_report_7001A7200Z.md",
+      "sha256": "37f03288f3559a3a1ce7c41c7d53b678cb1e1a8b1572384192903edffd9421e0"
+    },
+    {
+      "bytes": 624,
+      "name": "rollback_replay_report_7001A7200Z.md",
+      "sha256": "a1afc8ff5e1d009ed7b949fb3faf24bf468e4f248f2a33172c6e22701c29e6a5"
+    },
+    {
+      "bytes": 392,
+      "name": "raw_budget_report_7001A7200Z.md",
+      "sha256": "6b181216e11c7a805f348572bca9e94f1f331123d50328ba95df491d6fc58db2"
+    },
+    {
+      "bytes": 382,
+      "name": "forbidden_claims_check_7001A7200Z.md",
+      "sha256": "3c497115e85af91616dd29878ec6c15d7bb8ac3e94c1742605aedfdee399c31f"
+    },
+    {
+      "bytes": 1107,
+      "name": "human_problemspace_closure_report_packet_7001A7200Z.md",
+      "sha256": "cddb84dc1b3a58ffeb16b73c5e41a37c281a95be11fa332c17bbe67ff7daa3b8"
+    },
+    {
+      "bytes": 658,
+      "name": "pm_ready_final_verdict_7001A7200Z.md",
+      "sha256": "b6eb0c530f1c95120d7a237ed688e22609fe74c18d1615a3aafe98e46f10535e"
+    },
+    {
+      "bytes": 5986,
+      "name": "return_files_manifest_7001A7200Z.json",
+      "sha256": "9dc74ea5e2f4987d12db4d4df864471ca52c9913b9a7c576fed5a2bd2239ed8a"
+    }
+  ],
+  "full_theory_baseline_scan": true,
+  "pack_name": "AgentOS_CoreSlim_TheoryBaselineProblemSpaceDeepScanLongRun_7001A7200Z_Return_Pack_v0_3.zip",
+  "required_file_count": 23,
+  "required_files_present": {
+    "cbit_accounting_by_problemspace_family_7001A7200Z.md": true,
+    "controlled_write_no_write_receipt_bundle_7001A7200Z.zip": true,
+    "expiration_deprecation_report_7001A7200Z.md": true,
+    "forbidden_claims_check_7001A7200Z.md": true,
+    "human_problemspace_closure_report_packet_7001A7200Z.md": true,
+    "icm_metabolism_policy_decision_ledger_7001A7200Z.csv": true,
+    "merge_split_scope_report_7001A7200Z.md": true,
+    "negative_route_carryover_report_7001A7200Z.md": true,
+    "pending_cluster_closure_action_ledger_7001A7200Z.csv": true,
+    "pending_cluster_map_7001A7200Z.csv": true,
+    "pending_cluster_sro_report_7001A7200Z.md": true,
+    "pm_ready_final_verdict_7001A7200Z.md": true,
+    "problemspace_candidate_inventory_7001A7200Z.jsonl": true,
+    "problemspace_deduplication_report_7001A7200Z.md": true,
+    "problemspace_family_coverage_report_7001A7200Z.md": true,
+    "raw_budget_report_7001A7200Z.md": true,
+    "replay_consistency_report_7001A7200Z.md": true,
+    "return_files_manifest_7001A7200Z.json": true,
+    "rollback_replay_report_7001A7200Z.md": true,
+    "source_hash_inventory_7001A7200Z.csv": true,
+    "source_inventory_7001A7200Z.csv": true,
+    "theory_baseline_scan_coverage_report_7001A7200Z.md": true,
+    "validation_seed_route_report_7001A7200Z.md": true
+  },
+  "v0_2_scope_issue_corrected": true,
+  "verdict": "PASS_WITH_DEFERRED_ITEMS"
+}

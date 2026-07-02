@@ -1,0 +1,41 @@
+﻿{
+    "task_id":  "AgentOS_OM1A_ObjectModeler_Mainline_Patch",
+    "manifest_version":  "v0_1",
+    "status":  "PASS_READY_FOR_PM_REVIEW",
+    "generated_at":  "2026-07-03T05:40:23.8837118+08:00",
+    "source_seed_pack":  "C:\\Users\\ZH\\Downloads\\AgentOS_Mainline_ObjectModelerRole_Patch_Seed_Pack_v0_1.zip",
+    "source_seed_pack_sha256":  "a3d166187ce10dee50b3ed0da57d2b3fbf78af14f8eef17bf3f80b01c43df1b0",
+    "implemented_runtime_files":  [
+                                      "agentos_core_slim_v0/agentos_kernel/object_modeler.py",
+                                      "agentos_core_slim_v0/agentos_kernel/__init__.py",
+                                      "agentos_core_slim_v0/tests/test_object_modeler.py"
+                                  ],
+    "expected_return_files":  [
+                                  "object_modeler_role_spec.md",
+                                  "object_model_candidate_schema.json",
+                                  "object_model_lifecycle_policy.json",
+                                  "object_model_patch_candidate_contract.json",
+                                  "object_modeler_boundary_tests.py",
+                                  "object_modeler_fixture_vc.json",
+                                  "object_modeler_fixture_cross_domain.json",
+                                  "object_modeler_validation_report.md",
+                                  "object_modeler_verdict.json",
+                                  "pytest_output.txt",
+                                  "return_files_manifest_AgentOS_OM1A_v0_1.json",
+                                  "HASH_INVENTORY.csv"
+                              ],
+    "verification":  {
+                         "pytest_command":  "pytest -q agentos_core_slim_v0\\tests --basetemp=D:\\Logos_AgentOS_base_maintenance\\_tmp_pytest_om1a_return",
+                         "pytest_result":  "PASS_28",
+                         "object_modeler_boundary_tests":  "PASS_12"
+                     },
+    "hard_boundaries":  {
+                            "candidate_only":  true,
+                            "no_core_rewrite":  true,
+                            "no_accepted_registry_mutation":  true,
+                            "no_harness_promotion":  true,
+                            "no_private_to_global_without_review":  true,
+                            "no_live_web":  true,
+                            "no_real_company_data":  true
+                        }
+}

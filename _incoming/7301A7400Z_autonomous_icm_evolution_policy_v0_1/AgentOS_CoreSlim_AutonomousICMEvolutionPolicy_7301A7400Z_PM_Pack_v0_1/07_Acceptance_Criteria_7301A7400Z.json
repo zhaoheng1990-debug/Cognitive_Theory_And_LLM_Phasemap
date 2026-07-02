@@ -1,0 +1,35 @@
+{
+  "version": "v0.1",
+  "experiment": "AgentOS_CoreSlim_AutonomousICMEvolutionPolicy_7301A7400Z",
+  "must_pass": [
+    "autonomous_icm_evolution_policy_defined",
+    "project_scoped_durable_write_envelope_defined",
+    "project_scoped_durable_write_receipt_defined",
+    "ups_accept_triggers_operator_memory_write",
+    "evidence_weak_user_positive_no_durable_write",
+    "negative_transfer_candidate_quarantined",
+    "kernel_owns_final_evolution_decision",
+    "llm_api_advisory_only",
+    "harness_executes_only_envelope",
+    "rollback_replay_pass",
+    "no_global_production_icm_write",
+    "no_theory_baseline_direct_write",
+    "human_posthoc_report_present"
+  ],
+  "forbidden": [
+    "manual_preauthorization_required_for_every_project_scoped_write",
+    "llm_owns_evolution_decision",
+    "harness_owns_evolution_decision",
+    "global_production_icm_write",
+    "unbounded_memory_write",
+    "external_mutation"
+  ],
+  "allowed_verdicts": [
+    "PASS_AUTONOMOUS_ICM_EVOLUTION_POLICY_LOCAL",
+    "PASS_WITH_LIMITED_CAVEATS",
+    "FAIL_POLICY_OWNERSHIP_REGRESSION",
+    "FAIL_UPS_ACCEPT_NOT_WRITTEN",
+    "FAIL_UNBOUNDED_WRITE",
+    "FAIL_REPLAY_OR_ROLLBACK"
+  ]
+}

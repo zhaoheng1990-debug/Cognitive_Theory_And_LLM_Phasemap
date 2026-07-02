@@ -1,0 +1,146 @@
+{
+  "all_required_files_present": true,
+  "created_at": "2026-07-02T19:37:09.021781+00:00",
+  "files": [
+    {
+      "bytes": 897,
+      "relative_path": "autonomous_icm_evolution_policy_report_7301A7400Z.md",
+      "sha256": "e5944a9bcef671a291b6d3b52ad8738ca25165de57ee515d5a9b9a62046a0172"
+    },
+    {
+      "bytes": 1796,
+      "relative_path": "project_scoped_durable_write_envelope_schema_7301A7400Z.json",
+      "sha256": "aebbfc30f9bd93a0ae648e9962709286d0561202ab0b80a4052e5063f5a795e9"
+    },
+    {
+      "bytes": 1416,
+      "relative_path": "project_scoped_durable_write_receipt_schema_7301A7400Z.json",
+      "sha256": "dbb68630dc2bde94e6113dacac6e1b9099772fabee0c8af8b9fa4d515796b067"
+    },
+    {
+      "bytes": 1779,
+      "relative_path": "ups_accept_operator_memory_write_report_7301A7400Z.md",
+      "sha256": "6c8191c8f19e1d18ce9dc2bfba292d80ca3c3b647ee22f830f69538d75470976"
+    },
+    {
+      "bytes": 465,
+      "relative_path": "evidence_weak_user_positive_no_write_report_7301A7400Z.md",
+      "sha256": "124952d325e801e5fc942cb619535a2de688210a0f8253ac7fec15872ed5a5ed"
+    },
+    {
+      "bytes": 1378,
+      "relative_path": "negative_transfer_quarantine_report_7301A7400Z.md",
+      "sha256": "b7e9e9b9979dfbbb40c083cfbd89ea08593e47854e4737efb2ca8a480eff0113"
+    },
+    {
+      "bytes": 1873,
+      "relative_path": "evolution_ledger_report_7301A7400Z.md",
+      "sha256": "f5b2c31916bfaf6d81e1a126a56011ca8012cd5eecd1051909d299bc59adb6fd"
+    },
+    {
+      "bytes": 1425,
+      "relative_path": "project_scoped_icm_store_inventory_7301A7400Z.csv",
+      "sha256": "dcf3183f8eddfefd43d2dcc3ae2f6e7010e0022bfedf6b6be006f2754025fe80"
+    },
+    {
+      "bytes": 1117,
+      "relative_path": "rollback_replay_report_7301A7400Z.md",
+      "sha256": "6ef89830e3b51508d45512737b2e2f21454b8d7f92f53ce7630f548e800433ec"
+    },
+    {
+      "bytes": 474,
+      "relative_path": "kernel_ownership_report_7301A7400Z.md",
+      "sha256": "b29a50f8ba1394f7ee34147d32c0977c7d7d070a931bb30946d7c28633896f77"
+    },
+    {
+      "bytes": 349,
+      "relative_path": "llm_advisory_only_report_7301A7400Z.md",
+      "sha256": "aaa9d0830546ee808841f8b72d6ad57b6c235d828662fd727118c0bc69f742f6"
+    },
+    {
+      "bytes": 523,
+      "relative_path": "harness_toolbridge_execution_report_7301A7400Z.md",
+      "sha256": "1453a531fa08787305189446ddffba408f31ab58815cd433fe05a007164ad4a3"
+    },
+    {
+      "bytes": 2078,
+      "relative_path": "human_posthoc_report_7301A7400Z.md",
+      "sha256": "6bb4c25d2d32cb9e7f46a243bba6c7c2d7453bb9c30fb36ff7385f9a448eacf9"
+    },
+    {
+      "bytes": 453,
+      "relative_path": "forbidden_claims_check_7301A7400Z.md",
+      "sha256": "52ba5386b8f9331f54669be83415d00e912f74d8fe37c1274e0a4292087f9f7f"
+    },
+    {
+      "bytes": 461,
+      "relative_path": "pytest_report_7301A7400Z.md",
+      "sha256": "59832ef0805e81e47c7687693925e78cf646338285e484bf69af26d170771d4f"
+    },
+    {
+      "bytes": 345,
+      "relative_path": "raw_budget_report_7301A7400Z.md",
+      "sha256": "13808e4402f5c41cb272971d36678532a0bb6dc6d51a79713f59f78c4bf1fa97"
+    },
+    {
+      "bytes": 1141,
+      "relative_path": "pm_ready_final_verdict_7301A7400Z.md",
+      "sha256": "0dbdce7d64290787f4b21b0920064be319628990946f389b0c349199d94649a8"
+    },
+    {
+      "bytes": 2093,
+      "relative_path": "hash_inventory_7301A7400Z.csv",
+      "sha256": "64261af5554ada96a05eb69f65cc60d1465066db9693feb21002dc09d6374587"
+    },
+    {
+      "bytes": 6061,
+      "relative_path": "return_files_manifest_7301A7400Z.json",
+      "sha256": "36b5bfd3f148865095a7b8c06d6b39e72aedee313cbf3a1fa423d5d3bb180e4e"
+    }
+  ],
+  "pack_name": "AgentOS_CoreSlim_AutonomousICMEvolutionPolicy_7301A7400Z_Return_Pack_v0_1.zip",
+  "required_files_present": {
+    "autonomous_icm_evolution_policy_report_7301A7400Z.md": true,
+    "evidence_weak_user_positive_no_write_report_7301A7400Z.md": true,
+    "evolution_ledger_report_7301A7400Z.md": true,
+    "forbidden_claims_check_7301A7400Z.md": true,
+    "harness_toolbridge_execution_report_7301A7400Z.md": true,
+    "hash_inventory_7301A7400Z.csv": true,
+    "human_posthoc_report_7301A7400Z.md": true,
+    "kernel_ownership_report_7301A7400Z.md": true,
+    "llm_advisory_only_report_7301A7400Z.md": true,
+    "negative_transfer_quarantine_report_7301A7400Z.md": true,
+    "pm_ready_final_verdict_7301A7400Z.md": true,
+    "project_scoped_durable_write_envelope_schema_7301A7400Z.json": true,
+    "project_scoped_durable_write_receipt_schema_7301A7400Z.json": true,
+    "project_scoped_icm_store_inventory_7301A7400Z.csv": true,
+    "pytest_report_7301A7400Z.md": true,
+    "raw_budget_report_7301A7400Z.md": true,
+    "return_files_manifest_7301A7400Z.json": true,
+    "rollback_replay_report_7301A7400Z.md": true,
+    "ups_accept_operator_memory_write_report_7301A7400Z.md": true
+  },
+  "required_return_files": [
+    "autonomous_icm_evolution_policy_report_7301A7400Z.md",
+    "project_scoped_durable_write_envelope_schema_7301A7400Z.json",
+    "project_scoped_durable_write_receipt_schema_7301A7400Z.json",
+    "ups_accept_operator_memory_write_report_7301A7400Z.md",
+    "evidence_weak_user_positive_no_write_report_7301A7400Z.md",
+    "negative_transfer_quarantine_report_7301A7400Z.md",
+    "evolution_ledger_report_7301A7400Z.md",
+    "project_scoped_icm_store_inventory_7301A7400Z.csv",
+    "rollback_replay_report_7301A7400Z.md",
+    "kernel_ownership_report_7301A7400Z.md",
+    "llm_advisory_only_report_7301A7400Z.md",
+    "harness_toolbridge_execution_report_7301A7400Z.md",
+    "human_posthoc_report_7301A7400Z.md",
+    "forbidden_claims_check_7301A7400Z.md",
+    "pytest_report_7301A7400Z.md",
+    "raw_budget_report_7301A7400Z.md",
+    "pm_ready_final_verdict_7301A7400Z.md",
+    "hash_inventory_7301A7400Z.csv",
+    "return_files_manifest_7301A7400Z.json"
+  ],
+  "verdict": "PASS_AUTONOMOUS_ICM_EVOLUTION_POLICY_LOCAL",
+  "version": "v0.1"
+}

@@ -1,0 +1,35 @@
+{
+  "version": "v0.2",
+  "experiment": "AgentOS_CoreSlim_ProblemSpaceBaselinePendingClosureLongRun_7001A7200Z",
+  "must_pass": [
+    "pending_inventory_coverage_100_percent",
+    "one_closure_action_per_pending_item",
+    "kernel_owned_closure_decisions",
+    "icm_metabolism_policy_decision_per_item",
+    "controlled_write_or_no_write_receipt_per_item",
+    "no_uncontrolled_write",
+    "no_production_icm_write_claim",
+    "no_agiprecursor_100_claim",
+    "replay_passes_at_least_3",
+    "rollback_replay_at_least_1",
+    "human_report_packet_present",
+    "raw_budget_pass",
+    "forbidden_claims_check_pass"
+  ],
+  "allowed_final_verdicts": [
+    "PASS_PENDING_CLOSURE_LONGRUN",
+    "PASS_WITH_DEFERRED_ITEMS",
+    "PARTIAL_PASS_BLOCKED_BY_BASELINE_INVENTORY",
+    "FAIL_TOPIC_DRIFT",
+    "FAIL_UNCONTROLLED_WRITE",
+    "FAIL_REPLAY_INCONSISTENCY"
+  ],
+  "forbidden": [
+    "claim_all_pending_accepted_without_evidence",
+    "direct_theory_baseline_write",
+    "global_production_icm_write",
+    "unbounded_new_pending_expansion",
+    "harness_owned_final_decision",
+    "llm_api_owned_final_decision"
+  ]
+}

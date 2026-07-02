@@ -1,0 +1,32 @@
+# Expiration Deprecation Report 7001A7200Z
+
+- PS-LM1: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-LM2: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-LM3: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-CO1: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-CO2: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-CO3: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-CO4: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-LLM1: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-LLM2: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-LLM3: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-LLM4: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-LLM5: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-SEM1: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-SEM2: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-SEM3: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-SEM4: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-CTRL1: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-CTRL2: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-HPM1: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-HPM2: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-AOS1: watch_on_next_theory_baseline_update; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-AOS2: watch_on_next_theory_baseline_update; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-AOS3: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-AOS4: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-KPIH1: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-SIMON1: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-EDU1: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-ROBOT1: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-ENT1: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.
+- PS-BCI1: revalidate_before_promotion; stale reuse blocked unless source hash remains current and scope is unchanged.

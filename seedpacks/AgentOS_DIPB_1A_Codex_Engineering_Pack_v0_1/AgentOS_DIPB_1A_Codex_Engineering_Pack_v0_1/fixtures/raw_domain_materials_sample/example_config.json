@@ -1,0 +1,5 @@
+{
+  "fixture": true,
+  "purpose": "inventory_only",
+  "eligible_for_case_extraction": false
+}

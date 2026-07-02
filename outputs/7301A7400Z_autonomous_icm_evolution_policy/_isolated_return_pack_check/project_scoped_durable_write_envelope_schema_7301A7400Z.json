@@ -1,0 +1,84 @@
+{
+  "$id": "agentos://schemas/project_scoped_durable_write_envelope_7301A7400Z.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "accept_decision_ref": {
+      "type": "string"
+    },
+    "applicability_gate": {
+      "type": "object"
+    },
+    "authorized_by": {
+      "const": "AgentOSKernel.ICMEvolutionPolicy"
+    },
+    "boundary_policy": {
+      "type": "object"
+    },
+    "decision_id": {
+      "type": "string"
+    },
+    "drift_watch": {
+      "type": "object"
+    },
+    "evidence_refs": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "payload": {
+      "type": "object"
+    },
+    "production_activation": {
+      "const": false
+    },
+    "reuse_policy": {
+      "type": "object"
+    },
+    "rollback_required": {
+      "const": true
+    },
+    "target_path": {
+      "type": "string"
+    },
+    "target_scope": {
+      "const": "project_scoped_durable"
+    },
+    "target_type": {
+      "enum": [
+        "MemoryUnit",
+        "OperatorMemory",
+        "PolicyPrior",
+        "ApplicabilityGate",
+        "BoundaryPolicy",
+        "ReusePolicy",
+        "ValidityMap",
+        "DriftWatch",
+        "Quarantine"
+      ]
+    },
+    "write_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "write_id",
+    "decision_id",
+    "authorized_by",
+    "target_scope",
+    "target_type",
+    "target_path",
+    "payload",
+    "evidence_refs",
+    "accept_decision_ref",
+    "applicability_gate",
+    "boundary_policy",
+    "reuse_policy",
+    "drift_watch",
+    "rollback_required",
+    "production_activation"
+  ],
+  "title": "ProjectScopedDurableWriteEnvelope",
+  "type": "object"
+}

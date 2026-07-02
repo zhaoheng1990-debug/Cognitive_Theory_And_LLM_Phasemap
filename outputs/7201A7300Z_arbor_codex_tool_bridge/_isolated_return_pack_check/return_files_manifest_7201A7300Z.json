@@ -1,0 +1,125 @@
+{
+  "all_required_files_present": true,
+  "created_at": "2026-07-02T19:20:40.957808+00:00",
+  "files": [
+    {
+      "bytes": 1573,
+      "relative_path": "codex_tool_bridge_interface_7201A7300Z.md",
+      "sha256": "715cf1fa2eb2caac8ff75842dc5d0e76646b79cfd20a8e578e39a006041b51a0"
+    },
+    {
+      "bytes": 2408,
+      "relative_path": "tool_call_envelope_schema_7201A7300Z.json",
+      "sha256": "81f610d561b9b64bf6c198f03759d582f6cdd49f19fd0f2bcec93ce3947efee4"
+    },
+    {
+      "bytes": 1771,
+      "relative_path": "tool_receipt_schema_7201A7300Z.json",
+      "sha256": "29b2cb567fbf83b924812383fa1ab7f56d0fabc73a090aeb2e2f5d85db779565"
+    },
+    {
+      "bytes": 1220,
+      "relative_path": "arbor_toolbridge_integration_report_7201A7300Z.md",
+      "sha256": "1fd3700ba1e469fdedb5ac6c8eab9304499683db164547519b293093ede50dc6"
+    },
+    {
+      "bytes": 652,
+      "relative_path": "kernel_authorized_dispatch_report_7201A7300Z.md",
+      "sha256": "882596afca4bd1295e9c2709389e8ad7b604041f429737746d960b7474a5e405"
+    },
+    {
+      "bytes": 834,
+      "relative_path": "toolbridge_permission_report_7201A7300Z.md",
+      "sha256": "7a2a1767d576776dceee05395807fcf21d542acca18b108869e9fd4327e5b923"
+    },
+    {
+      "bytes": 825,
+      "relative_path": "toolbridge_pass_block_test_report_7201A7300Z.md",
+      "sha256": "26aa921944069b643f14f884c6da2adc0b47267873ce23d29acc9653b1a1f4bf"
+    },
+    {
+      "bytes": 511,
+      "relative_path": "rollback_replay_report_7201A7300Z.md",
+      "sha256": "e7324f229889814ff5595fe84820e427645e5589c58d8cd02c671aeb936c2c43"
+    },
+    {
+      "bytes": 574,
+      "relative_path": "result_ingestion_tool_receipt_report_7201A7300Z.md",
+      "sha256": "a58e89e2c78717be9610a17b73860b9de1badd0d749dd28f36faece172df7f02"
+    },
+    {
+      "bytes": 600,
+      "relative_path": "kernel_ownership_regression_report_7201A7300Z.md",
+      "sha256": "b1a03c8eb3188892b7525ced1d803a29db50267961d8e809b9bdf20916991892"
+    },
+    {
+      "bytes": 560,
+      "relative_path": "forbidden_capability_block_report_7201A7300Z.md",
+      "sha256": "b48c847c8434062dccd3fc71256df79d378fd08d1b3bcdc6ba2ea87569b9eba3"
+    },
+    {
+      "bytes": 392,
+      "relative_path": "pytest_report_7201A7300Z.md",
+      "sha256": "080cd4778721b53e676ea2483e94895b9ef24aab18ce96e6c1bca0c907c75097"
+    },
+    {
+      "bytes": 416,
+      "relative_path": "raw_budget_report_7201A7300Z.md",
+      "sha256": "f4512c5ff588ee3cff246f98585a3faf24e8c45573b2ef67dc3aa0b5a1f34097"
+    },
+    {
+      "bytes": 983,
+      "relative_path": "pm_ready_final_verdict_7201A7300Z.md",
+      "sha256": "316954ce7c51b79523925ffef63cc62fe1d70dccc8d627af02d7700b1e31538a"
+    },
+    {
+      "bytes": 1712,
+      "relative_path": "hash_inventory_7201A7300Z.csv",
+      "sha256": "2687049a1c5a70c6fab294637f9b612a48d2ffc31663f426b7eb0ed34a5aa98f"
+    },
+    {
+      "bytes": 5034,
+      "relative_path": "return_files_manifest_7201A7300Z.json",
+      "sha256": "8075282bab3f4c5ab9eea7e1cd1576032dad600e14d3e1a0842ff1c5a2fc0102"
+    }
+  ],
+  "pack_name": "AgentOS_CoreSlim_ArborCodexToolBridge_7201A7300Z_Return_Pack_v0_1.zip",
+  "required_files_present": {
+    "arbor_toolbridge_integration_report_7201A7300Z.md": true,
+    "codex_tool_bridge_interface_7201A7300Z.md": true,
+    "forbidden_capability_block_report_7201A7300Z.md": true,
+    "hash_inventory_7201A7300Z.csv": true,
+    "kernel_authorized_dispatch_report_7201A7300Z.md": true,
+    "kernel_ownership_regression_report_7201A7300Z.md": true,
+    "pm_ready_final_verdict_7201A7300Z.md": true,
+    "pytest_report_7201A7300Z.md": true,
+    "raw_budget_report_7201A7300Z.md": true,
+    "result_ingestion_tool_receipt_report_7201A7300Z.md": true,
+    "return_files_manifest_7201A7300Z.json": true,
+    "rollback_replay_report_7201A7300Z.md": true,
+    "tool_call_envelope_schema_7201A7300Z.json": true,
+    "tool_receipt_schema_7201A7300Z.json": true,
+    "toolbridge_pass_block_test_report_7201A7300Z.md": true,
+    "toolbridge_permission_report_7201A7300Z.md": true
+  },
+  "required_return_files": [
+    "codex_tool_bridge_interface_7201A7300Z.md",
+    "tool_call_envelope_schema_7201A7300Z.json",
+    "tool_receipt_schema_7201A7300Z.json",
+    "arbor_toolbridge_integration_report_7201A7300Z.md",
+    "kernel_authorized_dispatch_report_7201A7300Z.md",
+    "toolbridge_permission_report_7201A7300Z.md",
+    "toolbridge_pass_block_test_report_7201A7300Z.md",
+    "rollback_replay_report_7201A7300Z.md",
+    "result_ingestion_tool_receipt_report_7201A7300Z.md",
+    "kernel_ownership_regression_report_7201A7300Z.md",
+    "forbidden_capability_block_report_7201A7300Z.md",
+    "pytest_report_7201A7300Z.md",
+    "raw_budget_report_7201A7300Z.md",
+    "pm_ready_final_verdict_7201A7300Z.md",
+    "hash_inventory_7201A7300Z.csv",
+    "return_files_manifest_7201A7300Z.json"
+  ],
+  "verdict": "PASS_ARBOR_CODEX_TOOLBRIDGE_LOCAL",
+  "version": "v0.1"
+}

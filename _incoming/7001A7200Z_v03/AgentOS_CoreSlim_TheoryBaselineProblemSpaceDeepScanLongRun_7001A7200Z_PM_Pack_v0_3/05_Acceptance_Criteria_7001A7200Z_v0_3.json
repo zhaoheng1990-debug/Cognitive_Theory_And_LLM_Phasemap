@@ -1,0 +1,31 @@
+{
+  "version": "v0.3",
+  "experiment": "AgentOS_CoreSlim_TheoryBaselineProblemSpaceDeepScanLongRun_7001A7200Z",
+  "required_source_path": "C:\\Users\\ZH\\Desktop\\AGI\\理论基线",
+  "must_pass": [
+    "local_theory_baseline_scan_attempted",
+    "no_silent_fallback_to_3_item_mini_ledger",
+    "source_inventory_created_if_path_present",
+    "problemspace_candidate_inventory_created",
+    "pending_cluster_map_created",
+    "deduplication_report_created",
+    "family_coverage_report_created",
+    "closure_action_decision_per_pending_cluster",
+    "icm_metabolism_policy_decision_per_pending_cluster",
+    "controlled_write_or_no_write_receipts_present",
+    "replay_passes_at_least_3",
+    "rollback_replay_at_least_1_if_controlled_write",
+    "forbidden_claims_check_pass",
+    "human_problemspace_closure_report_present"
+  ],
+  "allowed_blocker": "BLOCKED_LOCAL_THEORY_BASELINE_PATH_MISSING",
+  "forbidden": [
+    "process_only_prior_three_items_when_source_path_present",
+    "claim_all_pending_items_accepted_without_evidence",
+    "direct_theory_baseline_write",
+    "global_production_icm_write",
+    "unbounded_new_pending_expansion",
+    "harness_owned_final_decision",
+    "llm_api_owned_final_decision"
+  ]
+}

@@ -1,0 +1,10 @@
+# MANIFEST
+- `00_PM_Correction_LongRun_Object_Selection.md` (1281 bytes, sha256 `dcd43cd6fcb8ddc58f6719ceb1b11bbbdc14ff76f6d7d1a753d13c80793af603`)
+- `01_ProblemSpaceBaselinePendingClosureLongRun_Spec_7001A7200Z.md` (2468 bytes, sha256 `4979bb4addbebcd7205995719271381c32d7729e0943d11d264337f3079436e5`)
+- `02_PendingClosureLongRun_Invariants_v0_2.md` (1368 bytes, sha256 `b9ab1178f540e92b814aa0e625398e49ee4a28bbe6a6001408a6e521c9d29836`)
+- `03_LongRun_Test_Matrix_v0_2.md` (870 bytes, sha256 `664808a6696c2985a7dc60854021934766c13ad1c48adb744d03935e6a3d1521`)
+- `04_Codex_Task_Prompt_7001A7200Z.md` (1344 bytes, sha256 `c020a31e268fe12fdbe6af8be0a9f0782e018294fb8b85778d1370cd5cdfaacc`)
+- `05_Acceptance_Criteria_7001A7200Z_v0_2.json` (1112 bytes, sha256 `6eed15b3ef50853a45205ae34f1b6b823e1ea644cdf2400af99cd24cbe5db501`)
+- `06_Return_Files_Manifest_7001A7200Z_v0_2.json` (938 bytes, sha256 `a9178497248fb7e08c92d499d54f1ca951e99d17f5b3e6f4b3d6ead3df89569e`)
+- `07_Architecture_Closure_Tracker_7001A7200Z_v0_2.json` (488 bytes, sha256 `8922802779dbf9c9845570535d8aff36ecb326b3bd00e876937e48e9f51425a8`)
+- `08_PM_Next_Seed_7001A7200Z_v0_2.md` (458 bytes, sha256 `2dd28a18006e7a5724db86f18a3f5cacb8c637304d9213172e6e0cd30264dfcb`)
