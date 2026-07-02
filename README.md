@@ -2,96 +2,145 @@
 
 ## English
 
-AgentOS is a project operating layer for AI-assisted work that needs memory, evidence, review, rollback, and repeatable execution. It is not trying to replace Codex, Claude Code, WorkBuddy, or any other runner. It gives those runners a governed place to work.
+AgentOS is a cognitive runtime operating system for AI-agent work. Its goal is to give runners and Harnesses a shared runtime layer: a place where roles, permissions, evidence, memory, execution receipts, review gates, and rollback rules are coordinated.
 
-The CoreSlim base is the small, clean starting point for that operating layer. It is meant for people who want to build domain AgentOS projects without carrying over unstable research experiments, private context leaks, or one-off automation habits.
+AgentOS is not a plugin for Codex, Claude Code, WorkBuddy, or any other runner. It is the operating layer those runners connect to. It is also not just a test Harness or automation script. Harnesses execute work for AgentOS; they do not define the system's authority.
+
+CoreSlim is the clean base of that operating system. It is intentionally small: enough to start a governed AgentOS project, not so large that it brings unstable research-line evolution or private project context into the base.
 
 ### The Short Version
 
-AgentOS helps a project answer a few practical questions every time an AI runner does work:
+AgentOS exists so AI work can run as a governed runtime rather than a pile of disconnected sessions.
 
-- What is the runner allowed to do?
-- What evidence did it use?
-- What changed, and can we replay or roll it back?
-- Is this only a candidate, or has a human/PM approved it?
-- Which Harness checked the result?
-- Can this lesson be reused in another project without importing the wrong context?
+In this model:
 
-If ordinary agent tooling is the hand that edits, runs, searches, or packages, AgentOS is the layer that keeps the work legible and governable.
+- **Runners** are operator surfaces. Codex, Claude Code, WorkBuddy, and similar tools help a human interact with the project.
+- **Harnesses** are execution surfaces. They run tests, scripts, browsers, parsers, benchmarks, package builders, domain tools, or other bounded operations.
+- **AgentOS** is the cognitive runtime OS. It defines the roles, permissions, state transitions, candidate rules, evidence requirements, review gates, and return artifacts that make the work trustworthy.
 
-### Why This Exists
+The runner may type the command. The Harness may run the check. AgentOS decides what the work means in the project lifecycle.
 
-AI coding and workflow tools are already useful, but long-running projects quickly develop a different problem: the work becomes hard to trust.
+### System Architecture
 
-Files change. Prompts drift. Local scripts produce outputs. A runner says something has been verified, but the evidence is not packaged. A project learns something useful, but nobody knows whether it belongs only to this project or should become a reusable rule. A research branch produces ideas, but the base system should not quietly absorb them.
+```mermaid
+flowchart TB
+    human["Human / PM<br/>intent, approval, review"]
+    agentos["AgentOS Cognitive Runtime OS<br/>roles, permissions, memory, evidence, candidate state, review gates"]
+    runner["Runner Interface<br/>Codex, Claude Code, WorkBuddy, other operator surfaces"]
+    harness["Harness Execution Layers<br/>tests, scripts, parsers, browsers, benchmarks, domain tools"]
+    receipts["Runtime Evidence<br/>receipts, hashes, validation notes, rollback pointers, return packs"]
+    state["Project State<br/>pending candidates, accepted registries, project-scoped memory"]
 
-AgentOS CoreSlim exists to make this kind of work calmer. It keeps useful AI execution, but adds a simple discipline around it:
+    human --> agentos
+    agentos --> runner
+    runner --> agentos
+    agentos --> harness
+    harness --> receipts
+    receipts --> agentos
+    agentos --> state
+    state --> agentos
+    agentos --> human
 
-- keep candidates separate from accepted state;
-- keep evidence next to the decision;
-- keep runners replaceable;
-- keep Harnesses as execution layers, not authorities;
-- keep rollback pointers and return packs;
-- keep research evolution separate from the clean base.
+    classDef os fill:#f4f7ff,stroke:#3156a3,stroke-width:2px,color:#111827;
+    classDef interface fill:#fff8e6,stroke:#b7791f,stroke-width:1.5px,color:#111827;
+    classDef exec fill:#ecfdf3,stroke:#2f855a,stroke-width:1.5px,color:#111827;
+    classDef evidence fill:#fdf2f8,stroke:#b83280,stroke-width:1.5px,color:#111827;
+    classDef human fill:#f8fafc,stroke:#475569,stroke-width:1.5px,color:#111827;
+
+    class agentos os;
+    class runner interface;
+    class harness exec;
+    class receipts,state evidence;
+    class human human;
+```
+
+### Why This Matters
+
+Modern agent tools are powerful, but they usually leave the project with a runtime gap.
+
+A runner can edit files, but it may not know whether the edit is only a candidate. A Harness can run a test, but a passing test does not decide whether a registry should change. A model can summarize memory, but the project still needs to know where the evidence came from, whether it is reusable, and who approved promotion.
+
+AgentOS fills that gap. It gives the project a runtime discipline for:
+
+- what can be attempted;
+- who or what may execute it;
+- which evidence is required;
+- where the result is stored;
+- whether the result remains pending, is rejected, or is promoted;
+- how another runner, window, or maintainer can continue the work;
+- how the project rolls back when a candidate should not stand.
+
+This is why the system is framed as an operating system rather than a helper library. It owns the cognitive runtime contract around the tools.
 
 ### The Role AgentOS Plays
 
-AgentOS is best understood as an operating layer around cognitive work. It does not have to be the model, the editor, the browser, the test runner, or the deployment tool. Instead, it coordinates them.
+AgentOS sits between human intention and tool execution.
 
-In a typical project:
+It receives goals, seeds, pointers, or task prompts from a human/PM. It allows a runner to operate the project. It sends bounded work to one or more Harnesses. It records evidence and receipts. It keeps candidate state separate from accepted state. It gives humans a reviewable return pack instead of asking them to trust an unstructured agent transcript.
 
-- a human or PM gives the goal;
-- a runner such as Codex, Claude Code, or WorkBuddy performs the local work;
-- AgentOS supplies the policy, role boundaries, candidate rules, and review gates;
-- one or more Harnesses execute checks or domain-specific operations;
-- the result is returned with receipts, hashes, manifests, validation notes, and rollback information.
+The important relationship is:
 
-This makes AgentOS useful when a project needs more than a clever assistant. It is for work where the path matters, not only the final answer.
+```text
+Human / PM intention
+  -> AgentOS cognitive runtime OS
+     -> Runner interface: Codex, Claude Code, WorkBuddy, or another operator surface
+     -> Harness execution layers: tests, scripts, parsers, browsers, benchmarks, domain tools
+  -> Evidence, receipts, memory candidates, rollback pointers, return packs
+  -> Human / PM review and promotion decision
+```
 
-### What Problems It Helps Solve
+Runners and Harnesses can be swapped. The runtime rules should remain legible.
 
-**Scattered AI work.** AgentOS turns isolated runner sessions into traceable project cycles with seed inputs, outputs, validation, and return packs.
+### Problems AgentOS Is Meant To Solve
 
-**Tool overreach.** Runners and Harnesses can do useful work, but they do not get to promote candidates or rewrite accepted registries by themselves.
+**Disconnected runner sessions.** AgentOS turns individual sessions into project cycles with seeds, decisions, evidence, and handoff artifacts.
 
-**Lost context.** Project learning can be stored as project-scoped candidate memory or policy prior, with enough evidence to review later.
+**Unclear authority.** A runner can propose and operate; a Harness can execute and report; AgentOS preserves the rule that promotion requires the proper review gate.
 
-**Unsafe reuse.** A lesson from one domain does not automatically become a global rule. AgentOS keeps cross-project transfer explicit.
+**Evidence loss.** Execution receipts, manifests, hashes, validation notes, and rollback pointers become part of the normal output, not an afterthought.
 
-**Research/base confusion.** Experimental self-evolution outputs can be preserved as evidence without silently entering the clean base.
+**Memory drift.** Project learning can become a scoped candidate memory or policy prior, instead of a vague statement hidden in a chat log.
 
-**Hard rollback.** Changes are easier to inspect and unwind when manifests, hash inventories, receipts, and rollback pointers are produced as part of the workflow.
+**Unsafe cross-project transfer.** A lesson from one project does not become a global rule unless the evidence, scope, and review path support that transfer.
 
-### How To Use It Without Making Life Miserable
+**Research/base contamination.** Experimental self-evolution outputs can be kept as evidence without silently entering the clean CoreSlim base.
 
-Start small. You do not need a large agent platform before AgentOS becomes useful.
+### How To Use It In Practice
 
-1. Pick a runner you are comfortable using.
-2. Give it a seed, pointer, issue, or task prompt.
-3. Let it work inside the AgentOS rules: candidate-first, evidence-backed, reviewable.
-4. Attach only the Harnesses needed for this task.
-5. Run the checks.
-6. Ask for a return pack: what changed, what was verified, what remains pending, and how to roll back.
-7. Promote only what a human/PM has approved.
+The easiest way to start is not to build a giant platform. Start by treating AgentOS as the runtime contract for one real project.
 
-The pleasant path is: use your favorite runner for flow, use AgentOS for memory and governance, use Harnesses for execution evidence.
+1. Choose a runner for the human-facing workflow.
+2. Give AgentOS a seed, pointer, issue, or task prompt.
+3. Let the runner operate through AgentOS rules rather than free-form improvisation.
+4. Attach only the Harnesses needed for the current task.
+5. Run the checks and collect receipts.
+6. Produce a return pack: what changed, what evidence was used, what passed, what remains pending, and how to roll back.
+7. Keep candidates pending until the human/PM review gate promotes them.
+
+The pleasant use pattern is:
+
+```text
+Use the runner for flow.
+Use Harnesses for execution.
+Use AgentOS as the cognitive runtime OS that keeps the work coherent.
+```
 
 ### Recommended Runners
 
-AgentOS CoreSlim works well with replaceable runners. The runner is the interactive surface; AgentOS is the governance layer.
+Runners are not the center of AgentOS. They are replaceable ways to operate the runtime.
 
-- **Codex** is a good default for repository maintenance, local code edits, tests, packaging, return packs, and GitHub handoff.
-- **Claude Code** is useful as an alternate local coding runner for navigation, patching, and review-style workflows.
-- **WorkBuddy** is useful when the project needs workspace coordination, task tracking, handoff continuity, or day-to-day operating support.
-- Other runners can be used if they can follow the same rules: read the seed, work locally, respect candidate boundaries, run checks, and return evidence.
+- **Codex** is a strong default for repository maintenance, local code changes, tests, packaging, return packs, and GitHub handoff.
+- **Claude Code** can be used as another local coding runner for navigation, patching, and review-oriented workflows.
+- **WorkBuddy** is useful when the project needs workspace coordination, task tracking, handoff continuity, or daily operating support.
+- Other runners can be connected if they can respect the same runtime contract: read the seed, operate locally, preserve candidate boundaries, run checks, and return evidence.
 
-The runner should not be treated as the final authority. It may edit, test, package, inspect, and propose. It should not directly promote candidates, mutate accepted registries, bypass review gates, or turn private project material into shared/global state.
+A runner should not be asked to become the source of truth. It is an operator interface into AgentOS.
 
 ### Harness Execution Layers
 
-A Harness is an execution adapter. It gives AgentOS a way to run or verify something in the outside world, but it does not own the governance decision.
+Harnesses are also not the center of AgentOS. They are bounded execution layers connected to the runtime.
 
-Useful Harness layers may include:
+Possible Harnesses include:
 
 - local shell, Python, pytest, or build Harnesses;
 - document parsing and extraction Harnesses;
@@ -101,19 +150,7 @@ Useful Harness layers may include:
 - packaging and release Harnesses;
 - domain Harnesses for VC, education, manufacturing, research, legal, healthcare, or other project worlds.
 
-Harness output is evidence. It can support a decision, but it does not become accepted truth on its own. AgentOS keeps the distinction between "this check ran" and "this change is approved."
-
-### A Normal Work Cycle
-
-```text
-Human / PM
-  -> Runner: Codex, Claude Code, WorkBuddy, or another local operator
-  -> AgentOS CoreSlim policy and role boundaries
-  -> Harness execution layer(s)
-  -> Evidence, receipts, validation, hashes, rollback pointer
-  -> Human / PM review
-  -> Candidate stays pending, gets revised, or is approved
-```
+A Harness output means: something was run and produced evidence. It does not mean: the project has accepted a new truth. AgentOS keeps that distinction explicit.
 
 ### What Is Inside CoreSlim
 
@@ -126,24 +163,26 @@ CoreSlim currently provides a compact set of base mechanisms:
 - seed pack and return pack discipline;
 - tests that check the main governance boundaries.
 
-These are intentionally small. CoreSlim is a base, not a finished product suite.
+These pieces are small by design. CoreSlim is the base runtime, not the full future AgentOS product.
 
 ### What AgentOS CoreSlim Can Do
 
-- Bootstrap a clean AgentOS base for downstream projects.
-- Help a runner operate under explicit boundaries.
+- Bootstrap a clean cognitive runtime base for downstream AgentOS projects.
+- Let runners operate through explicit runtime boundaries.
+- Attach different Harness execution layers without giving them governance authority.
 - Keep new behavior candidate-only until reviewed.
 - Preserve evidence, validation notes, hash inventories, and rollback pointers.
 - Support project-scoped learning without mutating global truth.
-- Package handoff materials so another window, runner, or maintainer can continue.
+- Package handoff materials so another runner, maintainer, or window can continue.
 - Separate base maintenance from research self-evolution.
 
 ### What It Should Not Be Used For
 
+- Treating a runner as the final authority.
+- Treating a Harness result as automatic acceptance.
 - Autonomous production deployment.
 - Legal, financial, medical, or operational commitments without human authority.
 - Silent mutation of accepted registries or official baselines.
-- Turning Harness output into final truth without review.
 - Importing private material into shared/global models without permission review.
 - Claiming AGI or production readiness because local tests pass.
 
@@ -178,96 +217,145 @@ _incoming/              Received seed packs and integration evidence
 
 ## 中文
 
-AgentOS 是一个给 AI 协作项目使用的操作层。它关心的不是“换一个聊天机器人”，而是让一个长期项目在使用 Codex、Claude Code、WorkBuddy 或其他 runner 时，仍然能保留记忆、证据、审查、回滚和可复现的执行过程。
+AgentOS 是面向 AI-agent 工作的认知运行时操作系统。它的目标，是给 runner 和 Harness 提供一层共同的运行时：角色、权限、证据、记忆、执行回执、审查门和回滚规则，都在这一层被协调。
 
-CoreSlim 是这个操作层的干净基座。它适合用来启动下游 AgentOS 项目，也适合维护跨项目共用的基础规则。它刻意不把不稳定的 research self-evolution 输出、私人上下文和一次性自动化习惯直接带进基座。
+AgentOS 不是 Codex、Claude Code、WorkBuddy 或其他 runner 的插件。相反，runner 是接入 AgentOS 的操作界面。AgentOS 也不只是一个测试 Harness 或自动化脚本。Harness 为 AgentOS 执行动作，但不定义系统的权威。
+
+CoreSlim 是这个操作系统的干净基座。它刻意保持小：足够启动一个有治理的 AgentOS 项目，但不会把不稳定的研究线演化、私人项目上下文或一次性自动化习惯带进基座。
 
 ### 一句话说明
 
-每当一个 AI runner 替项目做事时，AgentOS 帮项目回答这些问题：
+AgentOS 的存在，是为了让 AI 工作运行在一个有治理的 runtime 中，而不是散落成一堆互不相连的会话。
 
-- 这个 runner 被允许做什么？
-- 它用了什么证据？
-- 它改了什么，能不能 replay 或 rollback？
-- 这是候选结果，还是已经被 human/PM 批准？
-- 哪个 Harness 检查了结果？
-- 这个经验能否跨项目复用，还是只能留在当前项目里？
+在这个模型里：
 
-如果普通 agent 工具负责编辑、运行、搜索、打包，那么 AgentOS 负责让这些工作变得可追踪、可审查、可交接。
+- **Runner** 是操作界面。Codex、Claude Code、WorkBuddy 等工具帮助人类操作项目。
+- **Harness** 是执行界面。它们运行测试、脚本、浏览器、解析器、benchmark、打包器、领域工具或其他有边界动作。
+- **AgentOS** 是认知运行时操作系统。它定义角色、权限、状态转移、候选规则、证据要求、审查门和回传材料，让这些工作可以被信任。
 
-### 为什么需要 AgentOS
+runner 可以输入命令。Harness 可以运行检查。AgentOS 决定这些工作在项目生命周期中意味着什么。
 
-AI 编码和工作流工具已经很好用，但项目一旦持续变长，问题就会变成：工作越来越难被信任。
+### 系统架构图
 
-文件改了，prompt 变了，本地脚本生成了输出。runner 说已经验证过，但证据没有打包。项目学到了一条经验，却不知道它只适用于本项目，还是可以变成跨项目规则。研究线产生了有价值的想法，但干净基座不应该悄悄吸收它们。
+```mermaid
+flowchart TB
+    human["Human / PM<br/>意图、批准、审查"]
+    agentos["AgentOS 认知运行时操作系统<br/>角色、权限、记忆、证据、候选状态、审查门"]
+    runner["Runner 操作界面<br/>Codex、Claude Code、WorkBuddy、其他操作端"]
+    harness["Harness 执行层<br/>测试、脚本、解析器、浏览器、benchmark、领域工具"]
+    receipts["运行时证据<br/>回执、hash、验证说明、回滚指针、return pack"]
+    state["项目状态<br/>pending candidates、accepted registries、项目内记忆"]
 
-AgentOS CoreSlim 想解决的正是这种混乱。它保留 AI 执行带来的速度，但给它加上一套轻量纪律：
+    human --> agentos
+    agentos --> runner
+    runner --> agentos
+    agentos --> harness
+    harness --> receipts
+    receipts --> agentos
+    agentos --> state
+    state --> agentos
+    agentos --> human
 
-- candidate 和 accepted 分开；
-- 证据和决策放在一起；
-- runner 可以替换；
-- Harness 只是执行层，不是治理权威；
-- return pack、hash inventory、rollback pointer 成为工作流的一部分；
-- research evolution 和 clean base 分开维护。
+    classDef os fill:#f4f7ff,stroke:#3156a3,stroke-width:2px,color:#111827;
+    classDef interface fill:#fff8e6,stroke:#b7791f,stroke-width:1.5px,color:#111827;
+    classDef exec fill:#ecfdf3,stroke:#2f855a,stroke-width:1.5px,color:#111827;
+    classDef evidence fill:#fdf2f8,stroke:#b83280,stroke-width:1.5px,color:#111827;
+    classDef human fill:#f8fafc,stroke:#475569,stroke-width:1.5px,color:#111827;
+
+    class agentos os;
+    class runner interface;
+    class harness exec;
+    class receipts,state evidence;
+    class human human;
+```
+
+### 为什么这件事重要
+
+现在的 agent 工具已经很强，但它们通常留下一个 runtime 缺口。
+
+runner 可以改文件，但它未必知道这个修改只是候选。Harness 可以跑测试，但测试通过并不等于 registry 应该改变。模型可以总结记忆，但项目仍然需要知道证据从哪里来、能不能复用、谁批准了提升。
+
+AgentOS 填补的就是这个缺口。它给项目提供一套运行时纪律，用来说明：
+
+- 什么可以尝试；
+- 谁或什么可以执行；
+- 需要哪些证据；
+- 结果存放在哪里；
+- 结果是 pending、rejected，还是 promoted；
+- 另一个 runner、窗口或维护者怎样继续；
+- 当候选不成立时，项目怎样回滚。
+
+这就是为什么这里把 AgentOS 表达为操作系统，而不是辅助库。它拥有围绕工具运行的认知 runtime contract。
 
 ### AgentOS 扮演什么角色
 
-AgentOS 可以理解为认知工作流外面的一层“项目操作系统”。它不一定亲自做模型、编辑器、浏览器、测试器或部署器。它的作用是协调这些东西。
+AgentOS 位于人类意图和工具执行之间。
 
-一个典型项目里：
+它接收 human/PM 给出的 goal、seed、pointer 或 task prompt。它允许 runner 操作项目。它把有边界的任务交给一个或多个 Harness。它记录证据和回执。它把 candidate state 和 accepted state 分开。它给人类一份可审查的 return pack，而不是要求人类信任一段松散的 agent transcript。
 
-- human 或 PM 给出目标；
-- Codex、Claude Code、WorkBuddy 等 runner 完成本地操作；
-- AgentOS 提供策略、角色边界、候选态规则和审查门；
-- 一个或多个 Harness 执行检查或领域动作；
-- 最终输出 receipts、hash、manifest、validation notes 和 rollback 信息。
+重要关系是：
 
-所以 AgentOS 适合的场景，不只是“找一个聪明助手回答问题”，而是那些过程本身也很重要的工作。
+```text
+Human / PM intention
+  -> AgentOS cognitive runtime OS
+     -> Runner interface: Codex、Claude Code、WorkBuddy 或其他操作界面
+     -> Harness execution layers: tests、scripts、parsers、browsers、benchmarks、domain tools
+  -> Evidence、receipts、memory candidates、rollback pointers、return packs
+  -> Human / PM review and promotion decision
+```
 
-### 它能解决哪些实际问题
+runner 和 Harness 都可以替换。运行时规则应该保持清楚。
 
-**AI 工作分散。** AgentOS 把零散 runner 会话整理成带 seed、输出、验证和 return pack 的项目周期。
+### AgentOS 要解决的问题
 
-**工具越权。** runner 和 Harness 可以做事，但不能自己把候选结果提升为 accepted，也不能自己改 accepted registry。
+**runner 会话分散。** AgentOS 把单次会话整理成有 seed、decision、evidence 和 handoff artifact 的项目周期。
 
-**上下文丢失。** 项目学到的东西可以进入项目内候选记忆或 policy prior，并保留足够证据供以后审查。
+**权威关系不清。** runner 可以提议和操作；Harness 可以执行和报告；AgentOS 保留“提升必须经过正确审查门”的规则。
 
-**复用不安全。** 一个领域里的经验不会自动变成全局规则。跨项目迁移必须显式发生。
+**证据丢失。** execution receipt、manifest、hash、validation note 和 rollback pointer 变成正常输出，而不是事后补材料。
 
-**研究线和基座混在一起。** research self-evolution 输出可以作为证据保存，但不会静默进入 clean base。
+**记忆漂移。** 项目学到的东西可以成为有作用域的候选记忆或 policy prior，而不是藏在聊天记录里的模糊说法。
 
-**回滚困难。** 当 manifest、hash inventory、receipt 和 rollback pointer 成为固定输出时，后续检查和撤回会轻松很多。
+**跨项目迁移不安全。** 一个项目里的经验不会自动变成全局规则，除非证据、作用域和审查路径都支持迁移。
 
-### 怎样愉快地用起来
+**研究线污染基座。** experimental self-evolution 输出可以作为证据保存，但不会静默进入干净的 CoreSlim base。
 
-先从小任务开始，不需要一上来搭一个庞大的 agent 平台。
+### 实际上怎么使用
 
-1. 选择一个你顺手的 runner。
-2. 给它 seed、pointer、issue 或 task prompt。
-3. 让它按 AgentOS 规则工作：先候选、带证据、可审查。
-4. 只接入当前任务真正需要的 Harness。
-5. 运行检查。
-6. 要求输出 return pack：改了什么、验证了什么、什么仍然 pending、如何回滚。
-7. 只有 human/PM 批准的内容才能被提升。
+最容易的启动方式，不是先搭一个庞大平台，而是把 AgentOS 当作一个真实项目的 runtime contract。
 
-最舒服的使用方式是：用你喜欢的 runner 保持工作流顺畅，用 AgentOS 管记忆和治理，用 Harness 提供执行证据。
+1. 为人类工作流选择一个 runner。
+2. 给 AgentOS 一个 seed、pointer、issue 或 task prompt。
+3. 让 runner 按 AgentOS 规则操作，而不是自由发挥。
+4. 只接入当前任务需要的 Harness。
+5. 运行检查并收集回执。
+6. 输出 return pack：改了什么、用了什么证据、什么通过了、什么仍然 pending、如何回滚。
+7. 在 human/PM 审查门提升之前，候选结果保持 pending。
+
+最舒服的使用模式是：
+
+```text
+用 runner 保持操作流畅。
+用 Harness 执行动作。
+用 AgentOS 作为认知运行时操作系统，让整件事保持一致。
+```
 
 ### 推荐 Runner
 
-AgentOS CoreSlim 适合搭配可替换 runner 使用。runner 是交互界面，AgentOS 是治理层。
+runner 不是 AgentOS 的中心。runner 是操作 AgentOS runtime 的可替换界面。
 
-- **Codex**：适合仓库维护、本地代码修改、测试、打包、return pack 和 GitHub 交接。
+- **Codex**：适合作为仓库维护、本地代码修改、测试、打包、return pack 和 GitHub 交接的默认 runner。
 - **Claude Code**：适合作为另一种本地编码 runner，用于仓库导航、patch 实现和 review 风格工作流。
-- **WorkBuddy**：适合需要任务编排、交接连续性、日常执行支持的 workspace。
-- 其他 runner 也可以使用，只要它能遵守同一套规则：读取 seed，本地执行，尊重候选边界，运行检查，返回证据。
+- **WorkBuddy**：适合需要 workspace 协调、任务跟踪、交接连续性和日常运营支持的项目。
+- 其他 runner 也可以接入，只要它能遵守同一套 runtime contract：读取 seed，本地操作，保留候选边界，运行检查，返回证据。
 
-runner 不应该被当作最终权威。它可以编辑、测试、打包、检查和提出建议；但不应该直接提升 candidate、修改 accepted registry、绕过审查门，或把私人项目材料写入 shared/global state。
+runner 不应该成为真值来源。它是进入 AgentOS 的操作界面。
 
 ### Harness 执行层
 
-Harness 是执行适配器。它让 AgentOS 能在外部世界运行或验证某件事，但它不拥有治理决策权。
+Harness 也不是 AgentOS 的中心。Harness 是接入 runtime 的有边界执行层。
 
-可接入的 Harness 包括：
+可以接入的 Harness 包括：
 
 - 本地 shell、Python、pytest 或 build Harness；
 - 文档解析与抽取 Harness；
@@ -277,19 +365,7 @@ Harness 是执行适配器。它让 AgentOS 能在外部世界运行或验证某
 - 打包与发布 Harness；
 - 面向 VC、教育、制造、研究、法律、医疗等领域的专用 Harness。
 
-Harness 输出是证据。它可以支持决策，但不会自动成为 accepted truth。AgentOS 保留“检查已经运行”和“变更已经批准”之间的区别。
-
-### 一个正常工作周期
-
-```text
-Human / PM
-  -> Runner: Codex、Claude Code、WorkBuddy 或其他本地操作界面
-  -> AgentOS CoreSlim policy 与 role boundary
-  -> Harness execution layer(s)
-  -> Evidence、receipts、validation、hashes、rollback pointer
-  -> Human / PM review
-  -> Candidate 保持 pending、继续修改，或被批准
-```
+Harness 输出意味着：某件事被执行了，并产生了证据。它不意味着：项目已经接受了一个新的真值。AgentOS 会把这一区别保持清楚。
 
 ### CoreSlim 里面有什么
 
@@ -302,24 +378,26 @@ CoreSlim 当前提供一组小而干净的基座机制：
 - seed pack 和 return pack 纪律；
 - 覆盖主要治理边界的测试。
 
-这些能力刻意保持小。CoreSlim 是基座，不是一个已经完成的产品套件。
+这些能力刻意保持小。CoreSlim 是基础 runtime，不是完整的未来 AgentOS 产品套件。
 
 ### AgentOS CoreSlim 能做什么
 
-- 为下游项目启动一个干净的 AgentOS 基座。
-- 帮 runner 在明确边界内工作。
+- 为下游 AgentOS 项目启动一个干净的认知 runtime 基座。
+- 让 runner 在明确运行时边界内操作。
+- 接入不同 Harness 执行层，但不把治理权交给 Harness。
 - 让新行为在审查前保持 candidate-only。
 - 保存证据、验证说明、hash inventory 和 rollback pointer。
 - 支持项目内学习，但不直接改写全局真值。
-- 打包交接材料，让另一个窗口、runner 或维护者可以继续。
+- 打包交接材料，让另一个 runner、维护者或窗口可以继续。
 - 将 base maintenance 与 research self-evolution 分开。
 
 ### 不应该用它做什么
 
+- 把 runner 当成最终权威。
+- 把 Harness 结果当成自动接受。
 - 自治生产部署。
 - 在没有人类授权时做法律、金融、医疗或运营承诺。
 - 静默修改 accepted registry 或官方 baseline。
-- 把 Harness 输出直接当作最终真值。
 - 未经权限审查，把私人材料写入 shared/global model。
 - 因为本地测试通过就宣称 AGI 达成或生产就绪。
 
