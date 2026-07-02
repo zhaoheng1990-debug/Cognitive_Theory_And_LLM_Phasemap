@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900" role="img" aria-labelledby="title desc">
+  <title id="title">AgentOS Cognitive Runtime Architecture</title>
+  <desc id="desc">AgentOS is shown as the central cognitive runtime operating system. Human and PM intention enters AgentOS. Runners operate through AgentOS. Harness layers execute bounded work. Evidence, rollback information, and project state return to AgentOS for human review.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="52%" stop-color="#eef5ff"/>
+      <stop offset="100%" stop-color="#f7f3ff"/>
+    </linearGradient>
+    <linearGradient id="agentosGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2147d8"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+    <linearGradient id="runnerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#ffedd5"/>
+    </linearGradient>
+    <linearGradient id="harnessGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ecfdf5"/>
+      <stop offset="100%" stop-color="#d1fae5"/>
+    </linearGradient>
+    <linearGradient id="evidenceGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdf2f8"/>
+      <stop offset="100%" stop-color="#fce7f3"/>
+    </linearGradient>
+    <filter id="shadow" x="-12%" y="-18%" width="124%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.16"/>
+    </filter>
+    <filter id="softShadow" x="-12%" y="-18%" width="124%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#334155" flood-opacity="0.11"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#3356c9"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#b45309"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#15803d"/>
+    </marker>
+    <marker id="arrowPink" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#be185d"/>
+    </marker>
+    <style>
+      text { font-family: "Inter", "Segoe UI", Arial, "Microsoft YaHei", sans-serif; }
+      .eyebrow { font-size: 16px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; fill: #475569; }
+      .title { font-size: 34px; font-weight: 800; fill: #0f172a; }
+      .subtitle { font-size: 18px; fill: #475569; }
+      .card-title { font-size: 22px; font-weight: 800; fill: #111827; }
+      .card-subtitle { font-size: 15px; fill: #4b5563; }
+      .agent-title { font-size: 34px; font-weight: 850; fill: #ffffff; }
+      .agent-subtitle { font-size: 17px; fill: #dbeafe; }
+      .agent-line { font-size: 17px; fill: #f8fafc; }
+      .pill { font-size: 14px; font-weight: 700; fill: #1f2937; }
+      .small { font-size: 13px; fill: #64748b; }
+      .note { font-size: 14px; font-weight: 700; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="900" fill="url(#bg)"/>
+  <circle cx="1090" cy="126" r="148" fill="#ffffff" opacity="0.48"/>
+  <circle cx="160" cy="735" r="170" fill="#ffffff" opacity="0.52"/>
+
+  <text x="70" y="74" class="eyebrow">AgentOS Architecture</text>
+  <text x="70" y="118" class="title">Cognitive Runtime OS for Runners and Harnesses</text>
+  <text x="70" y="150" class="subtitle">Runners operate through AgentOS. Harnesses execute for AgentOS. AgentOS owns the runtime contract.</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="440" y="190" width="400" height="92" rx="20" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="640" y="230" text-anchor="middle" class="card-title">Human / PM Intention</text>
+    <text x="640" y="256" text-anchor="middle" class="card-subtitle">goals, seeds, review, approval</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="76" y="360" width="260" height="226" rx="26" fill="url(#runnerGrad)" stroke="#fb923c" stroke-width="1.5"/>
+    <text x="206" y="405" text-anchor="middle" class="card-title">Runner Interface</text>
+    <text x="206" y="431" text-anchor="middle" class="card-subtitle">operator surfaces</text>
+    <rect x="112" y="462" width="92" height="34" rx="17" fill="#ffffff" stroke="#fed7aa"/>
+    <text x="158" y="484" text-anchor="middle" class="pill">Codex</text>
+    <rect x="218" y="462" width="82" height="34" rx="17" fill="#ffffff" stroke="#fed7aa"/>
+    <text x="259" y="484" text-anchor="middle" class="pill">Claude</text>
+    <rect x="112" y="510" width="92" height="34" rx="17" fill="#ffffff" stroke="#fed7aa"/>
+    <text x="158" y="532" text-anchor="middle" class="pill">WorkBuddy</text>
+    <rect x="218" y="510" width="82" height="34" rx="17" fill="#ffffff" stroke="#fed7aa"/>
+    <text x="259" y="532" text-anchor="middle" class="pill">Other</text>
+    <text x="206" y="566" text-anchor="middle" class="small">edit, inspect, package, hand off</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="380" y="334" width="520" height="270" rx="32" fill="url(#agentosGrad)"/>
+    <text x="640" y="388" text-anchor="middle" class="agent-title">AgentOS</text>
+    <text x="640" y="416" text-anchor="middle" class="agent-subtitle">Cognitive Runtime Operating System</text>
+    <line x1="430" y1="442" x2="850" y2="442" stroke="#bfdbfe" stroke-width="1" opacity="0.58"/>
+    <text x="466" y="480" class="agent-line">Runtime contract</text>
+    <text x="466" y="514" class="agent-line">Roles and permissions</text>
+    <text x="466" y="548" class="agent-line">Candidate state</text>
+    <text x="714" y="480" class="agent-line">Evidence requirements</text>
+    <text x="714" y="514" class="agent-line">Review gates</text>
+    <text x="714" y="548" class="agent-line">Rollback rules</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="944" y="360" width="260" height="226" rx="26" fill="url(#harnessGrad)" stroke="#4ade80" stroke-width="1.5"/>
+    <text x="1074" y="405" text-anchor="middle" class="card-title">Harness Layers</text>
+    <text x="1074" y="431" text-anchor="middle" class="card-subtitle">bounded execution</text>
+    <rect x="982" y="462" width="86" height="34" rx="17" fill="#ffffff" stroke="#bbf7d0"/>
+    <text x="1025" y="484" text-anchor="middle" class="pill">Tests</text>
+    <rect x="1082" y="462" width="86" height="34" rx="17" fill="#ffffff" stroke="#bbf7d0"/>
+    <text x="1125" y="484" text-anchor="middle" class="pill">Scripts</text>
+    <rect x="982" y="510" width="86" height="34" rx="17" fill="#ffffff" stroke="#bbf7d0"/>
+    <text x="1025" y="532" text-anchor="middle" class="pill">Parsers</text>
+    <rect x="1082" y="510" width="86" height="34" rx="17" fill="#ffffff" stroke="#bbf7d0"/>
+    <text x="1125" y="532" text-anchor="middle" class="pill">Domain</text>
+    <text x="1074" y="566" text-anchor="middle" class="small">run, measure, validate, report</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="248" y="700" width="344" height="116" rx="24" fill="url(#evidenceGrad)" stroke="#f9a8d4" stroke-width="1.5"/>
+    <text x="420" y="744" text-anchor="middle" class="card-title">Runtime Evidence</text>
+    <text x="420" y="772" text-anchor="middle" class="card-subtitle">receipts, hashes, validation notes</text>
+    <text x="420" y="794" text-anchor="middle" class="card-subtitle">rollback pointers and return packs</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="688" y="700" width="344" height="116" rx="24" fill="#ffffff" stroke="#c4b5fd" stroke-width="1.5"/>
+    <text x="860" y="744" text-anchor="middle" class="card-title">Project State</text>
+    <text x="860" y="772" text-anchor="middle" class="card-subtitle">pending candidates, accepted registries</text>
+    <text x="860" y="794" text-anchor="middle" class="card-subtitle">and project-scoped memory</text>
+  </g>
+
+  <path d="M640 282 L640 322" fill="none" stroke="#3356c9" stroke-width="3" marker-end="url(#arrowBlue)"/>
+
+  <path d="M336 438 L370 438" fill="none" stroke="#b45309" stroke-width="3" marker-end="url(#arrowAmber)"/>
+  <path d="M380 520 L346 520" fill="none" stroke="#b45309" stroke-width="3" marker-end="url(#arrowAmber)"/>
+
+  <path d="M900 438 L934 438" fill="none" stroke="#15803d" stroke-width="3" marker-end="url(#arrowGreen)"/>
+  <path d="M944 520 L910 520" fill="none" stroke="#15803d" stroke-width="3" marker-end="url(#arrowGreen)"/>
+
+  <path d="M548 604 C520 642 468 658 432 692" fill="none" stroke="#be185d" stroke-width="3" marker-end="url(#arrowPink)"/>
+  <path d="M732 604 C760 642 812 658 848 692" fill="none" stroke="#6d28d9" stroke-width="3" marker-end="url(#arrowBlue)"/>
+  <path d="M1074 586 C1048 648 936 650 886 692" fill="none" stroke="#15803d" stroke-width="3" marker-end="url(#arrowGreen)"/>
+
+  <path d="M640 604 L640 652 C640 682 600 682 558 700" fill="none" stroke="#be185d" stroke-width="2.5" marker-end="url(#arrowPink)" opacity="0.82"/>
+  <path d="M840 700 C804 662 760 638 724 604" fill="none" stroke="#6d28d9" stroke-width="2.5" marker-end="url(#arrowBlue)" opacity="0.78"/>
+
+  <rect x="388" y="628" width="504" height="38" rx="19" fill="#ffffff" stroke="#cbd5e1" opacity="0.96"/>
+  <text x="640" y="652" text-anchor="middle" class="note">Promotion requires AgentOS policy plus human / PM review.</text>
+
+  <rect x="70" y="846" width="1140" height="1" fill="#cbd5e1"/>
+  <text x="640" y="872" text-anchor="middle" class="small">AgentOS is the cognitive runtime OS. Runners and Harnesses are replaceable interfaces connected to it.</text>
+</svg>

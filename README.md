@@ -22,37 +22,7 @@ The runner may type the command. The Harness may run the check. AgentOS decides 
 
 ### System Architecture
 
-```mermaid
-flowchart TB
-    human["Human / PM<br/>intent, approval, review"]
-    agentos["AgentOS Cognitive Runtime OS<br/>roles, permissions, memory, evidence, candidate state, review gates"]
-    runner["Runner Interface<br/>Codex, Claude Code, WorkBuddy, other operator surfaces"]
-    harness["Harness Execution Layers<br/>tests, scripts, parsers, browsers, benchmarks, domain tools"]
-    receipts["Runtime Evidence<br/>receipts, hashes, validation notes, rollback pointers, return packs"]
-    state["Project State<br/>pending candidates, accepted registries, project-scoped memory"]
-
-    human --> agentos
-    agentos --> runner
-    runner --> agentos
-    agentos --> harness
-    harness --> receipts
-    receipts --> agentos
-    agentos --> state
-    state --> agentos
-    agentos --> human
-
-    classDef os fill:#f4f7ff,stroke:#3156a3,stroke-width:2px,color:#111827;
-    classDef interface fill:#fff8e6,stroke:#b7791f,stroke-width:1.5px,color:#111827;
-    classDef exec fill:#ecfdf3,stroke:#2f855a,stroke-width:1.5px,color:#111827;
-    classDef evidence fill:#fdf2f8,stroke:#b83280,stroke-width:1.5px,color:#111827;
-    classDef human fill:#f8fafc,stroke:#475569,stroke-width:1.5px,color:#111827;
-
-    class agentos os;
-    class runner interface;
-    class harness exec;
-    class receipts,state evidence;
-    class human human;
-```
+![AgentOS cognitive runtime architecture](assets/agentos_runtime_architecture.svg)
 
 ### Why This Matters
 
@@ -237,37 +207,7 @@ runner 可以输入命令。Harness 可以运行检查。AgentOS 决定这些工
 
 ### 系统架构图
 
-```mermaid
-flowchart TB
-    human["Human / PM<br/>意图、批准、审查"]
-    agentos["AgentOS 认知运行时操作系统<br/>角色、权限、记忆、证据、候选状态、审查门"]
-    runner["Runner 操作界面<br/>Codex、Claude Code、WorkBuddy、其他操作端"]
-    harness["Harness 执行层<br/>测试、脚本、解析器、浏览器、benchmark、领域工具"]
-    receipts["运行时证据<br/>回执、hash、验证说明、回滚指针、return pack"]
-    state["项目状态<br/>pending candidates、accepted registries、项目内记忆"]
-
-    human --> agentos
-    agentos --> runner
-    runner --> agentos
-    agentos --> harness
-    harness --> receipts
-    receipts --> agentos
-    agentos --> state
-    state --> agentos
-    agentos --> human
-
-    classDef os fill:#f4f7ff,stroke:#3156a3,stroke-width:2px,color:#111827;
-    classDef interface fill:#fff8e6,stroke:#b7791f,stroke-width:1.5px,color:#111827;
-    classDef exec fill:#ecfdf3,stroke:#2f855a,stroke-width:1.5px,color:#111827;
-    classDef evidence fill:#fdf2f8,stroke:#b83280,stroke-width:1.5px,color:#111827;
-    classDef human fill:#f8fafc,stroke:#475569,stroke-width:1.5px,color:#111827;
-
-    class agentos os;
-    class runner interface;
-    class harness exec;
-    class receipts,state evidence;
-    class human human;
-```
+![AgentOS 认知运行时架构图](assets/agentos_runtime_architecture.svg)
 
 ### 为什么这件事重要
 
