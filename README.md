@@ -156,6 +156,12 @@ These pieces are small by design. CoreSlim is the base runtime, not the full fut
 - Importing private material into shared/global models without permission review.
 - Claiming AGI or production readiness because local tests pass.
 
+### License
+
+AgentOS CoreSlim is released under the Apache License 2.0 unless otherwise noted.
+
+See [LICENSE](LICENSE) for details.
+
 ### Current Status
 
 - Branch: `AgentOS`
@@ -340,6 +346,12 @@ CoreSlim 当前提供一组小而干净的基座机制：
 - 静默修改 accepted registry 或官方 baseline。
 - 未经权限审查，把私人材料写入 shared/global model。
 - 因为本地测试通过就宣称 AGI 达成或生产就绪。
+
+### 开源协议
+
+除非另有说明，AgentOS CoreSlim 采用 Apache License 2.0 开源协议发布。
+
+详见 [LICENSE](LICENSE)。
 
 ### 当前状态
 
