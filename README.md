@@ -27,6 +27,50 @@ In the CoreSlim base, the emphasis is on:
 - Intended use: bootstrap downstream AgentOS projects and maintain the CoreSlim base
 - Not claimed: production release, global registry activation, official theory-baseline mutation, AGI achievement, or autonomous production deployment
 
+### Recommended Usage
+
+AgentOS CoreSlim is best used as a governed base plus one or more replaceable runners. A runner is the interactive coding or operating surface that helps a human or project maintainer execute AgentOS tasks. Recommended runner options include:
+
+- **Codex**: useful for repository work, local code edits, tests, packaging, return packs, and GitHub handoff.
+- **Claude Code**: useful as an alternate coding runner for local repo navigation, patch work, and review-style workflows.
+- **WorkBuddy**: useful as an operational workspace runner when a project needs task orchestration, handoff tracking, or day-to-day execution support.
+
+The runner is not the AgentOS authority. In the CoreSlim model, runners should be treated as operator interfaces. They may read instructions, edit files, run tests, prepare patches, and call bounded tools, but they should not directly promote candidates, mutate accepted registries, or bypass Kernel / PM / human review gates.
+
+A typical setup is:
+
+```text
+Human / PM
+  -> Runner: Codex, Claude Code, WorkBuddy, or another local operator surface
+  -> AgentOS Kernel policy layer
+  -> Harness execution layer(s)
+  -> Receipts, hash inventories, rollback pointers, return packs
+```
+
+### Harness Execution Layers
+
+AgentOS can connect to multiple Harness layers. A Harness is an execution adapter, not a governance owner. Different projects may attach different Harnesses depending on the task:
+
+- local shell / Python test Harness;
+- document parsing or extraction Harness;
+- data validation Harness;
+- browser or UI automation Harness;
+- simulation or benchmark Harness;
+- packaging and release Harness;
+- domain-specific Harness, such as VC, education, manufacturing, research, legal, or healthcare adapters.
+
+Harness outputs should be treated as evidence or execution receipts. They may support a candidate decision, but they do not become accepted truth by themselves. Kernel policy, evidence lineage, permission review, schema review, retention review, and human/PM authorization determine whether anything can be promoted.
+
+### Quick Start Pattern
+
+1. Start from the `AgentOS` branch or a verified CoreSlim return pack.
+2. Choose a runner, usually Codex for repository maintenance or Claude Code / WorkBuddy for alternate local workflows.
+3. Read the current seed pack, pointer, or task prompt before editing.
+4. Keep all new behavior candidate-only unless explicit authorization says otherwise.
+5. Run the local tests and any task-specific Harness checks.
+6. Emit a return pack with manifest, hash inventory, validation report, and rollback pointer.
+7. Treat pointer updates and accepted-registry updates as review candidates until approved.
+
 ### Core Capabilities
 
 #### 1. Kernel-Bounded Tool Execution
@@ -168,6 +212,50 @@ AgentOS 是一个面向“有治理的认知工作流”的操作层。它负责
 - 验证：本地测试已通过
 - 用途：启动下游 AgentOS 项目，并维护 CoreSlim 基座
 - 不声明：生产发布、全局 registry 激活、官方理论基线写入、AGI 达成、自治生产部署
+
+### 推荐使用方式
+
+AgentOS CoreSlim 最适合以“治理基座 + 可替换 runner”的方式使用。runner 是人类或项目维护者操作 AgentOS 任务的交互式编码/执行界面。推荐 runner 包括：
+
+- **Codex**：适合仓库维护、本地代码修改、测试、打包、return pack 和 GitHub 交接。
+- **Claude Code**：适合作为另一种本地代码 runner，用于仓库导航、patch 实现和 review 风格工作流。
+- **WorkBuddy**：适合偏运营型的 workspace runner，用于任务编排、交接跟踪和日常执行支持。
+
+runner 不是 AgentOS 的最终权威。在 CoreSlim 模型中，runner 应被视为 operator interface。它可以读取指令、编辑文件、运行测试、准备 patch、调用有边界工具，但不能直接提升 candidate、修改 accepted registry，或绕过 Kernel / PM / human review gate。
+
+典型结构是：
+
+```text
+Human / PM
+  -> Runner: Codex、Claude Code、WorkBuddy 或其他本地操作界面
+  -> AgentOS Kernel policy layer
+  -> Harness execution layer(s)
+  -> Receipts、hash inventories、rollback pointers、return packs
+```
+
+### Harness 执行层
+
+AgentOS 可以外接多个 Harness 执行层。Harness 是执行适配器，不是治理权威。不同项目可以根据任务连接不同 Harness：
+
+- 本地 shell / Python test Harness；
+- 文档解析或抽取 Harness；
+- 数据验证 Harness；
+- 浏览器或 UI 自动化 Harness；
+- 仿真或 benchmark Harness；
+- 打包与发布 Harness；
+- 领域专用 Harness，例如 VC、教育、制造、研究、法律、医疗等适配器。
+
+Harness 输出应被视为证据或 execution receipt。它可以支持候选决策，但不会自动成为 accepted truth。是否能够提升，取决于 Kernel policy、evidence lineage、permission review、schema review、retention review，以及 human / PM authorization。
+
+### 快速启动模式
+
+1. 从 `AgentOS` 分支或经过验证的 CoreSlim return pack 开始。
+2. 选择 runner，仓库维护通常推荐 Codex，其他本地工作流可选择 Claude Code 或 WorkBuddy。
+3. 修改前先读取当前 seed pack、pointer 或 task prompt。
+4. 除非有明确授权，否则所有新行为保持 candidate-only。
+5. 运行本地测试和任务要求的 Harness 检查。
+6. 输出 return pack，包含 manifest、hash inventory、validation report 和 rollback pointer。
+7. Pointer update 和 accepted-registry update 在批准前都只能作为 review candidate。
 
 ### 核心能力
 
