@@ -42,6 +42,24 @@ AgentOS fills that gap. It gives the project a runtime discipline for:
 
 This is why the system is framed as an operating system rather than a helper library. It owns the cognitive runtime contract around the tools.
 
+### Provider-Backed Runtime Cognition
+
+AgentOS does not treat the runtime as a thin mechanical wrapper around a model. The runtime remains the cognitive subject. It is responsible for goals, boundaries, meta-rules, evidence organization, conflict handling, replay, rollback, and final candidate state.
+
+Those runtime abilities need provider support. Providers strengthen the runtime's semantic path by returning structured, evidence-grounded receipts for operations such as TemporalSRO recognition, structural routing, operator ranking, UtilityPolicySelection, Cbit gain estimation, evidence support, entity/event extraction, drift checks, and next-action selection.
+
+The receipt is not an answer to blindly accept. It is auditable support for the runtime's judgment path. A provider may support a candidate-state judgment, but it may not declare an accepted state, authorize promotion, write accepted memory, or replace Kernel/runtime authority.
+
+The boundary is:
+
+- **Provider:** supports semantic judgment with structured, evidence-grounded receipts.
+- **Runtime:** remains the cognitive subject, integrating those receipts into goal handling, SRO, routing, evidence, memory, conflict resolution, replay reasoning, and candidate-state judgment.
+- **Kernel:** keeps final authority over safety boundaries, permissions, state transitions, accepted writes, rollback, replay, and promotion.
+
+The provider-backed layer is therefore audited by responsibility coverage: goal/constraint management, boundary governance, meta-rule application, evidence organization, conflict handling, replay/rollback reasoning, and final candidate-state judgment must all have provider-backed semantic support while preserving runtime authority.
+
+This is what lets AgentOS act as a cognitive runtime OS rather than a runner plugin. Provider support gives the runtime semantic depth; runtime policy keeps that depth governed.
+
 ### The Role AgentOS Plays
 
 AgentOS sits between human intention and tool execution.
@@ -127,6 +145,7 @@ A Harness output means: something was run and produced evidence. It does not mea
 CoreSlim currently provides a compact set of base mechanisms:
 
 - bounded local tool execution through `CodexToolBridge`;
+- provider-backed semantic runtime support for SRO, routing, evidence, memory, UtilityPolicySelection, Cbit estimation, and next-action judgment receipts;
 - project-scoped ICM evolution policy for evidence-backed candidates;
 - baseline evolution proposal protocol for human-reviewable updates;
 - `DomainObjectModeler` for candidate-only domain object modeling;
@@ -171,7 +190,7 @@ See [LICENSE](LICENSE) for details.
 
 ```text
 pytest -q agentos_core_slim_v0/tests
-28 passed
+41 passed
 
 python -m compileall -q agentos_core_slim_v0
 passed
@@ -232,6 +251,22 @@ AgentOS 填补的就是这个缺口。它给项目提供一套运行时纪律，
 - 当候选不成立时，项目怎样回滚。
 
 这就是为什么这里把 AgentOS 表达为操作系统，而不是辅助库。它拥有围绕工具运行的认知 runtime contract。
+
+### Provider-backed 的运行时认知
+
+AgentOS 不把 runtime 当成模型外面的一层薄封装。runtime 仍然是认知主体，负责目标、边界、元规则、证据组织、冲突处理、回放、回滚和最终候选状态。
+
+这些 runtime 能力需要 provider 支撑。Provider 的作用，是为 runtime 的语义路径提供结构化、可审计、基于证据的 receipt，例如 TemporalSRO 识别、结构路由、算子排序、UtilityPolicySelection、Cbit gain 估计、证据支持判断、实体/事件抽取、漂移检查和下一步动作选择。
+
+receipt 不是一份可以盲目接受的答案。它是 runtime 判断路径的语义支撑。Provider 可以支撑候选状态判断，但不能声明 accepted state，不能授权 promotion，不能写入 accepted memory，也不能替代 Kernel/runtime 的权威。
+
+边界是：
+
+- **Provider**：提供结构化、证据支撑的语义判断 receipt。
+- **Runtime**：仍然是认知主体，把 receipt 组织进目标处理、SRO、路由、证据、记忆、冲突处理、回放推理和候选状态判断。
+- **Kernel**：保留安全边界、权限、状态转移、accepted 写入、回滚、回放和 promotion 的最终权威。
+
+因此 provider-backed 层的审计重点，不是“有没有调模型”，而是它是否覆盖 runtime 的主体职责：目标/约束管理、边界治理、元规则应用、证据组织、冲突处理、回放/回滚推理、最终候选状态判断；同时必须保留 runtime 权威。
 
 ### AgentOS 扮演什么角色
 
@@ -318,6 +353,7 @@ Harness 输出意味着：某件事被执行了，并产生了证据。它不意
 CoreSlim 当前提供一组小而干净的基座机制：
 
 - 通过 `CodexToolBridge` 进行有边界的本地工具执行；
+- provider-backed 运行时认知支撑，用于 SRO、路由、证据、记忆、UtilityPolicySelection、Cbit 估计和下一步动作 judgment receipt；
 - 项目内 ICM 演化策略，用于有证据支撑的候选项；
 - baseline evolution proposal protocol，用于生成可由人类审查的基线更新提案；
 - `DomainObjectModeler`，用于 candidate-only 的领域对象建模；
@@ -362,7 +398,7 @@ CoreSlim 当前提供一组小而干净的基座机制：
 
 ```text
 pytest -q agentos_core_slim_v0/tests
-28 passed
+41 passed
 
 python -m compileall -q agentos_core_slim_v0
 passed
