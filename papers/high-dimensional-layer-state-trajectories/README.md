@@ -34,7 +34,7 @@ Full reruns require local access to the listed Qwen, Llama and Gemma checkpoints
 ## Recommended starting points
 
 1. Read `source_data/README.md` and the source-data manifest.
-2. Inspect `code/config/path_config.example.json` and use repository-relative paths.
+2. Inspect `code/config/example_paths.yaml` and use repository-relative paths.
 3. Install the dependencies documented under `code/environment/`.
 4. Run the relevant wrapper or figure script from the repository root.
 
@@ -85,7 +85,7 @@ ORCID: https://orcid.org/0009-0004-2395-9393
 ### 建议起点
 
 1. 阅读 `source_data/README.md` 和 Source Data manifest。
-2. 查看 `code/config/path_config.example.json`，并使用仓库相对路径。
+2. 查看 `code/config/example_paths.yaml`，并使用仓库相对路径。
 3. 按照 `code/environment/` 中的说明安装依赖。
 4. 从仓库根目录运行相应的 wrapper 或绘图脚本。
 
@@ -101,3 +101,4 @@ ORCID: https://orcid.org/0009-0004-2395-9393
 
 Heng Zhao：zhaoheng1990@gmail.com  
 ORCID：https://orcid.org/0009-0004-2395-9393
+
