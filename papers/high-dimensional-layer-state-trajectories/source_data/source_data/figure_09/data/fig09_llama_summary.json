@@ -1,0 +1,134 @@
+{
+  "model_key": "llama",
+  "model_path": "D:\\model\\Llama-3.2-1B-Instruct",
+  "n_prompts": 960,
+  "num_layers": 16,
+  "pre_layers": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "precursor_layers": [
+    9,
+    10,
+    11
+  ],
+  "decision_layers": [
+    11,
+    12,
+    13,
+    14
+  ],
+  "obs_layers": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "deltaU_pc1_variance": 0.8261755108833313,
+  "best_proxy": {
+    "model_key": "llama",
+    "proxy": "hidden_precursor_mean",
+    "n_samples": 960,
+    "n_features": 2048,
+    "deltaU_r2": 0.8153388276223468,
+    "deltaU_corr": 0.9065007625694738,
+    "phase_acc": 1.0,
+    "phase_macro_f1": 1.0,
+    "mechanism_acc": 1.0,
+    "mechanism_macro_f1": 1.0,
+    "ontology_proxy_score": 3.7218395901918204
+  },
+  "topk_realW_proxy": {
+    "model_key": "llama",
+    "proxy": "topk_realW_flow",
+    "n_samples": 960,
+    "n_features": 14,
+    "deltaU_r2": 0.10745142774794492,
+    "deltaU_corr": 0.32795329476095064,
+    "phase_acc": 0.6958333333333333,
+    "phase_macro_f1": 0.6985211750894923,
+    "mechanism_acc": 0.6958333333333333,
+    "mechanism_macro_f1": 0.6985211750894923,
+    "ontology_proxy_score": 1.8324470726878803
+  },
+  "topk_rowpermW_proxy": {
+    "model_key": "llama",
+    "proxy": "topk_rowpermW_flow",
+    "n_samples": 960,
+    "n_features": 14,
+    "deltaU_r2": 0.10745412901624751,
+    "deltaU_corr": 0.3279574054955583,
+    "phase_acc": 0.6958333333333333,
+    "phase_macro_f1": 0.6985211750894923,
+    "mechanism_acc": 0.6958333333333333,
+    "mechanism_macro_f1": 0.6985211750894923,
+    "ontology_proxy_score": 1.8324538846907905
+  },
+  "topk_gaussianR_proxy": {
+    "model_key": "llama",
+    "proxy": "topk_gaussianR_flow",
+    "n_samples": 960,
+    "n_features": 14,
+    "deltaU_r2": 0.1162338187846289,
+    "deltaU_corr": 0.3420792485729186,
+    "phase_acc": 0.7270833333333333,
+    "phase_macro_f1": 0.722823457961525,
+    "mechanism_acc": 0.7270833333333333,
+    "mechanism_macro_f1": 0.722823457961525,
+    "ontology_proxy_score": 1.9039599832805978
+  },
+  "hshape_proxy": {
+    "model_key": "llama",
+    "proxy": "Hshape_dR_decision",
+    "n_samples": 960,
+    "n_features": 4,
+    "deltaU_r2": 0.9999296343684752,
+    "deltaU_corr": 0.9999816283431224,
+    "phase_acc": 0.6239583333333333,
+    "phase_macro_f1": 0.6005592450513414,
+    "mechanism_acc": 0.6239583333333333,
+    "mechanism_macro_f1": 0.6005592450513414,
+    "ontology_proxy_score": 3.2010297528142804
+  },
+  "hidden_precursor_proxy": {
+    "model_key": "llama",
+    "proxy": "hidden_precursor_mean",
+    "n_samples": 960,
+    "n_features": 2048,
+    "deltaU_r2": 0.8153388276223468,
+    "deltaU_corr": 0.9065007625694738,
+    "phase_acc": 1.0,
+    "phase_macro_f1": 1.0,
+    "mechanism_acc": 1.0,
+    "mechanism_macro_f1": 1.0,
+    "ontology_proxy_score": 3.7218395901918204
+  },
+  "psg_geometry_mean": {
+    "gaussianR": 0.9535817289502045,
+    "randomK": -0.007036908933747662,
+    "realW": 0.8102529800728658,
+    "rowpermW": 0.8102526916408579
+  },
+  "real_minus_rowperm_geometry": 2.884320079443725e-07,
+  "real_minus_gaussian_geometry": -0.1433287488773387,
+  "real_minus_randomK_geometry": 0.8172898890066135,
+  "verdict": {
+    "psg_residual_supported": false,
+    "topk_readback_supported": true,
+    "hidden_or_hshape_beats_topk": true
+  },
+  "interpretation_guardrail": "If realW does not exceed rowpermW/gaussianR, TopK/VIM stays a PSG-corrected readback observable. If hidden/Hshape/O-flow proxies outperform TopK on DeltaU/phase, they become stronger trajectory-ontology proxies."
+}

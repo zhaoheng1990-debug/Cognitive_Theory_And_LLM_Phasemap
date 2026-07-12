@@ -1,0 +1,26 @@
+"file","variable","min","max","expected","pass"
+"fig01_p2_seedstability_layer_summary.csv","mean_test_r2",0.595344960689545,0.810301220417023,"upper bound 1; R2 may be negative",TRUE
+"fig01_p2_seedstability_layer_summary.csv","mean_test_cos",0.994413125514984,0.997023451328278,"upper bound 1; R2 may be negative",TRUE
+"fig01_p2_transition_signatures.csv","r2",0.548870146274567,0.833266019821167,"upper bound 1; R2 may be negative",TRUE
+"fig01_p2_transition_signatures.csv","cos",0.993730664253235,0.997428178787231,"upper bound 1; R2 may be negative",TRUE
+"fig02_p2_seed_metrics.csv","test_r2",-0.455573439598083,0.833266019821167,"upper bound 1; R2 may be negative",TRUE
+"fig02_p2_seed_metrics.csv","test_cos",0.975365459918976,0.997428178787231,"upper bound 1; R2 may be negative",TRUE
+"fig02_repeated_split_metrics.csv","test_r2",-0.455572843551636,0.833266079425812,"upper bound 1; R2 may be negative",TRUE
+"fig02_repeated_split_metrics.csv","test_cos",0.975365459918976,0.997428178787231,"upper bound 1; R2 may be negative",TRUE
+"fig03_transition_operator_fit.csv","test_r2",0.5652,0.7576,"upper bound 1; R2 may be negative",TRUE
+"fig03_transition_operator_fit.csv","test_cos",0.9939,0.9957,"upper bound 1; R2 may be negative",TRUE
+"fig04_qwen_window_scan.csv","start_frac",0,0.407407407407407,"bounded [0,1]",TRUE
+"fig04_qwen_window_scan.csv","end_frac",0.037037037037037,0.444444444444444,"bounded [0,1]",TRUE
+"fig04_qwen_window_scan.csv","mechanism_macro_f1_group",0.547196332666741,0.765368807031347,"bounded [0,1]",TRUE
+"fig04_qwen_window_scan.csv","topology_score",0.63330221794713,0.875458844179009,"bounded [0,1]",TRUE
+"fig04_qwen_window_scan.csv","mechanism_score",0.547196332666741,0.765368807031347,"bounded [0,1]",TRUE
+"fig04_llama_window_scan.csv","start_frac",0,0.333333333333333,"bounded [0,1]",TRUE
+"fig04_llama_window_scan.csv","end_frac",0.0666666666666667,0.4,"bounded [0,1]",TRUE
+"fig04_llama_window_scan.csv","mechanism_macro_f1_group",0.614528657528868,0.758212562029185,"bounded [0,1]",TRUE
+"fig04_llama_window_scan.csv","topology_score",0.719633733290433,0.894292862061623,"bounded [0,1]",TRUE
+"fig04_llama_window_scan.csv","mechanism_score",0.614528657528868,0.758212562029185,"bounded [0,1]",TRUE
+"fig04_gemma_window_scan.csv","start_frac",0,0.4,"bounded [0,1]",TRUE
+"fig04_gemma_window_scan.csv","end_frac",0.04,0.44,"bounded [0,1]",TRUE
+"fig04_gemma_window_scan.csv","mechanism_macro_f1_group",0.522653646404798,0.785415083835168,"bounded [0,1]",TRUE
+"fig04_gemma_window_scan.csv","topology_score",0.755884013758151,0.975773681492493,"bounded [0,1]",TRUE
+"fig04_gemma_window_scan.csv","mechanism_score",0.522653646404798,0.785415083835168,"bounded [0,1]",TRUE

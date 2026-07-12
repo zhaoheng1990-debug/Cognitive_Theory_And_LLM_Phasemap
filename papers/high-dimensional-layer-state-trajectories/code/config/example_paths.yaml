@@ -1,0 +1,30 @@
+# Portable path template for local reruns or public-code wrapping.
+# Replace placeholder values locally; do not commit workstation-specific paths.
+
+project_root: "."
+
+data:
+  source_data_dir: "data/source_data"
+  metadata_dir: "metadata"
+  output_dir: "outputs"
+  raw_hidden_state_dir: "<path-to-raw-hidden-state-arrays-or-regeneration-output>"
+
+models:
+  qwen_2_5_1_5b_instruct:
+    hf_id: "Qwen/Qwen2.5-1.5B-Instruct"
+    local_path: "<optional-local-checkpoint-path>"
+  llama_3_2_1b_instruct:
+    hf_id: "meta-llama/Llama-3.2-1B-Instruct"
+    local_path: "<optional-local-checkpoint-path>"
+  gemma_2_2b_it:
+    hf_id: "google/gemma-2-2b-it"
+    local_path: "<optional-local-checkpoint-path>"
+
+runtime:
+  python_env: "dhrf_4080s"
+  r_env: "nature-r-fig"
+
+figures:
+  export_dir: "outputs/figures"
+  source_data_manifest: "metadata/source_data_manifest_v0_1.csv"
+

@@ -1,0 +1,8 @@
+component,full_model,full_macro_r2,ablated_model,ablated_macro_r2,drop_when_removed,interpretation
+R,A0_full_RBTHO,0.9802606188815952,Ablate_without_R,0.980238295218648,2.2323662947187906e-05,larger positive drop => more necessary for closure
+B,A0_full_RBTHO,0.9802606188815952,Ablate_without_B,0.9473358054708497,0.03292481341074549,larger positive drop => more necessary for closure
+T,A0_full_RBTHO,0.9802606188815952,Ablate_without_T,0.9801835571128193,7.706176877586568e-05,larger positive drop => more necessary for closure
+Hshape,A0_full_RBTHO,0.9802606188815952,Ablate_without_Hshape,0.9748432148274412,0.005417404054154029,larger positive drop => more necessary for closure
+Ocont,A0_full_RBTHO,0.9802606188815952,Ablate_without_Ocont,0.8239695032462231,0.15629111563537212,larger positive drop => more necessary for closure
+Ocont_gain,M5_state_plus_Ocont,0.9802606188815952,M3_RBT_plus_Hshape,0.8239695032462231,0.15629111563537212,positive => continuous operator coordinates modulate transition
+Bilinear_gain,M8_state_Ocont_bilinear,0.9930682740570173,M5_state_plus_Ocont,0.9802606188815952,0.012807655175422039,"positive => F_O is state-dependent, not just additive operator bias"

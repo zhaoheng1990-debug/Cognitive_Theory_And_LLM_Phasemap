@@ -1,0 +1,8 @@
+"figure","role","status","staged_file","source_path","sha256","rows"
+"Fig12","descriptive_ladder","canonical-candidate","fig12_descriptive_ladder.csv","[local provenance path redacted]","f9cce6835c69954d8dd97369aee05b75f1b9b42260289912e98fc717e53107a5","19"
+"Fig12","component_ablation","canonical-candidate","fig12_component_ablation.csv","[local provenance path redacted]","6eac8a0bc85ce44f2cf304ef254fb7393067f757e30f26e8c5e94425d148e158","7"
+"Fig12","target_summary","canonical-candidate","fig12_target_summary.csv","[local provenance path redacted]","c34c1e515dad1021241f00ad4023c6f899248318fc7ed166f9d793d7a9f558fb","76"
+"Fig12","embedding_quality","canonical-candidate","fig12_embedding_quality.csv","[local provenance path redacted]","d09588c9c969de117a304c241cc06fbb6391f5e8ec8c2139d796f467b568a4e4","11"
+"Fig12","predictive_summary","canonical-candidate","fig12_predictive_summary.json","[local provenance path redacted]","dbe54c6b640219bc61daed35bb362c2a368c34b2f58cf1abdf39bc173652c5f3",""
+"Fig12","operator_origin","canonical-candidate","fig12_operator_origin.csv","[local provenance path redacted]","3409691b188ebd95bab3ab90219d271bd1cedbd454399d7164e16f66d6bac104","4"
+"Fig12","two_stage","canonical-candidate","fig12_two_stage.csv","[local provenance path redacted]","53b0236319bc45ee5d058e51d16bdd46ffa050677e4e31ff1f9f8fd4670825a3","8"

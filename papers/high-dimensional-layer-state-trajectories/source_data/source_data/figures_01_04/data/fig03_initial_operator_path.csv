@@ -1,0 +1,28 @@
+layer,transition,operator,provisional_role
+0,L0->L1,O0,Input boundary
+1,L1->L2,O0,Input boundary
+2,L2->L3,O0,Input boundary
+3,L3->L4,O1,Other
+4,L4->L5,O1,Other
+5,L5->L6,O2,Other
+6,L6->L7,O2,Other
+7,L7->L8,O3,Other
+8,L8->L9,O3,Other
+9,L9->L10,O4,Other
+10,L10->L11,O4,Other
+11,L11->L12,O4,Other
+12,L12->L13,O5,Bulk
+13,L13->L14,O5,Bulk
+14,L14->L15,O5,Bulk
+15,L15->L16,O5,Bulk
+16,L16->L17,O5,Bulk
+17,L17->L18,O6,Other
+18,L18->L19,O6,Other
+19,L19->L20,O6,Other
+20,L20->L21,O6,Other
+21,L21->L22,O7,Output boundary
+22,L22->L23,O7,Output boundary
+23,L23->L24,O7,Output boundary
+24,L24->L25,O7,Output boundary
+25,L25->L26,O7,Output boundary
+26,L26->L27,O7,Output boundary

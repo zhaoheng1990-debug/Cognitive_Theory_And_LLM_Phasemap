@@ -1,0 +1,12 @@
+﻿condition,repeat,definition
+realW,0,Original lm_head/output embedding matrix.
+rowpermW,0,Vocabulary rows randomly permuted; row norms and vector distribution preserved.
+rowpermW,1,Vocabulary rows randomly permuted; row norms and vector distribution preserved.
+rowpermW,2,Vocabulary rows randomly permuted; row norms and vector distribution preserved.
+rowpermW,3,Vocabulary rows randomly permuted; row norms and vector distribution preserved.
+rowpermW,4,Vocabulary rows randomly permuted; row norms and vector distribution preserved.
+gaussianR,0,Random Gaussian matrix matched to realW per-dimension scale and row norms.
+gaussianR,1,Random Gaussian matrix matched to realW per-dimension scale and row norms.
+gaussianR,2,Random Gaussian matrix matched to realW per-dimension scale and row norms.
+gaussianR,3,Random Gaussian matrix matched to realW per-dimension scale and row norms.
+gaussianR,4,Random Gaussian matrix matched to realW per-dimension scale and row norms.

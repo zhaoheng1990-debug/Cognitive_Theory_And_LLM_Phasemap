@@ -1,0 +1,165 @@
+ï»¿"prompt_id","prompt_text_or_template","condition_label","condition_short","mechanism_label","group_id","graph_id","clean_answer","conflict_answer","aux_answer","mechanism_y","phase_y","model_coverage","inclusion_flag","exclusion_reason","preprocessing_rule","source_evidence"
+"opa1a_cm_g000_clean","You are given a small relation graph.
+Fact 1: Ava belongs to Bela.
+Fact 2: Bela maps to Red.
+Question: Which label is associated with Ava: Red or Blue?
+Answer with exactly one word:","clean","clean","stable","0","0","Red","Blue","Green","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g000_rename","Consider a tiny mapping network.
+Link one: Ava belongs to Bela.
+Link two: Bela maps to Red.
+Choose the label reached from Ava: Red or Blue.
+One word answer:","rename","rename","stable","0","0","Red","Blue","Green","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g000_paraphrase","In this example, Ava reaches Bela.
+The destination connected to Bela is Red.
+Based on those two links, select the label for Ava: Red or Blue.
+Answer:","paraphrase","paraphrase","stable","0","0","Red","Blue","Green","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g000_irrelevant","You are given a small relation graph.
+Fact 1: Ava belongs to Bela.
+Fact 2: Bela maps to Red.
+Irrelevant fact: Cora is associated with Green.
+Question: Which label is associated with Ava: Red or Blue?
+Answer with exactly one word:","irrelevant","irrelevant","stable","0","0","Red","Blue","Green","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g000_weak_distractor","You are given a small relation graph.
+Fact 1: Ava belongs to Bela.
+Fact 2: Bela maps to Red.
+Weak note: an unrelated source mentions Blue, but it does not update the graph.
+Question: Which label is associated with Ava: Red or Blue?
+Answer with exactly one word:","weak_distractor","weak_distractor","stable_shift","0","0","Red","Blue","Green","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g000_competition_balanced","You are given a small relation graph with competing records.
+Record A: Ava belongs to Bela, and Bela maps to Red.
+Record B: another note says Ava maps to Blue.
+Question: Which label is better supported for Ava: Red or Blue?
+Answer with exactly one word:","competition_balanced","competition_balanced","competition","0","0","Red","Blue","Green","1","1","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g000_direct_conflict","You are given a small relation graph.
+Fact 1: Ava belongs to Bela.
+Fact 2: Bela maps to Red.
+Direct conflicting fact: Ava maps to Blue.
+Question: Which label is associated with Ava: Red or Blue?
+Answer with exactly one word:","direct_conflict","direct_conflict","competition","0","0","Red","Blue","Green","1","1","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g000_closure_update","You are given a small relation graph.
+Fact 1: Ava belongs to Bela.
+Old record: Bela maps to Red.
+Updated record: Bela maps to Blue, not Red.
+Question: Which label is associated with Ava: Red or Blue?
+Answer with exactly one word:","closure_update","closure_update","closure","0","0","Red","Blue","Green","2","2","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g000_closure_override","You are given a rule system.
+General rule: items that belongs to Bela receive label Red.
+Override rule: in this case, items that belongs to Bela receive label Blue.
+Fact: Ava belongs to Bela.
+Question: Which label applies to Ava: Red or Blue?
+Answer with exactly one word:","closure_override","closure_override","closure","0","0","Red","Blue","Green","2","2","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g000_exception_override","You are given a rule system.
+General rule: items connected to Bela use label Red.
+Exception: Ava is a special case and uses label Blue.
+Fact: Ava is connected to Bela.
+Question: Which label applies to Ava: Red or Blue?
+Answer with exactly one word:","exception_override","exception_override","closure","0","0","Red","Blue","Green","2","2","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g000_source_claim","You are given two source claims.
+Source Alpha says: Ava belongs to Bela, and Bela maps to Red.
+Source Beta says: Ava maps to Blue.
+Neither source is marked as more reliable.
+Question: Which label should be chosen for Ava: Red or Blue?
+Answer with exactly one word:","source_claim","source_claim","source_ambiguity","0","0","Red","Blue","Green","1","1","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g000_equal_evidence","You are given balanced evidence.
+Evidence for Red: Ava belongs to Bela, and Bela maps to Red.
+Evidence for Blue: Ava is directly listed with Blue.
+The evidence strength is equal.
+Question: Which label is associated with Ava: Red or Blue?
+Answer with exactly one word:","equal_evidence","equal_evidence","competition","0","0","Red","Blue","Green","1","1","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g001_clean","You are given a small relation graph.
+Fact 1: Ava is assigned to Bela.
+Fact 2: Bela has label Green.
+Question: Which label is associated with Ava: Green or Yellow?
+Answer with exactly one word:","clean","clean","stable","1","1","Green","Yellow","North","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g001_rename","Consider a tiny mapping network.
+Link one: Ava is assigned to Bela.
+Link two: Bela has label Green.
+Choose the label reached from Ava: Green or Yellow.
+One word answer:","rename","rename","stable","1","1","Green","Yellow","North","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g001_paraphrase","In this example, Ava reaches Bela.
+The destination connected to Bela is Green.
+Based on those two links, select the label for Ava: Green or Yellow.
+Answer:","paraphrase","paraphrase","stable","1","1","Green","Yellow","North","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g001_irrelevant","You are given a small relation graph.
+Fact 1: Ava is assigned to Bela.
+Fact 2: Bela has label Green.
+Irrelevant fact: Cora is associated with North.
+Question: Which label is associated with Ava: Green or Yellow?
+Answer with exactly one word:","irrelevant","irrelevant","stable","1","1","Green","Yellow","North","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g001_weak_distractor","You are given a small relation graph.
+Fact 1: Ava is assigned to Bela.
+Fact 2: Bela has label Green.
+Weak note: an unrelated source mentions Yellow, but it does not update the graph.
+Question: Which label is associated with Ava: Green or Yellow?
+Answer with exactly one word:","weak_distractor","weak_distractor","stable_shift","1","1","Green","Yellow","North","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g001_competition_balanced","You are given a small relation graph with competing records.
+Record A: Ava is assigned to Bela, and Bela has label Green.
+Record B: another note says Ava has label Yellow.
+Question: Which label is better supported for Ava: Green or Yellow?
+Answer with exactly one word:","competition_balanced","competition_balanced","competition","1","1","Green","Yellow","North","1","1","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g001_direct_conflict","You are given a small relation graph.
+Fact 1: Ava is assigned to Bela.
+Fact 2: Bela has label Green.
+Direct conflicting fact: Ava has label Yellow.
+Question: Which label is associated with Ava: Green or Yellow?
+Answer with exactly one word:","direct_conflict","direct_conflict","competition","1","1","Green","Yellow","North","1","1","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g001_closure_update","You are given a small relation graph.
+Fact 1: Ava is assigned to Bela.
+Old record: Bela has label Green.
+Updated record: Bela has label Yellow, not Green.
+Question: Which label is associated with Ava: Green or Yellow?
+Answer with exactly one word:","closure_update","closure_update","closure","1","1","Green","Yellow","North","2","2","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g001_closure_override","You are given a rule system.
+General rule: items that is assigned to Bela receive label Green.
+Override rule: in this case, items that is assigned to Bela receive label Yellow.
+Fact: Ava is assigned to Bela.
+Question: Which label applies to Ava: Green or Yellow?
+Answer with exactly one word:","closure_override","closure_override","closure","1","1","Green","Yellow","North","2","2","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g001_exception_override","You are given a rule system.
+General rule: items connected to Bela use label Green.
+Exception: Ava is a special case and uses label Yellow.
+Fact: Ava is connected to Bela.
+Question: Which label applies to Ava: Green or Yellow?
+Answer with exactly one word:","exception_override","exception_override","closure","1","1","Green","Yellow","North","2","2","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g001_source_claim","You are given two source claims.
+Source Alpha says: Ava is assigned to Bela, and Bela has label Green.
+Source Beta says: Ava has label Yellow.
+Neither source is marked as more reliable.
+Question: Which label should be chosen for Ava: Green or Yellow?
+Answer with exactly one word:","source_claim","source_claim","source_ambiguity","1","1","Green","Yellow","North","1","1","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g001_equal_evidence","You are given balanced evidence.
+Evidence for Green: Ava is assigned to Bela, and Bela has label Green.
+Evidence for Yellow: Ava is directly listed with Yellow.
+The evidence strength is equal.
+Question: Which label is associated with Ava: Green or Yellow?
+Answer with exactly one word:","equal_evidence","equal_evidence","competition","1","1","Green","Yellow","North","1","1","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g002_clean","You are given a small relation graph.
+Fact 1: Ava is grouped under Bela.
+Fact 2: Bela points to North.
+Question: Which label is associated with Ava: North or South?
+Answer with exactly one word:","clean","clean","stable","2","2","North","South","East","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g002_rename","Consider a tiny mapping network.
+Link one: Ava is grouped under Bela.
+Link two: Bela points to North.
+Choose the label reached from Ava: North or South.
+One word answer:","rename","rename","stable","2","2","North","South","East","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g002_paraphrase","In this example, Ava reaches Bela.
+The destination connected to Bela is North.
+Based on those two links, select the label for Ava: North or South.
+Answer:","paraphrase","paraphrase","stable","2","2","North","South","East","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g002_irrelevant","You are given a small relation graph.
+Fact 1: Ava is grouped under Bela.
+Fact 2: Bela points to North.
+Irrelevant fact: Cora is associated with East.
+Question: Which label is associated with Ava: North or South?
+Answer with exactly one word:","irrelevant","irrelevant","stable","2","2","North","South","East","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g002_weak_distractor","You are given a small relation graph.
+Fact 1: Ava is grouped under Bela.
+Fact 2: Bela points to North.
+Weak note: an unrelated source mentions South, but it does not update the graph.
+Question: Which label is associated with Ava: North or South?
+Answer with exactly one word:","weak_distractor","weak_distractor","stable_shift","2","2","North","South","East","0","0","Qwen;Llama;Gemma","include","","First 96 prompts from OPA-1A-lite cross-model prompt inventory; reused by OPA-1B PSG audit.","opa1b_prompt_inventory.csv"
+"opa1a_cm_g002_competition_balanced","You are given a small relation graph with competing records.
+Record A: Ava is grouped under Bela, and Bela points to North.
+Record B: another note says Ava points to South.
+Question: Which label is betteë}¶‰Ëkºwµçp‰e½Ô…É”¥Ù•¸„Íµ…±°É•±…Ñ¥½¸É…Á ¸)…Ğ€Äè…É¥¸¥Ì…ÍÍ¥¹•Ñ¼±¼¸)=±É•½Éè±¼¡…Ì±…‰•°½±¸)UÁ‘…Ñ•É•½Éè±¼¡…Ì±…‰•°%É½¸°¹½Ğ½±¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì…ÍÍ½¥…Ñ•İ¥Ñ …É¥¸è½±½È%É½¸ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰±½ÍÕÉ•}ÕÁ‘…Ñ”ˆ°‰±½ÍÕÉ•}ÕÁ‘…Ñ”ˆ°‰±½ÍÕÉ”ˆ°ˆÔˆ°ˆÔˆ°‰½±ˆ°‰%É½¸ˆ°‰I•ˆ°ˆÈˆ°ˆÈˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÕ}±½ÍÕÉ•}½Ù•ÉÉ¥‘”ˆ°‰e½Ô…É”¥Ù•¸„ÉÕ±”ÍåÍÑ•´¸)•¹•É…°ÉÕ±”è¥Ñ•µÌÑ¡…Ğ¥Ì…ÍÍ¥¹•Ñ¼±¼É••¥Ù”±…‰•°½±¸)=Ù•ÉÉ¥‘”ÉÕ±”è¥¸Ñ¡¥Ì…Í”°¥Ñ•µÌÑ¡…Ğ¥Ì…ÍÍ¥¹•Ñ¼±¼É••¥Ù”±…‰•°%É½¸¸)…Ğè…É¥¸¥Ì…ÍÍ¥¹•Ñ¼±¼¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°…ÁÁ±¥•ÌÑ¼…É¥¸è½±½È%É½¸ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰±½ÍÕÉ•}½Ù•ÉÉ¥‘”ˆ°‰±½ÍÕÉ•}½Ù•ÉÉ¥‘”ˆ°‰±½ÍÕÉ”ˆ°ˆÔˆ°ˆÔˆ°‰½±ˆ°‰%É½¸ˆ°‰I•ˆ°ˆÈˆ°ˆÈˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÕ}•á•ÁÑ¥½¹}½Ù•ÉÉ¥‘”ˆ°‰e½Ô…É”¥Ù•¸„ÉÕ±”ÍåÍÑ•´¸)•¹•É…°ÉÕ±”è¥Ñ•µÌ½¹¹•Ñ•Ñ¼±¼ÕÍ”±…‰•°½±¸)á•ÁÑ¥½¸è…É¥¸¥Ì„ÍÁ•¥…°…Í”…¹ÕÍ•Ì±…‰•°%É½¸¸)…Ğè…É¥¸¥Ì½¹¹•Ñ•Ñ¼±¼¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°…ÁÁ±¥•ÌÑ¼…É¥¸è½±½È%É½¸ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰•á•ÁÑ¥½¹}½Ù•ÉÉ¥‘”ˆ°‰•á•ÁÑ¥½¹}½Ù•ÉÉ¥‘”ˆ°‰±½ÍÕÉ”ˆ°ˆÔˆ°ˆÔˆ°‰½±ˆ°‰%É½¸ˆ°‰I•ˆ°ˆÈˆ°ˆÈˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÕ}Í½ÕÉ•}±…¥´ˆ°‰e½Ô…É”¥Ù•¸Ñİ¼Í½ÕÉ”±…¥µÌ¸)M½ÕÉ”±Á¡„Í…åÌè…É¥¸¥Ì…ÍÍ¥¹•Ñ¼±¼°…¹±¼¡…Ì±…‰•°½±¸)M½ÕÉ”	•Ñ„Í…åÌè…É¥¸¡…Ì±…‰•°%É½¸¸)9•¥Ñ¡•ÈÍ½ÕÉ”¥Ìµ…É­•…Ìµ½É”É•±¥…‰±”¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°Í¡½Õ±‰”¡½Í•¸™½È…É¥¸è½±½È%É½¸ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰Í½ÕÉ•}±…¥´ˆ°‰Í½ÕÉ•}±…¥´ˆ°‰Í½ÕÉ•}…µ‰¥Õ¥Ñäˆ°ˆÔˆ°ˆÔˆ°‰½±ˆ°‰%É½¸ˆ°‰I•ˆ°ˆÄˆ°ˆÄˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÕ}•ÅÕ…±}•Ù¥‘•¹”ˆ°‰e½Ô…É”¥Ù•¸‰…±…¹••Ù¥‘•¹”¸)Ù¥‘•¹”™½È½±è…É¥¸¥Ì…ÍÍ¥¹•Ñ¼±¼°…¹±¼¡…Ì±…‰•°½±¸)Ù¥‘•¹”™½È%É½¸è…É¥¸¥Ì‘¥É•Ñ±ä±¥ÍÑ•İ¥Ñ %É½¸¸)Q¡”•Ù¥‘•¹”ÍÑÉ•¹Ñ ¥Ì•ÅÕ…°¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì…ÍÍ½¥…Ñ•İ¥Ñ …É¥¸è½±½È%É½¸ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰•ÅÕ…±}•Ù¥‘•¹”ˆ°‰•ÅÕ…±}•Ù¥‘•¹”ˆ°‰½µÁ•Ñ¥Ñ¥½¸ˆ°ˆÔˆ°ˆÔˆ°‰½±ˆ°‰%É½¸ˆ°‰I•ˆ°ˆÄˆ°ˆÄˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÙ}±•…¸ˆ°‰e½Ô…É”¥Ù•¸„Íµ…±°É•±…Ñ¥½¸É…Á ¸)…Ğ€Äè…É¥¸¥ÌÉ½ÕÁ•Õ¹‘•È±¼¸)…Ğ€Èè±¼Á½¥¹ÑÌÑ¼I•¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì…ÍÍ½¥…Ñ•İ¥Ñ …É¥¸èI•½È	±Õ”ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰±•…¸ˆ°‰±•…¸ˆ°‰ÍÑ…‰±”ˆ°ˆØˆ°ˆØˆ°‰I•ˆ°‰	±Õ”ˆ°‰É••¸ˆ°ˆÀˆ°ˆÀˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÙ}É•¹…µ”ˆ°‰½¹Í¥‘•È„Ñ¥¹äµ…ÁÁ¥¹œ¹•Ñİ½É¬¸)1¥¹¬½¹”è…É¥¸¥ÌÉ½ÕÁ•Õ¹‘•È±¼¸)1¥¹¬Ñİ¼è±¼Á½¥¹ÑÌÑ¼I•¸)¡½½Í”Ñ¡”±…‰•°É•…¡•™É½´…É¥¸èI•½È	±Õ”¸)=¹”İ½É…¹Íİ•Èèˆ°‰É•¹…µ”ˆ°‰É•¹…µ”ˆ°‰ÍÑ…‰±”ˆ°ˆØˆ°ˆØˆ°‰I•ˆ°‰	±Õ”ˆ°‰É••¸ˆ°ˆÀˆ°ˆÀˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÙ}Á…É…Á¡É…Í”ˆ°‰%¸Ñ¡¥Ì•á…µÁ±”°…É¥¸É•…¡•Ì±¼¸)Q¡”‘•ÍÑ¥¹…Ñ¥½¸½¹¹•Ñ•Ñ¼±¼¥ÌI•¸)	…Í•½¸Ñ¡½Í”Ñİ¼±¥¹­Ì°Í•±•ĞÑ¡”±…‰•°™½È…É¥¸èI•½È	±Õ”¸)¹Íİ•Èèˆ°‰Á…É…Á¡É…Í”ˆ°‰Á…É…Á¡É…Í”ˆ°‰ÍÑ…‰±”ˆ°ˆØˆ°ˆØˆ°‰I•ˆ°‰	±Õ”ˆ°‰É••¸ˆ°ˆÀˆ°ˆÀˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÙ}¥ÉÉ•±•Ù…¹Ğˆ°‰e½Ô…É”¥Ù•¸„Íµ…±°É•±…Ñ¥½¸É…Á ¸)…Ğ€Äè…É¥¸¥ÌÉ½ÕÁ•Õ¹‘•È±¼¸)…Ğ€Èè±¼Á½¥¹ÑÌÑ¼I•¸)%ÉÉ•±•Ù…¹Ğ™…Ğè…å”¥Ì…ÍÍ½¥…Ñ•İ¥Ñ É••¸¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì…ÍÍ½¥…Ñ•İ¥Ñ …É¥¸èI•½È	±Õ”ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰¥ÉÉ•±•Ù…¹Ğˆ°‰¥ÉÉ•±•Ù…¹Ğˆ°‰ÍÑ…‰±”ˆ°ˆØˆ°ˆØˆ°‰I•ˆ°‰	±Õ”ˆ°‰É••¸ˆ°ˆÀˆ°ˆÀˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÙ}İ•…­}‘¥ÍÑÉ…Ñ½Èˆ°‰e½Ô…É”¥Ù•¸„Íµ…±°É•±…Ñ¥½¸É…Á ¸)…Ğ€Äè…É¥¸¥ÌÉ½ÕÁ•Õ¹‘•È±¼¸)…Ğ€Èè±¼Á½¥¹ÑÌÑ¼I•¸)]•…¬¹½Ñ”è…¸Õ¹É•±…Ñ•Í½ÕÉ”µ•¹Ñ¥½¹Ì	±Õ”°‰ÕĞ¥Ğ‘½•Ì¹½ĞÕÁ‘…Ñ”Ñ¡”É…Á ¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì…ÍÍ½¥…Ñ•İ¥Ñ …É¥¸èI•½È	±Õ”ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰İ•…­}‘¥ÍÑÉ…Ñ½Èˆ°‰İ•…­}‘¥ÍÑÉ…Ñ½Èˆ°‰ÍÑ…‰±•}Í¡¥™Ğˆ°ˆØˆ°ˆØˆ°‰I•ˆ°‰	±Õ”ˆ°‰É••¸ˆ°ˆÀˆ°ˆÀˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÙ}½µÁ•Ñ¥Ñ¥½¹}‰…±…¹•ˆ°‰e½Ô…É”¥Ù•¸„Íµ…±°É•±…Ñ¥½¸É…Á İ¥Ñ ½µÁ•Ñ¥¹œÉ•½É‘Ì¸)I•½Éè…É¥¸¥ÌÉ½ÕÁ•Õ¹‘•È±¼°…¹±¼Á½¥¹ÑÌÑ¼I•¸)I•½Éè…¹½Ñ¡•È¹½Ñ”Í…åÌ…É¥¸Á½¥¹ÑÌÑ¼	±Õ”¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì‰•ÑÑ•ÈÍÕÁÁ½ÉÑ•™½È…É¥¸èI•½È	±Õ”ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰½µÁ•Ñ¥Ñ¥½¹}‰…±…¹•ˆ°‰½µÁ•Ñ¥Ñ¥½¹}‰…±…¹•ˆ°‰½µÁ•Ñ¥Ñ¥½¸ˆ°ˆØˆ°ˆØˆ°‰I•ˆ°‰	±Õ”ˆ°‰É••¸ˆ°ˆÄˆ°ˆÄˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÙ}‘¥É•Ñ}½¹™±¥Ğˆ°‰e½Ô…É”¥Ù•¸„Íµ…±°É•±…Ñ¥½¸É…Á ¸)…Ğ€Äè…É¥¸¥ÌÉ½ÕÁ•Õ¹‘•È±¼¸)…Ğ€Èè±¼Á½¥¹ÑÌÑ¼I•¸)¥É•Ğ½¹™±¥Ñ¥¹œ™…Ğè…É¥¸Á½¥¹ÑÌÑ¼	±Õ”¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì…ÍÍ½¥…Ñ•İ¥Ñ …É¥¸èI•½È	±Õ”ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰‘¥É•Ñ}½¹™±¥Ğˆ°‰‘¥É•Ñ}½¹™±¥Ğˆ°‰½µÁ•Ñ¥Ñ¥½¸ˆ°ˆØˆ°ˆØˆ°‰I•ˆ°‰	±Õ”ˆ°‰É••¸ˆ°ˆÄˆ°ˆÄˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÙ}±½ÍÕÉ•}ÕÁ‘…Ñ”ˆ°‰e½Ô…É”¥Ù•¸„Íµ…±°É•±…Ñ¥½¸É…Á ¸)…Ğ€Äè…É¥¸¥ÌÉ½ÕÁ•Õ¹‘•È±¼¸)=±É•½Éè±¼Á½¥¹ÑÌÑ¼I•¸)UÁ‘…Ñ•É•½Éè±¼Á½¥¹ÑÌÑ¼	±Õ”°¹½ĞI•¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì…ÍÍ½¥…Ñ•İ¥Ñ …É¥¸èI•½È	±Õ”ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰±½ÍÕÉ•}ÕÁ‘…Ñ”ˆ°‰±½ÍÕÉ•}ÕÁ‘…Ñ”ˆ°‰±½ÍÕÉ”ˆ°ˆØˆ°ˆØˆ°‰I•ˆ°‰	±Õ”ˆ°‰É••¸ˆ°ˆÈˆ°ˆÈˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÙ}±½ÍÕÉ•}½Ù•ÉÉ¥‘”ˆ°‰e½Ô…É”¥Ù•¸„ÉÕ±”ÍåÍÑ•´¸)•¹•É…°ÉÕ±”è¥Ñ•µÌÑ¡…Ğ¥ÌÉ½ÕÁ•Õ¹‘•È±¼É••¥Ù”±…‰•°I•¸)=Ù•ÉÉ¥‘”ÉÕ±”è¥¸Ñ¡¥Ì…Í”°¥Ñ•µÌÑ¡…Ğ¥ÌÉ½ÕÁ•Õ¹‘•È±¼É••¥Ù”±…‰•°	±Õ”¸)…Ğè…É¥¸¥ÌÉ½ÕÁ•Õ¹‘•È±¼¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°…ÁÁ±¥•ÌÑ¼…É¥¸èI•½È	±Õ”ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰±½ÍÕÉ•}½Ù•ÉÉ¥‘”ˆ°‰±½ÍÕÉ•}½Ù•ÉÉ¥‘”ˆ°‰±½ÍÕÉ”ˆ°ˆØˆ°ˆØˆ°‰I•ˆ°‰	±Õ”ˆ°‰É••¸ˆ°ˆÈˆ°ˆÈˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÙ}•á•ÁÑ¥½¹}½Ù•ÉÉ¥‘”ˆ°‰e½Ô…É”¥Ù•¸„ÉÕ±”ÍåÍÑ•´¸)•¹•É…°ÉÕ±”è¥Ñ•µÌ½¹¹•Ñ•Ñ¼±¼ÕÍ”±…‰•°I•¸)á•ÁÑ¥½¸è…É¥¸¥Ì„ÍÁ•¥…°…Í”…¹ÕÍ•Ì±…‰•°	±Õ”¸)…Ğè…É¥¸¥Ì½¹¹•Ñ•Ñ¼±¼¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°…ÁÁ±¥•ÌÑ¼…É¥¸èI•½È	±Õ”ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰•á•ÁÑ¥½¹}½Ù•ÉÉ¥‘”ˆ°‰•á•ÁÑ¥½¹}½Ù•ÉÉ¥‘”ˆ°‰±½ÍÕÉ”ˆ°ˆØˆ°ˆØˆ°‰I•ˆ°‰	±Õ”ˆ°‰É••¸ˆ°ˆÈˆ°ˆÈˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÙ}Í½ÕÉ•}±…¥´ˆ°‰e½Ô…É”¥Ù•¸Ñİ¼Í½ÕÉ”±…¥µÌ¸)M½ÕÉ”±Á¡„Í…åÌè…É¥¸¥ÌÉ½ÕÁ•Õ¹‘•È±¼°…¹±¼Á½¥¹ÑÌÑ¼I•¸)M½ÕÉ”	•Ñ„Í…åÌè…É¥¸Á½¥¹ÑÌÑ¼	±Õ”¸)9•¥Ñ¡•ÈÍ½ÕÉ”¥Ìµ…É­•…Ìµ½É”É•±¥…‰±”¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°Í¡½Õ±‰”¡½Í•¸™½È…É¥¸èI•½È	±Õ”ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰Í½ÕÉ•}±…¥´ˆ°‰Í½ÕÉ•}±…¥´ˆ°‰Í½ÕÉ•}…µ‰¥Õ¥Ñäˆ°ˆØˆ°ˆØˆ°‰I•ˆ°‰	±Õ”ˆ°‰É••¸ˆ°ˆÄˆ°ˆÄˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀÙ}•ÅÕ…±}•Ù¥‘•¹”ˆ°‰e½Ô…É”¥Ù•¸‰…±…¹••Ù¥‘•¹”¸)Ù¥‘•¹”™½ÈI•è…É¥¸¥ÌÉ½ÕÁ•Õ¹‘•È±¼°…¹±¼Á½¥¹ÑÌÑ¼I•¸)Ù¥‘•¹”™½È	±Õ”è…É¥¸¥Ì‘¥É•Ñ±ä±¥ÍÑ•İ¥Ñ 	±Õ”¸)Q¡”•Ù¥‘•¹”ÍÑÉ•¹Ñ ¥Ì•ÅÕ…°¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì…ÍÍ½¥…Ñ•İ¥Ñ …É¥¸èI•½È	±Õ”ü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰•ÅÕ…±}•Ù¥‘•¹”ˆ°‰•ÅÕ…±}•Ù¥‘•¹”ˆ°‰½µÁ•Ñ¥Ñ¥½¸ˆ°ˆØˆ°ˆØˆ°‰I•ˆ°‰	±Õ”ˆ°‰É••¸ˆ°ˆÄˆ°ˆÄˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀİ}±•…¸ˆ°‰e½Ô…É”¥Ù•¸„Íµ…±°É•±…Ñ¥½¸É…Á ¸)…Ğ€Äè…É¥¸¥Ì±¥¹­•İ¥Ñ ±¼¸)…Ğ€Èè±¼É½ÕÑ•ÌÑ¼É••¸¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì…ÍÍ½¥…Ñ•İ¥Ñ …É¥¸èÉ••¸½Èe•±±½Üü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰±•…¸ˆ°‰±•…¸ˆ°‰ÍÑ…‰±”ˆ°ˆÜˆ°ˆÜˆ°‰É••¸ˆ°‰e•±±½Üˆ°‰9½ÉÑ ˆ°ˆÀˆ°ˆÀˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀİ}É•¹…µ”ˆ°‰½¹Í¥‘•È„Ñ¥¹äµ…ÁÁ¥¹œ¹•Ñİ½É¬¸)1¥¹¬½¹”è…É¥¸¥Ì±¥¹­•İ¥Ñ ±¼¸)1¥¹¬Ñİ¼è±¼É½ÕÑ•ÌÑ¼É••¸¸)¡½½Í”Ñ¡”±…‰•°É•…¡•™É½´…É¥¸èÉ••¸½Èe•±±½Ü¸)=¹”İ½É…¹Íİ•Èèˆ°‰É•¹…µ”ˆ°‰É•¹…µ”ˆ°‰ÍÑ…‰±”ˆ°ˆÜˆ°ˆÜˆ°‰É••¸ˆ°‰e•±±½Üˆ°‰9½ÉÑ ˆ°ˆÀˆ°ˆÀˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀİ}Á…É…Á¡É…Í”ˆ°‰%¸Ñ¡¥Ì•á…µÁ±”°…É¥¸É•…¡•Ì±¼¸)Q¡”‘•ÍÑ¥¹…Ñ¥½¸½¹¹•Ñ•Ñ¼±¼¥ÌÉ••¸¸)	…Í•½¸Ñ¡½Í”Ñİ¼±¥¹­Ì°Í•±•ĞÑ¡”±…‰•°™½È…É¥¸èÉ••¸½Èe•±±½Ü¸)¹Íİ•Èèˆ°‰Á…É…Á¡É…Í”ˆ°‰Á…É…Á¡É…Í”ˆ°‰ÍÑ…‰±”ˆ°ˆÜˆ°ˆÜˆ°‰É••¸ˆ°‰e•±±½Üˆ°‰9½ÉÑ ˆ°ˆÀˆ°ˆÀˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀİ}¥ÉÉ•±•Ù…¹Ğˆ°‰e½Ô…É”¥Ù•¸„Íµ…±°É•±…Ñ¥½¸É…Á ¸)…Ğ€Äè…É¥¸¥Ì±¥¹­•İ¥Ñ ±¼¸)…Ğ€Èè±¼É½ÕÑ•ÌÑ¼É••¸¸)%ÉÉ•±•Ù…¹Ğ™…Ğè…å”¥Ì…ÍÍ½¥…Ñ•İ¥Ñ 9½ÉÑ ¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì…ÍÍ½¥…Ñ•İ¥Ñ …É¥¸èÉ••¸½Èe•±±½Üü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰¥ÉÉ•±•Ù…¹Ğˆ°‰¥ÉÉ•±•Ù…¹Ğˆ°‰ÍÑ…‰±”ˆ°ˆÜˆ°ˆÜˆ°‰É••¸ˆ°‰e•±±½Üˆ°‰9½ÉÑ ˆ°ˆÀˆ°ˆÀˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀİ}İ•…­}‘¥ÍÑÉ…Ñ½Èˆ°‰e½Ô…É”¥Ù•¸„Íµ…±°É•±…Ñ¥½¸É…Á ¸)…Ğ€Äè…É¥¸¥Ì±¥¹­•İ¥Ñ ±¼¸)…Ğ€Èè±¼É½ÕÑ•ÌÑ¼É••¸¸)]•…¬¹½Ñ”è…¸Õ¹É•±…Ñ•Í½ÕÉ”µ•¹Ñ¥½¹Ìe•±±½Ü°‰ÕĞ¥Ğ‘½•Ì¹½ĞÕÁ‘…Ñ”Ñ¡”É…Á ¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì…ÍÍ½¥…Ñ•İ¥Ñ …É¥¸èÉ••¸½Èe•±±½Üü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰İ•…­}‘¥ÍÑÉ…Ñ½Èˆ°‰İ•…­}‘¥ÍÑÉ…Ñ½Èˆ°‰ÍÑ…‰±•}Í¡¥™Ğˆ°ˆÜˆ°ˆÜˆ°‰É••¸ˆ°‰e•±±½Üˆ°‰9½ÉÑ ˆ°ˆÀˆ°ˆÀˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀİ}½µÁ•Ñ¥Ñ¥½¹}‰…±…¹•ˆ°‰e½Ô…É”¥Ù•¸„Íµ…±°É•±…Ñ¥½¸É…Á İ¥Ñ ½µÁ•Ñ¥¹œÉ•½É‘Ì¸)I•½Éè…É¥¸¥Ì±¥¹­•İ¥Ñ ±¼°…¹±¼É½ÕÑ•ÌÑ¼É••¸¸)I•½Éè…¹½Ñ¡•È¹½Ñ”Í…åÌ…É¥¸É½ÕÑ•ÌÑ¼e•±±½Ü¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì‰•ÑÑ•ÈÍÕÁÁ½ÉÑ•™½È…É¥¸èÉ••¸½Èe•±±½Üü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰½µÁ•Ñ¥Ñ¥½¹}‰…±…¹•ˆ°‰½µÁ•Ñ¥Ñ¥½¹}‰…±…¹•ˆ°‰½µÁ•Ñ¥Ñ¥½¸ˆ°ˆÜˆ°ˆÜˆ°‰É••¸ˆ°‰e•±±½Üˆ°‰9½ÉÑ ˆ°ˆÄˆ°ˆÄˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀİ}‘¥É•Ñ}½¹™±¥Ğˆ°‰e½Ô…É”¥Ù•¸„Íµ…±°É•±…Ñ¥½¸É…Á ¸)…Ğ€Äè…É¥¸¥Ì±¥¹­•İ¥Ñ ±¼¸)…Ğ€Èè±¼É½ÕÑ•ÌÑ¼É••¸¸)¥É•Ğ½¹™±¥Ñ¥¹œ™…Ğè…É¥¸É½ÕÑ•ÌÑ¼e•±±½Ü¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì…ÍÍ½¥…Ñ•İ¥Ñ …É¥¸èÉ••¸½Èe•±±½Üü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰‘¥É•Ñ}½¹™±¥Ğˆ°‰‘¥É•Ñ}½¹™±¥Ğˆ°‰½µÁ•Ñ¥Ñ¥½¸ˆ°ˆÜˆ°ˆÜˆ°‰É••¸ˆ°‰e•±±½Üˆ°‰9½ÉÑ ˆ°ˆÄˆ°ˆÄˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀİ}±½ÍÕÉ•}ÕÁ‘…Ñ”ˆ°‰e½Ô…É”¥Ù•¸„Íµ…±°É•±…Ñ¥½¸É…Á ¸)…Ğ€Äè…É¥¸¥Ì±¥¹­•İ¥Ñ ±¼¸)=±É•½Éè±¼É½ÕÑ•ÌÑ¼É••¸¸)UÁ‘…Ñ•É•½Éè±¼É½ÕÑ•ÌÑ¼e•±±½Ü°¹½ĞÉ••¸¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì…ÍÍ½¥…Ñ•İ¥Ñ …É¥¸èÉ••¸½Èe•±±½Üü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰±½ÍÕÉ•}ÕÁ‘…Ñ”ˆ°‰±½ÍÕÉ•}ÕÁ‘…Ñ”ˆ°‰±½ÍÕÉ”ˆ°ˆÜˆ°ˆÜˆ°‰É••¸ˆ°‰e•±±½Üˆ°‰9½ÉÑ ˆ°ˆÈˆ°ˆÈˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀİ}±½ÍÕÉ•}½Ù•ÉÉ¥‘”ˆ°‰e½Ô…É”¥Ù•¸„ÉÕ±”ÍåÍÑ•´¸)•¹•É…°ÉÕ±”è¥Ñ•µÌÑ¡…Ğ¥Ì±¥¹­•İ¥Ñ ±¼É••¥Ù”±…‰•°É••¸¸)=Ù•ÉÉ¥‘”ÉÕ±”è¥¸Ñ¡¥Ì…Í”°¥Ñ•µÌÑ¡…Ğ¥Ì±¥¹­•İ¥Ñ ±¼É••¥Ù”±…‰•°e•±±½Ü¸)…Ğè…É¥¸¥Ì±¥¹­•İ¥Ñ ±¼¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°…ÁÁ±¥•ÌÑ¼…É¥¸èÉ••¸½Èe•±±½Üü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰±½ÍÕÉ•}½Ù•ÉÉ¥‘”ˆ°‰±½ÍÕÉ•}½Ù•ÉÉ¥‘”ˆ°‰±½ÍÕÉ”ˆ°ˆÜˆ°ˆÜˆ°‰É••¸ˆ°‰e•±±½Üˆ°‰9½ÉÑ ˆ°ˆÈˆ°ˆÈˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀİ}•á•ÁÑ¥½¹}½Ù•ÉÉ¥‘”ˆ°‰e½Ô…É”¥Ù•¸„ÉÕ±”ÍåÍÑ•´¸)•¹•É…°ÉÕ±”è¥Ñ•µÌ½¹¹•Ñ•Ñ¼±¼ÕÍ”±…‰•°É••¸¸)á•ÁÑ¥½¸è…É¥¸¥Ì„ÍÁ•¥…°…Í”…¹ÕÍ•Ì±…‰•°e•±±½Ü¸)…Ğè…É¥¸¥Ì½¹¹•Ñ•Ñ¼±¼¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°…ÁÁ±¥•ÌÑ¼…É¥¸èÉ••¸½Èe•±±½Üü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰•á•ÁÑ¥½¹}½Ù•ÉÉ¥‘”ˆ°‰•á•ÁÑ¥½¹}½Ù•ÉÉ¥‘”ˆ°‰±½ÍÕÉ”ˆ°ˆÜˆ°ˆÜˆ°‰É••¸ˆ°‰e•±±½Üˆ°‰9½ÉÑ ˆ°ˆÈˆ°ˆÈˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀİ}Í½ÕÉ•}±…¥´ˆ°‰e½Ô…É”¥Ù•¸Ñİ¼Í½ÕÉ”±…¥µÌ¸)M½ÕÉ”±Á¡„Í…åÌè…É¥¸¥Ì±¥¹­•İ¥Ñ ±¼°…¹±¼É½ÕÑ•ÌÑ¼É••¸¸)M½ÕÉ”	•Ñ„Í…åÌè…É¥¸É½ÕÑ•ÌÑ¼e•±±½Ü¸)9•¥Ñ¡•ÈÍ½ÕÉ”¥Ìµ…É­•…Ìµ½É”É•±¥…‰±”¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°Í¡½Õ±‰”¡½Í•¸™½È…É¥¸èÉ••¸½Èe•±±½Üü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰Í½ÕÉ•}±…¥´ˆ°‰Í½ÕÉ•}±…¥´ˆ°‰Í½ÕÉ•}…µ‰¥Õ¥Ñäˆ°ˆÜˆ°ˆÜˆ°‰É••¸ˆ°‰e•±±½Üˆ°‰9½ÉÑ ˆ°ˆÄˆ°ˆÄˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4(‰½Á„Å…}µ}œÀÀİ}•ÅÕ…±}•Ù¥‘•¹”ˆ°‰e½Ô…É”¥Ù•¸‰…±…¹••Ù¥‘•¹”¸)Ù¥‘•¹”™½ÈÉ••¸è…É¥¸¥Ì±¥¹­•İ¥Ñ ±¼°…¹±¼É½ÕÑ•ÌÑ¼É••¸¸)Ù¥‘•¹”™½Èe•±±½Üè…É¥¸¥Ì‘¥É•Ñ±ä±¥ÍÑ•İ¥Ñ e•±±½Ü¸)Q¡”•Ù¥‘•¹”ÍÑÉ•¹Ñ ¥Ì•ÅÕ…°¸)EÕ•ÍÑ¥½¸è]¡¥ ±…‰•°¥Ì…ÍÍ½¥…Ñ•İ¥Ñ …É¥¸èÉ••¸½Èe•±±½Üü)¹Íİ•Èİ¥Ñ •á…Ñ±ä½¹”İ½Éèˆ°‰•ÅÕ…±}•Ù¥‘•¹”ˆ°‰•ÅÕ…±}•Ù¥‘•¹”ˆ°‰½µÁ•Ñ¥Ñ¥½¸ˆ°ˆÜˆ°ˆÜˆ°‰É••¸ˆ°‰e•±±½Üˆ°‰9½ÉÑ ˆ°ˆÄˆ°ˆÄˆ°‰Eİ•¸í1±…µ„í•µµ„ˆ°‰¥¹±Õ‘”ˆ°ˆˆ°‰¥ÉÍĞ€äØÁÉ½µÁÑÌ™É½´=A´Åµ±¥Ñ”É½ÍÌµµ½‘•°ÁÉ½µÁĞ¥¹Ù•¹Ñ½ÉäìÉ•ÕÍ•‰ä=A´ÅAM…Õ‘¥Ğ¸ˆ°‰½Á„Å‰}ÁÉ½µÁÑ}¥¹Ù•¹Ñ½Éä¹ÍØˆ4

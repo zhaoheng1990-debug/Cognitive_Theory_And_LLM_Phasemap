@@ -1,0 +1,5 @@
+"figure","role","status","staged_file","source_path","sha256","rows","columns"
+"Fig10","gain_rows","corrected-canonical","fig10_gain_rows.csv","[local provenance path redacted]","2e48c201986dd30f136856854c672f6a4ccb7bb078f97a377ca4b6326be712a1","39","30"
+"Fig10","model_summary","corrected-canonical","fig10_model_summary.csv","[local provenance path redacted]","816c086c41d60dd03a3dc66817ac6846c78a98ca922b8f24e5d5122f56c2942f","3","11"
+"Fig10","overall_summary","corrected-canonical","fig10_overall_summary.json","[local provenance path redacted]","f7d810721570fd6d6d78bef27e196dd6ecc50859e64d226070784bc90fe3af41","",""
+"Fig10","corrected_script","corrected-canonical","fig10_corrected_script.py","[local provenance path redacted]","263dfe8051cb4271f20ebb0489f7a9c59534552ae847b490327ad6787745df5f","",""

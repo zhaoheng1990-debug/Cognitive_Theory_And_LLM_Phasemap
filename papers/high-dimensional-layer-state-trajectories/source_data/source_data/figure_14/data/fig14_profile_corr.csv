@@ -1,0 +1,16 @@
+﻿profile_type,model_a,model_b,pearson_profile_corr
+stable_like,qwen,llama,0.3568658520582637
+competition,qwen,llama,0.1989572157461076
+closure,qwen,llama,0.41020098758198376
+competition_minus_stable,qwen,llama,0.19476805248148873
+closure_minus_stable,qwen,llama,0.08298968895855803
+stable_like,qwen,gemma,0.6199982335196025
+competition,qwen,gemma,0.37602522286703716
+closure,qwen,gemma,0.37454848152517833
+competition_minus_stable,qwen,gemma,0.06435439228458763
+closure_minus_stable,qwen,gemma,0.03902476894180513
+stable_like,llama,gemma,0.17827158574507052
+competition,llama,gemma,0.1515709468409096
+closure,llama,gemma,0.14930872979944262
+competition_minus_stable,llama,gemma,-0.11383129674241448
+closure_minus_stable,llama,gemma,0.40202332464813545

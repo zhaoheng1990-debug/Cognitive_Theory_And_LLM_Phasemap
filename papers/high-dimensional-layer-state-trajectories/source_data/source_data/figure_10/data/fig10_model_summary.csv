@@ -1,0 +1,4 @@
+﻿model_key,best_proxy,best_score,best_hidden_or_shape_proxy,best_hidden_or_shape_score,topk_realW_score,topk_rowpermW_score,topk_gaussianR_score,hidden_proxy_gain_beats_topk_realW,topk_realW_gain_equals_rowperm,topk_realW_gain_gt_randomK
+qwen,hidden_decision_mean,2.047017145480866,hidden_decision_mean,2.047017145480866,1.4044359995888427,1.4044360591934875,1.172014969971829,True,True,True
+llama,hidden_pre_mean,1.208741217523737,hidden_pre_mean,1.208741217523737,0.5124647966276551,0.511387180117676,0.5395660519955138,True,False,True
+gemma,hidden_decision_mean,0.8423196581974155,hidden_decision_mean,0.8423196581974155,0.4643467785659412,0.4643467785659412,0.35330682242999445,True,True,True

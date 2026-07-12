@@ -1,0 +1,4 @@
+"model","real_predmech_specificity","fixed_combo_specificity","gain_over_fixed","shuffle_mechanism_mean","shuffle_mechanism_std","shuffle_policy_mean","shuffle_policy_std","shuffle_both_mean","shuffle_both_std","z_vs_shuffle_mechanism","z_vs_shuffle_policy","z_vs_shuffle_both","real_gt_shuffle_both_q95","policy_train_accuracy","policy_macro_f1","mechanism_train_accuracy","mechanism_macro_f1","source_summary"
+"qwen","3.010665276954914","1.3050602261460278","1.7056050508088862","","","","","","","","","4.3807745023788645","True","","","","","[local provenance path redacted]"
+"llama","0.21936993824535206","0.05887691550605206","0.1604930227393","","","","","","","","","4.2296950505498385","True","","","","","[local provenance path redacted]"
+"gemma","10.04584943210746","2.4196505624868205","7.626198869620639","","","","","","","","","4.015405238367552","True","","","","","[local provenance path redacted]"

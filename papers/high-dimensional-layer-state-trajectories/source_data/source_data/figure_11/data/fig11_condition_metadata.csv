@@ -1,0 +1,13 @@
+condition,phase_y,mechanism
+clean,0,stable
+rename,0,stable
+paraphrase,0,stable
+irrelevant,0,stable
+weak_distractor,0,stable_shift
+competition_balanced,1,competition
+direct_conflict,1,competition
+closure_update,2,closure
+closure_override,2,closure
+exception_override,2,closure
+source_claim,1,source_ambiguity
+equal_evidence,1,competition

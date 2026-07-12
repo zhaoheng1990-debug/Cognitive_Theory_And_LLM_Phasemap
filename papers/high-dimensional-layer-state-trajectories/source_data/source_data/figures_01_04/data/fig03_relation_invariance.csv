@@ -1,0 +1,5 @@
+condition,mean_center_cos,mean_jaccard,boundary_cos,center_cos_lift,jaccard_lift,spread_delta,k4_path_agreement,k4_tau_shift
+rename,0.9832,0.2555,0.9751,0.0268,0.2269,0.02391,1.0,0
+redundant,0.991,0.3755,0.9877,0.0348,0.3449,0.01569,1.0,0
+irrelevant,0.9934,0.4321,0.992,0.0373,0.4014,0.01288,1.0,0
+permuted,0.9852,0.3307,0.9742,0.0285,0.3017,0.01993,1.0,0

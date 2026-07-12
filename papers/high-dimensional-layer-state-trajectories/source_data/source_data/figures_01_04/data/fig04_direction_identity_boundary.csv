@@ -1,0 +1,4 @@
+﻿model_a,model_b,n_conditions,pearson_condition_direction_distance_corr,spearman_condition_direction_distance_corr
+qwen,llama,11,0.05082784418345977,0.09826839826839828
+qwen,gemma,11,0.40477058110938907,0.43383838383838397
+llama,gemma,11,0.03378540478152752,0.13102453102453104

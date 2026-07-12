@@ -1,0 +1,13 @@
+"file","exists","missing_required","pass"
+"fig01_p2_seedstability_layer_summary.csv",TRUE,"",TRUE
+"fig01_p2_transition_signatures.csv",TRUE,"",TRUE
+"fig02_p2_seed_metrics.csv",TRUE,"",TRUE
+"fig02_repeated_split_metrics.csv",TRUE,"",TRUE
+"fig03_transition_operator_fit.csv",TRUE,"",TRUE
+"fig03_macro_null_distribution.csv",TRUE,"",TRUE
+"fig03_state_topk_ablation.csv",TRUE,"",TRUE
+"fig04_qwen_window_scan.csv",TRUE,"",TRUE
+"fig04_llama_window_scan.csv",TRUE,"",TRUE
+"fig04_gemma_window_scan.csv",TRUE,"",TRUE
+"fig04_functional_geometry_recurrence.csv",TRUE,"",TRUE
+"fig04_direction_identity_boundary.csv",TRUE,"",TRUE
