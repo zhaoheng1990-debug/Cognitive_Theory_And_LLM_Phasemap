@@ -46,7 +46,7 @@ Vocabulary readbacks are treated as diagnostics. The trajectory coordinates repo
 
 ## Archival record
 
-A versioned Zenodo record will provide the persistent archival copy. The DOI will be added here when the deposit is published.
+Persistent archives: [Source Data](https://doi.org/10.5281/zenodo.21317356) and [Code](https://doi.org/10.5281/zenodo.21317441).
 
 ## Contact
 
@@ -99,7 +99,7 @@ ORCID: https://orcid.org/0009-0004-2395-9393
 
 ### 长期归档
 
-版本化 Zenodo 记录将作为长期持久归档。归档发布后将在此补充 DOI。
+持久归档：[Source Data](https://doi.org/10.5281/zenodo.21317356)；[Code](https://doi.org/10.5281/zenodo.21317441)。
 
 ### 联系方式
 
