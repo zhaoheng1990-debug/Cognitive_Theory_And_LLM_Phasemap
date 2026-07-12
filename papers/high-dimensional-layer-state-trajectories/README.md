@@ -6,6 +6,8 @@
 
 This directory contains the public reproducibility materials associated with the preprint by Heng Zhao, Yufei Wang and Ruidian Song.
 
+Latest audited preprint in this branch: `arxiv_preprint_v0_41.pdf`.
+
 ## Contents
 
 - `paper/`: the current preprint PDF and its compilable arXiv LaTeX source.
@@ -57,6 +59,8 @@ ORCID: https://orcid.org/0009-0004-2395-9393
 
 本目录收录 Heng Zhao、Yufei Wang 和 Ruidian Song 所著预印本《High-dimensional layer-state trajectories reveal the internal dynamics of transformer inference》的公开复现材料。
 
+本分支当前最新审计版本为 `arxiv_preprint_v0_41.pdf`。
+
 ### 目录内容
 
 - `paper/`：当前预印本 PDF 及可编译的 arXiv LaTeX 源文件。
@@ -101,4 +105,3 @@ ORCID: https://orcid.org/0009-0004-2395-9393
 
 Heng Zhao：zhaoheng1990@gmail.com  
 ORCID：https://orcid.org/0009-0004-2395-9393
-
