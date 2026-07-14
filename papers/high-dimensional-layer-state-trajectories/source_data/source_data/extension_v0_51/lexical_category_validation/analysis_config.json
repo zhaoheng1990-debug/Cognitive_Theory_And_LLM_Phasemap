@@ -1,0 +1,112 @@
+{
+  "analysis": "independent lexical-category candidate-evaluation trajectory validation",
+  "models": [
+    "qwen",
+    "llama",
+    "gemma"
+  ],
+  "n_problems": 64,
+  "categories": {
+    "colour": [
+      "Red",
+      "Blue",
+      "Green",
+      "Yellow"
+    ],
+    "direction": [
+      "North",
+      "South",
+      "East",
+      "West"
+    ],
+    "metal": [
+      "Copper",
+      "Silver",
+      "Gold",
+      "Iron"
+    ],
+    "shape": [
+      "Circle",
+      "Square",
+      "Triangle",
+      "Star"
+    ],
+    "landscape feature": [
+      "River",
+      "Mountain",
+      "Forest",
+      "Ocean"
+    ],
+    "sky object": [
+      "Sun",
+      "Moon",
+      "Cloud",
+      "Star"
+    ],
+    "fruit": [
+      "Apple",
+      "Orange",
+      "Lemon",
+      "Pear"
+    ]
+  },
+  "conditions": [
+    {
+      "condition": "clean",
+      "mechanism": "stable"
+    },
+    {
+      "condition": "paraphrase",
+      "mechanism": "stable"
+    },
+    {
+      "condition": "untrusted_conflict",
+      "mechanism": "competition"
+    },
+    {
+      "condition": "asserted_conflict",
+      "mechanism": "competition"
+    },
+    {
+      "condition": "explicit_correction",
+      "mechanism": "closure"
+    },
+    {
+      "condition": "final_recheck",
+      "mechanism": "closure"
+    }
+  ],
+  "candidate_order_counterbalancing": "correct word first for even problem_id and second for odd problem_id",
+  "frozen_decision_windows": {
+    "qwen": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "llama": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "gemma": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ]
+  },
+  "split_unit": "lexical problem_id",
+  "test_size": 0.3,
+  "prompt_wrapping": "checkpoint-native chat template",
+  "geometry_null": "endpoint-preserving intermediate-layer permutation",
+  "n_geometry_shuffles": 50,
+  "n_label_shuffles": 200,
+  "seed": 20260714,
+  "claim_boundary": "external task-family validation, not a universal transformer law or transfer of the numeric DeltaU axis"
+}

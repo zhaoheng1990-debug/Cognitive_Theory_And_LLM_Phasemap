@@ -1,0 +1,47 @@
+{
+  "mechanism": {
+    "shuffle_labels": false,
+    "shuffle_id": 0,
+    "train_accuracy": 0.9298507462686567,
+    "train_macro_f1": 0.9254424040921695,
+    "n_rows": 3350
+  },
+  "boundary_policy": {
+    "shuffle_policy_labels": false,
+    "shuffle_id": 0,
+    "n_train_rows": 3350,
+    "n_classes": 9,
+    "train_accuracy": 0.8776119402985074,
+    "train_macro_f1": 0.6384130392298882,
+    "class_counts": {
+      "a0.0_b0.0": 2345,
+      "a1.0_b1.2": 485,
+      "a0.9_b0.9": 220,
+      "a0.6_b0.6": 215,
+      "a1.0_b0.6": 35,
+      "a0.9_b0.3": 15,
+      "a1.0_b0.9": 15,
+      "a0.9_b0.6": 10,
+      "a0.6_b0.3": 10
+    }
+  },
+  "shuffle_policy": {
+    "shuffle_policy_labels": true,
+    "shuffle_id": 0,
+    "n_train_rows": 3350,
+    "n_classes": 9,
+    "train_accuracy": 0.311044776119403,
+    "train_macro_f1": 0.26787184140044445,
+    "class_counts": {
+      "a0.0_b0.0": 2345,
+      "a1.0_b1.2": 485,
+      "a0.9_b0.9": 220,
+      "a0.6_b0.6": 215,
+      "a1.0_b0.6": 35,
+      "a0.9_b0.3": 15,
+      "a1.0_b0.9": 15,
+      "a0.9_b0.6": 10,
+      "a0.6_b0.3": 10
+    }
+  }
+}

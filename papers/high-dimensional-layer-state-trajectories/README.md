@@ -1,4 +1,4 @@
-# High-dimensional layer-state trajectories reveal the internal dynamics of transformer inference
+# High-dimensional state trajectories reveal transformer inference dynamics
 
 [English](#english) | [中文](#中文)
 
@@ -6,7 +6,9 @@
 
 This directory contains the public reproducibility materials associated with the preprint by Heng Zhao, Yufei Wang, Ruidian Song and Weisheng Chen.
 
-Latest audited preprint in this branch: `arxiv_preprint_v0_47.pdf`.
+Latest audited preprint in this branch: `arxiv_preprint_v0_51.pdf`.
+
+Persistent archives: [Source Data](https://doi.org/10.5281/zenodo.21317355) and [Code](https://doi.org/10.5281/zenodo.21317440).
 
 ## Contents
 
@@ -16,8 +18,10 @@ Latest audited preprint in this branch: `arxiv_preprint_v0_47.pdf`.
 - `code/figure_scripts/`: R scripts used to generate the manuscript figures.
 - `code/config/`: public configuration files.
 - `code/environment/`: Python and R environment notes.
+- `code/extension_v0_51/`: portable code for the new task, random-initialization, boundary-bridge and output-control analyses.
 - `source_data/source_data/`: processed panel-level tables for the main and supplementary figures.
 - `source_data/metadata/`: checkpoint, prompt, split, metric, null-control and provenance metadata.
+- `source_data/source_data/extension_v0_51/`: row-level evidence and figure inputs for the v0.51 extension.
 
 ## Reproduction levels
 
@@ -42,11 +46,11 @@ Full reruns require local access to the listed Qwen, Llama and Gemma checkpoints
 
 ## Evidence and scope
 
-Vocabulary readbacks are treated as diagnostics. The trajectory coordinates reported in the manuscript are bounded empirical observables rather than universal order parameters. Geodesic-biased flow does not imply an exact geodesic, and the internal modulation experiments do not establish answer correctness or deployment-level control.
+The v0.51 extension adds an independent lexical-category task, a random-initialization control, a held-out boundary bridge and selective full-vocabulary top-1 boundary control in Qwen. Vocabulary readbacks are treated as diagnostics. The trajectory coordinates reported in the manuscript are bounded empirical observables rather than universal order parameters. Geodesic-biased flow does not imply an exact geodesic, and the internal modulation experiments do not establish answer correctness or deployment-level control.
 
 ## Archival record
 
-Persistent archives: [Source Data](https://doi.org/10.5281/zenodo.21317356) and [Code](https://doi.org/10.5281/zenodo.21317441).
+Persistent archives: [Source Data](https://doi.org/10.5281/zenodo.21317355) and [Code](https://doi.org/10.5281/zenodo.21317440).
 
 ## Contact
 
@@ -59,7 +63,9 @@ ORCID: https://orcid.org/0009-0004-2395-9393
 
 本目录收录 Heng Zhao、Yufei Wang、Ruidian Song 和 Weisheng Chen 所著预印本《High-dimensional layer-state trajectories reveal the internal dynamics of transformer inference》的公开复现材料。
 
-本分支当前最新审计版本为 `arxiv_preprint_v0_47.pdf`。
+本分支当前最新审计版本为 `arxiv_preprint_v0_51.pdf`。
+
+持久归档：[Source Data](https://doi.org/10.5281/zenodo.21317355)；[Code](https://doi.org/10.5281/zenodo.21317440)。
 
 ### 目录内容
 
@@ -95,11 +101,11 @@ ORCID: https://orcid.org/0009-0004-2395-9393
 
 ### 证据与范围边界
 
-词表读出在本文中作为诊断量使用。论文报告的轨迹坐标是有边界的经验观测量，并非普适序参量。“测地线偏置流”不表示精确测地线；内部调制实验也不等同于答案正确性控制或部署级行为控制。
+v0.51 新增独立词汇类别任务、随机初始化对照、held-out 边界桥接分析，以及 Qwen 中选择性的全词表 top-1 候选边界控制。词表读出在本文中作为诊断量使用。论文报告的轨迹坐标是有边界的经验观测量，并非普适序参量。“测地线偏置流”不表示精确测地线；内部调制实验也不等同于答案正确性控制或部署级行为控制。
 
 ### 长期归档
 
-持久归档：[Source Data](https://doi.org/10.5281/zenodo.21317356)；[Code](https://doi.org/10.5281/zenodo.21317441)。
+持久归档：[Source Data](https://doi.org/10.5281/zenodo.21317355)；[Code](https://doi.org/10.5281/zenodo.21317440)。
 
 ### 联系方式
 

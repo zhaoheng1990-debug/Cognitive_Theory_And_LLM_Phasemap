@@ -36,3 +36,6 @@ The final Zenodo DOI and creator list must be inserted after a DOI is reserved. 
 ## Licence
 
 No reuse licence has yet been granted. See `LICENSE_DECISION_REQUIRED.md`. The current recommendation is CC BY 4.0 for processed Source Data and documentation, subject to author confirmation.
+
+## v0.51 extension
+Row-level evidence and plotted inputs for the independent task, random-initialization, boundary-bridge and selective output-control analyses are under `source_data/extension_v0_51/`. See its `README.md` and checksum manifest.

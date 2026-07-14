@@ -1,0 +1,13 @@
+{
+  "analysis": "held-out DeltaU-shift to candidate-boundary bridge",
+  "paired_input": "<local-path>",
+  "asa_root": "<local-path>",
+  "folds": 5,
+  "bootstrap_replicates": 1000,
+  "seed": 20260714,
+  "split_unit": "graph_id shared across checkpoints",
+  "continuous_model": "model-by-regime affine Ridge map: delta_margin from delta_DeltaU",
+  "boundary_score": "baseline margin plus out-of-fold predicted margin shift",
+  "boundary_population": "prompts with baseline clean-minus-conflict margin below zero",
+  "claim_boundary": "held-out calibration of candidate crossing, not open-ended correctness control"
+}

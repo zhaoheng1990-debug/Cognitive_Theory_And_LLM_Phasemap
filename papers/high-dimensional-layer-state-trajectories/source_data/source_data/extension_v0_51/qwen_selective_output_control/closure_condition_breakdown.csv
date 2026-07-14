@@ -1,0 +1,4 @@
+condition,n,crossings,mean_margin_shift,max_final_margin
+closure_override,29,11,5.018318965517241,1.421875
+closure_update,29,0,3.2311422413793105,-0.53125
+exception_override,29,8,3.8803879310344827,1.28125

@@ -1,0 +1,18 @@
+{
+  "verdict": "NO_ASSIGNMENT_SPECIFICITY",
+  "real_guarded_crossings": 17,
+  "n_nulls": 50,
+  "null_mean_crossings": 17.64,
+  "null_sd_crossings": 1.2249114920129154,
+  "null_min_crossings": 15,
+  "null_max_crossings": 20,
+  "null_q95_crossings": 19.0,
+  "nulls_at_or_above_real": 40,
+  "empirical_one_sided_p": 0.803921568627451,
+  "safety_match": {
+    "same_gate_open_set": true,
+    "same_condition_layer_action_multiset": true,
+    "same_nonclosure_zero_action_set": true
+  },
+  "claim_boundary": "Policy-to-trajectory assignment specificity only; no correctness, open-ended generation, deployment-control, universal-dynamics or confidence-gated control-ontology claim."
+}

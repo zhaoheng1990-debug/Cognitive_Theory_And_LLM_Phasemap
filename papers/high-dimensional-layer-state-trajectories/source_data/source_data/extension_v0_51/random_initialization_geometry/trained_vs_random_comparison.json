@@ -1,0 +1,12 @@
+{
+  "trained_alignment_gain": 0.03340927582234144,
+  "random_alignment_gain_mean": 0.07927821484704813,
+  "random_alignment_gain_min": 0.0781339681148529,
+  "random_alignment_gain_max": 0.08026846069842578,
+  "trained_exceeds_random_alignment_gain_range": false,
+  "trained_alignment_z": 5.716907482300315,
+  "random_alignment_z_mean": 5.993544260104833,
+  "trained_detour_reduction_log2": 1.6557626537442953,
+  "random_detour_reduction_log2_mean": 2.36021143430631,
+  "interpretation_boundary": "Random effects index architecture-compatible organization; trained-versus-random separation indexes additional parameter-dependent organization for this architecture and prompt subset only."
+}
