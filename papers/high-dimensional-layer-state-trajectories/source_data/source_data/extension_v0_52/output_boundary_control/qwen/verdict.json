@@ -1,0 +1,25 @@
+{
+  "verdict": "PASS_STRONG_POLICY_BOUNDARY_CONTROL",
+  "primary_control": "policy_boundary",
+  "primary_crossings": 19,
+  "primary_closure_n": 87,
+  "primary_crossing_rate": 0.21839080459770116,
+  "primary_mean_margin_shift": 4.043283045977011,
+  "primary_nonclosure_flip_rate": 0.034482758620689655,
+  "primary_mean_norm_ratio": 0.9770260823184046,
+  "shuffle_crossings": 12,
+  "fixed_global_crossings": 0,
+  "claim_boundary": "Paired candidate-boundary control on a controlled relation-graph task only; not open-ended generation control, answer-correctness improvement, deployment control, a universal dynamical law, or a confidence gate hidden ontology.",
+  "n_train_prompts": 670,
+  "n_test_prompts": 290,
+  "n_test_graphs": 29,
+  "n_test_closure": 87,
+  "selected_global_action": [
+    0.0,
+    0.0
+  ],
+  "primary_strict_conflict_to_clean_top1": 19,
+  "guarded_strict_conflict_to_clean_top1": 17,
+  "primary_nonclosure_top1_change_rate": 0.034482758620689655,
+  "guarded_nonclosure_top1_change_rate": 0.0
+}

@@ -1,0 +1,6 @@
+control,closure_n,closure_top1_clean,closure_top1_conflict,closure_top1_other,closure_strict_conflict_to_clean,closure_any_to_clean,nonclosure_top1_change_rate,nonclosure_top1_clean_loss_rate
+none,87,0,87,0,0,0,0.0,0.0
+same_combo_fixed,87,0,87,0,0,0,0.17733990147783252,0.0
+policy_boundary,87,19,68,0,19,19,0.034482758620689655,0.0
+policy_boundary_guarded,87,17,70,0,17,17,0.0,0.0
+shuffle_boundary_labels,87,12,75,0,12,12,0.3645320197044335,0.03940886699507389

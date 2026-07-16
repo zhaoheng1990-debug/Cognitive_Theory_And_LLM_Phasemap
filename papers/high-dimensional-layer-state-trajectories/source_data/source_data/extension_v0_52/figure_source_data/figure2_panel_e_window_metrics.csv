@@ -1,0 +1,10 @@
+"model","metric","value"
+"Qwen","Topology change",0.83310079124487
+"Qwen","Mechanism F1",0.736929269904138
+"Qwen","Downstream corr.",0.634957541535817
+"Llama","Topology change",0.801743263885624
+"Llama","Mechanism F1",0.754938271604938
+"Llama","Downstream corr.",0.308878607351733
+"Gemma","Topology change",0.866455440026989
+"Gemma","Mechanism F1",0.735941716135996
+"Gemma","Downstream corr.",0.554457334467252

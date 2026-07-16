@@ -1,0 +1,41 @@
+"window_short","metric","value"
+"0-25% depth","ΔU corr.",0.853515490536742
+"0-25% depth","Mechanism F1",0.965253420613617
+"25-55% depth","ΔU corr.",0.882120245831856
+"25-55% depth","Mechanism F1",0.981706677356041
+"full predecision","ΔU corr.",0.909065894725467
+"full predecision","Mechanism F1",0.996150761828388
+"post-topology","ΔU corr.",0.905577110993232
+"post-topology","Mechanism F1",0.993220711833913
+"post-mechanism","ΔU corr.",0.884100036885687
+"post-mechanism","Mechanism F1",0.976003479827873
+"post-downstream","ΔU corr.",0.905577110993232
+"post-downstream","Mechanism F1",0.993220711833913
+"after overall until predecision","ΔU corr.",0.907852393717432
+"after overall until predecision","Mechanism F1",0.991895330786862
+"aligned topology","ΔU corr.",0.403051613878256
+"aligned topology","Mechanism F1",0.654413127463112
+"aligned mechanism","ΔU corr.",0.69176228748963
+"aligned mechanism","Mechanism F1",0.645494751098199
+"aligned downstream","ΔU corr.",0.403051613878256
+"aligned downstream","Mechanism F1",0.654413127463112
+"0-25% depth","ΔU corr.",0.862128206328282
+"0-25% depth","Mechanism F1",0.947103517335434
+"25-55% depth","ΔU corr.",0.889354390938756
+"25-55% depth","Mechanism F1",0.983262155106058
+"full predecision","ΔU corr.",0.9188369642974
+"full predecision","Mechanism F1",0.990318870066325
+"post-topology","ΔU corr.",0.916318820885072
+"post-topology","Mechanism F1",0.990318870066325
+"post-mechanism","ΔU corr.",0.891399405425184
+"post-mechanism","Mechanism F1",0.991895330786862
+"post-downstream","ΔU corr.",0.916318820885072
+"post-downstream","Mechanism F1",0.990318870066325
+"after overall until predecision","ΔU corr.",0.912573601842655
+"after overall until predecision","Mechanism F1",0.990318870066325
+"aligned topology","ΔU corr.",0.580754951154881
+"aligned topology","Mechanism F1",0.771412201375397
+"aligned mechanism","ΔU corr.",0.768496231889191
+"aligned mechanism","Mechanism F1",0.710195033724445
+"aligned downstream","ΔU corr.",0.580754951154881
+"aligned downstream","Mechanism F1",0.771412201375397

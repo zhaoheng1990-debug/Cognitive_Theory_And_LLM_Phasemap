@@ -1,0 +1,10 @@
+"model","metric","value"
+"Qwen","Alignment gain",0.0339308566000269
+"Qwen","Detour reduction",2.01736704942454
+"Qwen","Curvature reduction",0.0605751311103476
+"Llama","Alignment gain",0.122389310763942
+"Llama","Detour reduction",0.119963848344569
+"Llama","Curvature reduction",0.44590332701261
+"Gemma","Alignment gain",0.00487228979667029
+"Gemma","Detour reduction",2.43616479243002
+"Gemma","Curvature reduction",0.419797582257812

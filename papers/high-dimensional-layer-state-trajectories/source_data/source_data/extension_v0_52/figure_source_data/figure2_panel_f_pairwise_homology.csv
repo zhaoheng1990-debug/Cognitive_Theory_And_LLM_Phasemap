@@ -1,0 +1,7 @@
+"pair","correlation","value"
+"Qwen-Llama","Pearson",0.0508278441834598
+"Qwen-Llama","Spearman",0.0982683982683983
+"Qwen-Gemma","Pearson",0.404770581109389
+"Qwen-Gemma","Spearman",0.433838383838384
+"Llama-Gemma","Pearson",0.0337854047815275
+"Llama-Gemma","Spearman",0.131024531024531

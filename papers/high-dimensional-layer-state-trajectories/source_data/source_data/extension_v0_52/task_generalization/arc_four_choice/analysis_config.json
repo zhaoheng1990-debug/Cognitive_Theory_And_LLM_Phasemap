@@ -1,0 +1,18 @@
+{
+  "analysis": "standard four-choice ARC-Challenge trajectory geometry",
+  "dataset": "allenai/ai2_arc",
+  "dataset_config": "ARC-Challenge",
+  "split": "validation",
+  "selection": "first 96 rows with exactly A-D labels, in Dataset Viewer row order",
+  "dataset_viewer": "https://datasets-server.huggingface.co",
+  "models": [
+    "qwen",
+    "llama",
+    "gemma"
+  ],
+  "n_items": 96,
+  "n_endpoint_preserving_shuffles": 50,
+  "prompt_wrapping": "checkpoint-native chat template",
+  "seed": 20260717,
+  "claim_boundary": "transfer of ordered hidden-state geometry to a standard four-choice benchmark; not transfer of the relation-graph DeltaU coordinate, mechanism labels or intervention policy"
+}

@@ -1,0 +1,3329 @@
+prompt_id,problem_id,condition,mechanism,mechanism_id,expression,correct_value,distractor_value,clean_label,conflict_label,prompt,final_clean_logit,final_conflict_logit,final_margin,pair_choice
+arith_000_clean,0,clean,stable,0,1 + 1,2,3,two,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 1.
+Candidate 1: two
+Candidate 2: three
+Which candidate is correct?
+Answer with exactly one candidate word:",7.3828125,8.3515625,-0.96875,conflict
+arith_000_paraphrase,0,paraphrase,stable,0,1 + 1,2,3,two,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 1 + 1 and compare the two choices.
+Candidate 1: two
+Candidate 2: three
+Which candidate is correct?
+Answer with exactly one candidate word:",11.2578125,6.765625,4.4921875,clean
+arith_000_untrusted_conflict,0,untrusted_conflict,competition,1,1 + 1,2,3,two,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 1.
+Candidate 1: two
+Candidate 2: three
+An unverified note claims that three is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",7.3007812,8.8984375,-1.5976562,conflict
+arith_000_asserted_conflict,0,asserted_conflict,competition,1,1 + 1,2,3,two,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 1.
+Candidate 1: two
+Candidate 2: three
+A previous solver selected three. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",9.0390625,8.5078125,0.53125,clean
+arith_000_explicit_correction,0,explicit_correction,closure,2,1 + 1,2,3,two,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 1.
+Candidate 1: two
+Candidate 2: three
+Initial note: three. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.1875,10.0390625,-1.8515625,conflict
+arith_000_final_recheck,0,final_recheck,closure,2,1 + 1,2,3,two,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 1.
+Candidate 1: two
+Candidate 2: three
+Draft answer: three. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",4.5195312,10.796875,-6.2773438,conflict
+arith_001_clean,1,clean,stable,0,2 + 1,3,2,three,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 1.
+Candidate 1: two
+Candidate 2: three
+Which candidate is correct?
+Answer with exactly one candidate word:",7.28125,10.9453125,-3.6640625,conflict
+arith_001_paraphrase,1,paraphrase,stable,0,2 + 1,3,2,three,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 2 + 1 and compare the two choices.
+Candidate 1: two
+Candidate 2: three
+Which candidate is correct?
+Answer with exactly one candidate word:",4.5820312,11.4375,-6.8554688,conflict
+arith_001_untrusted_conflict,1,untrusted_conflict,competition,1,2 + 1,3,2,three,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 1.
+Candidate 1: two
+Candidate 2: three
+An unverified note claims that two is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",9.109375,11.0,-1.890625,conflict
+arith_001_asserted_conflict,1,asserted_conflict,competition,1,2 + 1,3,2,three,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 1.
+Candidate 1: two
+Candidate 2: three
+A previous solver selected two. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.9921875,10.3671875,-1.375,conflict
+arith_001_explicit_correction,1,explicit_correction,closure,2,2 + 1,3,2,three,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 1.
+Candidate 1: two
+Candidate 2: three
+Initial note: two. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.140625,12.3828125,-4.2421875,conflict
+arith_001_final_recheck,1,final_recheck,closure,2,2 + 1,3,2,three,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 1.
+Candidate 1: two
+Candidate 2: three
+Draft answer: two. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",4.2265625,11.953125,-7.7265625,conflict
+arith_002_clean,2,clean,stable,0,3 + 1,4,6,four,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 1.
+Candidate 1: four
+Candidate 2: six
+Which candidate is correct?
+Answer with exactly one candidate word:",11.4296875,12.28125,-0.8515625,conflict
+arith_002_paraphrase,2,paraphrase,stable,0,3 + 1,4,6,four,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 3 + 1 and compare the two choices.
+Candidate 1: four
+Candidate 2: six
+Which candidate is correct?
+Answer with exactly one candidate word:",11.421875,14.7109375,-3.2890625,conflict
+arith_002_untrusted_conflict,2,untrusted_conflict,competition,1,3 + 1,4,6,four,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 1.
+Candidate 1: four
+Candidate 2: six
+An unverified note claims that six is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.328125,10.4140625,2.9140625,clean
+arith_002_asserted_conflict,2,asserted_conflict,competition,1,3 + 1,4,6,four,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 1.
+Candidate 1: four
+Candidate 2: six
+A previous solver selected six. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.4609375,11.6640625,1.796875,clean
+arith_002_explicit_correction,2,explicit_correction,closure,2,3 + 1,4,6,four,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 1.
+Candidate 1: four
+Candidate 2: six
+Initial note: six. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.4375,11.65625,1.78125,clean
+arith_002_final_recheck,2,final_recheck,closure,2,3 + 1,4,6,four,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 1.
+Candidate 1: four
+Candidate 2: six
+Draft answer: six. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.0,10.6484375,2.3515625,clean
+arith_003_clean,3,clean,stable,0,4 + 1,5,3,five,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 1.
+Candidate 1: three
+Candidate 2: five
+Which candidate is correct?
+Answer with exactly one candidate word:",10.3671875,8.96875,1.3984375,clean
+arith_003_paraphrase,3,paraphrase,stable,0,4 + 1,5,3,five,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 4 + 1 and compare the two choices.
+Candidate 1: three
+Candidate 2: five
+Which candidate is correct?
+Answer with exactly one candidate word:",12.4609375,8.9765625,3.484375,clean
+arith_003_untrusted_conflict,3,untrusted_conflict,competition,1,4 + 1,5,3,five,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 1.
+Candidate 1: three
+Candidate 2: five
+An unverified note claims that three is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.9609375,10.359375,0.6015625,clean
+arith_003_asserted_conflict,3,asserted_conflict,competition,1,4 + 1,5,3,five,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 1.
+Candidate 1: three
+Candidate 2: five
+A previous solver selected three. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.2265625,8.6171875,3.609375,clean
+arith_003_explicit_correction,3,explicit_correction,closure,2,4 + 1,5,3,five,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 1.
+Candidate 1: three
+Candidate 2: five
+Initial note: three. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.8046875,9.53125,3.2734375,clean
+arith_003_final_recheck,3,final_recheck,closure,2,4 + 1,5,3,five,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 1.
+Candidate 1: three
+Candidate 2: five
+Draft answer: three. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",4.8320312,10.9140625,-6.0820312,conflict
+arith_004_clean,4,clean,stable,0,5 + 1,6,9,six,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 1.
+Candidate 1: six
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",6.7851562,16.3125,-9.527344,conflict
+arith_004_paraphrase,4,paraphrase,stable,0,5 + 1,6,9,six,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 5 + 1 and compare the two choices.
+Candidate 1: six
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",9.9609375,14.6953125,-4.734375,conflict
+arith_004_untrusted_conflict,4,untrusted_conflict,competition,1,5 + 1,6,9,six,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 1.
+Candidate 1: six
+Candidate 2: nine
+An unverified note claims that nine is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.2265625,15.5859375,-7.359375,conflict
+arith_004_asserted_conflict,4,asserted_conflict,competition,1,5 + 1,6,9,six,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 1.
+Candidate 1: six
+Candidate 2: nine
+A previous solver selected nine. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.8671875,15.25,-6.3828125,conflict
+arith_004_explicit_correction,4,explicit_correction,closure,2,5 + 1,6,9,six,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 1.
+Candidate 1: six
+Candidate 2: nine
+Initial note: nine. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",3.6914062,15.8046875,-12.113281,conflict
+arith_004_final_recheck,4,final_recheck,closure,2,5 + 1,6,9,six,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 1.
+Candidate 1: six
+Candidate 2: nine
+Draft answer: nine. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",4.65625,15.0703125,-10.4140625,conflict
+arith_005_clean,5,clean,stable,0,6 + 1,7,4,seven,four,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 1.
+Candidate 1: four
+Candidate 2: seven
+Which candidate is correct?
+Answer with exactly one candidate word:",15.21875,5.3554688,9.863281,clean
+arith_005_paraphrase,5,paraphrase,stable,0,6 + 1,7,4,seven,four,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 6 + 1 and compare the two choices.
+Candidate 1: four
+Candidate 2: seven
+Which candidate is correct?
+Answer with exactly one candidate word:",13.859375,7.7695312,6.0898438,clean
+arith_005_untrusted_conflict,5,untrusted_conflict,competition,1,6 + 1,7,4,seven,four,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 1.
+Candidate 1: four
+Candidate 2: seven
+An unverified note claims that four is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.484375,7.1992188,7.2851562,clean
+arith_005_asserted_conflict,5,asserted_conflict,competition,1,6 + 1,7,4,seven,four,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 1.
+Candidate 1: four
+Candidate 2: seven
+A previous solver selected four. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.8125,5.453125,8.359375,clean
+arith_005_explicit_correction,5,explicit_correction,closure,2,6 + 1,7,4,seven,four,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 1.
+Candidate 1: four
+Candidate 2: seven
+Initial note: four. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.828125,4.5742188,10.253906,clean
+arith_005_final_recheck,5,final_recheck,closure,2,6 + 1,7,4,seven,four,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 1.
+Candidate 1: four
+Candidate 2: seven
+Draft answer: four. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.8515625,11.5859375,0.265625,clean
+arith_006_clean,6,clean,stable,0,7 + 1,8,9,eight,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 1.
+Candidate 1: eight
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",6.6171875,17.578125,-10.9609375,conflict
+arith_006_paraphrase,6,paraphrase,stable,0,7 + 1,8,9,eight,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 7 + 1 and compare the two choices.
+Candidate 1: eight
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",8.03125,16.328125,-8.296875,conflict
+arith_006_untrusted_conflict,6,untrusted_conflict,competition,1,7 + 1,8,9,eight,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 1.
+Candidate 1: eight
+Candidate 2: nine
+An unverified note claims that nine is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.1171875,16.53125,-6.4140625,conflict
+arith_006_asserted_conflict,6,asserted_conflict,competition,1,7 + 1,8,9,eight,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 1.
+Candidate 1: eight
+Candidate 2: nine
+A previous solver selected nine. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.3203125,15.953125,-4.6328125,conflict
+arith_006_explicit_correction,6,explicit_correction,closure,2,7 + 1,8,9,eight,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 1.
+Candidate 1: eight
+Candidate 2: nine
+Initial note: nine. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.578125,17.0625,-8.484375,conflict
+arith_006_final_recheck,6,final_recheck,closure,2,7 + 1,8,9,eight,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 1.
+Candidate 1: eight
+Candidate 2: nine
+Draft answer: nine. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",7.6679688,16.078125,-8.410156,conflict
+arith_007_clean,7,clean,stable,0,8 + 1,9,8,nine,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 1.
+Candidate 1: eight
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",17.265625,9.546875,7.71875,clean
+arith_007_paraphrase,7,paraphrase,stable,0,8 + 1,9,8,nine,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 8 + 1 and compare the two choices.
+Candidate 1: eight
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",15.65625,13.0625,2.59375,clean
+arith_007_untrusted_conflict,7,untrusted_conflict,competition,1,8 + 1,9,8,nine,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 1.
+Candidate 1: eight
+Candidate 2: nine
+An unverified note claims that eight is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.53125,12.015625,4.515625,clean
+arith_007_asserted_conflict,7,asserted_conflict,competition,1,8 + 1,9,8,nine,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 1.
+Candidate 1: eight
+Candidate 2: nine
+A previous solver selected eight. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.046875,10.84375,5.203125,clean
+arith_007_explicit_correction,7,explicit_correction,closure,2,8 + 1,9,8,nine,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 1.
+Candidate 1: eight
+Candidate 2: nine
+Initial note: eight. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.875,9.953125,5.921875,clean
+arith_007_final_recheck,7,final_recheck,closure,2,8 + 1,9,8,nine,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 1.
+Candidate 1: eight
+Candidate 2: nine
+Draft answer: eight. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.6484375,15.171875,-6.5234375,conflict
+arith_008_clean,8,clean,stable,0,1 + 2,3,5,three,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 2.
+Candidate 1: three
+Candidate 2: five
+Which candidate is correct?
+Answer with exactly one candidate word:",10.2421875,5.859375,4.3828125,clean
+arith_008_paraphrase,8,paraphrase,stable,0,1 + 2,3,5,three,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 1 + 2 and compare the two choices.
+Candidate 1: three
+Candidate 2: five
+Which candidate is correct?
+Answer with exactly one candidate word:",10.828125,8.5703125,2.2578125,clean
+arith_008_untrusted_conflict,8,untrusted_conflict,competition,1,1 + 2,3,5,three,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 2.
+Candidate 1: three
+Candidate 2: five
+An unverified note claims that five is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.171875,7.046875,4.125,clean
+arith_008_asserted_conflict,8,asserted_conflict,competition,1,1 + 2,3,5,three,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 2.
+Candidate 1: three
+Candidate 2: five
+A previous solver selected five. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.140625,7.3515625,3.7890625,clean
+arith_008_explicit_correction,8,explicit_correction,closure,2,1 + 2,3,5,three,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 2.
+Candidate 1: three
+Candidate 2: five
+Initial note: five. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.6640625,7.2265625,4.4375,clean
+arith_008_final_recheck,8,final_recheck,closure,2,1 + 2,3,5,three,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 2.
+Candidate 1: three
+Candidate 2: five
+Draft answer: five. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.515625,8.96875,2.546875,clean
+arith_009_clean,9,clean,stable,0,2 + 2,4,2,four,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 2.
+Candidate 1: two
+Candidate 2: four
+Which candidate is correct?
+Answer with exactly one candidate word:",6.46875,11.546875,-5.078125,conflict
+arith_009_paraphrase,9,paraphrase,stable,0,2 + 2,4,2,four,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 2 + 2 and compare the two choices.
+Candidate 1: two
+Candidate 2: four
+Which candidate is correct?
+Answer with exactly one candidate word:",5.7851562,11.828125,-6.0429688,conflict
+arith_009_untrusted_conflict,9,untrusted_conflict,competition,1,2 + 2,4,2,four,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 2.
+Candidate 1: two
+Candidate 2: four
+An unverified note claims that two is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.9648438,11.859375,-4.8945312,conflict
+arith_009_asserted_conflict,9,asserted_conflict,competition,1,2 + 2,4,2,four,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 2.
+Candidate 1: two
+Candidate 2: four
+A previous solver selected two. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.3515625,11.7421875,-5.390625,conflict
+arith_009_explicit_correction,9,explicit_correction,closure,2,2 + 2,4,2,four,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 2.
+Candidate 1: two
+Candidate 2: four
+Initial note: two. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.125,10.6484375,0.4765625,clean
+arith_009_final_recheck,9,final_recheck,closure,2,2 + 2,4,2,four,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 2.
+Candidate 1: two
+Candidate 2: four
+Draft answer: two. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",3.1621094,11.75,-8.587891,conflict
+arith_010_clean,10,clean,stable,0,3 + 2,5,8,five,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 2.
+Candidate 1: five
+Candidate 2: eight
+Which candidate is correct?
+Answer with exactly one candidate word:",9.859375,13.7421875,-3.8828125,conflict
+arith_010_paraphrase,10,paraphrase,stable,0,3 + 2,5,8,five,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 3 + 2 and compare the two choices.
+Candidate 1: five
+Candidate 2: eight
+Which candidate is correct?
+Answer with exactly one candidate word:",11.140625,11.9296875,-0.7890625,conflict
+arith_010_untrusted_conflict,10,untrusted_conflict,competition,1,3 + 2,5,8,five,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 2.
+Candidate 1: five
+Candidate 2: eight
+An unverified note claims that eight is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.515625,13.6015625,-1.0859375,conflict
+arith_010_asserted_conflict,10,asserted_conflict,competition,1,3 + 2,5,8,five,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 2.
+Candidate 1: five
+Candidate 2: eight
+A previous solver selected eight. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.0390625,12.71875,0.3203125,clean
+arith_010_explicit_correction,10,explicit_correction,closure,2,3 + 2,5,8,five,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 2.
+Candidate 1: five
+Candidate 2: eight
+Initial note: eight. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",3.578125,15.1171875,-11.5390625,conflict
+arith_010_final_recheck,10,final_recheck,closure,2,3 + 2,5,8,five,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 2.
+Candidate 1: five
+Candidate 2: eight
+Draft answer: eight. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",9.4921875,13.9921875,-4.5,conflict
+arith_011_clean,11,clean,stable,0,4 + 2,6,3,six,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 2.
+Candidate 1: three
+Candidate 2: six
+Which candidate is correct?
+Answer with exactly one candidate word:",11.546875,9.5078125,2.0390625,clean
+arith_011_paraphrase,11,paraphrase,stable,0,4 + 2,6,3,six,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 4 + 2 and compare the two choices.
+Candidate 1: three
+Candidate 2: six
+Which candidate is correct?
+Answer with exactly one candidate word:",12.359375,9.7265625,2.6328125,clean
+arith_011_untrusted_conflict,11,untrusted_conflict,competition,1,4 + 2,6,3,six,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 2.
+Candidate 1: three
+Candidate 2: six
+An unverified note claims that three is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.421875,11.1484375,0.2734375,clean
+arith_011_asserted_conflict,11,asserted_conflict,competition,1,4 + 2,6,3,six,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 2.
+Candidate 1: three
+Candidate 2: six
+A previous solver selected three. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.0546875,8.484375,5.5703125,clean
+arith_011_explicit_correction,11,explicit_correction,closure,2,4 + 2,6,3,six,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 2.
+Candidate 1: three
+Candidate 2: six
+Initial note: three. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.1015625,7.1445312,7.9570312,clean
+arith_011_final_recheck,11,final_recheck,closure,2,4 + 2,6,3,six,three,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 2.
+Candidate 1: three
+Candidate 2: six
+Draft answer: three. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.5273438,11.2265625,-4.6992188,conflict
+arith_012_clean,12,clean,stable,0,5 + 2,7,8,seven,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 2.
+Candidate 1: seven
+Candidate 2: eight
+Which candidate is correct?
+Answer with exactly one candidate word:",14.3828125,8.8984375,5.484375,clean
+arith_012_paraphrase,12,paraphrase,stable,0,5 + 2,7,8,seven,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 5 + 2 and compare the two choices.
+Candidate 1: seven
+Candidate 2: eight
+Which candidate is correct?
+Answer with exactly one candidate word:",13.2890625,6.7773438,6.5117188,clean
+arith_012_untrusted_conflict,12,untrusted_conflict,competition,1,5 + 2,7,8,seven,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 2.
+Candidate 1: seven
+Candidate 2: eight
+An unverified note claims that eight is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.1875,8.03125,7.15625,clean
+arith_012_asserted_conflict,12,asserted_conflict,competition,1,5 + 2,7,8,seven,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 2.
+Candidate 1: seven
+Candidate 2: eight
+A previous solver selected eight. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.875,7.0390625,7.8359375,clean
+arith_012_explicit_correction,12,explicit_correction,closure,2,5 + 2,7,8,seven,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 2.
+Candidate 1: seven
+Candidate 2: eight
+Initial note: eight. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.625,11.046875,2.578125,clean
+arith_012_final_recheck,12,final_recheck,closure,2,5 + 2,7,8,seven,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 2.
+Candidate 1: seven
+Candidate 2: eight
+Draft answer: eight. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.046875,10.859375,2.1875,clean
+arith_013_clean,13,clean,stable,0,6 + 2,8,7,eight,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 2.
+Candidate 1: seven
+Candidate 2: eight
+Which candidate is correct?
+Answer with exactly one candidate word:",11.65625,13.78125,-2.125,conflict
+arith_013_paraphrase,13,paraphrase,stable,0,6 + 2,8,7,eight,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 6 + 2 and compare the two choices.
+Candidate 1: seven
+Candidate 2: eight
+Which candidate is correct?
+Answer with exactly one candidate word:",9.703125,13.484375,-3.78125,conflict
+arith_013_untrusted_conflict,13,untrusted_conflict,competition,1,6 + 2,8,7,eight,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 2.
+Candidate 1: seven
+Candidate 2: eight
+An unverified note claims that seven is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.6171875,14.96875,-2.3515625,conflict
+arith_013_asserted_conflict,13,asserted_conflict,competition,1,6 + 2,8,7,eight,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 2.
+Candidate 1: seven
+Candidate 2: eight
+A previous solver selected seven. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.390625,13.8203125,-1.4296875,conflict
+arith_013_explicit_correction,13,explicit_correction,closure,2,6 + 2,8,7,eight,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 2.
+Candidate 1: seven
+Candidate 2: eight
+Initial note: seven. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.40625,11.1171875,4.2890625,clean
+arith_013_final_recheck,13,final_recheck,closure,2,6 + 2,8,7,eight,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 2.
+Candidate 1: seven
+Candidate 2: eight
+Draft answer: seven. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.8671875,14.0546875,-7.1875,conflict
+arith_014_clean,14,clean,stable,0,7 + 2,9,11,nine,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 2.
+Candidate 1: nine
+Candidate 2: eleven
+Which candidate is correct?
+Answer with exactly one candidate word:",14.171875,16.9375,-2.765625,conflict
+arith_014_paraphrase,14,paraphrase,stable,0,7 + 2,9,11,nine,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 7 + 2 and compare the two choices.
+Candidate 1: nine
+Candidate 2: eleven
+Which candidate is correct?
+Answer with exactly one candidate word:",8.28125,18.59375,-10.3125,conflict
+arith_014_untrusted_conflict,14,untrusted_conflict,competition,1,7 + 2,9,11,nine,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 2.
+Candidate 1: nine
+Candidate 2: eleven
+An unverified note claims that eleven is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.234375,16.09375,-0.859375,conflict
+arith_014_asserted_conflict,14,asserted_conflict,competition,1,7 + 2,9,11,nine,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 2.
+Candidate 1: nine
+Candidate 2: eleven
+A previous solver selected eleven. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.40625,13.1875,2.21875,clean
+arith_014_explicit_correction,14,explicit_correction,closure,2,7 + 2,9,11,nine,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 2.
+Candidate 1: nine
+Candidate 2: eleven
+Initial note: eleven. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.765625,15.765625,-1.0,conflict
+arith_014_final_recheck,14,final_recheck,closure,2,7 + 2,9,11,nine,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 2.
+Candidate 1: nine
+Candidate 2: eleven
+Draft answer: eleven. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.4765625,15.1640625,-0.6875,conflict
+arith_015_clean,15,clean,stable,0,8 + 2,10,8,ten,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 2.
+Candidate 1: eight
+Candidate 2: ten
+Which candidate is correct?
+Answer with exactly one candidate word:",16.421875,9.203125,7.21875,clean
+arith_015_paraphrase,15,paraphrase,stable,0,8 + 2,10,8,ten,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 8 + 2 and compare the two choices.
+Candidate 1: eight
+Candidate 2: ten
+Which candidate is correct?
+Answer with exactly one candidate word:",16.484375,8.8125,7.671875,clean
+arith_015_untrusted_conflict,15,untrusted_conflict,competition,1,8 + 2,10,8,ten,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 2.
+Candidate 1: eight
+Candidate 2: ten
+An unverified note claims that eight is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.828125,13.234375,1.59375,clean
+arith_015_asserted_conflict,15,asserted_conflict,competition,1,8 + 2,10,8,ten,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 2.
+Candidate 1: eight
+Candidate 2: ten
+A previous solver selected eight. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.8046875,11.5703125,3.234375,clean
+arith_015_explicit_correction,15,explicit_correction,closure,2,8 + 2,10,8,ten,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 2.
+Candidate 1: eight
+Candidate 2: ten
+Initial note: eight. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.0625,9.8125,6.25,clean
+arith_015_final_recheck,15,final_recheck,closure,2,8 + 2,10,8,ten,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 2.
+Candidate 1: eight
+Candidate 2: ten
+Draft answer: eight. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",7.5234375,14.53125,-7.0078125,conflict
+arith_016_clean,16,clean,stable,0,1 + 3,4,7,four,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 3.
+Candidate 1: four
+Candidate 2: seven
+Which candidate is correct?
+Answer with exactly one candidate word:",7.3515625,13.6640625,-6.3125,conflict
+arith_016_paraphrase,16,paraphrase,stable,0,1 + 3,4,7,four,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 1 + 3 and compare the two choices.
+Candidate 1: four
+Candidate 2: seven
+Which candidate is correct?
+Answer with exactly one candidate word:",9.7109375,13.5859375,-3.875,conflict
+arith_016_untrusted_conflict,16,untrusted_conflict,competition,1,1 + 3,4,7,four,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 3.
+Candidate 1: four
+Candidate 2: seven
+An unverified note claims that seven is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.109375,12.2578125,-2.1484375,conflict
+arith_016_asserted_conflict,16,asserted_conflict,competition,1,1 + 3,4,7,four,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 3.
+Candidate 1: four
+Candidate 2: seven
+A previous solver selected seven. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",9.1484375,13.4296875,-4.28125,conflict
+arith_016_explicit_correction,16,explicit_correction,closure,2,1 + 3,4,7,four,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 3.
+Candidate 1: four
+Candidate 2: seven
+Initial note: seven. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.9492188,13.53125,-6.5820312,conflict
+arith_016_final_recheck,16,final_recheck,closure,2,1 + 3,4,7,four,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 3.
+Candidate 1: four
+Candidate 2: seven
+Draft answer: seven. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",7.4453125,13.40625,-5.9609375,conflict
+arith_017_clean,17,clean,stable,0,2 + 3,5,2,five,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 3.
+Candidate 1: two
+Candidate 2: five
+Which candidate is correct?
+Answer with exactly one candidate word:",8.078125,11.0390625,-2.9609375,conflict
+arith_017_paraphrase,17,paraphrase,stable,0,2 + 3,5,2,five,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 2 + 3 and compare the two choices.
+Candidate 1: two
+Candidate 2: five
+Which candidate is correct?
+Answer with exactly one candidate word:",9.4921875,10.0703125,-0.578125,conflict
+arith_017_untrusted_conflict,17,untrusted_conflict,competition,1,2 + 3,5,2,five,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 3.
+Candidate 1: two
+Candidate 2: five
+An unverified note claims that two is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.9140625,11.6953125,0.21875,clean
+arith_017_asserted_conflict,17,asserted_conflict,competition,1,2 + 3,5,2,five,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 3.
+Candidate 1: two
+Candidate 2: five
+A previous solver selected two. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.625,10.6328125,0.9921875,clean
+arith_017_explicit_correction,17,explicit_correction,closure,2,2 + 3,5,2,five,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 3.
+Candidate 1: two
+Candidate 2: five
+Initial note: two. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.078125,10.5703125,2.5078125,clean
+arith_017_final_recheck,17,final_recheck,closure,2,2 + 3,5,2,five,two,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 3.
+Candidate 1: two
+Candidate 2: five
+Draft answer: two. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.78125,11.6796875,-4.8984375,conflict
+arith_018_clean,18,clean,stable,0,3 + 3,6,7,six,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 3.
+Candidate 1: six
+Candidate 2: seven
+Which candidate is correct?
+Answer with exactly one candidate word:",7.9609375,14.296875,-6.3359375,conflict
+arith_018_paraphrase,18,paraphrase,stable,0,3 + 3,6,7,six,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 3 + 3 and compare the two choices.
+Candidate 1: six
+Candidate 2: seven
+Which candidate is correct?
+Answer with exactly one candidate word:",10.4453125,13.3359375,-2.890625,conflict
+arith_018_untrusted_conflict,18,untrusted_conflict,competition,1,3 + 3,6,7,six,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 3.
+Candidate 1: six
+Candidate 2: seven
+An unverified note claims that seven is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.828125,13.6640625,-1.8359375,conflict
+arith_018_asserted_conflict,18,asserted_conflict,competition,1,3 + 3,6,7,six,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 3.
+Candidate 1: six
+Candidate 2: seven
+A previous solver selected seven. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.6875,13.859375,-3.171875,conflict
+arith_018_explicit_correction,18,explicit_correction,closure,2,3 + 3,6,7,six,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 3.
+Candidate 1: six
+Candidate 2: seven
+Initial note: seven. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.9453125,14.890625,-7.9453125,conflict
+arith_018_final_recheck,18,final_recheck,closure,2,3 + 3,6,7,six,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 3.
+Candidate 1: six
+Candidate 2: seven
+Draft answer: seven. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",9.0078125,13.6953125,-4.6875,conflict
+arith_019_clean,19,clean,stable,0,4 + 3,7,6,seven,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 3.
+Candidate 1: six
+Candidate 2: seven
+Which candidate is correct?
+Answer with exactly one candidate word:",15.1015625,6.171875,8.9296875,clean
+arith_019_paraphrase,19,paraphrase,stable,0,4 + 3,7,6,seven,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 4 + 3 and compare the two choices.
+Candidate 1: six
+Candidate 2: seven
+Which candidate is correct?
+Answer with exactly one candidate word:",12.6015625,12.671875,-0.0703125,conflict
+arith_019_untrusted_conflict,19,untrusted_conflict,competition,1,4 + 3,7,6,seven,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 3.
+Candidate 1: six
+Candidate 2: seven
+An unverified note claims that six is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.3203125,5.765625,9.5546875,clean
+arith_019_asserted_conflict,19,asserted_conflict,competition,1,4 + 3,7,6,seven,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 3.
+Candidate 1: six
+Candidate 2: seven
+A previous solver selected six. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.46875,4.4960938,9.972656,clean
+arith_019_explicit_correction,19,explicit_correction,closure,2,4 + 3,7,6,seven,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 3.
+Candidate 1: six
+Candidate 2: seven
+Initial note: six. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.40625,2.8105469,12.595703,clean
+arith_019_final_recheck,19,final_recheck,closure,2,4 + 3,7,6,seven,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 3.
+Candidate 1: six
+Candidate 2: seven
+Draft answer: six. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.7109375,11.25,2.4609375,clean
+arith_020_clean,20,clean,stable,0,5 + 3,8,10,eight,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 3.
+Candidate 1: eight
+Candidate 2: ten
+Which candidate is correct?
+Answer with exactly one candidate word:",4.78125,16.203125,-11.421875,conflict
+arith_020_paraphrase,20,paraphrase,stable,0,5 + 3,8,10,eight,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 5 + 3 and compare the two choices.
+Candidate 1: eight
+Candidate 2: ten
+Which candidate is correct?
+Answer with exactly one candidate word:",5.3789062,14.7421875,-9.363281,conflict
+arith_020_untrusted_conflict,20,untrusted_conflict,competition,1,5 + 3,8,10,eight,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 3.
+Candidate 1: eight
+Candidate 2: ten
+An unverified note claims that ten is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",5.8828125,16.375,-10.4921875,conflict
+arith_020_asserted_conflict,20,asserted_conflict,competition,1,5 + 3,8,10,eight,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 3.
+Candidate 1: eight
+Candidate 2: ten
+A previous solver selected ten. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",7.1210938,15.875,-8.753906,conflict
+arith_020_explicit_correction,20,explicit_correction,closure,2,5 + 3,8,10,eight,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 3.
+Candidate 1: eight
+Candidate 2: ten
+Initial note: ten. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",4.8515625,15.6015625,-10.75,conflict
+arith_020_final_recheck,20,final_recheck,closure,2,5 + 3,8,10,eight,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 3.
+Candidate 1: eight
+Candidate 2: ten
+Draft answer: ten. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",2.1542969,14.109375,-11.955078,conflict
+arith_021_clean,21,clean,stable,0,6 + 3,9,7,nine,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 3.
+Candidate 1: seven
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",16.078125,12.1328125,3.9453125,clean
+arith_021_paraphrase,21,paraphrase,stable,0,6 + 3,9,7,nine,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 6 + 3 and compare the two choices.
+Candidate 1: seven
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",14.2734375,10.7890625,3.484375,clean
+arith_021_untrusted_conflict,21,untrusted_conflict,competition,1,6 + 3,9,7,nine,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 3.
+Candidate 1: seven
+Candidate 2: nine
+An unverified note claims that seven is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.421875,13.1875,3.234375,clean
+arith_021_asserted_conflict,21,asserted_conflict,competition,1,6 + 3,9,7,nine,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 3.
+Candidate 1: seven
+Candidate 2: nine
+A previous solver selected seven. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.4375,11.6875,3.75,clean
+arith_021_explicit_correction,21,explicit_correction,closure,2,6 + 3,9,7,nine,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 3.
+Candidate 1: seven
+Candidate 2: nine
+Initial note: seven. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.328125,7.8359375,9.4921875,clean
+arith_021_final_recheck,21,final_recheck,closure,2,6 + 3,9,7,nine,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 3.
+Candidate 1: seven
+Candidate 2: nine
+Draft answer: seven. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",7.0546875,13.828125,-6.7734375,conflict
+arith_022_clean,22,clean,stable,0,7 + 3,10,13,ten,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 3.
+Candidate 1: ten
+Candidate 2: thirteen
+Which candidate is correct?
+Answer with exactly one candidate word:",15.28125,11.328125,3.953125,clean
+arith_022_paraphrase,22,paraphrase,stable,0,7 + 3,10,13,ten,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 7 + 3 and compare the two choices.
+Candidate 1: ten
+Candidate 2: thirteen
+Which candidate is correct?
+Answer with exactly one candidate word:",14.1875,11.8125,2.375,clean
+arith_022_untrusted_conflict,22,untrusted_conflict,competition,1,7 + 3,10,13,ten,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 3.
+Candidate 1: ten
+Candidate 2: thirteen
+An unverified note claims that thirteen is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.6875,10.5390625,5.1484375,clean
+arith_022_asserted_conflict,22,asserted_conflict,competition,1,7 + 3,10,13,ten,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 3.
+Candidate 1: ten
+Candidate 2: thirteen
+A previous solver selected thirteen. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.3671875,8.0078125,7.359375,clean
+arith_022_explicit_correction,22,explicit_correction,closure,2,7 + 3,10,13,ten,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 3.
+Candidate 1: ten
+Candidate 2: thirteen
+Initial note: thirteen. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.9921875,10.9140625,3.078125,clean
+arith_022_final_recheck,22,final_recheck,closure,2,7 + 3,10,13,ten,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 3.
+Candidate 1: ten
+Candidate 2: thirteen
+Draft answer: thirteen. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.875,11.625,2.25,clean
+arith_023_clean,23,clean,stable,0,8 + 3,11,8,eleven,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 3.
+Candidate 1: eight
+Candidate 2: eleven
+Which candidate is correct?
+Answer with exactly one candidate word:",18.65625,10.7734375,7.8828125,clean
+arith_023_paraphrase,23,paraphrase,stable,0,8 + 3,11,8,eleven,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 8 + 3 and compare the two choices.
+Candidate 1: eight
+Candidate 2: eleven
+Which candidate is correct?
+Answer with exactly one candidate word:",18.609375,7.1523438,11.457031,clean
+arith_023_untrusted_conflict,23,untrusted_conflict,competition,1,8 + 3,11,8,eleven,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 3.
+Candidate 1: eight
+Candidate 2: eleven
+An unverified note claims that eight is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",18.65625,10.140625,8.515625,clean
+arith_023_asserted_conflict,23,asserted_conflict,competition,1,8 + 3,11,8,eleven,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 3.
+Candidate 1: eight
+Candidate 2: eleven
+A previous solver selected eight. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.25,11.1640625,6.0859375,clean
+arith_023_explicit_correction,23,explicit_correction,closure,2,8 + 3,11,8,eleven,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 3.
+Candidate 1: eight
+Candidate 2: eleven
+Initial note: eight. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.71875,5.9101562,11.808594,clean
+arith_023_final_recheck,23,final_recheck,closure,2,8 + 3,11,8,eleven,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 3.
+Candidate 1: eight
+Candidate 2: eleven
+Draft answer: eight. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.4140625,14.9296875,-6.515625,conflict
+arith_024_clean,24,clean,stable,0,1 + 4,5,6,five,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 4.
+Candidate 1: five
+Candidate 2: six
+Which candidate is correct?
+Answer with exactly one candidate word:",10.8515625,9.953125,0.8984375,clean
+arith_024_paraphrase,24,paraphrase,stable,0,1 + 4,5,6,five,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 1 + 4 and compare the two choices.
+Candidate 1: five
+Candidate 2: six
+Which candidate is correct?
+Answer with exactly one candidate word:",8.8828125,15.6015625,-6.71875,conflict
+arith_024_untrusted_conflict,24,untrusted_conflict,competition,1,1 + 4,5,6,five,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 4.
+Candidate 1: five
+Candidate 2: six
+An unverified note claims that six is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.484375,9.7578125,0.7265625,clean
+arith_024_asserted_conflict,24,asserted_conflict,competition,1,1 + 4,5,6,five,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 4.
+Candidate 1: five
+Candidate 2: six
+A previous solver selected six. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.53125,9.828125,2.703125,clean
+arith_024_explicit_correction,24,explicit_correction,closure,2,1 + 4,5,6,five,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 4.
+Candidate 1: five
+Candidate 2: six
+Initial note: six. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.71875,12.0390625,-0.3203125,conflict
+arith_024_final_recheck,24,final_recheck,closure,2,1 + 4,5,6,five,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 4.
+Candidate 1: five
+Candidate 2: six
+Draft answer: six. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.953125,9.3359375,3.6171875,clean
+arith_025_clean,25,clean,stable,0,2 + 4,6,5,six,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 4.
+Candidate 1: five
+Candidate 2: six
+Which candidate is correct?
+Answer with exactly one candidate word:",12.640625,11.0859375,1.5546875,clean
+arith_025_paraphrase,25,paraphrase,stable,0,2 + 4,6,5,six,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 2 + 4 and compare the two choices.
+Candidate 1: five
+Candidate 2: six
+Which candidate is correct?
+Answer with exactly one candidate word:",15.6875,8.25,7.4375,clean
+arith_025_untrusted_conflict,25,untrusted_conflict,competition,1,2 + 4,6,5,six,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 4.
+Candidate 1: five
+Candidate 2: six
+An unverified note claims that five is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.3203125,11.625,3.6953125,clean
+arith_025_asserted_conflict,25,asserted_conflict,competition,1,2 + 4,6,5,six,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 4.
+Candidate 1: five
+Candidate 2: six
+A previous solver selected five. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.765625,10.9765625,3.7890625,clean
+arith_025_explicit_correction,25,explicit_correction,closure,2,2 + 4,6,5,six,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 4.
+Candidate 1: five
+Candidate 2: six
+Initial note: five. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.1875,10.609375,4.578125,clean
+arith_025_final_recheck,25,final_recheck,closure,2,2 + 4,6,5,six,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 4.
+Candidate 1: five
+Candidate 2: six
+Draft answer: five. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.3828125,14.125,-3.7421875,conflict
+arith_026_clean,26,clean,stable,0,3 + 4,7,9,seven,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 4.
+Candidate 1: seven
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",12.7109375,15.234375,-2.5234375,conflict
+arith_026_paraphrase,26,paraphrase,stable,0,3 + 4,7,9,seven,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 3 + 4 and compare the two choices.
+Candidate 1: seven
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",9.671875,14.671875,-5.0,conflict
+arith_026_untrusted_conflict,26,untrusted_conflict,competition,1,3 + 4,7,9,seven,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 4.
+Candidate 1: seven
+Candidate 2: nine
+An unverified note claims that nine is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.03125,14.734375,-0.703125,conflict
+arith_026_asserted_conflict,26,asserted_conflict,competition,1,3 + 4,7,9,seven,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 4.
+Candidate 1: seven
+Candidate 2: nine
+A previous solver selected nine. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.96875,13.3984375,0.5703125,clean
+arith_026_explicit_correction,26,explicit_correction,closure,2,3 + 4,7,9,seven,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 4.
+Candidate 1: seven
+Candidate 2: nine
+Initial note: nine. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.875,15.3671875,-3.4921875,conflict
+arith_026_final_recheck,26,final_recheck,closure,2,3 + 4,7,9,seven,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 4.
+Candidate 1: seven
+Candidate 2: nine
+Draft answer: nine. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.359375,14.78125,-4.421875,conflict
+arith_027_clean,27,clean,stable,0,4 + 4,8,6,eight,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 4.
+Candidate 1: six
+Candidate 2: eight
+Which candidate is correct?
+Answer with exactly one candidate word:",15.765625,4.3789062,11.386719,clean
+arith_027_paraphrase,27,paraphrase,stable,0,4 + 4,8,6,eight,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 4 + 4 and compare the two choices.
+Candidate 1: six
+Candidate 2: eight
+Which candidate is correct?
+Answer with exactly one candidate word:",13.4296875,8.1796875,5.25,clean
+arith_027_untrusted_conflict,27,untrusted_conflict,competition,1,4 + 4,8,6,eight,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 4.
+Candidate 1: six
+Candidate 2: eight
+An unverified note claims that six is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.03125,4.3007812,11.730469,clean
+arith_027_asserted_conflict,27,asserted_conflict,competition,1,4 + 4,8,6,eight,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 4.
+Candidate 1: six
+Candidate 2: eight
+A previous solver selected six. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.3203125,3.5,11.8203125,clean
+arith_027_explicit_correction,27,explicit_correction,closure,2,4 + 4,8,6,eight,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 4.
+Candidate 1: six
+Candidate 2: eight
+Initial note: six. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.21875,1.4306641,14.788086,clean
+arith_027_final_recheck,27,final_recheck,closure,2,4 + 4,8,6,eight,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 4.
+Candidate 1: six
+Candidate 2: eight
+Draft answer: six. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.6015625,13.03125,1.5703125,clean
+arith_028_clean,28,clean,stable,0,5 + 4,9,12,nine,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 4.
+Candidate 1: nine
+Candidate 2: twelve
+Which candidate is correct?
+Answer with exactly one candidate word:",15.21875,10.359375,4.859375,clean
+arith_028_paraphrase,28,paraphrase,stable,0,5 + 4,9,12,nine,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 5 + 4 and compare the two choices.
+Candidate 1: nine
+Candidate 2: twelve
+Which candidate is correct?
+Answer with exactly one candidate word:",12.6328125,10.8203125,1.8125,clean
+arith_028_untrusted_conflict,28,untrusted_conflict,competition,1,5 + 4,9,12,nine,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 4.
+Candidate 1: nine
+Candidate 2: twelve
+An unverified note claims that twelve is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.953125,8.265625,7.6875,clean
+arith_028_asserted_conflict,28,asserted_conflict,competition,1,5 + 4,9,12,nine,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 4.
+Candidate 1: nine
+Candidate 2: twelve
+A previous solver selected twelve. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.4375,7.765625,7.671875,clean
+arith_028_explicit_correction,28,explicit_correction,closure,2,5 + 4,9,12,nine,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 4.
+Candidate 1: nine
+Candidate 2: twelve
+Initial note: twelve. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.09375,9.3125,6.78125,clean
+arith_028_final_recheck,28,final_recheck,closure,2,5 + 4,9,12,nine,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 4.
+Candidate 1: nine
+Candidate 2: twelve
+Draft answer: twelve. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.515625,6.0351562,10.480469,clean
+arith_029_clean,29,clean,stable,0,6 + 4,10,7,ten,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 4.
+Candidate 1: seven
+Candidate 2: ten
+Which candidate is correct?
+Answer with exactly one candidate word:",16.25,7.953125,8.296875,clean
+arith_029_paraphrase,29,paraphrase,stable,0,6 + 4,10,7,ten,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 6 + 4 and compare the two choices.
+Candidate 1: seven
+Candidate 2: ten
+Which candidate is correct?
+Answer with exactly one candidate word:",15.6875,5.1445312,10.542969,clean
+arith_029_untrusted_conflict,29,untrusted_conflict,competition,1,6 + 4,10,7,ten,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 4.
+Candidate 1: seven
+Candidate 2: ten
+An unverified note claims that seven is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.4375,12.1796875,3.2578125,clean
+arith_029_asserted_conflict,29,asserted_conflict,competition,1,6 + 4,10,7,ten,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 4.
+Candidate 1: seven
+Candidate 2: ten
+A previous solver selected seven. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.0625,10.8984375,4.1640625,clean
+arith_029_explicit_correction,29,explicit_correction,closure,2,6 + 4,10,7,ten,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 4.
+Candidate 1: seven
+Candidate 2: ten
+Initial note: seven. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.09375,4.515625,11.578125,clean
+arith_029_final_recheck,29,final_recheck,closure,2,6 + 4,10,7,ten,seven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 4.
+Candidate 1: seven
+Candidate 2: ten
+Draft answer: seven. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.25,14.0234375,-7.7734375,conflict
+arith_030_clean,30,clean,stable,0,7 + 4,11,12,eleven,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 4.
+Candidate 1: eleven
+Candidate 2: twelve
+Which candidate is correct?
+Answer with exactly one candidate word:",16.484375,14.359375,2.125,clean
+arith_030_paraphrase,30,paraphrase,stable,0,7 + 4,11,12,eleven,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 7 + 4 and compare the two choices.
+Candidate 1: eleven
+Candidate 2: twelve
+Which candidate is correct?
+Answer with exactly one candidate word:",13.1171875,15.8671875,-2.75,conflict
+arith_030_untrusted_conflict,30,untrusted_conflict,competition,1,7 + 4,11,12,eleven,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 4.
+Candidate 1: eleven
+Candidate 2: twelve
+An unverified note claims that twelve is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",18.609375,7.9101562,10.699219,clean
+arith_030_asserted_conflict,30,asserted_conflict,competition,1,7 + 4,11,12,eleven,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 4.
+Candidate 1: eleven
+Candidate 2: twelve
+A previous solver selected twelve. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",18.03125,9.671875,8.359375,clean
+arith_030_explicit_correction,30,explicit_correction,closure,2,7 + 4,11,12,eleven,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 4.
+Candidate 1: eleven
+Candidate 2: twelve
+Initial note: twelve. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",18.140625,9.734375,8.40625,clean
+arith_030_final_recheck,30,final_recheck,closure,2,7 + 4,11,12,eleven,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 4.
+Candidate 1: eleven
+Candidate 2: twelve
+Draft answer: twelve. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",18.140625,8.1796875,9.9609375,clean
+arith_031_clean,31,clean,stable,0,8 + 4,12,11,twelve,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 4.
+Candidate 1: eleven
+Candidate 2: twelve
+Which candidate is correct?
+Answer with exactly one candidate word:",16.328125,14.2578125,2.0703125,clean
+arith_031_paraphrase,31,paraphrase,stable,0,8 + 4,12,11,twelve,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 8 + 4 and compare the two choices.
+Candidate 1: eleven
+Candidate 2: twelve
+Which candidate is correct?
+Answer with exactly one candidate word:",16.3125,12.171875,4.140625,clean
+arith_031_untrusted_conflict,31,untrusted_conflict,competition,1,8 + 4,12,11,twelve,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 4.
+Candidate 1: eleven
+Candidate 2: twelve
+An unverified note claims that eleven is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.421875,17.390625,-2.96875,conflict
+arith_031_asserted_conflict,31,asserted_conflict,competition,1,8 + 4,12,11,twelve,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 4.
+Candidate 1: eleven
+Candidate 2: twelve
+A previous solver selected eleven. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.375,15.7890625,-1.4140625,conflict
+arith_031_explicit_correction,31,explicit_correction,closure,2,8 + 4,12,11,twelve,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 4.
+Candidate 1: eleven
+Candidate 2: twelve
+Initial note: eleven. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.6953125,17.21875,-4.5234375,conflict
+arith_031_final_recheck,31,final_recheck,closure,2,8 + 4,12,11,twelve,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 4.
+Candidate 1: eleven
+Candidate 2: twelve
+Draft answer: eleven. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.0820312,17.40625,-11.324219,conflict
+arith_032_clean,32,clean,stable,0,1 + 5,6,8,six,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 5.
+Candidate 1: six
+Candidate 2: eight
+Which candidate is correct?
+Answer with exactly one candidate word:",8.578125,14.6484375,-6.0703125,conflict
+arith_032_paraphrase,32,paraphrase,stable,0,1 + 5,6,8,six,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 1 + 5 and compare the two choices.
+Candidate 1: six
+Candidate 2: eight
+Which candidate is correct?
+Answer with exactly one candidate word:",11.953125,13.453125,-1.5,conflict
+arith_032_untrusted_conflict,32,untrusted_conflict,competition,1,1 + 5,6,8,six,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 5.
+Candidate 1: six
+Candidate 2: eight
+An unverified note claims that eight is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.0625,14.0546875,-3.9921875,conflict
+arith_032_asserted_conflict,32,asserted_conflict,competition,1,1 + 5,6,8,six,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 5.
+Candidate 1: six
+Candidate 2: eight
+A previous solver selected eight. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.7421875,14.90625,-4.1640625,conflict
+arith_032_explicit_correction,32,explicit_correction,closure,2,1 + 5,6,8,six,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 5.
+Candidate 1: six
+Candidate 2: eight
+Initial note: eight. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",3.6152344,15.53125,-11.916016,conflict
+arith_032_final_recheck,32,final_recheck,closure,2,1 + 5,6,8,six,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 5.
+Candidate 1: six
+Candidate 2: eight
+Draft answer: eight. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.3671875,14.890625,-6.5234375,conflict
+arith_033_clean,33,clean,stable,0,2 + 5,7,5,seven,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 5.
+Candidate 1: five
+Candidate 2: seven
+Which candidate is correct?
+Answer with exactly one candidate word:",14.5234375,7.3476562,7.1757812,clean
+arith_033_paraphrase,33,paraphrase,stable,0,2 + 5,7,5,seven,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 2 + 5 and compare the two choices.
+Candidate 1: five
+Candidate 2: seven
+Which candidate is correct?
+Answer with exactly one candidate word:",12.0,9.6171875,2.3828125,clean
+arith_033_untrusted_conflict,33,untrusted_conflict,competition,1,2 + 5,7,5,seven,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 5.
+Candidate 1: five
+Candidate 2: seven
+An unverified note claims that five is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.828125,6.7226562,8.105469,clean
+arith_033_asserted_conflict,33,asserted_conflict,competition,1,2 + 5,7,5,seven,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 5.
+Candidate 1: five
+Candidate 2: seven
+A previous solver selected five. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.125,5.6796875,8.4453125,clean
+arith_033_explicit_correction,33,explicit_correction,closure,2,2 + 5,7,5,seven,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 5.
+Candidate 1: five
+Candidate 2: seven
+Initial note: five. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.671875,3.5898438,11.082031,clean
+arith_033_final_recheck,33,final_recheck,closure,2,2 + 5,7,5,seven,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 5.
+Candidate 1: five
+Candidate 2: seven
+Draft answer: five. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.7421875,12.7734375,-2.03125,conflict
+arith_034_clean,34,clean,stable,0,3 + 5,8,11,eight,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 5.
+Candidate 1: eight
+Candidate 2: eleven
+Which candidate is correct?
+Answer with exactly one candidate word:",7.109375,17.921875,-10.8125,conflict
+arith_034_paraphrase,34,paraphrase,stable,0,3 + 5,8,11,eight,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 3 + 5 and compare the two choices.
+Candidate 1: eight
+Candidate 2: eleven
+Which candidate is correct?
+Answer with exactly one candidate word:",7.5585938,16.4375,-8.878906,conflict
+arith_034_untrusted_conflict,34,untrusted_conflict,competition,1,3 + 5,8,11,eight,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 5.
+Candidate 1: eight
+Candidate 2: eleven
+An unverified note claims that eleven is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",9.5234375,17.828125,-8.3046875,conflict
+arith_034_asserted_conflict,34,asserted_conflict,competition,1,3 + 5,8,11,eight,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 5.
+Candidate 1: eight
+Candidate 2: eleven
+A previous solver selected eleven. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.2578125,16.296875,-5.0390625,conflict
+arith_034_explicit_correction,34,explicit_correction,closure,2,3 + 5,8,11,eight,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 5.
+Candidate 1: eight
+Candidate 2: eleven
+Initial note: eleven. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.171875,17.75,-9.578125,conflict
+arith_034_final_recheck,34,final_recheck,closure,2,3 + 5,8,11,eight,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 5.
+Candidate 1: eight
+Candidate 2: eleven
+Draft answer: eleven. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.890625,17.640625,-10.75,conflict
+arith_035_clean,35,clean,stable,0,4 + 5,9,6,nine,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 5.
+Candidate 1: six
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",16.703125,5.8828125,10.8203125,clean
+arith_035_paraphrase,35,paraphrase,stable,0,4 + 5,9,6,nine,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 4 + 5 and compare the two choices.
+Candidate 1: six
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",14.0703125,9.453125,4.6171875,clean
+arith_035_untrusted_conflict,35,untrusted_conflict,competition,1,4 + 5,9,6,nine,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 5.
+Candidate 1: six
+Candidate 2: nine
+An unverified note claims that six is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.046875,5.09375,10.953125,clean
+arith_035_asserted_conflict,35,asserted_conflict,competition,1,4 + 5,9,6,nine,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 5.
+Candidate 1: six
+Candidate 2: nine
+A previous solver selected six. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.640625,3.8710938,11.769531,clean
+arith_035_explicit_correction,35,explicit_correction,closure,2,4 + 5,9,6,nine,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 5.
+Candidate 1: six
+Candidate 2: nine
+Initial note: six. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.4375,1.2578125,15.1796875,clean
+arith_035_final_recheck,35,final_recheck,closure,2,4 + 5,9,6,nine,six,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 5.
+Candidate 1: six
+Candidate 2: nine
+Draft answer: six. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.5234375,11.7890625,2.734375,clean
+arith_036_clean,36,clean,stable,0,5 + 5,10,11,ten,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 5.
+Candidate 1: ten
+Candidate 2: eleven
+Which candidate is correct?
+Answer with exactly one candidate word:",13.9921875,14.5703125,-0.578125,conflict
+arith_036_paraphrase,36,paraphrase,stable,0,5 + 5,10,11,ten,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 5 + 5 and compare the two choices.
+Candidate 1: ten
+Candidate 2: eleven
+Which candidate is correct?
+Answer with exactly one candidate word:",13.6171875,12.8671875,0.75,clean
+arith_036_untrusted_conflict,36,untrusted_conflict,competition,1,5 + 5,10,11,ten,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 5.
+Candidate 1: ten
+Candidate 2: eleven
+An unverified note claims that eleven is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.890625,13.9296875,0.9609375,clean
+arith_036_asserted_conflict,36,asserted_conflict,competition,1,5 + 5,10,11,ten,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 5.
+Candidate 1: ten
+Candidate 2: eleven
+A previous solver selected eleven. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.734375,9.7265625,5.0078125,clean
+arith_036_explicit_correction,36,explicit_correction,closure,2,5 + 5,10,11,ten,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 5.
+Candidate 1: ten
+Candidate 2: eleven
+Initial note: eleven. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.953125,12.9375,2.015625,clean
+arith_036_final_recheck,36,final_recheck,closure,2,5 + 5,10,11,ten,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 5.
+Candidate 1: ten
+Candidate 2: eleven
+Draft answer: eleven. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.859375,14.3359375,-0.4765625,conflict
+arith_037_clean,37,clean,stable,0,6 + 5,11,10,eleven,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 5.
+Candidate 1: ten
+Candidate 2: eleven
+Which candidate is correct?
+Answer with exactly one candidate word:",16.8125,13.4765625,3.3359375,clean
+arith_037_paraphrase,37,paraphrase,stable,0,6 + 5,11,10,eleven,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 6 + 5 and compare the two choices.
+Candidate 1: ten
+Candidate 2: eleven
+Which candidate is correct?
+Answer with exactly one candidate word:",13.578125,13.28125,0.296875,clean
+arith_037_untrusted_conflict,37,untrusted_conflict,competition,1,6 + 5,11,10,eleven,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 5.
+Candidate 1: ten
+Candidate 2: eleven
+An unverified note claims that ten is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.0,14.4453125,1.5546875,clean
+arith_037_asserted_conflict,37,asserted_conflict,competition,1,6 + 5,11,10,eleven,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 5.
+Candidate 1: ten
+Candidate 2: eleven
+A previous solver selected ten. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.15625,13.859375,0.296875,clean
+arith_037_explicit_correction,37,explicit_correction,closure,2,6 + 5,11,10,eleven,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 5.
+Candidate 1: ten
+Candidate 2: eleven
+Initial note: ten. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.53125,12.046875,5.484375,clean
+arith_037_final_recheck,37,final_recheck,closure,2,6 + 5,11,10,eleven,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 5.
+Candidate 1: ten
+Candidate 2: eleven
+Draft answer: ten. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.9179688,13.421875,-6.5039062,conflict
+arith_038_clean,38,clean,stable,0,7 + 5,12,14,twelve,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 5.
+Candidate 1: twelve
+Candidate 2: fourteen
+Which candidate is correct?
+Answer with exactly one candidate word:",11.65625,18.40625,-6.75,conflict
+arith_038_paraphrase,38,paraphrase,stable,0,7 + 5,12,14,twelve,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 7 + 5 and compare the two choices.
+Candidate 1: twelve
+Candidate 2: fourteen
+Which candidate is correct?
+Answer with exactly one candidate word:",11.71875,16.0625,-4.34375,conflict
+arith_038_untrusted_conflict,38,untrusted_conflict,competition,1,7 + 5,12,14,twelve,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 5.
+Candidate 1: twelve
+Candidate 2: fourteen
+An unverified note claims that fourteen is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.859375,16.1875,-2.328125,conflict
+arith_038_asserted_conflict,38,asserted_conflict,competition,1,7 + 5,12,14,twelve,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 5.
+Candidate 1: twelve
+Candidate 2: fourteen
+A previous solver selected fourteen. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.8515625,16.40625,-2.5546875,conflict
+arith_038_explicit_correction,38,explicit_correction,closure,2,7 + 5,12,14,twelve,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 5.
+Candidate 1: twelve
+Candidate 2: fourteen
+Initial note: fourteen. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.6875,17.828125,-7.140625,conflict
+arith_038_final_recheck,38,final_recheck,closure,2,7 + 5,12,14,twelve,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 5.
+Candidate 1: twelve
+Candidate 2: fourteen
+Draft answer: fourteen. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.53125,17.75,-5.21875,conflict
+arith_039_clean,39,clean,stable,0,8 + 5,13,11,thirteen,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 5.
+Candidate 1: eleven
+Candidate 2: thirteen
+Which candidate is correct?
+Answer with exactly one candidate word:",16.296875,14.765625,1.53125,clean
+arith_039_paraphrase,39,paraphrase,stable,0,8 + 5,13,11,thirteen,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 8 + 5 and compare the two choices.
+Candidate 1: eleven
+Candidate 2: thirteen
+Which candidate is correct?
+Answer with exactly one candidate word:",15.40625,13.0234375,2.3828125,clean
+arith_039_untrusted_conflict,39,untrusted_conflict,competition,1,8 + 5,13,11,thirteen,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 5.
+Candidate 1: eleven
+Candidate 2: thirteen
+An unverified note claims that eleven is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.9453125,16.75,-3.8046875,conflict
+arith_039_asserted_conflict,39,asserted_conflict,competition,1,8 + 5,13,11,thirteen,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 5.
+Candidate 1: eleven
+Candidate 2: thirteen
+A previous solver selected eleven. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.296875,15.65625,-2.359375,conflict
+arith_039_explicit_correction,39,explicit_correction,closure,2,8 + 5,13,11,thirteen,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 5.
+Candidate 1: eleven
+Candidate 2: thirteen
+Initial note: eleven. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.6484375,17.21875,-5.5703125,conflict
+arith_039_final_recheck,39,final_recheck,closure,2,8 + 5,13,11,thirteen,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 5.
+Candidate 1: eleven
+Candidate 2: thirteen
+Draft answer: eleven. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",3.1777344,16.25,-13.072266,conflict
+arith_040_clean,40,clean,stable,0,1 + 6,7,10,seven,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 6.
+Candidate 1: seven
+Candidate 2: ten
+Which candidate is correct?
+Answer with exactly one candidate word:",12.5703125,12.6171875,-0.046875,conflict
+arith_040_paraphrase,40,paraphrase,stable,0,1 + 6,7,10,seven,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 1 + 6 and compare the two choices.
+Candidate 1: seven
+Candidate 2: ten
+Which candidate is correct?
+Answer with exactly one candidate word:",9.7265625,13.765625,-4.0390625,conflict
+arith_040_untrusted_conflict,40,untrusted_conflict,competition,1,1 + 6,7,10,seven,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 6.
+Candidate 1: seven
+Candidate 2: ten
+An unverified note claims that ten is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.8125,13.3828125,-1.5703125,conflict
+arith_040_asserted_conflict,40,asserted_conflict,competition,1,1 + 6,7,10,seven,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 6.
+Candidate 1: seven
+Candidate 2: ten
+A previous solver selected ten. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.7578125,12.1328125,0.625,clean
+arith_040_explicit_correction,40,explicit_correction,closure,2,1 + 6,7,10,seven,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 6.
+Candidate 1: seven
+Candidate 2: ten
+Initial note: ten. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.8671875,13.0,-0.1328125,conflict
+arith_040_final_recheck,40,final_recheck,closure,2,1 + 6,7,10,seven,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 6.
+Candidate 1: seven
+Candidate 2: ten
+Draft answer: ten. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.421875,13.171875,-1.75,conflict
+arith_041_clean,41,clean,stable,0,2 + 6,8,5,eight,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 6.
+Candidate 1: five
+Candidate 2: eight
+Which candidate is correct?
+Answer with exactly one candidate word:",14.8125,8.1796875,6.6328125,clean
+arith_041_paraphrase,41,paraphrase,stable,0,2 + 6,8,5,eight,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 2 + 6 and compare the two choices.
+Candidate 1: five
+Candidate 2: eight
+Which candidate is correct?
+Answer with exactly one candidate word:",10.5546875,10.5234375,0.03125,clean
+arith_041_untrusted_conflict,41,untrusted_conflict,competition,1,2 + 6,8,5,eight,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 6.
+Candidate 1: five
+Candidate 2: eight
+An unverified note claims that five is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.28125,5.8359375,10.4453125,clean
+arith_041_asserted_conflict,41,asserted_conflict,competition,1,2 + 6,8,5,eight,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 6.
+Candidate 1: five
+Candidate 2: eight
+A previous solver selected five. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.234375,5.6835938,9.550781,clean
+arith_041_explicit_correction,41,explicit_correction,closure,2,2 + 6,8,5,eight,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 6.
+Candidate 1: five
+Candidate 2: eight
+Initial note: five. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.6171875,1.1503906,14.466797,clean
+arith_041_final_recheck,41,final_recheck,closure,2,2 + 6,8,5,eight,five,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 6.
+Candidate 1: five
+Candidate 2: eight
+Draft answer: five. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.53125,11.25,3.28125,clean
+arith_042_clean,42,clean,stable,0,3 + 6,9,10,nine,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 6.
+Candidate 1: nine
+Candidate 2: ten
+Which candidate is correct?
+Answer with exactly one candidate word:",6.4414062,15.8359375,-9.394531,conflict
+arith_042_paraphrase,42,paraphrase,stable,0,3 + 6,9,10,nine,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 3 + 6 and compare the two choices.
+Candidate 1: nine
+Candidate 2: ten
+Which candidate is correct?
+Answer with exactly one candidate word:",8.53125,14.6328125,-6.1015625,conflict
+arith_042_untrusted_conflict,42,untrusted_conflict,competition,1,3 + 6,9,10,nine,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 6.
+Candidate 1: nine
+Candidate 2: ten
+An unverified note claims that ten is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.4375,16.125,-7.6875,conflict
+arith_042_asserted_conflict,42,asserted_conflict,competition,1,3 + 6,9,10,nine,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 6.
+Candidate 1: nine
+Candidate 2: ten
+A previous solver selected ten. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",9.953125,15.3671875,-5.4140625,conflict
+arith_042_explicit_correction,42,explicit_correction,closure,2,3 + 6,9,10,nine,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 6.
+Candidate 1: nine
+Candidate 2: ten
+Initial note: ten. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",7.5351562,15.765625,-8.230469,conflict
+arith_042_final_recheck,42,final_recheck,closure,2,3 + 6,9,10,nine,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 6.
+Candidate 1: nine
+Candidate 2: ten
+Draft answer: ten. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",5.6210938,14.5078125,-8.886719,conflict
+arith_043_clean,43,clean,stable,0,4 + 6,10,9,ten,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 6.
+Candidate 1: nine
+Candidate 2: ten
+Which candidate is correct?
+Answer with exactly one candidate word:",16.0,5.3007812,10.699219,clean
+arith_043_paraphrase,43,paraphrase,stable,0,4 + 6,10,9,ten,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 4 + 6 and compare the two choices.
+Candidate 1: nine
+Candidate 2: ten
+Which candidate is correct?
+Answer with exactly one candidate word:",14.65625,7.375,7.28125,clean
+arith_043_untrusted_conflict,43,untrusted_conflict,competition,1,4 + 6,10,9,ten,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 6.
+Candidate 1: nine
+Candidate 2: ten
+An unverified note claims that nine is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.6875,8.8671875,6.8203125,clean
+arith_043_asserted_conflict,43,asserted_conflict,competition,1,4 + 6,10,9,ten,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 6.
+Candidate 1: nine
+Candidate 2: ten
+A previous solver selected nine. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.1015625,8.5703125,6.53125,clean
+arith_043_explicit_correction,43,explicit_correction,closure,2,4 + 6,10,9,ten,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 6.
+Candidate 1: nine
+Candidate 2: ten
+Initial note: nine. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.96875,5.2734375,10.6953125,clean
+arith_043_final_recheck,43,final_recheck,closure,2,4 + 6,10,9,ten,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 6.
+Candidate 1: nine
+Candidate 2: ten
+Draft answer: nine. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.734375,14.2578125,-2.5234375,conflict
+arith_044_clean,44,clean,stable,0,5 + 6,11,13,eleven,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 6.
+Candidate 1: eleven
+Candidate 2: thirteen
+Which candidate is correct?
+Answer with exactly one candidate word:",14.953125,15.234375,-0.28125,conflict
+arith_044_paraphrase,44,paraphrase,stable,0,5 + 6,11,13,eleven,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 5 + 6 and compare the two choices.
+Candidate 1: eleven
+Candidate 2: thirteen
+Which candidate is correct?
+Answer with exactly one candidate word:",13.78125,14.3984375,-0.6171875,conflict
+arith_044_untrusted_conflict,44,untrusted_conflict,competition,1,5 + 6,11,13,eleven,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 6.
+Candidate 1: eleven
+Candidate 2: thirteen
+An unverified note claims that thirteen is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.9375,11.546875,6.390625,clean
+arith_044_asserted_conflict,44,asserted_conflict,competition,1,5 + 6,11,13,eleven,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 6.
+Candidate 1: eleven
+Candidate 2: thirteen
+A previous solver selected thirteen. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.390625,11.328125,6.0625,clean
+arith_044_explicit_correction,44,explicit_correction,closure,2,5 + 6,11,13,eleven,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 6.
+Candidate 1: eleven
+Candidate 2: thirteen
+Initial note: thirteen. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.5625,10.578125,6.984375,clean
+arith_044_final_recheck,44,final_recheck,closure,2,5 + 6,11,13,eleven,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 6.
+Candidate 1: eleven
+Candidate 2: thirteen
+Draft answer: thirteen. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.296875,11.8984375,5.3984375,clean
+arith_045_clean,45,clean,stable,0,6 + 6,12,10,twelve,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 6.
+Candidate 1: ten
+Candidate 2: twelve
+Which candidate is correct?
+Answer with exactly one candidate word:",13.125,12.765625,0.359375,clean
+arith_045_paraphrase,45,paraphrase,stable,0,6 + 6,12,10,twelve,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 6 + 6 and compare the two choices.
+Candidate 1: ten
+Candidate 2: twelve
+Which candidate is correct?
+Answer with exactly one candidate word:",13.453125,11.953125,1.5,clean
+arith_045_untrusted_conflict,45,untrusted_conflict,competition,1,6 + 6,12,10,twelve,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 6.
+Candidate 1: ten
+Candidate 2: twelve
+An unverified note claims that ten is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.828125,13.765625,-6.9375,conflict
+arith_045_asserted_conflict,45,asserted_conflict,competition,1,6 + 6,12,10,twelve,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 6.
+Candidate 1: ten
+Candidate 2: twelve
+A previous solver selected ten. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.0078125,13.296875,-7.2890625,conflict
+arith_045_explicit_correction,45,explicit_correction,closure,2,6 + 6,12,10,twelve,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 6.
+Candidate 1: ten
+Candidate 2: twelve
+Initial note: ten. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.6015625,12.75,-0.1484375,conflict
+arith_045_final_recheck,45,final_recheck,closure,2,6 + 6,12,10,twelve,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 6.
+Candidate 1: ten
+Candidate 2: twelve
+Draft answer: ten. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",2.5273438,12.8125,-10.285156,conflict
+arith_046_clean,46,clean,stable,0,7 + 6,13,16,thirteen,sixteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 6.
+Candidate 1: thirteen
+Candidate 2: sixteen
+Which candidate is correct?
+Answer with exactly one candidate word:",14.9296875,15.3203125,-0.390625,conflict
+arith_046_paraphrase,46,paraphrase,stable,0,7 + 6,13,16,thirteen,sixteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 7 + 6 and compare the two choices.
+Candidate 1: thirteen
+Candidate 2: sixteen
+Which candidate is correct?
+Answer with exactly one candidate word:",13.8515625,14.125,-0.2734375,conflict
+arith_046_untrusted_conflict,46,untrusted_conflict,competition,1,7 + 6,13,16,thirteen,sixteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 6.
+Candidate 1: thirteen
+Candidate 2: sixteen
+An unverified note claims that sixteen is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.8359375,13.1484375,2.6875,clean
+arith_046_asserted_conflict,46,asserted_conflict,competition,1,7 + 6,13,16,thirteen,sixteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 6.
+Candidate 1: thirteen
+Candidate 2: sixteen
+A previous solver selected sixteen. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.703125,11.2421875,5.4609375,clean
+arith_046_explicit_correction,46,explicit_correction,closure,2,7 + 6,13,16,thirteen,sixteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 6.
+Candidate 1: thirteen
+Candidate 2: sixteen
+Initial note: sixteen. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.40625,9.046875,6.359375,clean
+arith_046_final_recheck,46,final_recheck,closure,2,7 + 6,13,16,thirteen,sixteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 6.
+Candidate 1: thirteen
+Candidate 2: sixteen
+Draft answer: sixteen. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.7890625,12.40625,2.3828125,clean
+arith_047_clean,47,clean,stable,0,8 + 6,14,11,fourteen,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 6.
+Candidate 1: eleven
+Candidate 2: fourteen
+Which candidate is correct?
+Answer with exactly one candidate word:",16.765625,15.875,0.890625,clean
+arith_047_paraphrase,47,paraphrase,stable,0,8 + 6,14,11,fourteen,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 8 + 6 and compare the two choices.
+Candidate 1: eleven
+Candidate 2: fourteen
+Which candidate is correct?
+Answer with exactly one candidate word:",15.4375,14.7421875,0.6953125,clean
+arith_047_untrusted_conflict,47,untrusted_conflict,competition,1,8 + 6,14,11,fourteen,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 6.
+Candidate 1: eleven
+Candidate 2: fourteen
+An unverified note claims that eleven is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.078125,17.59375,-5.515625,conflict
+arith_047_asserted_conflict,47,asserted_conflict,competition,1,8 + 6,14,11,fourteen,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 6.
+Candidate 1: eleven
+Candidate 2: fourteen
+A previous solver selected eleven. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.46875,16.84375,-5.375,conflict
+arith_047_explicit_correction,47,explicit_correction,closure,2,8 + 6,14,11,fourteen,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 6.
+Candidate 1: eleven
+Candidate 2: fourteen
+Initial note: eleven. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.6640625,17.3125,-5.6484375,conflict
+arith_047_final_recheck,47,final_recheck,closure,2,8 + 6,14,11,fourteen,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 6.
+Candidate 1: eleven
+Candidate 2: fourteen
+Draft answer: eleven. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",1.8984375,16.515625,-14.6171875,conflict
+arith_048_clean,48,clean,stable,0,1 + 7,8,9,eight,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 7.
+Candidate 1: eight
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",8.140625,16.984375,-8.84375,conflict
+arith_048_paraphrase,48,paraphrase,stable,0,1 + 7,8,9,eight,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 1 + 7 and compare the two choices.
+Candidate 1: eight
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",10.25,15.453125,-5.203125,conflict
+arith_048_untrusted_conflict,48,untrusted_conflict,competition,1,1 + 7,8,9,eight,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 7.
+Candidate 1: eight
+Candidate 2: nine
+An unverified note claims that nine is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.78125,15.171875,-3.390625,conflict
+arith_048_asserted_conflict,48,asserted_conflict,competition,1,1 + 7,8,9,eight,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 7.
+Candidate 1: eight
+Candidate 2: nine
+A previous solver selected nine. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",11.8515625,15.453125,-3.6015625,conflict
+arith_048_explicit_correction,48,explicit_correction,closure,2,1 + 7,8,9,eight,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 7.
+Candidate 1: eight
+Candidate 2: nine
+Initial note: nine. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.65625,16.078125,-5.421875,conflict
+arith_048_final_recheck,48,final_recheck,closure,2,1 + 7,8,9,eight,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 7.
+Candidate 1: eight
+Candidate 2: nine
+Draft answer: nine. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.578125,16.03125,-7.453125,conflict
+arith_049_clean,49,clean,stable,0,2 + 7,9,8,nine,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 7.
+Candidate 1: eight
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",17.15625,9.265625,7.890625,clean
+arith_049_paraphrase,49,paraphrase,stable,0,2 + 7,9,8,nine,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 2 + 7 and compare the two choices.
+Candidate 1: eight
+Candidate 2: nine
+Which candidate is correct?
+Answer with exactly one candidate word:",14.671875,9.8359375,4.8359375,clean
+arith_049_untrusted_conflict,49,untrusted_conflict,competition,1,2 + 7,9,8,nine,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 7.
+Candidate 1: eight
+Candidate 2: nine
+An unverified note claims that eight is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.140625,12.234375,3.90625,clean
+arith_049_asserted_conflict,49,asserted_conflict,competition,1,2 + 7,9,8,nine,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 7.
+Candidate 1: eight
+Candidate 2: nine
+A previous solver selected eight. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.3046875,11.46875,3.8359375,clean
+arith_049_explicit_correction,49,explicit_correction,closure,2,2 + 7,9,8,nine,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 7.
+Candidate 1: eight
+Candidate 2: nine
+Initial note: eight. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.40625,10.0859375,6.3203125,clean
+arith_049_final_recheck,49,final_recheck,closure,2,2 + 7,9,8,nine,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 7.
+Candidate 1: eight
+Candidate 2: nine
+Draft answer: eight. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.265625,14.65625,-6.390625,conflict
+arith_050_clean,50,clean,stable,0,3 + 7,10,12,ten,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 7.
+Candidate 1: ten
+Candidate 2: twelve
+Which candidate is correct?
+Answer with exactly one candidate word:",14.609375,8.046875,6.5625,clean
+arith_050_paraphrase,50,paraphrase,stable,0,3 + 7,10,12,ten,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 3 + 7 and compare the two choices.
+Candidate 1: ten
+Candidate 2: twelve
+Which candidate is correct?
+Answer with exactly one candidate word:",13.359375,10.5390625,2.8203125,clean
+arith_050_untrusted_conflict,50,untrusted_conflict,competition,1,3 + 7,10,12,ten,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 7.
+Candidate 1: ten
+Candidate 2: twelve
+An unverified note claims that twelve is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.3671875,5.9726562,9.394531,clean
+arith_050_asserted_conflict,50,asserted_conflict,competition,1,3 + 7,10,12,ten,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 7.
+Candidate 1: ten
+Candidate 2: twelve
+A previous solver selected twelve. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.953125,5.046875,9.90625,clean
+arith_050_explicit_correction,50,explicit_correction,closure,2,3 + 7,10,12,ten,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 7.
+Candidate 1: ten
+Candidate 2: twelve
+Initial note: twelve. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.4453125,7.5351562,6.9101562,clean
+arith_050_final_recheck,50,final_recheck,closure,2,3 + 7,10,12,ten,twelve,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 7.
+Candidate 1: ten
+Candidate 2: twelve
+Draft answer: twelve. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.90625,5.3242188,9.582031,clean
+arith_051_clean,51,clean,stable,0,4 + 7,11,9,eleven,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 7.
+Candidate 1: nine
+Candidate 2: eleven
+Which candidate is correct?
+Answer with exactly one candidate word:",19.234375,8.1328125,11.1015625,clean
+arith_051_paraphrase,51,paraphrase,stable,0,4 + 7,11,9,eleven,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 4 + 7 and compare the two choices.
+Candidate 1: nine
+Candidate 2: eleven
+Which candidate is correct?
+Answer with exactly one candidate word:",18.203125,6.8320312,11.371094,clean
+arith_051_untrusted_conflict,51,untrusted_conflict,competition,1,4 + 7,11,9,eleven,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 7.
+Candidate 1: nine
+Candidate 2: eleven
+An unverified note claims that nine is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",18.609375,11.3828125,7.2265625,clean
+arith_051_asserted_conflict,51,asserted_conflict,competition,1,4 + 7,11,9,eleven,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 7.
+Candidate 1: nine
+Candidate 2: eleven
+A previous solver selected nine. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.40625,12.6640625,3.7421875,clean
+arith_051_explicit_correction,51,explicit_correction,closure,2,4 + 7,11,9,eleven,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 7.
+Candidate 1: nine
+Candidate 2: eleven
+Initial note: nine. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",18.828125,4.84375,13.984375,clean
+arith_051_final_recheck,51,final_recheck,closure,2,4 + 7,11,9,eleven,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 7.
+Candidate 1: nine
+Candidate 2: eleven
+Draft answer: nine. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.7734375,15.03125,-6.2578125,conflict
+arith_052_clean,52,clean,stable,0,5 + 7,12,15,twelve,fifteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 7.
+Candidate 1: twelve
+Candidate 2: fifteen
+Which candidate is correct?
+Answer with exactly one candidate word:",7.140625,19.015625,-11.875,conflict
+arith_052_paraphrase,52,paraphrase,stable,0,5 + 7,12,15,twelve,fifteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 5 + 7 and compare the two choices.
+Candidate 1: twelve
+Candidate 2: fifteen
+Which candidate is correct?
+Answer with exactly one candidate word:",9.78125,16.25,-6.46875,conflict
+arith_052_untrusted_conflict,52,untrusted_conflict,competition,1,5 + 7,12,15,twelve,fifteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 7.
+Candidate 1: twelve
+Candidate 2: fifteen
+An unverified note claims that fifteen is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.328125,17.671875,-7.34375,conflict
+arith_052_asserted_conflict,52,asserted_conflict,competition,1,5 + 7,12,15,twelve,fifteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 7.
+Candidate 1: twelve
+Candidate 2: fifteen
+A previous solver selected fifteen. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",9.6171875,17.734375,-8.1171875,conflict
+arith_052_explicit_correction,52,explicit_correction,closure,2,5 + 7,12,15,twelve,fifteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 7.
+Candidate 1: twelve
+Candidate 2: fifteen
+Initial note: fifteen. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.6210938,17.75,-11.128906,conflict
+arith_052_final_recheck,52,final_recheck,closure,2,5 + 7,12,15,twelve,fifteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 7.
+Candidate 1: twelve
+Candidate 2: fifteen
+Draft answer: fifteen. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",5.6132812,18.59375,-12.980469,conflict
+arith_053_clean,53,clean,stable,0,6 + 7,13,10,thirteen,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 7.
+Candidate 1: ten
+Candidate 2: thirteen
+Which candidate is correct?
+Answer with exactly one candidate word:",13.125,14.53125,-1.40625,conflict
+arith_053_paraphrase,53,paraphrase,stable,0,6 + 7,13,10,thirteen,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 6 + 7 and compare the two choices.
+Candidate 1: ten
+Candidate 2: thirteen
+Which candidate is correct?
+Answer with exactly one candidate word:",10.5390625,14.09375,-3.5546875,conflict
+arith_053_untrusted_conflict,53,untrusted_conflict,competition,1,6 + 7,13,10,thirteen,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 7.
+Candidate 1: ten
+Candidate 2: thirteen
+An unverified note claims that ten is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",7.875,14.9921875,-7.1171875,conflict
+arith_053_asserted_conflict,53,asserted_conflict,competition,1,6 + 7,13,10,thirteen,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 7.
+Candidate 1: ten
+Candidate 2: thirteen
+A previous solver selected ten. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.359375,13.8984375,-7.5390625,conflict
+arith_053_explicit_correction,53,explicit_correction,closure,2,6 + 7,13,10,thirteen,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 7.
+Candidate 1: ten
+Candidate 2: thirteen
+Initial note: ten. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.4609375,13.421875,-0.9609375,conflict
+arith_053_final_recheck,53,final_recheck,closure,2,6 + 7,13,10,thirteen,ten,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 7.
+Candidate 1: ten
+Candidate 2: thirteen
+Draft answer: ten. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",2.8125,12.84375,-10.03125,conflict
+arith_054_clean,54,clean,stable,0,7 + 7,14,15,fourteen,fifteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 7.
+Candidate 1: fourteen
+Candidate 2: fifteen
+Which candidate is correct?
+Answer with exactly one candidate word:",15.8515625,18.3125,-2.4609375,conflict
+arith_054_paraphrase,54,paraphrase,stable,0,7 + 7,14,15,fourteen,fifteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 7 + 7 and compare the two choices.
+Candidate 1: fourteen
+Candidate 2: fifteen
+Which candidate is correct?
+Answer with exactly one candidate word:",15.6015625,16.671875,-1.0703125,conflict
+arith_054_untrusted_conflict,54,untrusted_conflict,competition,1,7 + 7,14,15,fourteen,fifteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 7.
+Candidate 1: fourteen
+Candidate 2: fifteen
+An unverified note claims that fifteen is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.359375,15.484375,0.875,clean
+arith_054_asserted_conflict,54,asserted_conflict,competition,1,7 + 7,14,15,fourteen,fifteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 7.
+Candidate 1: fourteen
+Candidate 2: fifteen
+A previous solver selected fifteen. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.546875,16.0625,0.484375,clean
+arith_054_explicit_correction,54,explicit_correction,closure,2,7 + 7,14,15,fourteen,fifteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 7.
+Candidate 1: fourteen
+Candidate 2: fifteen
+Initial note: fifteen. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.03125,14.4375,2.59375,clean
+arith_054_final_recheck,54,final_recheck,closure,2,7 + 7,14,15,fourteen,fifteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 7.
+Candidate 1: fourteen
+Candidate 2: fifteen
+Draft answer: fifteen. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.171875,16.53125,-0.359375,conflict
+arith_055_clean,55,clean,stable,0,8 + 7,15,14,fifteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 7.
+Candidate 1: fourteen
+Candidate 2: fifteen
+Which candidate is correct?
+Answer with exactly one candidate word:",19.09375,15.1484375,3.9453125,clean
+arith_055_paraphrase,55,paraphrase,stable,0,8 + 7,15,14,fifteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 8 + 7 and compare the two choices.
+Candidate 1: fourteen
+Candidate 2: fifteen
+Which candidate is correct?
+Answer with exactly one candidate word:",17.390625,14.4140625,2.9765625,clean
+arith_055_untrusted_conflict,55,untrusted_conflict,competition,1,8 + 7,15,14,fifteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 7.
+Candidate 1: fourteen
+Candidate 2: fifteen
+An unverified note claims that fourteen is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.578125,16.65625,-0.078125,conflict
+arith_055_asserted_conflict,55,asserted_conflict,competition,1,8 + 7,15,14,fifteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 7.
+Candidate 1: fourteen
+Candidate 2: fifteen
+A previous solver selected fourteen. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.984375,15.40625,2.578125,clean
+arith_055_explicit_correction,55,explicit_correction,closure,2,8 + 7,15,14,fifteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 7.
+Candidate 1: fourteen
+Candidate 2: fifteen
+Initial note: fourteen. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.8671875,15.6328125,0.234375,clean
+arith_055_final_recheck,55,final_recheck,closure,2,8 + 7,15,14,fifteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 7.
+Candidate 1: fourteen
+Candidate 2: fifteen
+Draft answer: fourteen. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.78125,18.65625,-7.875,conflict
+arith_056_clean,56,clean,stable,0,1 + 8,9,11,nine,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 8.
+Candidate 1: nine
+Candidate 2: eleven
+Which candidate is correct?
+Answer with exactly one candidate word:",12.53125,16.125,-3.59375,conflict
+arith_056_paraphrase,56,paraphrase,stable,0,1 + 8,9,11,nine,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 1 + 8 and compare the two choices.
+Candidate 1: nine
+Candidate 2: eleven
+Which candidate is correct?
+Answer with exactly one candidate word:",8.421875,18.171875,-9.75,conflict
+arith_056_untrusted_conflict,56,untrusted_conflict,competition,1,1 + 8,9,11,nine,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 8.
+Candidate 1: nine
+Candidate 2: eleven
+An unverified note claims that eleven is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",12.671875,15.1484375,-2.4765625,conflict
+arith_056_asserted_conflict,56,asserted_conflict,competition,1,1 + 8,9,11,nine,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 8.
+Candidate 1: nine
+Candidate 2: eleven
+A previous solver selected eleven. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.1953125,13.890625,0.3046875,clean
+arith_056_explicit_correction,56,explicit_correction,closure,2,1 + 8,9,11,nine,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 8.
+Candidate 1: nine
+Candidate 2: eleven
+Initial note: eleven. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.4140625,15.8359375,-2.421875,conflict
+arith_056_final_recheck,56,final_recheck,closure,2,1 + 8,9,11,nine,eleven,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 1 + 8.
+Candidate 1: nine
+Candidate 2: eleven
+Draft answer: eleven. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",13.28125,15.171875,-1.890625,conflict
+arith_057_clean,57,clean,stable,0,2 + 8,10,8,ten,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 8.
+Candidate 1: eight
+Candidate 2: ten
+Which candidate is correct?
+Answer with exactly one candidate word:",16.5625,7.421875,9.140625,clean
+arith_057_paraphrase,57,paraphrase,stable,0,2 + 8,10,8,ten,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 2 + 8 and compare the two choices.
+Candidate 1: eight
+Candidate 2: ten
+Which candidate is correct?
+Answer with exactly one candidate word:",15.640625,5.4414062,10.199219,clean
+arith_057_untrusted_conflict,57,untrusted_conflict,competition,1,2 + 8,10,8,ten,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 8.
+Candidate 1: eight
+Candidate 2: ten
+An unverified note claims that eight is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.75,11.3359375,4.4140625,clean
+arith_057_asserted_conflict,57,asserted_conflict,competition,1,2 + 8,10,8,ten,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 8.
+Candidate 1: eight
+Candidate 2: ten
+A previous solver selected eight. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.28125,9.5859375,5.6953125,clean
+arith_057_explicit_correction,57,explicit_correction,closure,2,2 + 8,10,8,ten,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 8.
+Candidate 1: eight
+Candidate 2: ten
+Initial note: eight. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.8203125,7.8671875,7.953125,clean
+arith_057_final_recheck,57,final_recheck,closure,2,2 + 8,10,8,ten,eight,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 2 + 8.
+Candidate 1: eight
+Candidate 2: ten
+Draft answer: eight. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",7.1289062,14.109375,-6.9804688,conflict
+arith_058_clean,58,clean,stable,0,3 + 8,11,14,eleven,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 8.
+Candidate 1: eleven
+Candidate 2: fourteen
+Which candidate is correct?
+Answer with exactly one candidate word:",16.0625,15.7734375,0.2890625,clean
+arith_058_paraphrase,58,paraphrase,stable,0,3 + 8,11,14,eleven,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 3 + 8 and compare the two choices.
+Candidate 1: eleven
+Candidate 2: fourteen
+Which candidate is correct?
+Answer with exactly one candidate word:",13.8125,14.890625,-1.078125,conflict
+arith_058_untrusted_conflict,58,untrusted_conflict,competition,1,3 + 8,11,14,eleven,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 8.
+Candidate 1: eleven
+Candidate 2: fourteen
+An unverified note claims that fourteen is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.84375,8.7578125,9.0859375,clean
+arith_058_asserted_conflict,58,asserted_conflict,competition,1,3 + 8,11,14,eleven,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 8.
+Candidate 1: eleven
+Candidate 2: fourteen
+A previous solver selected fourteen. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.671875,7.703125,9.96875,clean
+arith_058_explicit_correction,58,explicit_correction,closure,2,3 + 8,11,14,eleven,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 8.
+Candidate 1: eleven
+Candidate 2: fourteen
+Initial note: fourteen. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.96875,10.2734375,7.6953125,clean
+arith_058_final_recheck,58,final_recheck,closure,2,3 + 8,11,14,eleven,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 3 + 8.
+Candidate 1: eleven
+Candidate 2: fourteen
+Draft answer: fourteen. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.53125,8.609375,8.921875,clean
+arith_059_clean,59,clean,stable,0,4 + 8,12,9,twelve,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 8.
+Candidate 1: nine
+Candidate 2: twelve
+Which candidate is correct?
+Answer with exactly one candidate word:",15.984375,10.609375,5.375,clean
+arith_059_paraphrase,59,paraphrase,stable,0,4 + 8,12,9,twelve,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 4 + 8 and compare the two choices.
+Candidate 1: nine
+Candidate 2: twelve
+Which candidate is correct?
+Answer with exactly one candidate word:",15.65625,7.8359375,7.8203125,clean
+arith_059_untrusted_conflict,59,untrusted_conflict,competition,1,4 + 8,12,9,twelve,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 8.
+Candidate 1: nine
+Candidate 2: twelve
+An unverified note claims that nine is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",8.6953125,15.0703125,-6.375,conflict
+arith_059_asserted_conflict,59,asserted_conflict,competition,1,4 + 8,12,9,twelve,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 8.
+Candidate 1: nine
+Candidate 2: twelve
+A previous solver selected nine. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",6.2226562,15.0703125,-8.847656,conflict
+arith_059_explicit_correction,59,explicit_correction,closure,2,4 + 8,12,9,twelve,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 8.
+Candidate 1: nine
+Candidate 2: twelve
+Initial note: nine. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.59375,9.9453125,6.6484375,clean
+arith_059_final_recheck,59,final_recheck,closure,2,4 + 8,12,9,twelve,nine,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 4 + 8.
+Candidate 1: nine
+Candidate 2: twelve
+Draft answer: nine. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",1.5244141,14.34375,-12.819336,conflict
+arith_060_clean,60,clean,stable,0,5 + 8,13,14,thirteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 8.
+Candidate 1: thirteen
+Candidate 2: fourteen
+Which candidate is correct?
+Answer with exactly one candidate word:",14.65625,16.9375,-2.28125,conflict
+arith_060_paraphrase,60,paraphrase,stable,0,5 + 8,13,14,thirteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 5 + 8 and compare the two choices.
+Candidate 1: thirteen
+Candidate 2: fourteen
+Which candidate is correct?
+Answer with exactly one candidate word:",13.453125,15.3671875,-1.9140625,conflict
+arith_060_untrusted_conflict,60,untrusted_conflict,competition,1,5 + 8,13,14,thirteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 8.
+Candidate 1: thirteen
+Candidate 2: fourteen
+An unverified note claims that fourteen is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.3515625,15.015625,0.3359375,clean
+arith_060_asserted_conflict,60,asserted_conflict,competition,1,5 + 8,13,14,thirteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 8.
+Candidate 1: thirteen
+Candidate 2: fourteen
+A previous solver selected fourteen. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.46875,13.4921875,2.9765625,clean
+arith_060_explicit_correction,60,explicit_correction,closure,2,5 + 8,13,14,thirteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 8.
+Candidate 1: thirteen
+Candidate 2: fourteen
+Initial note: fourteen. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.25,15.0703125,1.1796875,clean
+arith_060_final_recheck,60,final_recheck,closure,2,5 + 8,13,14,thirteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 5 + 8.
+Candidate 1: thirteen
+Candidate 2: fourteen
+Draft answer: fourteen. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.921875,16.140625,-0.21875,conflict
+arith_061_clean,61,clean,stable,0,6 + 8,14,13,fourteen,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 8.
+Candidate 1: thirteen
+Candidate 2: fourteen
+Which candidate is correct?
+Answer with exactly one candidate word:",17.84375,14.1328125,3.7109375,clean
+arith_061_paraphrase,61,paraphrase,stable,0,6 + 8,14,13,fourteen,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 6 + 8 and compare the two choices.
+Candidate 1: thirteen
+Candidate 2: fourteen
+Which candidate is correct?
+Answer with exactly one candidate word:",16.609375,13.34375,3.265625,clean
+arith_061_untrusted_conflict,61,untrusted_conflict,competition,1,6 + 8,14,13,fourteen,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 8.
+Candidate 1: thirteen
+Candidate 2: fourteen
+An unverified note claims that thirteen is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.375,14.9921875,1.3828125,clean
+arith_061_asserted_conflict,61,asserted_conflict,competition,1,6 + 8,14,13,fourteen,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 8.
+Candidate 1: thirteen
+Candidate 2: fourteen
+A previous solver selected thirteen. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.640625,15.3359375,1.3046875,clean
+arith_061_explicit_correction,61,explicit_correction,closure,2,6 + 8,14,13,fourteen,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 8.
+Candidate 1: thirteen
+Candidate 2: fourteen
+Initial note: thirteen. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.765625,15.40625,0.359375,clean
+arith_061_final_recheck,61,final_recheck,closure,2,6 + 8,14,13,fourteen,thirteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 6 + 8.
+Candidate 1: thirteen
+Candidate 2: fourteen
+Draft answer: thirteen. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",9.640625,16.40625,-6.765625,conflict
+arith_062_clean,62,clean,stable,0,7 + 8,15,17,fifteen,seventeen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 8.
+Candidate 1: fifteen
+Candidate 2: seventeen
+Which candidate is correct?
+Answer with exactly one candidate word:",14.359375,18.53125,-4.171875,conflict
+arith_062_paraphrase,62,paraphrase,stable,0,7 + 8,15,17,fifteen,seventeen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 7 + 8 and compare the two choices.
+Candidate 1: fifteen
+Candidate 2: seventeen
+Which candidate is correct?
+Answer with exactly one candidate word:",13.859375,16.609375,-2.75,conflict
+arith_062_untrusted_conflict,62,untrusted_conflict,competition,1,7 + 8,15,17,fifteen,seventeen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 8.
+Candidate 1: fifteen
+Candidate 2: seventeen
+An unverified note claims that seventeen is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.1875,16.828125,-1.640625,conflict
+arith_062_asserted_conflict,62,asserted_conflict,competition,1,7 + 8,15,17,fifteen,seventeen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 8.
+Candidate 1: fifteen
+Candidate 2: seventeen
+A previous solver selected seventeen. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.46875,16.03125,0.4375,clean
+arith_062_explicit_correction,62,explicit_correction,closure,2,7 + 8,15,17,fifteen,seventeen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 8.
+Candidate 1: fifteen
+Candidate 2: seventeen
+Initial note: seventeen. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",15.6015625,16.1875,-0.5859375,conflict
+arith_062_final_recheck,62,final_recheck,closure,2,7 + 8,15,17,fifteen,seventeen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 7 + 8.
+Candidate 1: fifteen
+Candidate 2: seventeen
+Draft answer: seventeen. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.171875,16.703125,-0.53125,conflict
+arith_063_clean,63,clean,stable,0,8 + 8,16,14,sixteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 8.
+Candidate 1: fourteen
+Candidate 2: sixteen
+Which candidate is correct?
+Answer with exactly one candidate word:",18.65625,14.875,3.78125,clean
+arith_063_paraphrase,63,paraphrase,stable,0,8 + 8,16,14,sixteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Work out the value of 8 + 8 and compare the two choices.
+Candidate 1: fourteen
+Candidate 2: sixteen
+Which candidate is correct?
+Answer with exactly one candidate word:",17.953125,14.09375,3.859375,clean
+arith_063_untrusted_conflict,63,untrusted_conflict,competition,1,8 + 8,16,14,sixteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 8.
+Candidate 1: fourteen
+Candidate 2: sixteen
+An unverified note claims that fourteen is correct. Check the arithmetic yourself.
+Which candidate is correct?
+Answer with exactly one candidate word:",14.5546875,18.25,-3.6953125,conflict
+arith_063_asserted_conflict,63,asserted_conflict,competition,1,8 + 8,16,14,sixteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 8.
+Candidate 1: fourteen
+Candidate 2: sixteen
+A previous solver selected fourteen. Independently verify the result.
+Which candidate is correct?
+Answer with exactly one candidate word:",17.53125,16.6875,0.84375,clean
+arith_063_explicit_correction,63,explicit_correction,closure,2,8 + 8,16,14,sixteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 8.
+Candidate 1: fourteen
+Candidate 2: sixteen
+Initial note: fourteen. Correction: that note was withdrawn; use the arithmetic result.
+Which candidate is correct?
+Answer with exactly one candidate word:",16.1875,16.109375,0.078125,clean
+arith_063_final_recheck,63,final_recheck,closure,2,8 + 8,16,14,sixteen,fourteen,"Example 1: 2 + 3. Candidates: five, six. Answer: five.
+Example 2: 4 * 3. Candidates: eleven, twelve. Answer: twelve.
+Now solve the new problem.
+Calculate 8 + 8.
+Candidate 1: fourteen
+Candidate 2: sixteen
+Draft answer: fourteen. Final instruction: recheck the calculation and replace the draft if needed.
+Which candidate is correct?
+Answer with exactly one candidate word:",10.0390625,18.671875,-8.6328125,conflict

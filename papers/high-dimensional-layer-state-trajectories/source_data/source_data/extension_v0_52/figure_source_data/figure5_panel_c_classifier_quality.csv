@@ -1,0 +1,13 @@
+"model","metric","value"
+"Qwen","Mechanism acc.",0.928955223880597
+"Qwen","Mechanism F1",0.924397935113522
+"Qwen","Policy acc.",0.930746268656716
+"Qwen","Policy F1",0.702281850992117
+"Llama","Mechanism acc.",0.925746268656716
+"Llama","Mechanism F1",0.926523739637598
+"Llama","Policy acc.",0.642164179104478
+"Llama","Policy F1",0.533572655416466
+"Gemma","Mechanism acc.",0.822388059701493
+"Gemma","Mechanism F1",0.827169791694071
+"Gemma","Policy acc.",0.834925373134328
+"Gemma","Policy F1",0.708258218720575

@@ -1,0 +1,13 @@
+"model","proxy","score"
+"Qwen","Best direct-or-constructed score",2.12647514198342
+"Qwen","Top-k, real output",1.38197412716905
+"Qwen","Top-k, row-permuted",1.38197412716905
+"Qwen","Top-k, Gaussian",1.18818568898562
+"Llama","Best direct-or-constructed score",1.32505630511404
+"Llama","Top-k, real output",0.516577182352474
+"Llama","Top-k, row-permuted",0.516579030096462
+"Llama","Top-k, Gaussian",0.533209089264725
+"Gemma","Best direct-or-constructed score",0.861537514962595
+"Gemma","Top-k, real output",0.467068771338362
+"Gemma","Top-k, row-permuted",0.467068771338362
+"Gemma","Top-k, Gaussian",0.363613537409963

@@ -1,0 +1,20 @@
+{
+  "model": "gemma",
+  "verdict": "NO_ASSIGNMENT_SPECIFICITY",
+  "real_guarded_strict_crossings": 9,
+  "n_closure": 87,
+  "n_nulls": 50,
+  "null_mean_strict_crossings": 7.9,
+  "null_sd_strict_crossings": 0.9091372900969895,
+  "null_min_strict_crossings": 6,
+  "null_max_strict_crossings": 10,
+  "null_q95_strict_crossings": 9.0,
+  "nulls_at_or_above_real": 12,
+  "empirical_one_sided_p": 0.2549019607843137,
+  "safety_match": {
+    "same_gate_open_set": true,
+    "same_condition_layer_action_multiset": true,
+    "same_nonclosure_zero_action_set": true
+  },
+  "claim_boundary": "Trajectory-to-action assignment specificity only; no correctness, open-ended generation, deployment-control, universal-dynamics or hidden-ontology claim."
+}

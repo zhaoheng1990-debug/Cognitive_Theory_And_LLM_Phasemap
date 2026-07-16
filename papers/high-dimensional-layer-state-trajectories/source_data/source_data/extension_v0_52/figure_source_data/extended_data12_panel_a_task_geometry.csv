@@ -1,0 +1,7 @@
+"task","model","n_items_or_problems","behavioural_accuracy","real_alignment_mean","shuffle_alignment_mean","alignment_gain","alignment_z","real_exceeds_all_50_shuffles","model_label","task_short"
+"controlled lexical-category task","qwen",64,0.84375,0.061679046601057,0.0421862027049064,0.0194928438961505,5.27431806203865,"True","Qwen","Lexical"
+"controlled lexical-category task","llama",64,0.411458333333333,0.124214857816696,0.0728632839024066,0.0513515739142894,6.56277813178532,"True","Llama","Lexical"
+"controlled lexical-category task","gemma",64,0.942708333333333,0.0972601249814033,0.0426006752252578,0.0546594497561454,6.26181637631339,"True","Gemma","Lexical"
+"controlled addition task","qwen",64,0.611979166666667,0.0680597797036171,0.0422347558662295,0.0258250238373875,5.41723424489879,"True","Qwen","Addition"
+"controlled addition task","llama",64,0.315104166666667,0.123984433710575,0.073567519262433,0.050416914448142,5.27206485470986,"True","Llama","Addition"
+"controlled addition task","gemma",64,0.526041666666667,0.0972486957907676,0.0419248372688889,0.0553238585218787,6.0348369781796,"True","Gemma","Addition"

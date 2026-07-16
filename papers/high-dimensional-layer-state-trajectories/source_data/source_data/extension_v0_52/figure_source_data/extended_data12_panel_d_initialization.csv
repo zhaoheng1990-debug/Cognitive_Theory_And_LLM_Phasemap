@@ -1,0 +1,4 @@
+"model","trained_alignment_gain","random_alignment_gain_mean","random_alignment_gain_min","random_alignment_gain_max","all_random_alignment_gains_positive","trained_exceeds_random_range","trained_alignment_z","random_alignment_z_mean","model_label"
+"qwen",0.0317454975843429,0.0767617186469336,0.075665474049747,0.0777972674928605,"True","False",4.99201525850752,5.86222343041603,"Qwen"
+"llama",0.0402691491693258,0.102780266714593,0.102239256538451,0.103533059321344,"True","False",5.50534470787868,4.64769885162841,"Llama"
+"gemma",0.0498680308461189,0.0879112176162501,0.0876618566550314,0.0880697674117982,"True","False",6.64265235905839,5.16653358486988,"Gemma"

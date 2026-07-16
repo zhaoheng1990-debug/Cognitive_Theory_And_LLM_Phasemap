@@ -39,3 +39,6 @@ No reuse licence has yet been granted. See `LICENSE_DECISION_REQUIRED.md`. The c
 
 ## v0.51 extension
 Row-level evidence and plotted inputs for the independent task, random-initialization, boundary-bridge and selective output-control analyses are under `source_data/extension_v0_51/`. See its `README.md` and checksum manifest.
+
+## v0.52 extension
+The task-generalization, predictive-forecasting, cross-architecture initialization and cross-checkpoint output-control evidence is under `source_data/extension_v0_52/`. See its README and checksum manifest.

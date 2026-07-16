@@ -1,0 +1,5 @@
+"panel","purpose","tradeoff"
+"a","Keep the layer dimensions visible as a barcode.","More faithful to high-dimensional evidence but less immediately spatial."
+"b","Show condition trajectories as paths over the original layer axes.","Readable temporal/layer ordering without pretending the manifold is 3D."
+"c","Show neighbourhood relations computed in full layer-vector space.","Supports high-dimensional similarity claims but loses path geometry."
+"d","Identify which dimensions dominate condition separation.","Explains why a low-dimensional projection can work, without treating it as literal."

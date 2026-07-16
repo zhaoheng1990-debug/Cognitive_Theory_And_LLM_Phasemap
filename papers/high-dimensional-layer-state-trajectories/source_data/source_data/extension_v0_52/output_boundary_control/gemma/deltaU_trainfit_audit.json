@@ -1,0 +1,14 @@
+{
+  "fit_scope": "training graph groups only",
+  "n_fit_prompts": 670,
+  "explained_variance_ratio": 0.9639124870300293,
+  "decision_columns": [
+    "dR_L18",
+    "dR_L19",
+    "dR_L20",
+    "dR_L21",
+    "dR_L22",
+    "dR_L23"
+  ],
+  "heldout_used_for_pca_fit": false
+}

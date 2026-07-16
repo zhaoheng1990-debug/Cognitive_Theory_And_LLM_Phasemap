@@ -1,0 +1,19 @@
+{
+  "analysis": "prospective final candidate-boundary forecasting from partial decision-window history",
+  "asa_root": "<local-path>",
+  "models": [
+    "qwen",
+    "llama",
+    "gemma"
+  ],
+  "split": "frozen 67-train/29-test relation-graph groups",
+  "target": "final clean-minus-conflict output-logit margin",
+  "predictor_information_boundary": "candidate-margin observations at the cutoff layer and earlier only",
+  "regression": "StandardScaler plus Ridge(alpha=10)",
+  "classification": "StandardScaler plus balanced LogisticRegression(C=1)",
+  "order_null": "independent within-prompt permutation of all pre-current positions; current cutoff retained",
+  "n_order_shuffles": 50,
+  "bootstrap_replicates": 1000,
+  "seed": 20260717,
+  "claim_boundary": "reduced-order held-out forecast; not a closed-form or universal state equation"
+}

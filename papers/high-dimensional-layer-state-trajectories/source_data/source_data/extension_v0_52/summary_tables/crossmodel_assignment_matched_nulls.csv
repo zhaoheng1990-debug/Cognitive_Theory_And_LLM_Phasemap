@@ -1,0 +1,4 @@
+model,real_guarded_strict_crossings,n_nulls,null_mean_strict_crossings,null_sd_strict_crossings,null_min_strict_crossings,null_max_strict_crossings,null_q95_strict_crossings,empirical_one_sided_p,assignment_specificity
+qwen,17,50,17.64,1.2249114920129154,15,20,19.0,0.803921568627451,NO_ASSIGNMENT_SPECIFICITY
+llama,13,50,14.18,1.137307956428294,12,16,16.0,0.9215686274509803,NO_ASSIGNMENT_SPECIFICITY
+gemma,9,50,7.9,0.9091372900969895,6,10,9.0,0.2549019607843137,NO_ASSIGNMENT_SPECIFICITY

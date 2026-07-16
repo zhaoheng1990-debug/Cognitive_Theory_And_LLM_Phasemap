@@ -1,0 +1,57 @@
+{
+  "closure_1_task_generalization": {
+    "status": "PASS_GEOMETRY_TRANSFER_AND_PARTIAL_COORDINATE_TRANSFER",
+    "standard_benchmark": "ARC-Challenge validation, 96 four-choice items",
+    "all_nine_task_model_geometry_tests_exceed_all_50_order_shuffles": true,
+    "coordinate_transfer_boundary": "Task-specific one-dimensional coordinates transfer to held-out lexical and addition problems; the numerical relation-graph DeltaU axis is not transferred."
+  },
+  "closure_2_predictive_theory": {
+    "status": "PASS_BOUNDED_HELDOUT_FORECAST",
+    "earliest_order_informative_cutoffs": {
+      "gemma": {
+        "cutoff_layer": 21,
+        "r2": 0.7137805890078288,
+        "boundary_auroc": 0.9835760998810938,
+        "order_null_q95": 0.6503125713594112
+      },
+      "llama": {
+        "cutoff_layer": 14,
+        "r2": 0.39342699243707,
+        "boundary_auroc": 0.8373261409910625,
+        "order_null_q95": 0.3003372207749634
+      },
+      "qwen": {
+        "cutoff_layer": 24,
+        "r2": 0.5743321107605314,
+        "boundary_auroc": 0.8571709620302972,
+        "order_null_q95": 0.5459541121986264
+      }
+    },
+    "boundary": "This is a graph-held-out reduced-order forecast of a declared final candidate margin, not a closed-form or universal state equation."
+  },
+  "closure_3_crossmodel_controls": {
+    "random_initialization": "PASS_ALL_THREE_ARCHITECTURES",
+    "guarded_output_boundary_reachability": {
+      "qwen": {
+        "strict_flips": 17,
+        "closure_n": 87,
+        "nonclosure_changes": 0,
+        "nonclosure_n": 203
+      },
+      "llama": {
+        "strict_flips": 13,
+        "closure_n": 87,
+        "nonclosure_changes": 2,
+        "nonclosure_n": 203
+      },
+      "gemma": {
+        "strict_flips": 9,
+        "closure_n": 87,
+        "nonclosure_changes": 0,
+        "nonclosure_n": 203
+      }
+    },
+    "trajectory_specific_action_assignment": "NOT_SUPPORTED_IN_ANY_CHECKPOINT",
+    "boundary": "The bounded executor family can cross a declared full-vocabulary candidate boundary in all three checkpoints. Safety-matched reassignments do not support checkpoint-specific trajectory-to-dose assignment specificity."
+  }
+}

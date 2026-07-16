@@ -1,0 +1,10 @@
+"model","feature","corr"
+"Qwen","Projection",0.732302105137901
+"Qwen","Residual",0.774514679334526
+"Qwen","Mixed",0.792677625491934
+"Llama","Projection",0.346136246749663
+"Llama","Residual",0.33808780654038
+"Llama","Mixed",0.396551703588038
+"Gemma","Projection",0.745438854933986
+"Gemma","Residual",0.750250942067938
+"Gemma","Mixed",0.799818482842164

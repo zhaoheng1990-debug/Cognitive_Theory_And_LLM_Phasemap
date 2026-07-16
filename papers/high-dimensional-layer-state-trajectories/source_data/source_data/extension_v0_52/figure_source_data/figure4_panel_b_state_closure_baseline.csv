@@ -1,0 +1,13 @@
+"model","metric","value"
+"state+prev+phase","R2 macro",0.750283812028566
+"state+prev+phase","Corr. macro",0.846777672019658
+"state+prev+layer","R2 macro",0.726612991242592
+"state+prev+layer","Corr. macro",0.829120750308131
+"state+prev","R2 macro",0.722258664807395
+"state+prev","Corr. macro",0.82617104145171
+"prev dynamics","R2 macro",0.487092132166277
+"prev dynamics","Corr. macro",0.667872856827085
+"state only","R2 macro",0.287514890709049
+"state only","Corr. macro",0.461028432377886
+"layer only","R2 macro",0.034130802967718
+"layer only","Corr. macro",0.126728088466417

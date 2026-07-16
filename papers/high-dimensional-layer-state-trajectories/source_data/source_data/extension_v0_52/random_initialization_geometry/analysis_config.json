@@ -1,0 +1,31 @@
+{
+  "analysis": "cross-checkpoint trained versus random-initialization trajectory geometry",
+  "model_specs": {
+    "qwen": {
+      "path": "<local-path>",
+      "metadata": "<local-path>",
+      "trained_hidden": "<local-path>"
+    },
+    "llama": {
+      "path": "<local-path>",
+      "metadata": "<local-path>",
+      "trained_hidden": "<local-path>"
+    },
+    "gemma": {
+      "path": "<local-path>",
+      "metadata": "<local-path>",
+      "trained_hidden": "<local-path>"
+    }
+  },
+  "subset_manifest": "<local-path>",
+  "n_prompts": 96,
+  "random_initialization_seeds": [
+    1701,
+    1702,
+    1703
+  ],
+  "n_endpoint_preserving_shuffles": 50,
+  "shuffle_seed": 20260717,
+  "prompt_wrapping": "raw prompts matching source extraction",
+  "claim_boundary": "within-architecture decomposition of architecture-compatible and parameter-dependent order; not a universal architecture law"
+}

@@ -1,0 +1,7 @@
+"model_f","control","clean_choice_rate"
+"Qwen","No intervention",0
+"Qwen","Mechanism-aware policy",0
+"Llama","No intervention",0.482758620689655
+"Llama","Mechanism-aware policy",0.574712643678161
+"Gemma","No intervention",0.35632183908046
+"Gemma","Mechanism-aware policy",0.425287356321839

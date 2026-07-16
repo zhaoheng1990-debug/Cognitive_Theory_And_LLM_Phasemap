@@ -1,0 +1,7 @@
+task,model,n_train_problems,n_heldout_problems,heldout_macro_f1,label_shuffle_f1_q95,heldout_f1_vs_shuffle_z,exceeds_label_shuffle_q95
+controlled lexical-category task,qwen,44,20,0.5369818965324583,0.5035903250188964,1.7492014131248044,True
+controlled lexical-category task,llama,44,20,0.5621558815908796,0.5066589309746437,1.8260259673839545,True
+controlled lexical-category task,gemma,44,20,0.591309072300299,0.6168690958164643,2.1276411194680342,False
+controlled addition task,qwen,44,20,0.5825301634896837,0.4936851056211958,2.652203191765546,True
+controlled addition task,llama,44,20,0.4563492063492063,0.3895801818507132,2.2045903595544942,True
+controlled addition task,gemma,44,20,0.5696225071225071,0.3376366572064671,6.27212453757858,True

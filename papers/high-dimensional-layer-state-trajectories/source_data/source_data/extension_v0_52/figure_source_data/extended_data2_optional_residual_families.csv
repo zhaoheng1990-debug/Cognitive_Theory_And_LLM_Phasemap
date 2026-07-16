@@ -1,0 +1,13 @@
+"model","metric","value"
+"Qwen","Family ΔU corr.",0.749746903560545
+"Qwen","Family mechanism F1",0.785282295785597
+"Qwen","Competition AUC",0.971871219249899
+"Qwen","Boundary AUC",0.629620916789891
+"Llama","Family ΔU corr.",0.239695758216847
+"Llama","Family mechanism F1",0.671425832340414
+"Llama","Competition AUC",0.995433789954338
+"Llama","Boundary AUC",0.685017257272708
+"Gemma","Family ΔU corr.",0.826812828731062
+"Gemma","Family mechanism F1",0.672276787495004
+"Gemma","Competition AUC",0.995971913451168
+"Gemma","Boundary AUC",0.631749246109485

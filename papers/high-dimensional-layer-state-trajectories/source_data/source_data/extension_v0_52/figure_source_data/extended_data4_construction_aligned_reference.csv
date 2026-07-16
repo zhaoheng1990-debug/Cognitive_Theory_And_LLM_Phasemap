@@ -1,0 +1,16 @@
+"model","proxy","score"
+"Qwen","Hidden state",3.82492191885785
+"Qwen","Construction-aligned reference",3.55400997778604
+"Qwen","Top-k, real output",3.3044818577286
+"Qwen","Top-k, row-permuted",3.30448185768069
+"Qwen","Top-k, Gaussian",3.02535559860063
+"Llama","Hidden state",3.72183959019182
+"Llama","Construction-aligned reference",3.20102975281428
+"Llama","Top-k, real output",1.83244707268788
+"Llama","Top-k, row-permuted",1.83245388469079
+"Llama","Top-k, Gaussian",1.9039599832806
+"Gemma","Hidden state",3.90863655436479
+"Gemma","Construction-aligned reference",3.5281905250649
+"Gemma","Top-k, real output",3.41802504692231
+"Gemma","Top-k, row-permuted",3.41802504692231
+"Gemma","Top-k, Gaussian",2.76453968977597
