@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "independent_verifiers_passed": 8,
+  "evidence_windows": 7,
+  "frozen_manifest_files_verified": 176,
+  "frozen_manifest_sha256": "06be4de3f64ffb0f27c3b02d8a4ce4130df834d6a576284cc8b962202274d42c",
+  "public_release_scope": "Sanitized processed subset; large derivative state arrays are excluded."
+}

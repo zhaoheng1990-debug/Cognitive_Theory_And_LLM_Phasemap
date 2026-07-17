@@ -1,0 +1,245 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "extraction_rows": 18,
+  "summary_rows": 18,
+  "strong_null_rows": 10746,
+  "fingerprint_null_rows": 3582,
+  "condition_pass_count": 18,
+  "condition_total": 18,
+  "architecture_double_seed_task_counts": {
+    "gemma": 3,
+    "llama": 3,
+    "qwen": 3
+  },
+  "task_double_seed_architecture_counts": {
+    "arc_challenge": 3,
+    "arithmetic_addition": 3,
+    "lexical_category": 3
+  },
+  "cross_task_replication_pass": true,
+  "array_checks": [
+    {
+      "task": "lexical_category",
+      "model": "qwen",
+      "seed": 1801,
+      "shape": [
+        96,
+        28,
+        1536
+      ],
+      "finite": true,
+      "sha256": "949c1723920650e2a87639c02326812076570c21de397d23bd55592e5c3c361a"
+    },
+    {
+      "task": "arithmetic_addition",
+      "model": "qwen",
+      "seed": 1801,
+      "shape": [
+        96,
+        28,
+        1536
+      ],
+      "finite": true,
+      "sha256": "00c8b577e36d64cc1355bbfa5ebca592ddb714bb49ad227c8d5297c1892fdc9d"
+    },
+    {
+      "task": "arc_challenge",
+      "model": "qwen",
+      "seed": 1801,
+      "shape": [
+        96,
+        28,
+        1536
+      ],
+      "finite": true,
+      "sha256": "cd5be538c263e930f5fee6b906c3f7cb2fcf4907e21293f9d2fafa9649027e1b"
+    },
+    {
+      "task": "lexical_category",
+      "model": "qwen",
+      "seed": 1802,
+      "shape": [
+        96,
+        28,
+        1536
+      ],
+      "finite": true,
+      "sha256": "85e278f176878cf4d89852754ddd319bf5592a6e4252a55230de673dae7fd6b5"
+    },
+    {
+      "task": "arithmetic_addition",
+      "model": "qwen",
+      "seed": 1802,
+      "shape": [
+        96,
+        28,
+        1536
+      ],
+      "finite": true,
+      "sha256": "f204a6e7a9ed33312151905c1a25d3b329769ca23bf09ffcd4dc6b21d8fc403d"
+    },
+    {
+      "task": "arc_challenge",
+      "model": "qwen",
+      "seed": 1802,
+      "shape": [
+        96,
+        28,
+        1536
+      ],
+      "finite": true,
+      "sha256": "c62b6842be266fc3afc4476e7543825344a9b8de3ed63273dbbcf2e58c3c7970"
+    },
+    {
+      "task": "lexical_category",
+      "model": "llama",
+      "seed": 1801,
+      "shape": [
+        96,
+        16,
+        2048
+      ],
+      "finite": true,
+      "sha256": "2003fe0c6793d702811f5f12c8d2d6c8f05844a08ee719dc63bac74b45b38368"
+    },
+    {
+      "task": "arithmetic_addition",
+      "model": "llama",
+      "seed": 1801,
+      "shape": [
+        96,
+        16,
+        2048
+      ],
+      "finite": true,
+      "sha256": "25a3ba7519e132ac9040ba254c963ff1b03d5bec772888161e9b0423551fb494"
+    },
+    {
+      "task": "arc_challenge",
+      "model": "llama",
+      "seed": 1801,
+      "shape": [
+        96,
+        16,
+        2048
+      ],
+      "finite": true,
+      "sha256": "001ac80dfb251c53fc85cf68af86ddb09835e8905dfddad0625f642995fdf2e7"
+    },
+    {
+      "task": "lexical_category",
+      "model": "llama",
+      "seed": 1802,
+      "shape": [
+        96,
+        16,
+        2048
+      ],
+      "finite": true,
+      "sha256": "04093904b2e2d4d5d0fe2b1a7e2912d4b28937f9187bb13c86f2acea69afbd3b"
+    },
+    {
+      "task": "arithmetic_addition",
+      "model": "llama",
+      "seed": 1802,
+      "shape": [
+        96,
+        16,
+        2048
+      ],
+      "finite": true,
+      "sha256": "7644ef447f3b23397ec82daa4c69fd36857fdf1efb1edd720cfeef1ec925e0db"
+    },
+    {
+      "task": "arc_challenge",
+      "model": "llama",
+      "seed": 1802,
+      "shape": [
+        96,
+        16,
+        2048
+      ],
+      "finite": true,
+      "sha256": "361b04e72a06d89bd55fb2dfc177db235ef9296b1595583888827055fe6953c7"
+    },
+    {
+      "task": "lexical_category",
+      "model": "gemma",
+      "seed": 1801,
+      "shape": [
+        96,
+        26,
+        2304
+      ],
+      "finite": true,
+      "sha256": "5c72816a572874d34cfc49f2c6e9043c02f6bc3879472b0e2b5abaf28922e9f2"
+    },
+    {
+      "task": "arithmetic_addition",
+      "model": "gemma",
+      "seed": 1801,
+      "shape": [
+        96,
+        26,
+        2304
+      ],
+      "finite": true,
+      "sha256": "a4fc604359f1d1d9671c9fb9f669108819f50ec2ef47767e5d48885261c0b060"
+    },
+    {
+      "task": "arc_challenge",
+      "model": "gemma",
+      "seed": 1801,
+      "shape": [
+        96,
+        26,
+        2304
+      ],
+      "finite": true,
+      "sha256": "f979b5c1f73a281057372b98cd86604e1d20902de58fcc9377cbf44eef5f4e42"
+    },
+    {
+      "task": "lexical_category",
+      "model": "gemma",
+      "seed": 1802,
+      "shape": [
+        96,
+        26,
+        2304
+      ],
+      "finite": true,
+      "sha256": "a821eda35ed1d7b1260c70df702393192a4515a76b4b716de0a71c1ec78fb21c"
+    },
+    {
+      "task": "arithmetic_addition",
+      "model": "gemma",
+      "seed": 1802,
+      "shape": [
+        96,
+        26,
+        2304
+      ],
+      "finite": true,
+      "sha256": "6ce9b411f4357e34769623b2093431cb7d2576121cbed3687fe504ad7e8bac85"
+    },
+    {
+      "task": "arc_challenge",
+      "model": "gemma",
+      "seed": 1802,
+      "shape": [
+        96,
+        26,
+        2304
+      ],
+      "finite": true,
+      "sha256": "51ff346d05bef2c818d6aa3231155d406ce23b9b1cb4da687f4f70402aab37e6"
+    }
+  ],
+  "result_file_sha256": {
+    "random_cross_task_condition_summary.csv": "0275877c38302f18172b8387c842969cc49d37abe6e3ce5e44875add0597779f",
+    "random_cross_task_strong_nulls.csv": "1975e843d7f948a3a61977f6598f1ef274f6ff5875f37c27f5a903e2e35d64b6",
+    "random_cross_task_fingerprint_nulls.csv": "954eee6371e5b2765d7c546cf572db5f3d1e7a76c29cede0742592f58d59ea36",
+    "random_cross_task_gate_decision.json": "a7146196c06ce63fd9b688bd8f335f56d45dc741749a032c3f4c8cd54e786370"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "window": "llama_raw_residual_coordinate_audit",
+  "cache_reproduction_pass": true,
+  "mixed_endpoint_norm_jump_pass": true,
+  "original_task_pass_counts": {
+    "cached_mixed_raw": 4,
+    "reextracted_mixed_raw": 4,
+    "cached_truncated_raw": 0,
+    "consistent_block_raw": 2,
+    "common_rmsnorm": 0
+  },
+  "independent_task_pass_counts": {
+    "cached_mixed_raw": 3,
+    "reextracted_mixed_raw": 3,
+    "cached_truncated_raw": 0,
+    "consistent_block_raw": 3,
+    "common_rmsnorm": 0
+  },
+  "coordinate_mismatch_explanation_pass": false,
+  "interpretation": "raw Llama anomaly survives or remains unresolved",
+  "claim_boundary": "coordinate-consistency audit of one Llama checkpoint; not a semantic, geodesic or architecture-wide claim"
+}

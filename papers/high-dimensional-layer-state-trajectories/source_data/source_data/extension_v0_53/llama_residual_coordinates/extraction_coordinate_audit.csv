@@ -1,0 +1,8 @@
+task,n_prompts,cache_path,mean_flat_cosine_cached_vs_reextracted,min_flat_cosine_cached_vs_reextracted,mean_absolute_error_cached_vs_reextracted,cached_final_to_penultimate_norm_ratio_median,reextracted_final_to_penultimate_norm_ratio_median,consistent_final_to_penultimate_norm_ratio_median
+relation_graph,96,<local-path>
+lexical_category,96,<local-path> 论文撰写\inputs/lexical_task\llama\hidden_last_token_layers_float16.npy,0.9998371877518812,0.9997814910371046,0.0034658815711736,7.219558715820312,7.220931053161621,1.419248104095459
+arithmetic_addition,96,<local-path> 论文撰写\inputs/addition_task\llama\hidden_last_token_layers_float16.npy,0.9998641778769553,0.9998062582840248,0.0033329653088003,6.823112487792969,6.826440811157227,1.5455697774887085
+arc_challenge,96,<local-path> 论文撰写\arc_multichoice_geometry_v0_1\llama\hidden_last_token_layers_float16.npy,1.0,1.0,0.0,6.995741844177246,6.995741844177246,1.2999374866485596
+lexical_disjoint,96,<local-path> 论文撰写\inputs/lexical_task\llama\hidden_last_token_layers_float16.npy,0.9998379102332292,0.9997815028015667,0.0034576572943478,7.203514099121094,7.206037044525146,1.4304386377334597
+addition_disjoint,96,<local-path> 论文撰写\inputs/addition_task\llama\hidden_last_token_layers_float16.npy,0.9998616720712142,0.999795480118476,0.0033617068547755,6.840242385864258,6.842443466186523,1.5481810569763184
+arithmetic_mixed,96,<local-path> 论文撰写\inputs/mixed_arithmetic_task\llama\hidden_last_token_layers_float16.npy,0.9998208436502508,0.9994502304092056,0.0037057541776448,6.852095603942871,6.8560638427734375,1.5350196361541748

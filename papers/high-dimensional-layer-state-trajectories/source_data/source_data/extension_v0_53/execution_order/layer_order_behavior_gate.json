@@ -1,0 +1,16 @@
+{
+  "window": "layer_order_geometry_versus_behavior",
+  "reconstruction_audit": {
+    "audit_prompts": 8,
+    "full_vocab_top1_agreement": 1.0,
+    "candidate_margin_max_abs_error": 0.03125,
+    "passes": true
+  },
+  "reverse_positive_geometry": true,
+  "reverse_functional_disruption": true,
+  "reverse_dissociation_pass": true,
+  "fixed_permutation_positive_geometry": true,
+  "fixed_permutation_functional_disruption": true,
+  "fixed_permutation_replication_pass": true,
+  "claim_boundary": "greater future-chord alignment is not sufficient for native output fidelity; no claim that every reordering lowers task correctness"
+}

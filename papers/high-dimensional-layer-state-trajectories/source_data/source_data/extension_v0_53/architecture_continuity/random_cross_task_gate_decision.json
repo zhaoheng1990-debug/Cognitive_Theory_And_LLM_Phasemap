@@ -1,0 +1,21 @@
+{
+  "window": "random_cross_task_replication",
+  "condition_pass_count": 18,
+  "condition_total": 18,
+  "architecture_double_seed_task_counts": {
+    "gemma": 3,
+    "llama": 3,
+    "qwen": 3
+  },
+  "task_double_seed_architecture_counts": {
+    "arc_challenge": 3,
+    "arithmetic_addition": 3,
+    "lexical_category": 3
+  },
+  "architecture_gate": true,
+  "task_gate": true,
+  "cross_task_replication_pass": true,
+  "all_lag1_nulls_valid": true,
+  "interpretation": "architecture-compatible preservation of prompt relational geometry across depth",
+  "claim_boundary": "relational geometry preservation only; not semantic organization, endpoint direction, native-order privilege, task function or a geodesic"
+}

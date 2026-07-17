@@ -1,0 +1,8 @@
+task,task_scope,rho_gamma_effect_future_alignment,rho_gamma_effect_leave_one_out_alignment
+relation_graph,original,1.0,1.0
+lexical_category,original,1.0,1.0
+arithmetic_addition,original,1.0,1.0
+arc_challenge,original,1.0,1.0
+lexical_disjoint,independent,1.0,1.0
+addition_disjoint,independent,1.0,1.0
+arithmetic_mixed,independent,1.0,1.0

@@ -1,0 +1,24 @@
+{
+  "window": "llama_radial_scale_followup",
+  "pass_counts": {
+    "consistent_block_raw": {
+      "original": 2,
+      "independent": 3
+    },
+    "common_rmsnorm": {
+      "original": 0,
+      "independent": 0
+    },
+    "direction_only": {
+      "original": 0,
+      "independent": 0
+    },
+    "norm_only_fixed_direction": {
+      "original": 4,
+      "independent": 3
+    }
+  },
+  "radial_scale_sufficiency_support": false,
+  "interpretation": "radial-scale explanation not closed",
+  "claim_boundary": "metric explanation for one Llama checkpoint; norm scale may still carry function, and no semantic, geodesic or architecture-wide claim follows"
+}

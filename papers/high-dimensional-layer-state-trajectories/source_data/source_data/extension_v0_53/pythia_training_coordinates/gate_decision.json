@@ -1,0 +1,23 @@
+{
+  "candidate_coordinate_gates_all_pass": true,
+  "heldout_category_metric_any_pass": true,
+  "gates": {
+    "candidate_final_exceeds_shuffle_q99": true,
+    "candidate_training_order_gain_at_least_0_10": true,
+    "candidate_order_gain_behavior_rho_at_least_0_60": true,
+    "within_final_f1_exceeds_label_q95_and_step0_by_0_10": false,
+    "transfer_final_f1_exceeds_label_q95_and_step0_by_0_10": true
+  },
+  "candidate_order_gain_accuracy_spearman": 0.7500000000000002,
+  "label_null_q95": {
+    "within_checkpoint": {
+      "step0": 0.296717340630384,
+      "step143000": 0.3213547703250221
+    },
+    "final_metric_transfer": {
+      "step0": 0.15210050219357021,
+      "step143000": 0.3213547703250221
+    }
+  },
+  "boundary": "Task-conditioned coordinates are diagnostics on one lexical cloze set; they do not replace the high-dimensional process object or establish a universal semantic metric."
+}

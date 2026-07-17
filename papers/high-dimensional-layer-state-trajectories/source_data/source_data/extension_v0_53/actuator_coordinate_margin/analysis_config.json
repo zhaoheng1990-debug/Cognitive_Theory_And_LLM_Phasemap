@@ -1,0 +1,11 @@
+{
+  "input_dir": "<local-path> 论文撰写\\qwen_boundary_control_control_v0_1\\output",
+  "matched_null_dir": "<local-path> 论文撰写\\qwen_boundary_control_control_v0_1\\safety_matched_null_v0_1\\output",
+  "bootstrap": 5000,
+  "mediator_nulls": 999,
+  "dose_nulls": 999,
+  "seed": 2026071717,
+  "ridge_alpha": 1.0,
+  "group_folds": 5,
+  "protocol": "<local-path> 论文撰写\\high_control_validation_v0_1\\control_mediation_protocol_v0_1.md"
+}

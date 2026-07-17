@@ -1,0 +1,72 @@
+{
+  "repo_id": "EleutherAI/pythia-160m",
+  "revisions": [
+    "step0",
+    "step128",
+    "step1000",
+    "step4000",
+    "step16000",
+    "step64000",
+    "step143000"
+  ],
+  "state_shapes": {
+    "step0": [
+      53,
+      12,
+      768
+    ],
+    "step128": [
+      53,
+      12,
+      768
+    ],
+    "step1000": [
+      53,
+      12,
+      768
+    ],
+    "step4000": [
+      53,
+      12,
+      768
+    ],
+    "step16000": [
+      53,
+      12,
+      768
+    ],
+    "step64000": [
+      53,
+      12,
+      768
+    ],
+    "step143000": [
+      53,
+      12,
+      768
+    ]
+  },
+  "n_prompts": 53,
+  "n_layers": 12,
+  "n_categories": 7,
+  "categories": [
+    "colour",
+    "direction",
+    "fruit",
+    "landscape feature",
+    "metal",
+    "shape",
+    "sky object"
+  ],
+  "fold_rule": "clean-label grouped, category-stratified deterministic modulo-3",
+  "pca_components": 16,
+  "logistic_C": 1.0,
+  "layer_shuffles": 999,
+  "label_nulls": 199,
+  "seed": 2026071713,
+  "python": "3.11.15",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "torch": "2.5.1+cu121",
+  "transformers": "5.9.0"
+}

@@ -1,0 +1,10 @@
+﻿task,model,both_seeds_pass
+arc_challenge,gemma,True
+arc_challenge,llama,True
+arc_challenge,qwen,True
+arithmetic_addition,gemma,True
+arithmetic_addition,llama,True
+arithmetic_addition,qwen,True
+lexical_category,gemma,True
+lexical_category,llama,True
+lexical_category,qwen,True

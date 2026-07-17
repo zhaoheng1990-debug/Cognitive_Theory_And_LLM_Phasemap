@@ -1,0 +1,4 @@
+"executed_order","full_vocab_top1_agreement","candidate_choice_agreement","mean_js_divergence","future_chord_difference_mean","future_chord_difference_ci_low","future_chord_difference_ci_high"
+"native",1,1,0,0,NA,NA
+"reverse",0,0.479166666666667,0.692093908786774,0.302781536088635,0.298418311181012,0.306681322477137
+"fixed_permutation",0,0.479166666666667,0.691866219043732,0.151829276642578,0.139349163011927,0.163674475799902

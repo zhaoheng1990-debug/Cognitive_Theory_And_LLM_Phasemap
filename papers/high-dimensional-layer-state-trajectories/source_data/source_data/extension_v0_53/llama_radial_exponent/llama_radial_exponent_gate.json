@@ -1,0 +1,9 @@
+{
+  "window": "llama_radial_exponent",
+  "monotonic_task_count": 7,
+  "gamma_zero_joint_pass_count": 0,
+  "gamma_1_25_joint_pass_count": 7,
+  "radial_exponent_dose_response_support": true,
+  "interpretation": "the raw alignment statistic is controlled by radial norm scaling",
+  "claim_boundary": "diagnostic coordinate transformation for one Llama checkpoint; not a functional, semantic, geodesic or architecture-wide law"
+}

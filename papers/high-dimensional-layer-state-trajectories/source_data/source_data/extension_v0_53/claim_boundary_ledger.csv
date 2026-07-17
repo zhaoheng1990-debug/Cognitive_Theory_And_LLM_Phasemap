@@ -1,0 +1,36 @@
+claim_key,question,decision,key_evidence,allowed_claim,claim_boundary,verification
+architecture_continuity,"Does random initialization abolish cross-depth relational continuity?
+",SUPPORTED_BOUNDED,"18/18 architecture-task-seed conditions passed cross-half and quarter-split unbiased CKA against lag-1-matched, block-donor and independent mapping nulls.
+","Fixed random Transformer mappings can preserve prompt relational geometry across depth; this is an architecture-compatible continuity scaffold.
+","Random networks contain learned semantics or reasoning; continuity establishes endpoint direction, native-order privilege or a geodesic.
+",PASS
+execution_order,"Is greater chord-directed straightness sufficient for native function?
+",FALSIFIED,"Reverse and fixed-permutation executions retained positive geometry yet had 0 full-vocabulary top-1 agreement, 0.479 candidate agreement and mean JSD near 0.692.
+","Layer order is functionally consequential, and chord-directedness alone is not a sufficient statistic for native computation.
+","Straighter trajectories reason better, or every layer reordering necessarily reduces correctness on every task.
+",PASS
+incremental_path_history,"Does ordered prefix history generally predict the final boundary beyond current state?
+",NOT_SUPPORTED_GENERAL,"6/18 conditions passed in the first audit, confined to the addition task; the lexical task passed 0/9 and the independent mixed-arithmetic replication passed 0/9.
+","The tested path summaries provide no general held-out incremental prediction of the final candidate boundary beyond current-state baselines.
+","History is universally irrelevant, or the analysis discovered a predictive dynamical equation or answer-correctness law.
+",PASS; PASS
+actuator_coordinate_margin,"Is there a bounded actuator-to-coordinate-to-margin control chain?
+",SUPPORTED_BOUNDED_WITH_NEGATIVE_SPECIFICITY,"Held-out mean DeltaU shift 7.601 and margin shift 3.954; adding DeltaU shift raised grouped-CV R2 from 0.739 to 0.803 (block-null P=0.001); dose correlations were positive. Safety-matched action reassignment was null (P=0.804).
+","In the Qwen controlled relation-graph boundary, a bounded actuator-coordinate-margin chain is supported; output crossing corresponds exactly to margin crossing.
+","Formal natural mediation, personalized dose specificity, answer correctness, open-ended or deployment control, or disclosure of an untested confidence-gated control ontology.
+",PASS
+llama_radial_sensitivity,"Does the Llama raw-residual anomaly reflect directional endpoint flow?
+",FALSIFIED_DIRECTIONAL; SUPPORTED_RADIAL_SENSITIVITY,"Direction-only paths passed 0/7, norm-only fixed-direction paths 7/7; the strict binary radial gate failed, but a frozen radial exponent produced monotonic effects in 7/7 tasks, with gamma=0 passing 0/7 and gamma=1.25 passing 7/7.
+","The Llama raw alignment statistic is strongly controlled by radial norm scaling; the mixed final RMSNorm endpoint amplifies but does not solely create the effect.
+","The raw statistic demonstrates semantic direction, geodesic flow, function, or an architecture-wide law.
+",PASS
+pythia_component_compatibility,"Is trained lexical function localized to one component or to compatibility?
+",SUPPORTED_DISTRIBUTED_COMPATIBILITY,"The all-trained Pythia condition gained 0.377 accuracy over step 0. The best isolated trained component reached 0.604; the best conditions without trained blocks or output head reached 0.604 and 0.585. Superadditive margin excess was 2.621 (95% CI 1.252-3.987). E+B+W with step-0 final norm reached 0.887.
+","On this held-out lexical diagnostic, trained E/B/W compatibility carries task function; final normalization primarily changes margin scale rather than being necessary for pair accuracy.
+","One component contains semantics, the factorization is universal, or hybrid models are natural training states.
+",PASS
+pythia_training_coordinates,"Can task-conditioned metrics separate learned organization from random continuity?
+",SUPPORTED_WITH_CRITICAL_NEGATIVE_CONTROL,"Candidate-coordinate order gain was absent at step 0, significant from step 1000, and correlated with accuracy across seven checkpoints (Spearman rho=0.75). Within-checkpoint category F1 was already 1.0 at step 0 and failed the training-gain gate; the fixed final-coordinate transfer rose from F1=0.041 at step 0 to 1.0 final.
+","Training-associated task organization is visible in fixed task-conditioned coordinates even though raw architecture-compatible geometry is present at initialization.
+","Linear decodability at random initialization is learned semantics, or the learned coordinate is the unique metric or the high-dimensional process itself.
+",PASS

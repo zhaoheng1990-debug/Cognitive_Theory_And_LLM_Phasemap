@@ -1,0 +1,12 @@
+{
+  "window": "control_mediation",
+  "heldout_displacement_pass": true,
+  "incremental_mediator_pass": true,
+  "train_grid_dose_response_pass": true,
+  "boundary_correspondence_pass": true,
+  "bounded_control_chain_support": true,
+  "personalized_assignment_specificity": false,
+  "matched_assignment_empirical_p": 0.803921568627451,
+  "interpretation": "bounded actuator-coordinate-margin chain; personalized assignment not supported",
+  "claim_boundary": "Qwen controlled relation-graph candidate boundary only; mechanistic-chain audit, not a formal natural indirect effect, answer correctness, open-ended generation, deployment control, universal dynamics or a hidden confidence-gated control ontology"
+}

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "prompt_rows": 144,
+  "recalculated": [
+    {
+      "executed_order": "native",
+      "top1_agreement": 1.0,
+      "candidate_agreement": 1.0,
+      "mean_js": 0.0,
+      "disruption_components": 0,
+      "disruption_gate": false
+    },
+    {
+      "executed_order": "reverse",
+      "top1_agreement": 0.0,
+      "candidate_agreement": 0.4791666666666667,
+      "mean_js": 0.6920939162500002,
+      "disruption_components": 3,
+      "disruption_gate": true
+    },
+    {
+      "executed_order": "fixed_permutation",
+      "top1_agreement": 0.0,
+      "candidate_agreement": 0.4791666666666667,
+      "mean_js": 0.691866165625,
+      "disruption_components": 3,
+      "disruption_gate": true
+    }
+  ],
+  "reverse_dissociation_pass": true,
+  "fixed_permutation_replication_pass": true,
+  "reconstruction_audit": {
+    "audit_prompts": 8,
+    "full_vocab_top1_agreement": 1.0,
+    "candidate_margin_max_abs_error": 0.03125,
+    "passes": true
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "repo_id": "EleutherAI/pythia-160m",
+  "early_revision": "step0",
+  "trained_revision": "step143000",
+  "n_prompts": 53,
+  "conditions": [
+    "0000",
+    "0001",
+    "0010",
+    "0011",
+    "0100",
+    "0101",
+    "0110",
+    "0111",
+    "1000",
+    "1001",
+    "1010",
+    "1011",
+    "1100",
+    "1101",
+    "1110",
+    "1111"
+  ],
+  "component_order": [
+    "E",
+    "B",
+    "N",
+    "W"
+  ],
+  "component_code_definition": "0=step0, 1=step143000; order E,B,N,W",
+  "input_output_tied": false,
+  "device": "cuda",
+  "seed": 2026071711,
+  "bootstrap": 5000,
+  "python": "3.11.15",
+  "torch": "2.5.1+cu121",
+  "transformers": "5.9.0",
+  "fingerprints": {
+    "step0": {
+      "E": {
+        "sha256": "7cbee4b6da50a74082269b92312e8fe856eb76df9fad9fa6d996aaee7ff696a0",
+        "n_values": 38633472,
+        "l2_norm": 141.83088458997597
+      },
+      "B": {
+        "sha256": "50eb6d0259b1e8f38fc34426a8a7d4bed967e3b49983887dcec96621c204fc18",
+        "n_values": 85054464,
+        "l2_norm": 213.34664890683575
+      },
+      "N": {
+        "sha256": "820205dfca220409861a0537284d1ab56f4e05260b4ef6ff718dfb7829536875",
+        "n_values": 1536,
+        "l2_norm": 27.712812921102035
+      },
+      "W": {
+        "sha256": "bfe20541146ae1193f7d20afbfa5a3059ae65ec1b01f1a695737d300a93eee2d",
+        "n_values": 38633472,
+        "l2_norm": 141.8251198174172
+      }
+    },
+    "step143000": {
+      "E": {
+        "sha256": "5047965d8e64c70aa500f9854866c3ea34dec73633042ece473792dd1082b34e",
+        "n_values": 38633472,
+        "l2_norm": 177.41932781361442
+      },
+      "B": {
+        "sha256": "ee25d33d7d8adfb29f60cf635308457f979334585a28110f7adf86b2368a3943",
+        "n_values": 85054464,
+        "l2_norm": 1711.2892459359093
+      },
+      "N": {
+        "sha256": "a26d6e72690633d6f3fdc8dcfff70656a0788ac38cf55ab4015e4c326409cada",
+        "n_values": 1536,
+        "l2_norm": 203.85039183753042
+      },
+      "W": {
+        "sha256": "720e5daad68b9d5c73d12fc78c46cf59a45578cdd69a0f8e94784bb55c5c9245",
+        "n_values": 38633472,
+        "l2_norm": 713.0717575458017
+      }
+    }
+  }
+}

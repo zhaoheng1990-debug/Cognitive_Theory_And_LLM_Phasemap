@@ -1,0 +1,9 @@
+{
+  "script": "<local-path> 论文撰写\\analyze_layer_order_behavior_v0_1.py",
+  "model_path": "<local-path>",
+  "phase2_dir": "<local-path> 论文撰写\\architecture_semantic_geometry_v0_1\\phase2_residual_execution",
+  "bootstrap": 10000,
+  "sign_flip_permutations": 100000,
+  "seed": 2026071712,
+  "protocol": "<local-path> 论文撰写\\high_control_validation_v0_1\\layer_order_behavior_protocol_v0_1.md"
+}

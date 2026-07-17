@@ -1,0 +1,5 @@
+/.gitattributes text eol=lf
+code/extension_v0_53/** text eol=lf
+source_data/source_data/extension_v0_53/** text eol=lf
+paper/arxiv_tex_v0_53/** text eol=lf
+*.pdf binary

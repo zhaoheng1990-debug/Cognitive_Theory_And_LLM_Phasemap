@@ -1,0 +1,38 @@
+{
+  "verification": "PASS",
+  "output_dir": "<local-path> 论文撰写\\high_control_validation_v0_1\\mixed_arithmetic_path_replication_confirmatory",
+  "row_counts": {
+    "predictions": 3456,
+    "performance": 45,
+    "comparisons": 36,
+    "nulls": 1791,
+    "gates": 9
+  },
+  "expected_counts": {
+    "predictions": 3456,
+    "performance": 45,
+    "comparisons": 36,
+    "nulls": 1791,
+    "gates": 9
+  },
+  "finite_values": true,
+  "max_errors": {
+    "balanced_accuracy": 5.551115123125783e-17,
+    "contrast_difference": 2.220446049250313e-16,
+    "shuffle_p": 0.0,
+    "shuffle_q95": 0.0,
+    "bh_q": 4.440892098500626e-16
+  },
+  "gate_match": true,
+  "decision_match": true,
+  "recomputed_pass_count": 0,
+  "sha256": {
+    "predictions": "cffb0d72d03763e9e0512203baf931526f93deac6618fdca985c959161801b29",
+    "performance": "1e4c4f6a1efcb9693acfbae87743ea9108edd903bfd483d7c05d02f376cc2299",
+    "comparisons": "45e4e274e688e74847a4b356350c47eac12dce9c1c07090b20436df59e7ded92",
+    "nulls": "9199b83a60105b9b1f0d62479599d149c447c79348082769ff5bbe1733ea53af",
+    "gates": "c45ccb6d0953a10777ce98b965eec4107ae48d95caee792adfb87ffa9db51b61",
+    "decision": "3f64e0fd861789f7bb9731bdd49298cec50f960004a8b7fe09a058b463929c04",
+    "config": "1f624464b8ebf125e86423ef9c2b518b1ebca0f4891b0680d5536697e6bc7735"
+  }
+}

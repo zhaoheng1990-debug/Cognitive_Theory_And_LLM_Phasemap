@@ -1,0 +1,9 @@
+{
+  "window": "trajectory_incremental_prediction",
+  "condition_pass_count": 0,
+  "condition_total": 9,
+  "broad_path_memory_support": false,
+  "bounded_path_memory_support": false,
+  "interpretation": "no general incremental path-memory support beyond current state",
+  "claim_boundary": "held-out prediction of a final candidate readback boundary; not answer correctness, hidden-state closure or a universal dynamical equation"
+}

@@ -1,0 +1,57 @@
+{
+  "verification": "PASS",
+  "row_counts": {
+    "displacement": 2,
+    "displacement_bootstrap": 10000,
+    "mediator_predictions": 87,
+    "mediator_nulls": 999,
+    "mediator_summary": 1,
+    "dose_prompt": 603,
+    "dose_summary": 3,
+    "dose_bootstrap": 15000,
+    "dose_nulls": 2997,
+    "boundary": 87
+  },
+  "expected_counts": {
+    "displacement": 2,
+    "displacement_bootstrap": 10000,
+    "mediator_predictions": 87,
+    "mediator_nulls": 999,
+    "mediator_summary": 1,
+    "dose_prompt": 603,
+    "dose_summary": 3,
+    "dose_bootstrap": 15000,
+    "dose_nulls": 2997,
+    "boundary": 87
+  },
+  "finite_values": true,
+  "max_reconstruction_errors": {
+    "displacement_DeltaU_shift": 0.0,
+    "displacement_margin_shift": 0.0,
+    "mediator_summary": 1.8041124150158794e-16,
+    "dose_summary": 0.0
+  },
+  "recomputed_gates": {
+    "heldout_displacement_pass": true,
+    "incremental_mediator_pass": true,
+    "train_grid_dose_response_pass": true,
+    "boundary_correspondence_pass": true,
+    "bounded_control_chain_support": true,
+    "personalized_assignment_specificity": false
+  },
+  "gate_match": true,
+  "sha256": {
+    "displacement": "0274230624f8f1a16c581636af8a065f4b5ae3a215c9b92faf155f6294e5f725",
+    "displacement_bootstrap": "d7097d41f68d603aa4c6c8a12767ade5fa633d167db55ff5f4fb70d9a3454452",
+    "mediator_predictions": "96972ae3ab1315b7e7d2cb7e3586fc16cb7e2666c3ed1e7e932f2e23d7b1377b",
+    "mediator_nulls": "4b9a882ebfaa6ecc0a0e69fe86fd17ffdd67601133b1d053e67f2376f61a4565",
+    "mediator_summary": "8fee0894f5615e8d91f9b051b2632109bb7ae1c4384b3ad593b3e9aad31a397d",
+    "dose_prompt": "7c7219d812c7dd78e293dbd7bdb109eab5e222c15e68265444cad8413eb00235",
+    "dose_summary": "9345fe5eab43c9fc811137eef733aa91e728f22d796e13b1d606595ae1d2ea60",
+    "dose_bootstrap": "58b68deb0597f6842f07a8d8fe6901c75799981e9e08139b1f5db79e15fbf593",
+    "dose_nulls": "d4719864d1a05ebdd13fd1240c4ba41e10a11cf69cd820f2f3b942c0de04ddbd",
+    "boundary": "6d4794a3f12878024444eb8920e97eee82c52905f8efdb0cfd10638c4c521a66",
+    "gate": "30865bf95c5b1503adb69cb3b5760a95fe99d1c6b0978b40e6cf4ff207a75729",
+    "config": "f7b49be09bfd0c1b22f8db1c1b484ec10c1a707ae4a77ff44e31d20fd9a9e1c8"
+  }
+}

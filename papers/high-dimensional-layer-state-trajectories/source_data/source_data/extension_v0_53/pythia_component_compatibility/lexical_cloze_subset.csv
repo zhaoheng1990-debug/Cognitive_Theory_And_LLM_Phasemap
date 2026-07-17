@@ -1,0 +1,796 @@
+﻿prompt_id,problem_id,condition,mechanism,mechanism_id,expression,correct_value,distractor_value,clean_label,conflict_label,prompt,category,source_prompt,analysis_prompt,clean_token_id,conflict_token_id
+lexical_000_clean,0,clean,stable,0,category=colour,Red,North,Red,North,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: Red
+Candidate 2: North
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",colour,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: Red
+Candidate 2: North
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Blue and Green are colours. Another colour is,4410,3729
+lexical_001_clean,1,clean,stable,0,category=direction,North,Silver,North,Silver,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: Silver
+Candidate 2: North
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",direction,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: Silver
+Candidate 2: North
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",East and South are directions. Another direction is,3729,16309
+lexical_003_clean,3,clean,stable,0,category=shape,Circle,Ocean,Circle,Ocean,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: shape.
+Candidate 1: Ocean
+Candidate 2: Circle
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",shape,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: shape.
+Candidate 1: Ocean
+Candidate 2: Circle
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Square and Star are shapes. Another shape is,29572,17323
+lexical_004_clean,4,clean,stable,0,category=landscape feature,River,Sun,River,Sun,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: River
+Candidate 2: Sun
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",landscape feature,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: River
+Candidate 2: Sun
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Forest and Mountain are landscape features. Another landscape feature is,7121,4146
+lexical_005_clean,5,clean,stable,0,category=sky object,Sun,Orange,Sun,Orange,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Orange
+Candidate 2: Sun
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",sky object,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Orange
+Candidate 2: Sun
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Cloud and Moon are sky objects. Another sky object is,4146,21491
+lexical_006_clean,6,clean,stable,0,category=fruit,Apple,Green,Apple,Green,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: Apple
+Candidate 2: Green
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",fruit,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: Apple
+Candidate 2: Green
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Lemon and Orange are fruits. Another fruit is,8217,6115
+lexical_008_clean,8,clean,stable,0,category=direction,South,Square,South,Square,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: South
+Candidate 2: Square
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",direction,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: South
+Candidate 2: Square
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",East and North are directions. Another direction is,3684,15894
+lexical_009_clean,9,clean,stable,0,category=metal,Silver,Forest,Silver,Forest,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: metal.
+Candidate 1: Forest
+Candidate 2: Silver
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",metal,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: metal.
+Candidate 1: Forest
+Candidate 2: Silver
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Copper and Gold are metals. Another metal is,16309,16015
+lexical_010_clean,10,clean,stable,0,category=shape,Square,Star,Square,Star,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: shape.
+Candidate 1: Square
+Candidate 2: Star
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",shape,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: shape.
+Candidate 1: Square
+Candidate 2: Star
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Circle and Star are shapes. Another shape is,15894,8141
+lexical_011_clean,11,clean,stable,0,category=landscape feature,Mountain,Apple,Mountain,Apple,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: Apple
+Candidate 2: Mountain
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",landscape feature,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: Apple
+Candidate 2: Mountain
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Forest and Ocean are landscape features. Another landscape feature is,15939,8217
+lexical_012_clean,12,clean,stable,0,category=sky object,Moon,Blue,Moon,Blue,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Moon
+Candidate 2: Blue
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",sky object,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Moon
+Candidate 2: Blue
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Cloud and Star are sky objects. Another sky object is,16363,10063
+lexical_013_clean,13,clean,stable,0,category=fruit,Orange,East,Orange,East,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: East
+Candidate 2: Orange
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",fruit,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: East
+Candidate 2: Orange
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Apple and Lemon are fruits. Another fruit is,21491,5791
+lexical_014_clean,14,clean,stable,0,category=colour,Green,Circle,Green,Circle,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: Green
+Candidate 2: Circle
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",colour,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: Green
+Candidate 2: Circle
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Blue and Red are colours. Another colour is,6115,29572
+lexical_015_clean,15,clean,stable,0,category=direction,East,Mountain,East,Mountain,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: Mountain
+Candidate 2: East
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",direction,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: Mountain
+Candidate 2: East
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",North and South are directions. Another direction is,5791,15939
+lexical_016_clean,16,clean,stable,0,category=metal,Gold,Cloud,Gold,Cloud,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: metal.
+Candidate 1: Gold
+Candidate 2: Cloud
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",metal,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: metal.
+Candidate 1: Gold
+Candidate 2: Cloud
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Copper and Iron are metals. Another metal is,7284,18189
+lexical_018_clean,18,clean,stable,0,category=landscape feature,Forest,Red,Forest,Red,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: Forest
+Candidate 2: Red
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",landscape feature,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: Forest
+Candidate 2: Red
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Mountain and Ocean are landscape features. Another landscape feature is,16015,4410
+lexical_019_clean,19,clean,stable,0,category=sky object,Cloud,South,Cloud,South,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: South
+Candidate 2: Cloud
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",sky object,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: South
+Candidate 2: Cloud
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Moon and Star are sky objects. Another sky object is,18189,3684
+lexical_020_clean,20,clean,stable,0,category=fruit,Lemon,Gold,Lemon,Gold,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: Lemon
+Candidate 2: Gold
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",fruit,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: Lemon
+Candidate 2: Gold
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Apple and Orange are fruits. Another fruit is,44513,7284
+lexical_021_clean,21,clean,stable,0,category=colour,Yellow,River,Yellow,River,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: River
+Candidate 2: Yellow
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",colour,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: River
+Candidate 2: Yellow
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Blue and Green are colours. Another colour is,25056,7121
+lexical_022_clean,22,clean,stable,0,category=direction,West,Moon,West,Moon,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: West
+Candidate 2: Moon
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",direction,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: West
+Candidate 2: Moon
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",East and North are directions. Another direction is,4255,16363
+lexical_023_clean,23,clean,stable,0,category=metal,Iron,Lemon,Iron,Lemon,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: metal.
+Candidate 1: Lemon
+Candidate 2: Iron
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",metal,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: metal.
+Candidate 1: Lemon
+Candidate 2: Iron
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Copper and Gold are metals. Another metal is,17826,44513
+lexical_024_clean,24,clean,stable,0,category=shape,Star,Yellow,Star,Yellow,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: shape.
+Candidate 1: Star
+Candidate 2: Yellow
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",shape,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: shape.
+Candidate 1: Star
+Candidate 2: Yellow
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Circle and Square are shapes. Another shape is,8141,25056
+lexical_025_clean,25,clean,stable,0,category=landscape feature,Ocean,North,Ocean,North,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: North
+Candidate 2: Ocean
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",landscape feature,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: North
+Candidate 2: Ocean
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Forest and Mountain are landscape features. Another landscape feature is,17323,3729
+lexical_026_clean,26,clean,stable,0,category=sky object,Star,Silver,Star,Silver,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Star
+Candidate 2: Silver
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",sky object,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Star
+Candidate 2: Silver
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Cloud and Moon are sky objects. Another sky object is,8141,16309
+lexical_028_clean,28,clean,stable,0,category=colour,Red,Sun,Red,Sun,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: Red
+Candidate 2: Sun
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",colour,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: Red
+Candidate 2: Sun
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Blue and Green are colours. Another colour is,4410,4146
+lexical_029_clean,29,clean,stable,0,category=direction,North,Orange,North,Orange,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: Orange
+Candidate 2: North
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",direction,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: Orange
+Candidate 2: North
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",East and South are directions. Another direction is,3729,21491
+lexical_031_clean,31,clean,stable,0,category=shape,Circle,West,Circle,West,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: shape.
+Candidate 1: West
+Candidate 2: Circle
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",shape,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: shape.
+Candidate 1: West
+Candidate 2: Circle
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Square and Star are shapes. Another shape is,29572,4255
+lexical_033_clean,33,clean,stable,0,category=sky object,Sun,Square,Sun,Square,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Square
+Candidate 2: Sun
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",sky object,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Square
+Candidate 2: Sun
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Cloud and Moon are sky objects. Another sky object is,4146,15894
+lexical_034_clean,34,clean,stable,0,category=fruit,Apple,Forest,Apple,Forest,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: Apple
+Candidate 2: Forest
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",fruit,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: Apple
+Candidate 2: Forest
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Lemon and Orange are fruits. Another fruit is,8217,16015
+lexical_035_clean,35,clean,stable,0,category=colour,Blue,Apple,Blue,Apple,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: Apple
+Candidate 2: Blue
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",colour,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: Apple
+Candidate 2: Blue
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Green and Red are colours. Another colour is,10063,8217
+lexical_036_clean,36,clean,stable,0,category=direction,South,Blue,South,Blue,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: South
+Candidate 2: Blue
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",direction,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: South
+Candidate 2: Blue
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",East and North are directions. Another direction is,3684,10063
+lexical_037_clean,37,clean,stable,0,category=metal,Silver,East,Silver,East,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: metal.
+Candidate 1: East
+Candidate 2: Silver
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",metal,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: metal.
+Candidate 1: East
+Candidate 2: Silver
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Copper and Gold are metals. Another metal is,16309,5791
+lexical_038_clean,38,clean,stable,0,category=shape,Square,Iron,Square,Iron,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: shape.
+Candidate 1: Square
+Candidate 2: Iron
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",shape,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: shape.
+Candidate 1: Square
+Candidate 2: Iron
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Circle and Star are shapes. Another shape is,15894,17826
+lexical_039_clean,39,clean,stable,0,category=landscape feature,Mountain,Circle,Mountain,Circle,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: Circle
+Candidate 2: Mountain
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",landscape feature,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: Circle
+Candidate 2: Mountain
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Forest and Ocean are landscape features. Another landscape feature is,15939,29572
+lexical_040_clean,40,clean,stable,0,category=sky object,Moon,Mountain,Moon,Mountain,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Moon
+Candidate 2: Mountain
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",sky object,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Moon
+Candidate 2: Mountain
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Cloud and Star are sky objects. Another sky object is,16363,15939
+lexical_041_clean,41,clean,stable,0,category=fruit,Orange,Cloud,Orange,Cloud,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: Cloud
+Candidate 2: Orange
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",fruit,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: Cloud
+Candidate 2: Orange
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Apple and Lemon are fruits. Another fruit is,21491,18189
+lexical_042_clean,42,clean,stable,0,category=colour,Green,North,Green,North,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: Green
+Candidate 2: North
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",colour,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: Green
+Candidate 2: North
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Blue and Red are colours. Another colour is,6115,3729
+lexical_043_clean,43,clean,stable,0,category=direction,East,Silver,East,Silver,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: Silver
+Candidate 2: East
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",direction,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: Silver
+Candidate 2: East
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",North and South are directions. Another direction is,5791,16309
+lexical_046_clean,46,clean,stable,0,category=landscape feature,Forest,Sun,Forest,Sun,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: Forest
+Candidate 2: Sun
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",landscape feature,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: Forest
+Candidate 2: Sun
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Mountain and Ocean are landscape features. Another landscape feature is,16015,4146
+lexical_047_clean,47,clean,stable,0,category=sky object,Cloud,Orange,Cloud,Orange,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Orange
+Candidate 2: Cloud
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",sky object,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Orange
+Candidate 2: Cloud
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Moon and Star are sky objects. Another sky object is,18189,21491
+lexical_048_clean,48,clean,stable,0,category=fruit,Lemon,Green,Lemon,Green,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: Lemon
+Candidate 2: Green
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",fruit,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: Lemon
+Candidate 2: Green
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Apple and Orange are fruits. Another fruit is,44513,6115
+lexical_049_clean,49,clean,stable,0,category=colour,Yellow,North,Yellow,North,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: North
+Candidate 2: Yellow
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",colour,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: North
+Candidate 2: Yellow
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Blue and Green are colours. Another colour is,25056,3729
+lexical_050_clean,50,clean,stable,0,category=direction,West,Silver,West,Silver,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: West
+Candidate 2: Silver
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",direction,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: West
+Candidate 2: Silver
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",East and North are directions. Another direction is,4255,16309
+lexical_052_clean,52,clean,stable,0,category=shape,Star,Ocean,Star,Ocean,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: shape.
+Candidate 1: Star
+Candidate 2: Ocean
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",shape,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: shape.
+Candidate 1: Star
+Candidate 2: Ocean
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Circle and Square are shapes. Another shape is,8141,17323
+lexical_053_clean,53,clean,stable,0,category=landscape feature,Ocean,Sun,Ocean,Sun,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: Sun
+Candidate 2: Ocean
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",landscape feature,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: Sun
+Candidate 2: Ocean
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Forest and Mountain are landscape features. Another landscape feature is,17323,4146
+lexical_054_clean,54,clean,stable,0,category=sky object,Star,Orange,Star,Orange,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Star
+Candidate 2: Orange
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",sky object,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Star
+Candidate 2: Orange
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Cloud and Moon are sky objects. Another sky object is,8141,21491
+lexical_055_clean,55,clean,stable,0,category=fruit,Pear,Green,Pear,Green,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: Green
+Candidate 2: Pear
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",fruit,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: Green
+Candidate 2: Pear
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Apple and Lemon are fruits. Another fruit is,14837,6115
+lexical_057_clean,57,clean,stable,0,category=direction,North,Square,North,Square,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: Square
+Candidate 2: North
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",direction,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: direction.
+Candidate 1: Square
+Candidate 2: North
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",East and South are directions. Another direction is,3729,15894
+lexical_059_clean,59,clean,stable,0,category=shape,Circle,Star,Circle,Star,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: shape.
+Candidate 1: Star
+Candidate 2: Circle
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",shape,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: shape.
+Candidate 1: Star
+Candidate 2: Circle
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Square and Star are shapes. Another shape is,29572,8141
+lexical_060_clean,60,clean,stable,0,category=landscape feature,River,Apple,River,Apple,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: River
+Candidate 2: Apple
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",landscape feature,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: landscape feature.
+Candidate 1: River
+Candidate 2: Apple
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Forest and Mountain are landscape features. Another landscape feature is,7121,8217
+lexical_061_clean,61,clean,stable,0,category=sky object,Sun,Blue,Sun,Blue,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Blue
+Candidate 2: Sun
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",sky object,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: sky object.
+Candidate 1: Blue
+Candidate 2: Sun
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Cloud and Moon are sky objects. Another sky object is,4146,10063
+lexical_062_clean,62,clean,stable,0,category=fruit,Apple,East,Apple,East,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: Apple
+Candidate 2: East
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",fruit,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: fruit.
+Candidate 1: Apple
+Candidate 2: East
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Lemon and Orange are fruits. Another fruit is,8217,5791
+lexical_063_clean,63,clean,stable,0,category=colour,Blue,Circle,Blue,Circle,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: Circle
+Candidate 2: Blue
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",colour,"Example 1: Which candidate is a colour? Red or River. Answer: Red.
+Example 2: Which candidate is a fruit? Stone or Pear. Answer: Pear.
+Now answer the new item.
+Target category: colour.
+Candidate 1: Circle
+Candidate 2: Blue
+Which candidate belongs to the target category?
+Answer with exactly one candidate word:",Green and Red are colours. Another colour is,10063,29572

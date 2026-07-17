@@ -1,0 +1,3 @@
+﻿executed_order,future_chord_difference_mean,future_chord_difference_ci_low,future_chord_difference_ci_high,future_chord_sign_flip_p,passes_positive_geometry_contrast
+reverse,0.30278153608863545,0.2984183111810125,0.306681322477137,9.99990000099999e-06,True
+fixed_permutation,0.15182927664257775,0.13934916301192662,0.16367447579990155,9.99990000099999e-06,True

@@ -42,3 +42,6 @@ Row-level evidence and plotted inputs for the independent task, random-initializ
 
 ## v0.52 extension
 The task-generalization, predictive-forecasting, cross-architecture initialization and cross-checkpoint output-control evidence is under `source_data/extension_v0_52/`. See its README and checksum manifest.
+
+## v0.53 extension
+Falsification-first architecture, execution, metric, training and control evidence is under `source_data/extension_v0_53/`. See its README and checksum manifest.

@@ -1,0 +1,4 @@
+﻿executed_order,n_prompts,full_vocab_top1_agreement,candidate_choice_agreement,mean_js_divergence,mean_js_divergence_ci_low,mean_js_divergence_ci_high,median_native_top1_rank,mean_abs_candidate_margin_change,unambiguous_n,unambiguous_task_accuracy,native_unambiguous_task_accuracy,unambiguous_accuracy_change,functional_disruption_components,passes_strong_functional_disruption
+native,48,1.0,1.0,0.0,0.0,0.0,1.0,0.0,32,0.65625,0.65625,0.0,0,False
+reverse,48,0.0,0.4791666666666667,0.6920939087867737,0.6916605536825955,0.6924749075745543,23520.5,4.769960880279541,32,0.5,0.65625,-0.15625,3,True
+fixed_permutation,48,0.0,0.4791666666666667,0.6918662190437317,0.6912815853953362,0.6923877321183681,19704.5,4.256232738494873,32,0.5,0.65625,-0.15625,3,True

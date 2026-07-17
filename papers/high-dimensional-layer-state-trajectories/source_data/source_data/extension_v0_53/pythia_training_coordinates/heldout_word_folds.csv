@@ -1,0 +1,54 @@
+﻿problem_id,category,clean_label,conflict_label,category_id,fold
+0,colour,Red,North,0,2
+1,direction,North,Silver,1,1
+3,shape,Circle,Ocean,5,0
+4,landscape feature,River,Sun,3,0
+5,sky object,Sun,Orange,6,0
+6,fruit,Apple,Green,2,0
+8,direction,South,Square,1,2
+9,metal,Silver,Forest,4,2
+10,shape,Square,Star,5,1
+11,landscape feature,Mountain,Apple,3,1
+12,sky object,Moon,Blue,6,1
+13,fruit,Orange,East,2,2
+14,colour,Green,Circle,0,1
+15,direction,East,Mountain,1,0
+16,metal,Gold,Cloud,4,0
+18,landscape feature,Forest,Red,3,0
+19,sky object,Cloud,South,6,0
+20,fruit,Lemon,Gold,2,1
+21,colour,Yellow,River,0,0
+22,direction,West,Moon,1,0
+23,metal,Iron,Lemon,4,1
+24,shape,Star,Yellow,5,2
+25,landscape feature,Ocean,North,3,2
+26,sky object,Star,Silver,6,2
+28,colour,Red,Sun,0,2
+29,direction,North,Orange,1,1
+31,shape,Circle,West,5,0
+33,sky object,Sun,Square,6,0
+34,fruit,Apple,Forest,2,0
+35,colour,Blue,Apple,0,0
+36,direction,South,Blue,1,2
+37,metal,Silver,East,4,2
+38,shape,Square,Iron,5,1
+39,landscape feature,Mountain,Circle,3,1
+40,sky object,Moon,Mountain,6,1
+41,fruit,Orange,Cloud,2,2
+42,colour,Green,North,0,1
+43,direction,East,Silver,1,0
+46,landscape feature,Forest,Sun,3,0
+47,sky object,Cloud,Orange,6,0
+48,fruit,Lemon,Green,2,1
+49,colour,Yellow,North,0,0
+50,direction,West,Silver,1,0
+52,shape,Star,Ocean,5,2
+53,landscape feature,Ocean,Sun,3,2
+54,sky object,Star,Orange,6,2
+55,fruit,Pear,Green,2,0
+57,direction,North,Square,1,1
+59,shape,Circle,Star,5,0
+60,landscape feature,River,Apple,3,0
+61,sky object,Sun,Blue,6,0
+62,fruit,Apple,East,2,0
+63,colour,Blue,Circle,0,0

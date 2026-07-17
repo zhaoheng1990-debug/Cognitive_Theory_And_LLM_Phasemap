@@ -1,0 +1,27 @@
+{
+  "full_training_accuracy_gain": 0.37735849056603776,
+  "best_single_component_accuracy": 0.6037735849056604,
+  "best_no_trained_blocks_accuracy": 0.6037735849056604,
+  "best_no_trained_output_head_accuracy": 0.5849056603773585,
+  "superadditive_margin_excess_mean": 2.621184726931014,
+  "superadditive_margin_excess_ci": [
+    1.2523964647976857,
+    3.9870504991063522
+  ],
+  "gates": {
+    "training_function": true,
+    "no_single_component_sufficient": true,
+    "trained_blocks_necessary": true,
+    "trained_output_head_necessary": true,
+    "superadditive_compatibility": true,
+    "anchor_reproduction": true
+  },
+  "anchor_checks": {
+    "early_accuracy_within_one_prompt": true,
+    "trained_accuracy_within_one_prompt": true,
+    "early_margin_within_0_02": true,
+    "trained_margin_within_0_02": true
+  },
+  "distributed_compatibility_support": true,
+  "strict_superadditive_support": true
+}

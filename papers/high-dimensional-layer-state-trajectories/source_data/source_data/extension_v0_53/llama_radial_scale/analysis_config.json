@@ -1,0 +1,9 @@
+{
+  "input_dir": "<local-path> 论文撰写\\high_control_validation_v0_1\\llama_consistent_residual_states",
+  "endpoint_results": "<local-path> 论文撰写\\high_control_validation_v0_1\\llama_residual_coordinate_confirmatory",
+  "donor_nulls": 199,
+  "bootstrap": 4000,
+  "seed": 2026071722,
+  "device": "cuda",
+  "protocol": "<local-path> 论文撰写\\high_control_validation_v0_1\\llama_radial_scale_followup_protocol_v0_1.md"
+}

@@ -1,0 +1,9 @@
+{
+  "script": "<local-path> 论文撰写\\analyze_random_cross_task_replication_v0_1.py",
+  "state_root": "<local-path> 论文撰写\\high_control_validation_v0_1\\random_cross_task_states",
+  "null_repeats": 199,
+  "bootstrap_repeats": 4000,
+  "block_size": 4,
+  "seed": 2026071711,
+  "protocol": "<local-path> 论文撰写\\high_control_validation_v0_1\\random_cross_task_protocol_v0_1.md"
+}

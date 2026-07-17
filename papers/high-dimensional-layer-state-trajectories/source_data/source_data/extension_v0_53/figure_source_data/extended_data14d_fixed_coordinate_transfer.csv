@@ -1,0 +1,15 @@
+"revision","training_step","coordinate","macro_f1"
+"step0",0,"Refit within checkpoint",1
+"step128",128,"Refit within checkpoint",0.940630797773655
+"step1000",1000,"Refit within checkpoint",1
+"step4000",4000,"Refit within checkpoint",1
+"step16000",16000,"Refit within checkpoint",1
+"step64000",64000,"Refit within checkpoint",1
+"step143000",143000,"Refit within checkpoint",1
+"step0",0,"Fixed final coordinate",0.0414746543778802
+"step128",128,"Fixed final coordinate",0.0414746543778802
+"step1000",1000,"Fixed final coordinate",0.701298701298701
+"step4000",4000,"Fixed final coordinate",0.96530612244898
+"step16000",16000,"Fixed final coordinate",1
+"step64000",64000,"Fixed final coordinate",1
+"step143000",143000,"Fixed final coordinate",1

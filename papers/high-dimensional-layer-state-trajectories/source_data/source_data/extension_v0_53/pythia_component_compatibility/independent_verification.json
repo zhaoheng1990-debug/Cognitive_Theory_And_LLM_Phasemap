@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "checks": {
+    "row_count_16x53": true,
+    "all_conditions_present": true,
+    "each_condition_has_53_prompts": true,
+    "condition_prompt_keys_unique": true,
+    "prompt_sets_identical": true,
+    "condition_bits_match_columns": true,
+    "summary_accuracy_exact": true,
+    "summary_margin_exact": true,
+    "anchor_pair_decisions_reproduce": true,
+    "independent_gates_match_report": true,
+    "orthogonal_effects_reconstruct_means": true,
+    "all_component_fingerprints_differ_across_training": true,
+    "input_output_fingerprints_distinct_within_checkpoint": true
+  },
+  "max_summary_accuracy_error": 5.551115123125783e-17,
+  "max_summary_margin_error": 9.020562075079397e-17,
+  "anchor_comparisons": {
+    "0000": {
+      "n": 53,
+      "pair_decision_agreement": 1.0,
+      "mean_margin_difference": -8.061247051886792e-05,
+      "max_absolute_margin_difference": 0.0029296875
+    },
+    "1111": {
+      "n": 53,
+      "pair_decision_agreement": 1.0,
+      "mean_margin_difference": 0.018867924528301886,
+      "max_absolute_margin_difference": 0.5
+    }
+  },
+  "independent_gates": {
+    "training_function": true,
+    "no_single_component_sufficient": true,
+    "trained_blocks_necessary": true,
+    "trained_output_head_necessary": true,
+    "superadditive_compatibility": true
+  },
+  "independent_superadditive_margin_mean": 2.621184726931014,
+  "independent_superadditive_margin_ci": [
+    1.2618891590046433,
+    3.9531762464991154
+  ],
+  "factorial_reconstruction_max_errors": {
+    "pair_correct": 3.885780586188048e-16,
+    "candidate_margin": 8.881784197001252e-16
+  },
+  "source_hashes": {
+    "component_swap_prompt_outcomes.csv": "229bee85def19725dcd22f31cbd096df5eef8822d659e4a1987b6ca8b5c4f951",
+    "component_swap_summary.csv": "853f2b89f1e6208467ef9dadd5f738180e2330d569e8d5f5cc34d7f6134aada2",
+    "orthogonal_factorial_effects.csv": "6c82f077c4d04fcc68e8913d5f687133946aa1b2c48c2eac5bc3e30eaf7a3c91",
+    "gate_decision.json": "6595d5b0b306686afdf7d4b17894cc8acd496f7ae83c3e6e843df2b4920a47e7",
+    "run_metadata.json": "ba6b98fa0f60f31ba739f278a2ca76e795e4d85a5a714567ddffbfffbabef447"
+  }
+}
