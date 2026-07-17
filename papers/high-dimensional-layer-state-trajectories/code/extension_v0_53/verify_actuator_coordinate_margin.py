@@ -20,6 +20,7 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=Path("inputs/safety_matched_nulls/verdict.json"),
     )
+    parser.add_argument("--report", type=Path, default=None)
     return parser.parse_args()
 
 
@@ -236,9 +237,11 @@ def main() -> None:
         "gate_match": gate_match,
         "sha256": {name: sha256(path) for name, path in paths.items()},
     }
-    (root / "independent_verification.json").write_text(
-        json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
+    if args.report is not None:
+        args.report.write_text(
+            json.dumps(report, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
     print(json.dumps(report, indent=2, ensure_ascii=False))
     if not passed:
         raise SystemExit(1)

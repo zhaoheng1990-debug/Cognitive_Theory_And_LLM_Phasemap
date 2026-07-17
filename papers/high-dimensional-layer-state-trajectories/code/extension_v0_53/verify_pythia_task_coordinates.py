@@ -39,6 +39,7 @@ def parse_args() -> argparse.Namespace:
         "--cache-dir", type=Path, default=Path("models")
     )
     parser.add_argument("--seed", type=int, default=2026071713)
+    parser.add_argument("--report", type=Path, default=None)
     return parser.parse_args()
 
 
@@ -295,9 +296,8 @@ def main() -> None:
             for path in (native_path, within_path, transfer_path, null_path, decision_path, metadata_path)
         },
     }
-    (args.result_dir / "independent_verification.json").write_text(
-        json.dumps(output, indent=2), encoding="utf-8"
-    )
+    if args.report is not None:
+        args.report.write_text(json.dumps(output, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(output, indent=2))
     if output["status"] != "PASS":
         raise SystemExit(1)

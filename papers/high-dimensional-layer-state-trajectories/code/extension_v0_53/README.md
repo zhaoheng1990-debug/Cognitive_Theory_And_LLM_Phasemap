@@ -26,7 +26,7 @@ python code/extension_v0_53/verify_actuator_coordinate_margin.py source_data/sou
 python code/extension_v0_53/verify_pythia_component_swap.py --result-dir source_data/source_data/extension_v0_53/pythia_component_compatibility --prior-outcomes source_data/source_data/extension_v0_53/pythia_component_compatibility/training_checkpoint_prompt_outcomes.csv
 ```
 
-The continuity, Llama metric and Pythia coordinate verifiers additionally require the derivative state arrays described in their protocols. Their frozen outputs and source hashes remain in Source Data.
+The continuity, Llama metric and Pythia coordinate verifiers additionally require the derivative state arrays described in their protocols. Their frozen outputs and source hashes remain in Source Data. Verifier commands are read-only by default; pass `--report path/to/report.json` only when a new report file is intentionally required.
 
 ## Boundaries
 

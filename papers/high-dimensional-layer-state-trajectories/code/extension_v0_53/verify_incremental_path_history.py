@@ -29,6 +29,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--expected-conditions", type=int, required=True)
     parser.add_argument("--expected-prompts-per-condition", type=int, default=384)
     parser.add_argument("--expected-order-nulls", type=int, default=199)
+    parser.add_argument("--report", type=Path, default=None)
     return parser.parse_args()
 
 
@@ -225,7 +226,7 @@ def main() -> None:
     )
     report = {
         "verification": "PASS" if passed else "FAIL",
-        "output_dir": str(root),
+        "output_dir": str(args.output_dir),
         "row_counts": row_counts,
         "expected_counts": expected_counts,
         "finite_values": finite_pass,
@@ -241,8 +242,11 @@ def main() -> None:
         "recomputed_pass_count": pass_count,
         "sha256": {key: sha256(path) for key, path in paths.items()},
     }
-    output = root / "independent_verification.json"
-    output.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
+    if args.report is not None:
+        args.report.write_text(
+            json.dumps(report, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
     print(json.dumps(report, indent=2, ensure_ascii=False))
     if not passed:
         raise SystemExit(1)

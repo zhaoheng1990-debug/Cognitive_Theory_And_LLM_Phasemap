@@ -85,10 +85,11 @@ def main() -> None:
         "fixed_permutation_replication_pass": fixed,
         "reconstruction_audit": gate["reconstruction_audit"],
     }
-    report = args.report or (root / "independent_verification.json")
-    report.write_text(
-        json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
+    if args.report is not None:
+        args.report.write_text(
+            json.dumps(result, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
     print(json.dumps(result, indent=2, ensure_ascii=False))
     if result["status"] != "PASS":
         raise SystemExit(1)

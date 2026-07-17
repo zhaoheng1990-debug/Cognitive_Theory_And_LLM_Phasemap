@@ -22,6 +22,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("endpoint_dir", type=Path)
     parser.add_argument("radial_dir", type=Path)
     parser.add_argument("exponent_dir", type=Path)
+    parser.add_argument("--report", type=Path, default=None)
     return parser.parse_args()
 
 
@@ -378,8 +379,11 @@ def main() -> None:
         "sha256": {name: sha256(path) for name, path in key_files.items()},
         "array_sha256": array_hashes,
     }
-    output = endpoint_dir / "independent_verification.json"
-    output.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
+    if args.report is not None:
+        args.report.write_text(
+            json.dumps(report, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
     print(json.dumps(report, indent=2, ensure_ascii=False))
     if not passed:
         raise SystemExit(1)
