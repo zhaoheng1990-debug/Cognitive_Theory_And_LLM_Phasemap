@@ -1,0 +1,87 @@
+{
+  "audit": "output_boundary_actuator_attribution_v0_1",
+  "status": "PASS",
+  "source_hashes": {
+    "protocol": "93AB2300157A62FAB7341DD8ED6D049B300A315D6D88EA643792BB20E94AB014",
+    "runner": "4D33B9FE508D046931D5740C304F7EA57839BCFBFE1D7E821F6F2F7D6EBAD5FB"
+  },
+  "per_model_strict_crossings": {
+    "qwen": {
+      "none": 0,
+      "policy_boundary_guarded": 17,
+      "policy_gate_operator_only": 17,
+      "policy_gate_precursor_only": 0,
+      "policy_gate_uniform_max": 22
+    },
+    "llama": {
+      "none": 0,
+      "policy_boundary_guarded": 13,
+      "policy_gate_operator_only": 14,
+      "policy_gate_precursor_only": 1,
+      "policy_gate_uniform_max": 15
+    },
+    "gemma": {
+      "none": 0,
+      "policy_boundary_guarded": 9,
+      "policy_gate_operator_only": 8,
+      "policy_gate_precursor_only": 0,
+      "policy_gate_uniform_max": 10
+    }
+  },
+  "per_model_nonclosure_changes": {
+    "qwen": {
+      "none": 0,
+      "policy_boundary_guarded": 0,
+      "policy_gate_operator_only": 0,
+      "policy_gate_precursor_only": 0,
+      "policy_gate_uniform_max": 0
+    },
+    "llama": {
+      "none": 0,
+      "policy_boundary_guarded": 2,
+      "policy_gate_operator_only": 2,
+      "policy_gate_precursor_only": 0,
+      "policy_gate_uniform_max": 2
+    },
+    "gemma": {
+      "none": 0,
+      "policy_boundary_guarded": 0,
+      "policy_gate_operator_only": 0,
+      "policy_gate_precursor_only": 0,
+      "policy_gate_uniform_max": 1
+    }
+  },
+  "pooled": {
+    "gated_policy_flips": 39,
+    "gated_policy_damage": 2,
+    "operator_only_flips": 39,
+    "operator_only_damage": 2,
+    "precursor_only_flips": 1,
+    "precursor_only_damage": 0,
+    "uniform_max_flips": 47,
+    "uniform_max_damage": 3,
+    "ungated_policy_flips": 41,
+    "ungated_policy_damage": 11
+  },
+  "matched_reassignment_empirical_p": {
+    "qwen": 0.803921568627451,
+    "llama": 0.9215686275,
+    "gemma": 0.2549019608
+  },
+  "supported_interpretation": "At the declared operating point, output-boundary leverage is carried primarily by the confidence-gated local transition operator. The precursor component alone is insufficient, and neither the uniform-action control nor safety-matched reassignment supports fine-grained prompt-specific dose assignment.",
+  "claim_boundary": "This is a component attribution within one bounded actuator and one controlled candidate boundary. It is not answer-correctness improvement, open-ended generation control, safety, deployment control or a universal mechanism decomposition.",
+  "checks": {
+    "protocol_precedes_all_control_outputs": true,
+    "all_reference_outputs_reproduced_exactly": true,
+    "five_controls_per_model": true,
+    "complete_prompt_rows": true,
+    "frozen_group_counts": true,
+    "all_intervened_states_finite": true,
+    "norm_guard_below_1.10": true,
+    "reference_counts_match_frozen_report": true,
+    "operator_only_preserves_pooled_crossing_count": true,
+    "precursor_only_is_not_sufficient": true,
+    "uniform_max_is_not_inferior_in_crossing_count": true,
+    "matched_reassignment_rejects_fine_assignment_specificity": true
+  }
+}

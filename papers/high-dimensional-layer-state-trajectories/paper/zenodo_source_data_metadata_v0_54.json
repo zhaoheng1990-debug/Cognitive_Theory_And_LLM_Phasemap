@@ -1,0 +1,14 @@
+{
+  "title": "Source data for High-dimensional state trajectories reveal transformer inference dynamics",
+  "description": "Processed evidence, audit records and figure source data for the manuscript's observational, predictive, null-control and bounded-intervention analyses.",
+  "upload_type": "dataset",
+  "concept_doi": "10.5281/zenodo.21317355",
+  "license": "CC-BY-4.0",
+  "creators": [
+    {
+      "name": "Zhao, Heng",
+      "orcid": "0009-0004-2395-9393"
+    }
+  ],
+  "version": "v0.54"
+}

@@ -1,0 +1,8 @@
+"step","node","role"
+1,"Prompt","initial condition"
+2,"Local neighbourhood","context field"
+3,"Candidate trajectories","latent alternatives"
+4,"Dominance accumulation","competition readout"
+5,"O_l^cont state update","continuous state coordinate"
+6,"Chord-directed order + structured residuals","trajectory geometry"
+7,"Mechanism-aware policy","mechanism-aware intervention"

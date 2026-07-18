@@ -1,0 +1,5 @@
+"features","macro_r2"
+"State only",0.412150633335114
+"State + history",0.529564195871353
+"State + context",0.504340404272079
+"State + history + context",0.610813391208649

@@ -1,0 +1,82 @@
+{
+  "audit": "transition_predictive_bilinear_closure_v0_1",
+  "input_sha256": "5C5E3C3686145CA889E0F25B7654677E680F9B765B77FAB5A6A6265253FF88FB",
+  "corrected_script_sha256": "14A2A506C94FCFBF5072DF9F2035EEBFE1ECA75A62CD7C37D694DF333718E4FD",
+  "implementation_closed": true,
+  "evidence_class": "target-excluded incremental prediction; exploratory",
+  "claim_boundary": "The corrected two-stage branch supports a finite held-out incremental prediction claim. It does not establish a universal dynamical law, confirmatory generalization, or predictive equivalence to the realized O_l^cont coordinate.",
+  "metrics": {
+    "state_only_macro_R2": 0.8221537781359557,
+    "best_two_stage_macro_R2": 0.8615894317626953,
+    "increment_macro_R2": 0.039435634659166996,
+    "bootstrap_95_CI": [
+      0.03680578674795469,
+      0.04261651525575409
+    ],
+    "true_O_gain_retained": 0.250946836744878,
+    "pass_lite_margin": 0.0009468367448779991
+  },
+  "matched_bilinear_gains": {
+    "G1_state_only": 0.027903512120246887,
+    "G2_state_plus_history": 0.03179293870925903,
+    "G3_state_plus_context": 0.02951228618621826,
+    "G4_state_history_context": 0.028905019164085388
+  },
+  "checks": [
+    {
+      "name": "input_identity",
+      "passed": true,
+      "detail": "sha256=5C5E3C3686145CA889E0F25B7654677E680F9B765B77FAB5A6A6265253FF88FB; rows=14592"
+    },
+    {
+      "name": "all_two_stage_branches_executed",
+      "passed": true,
+      "detail": "rows=8; additive=4; bilinear=4"
+    },
+    {
+      "name": "historical_failure_reproduced",
+      "passed": true,
+      "detail": "historical_error_rows=4"
+    },
+    {
+      "name": "unaffected_branches_invariant",
+      "passed": true,
+      "detail": "max_abs_summary_delta=0.000e+00"
+    },
+    {
+      "name": "complete_grouped_folds",
+      "passed": true,
+      "detail": "fold_rows=40; models=8; group_col=sample_id"
+    },
+    {
+      "name": "group_leakage_excluded",
+      "passed": true,
+      "detail": "train_test_group_overlap_by_fold=[0, 0, 0, 0, 0]; unique_groups=768"
+    },
+    {
+      "name": "target_layer_columns_excluded_from_G",
+      "passed": true,
+      "detail": "forbidden_features=[]"
+    },
+    {
+      "name": "bilinear_oof_predictions_complete",
+      "passed": true,
+      "detail": "prediction_columns=16; rows=14592"
+    },
+    {
+      "name": "bilinear_gain_consistent_across_G_models",
+      "passed": true,
+      "detail": "gains={\"G1_state_only\": 0.027903512120246887, \"G2_state_plus_history\": 0.03179293870925903, \"G3_state_plus_context\": 0.02951228618621826, \"G4_state_history_context\": 0.028905019164085388}"
+    },
+    {
+      "name": "positive_group_bootstrap_increment",
+      "passed": true,
+      "detail": "delta_R2=0.039436; 95%_CI=[0.036806, 0.042617]; Pr(delta>0)=1.0000"
+    },
+    {
+      "name": "pre_existing_pass_lite_rule_met",
+      "passed": true,
+      "detail": "retention=0.250947; margin_above_0.25=0.000947; delta_R2=0.039436"
+    }
+  ]
+}

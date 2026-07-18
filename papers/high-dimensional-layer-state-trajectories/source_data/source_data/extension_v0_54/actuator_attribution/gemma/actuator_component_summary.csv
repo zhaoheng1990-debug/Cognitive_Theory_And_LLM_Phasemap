@@ -1,0 +1,6 @@
+model,control,closure_n,strict_conflict_to_clean,closure_mean_margin_shift,nonclosure_n,nonclosure_top1_changes,nonclosure_top1_change_rate,mean_norm_ratio,max_norm_ratio,all_finite
+gemma,none,87,0,0.0,203,0,0.0,1.0,1.0,True
+gemma,policy_boundary_guarded,87,9,1.511584051724138,203,0,0.0,0.9755872710819902,1.0140501260757446,True
+gemma,policy_gate_operator_only,87,8,1.481860632183908,203,0,0.0,0.9755995290032748,1.0132485628128052,True
+gemma,policy_gate_precursor_only,87,0,0.09877873563218391,203,0,0.0,0.9999348388869187,1.0,True
+gemma,policy_gate_uniform_max,87,10,1.4689295977011494,203,1,0.0049261083743842365,0.9752673545377007,1.0,True

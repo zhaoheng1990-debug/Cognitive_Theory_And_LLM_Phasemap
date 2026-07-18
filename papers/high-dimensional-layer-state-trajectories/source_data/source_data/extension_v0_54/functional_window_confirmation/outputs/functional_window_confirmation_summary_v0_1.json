@@ -1,0 +1,203 @@
+{
+  "protocol_version": "v0.1",
+  "seed": 20260718,
+  "device": "cuda",
+  "dtype": "torch.float16",
+  "discovery_graphs": 36,
+  "confirmation_graphs": 24,
+  "discovery_labels": [
+    "Red",
+    "Blue",
+    "Green",
+    "Yellow",
+    "North",
+    "South",
+    "East",
+    "West",
+    "Copper",
+    "Silver",
+    "Gold",
+    "Iron"
+  ],
+  "confirmation_labels": [
+    "Circle",
+    "Square",
+    "Triangle",
+    "Star",
+    "River",
+    "Mountain",
+    "Forest",
+    "Ocean",
+    "Sun",
+    "Moon",
+    "Cloud",
+    "Stone"
+  ],
+  "n_bootstrap": 2000,
+  "n_null": 999,
+  "role_recurrence_count": 0,
+  "window_location_recurrence_count": 1,
+  "family_verdict": "failed three-checkpoint role recurrence",
+  "models": [
+    {
+      "model_key": "qwen",
+      "num_layers": 28,
+      "decision_layers": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "frozen_window": "L5_6",
+      "frozen_layers": [
+        5,
+        6
+      ],
+      "frozen_k": 500,
+      "pca_discovery_reproduction_corr": 0.9999999999999997,
+      "pca_explained_variance_ratio_discovery": [
+        0.9184834957122803,
+        0.0466076098382473,
+        0.013902142643928528
+      ],
+      "topology_separation": -0.1850111174448878,
+      "topology_separation_ci95": [
+        -0.18879577133853304,
+        -0.18094167392870658
+      ],
+      "mechanism_macro_f1": 0.7386393303234614,
+      "mechanism_macro_f1_ci95": [
+        0.7108409901662084,
+        0.7658339568256611
+      ],
+      "mechanism_null_95": 0.5209895572940446,
+      "mechanism_empirical_p": 0.001,
+      "downstream_corr": 0.6585788206875168,
+      "downstream_corr_ci95": [
+        0.5903609913609408,
+        0.7282679064277194
+      ],
+      "downstream_r2": 0.4269638946886901,
+      "downstream_null_95": 0.6233173606542366,
+      "downstream_empirical_p": 0.033,
+      "composite_score": 1.4914571205117688,
+      "candidate_count": 112,
+      "frozen_rank": 58,
+      "frozen_rank_percentile": 49.107142857142854,
+      "role_recurrence": false,
+      "window_location_recurrence": false
+    },
+    {
+      "model_key": "llama",
+      "num_layers": 16,
+      "decision_layers": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "frozen_window": "L0_2",
+      "frozen_layers": [
+        0,
+        1,
+        2
+      ],
+      "frozen_k": 500,
+      "pca_discovery_reproduction_corr": 0.9999999999999993,
+      "pca_explained_variance_ratio_discovery": [
+        0.8323270678520203,
+        0.1296389251947403,
+        0.028202148154377937
+      ],
+      "topology_separation": -0.09182935577413219,
+      "topology_separation_ci95": [
+        -0.0922539839001598,
+        -0.09135665496675426
+      ],
+      "mechanism_macro_f1": 0.66176358709637,
+      "mechanism_macro_f1_ci95": [
+        0.6406470870763239,
+        0.6835816794411522
+      ],
+      "mechanism_null_95": 0.5098121131135105,
+      "mechanism_empirical_p": 0.003,
+      "downstream_corr": 0.41051420090970153,
+      "downstream_corr_ci95": [
+        0.3490938248050639,
+        0.47921357926516717
+      ],
+      "downstream_r2": 0.1545723849072853,
+      "downstream_null_95": 0.4516951326878932,
+      "downstream_empirical_p": 0.078,
+      "composite_score": 1.2736986418215706,
+      "candidate_count": 40,
+      "frozen_rank": 38,
+      "frozen_rank_percentile": 7.5,
+      "role_recurrence": false,
+      "window_location_recurrence": false
+    },
+    {
+      "model_key": "gemma",
+      "num_layers": 26,
+      "decision_layers": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "frozen_window": "L1_6",
+      "frozen_layers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "frozen_k": 100,
+      "pca_discovery_reproduction_corr": 0.9999999999999998,
+      "pca_explained_variance_ratio_discovery": [
+        0.966821551322937,
+        0.01873299479484558,
+        0.0063635120168328285
+      ],
+      "topology_separation": -0.09028308502096465,
+      "topology_separation_ci95": [
+        -0.09120951390554469,
+        -0.08933542598568658
+      ],
+      "mechanism_macro_f1": 0.6488536660269709,
+      "mechanism_macro_f1_ci95": [
+        0.6064698138446786,
+        0.6870387843364683
+      ],
+      "mechanism_null_95": 0.4746854439115753,
+      "mechanism_empirical_p": 0.001,
+      "downstream_corr": 0.6240724904591525,
+      "downstream_corr_ci95": [
+        0.5871255986751998,
+        0.6645159564763299
+      ],
+      "downstream_r2": 0.33850325608044873,
+      "downstream_null_95": 0.4038590459791237,
+      "downstream_empirical_p": 0.001,
+      "composite_score": 1.4401266555156382,
+      "candidate_count": 100,
+      "frozen_rank": 5,
+      "frozen_rank_percentile": 96.0,
+      "role_recurrence": false,
+      "window_location_recurrence": true
+    }
+  ],
+  "input_hashes": {
+    "protocol_sha256": "b35ddb0364495915b2052b5976820add890ec556483c7b984f78702b62a1eed9",
+    "discovery_prompt_dataset_sha256": "8925152b8016302ac9c0c82c277ff386e6ea887cd4169edabe3fc1d356a968af",
+    "model_summary_sha256": "bca7c6a3cccdeab1645e37d59c4458d6b6e70395505a22baf02c2f87a571bead",
+    "base_script_sha256": "0296a431444ffd2c50fc9f1c3b2bfa7a3edbe4c8cea9f2bb9f6718790d4ca33f"
+  }
+}

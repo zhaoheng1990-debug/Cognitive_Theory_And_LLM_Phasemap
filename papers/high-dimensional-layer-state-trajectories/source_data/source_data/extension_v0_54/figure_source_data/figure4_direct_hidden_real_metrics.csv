@@ -1,0 +1,10 @@
+"model_f","metric","value"
+"Qwen","Chord alignment",0.074202798306942
+"Qwen","Detour ratio",3.49573993682861
+"Qwen","Turning curvature",1.71464347839355
+"Llama","Chord alignment",0.111402869224548
+"Llama","Detour ratio",4.48685884475708
+"Llama","Turning curvature",1.73387587070465
+"Gemma","Chord alignment",0.0919406414031982
+"Gemma","Detour ratio",4.08003377914429
+"Gemma","Turning curvature",1.70563638210297

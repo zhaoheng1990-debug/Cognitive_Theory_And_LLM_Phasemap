@@ -1,0 +1,41 @@
+"window_short","metric","value"
+"0-25% depth","ΔU corr.",0.853515490536742
+"0-25% depth","Class F1",0.965253420613617
+"25-55% depth","ΔU corr.",0.882120245831856
+"25-55% depth","Class F1",0.981706677356041
+"full predecision","ΔU corr.",0.909065894725467
+"full predecision","Class F1",0.996150761828388
+"post-preservation","ΔU corr.",0.905577110993232
+"post-preservation","Class F1",0.993220711833913
+"post-class","ΔU corr.",0.884100036885687
+"post-class","Class F1",0.976003479827873
+"post-downstream","ΔU corr.",0.905577110993232
+"post-downstream","Class F1",0.993220711833913
+"after overall until predecision","ΔU corr.",0.907852393717432
+"after overall until predecision","Class F1",0.991895330786862
+"aligned preservation","ΔU corr.",0.403051613878256
+"aligned preservation","Class F1",0.654413127463112
+"aligned class","ΔU corr.",0.69176228748963
+"aligned class","Class F1",0.645494751098199
+"aligned downstream","ΔU corr.",0.403051613878256
+"aligned downstream","Class F1",0.654413127463112
+"0-25% depth","ΔU corr.",0.862128206328282
+"0-25% depth","Class F1",0.947103517335434
+"25-55% depth","ΔU corr.",0.889354390938756
+"25-55% depth","Class F1",0.983262155106058
+"full predecision","ΔU corr.",0.9188369642974
+"full predecision","Class F1",0.990318870066325
+"post-preservation","ΔU corr.",0.916318820885072
+"post-preservation","Class F1",0.990318870066325
+"post-class","ΔU corr.",0.891399405425184
+"post-class","Class F1",0.991895330786862
+"post-downstream","ΔU corr.",0.916318820885072
+"post-downstream","Class F1",0.990318870066325
+"after overall until predecision","ΔU corr.",0.912573601842655
+"after overall until predecision","Class F1",0.990318870066325
+"aligned preservation","ΔU corr.",0.580754951154881
+"aligned preservation","Class F1",0.771412201375397
+"aligned class","ΔU corr.",0.768496231889191
+"aligned class","Class F1",0.710195033724445
+"aligned downstream","ΔU corr.",0.580754951154881
+"aligned downstream","Class F1",0.771412201375397

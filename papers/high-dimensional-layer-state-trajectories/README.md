@@ -1,40 +1,48 @@
 # High-dimensional state trajectories reveal transformer inference dynamics
 
-Public reproducibility package for the paper and preprint. The current synchronized release is **v0.53**.
+Public paper and reproducibility package. The current synchronized release is **v0.54**.
 
-## Headline evidence
-
-- Ordered hidden states are treated as the empirical process object; vocabulary readbacks remain diagnostics.
-- Endpoint-preserving order effects recur across representative Qwen, Llama and Gemma checkpoints, but stronger controls show that coarse geometry is neither learned reasoning nor sufficient for native function.
-- Random fixed mappings preserve prompt relations in 18/18 architecture-task-seed conditions, supporting an architecture-compatible propagation scaffold.
-- Pythia component swaps and checkpoint audits show training-associated task coordinates and compatibility among input, block and output components.
-- Confidence-gated local-transition actuators cross a declared full-vocabulary candidate boundary in held-out prompts, within explicit correctness and safety boundaries.
+The public arXiv preprint remains v0.53 until its next revision. The v0.54 repository release adds the submission-ready manuscript, complete figure source data and the final methodology-closure evidence without relabelling the earlier preprint.
 
 ## Start here
 
-1. Paper: `paper/arxiv_preprint_v0_53.pdf`
-2. New code: `code/extension_v0_53/README.md`
-3. New Source Data: `source_data/source_data/extension_v0_53/README.md`
-4. File hashes: each extension has a `manifest.csv`
+1. Compact manuscript view: `paper/nature_compact_8page_layout_v0_29.pdf`
+2. Full submission draft: `paper/nature_initial_submission_v0_29.pdf`
+3. Supplementary Methods: `paper/supplementary_methods_v0_15.pdf`
+4. v0.54 verification: `code/extension_v0_54/verify_extension_v0_54.py`
+5. v0.54 Source Data: `source_data/source_data/extension_v0_54/README.md`
+
+Run the public closure checks from the v0.54 code directory:
+
+```bash
+python verify_extension_v0_54.py
+```
+
+The verifier reads archived evidence and checks nine fixed results. Full model-level reruns require the checkpoints listed in the manuscript and compatible local GPU memory.
+
+## What v0.54 closes
+
+- **Target-excluded prediction:** a grouped out-of-fold model reached macro R2 = 0.862, improving over the state-only baseline by 0.0394 (group-bootstrap 95% interval 0.0368-0.0426). It retains 25.1% of the gain associated with the realized descriptive transition coordinate and remains exploratory.
+- **Label crosswalk:** coordinate-audit and intervention prompt labels are separately executable. They are analysis classes, not trajectory-derived dynamical phases or correctness labels.
+- **Actuator attribution:** the confidence-gated local transition operator carries most declared output-boundary leverage. Operator-only control reproduced 39 pooled strict crossings; the precursor alone produced 1. Uniform maximum action produced 47 crossings with 3 non-target changes, so fine prompt-specific dose assignment is not supported.
+- **Prospective window test:** the frozen three-checkpoint recurrence gate failed. Joint role recurrence passed 0/3 checkpoints and location recurrence passed 1/3. Functional windows therefore remain exploratory model-specific indexing choices.
 
 ## Repository map
 
-- `paper/`: versioned preprint PDFs and arXiv TeX source.
+- `paper/`: public preprint, submission-ready PDFs and manuscript sources.
+- `code/extension_v0_54/`: neutral-named closure runners and public verifier.
+- `source_data/source_data/extension_v0_54/`: predictive, prospective, intervention, label-crosswalk and figure source data with SHA-256 manifests.
+- `code/extension_v0_51/` to `code/extension_v0_53/`: earlier public experiment closures.
 - `code/analysis_scripts_raw/`: provenance-preserving earlier analysis scripts.
-- `code/extension_v0_51/` and `code/extension_v0_52/`: earlier public closures.
-- `code/extension_v0_53/`: falsification-first scaffold, execution, metric and training audits.
-- `source_data/source_data/`: figure and extension-level processed data.
 - `code/environment/`: Python and R environment notes.
 
-## Availability and boundaries
+## Boundaries and availability
 
-Source Data concept DOI: https://doi.org/10.5281/zenodo.21317355
-Code concept DOI: https://doi.org/10.5281/zenodo.21317440
+The evidence supports an observable ordered process and bounded control of a declared candidate boundary. It does not establish an exact geodesic, least action, universal state equation, answer-correctness improvement, open-ended generation control or deployment safety. Vocabulary readbacks remain diagnostics.
 
-Model weights and large hidden-state arrays are not redistributed. Full reruns require the listed upstream checkpoints and compatible local compute. The evidence does not establish a universal dynamical equation, an exact geodesic, answer-correctness control, open-ended generation control or deployment safety.
+- Source Data concept DOI: https://doi.org/10.5281/zenodo.21317355
+- Code concept DOI: https://doi.org/10.5281/zenodo.21317440
 
-## 中文说明
-
-本仓库是论文 **High-dimensional state trajectories reveal transformer inference dynamics** 的公开复现包。v0.53 新增架构连续性、层顺序功能、轨迹历史增益、Llama 径向敏感性、Pythia 组件兼容性与训练期任务坐标审计。建议先阅读 `source_data/source_data/extension_v0_53/README.md`，再按 `manifest.csv` 核验文件。仓库不重分发模型权重或大型隐藏状态数组。
+Model weights and large hidden-state arrays are not redistributed. All work was conducted as independent research without employer data, compute, funding, facilities or internal systems.
 
 Contact: Heng Zhao <zhaoheng1990@gmail.com>; ORCID <https://orcid.org/0009-0004-2395-9393>.

@@ -1,0 +1,77 @@
+{
+  "audit": "analysis_label_crosswalk_v0_1",
+  "status": "PASS",
+  "source_hashes": {
+    "coordinate_csv": "2E2EB0DAF4AB6E7FB859F0D3371F81FE8B6A141CB500567C2744BDE179DF5013",
+    "intervention_script": "C9E1B61EF01ABB58FF7B5EB41C89368A2A922E59B15CF8637858D8C3195CF8C3",
+    "manuscript": "D7ADFD12270C4597D545FA977EAFC7CDCA4D407DFE5BBF8E377CDA51DF3C86F0",
+    "supplement": "EA77E3D95502E09F5C62CEF6EFFD062BB0A8D577FB11B1648DFE879E04C8973C"
+  },
+  "coordinate_source_mapping": {
+    "closure": [
+      "closure_override",
+      "closure_update",
+      "exception_override"
+    ],
+    "competition": [
+      "competition_balanced",
+      "direct_conflict",
+      "equal_evidence"
+    ],
+    "source_ambiguity": [
+      "source_claim"
+    ],
+    "stable": [
+      "clean",
+      "irrelevant",
+      "paraphrase",
+      "rename"
+    ],
+    "stable_shift": [
+      "weak_distractor"
+    ]
+  },
+  "coordinate_classifier_collapse": {
+    "stable": [
+      "stable",
+      "stable_shift"
+    ],
+    "competition": [
+      "competition",
+      "source_ambiguity"
+    ],
+    "closure": [
+      "closure"
+    ]
+  },
+  "intervention_source_mapping": {
+    "stable": [
+      "clean",
+      "irrelevant",
+      "paraphrase",
+      "redundant"
+    ],
+    "competition": [
+      "competition_balanced",
+      "direct_conflict",
+      "weak_distractor"
+    ],
+    "closure": [
+      "closure_override",
+      "closure_update",
+      "exception_override"
+    ]
+  },
+  "object_boundary": "These labels are analysis-specific prompt-condition classes. They are neither trajectory-derived dynamical phases nor answer-correctness labels.",
+  "checks": {
+    "coordinate_panel_has_960_rows": true,
+    "coordinate_panel_has_80_graphs": true,
+    "coordinate_mapping_matches_source": true,
+    "intervention_mapping_matches_script": true,
+    "weak_distractor_mapping_difference_retained": true,
+    "crosswalk_language_present": true,
+    "main_text_points_to_crosswalk": true,
+    "main_text_rejects_trajectory_derived_labels": true,
+    "stale_implementation_error_removed": true
+  }
+}

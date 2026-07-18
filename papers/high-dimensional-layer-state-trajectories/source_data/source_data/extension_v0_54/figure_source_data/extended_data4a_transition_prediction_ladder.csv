@@ -1,0 +1,4 @@
+"information","macro_r2","role"
+"State only",0.822180965140664,"Predictive baseline"
+"Observed transition",0.979329602717815,"Descriptive upper bound"
+"Pre-transition estimate",0.832784190773964,"Predictive test"

@@ -1,0 +1,7 @@
+"model","condition","specificity"
+"Qwen","Real",3.01066527695491
+"Qwen","Fixed",1.30506022614603
+"Llama","Real",0.219369938245352
+"Llama","Fixed",0.0588769155060521
+"Gemma","Real",10.0458494321075
+"Gemma","Fixed",2.41965056248682

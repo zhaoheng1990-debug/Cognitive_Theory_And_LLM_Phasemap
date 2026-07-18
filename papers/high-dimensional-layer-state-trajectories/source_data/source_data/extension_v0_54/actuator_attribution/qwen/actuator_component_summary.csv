@@ -1,0 +1,6 @@
+model,control,closure_n,strict_conflict_to_clean,closure_mean_margin_shift,nonclosure_n,nonclosure_top1_changes,nonclosure_top1_change_rate,mean_norm_ratio,max_norm_ratio,all_finite
+qwen,none,87,0,0.0,203,0,0.0,1.0,1.0,True
+qwen,policy_boundary_guarded,87,17,3.9547413793103448,203,0,0.0,0.9771552686855711,1.0764451026916504,True
+qwen,policy_gate_operator_only,87,17,3.8069324712643677,203,0,0.0,0.9773460369274534,1.0789263248443604,True
+qwen,policy_gate_precursor_only,87,0,0.6975574712643678,203,0,0.0,1.0000867943106027,1.0020480155944824,True
+qwen,policy_gate_uniform_max,87,22,3.7819683908045976,203,0,0.0,0.977600392473155,1.0776070356369019,True

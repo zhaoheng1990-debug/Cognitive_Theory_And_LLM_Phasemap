@@ -1,0 +1,10 @@
+"model","component","corr"
+"Qwen","Parallel",0.727971611402151
+"Qwen","Perpendicular",0.774514679334526
+"Qwen","Both",0.789951057678743
+"Llama","Parallel",0.331535634688262
+"Llama","Perpendicular",0.33808780654038
+"Llama","Both",0.372759821810028
+"Gemma","Parallel",0.744359593455706
+"Gemma","Perpendicular",0.750250942067938
+"Gemma","Both",0.799804312549273

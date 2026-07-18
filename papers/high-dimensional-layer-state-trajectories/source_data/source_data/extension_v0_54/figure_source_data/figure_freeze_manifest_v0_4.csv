@@ -1,0 +1,6 @@
+"file_stem","status","intended_use","notes"
+"highdim_layer_vector_mechanism_view_v0_4","frozen_primary","main mechanism figure candidate","Most faithful V0.4 representation of high-dimensional layer-state dynamics."
+"highdim_neighbourhood_diagnostics_v0_4","frozen_support","extended data or supplementary mechanism support","Full-vector neighbourhood and dimension-contribution diagnostics."
+"review_only_highdim_compact_composite_v0_4","review_only","internal layout comparison","Too dense for direct manuscript use; kept only for comparison."
+"low-dimensional residual-PCA projection","retain_once_only","reader-orientation aid","May be retained at most once and captioned as a low-dimensional visual abstraction, not a literal 3D manifold."
+"V0.2 repeated low-dimensional projection panels","retired","none","Do not reuse across Figs. 1-6."

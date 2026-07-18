@@ -2,4 +2,8 @@
 code/extension_v0_53/** text eol=lf
 source_data/source_data/extension_v0_53/** text eol=lf
 paper/arxiv_tex_v0_53/** text eol=lf
+code/extension_v0_54/** text eol=lf
+source_data/source_data/extension_v0_54/** text eol=lf whitespace=-trailing-space
+paper/*v0_29* text eol=lf
+paper/*v0_15* text eol=lf
 *.pdf binary

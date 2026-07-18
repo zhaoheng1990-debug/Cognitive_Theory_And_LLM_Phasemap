@@ -1,0 +1,2449 @@
+﻿prompt_id,graph_id,entity_id,relation_id,condition,condition_class,mechanism,clean_label,conflict_label,aux_label,text
+g000_clean,0,0,0,clean,clean,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Ava belongs to Bela.
+Fact 2: Bela is located at Red.
+Question: Which label is associated with Ava: Red or Blue?
+Answer with exactly one word:"
+g000_rename,0,0,0,rename,relation_preserving,stable,Red,Blue,Green,"Consider a tiny mapping network.
+Link one: Ava belongs to Bela.
+Link two: Bela is located at Red.
+Choose the label reached from Ava: Red or Blue.
+One word answer:"
+g000_permuted,0,0,0,permuted,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 2: Bela is located at Red.
+Fact 1: Ava belongs to Bela.
+Question: Which label is associated with Ava: Red or Blue?
+Answer with exactly one word:"
+g000_redundant,0,0,0,redundant,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Ava belongs to Bela.
+Fact 2: Bela is located at Red.
+Repeated confirmation: Ava still goes through Bela.
+Repeated confirmation: Bela still points to Red.
+Question: Which label is associated with Ava: Red or Blue?
+Answer with exactly one word:"
+g000_irrelevant,0,0,0,irrelevant,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Ava belongs to Bela.
+Fact 2: Bela is located at Red.
+Irrelevant fact: Cora is associated with Green.
+Question: Which label is associated with Ava: Red or Blue?
+Answer with exactly one word:"
+g000_paraphrase,0,0,0,paraphrase,relation_preserving,stable,Red,Blue,Green,"In this example, Ava reaches Bela.
+The destination connected to Bela is Red.
+Based on those two links, select the label for Ava: Red or Blue.
+Answer:"
+g000_weak_distractor,0,0,0,weak_distractor,structure_changing,stable_shift,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Ava belongs to Bela.
+Fact 2: Bela is located at Red.
+Weak note: some unrelated source mentions Blue, but does not update the graph.
+Question: Which label is associated with Ava: Red or Blue?
+Answer with exactly one word:"
+g000_competition_balanced,0,0,0,competition_balanced,structure_changing,competition,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Ava belongs to Bela.
+Fact 2: Bela is located at Red.
+Competing fact: Ava is also associated with Blue.
+Question: Which label is associated with Ava: Red or Blue?
+Answer with exactly one word:"
+g000_direct_conflict,0,0,0,direct_conflict,structure_changing,competition,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Ava belongs to Bela.
+Fact 2: Bela is located at Red.
+Direct conflicting fact: Ava is located at Blue.
+Question: Which label is associated with Ava: Red or Blue?
+Answer with exactly one word:"
+g000_closure_update,0,0,0,closure_update,structure_changing,closure,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Ava belongs to Bela.
+Old record: Bela is located at Red.
+Updated record: Bela is located at Blue, not Red.
+Question: Which label is associated with Ava: Red or Blue?
+Answer with exactly one word:"
+g000_closure_override,0,0,0,closure_override,structure_changing,closure,Red,Blue,Green,"You are given a rule system.
+General rule: items that belongs to Bela receive label Red.
+Override rule: in this case, items that belongs to Bela receive label Blue.
+Fact: Ava belongs to Bela.
+Question: Which label applies to Ava: Red or Blue?
+Answer with exactly one word:"
+g000_exception_override,0,0,0,exception_override,structure_changing,closure,Red,Blue,Green,"You are given a rule system.
+General rule: items connected to Bela use label Red.
+Exception: Ava is a special case and uses label Blue.
+Fact: Ava is connected to Bela.
+Question: Which label applies to Ava: Red or Blue?
+Answer with exactly one word:"
+g001_clean,1,0,1,clean,clean,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Ava is assigned to Bela.
+Fact 2: Bela maps to Green.
+Question: Which label is associated with Ava: Green or Yellow?
+Answer with exactly one word:"
+g001_rename,1,0,1,rename,relation_preserving,stable,Green,Yellow,North,"Consider a tiny mapping network.
+Link one: Ava is assigned to Bela.
+Link two: Bela maps to Green.
+Choose the label reached from Ava: Green or Yellow.
+One word answer:"
+g001_permuted,1,0,1,permuted,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 2: Bela maps to Green.
+Fact 1: Ava is assigned to Bela.
+Question: Which label is associated with Ava: Green or Yellow?
+Answer with exactly one word:"
+g001_redundant,1,0,1,redundant,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Ava is assigned to Bela.
+Fact 2: Bela maps to Green.
+Repeated confirmation: Ava still goes through Bela.
+Repeated confirmation: Bela still points to Green.
+Question: Which label is associated with Ava: Green or Yellow?
+Answer with exactly one word:"
+g001_irrelevant,1,0,1,irrelevant,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Ava is assigned to Bela.
+Fact 2: Bela maps to Green.
+Irrelevant fact: Cora is associated with North.
+Question: Which label is associated with Ava: Green or Yellow?
+Answer with exactly one word:"
+g001_paraphrase,1,0,1,paraphrase,relation_preserving,stable,Green,Yellow,North,"In this example, Ava reaches Bela.
+The destination connected to Bela is Green.
+Based on those two links, select the label for Ava: Green or Yellow.
+Answer:"
+g001_weak_distractor,1,0,1,weak_distractor,structure_changing,stable_shift,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Ava is assigned to Bela.
+Fact 2: Bela maps to Green.
+Weak note: some unrelated source mentions Yellow, but does not update the graph.
+Question: Which label is associated with Ava: Green or Yellow?
+Answer with exactly one word:"
+g001_competition_balanced,1,0,1,competition_balanced,structure_changing,competition,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Ava is assigned to Bela.
+Fact 2: Bela maps to Green.
+Competing fact: Ava is also associated with Yellow.
+Question: Which label is associated with Ava: Green or Yellow?
+Answer with exactly one word:"
+g001_direct_conflict,1,0,1,direct_conflict,structure_changing,competition,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Ava is assigned to Bela.
+Fact 2: Bela maps to Green.
+Direct conflicting fact: Ava maps to Yellow.
+Question: Which label is associated with Ava: Green or Yellow?
+Answer with exactly one word:"
+g001_closure_update,1,0,1,closure_update,structure_changing,closure,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Ava is assigned to Bela.
+Old record: Bela maps to Green.
+Updated record: Bela maps to Yellow, not Green.
+Question: Which label is associated with Ava: Green or Yellow?
+Answer with exactly one word:"
+g001_closure_override,1,0,1,closure_override,structure_changing,closure,Green,Yellow,North,"You are given a rule system.
+General rule: items that is assigned to Bela receive label Green.
+Override rule: in this case, items that is assigned to Bela receive label Yellow.
+Fact: Ava is assigned to Bela.
+Question: Which label applies to Ava: Green or Yellow?
+Answer with exactly one word:"
+g001_exception_override,1,0,1,exception_override,structure_changing,closure,Green,Yellow,North,"You are given a rule system.
+General rule: items connected to Bela use label Green.
+Exception: Ava is a special case and uses label Yellow.
+Fact: Ava is connected to Bela.
+Question: Which label applies to Ava: Green or Yellow?
+Answer with exactly one word:"
+g002_clean,2,0,2,clean,clean,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Ava is part of Bela.
+Fact 2: Bela points to North.
+Question: Which label is associated with Ava: North or South?
+Answer with exactly one word:"
+g002_rename,2,0,2,rename,relation_preserving,stable,North,South,East,"Consider a tiny mapping network.
+Link one: Ava is part of Bela.
+Link two: Bela points to North.
+Choose the label reached from Ava: North or South.
+One word answer:"
+g002_permuted,2,0,2,permuted,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 2: Bela points to North.
+Fact 1: Ava is part of Bela.
+Question: Which label is associated with Ava: North or South?
+Answer with exactly one word:"
+g002_redundant,2,0,2,redundant,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Ava is part of Bela.
+Fact 2: Bela points to North.
+Repeated confirmation: Ava still goes through Bela.
+Repeated confirmation: Bela still points to North.
+Question: Which label is associated with Ava: North or South?
+Answer with exactly one word:"
+g002_irrelevant,2,0,2,irrelevant,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Ava is part of Bela.
+Fact 2: Bela points to North.
+Irrelevant fact: Cora is associated with East.
+Question: Which label is associated with Ava: North or South?
+Answer with exactly one word:"
+g002_paraphrase,2,0,2,paraphrase,relation_preserving,stable,North,South,East,"In this example, Ava reaches Bela.
+The destination connected to Bela is North.
+Based on those two links, select the label for Ava: North or South.
+Answer:"
+g002_weak_distractor,2,0,2,weak_distractor,structure_changing,stable_shift,North,South,East,"You are given a small relation graph.
+Fact 1: Ava is part of Bela.
+Fact 2: Bela points to North.
+Weak note: some unrelated source mentions South, but does not update the graph.
+Question: Which label is associated with Ava: North or South?
+Answer with exactly one word:"
+g002_competition_balanced,2,0,2,competition_balanced,structure_changing,competition,North,South,East,"You are given a small relation graph.
+Fact 1: Ava is part of Bela.
+Fact 2: Bela points to North.
+Competing fact: Ava is also associated with South.
+Question: Which label is associated with Ava: North or South?
+Answer with exactly one word:"
+g002_direct_conflict,2,0,2,direct_conflict,structure_changing,competition,North,South,East,"You are given a small relation graph.
+Fact 1: Ava is part of Bela.
+Fact 2: Bela points to North.
+Direct conflicting fact: Ava points to South.
+Question: Which label is associated with Ava: North or South?
+Answer with exactly one word:"
+g002_closure_update,2,0,2,closure_update,structure_changing,closure,North,South,East,"You are given a small relation graph.
+Fact 1: Ava is part of Bela.
+Old record: Bela points to North.
+Updated record: Bela points to South, not North.
+Question: Which label is associated with Ava: North or South?
+Answer with exactly one word:"
+g002_closure_override,2,0,2,closure_override,structure_changing,closure,North,South,East,"You are given a rule system.
+General rule: items that is part of Bela receive label North.
+Override rule: in this case, items that is part of Bela receive label South.
+Fact: Ava is part of Bela.
+Question: Which label applies to Ava: North or South?
+Answer with exactly one word:"
+g002_exception_override,2,0,2,exception_override,structure_changing,closure,North,South,East,"You are given a rule system.
+General rule: items connected to Bela use label North.
+Exception: Ava is a special case and uses label South.
+Fact: Ava is connected to Bela.
+Question: Which label applies to Ava: North or South?
+Answer with exactly one word:"
+g003_clean,3,0,3,clean,clean,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Ava is grouped under Bela.
+Fact 2: Bela has label East.
+Question: Which label is associated with Ava: East or West?
+Answer with exactly one word:"
+g003_rename,3,0,3,rename,relation_preserving,stable,East,West,Copper,"Consider a tiny mapping network.
+Link one: Ava is grouped under Bela.
+Link two: Bela has label East.
+Choose the label reached from Ava: East or West.
+One word answer:"
+g003_permuted,3,0,3,permuted,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 2: Bela has label East.
+Fact 1: Ava is grouped under Bela.
+Question: Which label is associated with Ava: East or West?
+Answer with exactly one word:"
+g003_redundant,3,0,3,redundant,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Ava is grouped under Bela.
+Fact 2: Bela has label East.
+Repeated confirmation: Ava still goes through Bela.
+Repeated confirmation: Bela still points to East.
+Question: Which label is associated with Ava: East or West?
+Answer with exactly one word:"
+g003_irrelevant,3,0,3,irrelevant,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Ava is grouped under Bela.
+Fact 2: Bela has label East.
+Irrelevant fact: Cora is associated with Copper.
+Question: Which label is associated with Ava: East or West?
+Answer with exactly one word:"
+g003_paraphrase,3,0,3,paraphrase,relation_preserving,stable,East,West,Copper,"In this example, Ava reaches Bela.
+The destination connected to Bela is East.
+Based on those two links, select the label for Ava: East or West.
+Answer:"
+g003_weak_distractor,3,0,3,weak_distractor,structure_changing,stable_shift,East,West,Copper,"You are given a small relation graph.
+Fact 1: Ava is grouped under Bela.
+Fact 2: Bela has label East.
+Weak note: some unrelated source mentions West, but does not update the graph.
+Question: Which label is associated with Ava: East or West?
+Answer with exactly one word:"
+g003_competition_balanced,3,0,3,competition_balanced,structure_changing,competition,East,West,Copper,"You are given a small relation graph.
+Fact 1: Ava is grouped under Bela.
+Fact 2: Bela has label East.
+Competing fact: Ava is also associated with West.
+Question: Which label is associated with Ava: East or West?
+Answer with exactly one word:"
+g003_direct_conflict,3,0,3,direct_conflict,structure_changing,competition,East,West,Copper,"You are given a small relation graph.
+Fact 1: Ava is grouped under Bela.
+Fact 2: Bela has label East.
+Direct conflicting fact: Ava has label West.
+Question: Which label is associated with Ava: East or West?
+Answer with exactly one word:"
+g003_closure_update,3,0,3,closure_update,structure_changing,closure,East,West,Copper,"You are given a small relation graph.
+Fact 1: Ava is grouped under Bela.
+Old record: Bela has label East.
+Updated record: Bela has label West, not East.
+Question: Which label is associated with Ava: East or West?
+Answer with exactly one word:"
+g003_closure_override,3,0,3,closure_override,structure_changing,closure,East,West,Copper,"You are given a rule system.
+General rule: items that is grouped under Bela receive label East.
+Override rule: in this case, items that is grouped under Bela receive label West.
+Fact: Ava is grouped under Bela.
+Question: Which label applies to Ava: East or West?
+Answer with exactly one word:"
+g003_exception_override,3,0,3,exception_override,structure_changing,closure,East,West,Copper,"You are given a rule system.
+General rule: items connected to Bela use label East.
+Exception: Ava is a special case and uses label West.
+Fact: Ava is connected to Bela.
+Question: Which label applies to Ava: East or West?
+Answer with exactly one word:"
+g004_clean,4,1,0,clean,clean,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Darin belongs to Elo.
+Fact 2: Elo is located at Copper.
+Question: Which label is associated with Darin: Copper or Silver?
+Answer with exactly one word:"
+g004_rename,4,1,0,rename,relation_preserving,stable,Copper,Silver,Gold,"Consider a tiny mapping network.
+Link one: Darin belongs to Elo.
+Link two: Elo is located at Copper.
+Choose the label reached from Darin: Copper or Silver.
+One word answer:"
+g004_permuted,4,1,0,permuted,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 2: Elo is located at Copper.
+Fact 1: Darin belongs to Elo.
+Question: Which label is associated with Darin: Copper or Silver?
+Answer with exactly one word:"
+g004_redundant,4,1,0,redundant,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Darin belongs to Elo.
+Fact 2: Elo is located at Copper.
+Repeated confirmation: Darin still goes through Elo.
+Repeated confirmation: Elo still points to Copper.
+Question: Which label is associated with Darin: Copper or Silver?
+Answer with exactly one word:"
+g004_irrelevant,4,1,0,irrelevant,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Darin belongs to Elo.
+Fact 2: Elo is located at Copper.
+Irrelevant fact: Faye is associated with Gold.
+Question: Which label is associated with Darin: Copper or Silver?
+Answer with exactly one word:"
+g004_paraphrase,4,1,0,paraphrase,relation_preserving,stable,Copper,Silver,Gold,"In this example, Darin reaches Elo.
+The destination connected to Elo is Copper.
+Based on those two links, select the label for Darin: Copper or Silver.
+Answer:"
+g004_weak_distractor,4,1,0,weak_distractor,structure_changing,stable_shift,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Darin belongs to Elo.
+Fact 2: Elo is located at Copper.
+Weak note: some unrelated source mentions Silver, but does not update the graph.
+Question: Which label is associated with Darin: Copper or Silver?
+Answer with exactly one word:"
+g004_competition_balanced,4,1,0,competition_balanced,structure_changing,competition,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Darin belongs to Elo.
+Fact 2: Elo is located at Copper.
+Competing fact: Darin is also associated with Silver.
+Question: Which label is associated with Darin: Copper or Silver?
+Answer with exactly one word:"
+g004_direct_conflict,4,1,0,direct_conflict,structure_changing,competition,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Darin belongs to Elo.
+Fact 2: Elo is located at Copper.
+Direct conflicting fact: Darin is located at Silver.
+Question: Which label is associated with Darin: Copper or Silver?
+Answer with exactly one word:"
+g004_closure_update,4,1,0,closure_update,structure_changing,closure,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Darin belongs to Elo.
+Old record: Elo is located at Copper.
+Updated record: Elo is located at Silver, not Copper.
+Question: Which label is associated with Darin: Copper or Silver?
+Answer with exactly one word:"
+g004_closure_override,4,1,0,closure_override,structure_changing,closure,Copper,Silver,Gold,"You are given a rule system.
+General rule: items that belongs to Elo receive label Copper.
+Override rule: in this case, items that belongs to Elo receive label Silver.
+Fact: Darin belongs to Elo.
+Question: Which label applies to Darin: Copper or Silver?
+Answer with exactly one word:"
+g004_exception_override,4,1,0,exception_override,structure_changing,closure,Copper,Silver,Gold,"You are given a rule system.
+General rule: items connected to Elo use label Copper.
+Exception: Darin is a special case and uses label Silver.
+Fact: Darin is connected to Elo.
+Question: Which label applies to Darin: Copper or Silver?
+Answer with exactly one word:"
+g005_clean,5,1,1,clean,clean,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Darin is assigned to Elo.
+Fact 2: Elo maps to Gold.
+Question: Which label is associated with Darin: Gold or Iron?
+Answer with exactly one word:"
+g005_rename,5,1,1,rename,relation_preserving,stable,Gold,Iron,Red,"Consider a tiny mapping network.
+Link one: Darin is assigned to Elo.
+Link two: Elo maps to Gold.
+Choose the label reached from Darin: Gold or Iron.
+One word answer:"
+g005_permuted,5,1,1,permuted,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 2: Elo maps to Gold.
+Fact 1: Darin is assigned to Elo.
+Question: Which label is associated with Darin: Gold or Iron?
+Answer with exactly one word:"
+g005_redundant,5,1,1,redundant,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Darin is assigned to Elo.
+Fact 2: Elo maps to Gold.
+Repeated confirmation: Darin still goes through Elo.
+Repeated confirmation: Elo still points to Gold.
+Question: Which label is associated with Darin: Gold or Iron?
+Answer with exactly one word:"
+g005_irrelevant,5,1,1,irrelevant,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Darin is assigned to Elo.
+Fact 2: Elo maps to Gold.
+Irrelevant fact: Faye is associated with Red.
+Question: Which label is associated with Darin: Gold or Iron?
+Answer with exactly one word:"
+g005_paraphrase,5,1,1,paraphrase,relation_preserving,stable,Gold,Iron,Red,"In this example, Darin reaches Elo.
+The destination connected to Elo is Gold.
+Based on those two links, select the label for Darin: Gold or Iron.
+Answer:"
+g005_weak_distractor,5,1,1,weak_distractor,structure_changing,stable_shift,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Darin is assigned to Elo.
+Fact 2: Elo maps to Gold.
+Weak note: some unrelated source mentions Iron, but does not update the graph.
+Question: Which label is associated with Darin: Gold or Iron?
+Answer with exactly one word:"
+g005_competition_balanced,5,1,1,competition_balanced,structure_changing,competition,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Darin is assigned to Elo.
+Fact 2: Elo maps to Gold.
+Competing fact: Darin is also associated with Iron.
+Question: Which label is associated with Darin: Gold or Iron?
+Answer with exactly one word:"
+g005_direct_conflict,5,1,1,direct_conflict,structure_changing,competition,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Darin is assigned to Elo.
+Fact 2: Elo maps to Gold.
+Direct conflicting fact: Darin maps to Iron.
+Question: Which label is associated with Darin: Gold or Iron?
+Answer with exactly one word:"
+g005_closure_update,5,1,1,closure_update,structure_changing,closure,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Darin is assigned to Elo.
+Old record: Elo maps to Gold.
+Updated record: Elo maps to Iron, not Gold.
+Question: Which label is associated with Darin: Gold or Iron?
+Answer with exactly one word:"
+g005_closure_override,5,1,1,closure_override,structure_changing,closure,Gold,Iron,Red,"You are given a rule system.
+General rule: items that is assigned to Elo receive label Gold.
+Override rule: in this case, items that is assigned to Elo receive label Iron.
+Fact: Darin is assigned to Elo.
+Question: Which label applies to Darin: Gold or Iron?
+Answer with exactly one word:"
+g005_exception_override,5,1,1,exception_override,structure_changing,closure,Gold,Iron,Red,"You are given a rule system.
+General rule: items connected to Elo use label Gold.
+Exception: Darin is a special case and uses label Iron.
+Fact: Darin is connected to Elo.
+Question: Which label applies to Darin: Gold or Iron?
+Answer with exactly one word:"
+g006_clean,6,1,2,clean,clean,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Darin is part of Elo.
+Fact 2: Elo points to Red.
+Question: Which label is associated with Darin: Red or Blue?
+Answer with exactly one word:"
+g006_rename,6,1,2,rename,relation_preserving,stable,Red,Blue,Green,"Consider a tiny mapping network.
+Link one: Darin is part of Elo.
+Link two: Elo points to Red.
+Choose the label reached from Darin: Red or Blue.
+One word answer:"
+g006_permuted,6,1,2,permuted,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 2: Elo points to Red.
+Fact 1: Darin is part of Elo.
+Question: Which label is associated with Darin: Red or Blue?
+Answer with exactly one word:"
+g006_redundant,6,1,2,redundant,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Darin is part of Elo.
+Fact 2: Elo points to Red.
+Repeated confirmation: Darin still goes through Elo.
+Repeated confirmation: Elo still points to Red.
+Question: Which label is associated with Darin: Red or Blue?
+Answer with exactly one word:"
+g006_irrelevant,6,1,2,irrelevant,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Darin is part of Elo.
+Fact 2: Elo points to Red.
+Irrelevant fact: Faye is associated with Green.
+Question: Which label is associated with Darin: Red or Blue?
+Answer with exactly one word:"
+g006_paraphrase,6,1,2,paraphrase,relation_preserving,stable,Red,Blue,Green,"In this example, Darin reaches Elo.
+The destination connected to Elo is Red.
+Based on those two links, select the label for Darin: Red or Blue.
+Answer:"
+g006_weak_distractor,6,1,2,weak_distractor,structure_changing,stable_shift,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Darin is part of Elo.
+Fact 2: Elo points to Red.
+Weak note: some unrelated source mentions Blue, but does not update the graph.
+Question: Which label is associated with Darin: Red or Blue?
+Answer with exactly one word:"
+g006_competition_balanced,6,1,2,competition_balanced,structure_changing,competition,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Darin is part of Elo.
+Fact 2: Elo points to Red.
+Competing fact: Darin is also associated with Blue.
+Question: Which label is associated with Darin: Red or Blue?
+Answer with exactly one word:"
+g006_direct_conflict,6,1,2,direct_conflict,structure_changing,competition,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Darin is part of Elo.
+Fact 2: Elo points to Red.
+Direct conflicting fact: Darin points to Blue.
+Question: Which label is associated with Darin: Red or Blue?
+Answer with exactly one word:"
+g006_closure_update,6,1,2,closure_update,structure_changing,closure,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Darin is part of Elo.
+Old record: Elo points to Red.
+Updated record: Elo points to Blue, not Red.
+Question: Which label is associated with Darin: Red or Blue?
+Answer with exactly one word:"
+g006_closure_override,6,1,2,closure_override,structure_changing,closure,Red,Blue,Green,"You are given a rule system.
+General rule: items that is part of Elo receive label Red.
+Override rule: in this case, items that is part of Elo receive label Blue.
+Fact: Darin is part of Elo.
+Question: Which label applies to Darin: Red or Blue?
+Answer with exactly one word:"
+g006_exception_override,6,1,2,exception_override,structure_changing,closure,Red,Blue,Green,"You are given a rule system.
+General rule: items connected to Elo use label Red.
+Exception: Darin is a special case and uses label Blue.
+Fact: Darin is connected to Elo.
+Question: Which label applies to Darin: Red or Blue?
+Answer with exactly one word:"
+g007_clean,7,1,3,clean,clean,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Darin is grouped under Elo.
+Fact 2: Elo has label Green.
+Question: Which label is associated with Darin: Green or Yellow?
+Answer with exactly one word:"
+g007_rename,7,1,3,rename,relation_preserving,stable,Green,Yellow,North,"Consider a tiny mapping network.
+Link one: Darin is grouped under Elo.
+Link two: Elo has label Green.
+Choose the label reached from Darin: Green or Yellow.
+One word answer:"
+g007_permuted,7,1,3,permuted,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 2: Elo has label Green.
+Fact 1: Darin is grouped under Elo.
+Question: Which label is associated with Darin: Green or Yellow?
+Answer with exactly one word:"
+g007_redundant,7,1,3,redundant,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Darin is grouped under Elo.
+Fact 2: Elo has label Green.
+Repeated confirmation: Darin still goes through Elo.
+Repeated confirmation: Elo still points to Green.
+Question: Which label is associated with Darin: Green or Yellow?
+Answer with exactly one word:"
+g007_irrelevant,7,1,3,irrelevant,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Darin is grouped under Elo.
+Fact 2: Elo has label Green.
+Irrelevant fact: Faye is associated with North.
+Question: Which label is associated with Darin: Green or Yellow?
+Answer with exactly one word:"
+g007_paraphrase,7,1,3,paraphrase,relation_preserving,stable,Green,Yellow,North,"In this example, Darin reaches Elo.
+The destination connected to Elo is Green.
+Based on those two links, select the label for Darin: Green or Yellow.
+Answer:"
+g007_weak_distractor,7,1,3,weak_distractor,structure_changing,stable_shift,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Darin is grouped under Elo.
+Fact 2: Elo has label Green.
+Weak note: some unrelated source mentions Yellow, but does not update the graph.
+Question: Which label is associated with Darin: Green or Yellow?
+Answer with exactly one word:"
+g007_competition_balanced,7,1,3,competition_balanced,structure_changing,competition,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Darin is grouped under Elo.
+Fact 2: Elo has label Green.
+Competing fact: Darin is also associated with Yellow.
+Question: Which label is associated with Darin: Green or Yellow?
+Answer with exactly one word:"
+g007_direct_conflict,7,1,3,direct_conflict,structure_changing,competition,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Darin is grouped under Elo.
+Fact 2: Elo has label Green.
+Direct conflicting fact: Darin has label Yellow.
+Question: Which label is associated with Darin: Green or Yellow?
+Answer with exactly one word:"
+g007_closure_update,7,1,3,closure_update,structure_changing,closure,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Darin is grouped under Elo.
+Old record: Elo has label Green.
+Updated record: Elo has label Yellow, not Green.
+Question: Which label is associated with Darin: Green or Yellow?
+Answer with exactly one word:"
+g007_closure_override,7,1,3,closure_override,structure_changing,closure,Green,Yellow,North,"You are given a rule system.
+General rule: items that is grouped under Elo receive label Green.
+Override rule: in this case, items that is grouped under Elo receive label Yellow.
+Fact: Darin is grouped under Elo.
+Question: Which label applies to Darin: Green or Yellow?
+Answer with exactly one word:"
+g007_exception_override,7,1,3,exception_override,structure_changing,closure,Green,Yellow,North,"You are given a rule system.
+General rule: items connected to Elo use label Green.
+Exception: Darin is a special case and uses label Yellow.
+Fact: Darin is connected to Elo.
+Question: Which label applies to Darin: Green or Yellow?
+Answer with exactly one word:"
+g008_clean,8,2,0,clean,clean,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Galen belongs to Hera.
+Fact 2: Hera is located at North.
+Question: Which label is associated with Galen: North or South?
+Answer with exactly one word:"
+g008_rename,8,2,0,rename,relation_preserving,stable,North,South,East,"Consider a tiny mapping network.
+Link one: Galen belongs to Hera.
+Link two: Hera is located at North.
+Choose the label reached from Galen: North or South.
+One word answer:"
+g008_permuted,8,2,0,permuted,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 2: Hera is located at North.
+Fact 1: Galen belongs to Hera.
+Question: Which label is associated with Galen: North or South?
+Answer with exactly one word:"
+g008_redundant,8,2,0,redundant,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Galen belongs to Hera.
+Fact 2: Hera is located at North.
+Repeated confirmation: Galen still goes through Hera.
+Repeated confirmation: Hera still points to North.
+Question: Which label is associated with Galen: North or South?
+Answer with exactly one word:"
+g008_irrelevant,8,2,0,irrelevant,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Galen belongs to Hera.
+Fact 2: Hera is located at North.
+Irrelevant fact: Ivo is associated with East.
+Question: Which label is associated with Galen: North or South?
+Answer with exactly one word:"
+g008_paraphrase,8,2,0,paraphrase,relation_preserving,stable,North,South,East,"In this example, Galen reaches Hera.
+The destination connected to Hera is North.
+Based on those two links, select the label for Galen: North or South.
+Answer:"
+g008_weak_distractor,8,2,0,weak_distractor,structure_changing,stable_shift,North,South,East,"You are given a small relation graph.
+Fact 1: Galen belongs to Hera.
+Fact 2: Hera is located at North.
+Weak note: some unrelated source mentions South, but does not update the graph.
+Question: Which label is associated with Galen: North or South?
+Answer with exactly one word:"
+g008_competition_balanced,8,2,0,competition_balanced,structure_changing,competition,North,South,East,"You are given a small relation graph.
+Fact 1: Galen belongs to Hera.
+Fact 2: Hera is located at North.
+Competing fact: Galen is also associated with South.
+Question: Which label is associated with Galen: North or South?
+Answer with exactly one word:"
+g008_direct_conflict,8,2,0,direct_conflict,structure_changing,competition,North,South,East,"You are given a small relation graph.
+Fact 1: Galen belongs to Hera.
+Fact 2: Hera is located at North.
+Direct conflicting fact: Galen is located at South.
+Question: Which label is associated with Galen: North or South?
+Answer with exactly one word:"
+g008_closure_update,8,2,0,closure_update,structure_changing,closure,North,South,East,"You are given a small relation graph.
+Fact 1: Galen belongs to Hera.
+Old record: Hera is located at North.
+Updated record: Hera is located at South, not North.
+Question: Which label is associated with Galen: North or South?
+Answer with exactly one word:"
+g008_closure_override,8,2,0,closure_override,structure_changing,closure,North,South,East,"You are given a rule system.
+General rule: items that belongs to Hera receive label North.
+Override rule: in this case, items that belongs to Hera receive label South.
+Fact: Galen belongs to Hera.
+Question: Which label applies to Galen: North or South?
+Answer with exactly one word:"
+g008_exception_override,8,2,0,exception_override,structure_changing,closure,North,South,East,"You are given a rule system.
+General rule: items connected to Hera use label North.
+Exception: Galen is a special case and uses label South.
+Fact: Galen is connected to Hera.
+Question: Which label applies to Galen: North or South?
+Answer with exactly one word:"
+g009_clean,9,2,1,clean,clean,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Galen is assigned to Hera.
+Fact 2: Hera maps to East.
+Question: Which label is associated with Galen: East or West?
+Answer with exactly one word:"
+g009_rename,9,2,1,rename,relation_preserving,stable,East,West,Copper,"Consider a tiny mapping network.
+Link one: Galen is assigned to Hera.
+Link two: Hera maps to East.
+Choose the label reached from Galen: East or West.
+One word answer:"
+g009_permuted,9,2,1,permuted,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 2: Hera maps to East.
+Fact 1: Galen is assigned to Hera.
+Question: Which label is associated with Galen: East or West?
+Answer with exactly one word:"
+g009_redundant,9,2,1,redundant,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Galen is assigned to Hera.
+Fact 2: Hera maps to East.
+Repeated confirmation: Galen still goes through Hera.
+Repeated confirmation: Hera still points to East.
+Question: Which label is associated with Galen: East or West?
+Answer with exactly one word:"
+g009_irrelevant,9,2,1,irrelevant,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Galen is assigned to Hera.
+Fact 2: Hera maps to East.
+Irrelevant fact: Ivo is associated with Copper.
+Question: Which label is associated with Galen: East or West?
+Answer with exactly one word:"
+g009_paraphrase,9,2,1,paraphrase,relation_preserving,stable,East,West,Copper,"In this example, Galen reaches Hera.
+The destination connected to Hera is East.
+Based on those two links, select the label for Galen: East or West.
+Answer:"
+g009_weak_distractor,9,2,1,weak_distractor,structure_changing,stable_shift,East,West,Copper,"You are given a small relation graph.
+Fact 1: Galen is assigned to Hera.
+Fact 2: Hera maps to East.
+Weak note: some unrelated source mentions West, but does not update the graph.
+Question: Which label is associated with Galen: East or West?
+Answer with exactly one word:"
+g009_competition_balanced,9,2,1,competition_balanced,structure_changing,competition,East,West,Copper,"You are given a small relation graph.
+Fact 1: Galen is assigned to Hera.
+Fact 2: Hera maps to East.
+Competing fact: Galen is also associated with West.
+Question: Which label is associated with Galen: East or West?
+Answer with exactly one word:"
+g009_direct_conflict,9,2,1,direct_conflict,structure_changing,competition,East,West,Copper,"You are given a small relation graph.
+Fact 1: Galen is assigned to Hera.
+Fact 2: Hera maps to East.
+Direct conflicting fact: Galen maps to West.
+Question: Which label is associated with Galen: East or West?
+Answer with exactly one word:"
+g009_closure_update,9,2,1,closure_update,structure_changing,closure,East,West,Copper,"You are given a small relation graph.
+Fact 1: Galen is assigned to Hera.
+Old record: Hera maps to East.
+Updated record: Hera maps to West, not East.
+Question: Which label is associated with Galen: East or West?
+Answer with exactly one word:"
+g009_closure_override,9,2,1,closure_override,structure_changing,closure,East,West,Copper,"You are given a rule system.
+General rule: items that is assigned to Hera receive label East.
+Override rule: in this case, items that is assigned to Hera receive label West.
+Fact: Galen is assigned to Hera.
+Question: Which label applies to Galen: East or West?
+Answer with exactly one word:"
+g009_exception_override,9,2,1,exception_override,structure_changing,closure,East,West,Copper,"You are given a rule system.
+General rule: items connected to Hera use label East.
+Exception: Galen is a special case and uses label West.
+Fact: Galen is connected to Hera.
+Question: Which label applies to Galen: East or West?
+Answer with exactly one word:"
+g010_clean,10,2,2,clean,clean,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Galen is part of Hera.
+Fact 2: Hera points to Copper.
+Question: Which label is associated with Galen: Copper or Silver?
+Answer with exactly one word:"
+g010_rename,10,2,2,rename,relation_preserving,stable,Copper,Silver,Gold,"Consider a tiny mapping network.
+Link one: Galen is part of Hera.
+Link two: Hera points to Copper.
+Choose the label reached from Galen: Copper or Silver.
+One word answer:"
+g010_permuted,10,2,2,permuted,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 2: Hera points to Copper.
+Fact 1: Galen is part of Hera.
+Question: Which label is associated with Galen: Copper or Silver?
+Answer with exactly one word:"
+g010_redundant,10,2,2,redundant,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Galen is part of Hera.
+Fact 2: Hera points to Copper.
+Repeated confirmation: Galen still goes through Hera.
+Repeated confirmation: Hera still points to Copper.
+Question: Which label is associated with Galen: Copper or Silver?
+Answer with exactly one word:"
+g010_irrelevant,10,2,2,irrelevant,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Galen is part of Hera.
+Fact 2: Hera points to Copper.
+Irrelevant fact: Ivo is associated with Gold.
+Question: Which label is associated with Galen: Copper or Silver?
+Answer with exactly one word:"
+g010_paraphrase,10,2,2,paraphrase,relation_preserving,stable,Copper,Silver,Gold,"In this example, Galen reaches Hera.
+The destination connected to Hera is Copper.
+Based on those two links, select the label for Galen: Copper or Silver.
+Answer:"
+g010_weak_distractor,10,2,2,weak_distractor,structure_changing,stable_shift,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Galen is part of Hera.
+Fact 2: Hera points to Copper.
+Weak note: some unrelated source mentions Silver, but does not update the graph.
+Question: Which label is associated with Galen: Copper or Silver?
+Answer with exactly one word:"
+g010_competition_balanced,10,2,2,competition_balanced,structure_changing,competition,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Galen is part of Hera.
+Fact 2: Hera points to Copper.
+Competing fact: Galen is also associated with Silver.
+Question: Which label is associated with Galen: Copper or Silver?
+Answer with exactly one word:"
+g010_direct_conflict,10,2,2,direct_conflict,structure_changing,competition,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Galen is part of Hera.
+Fact 2: Hera points to Copper.
+Direct conflicting fact: Galen points to Silver.
+Question: Which label is associated with Galen: Copper or Silver?
+Answer with exactly one word:"
+g010_closure_update,10,2,2,closure_update,structure_changing,closure,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Galen is part of Hera.
+Old record: Hera points to Copper.
+Updated record: Hera points to Silver, not Copper.
+Question: Which label is associated with Galen: Copper or Silver?
+Answer with exactly one word:"
+g010_closure_override,10,2,2,closure_override,structure_changing,closure,Copper,Silver,Gold,"You are given a rule system.
+General rule: items that is part of Hera receive label Copper.
+Override rule: in this case, items that is part of Hera receive label Silver.
+Fact: Galen is part of Hera.
+Question: Which label applies to Galen: Copper or Silver?
+Answer with exactly one word:"
+g010_exception_override,10,2,2,exception_override,structure_changing,closure,Copper,Silver,Gold,"You are given a rule system.
+General rule: items connected to Hera use label Copper.
+Exception: Galen is a special case and uses label Silver.
+Fact: Galen is connected to Hera.
+Question: Which label applies to Galen: Copper or Silver?
+Answer with exactly one word:"
+g011_clean,11,2,3,clean,clean,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Galen is grouped under Hera.
+Fact 2: Hera has label Gold.
+Question: Which label is associated with Galen: Gold or Iron?
+Answer with exactly one word:"
+g011_rename,11,2,3,rename,relation_preserving,stable,Gold,Iron,Red,"Consider a tiny mapping network.
+Link one: Galen is grouped under Hera.
+Link two: Hera has label Gold.
+Choose the label reached from Galen: Gold or Iron.
+One word answer:"
+g011_permuted,11,2,3,permuted,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 2: Hera has label Gold.
+Fact 1: Galen is grouped under Hera.
+Question: Which label is associated with Galen: Gold or Iron?
+Answer with exactly one word:"
+g011_redundant,11,2,3,redundant,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Galen is grouped under Hera.
+Fact 2: Hera has label Gold.
+Repeated confirmation: Galen still goes through Hera.
+Repeated confirmation: Hera still points to Gold.
+Question: Which label is associated with Galen: Gold or Iron?
+Answer with exactly one word:"
+g011_irrelevant,11,2,3,irrelevant,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Galen is grouped under Hera.
+Fact 2: Hera has label Gold.
+Irrelevant fact: Ivo is associated with Red.
+Question: Which label is associated with Galen: Gold or Iron?
+Answer with exactly one word:"
+g011_paraphrase,11,2,3,paraphrase,relation_preserving,stable,Gold,Iron,Red,"In this example, Galen reaches Hera.
+The destination connected to Hera is Gold.
+Based on those two links, select the label for Galen: Gold or Iron.
+Answer:"
+g011_weak_distractor,11,2,3,weak_distractor,structure_changing,stable_shift,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Galen is grouped under Hera.
+Fact 2: Hera has label Gold.
+Weak note: some unrelated source mentions Iron, but does not update the graph.
+Question: Which label is associated with Galen: Gold or Iron?
+Answer with exactly one word:"
+g011_competition_balanced,11,2,3,competition_balanced,structure_changing,competition,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Galen is grouped under Hera.
+Fact 2: Hera has label Gold.
+Competing fact: Galen is also associated with Iron.
+Question: Which label is associated with Galen: Gold or Iron?
+Answer with exactly one word:"
+g011_direct_conflict,11,2,3,direct_conflict,structure_changing,competition,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Galen is grouped under Hera.
+Fact 2: Hera has label Gold.
+Direct conflicting fact: Galen has label Iron.
+Question: Which label is associated with Galen: Gold or Iron?
+Answer with exactly one word:"
+g011_closure_update,11,2,3,closure_update,structure_changing,closure,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Galen is grouped under Hera.
+Old record: Hera has label Gold.
+Updated record: Hera has label Iron, not Gold.
+Question: Which label is associated with Galen: Gold or Iron?
+Answer with exactly one word:"
+g011_closure_override,11,2,3,closure_override,structure_changing,closure,Gold,Iron,Red,"You are given a rule system.
+General rule: items that is grouped under Hera receive label Gold.
+Override rule: in this case, items that is grouped under Hera receive label Iron.
+Fact: Galen is grouped under Hera.
+Question: Which label applies to Galen: Gold or Iron?
+Answer with exactly one word:"
+g011_exception_override,11,2,3,exception_override,structure_changing,closure,Gold,Iron,Red,"You are given a rule system.
+General rule: items connected to Hera use label Gold.
+Exception: Galen is a special case and uses label Iron.
+Fact: Galen is connected to Hera.
+Question: Which label applies to Galen: Gold or Iron?
+Answer with exactly one word:"
+g012_clean,12,3,0,clean,clean,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Juno belongs to Kira.
+Fact 2: Kira is located at Red.
+Question: Which label is associated with Juno: Red or Blue?
+Answer with exactly one word:"
+g012_rename,12,3,0,rename,relation_preserving,stable,Red,Blue,Green,"Consider a tiny mapping network.
+Link one: Juno belongs to Kira.
+Link two: Kira is located at Red.
+Choose the label reached from Juno: Red or Blue.
+One word answer:"
+g012_permuted,12,3,0,permuted,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 2: Kira is located at Red.
+Fact 1: Juno belongs to Kira.
+Question: Which label is associated with Juno: Red or Blue?
+Answer with exactly one word:"
+g012_redundant,12,3,0,redundant,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Juno belongs to Kira.
+Fact 2: Kira is located at Red.
+Repeated confirmation: Juno still goes through Kira.
+Repeated confirmation: Kira still points to Red.
+Question: Which label is associated with Juno: Red or Blue?
+Answer with exactly one word:"
+g012_irrelevant,12,3,0,irrelevant,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Juno belongs to Kira.
+Fact 2: Kira is located at Red.
+Irrelevant fact: Lio is associated with Green.
+Question: Which label is associated with Juno: Red or Blue?
+Answer with exactly one word:"
+g012_paraphrase,12,3,0,paraphrase,relation_preserving,stable,Red,Blue,Green,"In this example, Juno reaches Kira.
+The destination connected to Kira is Red.
+Based on those two links, select the label for Juno: Red or Blue.
+Answer:"
+g012_weak_distractor,12,3,0,weak_distractor,structure_changing,stable_shift,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Juno belongs to Kira.
+Fact 2: Kira is located at Red.
+Weak note: some unrelated source mentions Blue, but does not update the graph.
+Question: Which label is associated with Juno: Red or Blue?
+Answer with exactly one word:"
+g012_competition_balanced,12,3,0,competition_balanced,structure_changing,competition,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Juno belongs to Kira.
+Fact 2: Kira is located at Red.
+Competing fact: Juno is also associated with Blue.
+Question: Which label is associated with Juno: Red or Blue?
+Answer with exactly one word:"
+g012_direct_conflict,12,3,0,direct_conflict,structure_changing,competition,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Juno belongs to Kira.
+Fact 2: Kira is located at Red.
+Direct conflicting fact: Juno is located at Blue.
+Question: Which label is associated with Juno: Red or Blue?
+Answer with exactly one word:"
+g012_closure_update,12,3,0,closure_update,structure_changing,closure,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Juno belongs to Kira.
+Old record: Kira is located at Red.
+Updated record: Kira is located at Blue, not Red.
+Question: Which label is associated with Juno: Red or Blue?
+Answer with exactly one word:"
+g012_closure_override,12,3,0,closure_override,structure_changing,closure,Red,Blue,Green,"You are given a rule system.
+General rule: items that belongs to Kira receive label Red.
+Override rule: in this case, items that belongs to Kira receive label Blue.
+Fact: Juno belongs to Kira.
+Question: Which label applies to Juno: Red or Blue?
+Answer with exactly one word:"
+g012_exception_override,12,3,0,exception_override,structure_changing,closure,Red,Blue,Green,"You are given a rule system.
+General rule: items connected to Kira use label Red.
+Exception: Juno is a special case and uses label Blue.
+Fact: Juno is connected to Kira.
+Question: Which label applies to Juno: Red or Blue?
+Answer with exactly one word:"
+g013_clean,13,3,1,clean,clean,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Juno is assigned to Kira.
+Fact 2: Kira maps to Green.
+Question: Which label is associated with Juno: Green or Yellow?
+Answer with exactly one word:"
+g013_rename,13,3,1,rename,relation_preserving,stable,Green,Yellow,North,"Consider a tiny mapping network.
+Link one: Juno is assigned to Kira.
+Link two: Kira maps to Green.
+Choose the label reached from Juno: Green or Yellow.
+One word answer:"
+g013_permuted,13,3,1,permuted,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 2: Kira maps to Green.
+Fact 1: Juno is assigned to Kira.
+Question: Which label is associated with Juno: Green or Yellow?
+Answer with exactly one word:"
+g013_redundant,13,3,1,redundant,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Juno is assigned to Kira.
+Fact 2: Kira maps to Green.
+Repeated confirmation: Juno still goes through Kira.
+Repeated confirmation: Kira still points to Green.
+Question: Which label is associated with Juno: Green or Yellow?
+Answer with exactly one word:"
+g013_irrelevant,13,3,1,irrelevant,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Juno is assigned to Kira.
+Fact 2: Kira maps to Green.
+Irrelevant fact: Lio is associated with North.
+Question: Which label is associated with Juno: Green or Yellow?
+Answer with exactly one word:"
+g013_paraphrase,13,3,1,paraphrase,relation_preserving,stable,Green,Yellow,North,"In this example, Juno reaches Kira.
+The destination connected to Kira is Green.
+Based on those two links, select the label for Juno: Green or Yellow.
+Answer:"
+g013_weak_distractor,13,3,1,weak_distractor,structure_changing,stable_shift,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Juno is assigned to Kira.
+Fact 2: Kira maps to Green.
+Weak note: some unrelated source mentions Yellow, but does not update the graph.
+Question: Which label is associated with Juno: Green or Yellow?
+Answer with exactly one word:"
+g013_competition_balanced,13,3,1,competition_balanced,structure_changing,competition,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Juno is assigned to Kira.
+Fact 2: Kira maps to Green.
+Competing fact: Juno is also associated with Yellow.
+Question: Which label is associated with Juno: Green or Yellow?
+Answer with exactly one word:"
+g013_direct_conflict,13,3,1,direct_conflict,structure_changing,competition,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Juno is assigned to Kira.
+Fact 2: Kira maps to Green.
+Direct conflicting fact: Juno maps to Yellow.
+Question: Which label is associated with Juno: Green or Yellow?
+Answer with exactly one word:"
+g013_closure_update,13,3,1,closure_update,structure_changing,closure,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Juno is assigned to Kira.
+Old record: Kira maps to Green.
+Updated record: Kira maps to Yellow, not Green.
+Question: Which label is associated with Juno: Green or Yellow?
+Answer with exactly one word:"
+g013_closure_override,13,3,1,closure_override,structure_changing,closure,Green,Yellow,North,"You are given a rule system.
+General rule: items that is assigned to Kira receive label Green.
+Override rule: in this case, items that is assigned to Kira receive label Yellow.
+Fact: Juno is assigned to Kira.
+Question: Which label applies to Juno: Green or Yellow?
+Answer with exactly one word:"
+g013_exception_override,13,3,1,exception_override,structure_changing,closure,Green,Yellow,North,"You are given a rule system.
+General rule: items connected to Kira use label Green.
+Exception: Juno is a special case and uses label Yellow.
+Fact: Juno is connected to Kira.
+Question: Which label applies to Juno: Green or Yellow?
+Answer with exactly one word:"
+g014_clean,14,3,2,clean,clean,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Juno is part of Kira.
+Fact 2: Kira points to North.
+Question: Which label is associated with Juno: North or South?
+Answer with exactly one word:"
+g014_rename,14,3,2,rename,relation_preserving,stable,North,South,East,"Consider a tiny mapping network.
+Link one: Juno is part of Kira.
+Link two: Kira points to North.
+Choose the label reached from Juno: North or South.
+One word answer:"
+g014_permuted,14,3,2,permuted,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 2: Kira points to North.
+Fact 1: Juno is part of Kira.
+Question: Which label is associated with Juno: North or South?
+Answer with exactly one word:"
+g014_redundant,14,3,2,redundant,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Juno is part of Kira.
+Fact 2: Kira points to North.
+Repeated confirmation: Juno still goes through Kira.
+Repeated confirmation: Kira still points to North.
+Question: Which label is associated with Juno: North or South?
+Answer with exactly one word:"
+g014_irrelevant,14,3,2,irrelevant,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Juno is part of Kira.
+Fact 2: Kira points to North.
+Irrelevant fact: Lio is associated with East.
+Question: Which label is associated with Juno: North or South?
+Answer with exactly one word:"
+g014_paraphrase,14,3,2,paraphrase,relation_preserving,stable,North,South,East,"In this example, Juno reaches Kira.
+The destination connected to Kira is North.
+Based on those two links, select the label for Juno: North or South.
+Answer:"
+g014_weak_distractor,14,3,2,weak_distractor,structure_changing,stable_shift,North,South,East,"You are given a small relation graph.
+Fact 1: Juno is part of Kira.
+Fact 2: Kira points to North.
+Weak note: some unrelated source mentions South, but does not update the graph.
+Question: Which label is associated with Juno: North or South?
+Answer with exactly one word:"
+g014_competition_balanced,14,3,2,competition_balanced,structure_changing,competition,North,South,East,"You are given a small relation graph.
+Fact 1: Juno is part of Kira.
+Fact 2: Kira points to North.
+Competing fact: Juno is also associated with South.
+Question: Which label is associated with Juno: North or South?
+Answer with exactly one word:"
+g014_direct_conflict,14,3,2,direct_conflict,structure_changing,competition,North,South,East,"You are given a small relation graph.
+Fact 1: Juno is part of Kira.
+Fact 2: Kira points to North.
+Direct conflicting fact: Juno points to South.
+Question: Which label is associated with Juno: North or South?
+Answer with exactly one word:"
+g014_closure_update,14,3,2,closure_update,structure_changing,closure,North,South,East,"You are given a small relation graph.
+Fact 1: Juno is part of Kira.
+Old record: Kira points to North.
+Updated record: Kira points to South, not North.
+Question: Which label is associated with Juno: North or South?
+Answer with exactly one word:"
+g014_closure_override,14,3,2,closure_override,structure_changing,closure,North,South,East,"You are given a rule system.
+General rule: items that is part of Kira receive label North.
+Override rule: in this case, items that is part of Kira receive label South.
+Fact: Juno is part of Kira.
+Question: Which label applies to Juno: North or South?
+Answer with exactly one word:"
+g014_exception_override,14,3,2,exception_override,structure_changing,closure,North,South,East,"You are given a rule system.
+General rule: items connected to Kira use label North.
+Exception: Juno is a special case and uses label South.
+Fact: Juno is connected to Kira.
+Question: Which label applies to Juno: North or South?
+Answer with exactly one word:"
+g015_clean,15,3,3,clean,clean,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Juno is grouped under Kira.
+Fact 2: Kira has label East.
+Question: Which label is associated with Juno: East or West?
+Answer with exactly one word:"
+g015_rename,15,3,3,rename,relation_preserving,stable,East,West,Copper,"Consider a tiny mapping network.
+Link one: Juno is grouped under Kira.
+Link two: Kira has label East.
+Choose the label reached from Juno: East or West.
+One word answer:"
+g015_permuted,15,3,3,permuted,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 2: Kira has label East.
+Fact 1: Juno is grouped under Kira.
+Question: Which label is associated with Juno: East or West?
+Answer with exactly one word:"
+g015_redundant,15,3,3,redundant,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Juno is grouped under Kira.
+Fact 2: Kira has label East.
+Repeated confirmation: Juno still goes through Kira.
+Repeated confirmation: Kira still points to East.
+Question: Which label is associated with Juno: East or West?
+Answer with exactly one word:"
+g015_irrelevant,15,3,3,irrelevant,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Juno is grouped under Kira.
+Fact 2: Kira has label East.
+Irrelevant fact: Lio is associated with Copper.
+Question: Which label is associated with Juno: East or West?
+Answer with exactly one word:"
+g015_paraphrase,15,3,3,paraphrase,relation_preserving,stable,East,West,Copper,"In this example, Juno reaches Kira.
+The destination connected to Kira is East.
+Based on those two links, select the label for Juno: East or West.
+Answer:"
+g015_weak_distractor,15,3,3,weak_distractor,structure_changing,stable_shift,East,West,Copper,"You are given a small relation graph.
+Fact 1: Juno is grouped under Kira.
+Fact 2: Kira has label East.
+Weak note: some unrelated source mentions West, but does not update the graph.
+Question: Which label is associated with Juno: East or West?
+Answer with exactly one word:"
+g015_competition_balanced,15,3,3,competition_balanced,structure_changing,competition,East,West,Copper,"You are given a small relation graph.
+Fact 1: Juno is grouped under Kira.
+Fact 2: Kira has label East.
+Competing fact: Juno is also associated with West.
+Question: Which label is associated with Juno: East or West?
+Answer with exactly one word:"
+g015_direct_conflict,15,3,3,direct_conflict,structure_changing,competition,East,West,Copper,"You are given a small relation graph.
+Fact 1: Juno is grouped under Kira.
+Fact 2: Kira has label East.
+Direct conflicting fact: Juno has label West.
+Question: Which label is associated with Juno: East or West?
+Answer with exactly one word:"
+g015_closure_update,15,3,3,closure_update,structure_changing,closure,East,West,Copper,"You are given a small relation graph.
+Fact 1: Juno is grouped under Kira.
+Old record: Kira has label East.
+Updated record: Kira has label West, not East.
+Question: Which label is associated with Juno: East or West?
+Answer with exactly one word:"
+g015_closure_override,15,3,3,closure_override,structure_changing,closure,East,West,Copper,"You are given a rule system.
+General rule: items that is grouped under Kira receive label East.
+Override rule: in this case, items that is grouped under Kira receive label West.
+Fact: Juno is grouped under Kira.
+Question: Which label applies to Juno: East or West?
+Answer with exactly one word:"
+g015_exception_override,15,3,3,exception_override,structure_changing,closure,East,West,Copper,"You are given a rule system.
+General rule: items connected to Kira use label East.
+Exception: Juno is a special case and uses label West.
+Fact: Juno is connected to Kira.
+Question: Which label applies to Juno: East or West?
+Answer with exactly one word:"
+g016_clean,16,4,0,clean,clean,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Mira belongs to Nero.
+Fact 2: Nero is located at Copper.
+Question: Which label is associated with Mira: Copper or Silver?
+Answer with exactly one word:"
+g016_rename,16,4,0,rename,relation_preserving,stable,Copper,Silver,Gold,"Consider a tiny mapping network.
+Link one: Mira belongs to Nero.
+Link two: Nero is located at Copper.
+Choose the label reached from Mira: Copper or Silver.
+One word answer:"
+g016_permuted,16,4,0,permuted,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 2: Nero is located at Copper.
+Fact 1: Mira belongs to Nero.
+Question: Which label is associated with Mira: Copper or Silver?
+Answer with exactly one word:"
+g016_redundant,16,4,0,redundant,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Mira belongs to Nero.
+Fact 2: Nero is located at Copper.
+Repeated confirmation: Mira still goes through Nero.
+Repeated confirmation: Nero still points to Copper.
+Question: Which label is associated with Mira: Copper or Silver?
+Answer with exactly one word:"
+g016_irrelevant,16,4,0,irrelevant,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Mira belongs to Nero.
+Fact 2: Nero is located at Copper.
+Irrelevant fact: Orin is associated with Gold.
+Question: Which label is associated with Mira: Copper or Silver?
+Answer with exactly one word:"
+g016_paraphrase,16,4,0,paraphrase,relation_preserving,stable,Copper,Silver,Gold,"In this example, Mira reaches Nero.
+The destination connected to Nero is Copper.
+Based on those two links, select the label for Mira: Copper or Silver.
+Answer:"
+g016_weak_distractor,16,4,0,weak_distractor,structure_changing,stable_shift,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Mira belongs to Nero.
+Fact 2: Nero is located at Copper.
+Weak note: some unrelated source mentions Silver, but does not update the graph.
+Question: Which label is associated with Mira: Copper or Silver?
+Answer with exactly one word:"
+g016_competition_balanced,16,4,0,competition_balanced,structure_changing,competition,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Mira belongs to Nero.
+Fact 2: Nero is located at Copper.
+Competing fact: Mira is also associated with Silver.
+Question: Which label is associated with Mira: Copper or Silver?
+Answer with exactly one word:"
+g016_direct_conflict,16,4,0,direct_conflict,structure_changing,competition,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Mira belongs to Nero.
+Fact 2: Nero is located at Copper.
+Direct conflicting fact: Mira is located at Silver.
+Question: Which label is associated with Mira: Copper or Silver?
+Answer with exactly one word:"
+g016_closure_update,16,4,0,closure_update,structure_changing,closure,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Mira belongs to Nero.
+Old record: Nero is located at Copper.
+Updated record: Nero is located at Silver, not Copper.
+Question: Which label is associated with Mira: Copper or Silver?
+Answer with exactly one word:"
+g016_closure_override,16,4,0,closure_override,structure_changing,closure,Copper,Silver,Gold,"You are given a rule system.
+General rule: items that belongs to Nero receive label Copper.
+Override rule: in this case, items that belongs to Nero receive label Silver.
+Fact: Mira belongs to Nero.
+Question: Which label applies to Mira: Copper or Silver?
+Answer with exactly one word:"
+g016_exception_override,16,4,0,exception_override,structure_changing,closure,Copper,Silver,Gold,"You are given a rule system.
+General rule: items connected to Nero use label Copper.
+Exception: Mira is a special case and uses label Silver.
+Fact: Mira is connected to Nero.
+Question: Which label applies to Mira: Copper or Silver?
+Answer with exactly one word:"
+g017_clean,17,4,1,clean,clean,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Mira is assigned to Nero.
+Fact 2: Nero maps to Gold.
+Question: Which label is associated with Mira: Gold or Iron?
+Answer with exactly one word:"
+g017_rename,17,4,1,rename,relation_preserving,stable,Gold,Iron,Red,"Consider a tiny mapping network.
+Link one: Mira is assigned to Nero.
+Link two: Nero maps to Gold.
+Choose the label reached from Mira: Gold or Iron.
+One word answer:"
+g017_permuted,17,4,1,permuted,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 2: Nero maps to Gold.
+Fact 1: Mira is assigned to Nero.
+Question: Which label is associated with Mira: Gold or Iron?
+Answer with exactly one word:"
+g017_redundant,17,4,1,redundant,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Mira is assigned to Nero.
+Fact 2: Nero maps to Gold.
+Repeated confirmation: Mira still goes through Nero.
+Repeated confirmation: Nero still points to Gold.
+Question: Which label is associated with Mira: Gold or Iron?
+Answer with exactly one word:"
+g017_irrelevant,17,4,1,irrelevant,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Mira is assigned to Nero.
+Fact 2: Nero maps to Gold.
+Irrelevant fact: Orin is associated with Red.
+Question: Which label is associated with Mira: Gold or Iron?
+Answer with exactly one word:"
+g017_paraphrase,17,4,1,paraphrase,relation_preserving,stable,Gold,Iron,Red,"In this example, Mira reaches Nero.
+The destination connected to Nero is Gold.
+Based on those two links, select the label for Mira: Gold or Iron.
+Answer:"
+g017_weak_distractor,17,4,1,weak_distractor,structure_changing,stable_shift,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Mira is assigned to Nero.
+Fact 2: Nero maps to Gold.
+Weak note: some unrelated source mentions Iron, but does not update the graph.
+Question: Which label is associated with Mira: Gold or Iron?
+Answer with exactly one word:"
+g017_competition_balanced,17,4,1,competition_balanced,structure_changing,competition,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Mira is assigned to Nero.
+Fact 2: Nero maps to Gold.
+Competing fact: Mira is also associated with Iron.
+Question: Which label is associated with Mira: Gold or Iron?
+Answer with exactly one word:"
+g017_direct_conflict,17,4,1,direct_conflict,structure_changing,competition,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Mira is assigned to Nero.
+Fact 2: Nero maps to Gold.
+Direct conflicting fact: Mira maps to Iron.
+Question: Which label is associated with Mira: Gold or Iron?
+Answer with exactly one word:"
+g017_closure_update,17,4,1,closure_update,structure_changing,closure,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Mira is assigned to Nero.
+Old record: Nero maps to Gold.
+Updated record: Nero maps to Iron, not Gold.
+Question: Which label is associated with Mira: Gold or Iron?
+Answer with exactly one word:"
+g017_closure_override,17,4,1,closure_override,structure_changing,closure,Gold,Iron,Red,"You are given a rule system.
+General rule: items that is assigned to Nero receive label Gold.
+Override rule: in this case, items that is assigned to Nero receive label Iron.
+Fact: Mira is assigned to Nero.
+Question: Which label applies to Mira: Gold or Iron?
+Answer with exactly one word:"
+g017_exception_override,17,4,1,exception_override,structure_changing,closure,Gold,Iron,Red,"You are given a rule system.
+General rule: items connected to Nero use label Gold.
+Exception: Mira is a special case and uses label Iron.
+Fact: Mira is connected to Nero.
+Question: Which label applies to Mira: Gold or Iron?
+Answer with exactly one word:"
+g018_clean,18,4,2,clean,clean,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Mira is part of Nero.
+Fact 2: Nero points to Red.
+Question: Which label is associated with Mira: Red or Blue?
+Answer with exactly one word:"
+g018_rename,18,4,2,rename,relation_preserving,stable,Red,Blue,Green,"Consider a tiny mapping network.
+Link one: Mira is part of Nero.
+Link two: Nero points to Red.
+Choose the label reached from Mira: Red or Blue.
+One word answer:"
+g018_permuted,18,4,2,permuted,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 2: Nero points to Red.
+Fact 1: Mira is part of Nero.
+Question: Which label is associated with Mira: Red or Blue?
+Answer with exactly one word:"
+g018_redundant,18,4,2,redundant,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Mira is part of Nero.
+Fact 2: Nero points to Red.
+Repeated confirmation: Mira still goes through Nero.
+Repeated confirmation: Nero still points to Red.
+Question: Which label is associated with Mira: Red or Blue?
+Answer with exactly one word:"
+g018_irrelevant,18,4,2,irrelevant,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Mira is part of Nero.
+Fact 2: Nero points to Red.
+Irrelevant fact: Orin is associated with Green.
+Question: Which label is associated with Mira: Red or Blue?
+Answer with exactly one word:"
+g018_paraphrase,18,4,2,paraphrase,relation_preserving,stable,Red,Blue,Green,"In this example, Mira reaches Nero.
+The destination connected to Nero is Red.
+Based on those two links, select the label for Mira: Red or Blue.
+Answer:"
+g018_weak_distractor,18,4,2,weak_distractor,structure_changing,stable_shift,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Mira is part of Nero.
+Fact 2: Nero points to Red.
+Weak note: some unrelated source mentions Blue, but does not update the graph.
+Question: Which label is associated with Mira: Red or Blue?
+Answer with exactly one word:"
+g018_competition_balanced,18,4,2,competition_balanced,structure_changing,competition,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Mira is part of Nero.
+Fact 2: Nero points to Red.
+Competing fact: Mira is also associated with Blue.
+Question: Which label is associated with Mira: Red or Blue?
+Answer with exactly one word:"
+g018_direct_conflict,18,4,2,direct_conflict,structure_changing,competition,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Mira is part of Nero.
+Fact 2: Nero points to Red.
+Direct conflicting fact: Mira points to Blue.
+Question: Which label is associated with Mira: Red or Blue?
+Answer with exactly one word:"
+g018_closure_update,18,4,2,closure_update,structure_changing,closure,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Mira is part of Nero.
+Old record: Nero points to Red.
+Updated record: Nero points to Blue, not Red.
+Question: Which label is associated with Mira: Red or Blue?
+Answer with exactly one word:"
+g018_closure_override,18,4,2,closure_override,structure_changing,closure,Red,Blue,Green,"You are given a rule system.
+General rule: items that is part of Nero receive label Red.
+Override rule: in this case, items that is part of Nero receive label Blue.
+Fact: Mira is part of Nero.
+Question: Which label applies to Mira: Red or Blue?
+Answer with exactly one word:"
+g018_exception_override,18,4,2,exception_override,structure_changing,closure,Red,Blue,Green,"You are given a rule system.
+General rule: items connected to Nero use label Red.
+Exception: Mira is a special case and uses label Blue.
+Fact: Mira is connected to Nero.
+Question: Which label applies to Mira: Red or Blue?
+Answer with exactly one word:"
+g019_clean,19,4,3,clean,clean,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Mira is grouped under Nero.
+Fact 2: Nero has label Green.
+Question: Which label is associated with Mira: Green or Yellow?
+Answer with exactly one word:"
+g019_rename,19,4,3,rename,relation_preserving,stable,Green,Yellow,North,"Consider a tiny mapping network.
+Link one: Mira is grouped under Nero.
+Link two: Nero has label Green.
+Choose the label reached from Mira: Green or Yellow.
+One word answer:"
+g019_permuted,19,4,3,permuted,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 2: Nero has label Green.
+Fact 1: Mira is grouped under Nero.
+Question: Which label is associated with Mira: Green or Yellow?
+Answer with exactly one word:"
+g019_redundant,19,4,3,redundant,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Mira is grouped under Nero.
+Fact 2: Nero has label Green.
+Repeated confirmation: Mira still goes through Nero.
+Repeated confirmation: Nero still points to Green.
+Question: Which label is associated with Mira: Green or Yellow?
+Answer with exactly one word:"
+g019_irrelevant,19,4,3,irrelevant,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Mira is grouped under Nero.
+Fact 2: Nero has label Green.
+Irrelevant fact: Orin is associated with North.
+Question: Which label is associated with Mira: Green or Yellow?
+Answer with exactly one word:"
+g019_paraphrase,19,4,3,paraphrase,relation_preserving,stable,Green,Yellow,North,"In this example, Mira reaches Nero.
+The destination connected to Nero is Green.
+Based on those two links, select the label for Mira: Green or Yellow.
+Answer:"
+g019_weak_distractor,19,4,3,weak_distractor,structure_changing,stable_shift,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Mira is grouped under Nero.
+Fact 2: Nero has label Green.
+Weak note: some unrelated source mentions Yellow, but does not update the graph.
+Question: Which label is associated with Mira: Green or Yellow?
+Answer with exactly one word:"
+g019_competition_balanced,19,4,3,competition_balanced,structure_changing,competition,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Mira is grouped under Nero.
+Fact 2: Nero has label Green.
+Competing fact: Mira is also associated with Yellow.
+Question: Which label is associated with Mira: Green or Yellow?
+Answer with exactly one word:"
+g019_direct_conflict,19,4,3,direct_conflict,structure_changing,competition,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Mira is grouped under Nero.
+Fact 2: Nero has label Green.
+Direct conflicting fact: Mira has label Yellow.
+Question: Which label is associated with Mira: Green or Yellow?
+Answer with exactly one word:"
+g019_closure_update,19,4,3,closure_update,structure_changing,closure,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Mira is grouped under Nero.
+Old record: Nero has label Green.
+Updated record: Nero has label Yellow, not Green.
+Question: Which label is associated with Mira: Green or Yellow?
+Answer with exactly one word:"
+g019_closure_override,19,4,3,closure_override,structure_changing,closure,Green,Yellow,North,"You are given a rule system.
+General rule: items that is grouped under Nero receive label Green.
+Override rule: in this case, items that is grouped under Nero receive label Yellow.
+Fact: Mira is grouped under Nero.
+Question: Which label applies to Mira: Green or Yellow?
+Answer with exactly one word:"
+g019_exception_override,19,4,3,exception_override,structure_changing,closure,Green,Yellow,North,"You are given a rule system.
+General rule: items connected to Nero use label Green.
+Exception: Mira is a special case and uses label Yellow.
+Fact: Mira is connected to Nero.
+Question: Which label applies to Mira: Green or Yellow?
+Answer with exactly one word:"
+g020_clean,20,5,0,clean,clean,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Pia belongs to Quin.
+Fact 2: Quin is located at North.
+Question: Which label is associated with Pia: North or South?
+Answer with exactly one word:"
+g020_rename,20,5,0,rename,relation_preserving,stable,North,South,East,"Consider a tiny mapping network.
+Link one: Pia belongs to Quin.
+Link two: Quin is located at North.
+Choose the label reached from Pia: North or South.
+One word answer:"
+g020_permuted,20,5,0,permuted,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 2: Quin is located at North.
+Fact 1: Pia belongs to Quin.
+Question: Which label is associated with Pia: North or South?
+Answer with exactly one word:"
+g020_redundant,20,5,0,redundant,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Pia belongs to Quin.
+Fact 2: Quin is located at North.
+Repeated confirmation: Pia still goes through Quin.
+Repeated confirmation: Quin still points to North.
+Question: Which label is associated with Pia: North or South?
+Answer with exactly one word:"
+g020_irrelevant,20,5,0,irrelevant,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Pia belongs to Quin.
+Fact 2: Quin is located at North.
+Irrelevant fact: Rhea is associated with East.
+Question: Which label is associated with Pia: North or South?
+Answer with exactly one word:"
+g020_paraphrase,20,5,0,paraphrase,relation_preserving,stable,North,South,East,"In this example, Pia reaches Quin.
+The destination connected to Quin is North.
+Based on those two links, select the label for Pia: North or South.
+Answer:"
+g020_weak_distractor,20,5,0,weak_distractor,structure_changing,stable_shift,North,South,East,"You are given a small relation graph.
+Fact 1: Pia belongs to Quin.
+Fact 2: Quin is located at North.
+Weak note: some unrelated source mentions South, but does not update the graph.
+Question: Which label is associated with Pia: North or South?
+Answer with exactly one word:"
+g020_competition_balanced,20,5,0,competition_balanced,structure_changing,competition,North,South,East,"You are given a small relation graph.
+Fact 1: Pia belongs to Quin.
+Fact 2: Quin is located at North.
+Competing fact: Pia is also associated with South.
+Question: Which label is associated with Pia: North or South?
+Answer with exactly one word:"
+g020_direct_conflict,20,5,0,direct_conflict,structure_changing,competition,North,South,East,"You are given a small relation graph.
+Fact 1: Pia belongs to Quin.
+Fact 2: Quin is located at North.
+Direct conflicting fact: Pia is located at South.
+Question: Which label is associated with Pia: North or South?
+Answer with exactly one word:"
+g020_closure_update,20,5,0,closure_update,structure_changing,closure,North,South,East,"You are given a small relation graph.
+Fact 1: Pia belongs to Quin.
+Old record: Quin is located at North.
+Updated record: Quin is located at South, not North.
+Question: Which label is associated with Pia: North or South?
+Answer with exactly one word:"
+g020_closure_override,20,5,0,closure_override,structure_changing,closure,North,South,East,"You are given a rule system.
+General rule: items that belongs to Quin receive label North.
+Override rule: in this case, items that belongs to Quin receive label South.
+Fact: Pia belongs to Quin.
+Question: Which label applies to Pia: North or South?
+Answer with exactly one word:"
+g020_exception_override,20,5,0,exception_override,structure_changing,closure,North,South,East,"You are given a rule system.
+General rule: items connected to Quin use label North.
+Exception: Pia is a special case and uses label South.
+Fact: Pia is connected to Quin.
+Question: Which label applies to Pia: North or South?
+Answer with exactly one word:"
+g021_clean,21,5,1,clean,clean,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Pia is assigned to Quin.
+Fact 2: Quin maps to East.
+Question: Which label is associated with Pia: East or West?
+Answer with exactly one word:"
+g021_rename,21,5,1,rename,relation_preserving,stable,East,West,Copper,"Consider a tiny mapping network.
+Link one: Pia is assigned to Quin.
+Link two: Quin maps to East.
+Choose the label reached from Pia: East or West.
+One word answer:"
+g021_permuted,21,5,1,permuted,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 2: Quin maps to East.
+Fact 1: Pia is assigned to Quin.
+Question: Which label is associated with Pia: East or West?
+Answer with exactly one word:"
+g021_redundant,21,5,1,redundant,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Pia is assigned to Quin.
+Fact 2: Quin maps to East.
+Repeated confirmation: Pia still goes through Quin.
+Repeated confirmation: Quin still points to East.
+Question: Which label is associated with Pia: East or West?
+Answer with exactly one word:"
+g021_irrelevant,21,5,1,irrelevant,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Pia is assigned to Quin.
+Fact 2: Quin maps to East.
+Irrelevant fact: Rhea is associated with Copper.
+Question: Which label is associated with Pia: East or West?
+Answer with exactly one word:"
+g021_paraphrase,21,5,1,paraphrase,relation_preserving,stable,East,West,Copper,"In this example, Pia reaches Quin.
+The destination connected to Quin is East.
+Based on those two links, select the label for Pia: East or West.
+Answer:"
+g021_weak_distractor,21,5,1,weak_distractor,structure_changing,stable_shift,East,West,Copper,"You are given a small relation graph.
+Fact 1: Pia is assigned to Quin.
+Fact 2: Quin maps to East.
+Weak note: some unrelated source mentions West, but does not update the graph.
+Question: Which label is associated with Pia: East or West?
+Answer with exactly one word:"
+g021_competition_balanced,21,5,1,competition_balanced,structure_changing,competition,East,West,Copper,"You are given a small relation graph.
+Fact 1: Pia is assigned to Quin.
+Fact 2: Quin maps to East.
+Competing fact: Pia is also associated with West.
+Question: Which label is associated with Pia: East or West?
+Answer with exactly one word:"
+g021_direct_conflict,21,5,1,direct_conflict,structure_changing,competition,East,West,Copper,"You are given a small relation graph.
+Fact 1: Pia is assigned to Quin.
+Fact 2: Quin maps to East.
+Direct conflicting fact: Pia maps to West.
+Question: Which label is associated with Pia: East or West?
+Answer with exactly one word:"
+g021_closure_update,21,5,1,closure_update,structure_changing,closure,East,West,Copper,"You are given a small relation graph.
+Fact 1: Pia is assigned to Quin.
+Old record: Quin maps to East.
+Updated record: Quin maps to West, not East.
+Question: Which label is associated with Pia: East or West?
+Answer with exactly one word:"
+g021_closure_override,21,5,1,closure_override,structure_changing,closure,East,West,Copper,"You are given a rule system.
+General rule: items that is assigned to Quin receive label East.
+Override rule: in this case, items that is assigned to Quin receive label West.
+Fact: Pia is assigned to Quin.
+Question: Which label applies to Pia: East or West?
+Answer with exactly one word:"
+g021_exception_override,21,5,1,exception_override,structure_changing,closure,East,West,Copper,"You are given a rule system.
+General rule: items connected to Quin use label East.
+Exception: Pia is a special case and uses label West.
+Fact: Pia is connected to Quin.
+Question: Which label applies to Pia: East or West?
+Answer with exactly one word:"
+g022_clean,22,5,2,clean,clean,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Pia is part of Quin.
+Fact 2: Quin points to Copper.
+Question: Which label is associated with Pia: Copper or Silver?
+Answer with exactly one word:"
+g022_rename,22,5,2,rename,relation_preserving,stable,Copper,Silver,Gold,"Consider a tiny mapping network.
+Link one: Pia is part of Quin.
+Link two: Quin points to Copper.
+Choose the label reached from Pia: Copper or Silver.
+One word answer:"
+g022_permuted,22,5,2,permuted,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 2: Quin points to Copper.
+Fact 1: Pia is part of Quin.
+Question: Which label is associated with Pia: Copper or Silver?
+Answer with exactly one word:"
+g022_redundant,22,5,2,redundant,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Pia is part of Quin.
+Fact 2: Quin points to Copper.
+Repeated confirmation: Pia still goes through Quin.
+Repeated confirmation: Quin still points to Copper.
+Question: Which label is associated with Pia: Copper or Silver?
+Answer with exactly one word:"
+g022_irrelevant,22,5,2,irrelevant,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Pia is part of Quin.
+Fact 2: Quin points to Copper.
+Irrelevant fact: Rhea is associated with Gold.
+Question: Which label is associated with Pia: Copper or Silver?
+Answer with exactly one word:"
+g022_paraphrase,22,5,2,paraphrase,relation_preserving,stable,Copper,Silver,Gold,"In this example, Pia reaches Quin.
+The destination connected to Quin is Copper.
+Based on those two links, select the label for Pia: Copper or Silver.
+Answer:"
+g022_weak_distractor,22,5,2,weak_distractor,structure_changing,stable_shift,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Pia is part of Quin.
+Fact 2: Quin points to Copper.
+Weak note: some unrelated source mentions Silver, but does not update the graph.
+Question: Which label is associated with Pia: Copper or Silver?
+Answer with exactly one word:"
+g022_competition_balanced,22,5,2,competition_balanced,structure_changing,competition,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Pia is part of Quin.
+Fact 2: Quin points to Copper.
+Competing fact: Pia is also associated with Silver.
+Question: Which label is associated with Pia: Copper or Silver?
+Answer with exactly one word:"
+g022_direct_conflict,22,5,2,direct_conflict,structure_changing,competition,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Pia is part of Quin.
+Fact 2: Quin points to Copper.
+Direct conflicting fact: Pia points to Silver.
+Question: Which label is associated with Pia: Copper or Silver?
+Answer with exactly one word:"
+g022_closure_update,22,5,2,closure_update,structure_changing,closure,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Pia is part of Quin.
+Old record: Quin points to Copper.
+Updated record: Quin points to Silver, not Copper.
+Question: Which label is associated with Pia: Copper or Silver?
+Answer with exactly one word:"
+g022_closure_override,22,5,2,closure_override,structure_changing,closure,Copper,Silver,Gold,"You are given a rule system.
+General rule: items that is part of Quin receive label Copper.
+Override rule: in this case, items that is part of Quin receive label Silver.
+Fact: Pia is part of Quin.
+Question: Which label applies to Pia: Copper or Silver?
+Answer with exactly one word:"
+g022_exception_override,22,5,2,exception_override,structure_changing,closure,Copper,Silver,Gold,"You are given a rule system.
+General rule: items connected to Quin use label Copper.
+Exception: Pia is a special case and uses label Silver.
+Fact: Pia is connected to Quin.
+Question: Which label applies to Pia: Copper or Silver?
+Answer with exactly one word:"
+g023_clean,23,5,3,clean,clean,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Pia is grouped under Quin.
+Fact 2: Quin has label Gold.
+Question: Which label is associated with Pia: Gold or Iron?
+Answer with exactly one word:"
+g023_rename,23,5,3,rename,relation_preserving,stable,Gold,Iron,Red,"Consider a tiny mapping network.
+Link one: Pia is grouped under Quin.
+Link two: Quin has label Gold.
+Choose the label reached from Pia: Gold or Iron.
+One word answer:"
+g023_permuted,23,5,3,permuted,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 2: Quin has label Gold.
+Fact 1: Pia is grouped under Quin.
+Question: Which label is associated with Pia: Gold or Iron?
+Answer with exactly one word:"
+g023_redundant,23,5,3,redundant,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Pia is grouped under Quin.
+Fact 2: Quin has label Gold.
+Repeated confirmation: Pia still goes through Quin.
+Repeated confirmation: Quin still points to Gold.
+Question: Which label is associated with Pia: Gold or Iron?
+Answer with exactly one word:"
+g023_irrelevant,23,5,3,irrelevant,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Pia is grouped under Quin.
+Fact 2: Quin has label Gold.
+Irrelevant fact: Rhea is associated with Red.
+Question: Which label is associated with Pia: Gold or Iron?
+Answer with exactly one word:"
+g023_paraphrase,23,5,3,paraphrase,relation_preserving,stable,Gold,Iron,Red,"In this example, Pia reaches Quin.
+The destination connected to Quin is Gold.
+Based on those two links, select the label for Pia: Gold or Iron.
+Answer:"
+g023_weak_distractor,23,5,3,weak_distractor,structure_changing,stable_shift,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Pia is grouped under Quin.
+Fact 2: Quin has label Gold.
+Weak note: some unrelated source mentions Iron, but does not update the graph.
+Question: Which label is associated with Pia: Gold or Iron?
+Answer with exactly one word:"
+g023_competition_balanced,23,5,3,competition_balanced,structure_changing,competition,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Pia is grouped under Quin.
+Fact 2: Quin has label Gold.
+Competing fact: Pia is also associated with Iron.
+Question: Which label is associated with Pia: Gold or Iron?
+Answer with exactly one word:"
+g023_direct_conflict,23,5,3,direct_conflict,structure_changing,competition,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Pia is grouped under Quin.
+Fact 2: Quin has label Gold.
+Direct conflicting fact: Pia has label Iron.
+Question: Which label is associated with Pia: Gold or Iron?
+Answer with exactly one word:"
+g023_closure_update,23,5,3,closure_update,structure_changing,closure,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Pia is grouped under Quin.
+Old record: Quin has label Gold.
+Updated record: Quin has label Iron, not Gold.
+Question: Which label is associated with Pia: Gold or Iron?
+Answer with exactly one word:"
+g023_closure_override,23,5,3,closure_override,structure_changing,closure,Gold,Iron,Red,"You are given a rule system.
+General rule: items that is grouped under Quin receive label Gold.
+Override rule: in this case, items that is grouped under Quin receive label Iron.
+Fact: Pia is grouped under Quin.
+Question: Which label applies to Pia: Gold or Iron?
+Answer with exactly one word:"
+g023_exception_override,23,5,3,exception_override,structure_changing,closure,Gold,Iron,Red,"You are given a rule system.
+General rule: items connected to Quin use label Gold.
+Exception: Pia is a special case and uses label Iron.
+Fact: Pia is connected to Quin.
+Question: Which label applies to Pia: Gold or Iron?
+Answer with exactly one word:"
+g024_clean,24,6,0,clean,clean,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Sola belongs to Taro.
+Fact 2: Taro is located at Red.
+Question: Which label is associated with Sola: Red or Blue?
+Answer with exactly one word:"
+g024_rename,24,6,0,rename,relation_preserving,stable,Red,Blue,Green,"Consider a tiny mapping network.
+Link one: Sola belongs to Taro.
+Link two: Taro is located at Red.
+Choose the label reached from Sola: Red or Blue.
+One word answer:"
+g024_permuted,24,6,0,permuted,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 2: Taro is located at Red.
+Fact 1: Sola belongs to Taro.
+Question: Which label is associated with Sola: Red or Blue?
+Answer with exactly one word:"
+g024_redundant,24,6,0,redundant,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Sola belongs to Taro.
+Fact 2: Taro is located at Red.
+Repeated confirmation: Sola still goes through Taro.
+Repeated confirmation: Taro still points to Red.
+Question: Which label is associated with Sola: Red or Blue?
+Answer with exactly one word:"
+g024_irrelevant,24,6,0,irrelevant,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Sola belongs to Taro.
+Fact 2: Taro is located at Red.
+Irrelevant fact: Una is associated with Green.
+Question: Which label is associated with Sola: Red or Blue?
+Answer with exactly one word:"
+g024_paraphrase,24,6,0,paraphrase,relation_preserving,stable,Red,Blue,Green,"In this example, Sola reaches Taro.
+The destination connected to Taro is Red.
+Based on those two links, select the label for Sola: Red or Blue.
+Answer:"
+g024_weak_distractor,24,6,0,weak_distractor,structure_changing,stable_shift,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Sola belongs to Taro.
+Fact 2: Taro is located at Red.
+Weak note: some unrelated source mentions Blue, but does not update the graph.
+Question: Which label is associated with Sola: Red or Blue?
+Answer with exactly one word:"
+g024_competition_balanced,24,6,0,competition_balanced,structure_changing,competition,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Sola belongs to Taro.
+Fact 2: Taro is located at Red.
+Competing fact: Sola is also associated with Blue.
+Question: Which label is associated with Sola: Red or Blue?
+Answer with exactly one word:"
+g024_direct_conflict,24,6,0,direct_conflict,structure_changing,competition,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Sola belongs to Taro.
+Fact 2: Taro is located at Red.
+Direct conflicting fact: Sola is located at Blue.
+Question: Which label is associated with Sola: Red or Blue?
+Answer with exactly one word:"
+g024_closure_update,24,6,0,closure_update,structure_changing,closure,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Sola belongs to Taro.
+Old record: Taro is located at Red.
+Updated record: Taro is located at Blue, not Red.
+Question: Which label is associated with Sola: Red or Blue?
+Answer with exactly one word:"
+g024_closure_override,24,6,0,closure_override,structure_changing,closure,Red,Blue,Green,"You are given a rule system.
+General rule: items that belongs to Taro receive label Red.
+Override rule: in this case, items that belongs to Taro receive label Blue.
+Fact: Sola belongs to Taro.
+Question: Which label applies to Sola: Red or Blue?
+Answer with exactly one word:"
+g024_exception_override,24,6,0,exception_override,structure_changing,closure,Red,Blue,Green,"You are given a rule system.
+General rule: items connected to Taro use label Red.
+Exception: Sola is a special case and uses label Blue.
+Fact: Sola is connected to Taro.
+Question: Which label applies to Sola: Red or Blue?
+Answer with exactly one word:"
+g025_clean,25,6,1,clean,clean,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Sola is assigned to Taro.
+Fact 2: Taro maps to Green.
+Question: Which label is associated with Sola: Green or Yellow?
+Answer with exactly one word:"
+g025_rename,25,6,1,rename,relation_preserving,stable,Green,Yellow,North,"Consider a tiny mapping network.
+Link one: Sola is assigned to Taro.
+Link two: Taro maps to Green.
+Choose the label reached from Sola: Green or Yellow.
+One word answer:"
+g025_permuted,25,6,1,permuted,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 2: Taro maps to Green.
+Fact 1: Sola is assigned to Taro.
+Question: Which label is associated with Sola: Green or Yellow?
+Answer with exactly one word:"
+g025_redundant,25,6,1,redundant,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Sola is assigned to Taro.
+Fact 2: Taro maps to Green.
+Repeated confirmation: Sola still goes through Taro.
+Repeated confirmation: Taro still points to Green.
+Question: Which label is associated with Sola: Green or Yellow?
+Answer with exactly one word:"
+g025_irrelevant,25,6,1,irrelevant,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Sola is assigned to Taro.
+Fact 2: Taro maps to Green.
+Irrelevant fact: Una is associated with North.
+Question: Which label is associated with Sola: Green or Yellow?
+Answer with exactly one word:"
+g025_paraphrase,25,6,1,paraphrase,relation_preserving,stable,Green,Yellow,North,"In this example, Sola reaches Taro.
+The destination connected to Taro is Green.
+Based on those two links, select the label for Sola: Green or Yellow.
+Answer:"
+g025_weak_distractor,25,6,1,weak_distractor,structure_changing,stable_shift,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Sola is assigned to Taro.
+Fact 2: Taro maps to Green.
+Weak note: some unrelated source mentions Yellow, but does not update the graph.
+Question: Which label is associated with Sola: Green or Yellow?
+Answer with exactly one word:"
+g025_competition_balanced,25,6,1,competition_balanced,structure_changing,competition,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Sola is assigned to Taro.
+Fact 2: Taro maps to Green.
+Competing fact: Sola is also associated with Yellow.
+Question: Which label is associated with Sola: Green or Yellow?
+Answer with exactly one word:"
+g025_direct_conflict,25,6,1,direct_conflict,structure_changing,competition,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Sola is assigned to Taro.
+Fact 2: Taro maps to Green.
+Direct conflicting fact: Sola maps to Yellow.
+Question: Which label is associated with Sola: Green or Yellow?
+Answer with exactly one word:"
+g025_closure_update,25,6,1,closure_update,structure_changing,closure,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Sola is assigned to Taro.
+Old record: Taro maps to Green.
+Updated record: Taro maps to Yellow, not Green.
+Question: Which label is associated with Sola: Green or Yellow?
+Answer with exactly one word:"
+g025_closure_override,25,6,1,closure_override,structure_changing,closure,Green,Yellow,North,"You are given a rule system.
+General rule: items that is assigned to Taro receive label Green.
+Override rule: in this case, items that is assigned to Taro receive label Yellow.
+Fact: Sola is assigned to Taro.
+Question: Which label applies to Sola: Green or Yellow?
+Answer with exactly one word:"
+g025_exception_override,25,6,1,exception_override,structure_changing,closure,Green,Yellow,North,"You are given a rule system.
+General rule: items connected to Taro use label Green.
+Exception: Sola is a special case and uses label Yellow.
+Fact: Sola is connected to Taro.
+Question: Which label applies to Sola: Green or Yellow?
+Answer with exactly one word:"
+g026_clean,26,6,2,clean,clean,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Sola is part of Taro.
+Fact 2: Taro points to North.
+Question: Which label is associated with Sola: North or South?
+Answer with exactly one word:"
+g026_rename,26,6,2,rename,relation_preserving,stable,North,South,East,"Consider a tiny mapping network.
+Link one: Sola is part of Taro.
+Link two: Taro points to North.
+Choose the label reached from Sola: North or South.
+One word answer:"
+g026_permuted,26,6,2,permuted,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 2: Taro points to North.
+Fact 1: Sola is part of Taro.
+Question: Which label is associated with Sola: North or South?
+Answer with exactly one word:"
+g026_redundant,26,6,2,redundant,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Sola is part of Taro.
+Fact 2: Taro points to North.
+Repeated confirmation: Sola still goes through Taro.
+Repeated confirmation: Taro still points to North.
+Question: Which label is associated with Sola: North or South?
+Answer with exactly one word:"
+g026_irrelevant,26,6,2,irrelevant,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Sola is part of Taro.
+Fact 2: Taro points to North.
+Irrelevant fact: Una is associated with East.
+Question: Which label is associated with Sola: North or South?
+Answer with exactly one word:"
+g026_paraphrase,26,6,2,paraphrase,relation_preserving,stable,North,South,East,"In this example, Sola reaches Taro.
+The destination connected to Taro is North.
+Based on those two links, select the label for Sola: North or South.
+Answer:"
+g026_weak_distractor,26,6,2,weak_distractor,structure_changing,stable_shift,North,South,East,"You are given a small relation graph.
+Fact 1: Sola is part of Taro.
+Fact 2: Taro points to North.
+Weak note: some unrelated source mentions South, but does not update the graph.
+Question: Which label is associated with Sola: North or South?
+Answer with exactly one word:"
+g026_competition_balanced,26,6,2,competition_balanced,structure_changing,competition,North,South,East,"You are given a small relation graph.
+Fact 1: Sola is part of Taro.
+Fact 2: Taro points to North.
+Competing fact: Sola is also associated with South.
+Question: Which label is associated with Sola: North or South?
+Answer with exactly one word:"
+g026_direct_conflict,26,6,2,direct_conflict,structure_changing,competition,North,South,East,"You are given a small relation graph.
+Fact 1: Sola is part of Taro.
+Fact 2: Taro points to North.
+Direct conflicting fact: Sola points to South.
+Question: Which label is associated with Sola: North or South?
+Answer with exactly one word:"
+g026_closure_update,26,6,2,closure_update,structure_changing,closure,North,South,East,"You are given a small relation graph.
+Fact 1: Sola is part of Taro.
+Old record: Taro points to North.
+Updated record: Taro points to South, not North.
+Question: Which label is associated with Sola: North or South?
+Answer with exactly one word:"
+g026_closure_override,26,6,2,closure_override,structure_changing,closure,North,South,East,"You are given a rule system.
+General rule: items that is part of Taro receive label North.
+Override rule: in this case, items that is part of Taro receive label South.
+Fact: Sola is part of Taro.
+Question: Which label applies to Sola: North or South?
+Answer with exactly one word:"
+g026_exception_override,26,6,2,exception_override,structure_changing,closure,North,South,East,"You are given a rule system.
+General rule: items connected to Taro use label North.
+Exception: Sola is a special case and uses label South.
+Fact: Sola is connected to Taro.
+Question: Which label applies to Sola: North or South?
+Answer with exactly one word:"
+g027_clean,27,6,3,clean,clean,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Sola is grouped under Taro.
+Fact 2: Taro has label East.
+Question: Which label is associated with Sola: East or West?
+Answer with exactly one word:"
+g027_rename,27,6,3,rename,relation_preserving,stable,East,West,Copper,"Consider a tiny mapping network.
+Link one: Sola is grouped under Taro.
+Link two: Taro has label East.
+Choose the label reached from Sola: East or West.
+One word answer:"
+g027_permuted,27,6,3,permuted,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 2: Taro has label East.
+Fact 1: Sola is grouped under Taro.
+Question: Which label is associated with Sola: East or West?
+Answer with exactly one word:"
+g027_redundant,27,6,3,redundant,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Sola is grouped under Taro.
+Fact 2: Taro has label East.
+Repeated confirmation: Sola still goes through Taro.
+Repeated confirmation: Taro still points to East.
+Question: Which label is associated with Sola: East or West?
+Answer with exactly one word:"
+g027_irrelevant,27,6,3,irrelevant,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Sola is grouped under Taro.
+Fact 2: Taro has label East.
+Irrelevant fact: Una is associated with Copper.
+Question: Which label is associated with Sola: East or West?
+Answer with exactly one word:"
+g027_paraphrase,27,6,3,paraphrase,relation_preserving,stable,East,West,Copper,"In this example, Sola reaches Taro.
+The destination connected to Taro is East.
+Based on those two links, select the label for Sola: East or West.
+Answer:"
+g027_weak_distractor,27,6,3,weak_distractor,structure_changing,stable_shift,East,West,Copper,"You are given a small relation graph.
+Fact 1: Sola is grouped under Taro.
+Fact 2: Taro has label East.
+Weak note: some unrelated source mentions West, but does not update the graph.
+Question: Which label is associated with Sola: East or West?
+Answer with exactly one word:"
+g027_competition_balanced,27,6,3,competition_balanced,structure_changing,competition,East,West,Copper,"You are given a small relation graph.
+Fact 1: Sola is grouped under Taro.
+Fact 2: Taro has label East.
+Competing fact: Sola is also associated with West.
+Question: Which label is associated with Sola: East or West?
+Answer with exactly one word:"
+g027_direct_conflict,27,6,3,direct_conflict,structure_changing,competition,East,West,Copper,"You are given a small relation graph.
+Fact 1: Sola is grouped under Taro.
+Fact 2: Taro has label East.
+Direct conflicting fact: Sola has label West.
+Question: Which label is associated with Sola: East or West?
+Answer with exactly one word:"
+g027_closure_update,27,6,3,closure_update,structure_changing,closure,East,West,Copper,"You are given a small relation graph.
+Fact 1: Sola is grouped under Taro.
+Old record: Taro has label East.
+Updated record: Taro has label West, not East.
+Question: Which label is associated with Sola: East or West?
+Answer with exactly one word:"
+g027_closure_override,27,6,3,closure_override,structure_changing,closure,East,West,Copper,"You are given a rule system.
+General rule: items that is grouped under Taro receive label East.
+Override rule: in this case, items that is grouped under Taro receive label West.
+Fact: Sola is grouped under Taro.
+Question: Which label applies to Sola: East or West?
+Answer with exactly one word:"
+g027_exception_override,27,6,3,exception_override,structure_changing,closure,East,West,Copper,"You are given a rule system.
+General rule: items connected to Taro use label East.
+Exception: Sola is a special case and uses label West.
+Fact: Sola is connected to Taro.
+Question: Which label applies to Sola: East or West?
+Answer with exactly one word:"
+g028_clean,28,7,0,clean,clean,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Vera belongs to Wen.
+Fact 2: Wen is located at Copper.
+Question: Which label is associated with Vera: Copper or Silver?
+Answer with exactly one word:"
+g028_rename,28,7,0,rename,relation_preserving,stable,Copper,Silver,Gold,"Consider a tiny mapping network.
+Link one: Vera belongs to Wen.
+Link two: Wen is located at Copper.
+Choose the label reached from Vera: Copper or Silver.
+One word answer:"
+g028_permuted,28,7,0,permuted,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 2: Wen is located at Copper.
+Fact 1: Vera belongs to Wen.
+Question: Which label is associated with Vera: Copper or Silver?
+Answer with exactly one word:"
+g028_redundant,28,7,0,redundant,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Vera belongs to Wen.
+Fact 2: Wen is located at Copper.
+Repeated confirmation: Vera still goes through Wen.
+Repeated confirmation: Wen still points to Copper.
+Question: Which label is associated with Vera: Copper or Silver?
+Answer with exactly one word:"
+g028_irrelevant,28,7,0,irrelevant,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Vera belongs to Wen.
+Fact 2: Wen is located at Copper.
+Irrelevant fact: Xio is associated with Gold.
+Question: Which label is associated with Vera: Copper or Silver?
+Answer with exactly one word:"
+g028_paraphrase,28,7,0,paraphrase,relation_preserving,stable,Copper,Silver,Gold,"In this example, Vera reaches Wen.
+The destination connected to Wen is Copper.
+Based on those two links, select the label for Vera: Copper or Silver.
+Answer:"
+g028_weak_distractor,28,7,0,weak_distractor,structure_changing,stable_shift,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Vera belongs to Wen.
+Fact 2: Wen is located at Copper.
+Weak note: some unrelated source mentions Silver, but does not update the graph.
+Question: Which label is associated with Vera: Copper or Silver?
+Answer with exactly one word:"
+g028_competition_balanced,28,7,0,competition_balanced,structure_changing,competition,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Vera belongs to Wen.
+Fact 2: Wen is located at Copper.
+Competing fact: Vera is also associated with Silver.
+Question: Which label is associated with Vera: Copper or Silver?
+Answer with exactly one word:"
+g028_direct_conflict,28,7,0,direct_conflict,structure_changing,competition,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Vera belongs to Wen.
+Fact 2: Wen is located at Copper.
+Direct conflicting fact: Vera is located at Silver.
+Question: Which label is associated with Vera: Copper or Silver?
+Answer with exactly one word:"
+g028_closure_update,28,7,0,closure_update,structure_changing,closure,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Vera belongs to Wen.
+Old record: Wen is located at Copper.
+Updated record: Wen is located at Silver, not Copper.
+Question: Which label is associated with Vera: Copper or Silver?
+Answer with exactly one word:"
+g028_closure_override,28,7,0,closure_override,structure_changing,closure,Copper,Silver,Gold,"You are given a rule system.
+General rule: items that belongs to Wen receive label Copper.
+Override rule: in this case, items that belongs to Wen receive label Silver.
+Fact: Vera belongs to Wen.
+Question: Which label applies to Vera: Copper or Silver?
+Answer with exactly one word:"
+g028_exception_override,28,7,0,exception_override,structure_changing,closure,Copper,Silver,Gold,"You are given a rule system.
+General rule: items connected to Wen use label Copper.
+Exception: Vera is a special case and uses label Silver.
+Fact: Vera is connected to Wen.
+Question: Which label applies to Vera: Copper or Silver?
+Answer with exactly one word:"
+g029_clean,29,7,1,clean,clean,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Vera is assigned to Wen.
+Fact 2: Wen maps to Gold.
+Question: Which label is associated with Vera: Gold or Iron?
+Answer with exactly one word:"
+g029_rename,29,7,1,rename,relation_preserving,stable,Gold,Iron,Red,"Consider a tiny mapping network.
+Link one: Vera is assigned to Wen.
+Link two: Wen maps to Gold.
+Choose the label reached from Vera: Gold or Iron.
+One word answer:"
+g029_permuted,29,7,1,permuted,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 2: Wen maps to Gold.
+Fact 1: Vera is assigned to Wen.
+Question: Which label is associated with Vera: Gold or Iron?
+Answer with exactly one word:"
+g029_redundant,29,7,1,redundant,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Vera is assigned to Wen.
+Fact 2: Wen maps to Gold.
+Repeated confirmation: Vera still goes through Wen.
+Repeated confirmation: Wen still points to Gold.
+Question: Which label is associated with Vera: Gold or Iron?
+Answer with exactly one word:"
+g029_irrelevant,29,7,1,irrelevant,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Vera is assigned to Wen.
+Fact 2: Wen maps to Gold.
+Irrelevant fact: Xio is associated with Red.
+Question: Which label is associated with Vera: Gold or Iron?
+Answer with exactly one word:"
+g029_paraphrase,29,7,1,paraphrase,relation_preserving,stable,Gold,Iron,Red,"In this example, Vera reaches Wen.
+The destination connected to Wen is Gold.
+Based on those two links, select the label for Vera: Gold or Iron.
+Answer:"
+g029_weak_distractor,29,7,1,weak_distractor,structure_changing,stable_shift,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Vera is assigned to Wen.
+Fact 2: Wen maps to Gold.
+Weak note: some unrelated source mentions Iron, but does not update the graph.
+Question: Which label is associated with Vera: Gold or Iron?
+Answer with exactly one word:"
+g029_competition_balanced,29,7,1,competition_balanced,structure_changing,competition,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Vera is assigned to Wen.
+Fact 2: Wen maps to Gold.
+Competing fact: Vera is also associated with Iron.
+Question: Which label is associated with Vera: Gold or Iron?
+Answer with exactly one word:"
+g029_direct_conflict,29,7,1,direct_conflict,structure_changing,competition,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Vera is assigned to Wen.
+Fact 2: Wen maps to Gold.
+Direct conflicting fact: Vera maps to Iron.
+Question: Which label is associated with Vera: Gold or Iron?
+Answer with exactly one word:"
+g029_closure_update,29,7,1,closure_update,structure_changing,closure,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Vera is assigned to Wen.
+Old record: Wen maps to Gold.
+Updated record: Wen maps to Iron, not Gold.
+Question: Which label is associated with Vera: Gold or Iron?
+Answer with exactly one word:"
+g029_closure_override,29,7,1,closure_override,structure_changing,closure,Gold,Iron,Red,"You are given a rule system.
+General rule: items that is assigned to Wen receive label Gold.
+Override rule: in this case, items that is assigned to Wen receive label Iron.
+Fact: Vera is assigned to Wen.
+Question: Which label applies to Vera: Gold or Iron?
+Answer with exactly one word:"
+g029_exception_override,29,7,1,exception_override,structure_changing,closure,Gold,Iron,Red,"You are given a rule system.
+General rule: items connected to Wen use label Gold.
+Exception: Vera is a special case and uses label Iron.
+Fact: Vera is connected to Wen.
+Question: Which label applies to Vera: Gold or Iron?
+Answer with exactly one word:"
+g030_clean,30,7,2,clean,clean,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Vera is part of Wen.
+Fact 2: Wen points to Red.
+Question: Which label is associated with Vera: Red or Blue?
+Answer with exactly one word:"
+g030_rename,30,7,2,rename,relation_preserving,stable,Red,Blue,Green,"Consider a tiny mapping network.
+Link one: Vera is part of Wen.
+Link two: Wen points to Red.
+Choose the label reached from Vera: Red or Blue.
+One word answer:"
+g030_permuted,30,7,2,permuted,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 2: Wen points to Red.
+Fact 1: Vera is part of Wen.
+Question: Which label is associated with Vera: Red or Blue?
+Answer with exactly one word:"
+g030_redundant,30,7,2,redundant,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Vera is part of Wen.
+Fact 2: Wen points to Red.
+Repeated confirmation: Vera still goes through Wen.
+Repeated confirmation: Wen still points to Red.
+Question: Which label is associated with Vera: Red or Blue?
+Answer with exactly one word:"
+g030_irrelevant,30,7,2,irrelevant,relation_preserving,stable,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Vera is part of Wen.
+Fact 2: Wen points to Red.
+Irrelevant fact: Xio is associated with Green.
+Question: Which label is associated with Vera: Red or Blue?
+Answer with exactly one word:"
+g030_paraphrase,30,7,2,paraphrase,relation_preserving,stable,Red,Blue,Green,"In this example, Vera reaches Wen.
+The destination connected to Wen is Red.
+Based on those two links, select the label for Vera: Red or Blue.
+Answer:"
+g030_weak_distractor,30,7,2,weak_distractor,structure_changing,stable_shift,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Vera is part of Wen.
+Fact 2: Wen points to Red.
+Weak note: some unrelated source mentions Blue, but does not update the graph.
+Question: Which label is associated with Vera: Red or Blue?
+Answer with exactly one word:"
+g030_competition_balanced,30,7,2,competition_balanced,structure_changing,competition,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Vera is part of Wen.
+Fact 2: Wen points to Red.
+Competing fact: Vera is also associated with Blue.
+Question: Which label is associated with Vera: Red or Blue?
+Answer with exactly one word:"
+g030_direct_conflict,30,7,2,direct_conflict,structure_changing,competition,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Vera is part of Wen.
+Fact 2: Wen points to Red.
+Direct conflicting fact: Vera points to Blue.
+Question: Which label is associated with Vera: Red or Blue?
+Answer with exactly one word:"
+g030_closure_update,30,7,2,closure_update,structure_changing,closure,Red,Blue,Green,"You are given a small relation graph.
+Fact 1: Vera is part of Wen.
+Old record: Wen points to Red.
+Updated record: Wen points to Blue, not Red.
+Question: Which label is associated with Vera: Red or Blue?
+Answer with exactly one word:"
+g030_closure_override,30,7,2,closure_override,structure_changing,closure,Red,Blue,Green,"You are given a rule system.
+General rule: items that is part of Wen receive label Red.
+Override rule: in this case, items that is part of Wen receive label Blue.
+Fact: Vera is part of Wen.
+Question: Which label applies to Vera: Red or Blue?
+Answer with exactly one word:"
+g030_exception_override,30,7,2,exception_override,structure_changing,closure,Red,Blue,Green,"You are given a rule system.
+General rule: items connected to Wen use label Red.
+Exception: Vera is a special case and uses label Blue.
+Fact: Vera is connected to Wen.
+Question: Which label applies to Vera: Red or Blue?
+Answer with exactly one word:"
+g031_clean,31,7,3,clean,clean,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Vera is grouped under Wen.
+Fact 2: Wen has label Green.
+Question: Which label is associated with Vera: Green or Yellow?
+Answer with exactly one word:"
+g031_rename,31,7,3,rename,relation_preserving,stable,Green,Yellow,North,"Consider a tiny mapping network.
+Link one: Vera is grouped under Wen.
+Link two: Wen has label Green.
+Choose the label reached from Vera: Green or Yellow.
+One word answer:"
+g031_permuted,31,7,3,permuted,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 2: Wen has label Green.
+Fact 1: Vera is grouped under Wen.
+Question: Which label is associated with Vera: Green or Yellow?
+Answer with exactly one word:"
+g031_redundant,31,7,3,redundant,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Vera is grouped under Wen.
+Fact 2: Wen has label Green.
+Repeated confirmation: Vera still goes through Wen.
+Repeated confirmation: Wen still points to Green.
+Question: Which label is associated with Vera: Green or Yellow?
+Answer with exactly one word:"
+g031_irrelevant,31,7,3,irrelevant,relation_preserving,stable,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Vera is grouped under Wen.
+Fact 2: Wen has label Green.
+Irrelevant fact: Xio is associated with North.
+Question: Which label is associated with Vera: Green or Yellow?
+Answer with exactly one word:"
+g031_paraphrase,31,7,3,paraphrase,relation_preserving,stable,Green,Yellow,North,"In this example, Vera reaches Wen.
+The destination connected to Wen is Green.
+Based on those two links, select the label for Vera: Green or Yellow.
+Answer:"
+g031_weak_distractor,31,7,3,weak_distractor,structure_changing,stable_shift,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Vera is grouped under Wen.
+Fact 2: Wen has label Green.
+Weak note: some unrelated source mentions Yellow, but does not update the graph.
+Question: Which label is associated with Vera: Green or Yellow?
+Answer with exactly one word:"
+g031_competition_balanced,31,7,3,competition_balanced,structure_changing,competition,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Vera is grouped under Wen.
+Fact 2: Wen has label Green.
+Competing fact: Vera is also associated with Yellow.
+Question: Which label is associated with Vera: Green or Yellow?
+Answer with exactly one word:"
+g031_direct_conflict,31,7,3,direct_conflict,structure_changing,competition,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Vera is grouped under Wen.
+Fact 2: Wen has label Green.
+Direct conflicting fact: Vera has label Yellow.
+Question: Which label is associated with Vera: Green or Yellow?
+Answer with exactly one word:"
+g031_closure_update,31,7,3,closure_update,structure_changing,closure,Green,Yellow,North,"You are given a small relation graph.
+Fact 1: Vera is grouped under Wen.
+Old record: Wen has label Green.
+Updated record: Wen has label Yellow, not Green.
+Question: Which label is associated with Vera: Green or Yellow?
+Answer with exactly one word:"
+g031_closure_override,31,7,3,closure_override,structure_changing,closure,Green,Yellow,North,"You are given a rule system.
+General rule: items that is grouped under Wen receive label Green.
+Override rule: in this case, items that is grouped under Wen receive label Yellow.
+Fact: Vera is grouped under Wen.
+Question: Which label applies to Vera: Green or Yellow?
+Answer with exactly one word:"
+g031_exception_override,31,7,3,exception_override,structure_changing,closure,Green,Yellow,North,"You are given a rule system.
+General rule: items connected to Wen use label Green.
+Exception: Vera is a special case and uses label Yellow.
+Fact: Vera is connected to Wen.
+Question: Which label applies to Vera: Green or Yellow?
+Answer with exactly one word:"
+g032_clean,32,8,0,clean,clean,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Yara belongs to Zeno.
+Fact 2: Zeno is located at North.
+Question: Which label is associated with Yara: North or South?
+Answer with exactly one word:"
+g032_rename,32,8,0,rename,relation_preserving,stable,North,South,East,"Consider a tiny mapping network.
+Link one: Yara belongs to Zeno.
+Link two: Zeno is located at North.
+Choose the label reached from Yara: North or South.
+One word answer:"
+g032_permuted,32,8,0,permuted,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 2: Zeno is located at North.
+Fact 1: Yara belongs to Zeno.
+Question: Which label is associated with Yara: North or South?
+Answer with exactly one word:"
+g032_redundant,32,8,0,redundant,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Yara belongs to Zeno.
+Fact 2: Zeno is located at North.
+Repeated confirmation: Yara still goes through Zeno.
+Repeated confirmation: Zeno still points to North.
+Question: Which label is associated with Yara: North or South?
+Answer with exactly one word:"
+g032_irrelevant,32,8,0,irrelevant,relation_preserving,stable,North,South,East,"You are given a small relation graph.
+Fact 1: Yara belongs to Zeno.
+Fact 2: Zeno is located at North.
+Irrelevant fact: Nia is associated with East.
+Question: Which label is associated with Yara: North or South?
+Answer with exactly one word:"
+g032_paraphrase,32,8,0,paraphrase,relation_preserving,stable,North,South,East,"In this example, Yara reaches Zeno.
+The destination connected to Zeno is North.
+Based on those two links, select the label for Yara: North or South.
+Answer:"
+g032_weak_distractor,32,8,0,weak_distractor,structure_changing,stable_shift,North,South,East,"You are given a small relation graph.
+Fact 1: Yara belongs to Zeno.
+Fact 2: Zeno is located at North.
+Weak note: some unrelated source mentions South, but does not update the graph.
+Question: Which label is associated with Yara: North or South?
+Answer with exactly one word:"
+g032_competition_balanced,32,8,0,competition_balanced,structure_changing,competition,North,South,East,"You are given a small relation graph.
+Fact 1: Yara belongs to Zeno.
+Fact 2: Zeno is located at North.
+Competing fact: Yara is also associated with South.
+Question: Which label is associated with Yara: North or South?
+Answer with exactly one word:"
+g032_direct_conflict,32,8,0,direct_conflict,structure_changing,competition,North,South,East,"You are given a small relation graph.
+Fact 1: Yara belongs to Zeno.
+Fact 2: Zeno is located at North.
+Direct conflicting fact: Yara is located at South.
+Question: Which label is associated with Yara: North or South?
+Answer with exactly one word:"
+g032_closure_update,32,8,0,closure_update,structure_changing,closure,North,South,East,"You are given a small relation graph.
+Fact 1: Yara belongs to Zeno.
+Old record: Zeno is located at North.
+Updated record: Zeno is located at South, not North.
+Question: Which label is associated with Yara: North or South?
+Answer with exactly one word:"
+g032_closure_override,32,8,0,closure_override,structure_changing,closure,North,South,East,"You are given a rule system.
+General rule: items that belongs to Zeno receive label North.
+Override rule: in this case, items that belongs to Zeno receive label South.
+Fact: Yara belongs to Zeno.
+Question: Which label applies to Yara: North or South?
+Answer with exactly one word:"
+g032_exception_override,32,8,0,exception_override,structure_changing,closure,North,South,East,"You are given a rule system.
+General rule: items connected to Zeno use label North.
+Exception: Yara is a special case and uses label South.
+Fact: Yara is connected to Zeno.
+Question: Which label applies to Yara: North or South?
+Answer with exactly one word:"
+g033_clean,33,8,1,clean,clean,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Yara is assigned to Zeno.
+Fact 2: Zeno maps to East.
+Question: Which label is associated with Yara: East or West?
+Answer with exactly one word:"
+g033_rename,33,8,1,rename,relation_preserving,stable,East,West,Copper,"Consider a tiny mapping network.
+Link one: Yara is assigned to Zeno.
+Link two: Zeno maps to East.
+Choose the label reached from Yara: East or West.
+One word answer:"
+g033_permuted,33,8,1,permuted,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 2: Zeno maps to East.
+Fact 1: Yara is assigned to Zeno.
+Question: Which label is associated with Yara: East or West?
+Answer with exactly one word:"
+g033_redundant,33,8,1,redundant,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Yara is assigned to Zeno.
+Fact 2: Zeno maps to East.
+Repeated confirmation: Yara still goes through Zeno.
+Repeated confirmation: Zeno still points to East.
+Question: Which label is associated with Yara: East or West?
+Answer with exactly one word:"
+g033_irrelevant,33,8,1,irrelevant,relation_preserving,stable,East,West,Copper,"You are given a small relation graph.
+Fact 1: Yara is assigned to Zeno.
+Fact 2: Zeno maps to East.
+Irrelevant fact: Nia is associated with Copper.
+Question: Which label is associated with Yara: East or West?
+Answer with exactly one word:"
+g033_paraphrase,33,8,1,paraphrase,relation_preserving,stable,East,West,Copper,"In this example, Yara reaches Zeno.
+The destination connected to Zeno is East.
+Based on those two links, select the label for Yara: East or West.
+Answer:"
+g033_weak_distractor,33,8,1,weak_distractor,structure_changing,stable_shift,East,West,Copper,"You are given a small relation graph.
+Fact 1: Yara is assigned to Zeno.
+Fact 2: Zeno maps to East.
+Weak note: some unrelated source mentions West, but does not update the graph.
+Question: Which label is associated with Yara: East or West?
+Answer with exactly one word:"
+g033_competition_balanced,33,8,1,competition_balanced,structure_changing,competition,East,West,Copper,"You are given a small relation graph.
+Fact 1: Yara is assigned to Zeno.
+Fact 2: Zeno maps to East.
+Competing fact: Yara is also associated with West.
+Question: Which label is associated with Yara: East or West?
+Answer with exactly one word:"
+g033_direct_conflict,33,8,1,direct_conflict,structure_changing,competition,East,West,Copper,"You are given a small relation graph.
+Fact 1: Yara is assigned to Zeno.
+Fact 2: Zeno maps to East.
+Direct conflicting fact: Yara maps to West.
+Question: Which label is associated with Yara: East or West?
+Answer with exactly one word:"
+g033_closure_update,33,8,1,closure_update,structure_changing,closure,East,West,Copper,"You are given a small relation graph.
+Fact 1: Yara is assigned to Zeno.
+Old record: Zeno maps to East.
+Updated record: Zeno maps to West, not East.
+Question: Which label is associated with Yara: East or West?
+Answer with exactly one word:"
+g033_closure_override,33,8,1,closure_override,structure_changing,closure,East,West,Copper,"You are given a rule system.
+General rule: items that is assigned to Zeno receive label East.
+Override rule: in this case, items that is assigned to Zeno receive label West.
+Fact: Yara is assigned to Zeno.
+Question: Which label applies to Yara: East or West?
+Answer with exactly one word:"
+g033_exception_override,33,8,1,exception_override,structure_changing,closure,East,West,Copper,"You are given a rule system.
+General rule: items connected to Zeno use label East.
+Exception: Yara is a special case and uses label West.
+Fact: Yara is connected to Zeno.
+Question: Which label applies to Yara: East or West?
+Answer with exactly one word:"
+g034_clean,34,8,2,clean,clean,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Yara is part of Zeno.
+Fact 2: Zeno points to Copper.
+Question: Which label is associated with Yara: Copper or Silver?
+Answer with exactly one word:"
+g034_rename,34,8,2,rename,relation_preserving,stable,Copper,Silver,Gold,"Consider a tiny mapping network.
+Link one: Yara is part of Zeno.
+Link two: Zeno points to Copper.
+Choose the label reached from Yara: Copper or Silver.
+One word answer:"
+g034_permuted,34,8,2,permuted,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 2: Zeno points to Copper.
+Fact 1: Yara is part of Zeno.
+Question: Which label is associated with Yara: Copper or Silver?
+Answer with exactly one word:"
+g034_redundant,34,8,2,redundant,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Yara is part of Zeno.
+Fact 2: Zeno points to Copper.
+Repeated confirmation: Yara still goes through Zeno.
+Repeated confirmation: Zeno still points to Copper.
+Question: Which label is associated with Yara: Copper or Silver?
+Answer with exactly one word:"
+g034_irrelevant,34,8,2,irrelevant,relation_preserving,stable,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Yara is part of Zeno.
+Fact 2: Zeno points to Copper.
+Irrelevant fact: Nia is associated with Gold.
+Question: Which label is associated with Yara: Copper or Silver?
+Answer with exactly one word:"
+g034_paraphrase,34,8,2,paraphrase,relation_preserving,stable,Copper,Silver,Gold,"In this example, Yara reaches Zeno.
+The destination connected to Zeno is Copper.
+Based on those two links, select the label for Yara: Copper or Silver.
+Answer:"
+g034_weak_distractor,34,8,2,weak_distractor,structure_changing,stable_shift,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Yara is part of Zeno.
+Fact 2: Zeno points to Copper.
+Weak note: some unrelated source mentions Silver, but does not update the graph.
+Question: Which label is associated with Yara: Copper or Silver?
+Answer with exactly one word:"
+g034_competition_balanced,34,8,2,competition_balanced,structure_changing,competition,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Yara is part of Zeno.
+Fact 2: Zeno points to Copper.
+Competing fact: Yara is also associated with Silver.
+Question: Which label is associated with Yara: Copper or Silver?
+Answer with exactly one word:"
+g034_direct_conflict,34,8,2,direct_conflict,structure_changing,competition,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Yara is part of Zeno.
+Fact 2: Zeno points to Copper.
+Direct conflicting fact: Yara points to Silver.
+Question: Which label is associated with Yara: Copper or Silver?
+Answer with exactly one word:"
+g034_closure_update,34,8,2,closure_update,structure_changing,closure,Copper,Silver,Gold,"You are given a small relation graph.
+Fact 1: Yara is part of Zeno.
+Old record: Zeno points to Copper.
+Updated record: Zeno points to Silver, not Copper.
+Question: Which label is associated with Yara: Copper or Silver?
+Answer with exactly one word:"
+g034_closure_override,34,8,2,closure_override,structure_changing,closure,Copper,Silver,Gold,"You are given a rule system.
+General rule: items that is part of Zeno receive label Copper.
+Override rule: in this case, items that is part of Zeno receive label Silver.
+Fact: Yara is part of Zeno.
+Question: Which label applies to Yara: Copper or Silver?
+Answer with exactly one word:"
+g034_exception_override,34,8,2,exception_override,structure_changing,closure,Copper,Silver,Gold,"You are given a rule system.
+General rule: items connected to Zeno use label Copper.
+Exception: Yara is a special case and uses label Silver.
+Fact: Yara is connected to Zeno.
+Question: Which label applies to Yara: Copper or Silver?
+Answer with exactly one word:"
+g035_clean,35,8,3,clean,clean,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Yara is grouped under Zeno.
+Fact 2: Zeno has label Gold.
+Question: Which label is associated with Yara: Gold or Iron?
+Answer with exactly one word:"
+g035_rename,35,8,3,rename,relation_preserving,stable,Gold,Iron,Red,"Consider a tiny mapping network.
+Link one: Yara is grouped under Zeno.
+Link two: Zeno has label Gold.
+Choose the label reached from Yara: Gold or Iron.
+One word answer:"
+g035_permuted,35,8,3,permuted,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 2: Zeno has label Gold.
+Fact 1: Yara is grouped under Zeno.
+Question: Which label is associated with Yara: Gold or Iron?
+Answer with exactly one word:"
+g035_redundant,35,8,3,redundant,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Yara is grouped under Zeno.
+Fact 2: Zeno has label Gold.
+Repeated confirmation: Yara still goes through Zeno.
+Repeated confirmation: Zeno still points to Gold.
+Question: Which label is associated with Yara: Gold or Iron?
+Answer with exactly one word:"
+g035_irrelevant,35,8,3,irrelevant,relation_preserving,stable,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Yara is grouped under Zeno.
+Fact 2: Zeno has label Gold.
+Irrelevant fact: Nia is associated with Red.
+Question: Which label is associated with Yara: Gold or Iron?
+Answer with exactly one word:"
+g035_paraphrase,35,8,3,paraphrase,relation_preserving,stable,Gold,Iron,Red,"In this example, Yara reaches Zeno.
+The destination connected to Zeno is Gold.
+Based on those two links, select the label for Yara: Gold or Iron.
+Answer:"
+g035_weak_distractor,35,8,3,weak_distractor,structure_changing,stable_shift,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Yara is grouped under Zeno.
+Fact 2: Zeno has label Gold.
+Weak note: some unrelated source mentions Iron, but does not update the graph.
+Question: Which label is associated with Yara: Gold or Iron?
+Answer with exactly one word:"
+g035_competition_balanced,35,8,3,competition_balanced,structure_changing,competition,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Yara is grouped under Zeno.
+Fact 2: Zeno has label Gold.
+Competing fact: Yara is also associated with Iron.
+Question: Which label is associated with Yara: Gold or Iron?
+Answer with exactly one word:"
+g035_direct_conflict,35,8,3,direct_conflict,structure_changing,competition,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Yara is grouped under Zeno.
+Fact 2: Zeno has label Gold.
+Direct conflicting fact: Yara has label Iron.
+Question: Which label is associated with Yara: Gold or Iron?
+Answer with exactly one word:"
+g035_closure_update,35,8,3,closure_update,structure_changing,closure,Gold,Iron,Red,"You are given a small relation graph.
+Fact 1: Yara is grouped under Zeno.
+Old record: Zeno has label Gold.
+Updated record: Zeno has label Iron, not Gold.
+Question: Which label is associated with Yara: Gold or Iron?
+Answer with exactly one word:"
+g035_closure_override,35,8,3,closure_override,structure_changing,closure,Gold,Iron,Red,"You are given a rule system.
+General rule: items that is grouped under Zeno receive label Gold.
+Override rule: in this case, items that is grouped under Zeno receive label Iron.
+Fact: Yara is grouped under Zeno.
+Question: Which label applies to Yara: Gold or Iron?
+Answer with exactly one word:"
+g035_exception_override,35,8,3,exception_override,structure_changing,closure,Gold,Iron,Red,"You are given a rule system.
+General rule: items connected to Zeno use label Gold.
+Exception: Yara is a special case and uses label Iron.
+Fact: Yara is connected to Zeno.
+Question: Which label applies to Yara: Gold or Iron?
+Answer with exactly one word:"

@@ -1,0 +1,10 @@
+"model","metric","value"
+"Qwen","Preservation",0.83310079124487
+"Qwen","Class F1",0.736929269904138
+"Qwen","Downstream corr.",0.634957541535817
+"Llama","Preservation",0.801743263885624
+"Llama","Class F1",0.754938271604938
+"Llama","Downstream corr.",0.308878607351733
+"Gemma","Preservation",0.866455440026989
+"Gemma","Class F1",0.735941716135996
+"Gemma","Downstream corr.",0.554457334467252

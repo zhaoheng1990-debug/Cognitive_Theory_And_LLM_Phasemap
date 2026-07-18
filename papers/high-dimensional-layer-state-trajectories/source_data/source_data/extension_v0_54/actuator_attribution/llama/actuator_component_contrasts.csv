@@ -1,0 +1,4 @@
+model,reference,control,reference_only_flips,control_only_flips,paired_binomial_p,flip_rate_difference,graph_bootstrap_ci95_low,graph_bootstrap_ci95_high
+llama,policy_boundary_guarded,policy_gate_operator_only,1,2,1.0,-0.011494252873563204,-0.06896551724137931,0.03448275862068964
+llama,policy_boundary_guarded,policy_gate_precursor_only,13,1,0.0018310546875,0.13793103448275862,0.04597701149425287,0.24137931034482762
+llama,policy_boundary_guarded,policy_gate_uniform_max,0,2,0.5,-0.022988505747126436,-0.05747126436781609,0.0

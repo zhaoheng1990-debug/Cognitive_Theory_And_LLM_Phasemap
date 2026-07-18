@@ -1,0 +1,4 @@
+"model","stratum","n_prompts","n_graphs","clean_choice_rate_none","clean_choice_rate_policy","clean_choice_rate_difference","clean_choice_difference_ci_low","clean_choice_difference_ci_high","conflict_to_clean_flips","clean_to_conflict_flips","exact_paired_flip_p","mean_margin_shift","mean_margin_shift_ci_low","mean_margin_shift_ci_high","model_f"
+"qwen","closure",87,29,0,0,0,0,0,0,0,1,2.48563218390805,2.21065463362069,2.76257183908046,"Qwen"
+"llama","closure",87,29,0.482758620689655,0.574712643678161,0.0919540229885057,0.0114942528735632,0.183908045977011,9,1,0.021484375,0.256016522988506,0.187046515804598,0.324894486350575,"Llama"
+"gemma","closure",87,29,0.35632183908046,0.425287356321839,0.0689655172413793,0.0114942528735632,0.137931034482759,6,0,0.03125,0.433997844827586,0.335306663074713,0.527119252873563,"Gemma"

@@ -1,0 +1,14 @@
+{
+  "title": "Code for High-dimensional state trajectories reveal transformer inference dynamics",
+  "description": "Reproducibility code for the predictive-transition boundary, prospective functional-window confirmation and bounded actuator-component attribution.",
+  "upload_type": "software",
+  "concept_doi": "10.5281/zenodo.21317440",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Zhao, Heng",
+      "orcid": "0009-0004-2395-9393"
+    }
+  ],
+  "version": "v0.54"
+}

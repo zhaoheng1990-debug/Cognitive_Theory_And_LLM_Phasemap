@@ -1,0 +1,4 @@
+"model","stratum","method","n_prompts","correlation_delta_DeltaU_vs_margin_shift","correlation_ci_low","correlation_ci_high","model_f"
+"qwen","closure","pearson",87,0.716676022663292,0.589555738404752,0.813072724494905,"Qwen"
+"llama","closure","pearson",87,0.986220264921231,0.978105732640497,0.991889322246769,"Llama"
+"gemma","closure","pearson",87,0.896611110744352,0.846156403969099,0.931866263734322,"Gemma"

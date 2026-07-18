@@ -1,0 +1,206 @@
+{
+  "audit_version": "v0.1",
+  "all_passed": true,
+  "passed": 39,
+  "total": 39,
+  "protocol_sha256": "b35ddb0364495915b2052b5976820add890ec556483c7b984f78702b62a1eed9",
+  "analysis_script_sha256": "547d95145c1bd372e5b6e2ddd6875692fbe3eabee1386239cd0f4af39f24268f",
+  "checks": [
+    {
+      "check": "discovery graph count",
+      "passed": true,
+      "detail": "36"
+    },
+    {
+      "check": "confirmation graph count",
+      "passed": true,
+      "detail": "24"
+    },
+    {
+      "check": "graph IDs disjoint",
+      "passed": true,
+      "detail": "checked"
+    },
+    {
+      "check": "candidate vocabularies disjoint",
+      "passed": true,
+      "detail": "checked"
+    },
+    {
+      "check": "12 conditions per graph",
+      "passed": true,
+      "detail": "checked"
+    },
+    {
+      "check": "protocol hash unchanged",
+      "passed": true,
+      "detail": "b35ddb0364495915b2052b5976820add890ec556483c7b984f78702b62a1eed9"
+    },
+    {
+      "check": "qwen: selected window fixed",
+      "passed": true,
+      "detail": "L5_6, K=500"
+    },
+    {
+      "check": "qwen: PCA discovery reproduction",
+      "passed": true,
+      "detail": "0.9999999999999997"
+    },
+    {
+      "check": "qwen: mechanism F1 recomputed",
+      "passed": true,
+      "detail": "0.7386393303234614"
+    },
+    {
+      "check": "qwen: downstream correlation recomputed",
+      "passed": true,
+      "detail": "0.6585784983087928"
+    },
+    {
+      "check": "qwen: topology separation recomputed",
+      "passed": true,
+      "detail": "-0.1850111174448878"
+    },
+    {
+      "check": "qwen: mechanism null quantile",
+      "passed": true,
+      "detail": "0.5209895572940446"
+    },
+    {
+      "check": "qwen: downstream null quantile",
+      "passed": true,
+      "detail": "0.6233173606542366"
+    },
+    {
+      "check": "qwen: scan rank consistent",
+      "passed": true,
+      "detail": "58"
+    },
+    {
+      "check": "qwen: role verdict recomputed",
+      "passed": true,
+      "detail": "False"
+    },
+    {
+      "check": "qwen: location verdict recomputed",
+      "passed": true,
+      "detail": "False"
+    },
+    {
+      "check": "llama: selected window fixed",
+      "passed": true,
+      "detail": "L0_2, K=500"
+    },
+    {
+      "check": "llama: PCA discovery reproduction",
+      "passed": true,
+      "detail": "0.9999999999999993"
+    },
+    {
+      "check": "llama: mechanism F1 recomputed",
+      "passed": true,
+      "detail": "0.66176358709637"
+    },
+    {
+      "check": "llama: downstream correlation recomputed",
+      "passed": true,
+      "detail": "0.41051439276819934"
+    },
+    {
+      "check": "llama: topology separation recomputed",
+      "passed": true,
+      "detail": "-0.09182935577413218"
+    },
+    {
+      "check": "llama: mechanism null quantile",
+      "passed": true,
+      "detail": "0.5098121131135105"
+    },
+    {
+      "check": "llama: downstream null quantile",
+      "passed": true,
+      "detail": "0.45169513268789313"
+    },
+    {
+      "check": "llama: scan rank consistent",
+      "passed": true,
+      "detail": "38"
+    },
+    {
+      "check": "llama: role verdict recomputed",
+      "passed": true,
+      "detail": "False"
+    },
+    {
+      "check": "llama: location verdict recomputed",
+      "passed": true,
+      "detail": "False"
+    },
+    {
+      "check": "gemma: selected window fixed",
+      "passed": true,
+      "detail": "L1_6, K=100"
+    },
+    {
+      "check": "gemma: PCA discovery reproduction",
+      "passed": true,
+      "detail": "0.9999999999999998"
+    },
+    {
+      "check": "gemma: mechanism F1 recomputed",
+      "passed": true,
+      "detail": "0.6488536660269709"
+    },
+    {
+      "check": "gemma: downstream correlation recomputed",
+      "passed": true,
+      "detail": "0.6240724030236704"
+    },
+    {
+      "check": "gemma: topology separation recomputed",
+      "passed": true,
+      "detail": "-0.09028308502096466"
+    },
+    {
+      "check": "gemma: mechanism null quantile",
+      "passed": true,
+      "detail": "0.4746854439115753"
+    },
+    {
+      "check": "gemma: downstream null quantile",
+      "passed": true,
+      "detail": "0.4038590459791237"
+    },
+    {
+      "check": "gemma: scan rank consistent",
+      "passed": true,
+      "detail": "5"
+    },
+    {
+      "check": "gemma: role verdict recomputed",
+      "passed": true,
+      "detail": "False"
+    },
+    {
+      "check": "gemma: location verdict recomputed",
+      "passed": true,
+      "detail": "True"
+    },
+    {
+      "check": "family role count",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "check": "family location count",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "negative result retained",
+      "passed": true,
+      "detail": "failed three-checkpoint role recurrence"
+    }
+  ],
+  "interpretation": "The prospective three-checkpoint functional-window confirmation failed its frozen gate. Class information transferred to all checkpoints, downstream coupling transferred to Qwen and Gemma under the frozen null, topology separation reversed in all checkpoints, and only Gemma retained top-quartile window location. The original windows remain exploratory."
+}

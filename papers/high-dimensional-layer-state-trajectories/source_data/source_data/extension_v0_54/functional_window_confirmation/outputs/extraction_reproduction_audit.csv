@@ -1,0 +1,4 @@
+model_key,pca_reproduction_corr,discovery_rows,confirmation_rows
+qwen,0.9999999999999997,432,288
+llama,0.9999999999999993,432,288
+gemma,0.9999999999999998,432,288

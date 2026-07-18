@@ -1,0 +1,10 @@
+"model","projection","preservation"
+"Gemma","Real",0.731728809878073
+"Gemma","Row-permuted",0.731889507654668
+"Gemma","Gaussian",0.899514399324127
+"Llama","Real",0.77134604279109
+"Llama","Row-permuted",0.771380570691993
+"Llama","Gaussian",0.922321400675816
+"Qwen","Real",0.787862731490031
+"Qwen","Row-permuted",0.787958485458191
+"Qwen","Gaussian",0.926722136566349

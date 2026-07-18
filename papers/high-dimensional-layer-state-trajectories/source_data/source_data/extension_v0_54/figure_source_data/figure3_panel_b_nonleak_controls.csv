@@ -1,0 +1,7 @@
+"model","metric","value"
+"Qwen","Predecision ΔU corr.",0.543456190647372
+"Qwen","Predecision class F1",0.593623813262082
+"Llama","Predecision ΔU corr.",0.547352671548745
+"Llama","Predecision class F1",0.526910056975155
+"Gemma","Predecision ΔU corr.",0.761993135411228
+"Gemma","Predecision class F1",0.767098890519039

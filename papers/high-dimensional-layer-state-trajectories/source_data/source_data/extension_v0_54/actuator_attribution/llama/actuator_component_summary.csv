@@ -1,0 +1,6 @@
+model,control,closure_n,strict_conflict_to_clean,closure_mean_margin_shift,nonclosure_n,nonclosure_top1_changes,nonclosure_top1_change_rate,mean_norm_ratio,max_norm_ratio,all_finite
+llama,none,87,0,0.0,203,0,0.0,1.0,1.0,True
+llama,policy_boundary_guarded,87,13,0.5958153735632183,203,2,0.009852216748768473,0.9869585030654381,1.059103012084961,True
+llama,policy_gate_operator_only,87,14,0.5054777298850575,203,2,0.009852216748768473,0.986821784808718,1.059103012084961,True
+llama,policy_gate_precursor_only,87,1,0.04696479885057471,203,0,0.0,1.0000766828142365,1.0027323961257935,True
+llama,policy_gate_uniform_max,87,15,0.6527478448275862,203,2,0.009852216748768473,0.9878060914730203,1.060039758682251,True

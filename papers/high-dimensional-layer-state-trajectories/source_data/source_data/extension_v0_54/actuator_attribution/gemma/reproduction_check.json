@@ -1,0 +1,6 @@
+{
+  "none_top1_exact": true,
+  "guarded_top1_exact": true,
+  "none_margin_max_abs_delta": 0.0,
+  "guarded_margin_max_abs_delta": 0.0
+}

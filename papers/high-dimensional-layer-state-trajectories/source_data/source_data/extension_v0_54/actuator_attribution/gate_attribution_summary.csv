@@ -1,0 +1,4 @@
+model,ungated_flips,ungated_damage,gated_flips,gated_damage
+qwen,19,7,17,0
+llama,13,3,13,2
+gemma,9,1,9,0

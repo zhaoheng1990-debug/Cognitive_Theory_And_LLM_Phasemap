@@ -1,0 +1,4 @@
+"model_f","gain_over_fixed","z_vs_shuffle_both","exceeds_shuffle_both_q95"
+"Qwen",1.70560505080889,4.38077450237886,"True"
+"Llama",0.1604930227393,4.22969505054984,"True"
+"Gemma",7.62619886962064,4.01540523836755,"True"

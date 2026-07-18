@@ -1,0 +1,10 @@
+"model","model_label","control","target_rate","collateral_rate"
+"qwen","Qwen","Ungated policy",0.218390804597701,0.0344827586206896
+"llama","Llama","Ungated policy",0.149425287356322,0.0147783251231527
+"gemma","Gemma","Ungated policy",0.103448275862069,0.0049261083743842
+"qwen","Qwen","Confidence-gated",0.195402298850575,0
+"llama","Llama","Confidence-gated",0.149425287356322,0.0098522167487684
+"gemma","Gemma","Confidence-gated",0.103448275862069,0
+"qwen","Qwen","Shuffled policy",0.137931034482759,0.364532019704433
+"llama","Llama","Shuffled policy",0.149425287356322,0.216748768472906
+"gemma","Gemma","Shuffled policy",0.0229885057471264,0.25615763546798

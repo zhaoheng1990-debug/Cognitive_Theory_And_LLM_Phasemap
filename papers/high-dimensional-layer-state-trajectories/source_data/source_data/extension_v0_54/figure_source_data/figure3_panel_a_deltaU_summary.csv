@@ -1,0 +1,10 @@
+"model","metric","value"
+"Qwen","PC1 variance",0.91848349571228
+"Qwen","ΔU corr.",0.999032895273583
+"Qwen","Class F1",0.95399920063139
+"Llama","PC1 variance",0.83232706785202
+"Llama","ΔU corr.",0.998931440813757
+"Llama","Class F1",0.770905113480995
+"Gemma","PC1 variance",0.966821551322937
+"Gemma","ΔU corr.",0.999720927777754
+"Gemma","Class F1",0.903661522841124

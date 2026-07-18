@@ -1,0 +1,4 @@
+"task","model","n_items_or_problems","behavioural_accuracy","real_alignment_mean","shuffle_alignment_mean","alignment_gain","alignment_z","real_exceeds_all_50_shuffles","model_label","task_short"
+"ARC-Challenge validation, four-choice","qwen",96,0.78125,0.0570487417280674,0.0421467587351799,0.0149019829928874,3.20833073289418,"True","Qwen","ARC-Challenge"
+"ARC-Challenge validation, four-choice","llama",96,0.333333333333333,0.12424248456955,0.0723754899948835,0.051866994574666,5.23051290168102,"True","Llama","ARC-Challenge"
+"ARC-Challenge validation, four-choice","gemma",96,0.770833333333333,0.097057819366455,0.0430792103335261,0.0539786090329289,7.8361939995992,"True","Gemma","ARC-Challenge"
