@@ -43,6 +43,8 @@ The evidence supports an observable ordered process and bounded control of a dec
 - Source Data concept DOI: https://doi.org/10.5281/zenodo.21317355
 - Code concept DOI: https://doi.org/10.5281/zenodo.21317440
 
+The repository branch is current at v0.54. As of 18 July 2026, the Zenodo concept records still resolve to the earlier archived release; the complete v0.52-v0.54 deposit set is awaiting publication as the next version.
+
 Model weights and large hidden-state arrays are not redistributed. All work was conducted as independent research without employer data, compute, funding, facilities or internal systems.
 
 Contact: Heng Zhao <zhaoheng1990@gmail.com>; ORCID <https://orcid.org/0009-0004-2395-9393>.

@@ -24,6 +24,8 @@ The evidence does not establish an exact geodesic, a least-action principle, a u
 - Source Data: https://doi.org/10.5281/zenodo.21317355
 - Code: https://doi.org/10.5281/zenodo.21317440
 
+The GitHub repository contains the current v0.54 extension. As of 18 July 2026, the Zenodo concept records still resolve to the earlier archived release; the v0.52-v0.54 deposit set is prepared for the next published version.
+
 Model weights and large derivative hidden-state arrays are not redistributed. Full forward reruns require the cited upstream checkpoints and compatible local compute.
 
 Contact: Heng Zhao <zhaoheng1990@gmail.com>; ORCID <https://orcid.org/0009-0004-2395-9393>.
