@@ -43,7 +43,7 @@ This mapping is deliberately conservative and must be confirmed by all authors b
 - AI assistance: disclosed in the main Methods and Supplementary Methods; scientific decisions, interpretation and accountability remained human.
 - Data DOI: https://doi.org/10.5281/zenodo.21317355
 - Code DOI: https://doi.org/10.5281/zenodo.21317440
-- Public repository: https://github.com/zhaoheng1990-debug/Cognitive_Theory_And_LLM_Phasemap
+- Paper-specific public repository branch: https://github.com/zhaoheng1990-debug/Cognitive_Theory_And_LLM_Phasemap/tree/high-dimensional-layer-state-trajectories
 
 ## Submission-system fields requiring author confirmation
 

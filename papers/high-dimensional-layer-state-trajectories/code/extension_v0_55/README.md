@@ -2,6 +2,10 @@
 
 This incremental extension contains the frozen mixed-arithmetic actuator-transfer runner, an independent read-only verifier and the deterministic R script for Extended Data Fig. 9. Earlier closure runners remain in extensions v0.51-v0.54.
 
+## Licence
+
+This code is released under the Apache License 2.0. The same licence applies to the paper-specific GitHub branch and the Zenodo Code record.
+
 ## Fast verification
 
 ```bash
