@@ -1,11 +1,11 @@
 # High-dimensional state trajectories reveal transformer inference dynamics
 
-Public paper and reproducibility package. The current synchronized repository release is **v0.55**; the manuscript source is v0.31 and Supplementary Methods are v0.17.
+Public paper and reproducibility package. The current synchronized repository release is **v0.55**; the manuscript source is v0.32 and Supplementary Methods are v0.17.
 
 ## Start here
 
-1. Compact manuscript view: `paper/nature_compact_8page_layout_v0_31.pdf`
-2. Full submission draft: `paper/nature_initial_submission_v0_31.pdf`
+1. Compact manuscript view: `paper/nature_compact_8page_layout_v0_32.pdf`
+2. Full submission draft: `paper/nature_initial_submission_v0_32.pdf`
 3. Supplementary Methods: `paper/supplementary_methods_v0_17.pdf`
 4. v0.55 verification: `code/extension_v0_55/verify_extension_v0_55.py`
 5. v0.55 Source Data: `source_data/source_data/extension_v0_55/README.md`
