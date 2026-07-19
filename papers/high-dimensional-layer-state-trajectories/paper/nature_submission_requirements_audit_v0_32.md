@@ -42,7 +42,7 @@ This audit concerns submission readiness, availability and public-surface consis
 2. Confirm the public preprint identifier or confirm no public preprint, and confirm no concurrent submission.
 3. Create and publish v0.55 under both existing Zenodo concept records, retain the prior files, add the four v0.52-v0.55 extension archives, and use the titles and licences in `release_v0_55/zenodo_upload_set_v0_55/README.md`.
 4. Run `verify_zenodo_release_v0_55.py`; publication is complete only when every check passes.
-5. Verify that the dedicated GitHub branch remains at commit `e070e75`, then use `finalize_nature_submission_v0_32.py` only after all release gates pass.
+5. Verify that the dedicated GitHub branch resolves to the current reproducibility release, then use `finalize_nature_submission_v0_32.py` only after all release gates pass.
 
 ## Non-blocking editorial recommendation
 
