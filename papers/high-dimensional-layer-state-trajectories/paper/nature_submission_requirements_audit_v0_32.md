@@ -20,6 +20,7 @@ This audit concerns submission readiness, availability and public-surface consis
 | Summary paragraph should be non-technical and ideally no more than 200 words. | Abstract is 157 words. | Pass |
 | Typical 8-page Article target is about 4,300 words with 5-6 modest display items. | Main text is 3,737 words; five main figures; compact editorial layout is eight pages. | Pass |
 | Figures, legends and line numbering should be readable in one initial-submission PDF. | `output/pdf/nature_initial_submission_v0_32/nature_initial_submission_v0_32.pdf` is 1.02 MB and includes line numbering; legends were visually audited after rendering. | Pass |
+| Submitted PDFs must be free of internal working labels and must agree with the staged attachments. | The 35-page line-numbered initial-submission PDF, 8-page compact reading layout and 16-page Supplementary Methods PDF were re-rendered on 20 July 2026. Internal `draft`/version page headers were replaced by neutral running headers; staged attachment copies were regenerated from these final PDFs. | Pass |
 | Up to ten Extended Data display items. | Nine Extended Data figures and one Extended Data table. | Pass |
 | Main references should normally remain at or below 50. | Twenty-six references, with titles supplied. | Pass |
 | Methods must include separate Data Availability and Code Availability sections. | Present in manuscript lines 350-356. | Conditional: archive release must be published before upload. |
@@ -47,6 +48,8 @@ This audit concerns submission readiness, availability and public-surface consis
 ## Non-blocking editorial recommendation
 
 Nature asks that acknowledgements be brief. The current acknowledgements are substantive personal context, not a compliance failure. Before actual submission, H.Z. should decide whether to retain them in full or replace them with a shorter acknowledgement while preserving the funding and resource-provenance disclosures in Methods.
+
+The compact eight-page PDF is an editorial reading layout. The 35-page line-numbered initial-submission PDF is the intended Nature upload file.
 
 ## Verdict
 
