@@ -1,0 +1,4 @@
+model,n_test_rows,prompt_ids_exact,baseline_margin_max_abs_delta,extraction_pair_sign_disagreements,extraction_pair_sign_disagreements_outside_tolerance_band,fp16_margin_tolerance,repeat_top1_exact,repeat_pair_sign_exact,repeat_margin_max_abs_delta,all_single_token_candidates,all_context_prefixes_exact,all_first_appended_tokens_match
+qwen,120,True,0.0625,0,0,0.125,True,True,0.0,True,True,True
+llama,120,True,0.015625,0,0,0.125,True,True,0.0,True,True,True
+gemma,120,True,0.0390625,1,0,0.125,True,True,0.0,True,True,True

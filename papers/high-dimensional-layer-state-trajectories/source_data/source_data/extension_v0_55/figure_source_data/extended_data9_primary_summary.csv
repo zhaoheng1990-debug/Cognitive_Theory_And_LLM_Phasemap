@@ -1,0 +1,4 @@
+"checkpoint","eligible_target_prompts","strict_crossings","target_crossing_rate","median_candidate_margin_shift","median_task_coordinate_shift","non_target_prompts","non_target_top1_changes","collateral_rate","specificity","model_level_gate"
+"Qwen",14,1,0.0714285714285714,0.5390625,-0.0205543041229248,80,1,0.0125,0.0589285714285714,"Pass"
+"Llama",27,1,0.037037037037037,-0.0703125,-0.0414367318153381,80,0,0,0.037037037037037,"Direction fail"
+"Gemma",4,0,0,0.09375,0.553839802742004,80,0,0,0,"Underpowered"

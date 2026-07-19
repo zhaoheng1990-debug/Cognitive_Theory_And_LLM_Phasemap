@@ -1,0 +1,35 @@
+{
+  "pass": true,
+  "models": [
+    {
+      "model": "qwen",
+      "primary_summary_exact": true,
+      "primary_summary_failures": [],
+      "reproduction_gate_pass": true,
+      "address_null_count": 50,
+      "address_null_dose_multiset_exact": true,
+      "address_null_dose_failures": [],
+      "primary_prompt_count": 120
+    },
+    {
+      "model": "llama",
+      "primary_summary_exact": true,
+      "primary_summary_failures": [],
+      "reproduction_gate_pass": true,
+      "address_null_count": 50,
+      "address_null_dose_multiset_exact": true,
+      "address_null_dose_failures": [],
+      "primary_prompt_count": 120
+    },
+    {
+      "model": "gemma",
+      "primary_summary_exact": true,
+      "primary_summary_failures": [],
+      "reproduction_gate_pass": true,
+      "address_null_count": 50,
+      "address_null_dose_multiset_exact": true,
+      "address_null_dose_failures": [],
+      "primary_prompt_count": 120
+    }
+  ]
+}

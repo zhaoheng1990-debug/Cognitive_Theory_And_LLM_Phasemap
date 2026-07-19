@@ -1,0 +1,18 @@
+{
+  "status": "partial_protocol_transfer",
+  "primary_control": "guarded_policy",
+  "eligible_n_pooled": 45,
+  "strict_crossings_pooled": 2,
+  "target_crossing_rate_pooled": 0.044444444444444446,
+  "non_target_n_pooled": 240,
+  "non_target_top1_changes_pooled": 1,
+  "collateral_rate_pooled": 0.004166666666666667,
+  "specificity_pooled": 0.04027777777777778,
+  "address_null_specificity_q95": -0.01111111111111111,
+  "address_null_empirical_p_one_sided": 0.0196078431372549,
+  "powered_positive_models": 1,
+  "models_at_or_below_collateral_ceiling": 3,
+  "independent_verification_pass": true,
+  "n_address_nulls_per_model": 50,
+  "claim_boundary": "Partial protocol-level transfer after training-only refitting on a bounded raw-prompt mixed-arithmetic task; not confirmatory cross-task output control, zero-shot parameter transfer, open-ended correctness control, deployment control or a universal dynamical law."
+}
