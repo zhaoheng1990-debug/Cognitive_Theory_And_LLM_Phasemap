@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Tavi use label Cyan.
+Exception: Soren is a special case and uses label Magenta.
+Fact: Soren is connected to Tavi.
+Question: Which label is associated with Soren: Cyan or Magenta?
+Answer with exactly one word:

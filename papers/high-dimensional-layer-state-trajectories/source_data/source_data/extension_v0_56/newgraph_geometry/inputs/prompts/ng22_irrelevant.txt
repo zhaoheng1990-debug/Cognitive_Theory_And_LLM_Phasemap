@@ -1,0 +1,6 @@
+You are given a small relation graph.
+Fact 1: Oriel passes by Pavo.
+Fact 2: Pavo is filed at Coral.
+Irrelevant fact: Qira is associated with Mint.
+Question: Which label is associated with Oriel: Coral or Lilac?
+Answer with exactly one word:

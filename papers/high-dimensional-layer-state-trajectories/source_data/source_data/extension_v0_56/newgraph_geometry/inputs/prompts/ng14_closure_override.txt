@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that travels via Ronan receive label Ivory.
+Override rule: in this case, items that travels via Ronan receive label Onyx.
+Fact: Quilla travels via Ronan.
+Question: Which label is associated with Quilla: Ivory or Onyx?
+Answer with exactly one word:

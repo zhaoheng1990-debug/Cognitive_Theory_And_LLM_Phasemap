@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that routes through Brisa receive label Cyan.
+Override rule: in this case, items that routes through Brisa receive label Magenta.
+Fact: Arden routes through Brisa.
+Question: Which label is associated with Arden: Cyan or Magenta?
+Answer with exactly one word:

@@ -1,0 +1,5 @@
+You are given a small relation graph.
+Fact 2: Oria is indexed as Violet.
+Fact 1: Nolan is catalogued beside Oria.
+Question: Which label is associated with Nolan: Violet or Amber?
+Answer with exactly one word:

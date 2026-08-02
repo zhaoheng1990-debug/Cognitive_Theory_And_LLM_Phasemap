@@ -1,0 +1,5 @@
+You are given a small relation graph.
+Fact 2: Hesta is marked with Ivory.
+Fact 1: Garin travels via Hesta.
+Question: Which label is associated with Garin: Ivory or Onyx?
+Answer with exactly one word:

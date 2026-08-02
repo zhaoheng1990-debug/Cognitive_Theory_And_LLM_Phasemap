@@ -1,0 +1,5 @@
+You are given a small relation graph.
+Fact 2: Arlo is assigned marker Mint.
+Fact 1: Zelia is traced to Arlo.
+Question: Which label is associated with Zelia: Mint or Plum?
+Answer with exactly one word:

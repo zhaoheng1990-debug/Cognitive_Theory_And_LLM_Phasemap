@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Celie use label Ruby.
+Exception: Bram is a special case and uses label Jade.
+Fact: Bram is connected to Celie.
+Question: Which label is associated with Bram: Ruby or Jade?
+Answer with exactly one word:

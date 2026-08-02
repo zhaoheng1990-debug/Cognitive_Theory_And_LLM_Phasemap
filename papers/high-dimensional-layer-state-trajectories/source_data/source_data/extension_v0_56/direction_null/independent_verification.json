@@ -1,0 +1,39 @@
+{
+  "verifier": "verify_empirical_direction_null.py",
+  "passed": true,
+  "checks": {
+    "qwen": true,
+    "llama": true,
+    "gemma": true
+  },
+  "models": [
+    {
+      "model": "qwen",
+      "count_pass": true,
+      "numeric_pass": true,
+      "verdict_pass": true,
+      "norm_pass": true,
+      "empirical_p_recomputed": 0.13725490196078433,
+      "q95_recomputed": 25.19999999999999
+    },
+    {
+      "model": "llama",
+      "count_pass": true,
+      "numeric_pass": true,
+      "verdict_pass": true,
+      "norm_pass": true,
+      "empirical_p_recomputed": 0.09803921568627451,
+      "q95_recomputed": 18.099999999999994
+    },
+    {
+      "model": "gemma",
+      "count_pass": true,
+      "numeric_pass": true,
+      "verdict_pass": true,
+      "norm_pass": true,
+      "empirical_p_recomputed": 0.0196078431372549,
+      "q95_recomputed": 1.5499999999999972
+    }
+  ],
+  "claim_boundary": "Only Gemma passed this empirical-subspace direction-null test; Qwen and Llama did not establish direction specificity under the frozen specificity endpoint."
+}

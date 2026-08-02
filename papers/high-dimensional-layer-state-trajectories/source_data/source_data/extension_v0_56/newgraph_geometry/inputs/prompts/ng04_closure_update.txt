@@ -1,0 +1,6 @@
+You are given a small relation graph.
+Fact 1: Marek passes by Neris.
+Old record: Neris is filed at Coral.
+Updated record: Neris is filed at Lilac, not Coral.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:

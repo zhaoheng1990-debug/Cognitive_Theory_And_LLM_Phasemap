@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Hesta use label Ivory.
+Exception: Garin is a special case and uses label Onyx.
+Fact: Garin is connected to Hesta.
+Question: Which label is associated with Garin: Ivory or Onyx?
+Answer with exactly one word:

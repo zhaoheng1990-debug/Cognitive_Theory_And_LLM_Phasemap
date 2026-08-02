@@ -1,0 +1,5 @@
+You are given a small relation graph.
+Fact 1: Elian passes by Fara.
+Fact 2: Fara is filed at Coral.
+Question: Which label is associated with Elian: Coral or Lilac?
+Answer with exactly one word:

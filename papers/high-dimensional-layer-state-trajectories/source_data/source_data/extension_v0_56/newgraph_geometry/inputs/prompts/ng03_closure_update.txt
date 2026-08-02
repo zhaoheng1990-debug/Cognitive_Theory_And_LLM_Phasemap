@@ -1,0 +1,6 @@
+You are given a small relation graph.
+Fact 1: Jessa is linked onward to Korin.
+Old record: Korin is registered under Ruby.
+Updated record: Korin is registered under Jade, not Ruby.
+Question: Which label is associated with Jessa: Ruby or Jade?
+Answer with exactly one word:

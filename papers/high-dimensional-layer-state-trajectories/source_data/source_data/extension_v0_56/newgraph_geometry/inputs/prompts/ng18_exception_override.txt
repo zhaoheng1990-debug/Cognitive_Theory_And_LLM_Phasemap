@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Dara use label Cyan.
+Exception: Ciran is a special case and uses label Magenta.
+Fact: Ciran is connected to Dara.
+Question: Which label is associated with Ciran: Cyan or Magenta?
+Answer with exactly one word:

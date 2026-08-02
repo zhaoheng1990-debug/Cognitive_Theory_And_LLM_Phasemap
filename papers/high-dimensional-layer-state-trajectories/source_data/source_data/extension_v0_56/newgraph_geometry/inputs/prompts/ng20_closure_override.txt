@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that travels via Jorin receive label Ivory.
+Override rule: in this case, items that travels via Jorin receive label Onyx.
+Fact: Isla travels via Jorin.
+Question: Which label is associated with Isla: Ivory or Onyx?
+Answer with exactly one word:

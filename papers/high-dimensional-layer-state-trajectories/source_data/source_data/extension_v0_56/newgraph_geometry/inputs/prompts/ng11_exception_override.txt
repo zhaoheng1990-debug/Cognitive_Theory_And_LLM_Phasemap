@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Iria use label Mint.
+Exception: Hollis is a special case and uses label Plum.
+Fact: Hollis is connected to Iria.
+Question: Which label is associated with Hollis: Mint or Plum?
+Answer with exactly one word:

@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that is traced to Sela receive label Mint.
+Override rule: in this case, items that is traced to Sela receive label Plum.
+Fact: Riven is traced to Sela.
+Question: Which label is associated with Riven: Mint or Plum?
+Answer with exactly one word:

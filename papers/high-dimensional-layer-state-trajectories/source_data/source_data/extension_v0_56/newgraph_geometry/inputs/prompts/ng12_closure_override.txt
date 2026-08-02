@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that routes through Lorin receive label Cyan.
+Override rule: in this case, items that routes through Lorin receive label Magenta.
+Fact: Kessa routes through Lorin.
+Question: Which label is associated with Kessa: Cyan or Magenta?
+Answer with exactly one word:

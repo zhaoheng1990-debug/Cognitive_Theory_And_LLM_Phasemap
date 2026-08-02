@@ -1,0 +1,5 @@
+You are given a small relation graph.
+Fact 2: Dara terminates at Cyan.
+Fact 1: Ciran routes through Dara.
+Question: Which label is associated with Ciran: Cyan or Magenta?
+Answer with exactly one word:

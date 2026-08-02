@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Galia use label Violet.
+Exception: Fenn is a special case and uses label Amber.
+Fact: Fenn is connected to Galia.
+Question: Which label is associated with Fenn: Violet or Amber?
+Answer with exactly one word:

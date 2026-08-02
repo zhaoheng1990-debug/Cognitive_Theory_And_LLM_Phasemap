@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that passes by Neris receive label Coral.
+Override rule: in this case, items that passes by Neris receive label Lilac.
+Fact: Marek passes by Neris.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:

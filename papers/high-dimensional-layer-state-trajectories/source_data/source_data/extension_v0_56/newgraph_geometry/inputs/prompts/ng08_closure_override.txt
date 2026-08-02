@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that travels via Zarek receive label Ivory.
+Override rule: in this case, items that travels via Zarek receive label Onyx.
+Fact: Ysol travels via Zarek.
+Question: Which label is associated with Ysol: Ivory or Onyx?
+Answer with exactly one word:

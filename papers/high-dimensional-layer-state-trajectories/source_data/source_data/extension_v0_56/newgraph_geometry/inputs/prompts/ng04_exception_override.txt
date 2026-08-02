@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Neris use label Coral.
+Exception: Marek is a special case and uses label Lilac.
+Fact: Marek is connected to Neris.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:

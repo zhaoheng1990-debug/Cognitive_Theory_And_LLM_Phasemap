@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that is catalogued beside Eamon receive label Violet.
+Override rule: in this case, items that is catalogued beside Eamon receive label Amber.
+Fact: Della is catalogued beside Eamon.
+Question: Which label is associated with Della: Violet or Amber?
+Answer with exactly one word:

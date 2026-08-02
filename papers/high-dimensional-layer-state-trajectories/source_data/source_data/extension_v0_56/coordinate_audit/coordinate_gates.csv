@@ -1,0 +1,4 @@
+﻿model,supports_distinct_predecision_ordered_readback
+gemma,False
+llama,False
+qwen,False

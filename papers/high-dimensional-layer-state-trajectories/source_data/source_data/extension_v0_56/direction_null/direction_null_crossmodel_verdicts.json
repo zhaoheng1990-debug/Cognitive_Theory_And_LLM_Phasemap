@@ -1,0 +1,38 @@
+[
+  {
+    "model": "qwen",
+    "published_structured_top1_reproduced": true,
+    "structured_specificity_count": 17,
+    "structured_specificity_rate": 0.19540229885057472,
+    "null_count": 50,
+    "null_specificity_count_mean": 6.48,
+    "null_specificity_count_q95": 25.19999999999999,
+    "empirical_p": 0.13725490196078433,
+    "structured_exceeds_null_q95": false,
+    "finite_traces": true
+  },
+  {
+    "model": "llama",
+    "published_structured_top1_reproduced": true,
+    "structured_specificity_count": 11,
+    "structured_specificity_rate": 0.1395730706075534,
+    "null_count": 50,
+    "null_specificity_count_mean": 2.4,
+    "null_specificity_count_q95": 18.099999999999994,
+    "empirical_p": 0.09803921568627451,
+    "structured_exceeds_null_q95": false,
+    "finite_traces": true
+  },
+  {
+    "model": "gemma",
+    "published_structured_top1_reproduced": true,
+    "structured_specificity_count": 9,
+    "structured_specificity_rate": 0.10344827586206896,
+    "null_count": 50,
+    "null_specificity_count_mean": 0.02,
+    "null_specificity_count_q95": 1.5499999999999972,
+    "empirical_p": 0.0196078431372549,
+    "structured_exceeds_null_q95": true,
+    "finite_traces": true
+  }
+]

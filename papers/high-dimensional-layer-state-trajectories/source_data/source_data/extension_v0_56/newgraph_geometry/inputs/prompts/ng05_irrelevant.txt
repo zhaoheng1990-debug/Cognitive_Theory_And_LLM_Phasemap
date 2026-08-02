@@ -1,0 +1,6 @@
+You are given a small relation graph.
+Fact 1: Pella is traced to Quade.
+Fact 2: Quade is assigned marker Mint.
+Irrelevant fact: Rumi is associated with Cyan.
+Question: Which label is associated with Pella: Mint or Plum?
+Answer with exactly one word:

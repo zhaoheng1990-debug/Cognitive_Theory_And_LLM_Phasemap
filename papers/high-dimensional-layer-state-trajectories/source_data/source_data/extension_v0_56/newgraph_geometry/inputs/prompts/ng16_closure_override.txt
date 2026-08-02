@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that passes by Xavi receive label Coral.
+Override rule: in this case, items that passes by Xavi receive label Lilac.
+Fact: Wexla passes by Xavi.
+Question: Which label is associated with Wexla: Coral or Lilac?
+Answer with exactly one word:

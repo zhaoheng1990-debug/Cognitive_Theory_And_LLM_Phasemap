@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that is catalogued beside Wren receive label Violet.
+Override rule: in this case, items that is catalogued beside Wren receive label Amber.
+Fact: Vaila is catalogued beside Wren.
+Question: Which label is associated with Vaila: Violet or Amber?
+Answer with exactly one word:

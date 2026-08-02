@@ -1,0 +1,6 @@
+You are given a small relation graph.
+Fact 1: Kessa routes through Lorin.
+Old record: Lorin terminates at Cyan.
+Updated record: Lorin terminates at Magenta, not Cyan.
+Question: Which label is associated with Kessa: Cyan or Magenta?
+Answer with exactly one word:

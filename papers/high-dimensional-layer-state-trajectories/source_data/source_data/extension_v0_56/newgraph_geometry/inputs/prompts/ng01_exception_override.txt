@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Eamon use label Violet.
+Exception: Della is a special case and uses label Amber.
+Fact: Della is connected to Eamon.
+Question: Which label is associated with Della: Violet or Amber?
+Answer with exactly one word:

@@ -1,0 +1,7 @@
+You are given a small relation graph.
+Fact 1: Nolan is catalogued beside Oria.
+Fact 2: Oria is indexed as Violet.
+Repeated confirmation: Nolan still goes through Oria.
+Repeated confirmation: Oria still points to Violet.
+Question: Which label is associated with Nolan: Violet or Amber?
+Answer with exactly one word:

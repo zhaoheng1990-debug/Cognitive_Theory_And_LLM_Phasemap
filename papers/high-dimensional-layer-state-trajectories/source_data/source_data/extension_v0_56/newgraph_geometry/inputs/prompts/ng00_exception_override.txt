@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Brisa use label Cyan.
+Exception: Arden is a special case and uses label Magenta.
+Fact: Arden is connected to Brisa.
+Question: Which label is associated with Arden: Cyan or Magenta?
+Answer with exactly one word:

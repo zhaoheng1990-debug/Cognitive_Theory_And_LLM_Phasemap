@@ -1,0 +1,7 @@
+You are given a small relation graph.
+Fact 1: Marek passes by Neris.
+Fact 2: Neris is filed at Coral.
+Repeated confirmation: Marek still goes through Neris.
+Repeated confirmation: Neris still points to Coral.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:

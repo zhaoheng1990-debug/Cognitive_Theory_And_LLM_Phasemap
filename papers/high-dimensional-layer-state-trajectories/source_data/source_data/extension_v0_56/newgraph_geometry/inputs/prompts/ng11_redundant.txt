@@ -1,0 +1,7 @@
+You are given a small relation graph.
+Fact 1: Hollis is traced to Iria.
+Fact 2: Iria is assigned marker Mint.
+Repeated confirmation: Hollis still goes through Iria.
+Repeated confirmation: Iria still points to Mint.
+Question: Which label is associated with Hollis: Mint or Plum?
+Answer with exactly one word:

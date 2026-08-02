@@ -1,0 +1,30 @@
+{
+  "protocol": "v0.56 PROTOCOL.md",
+  "models": [
+    "qwen",
+    "llama",
+    "gemma"
+  ],
+  "folds": 5,
+  "graphs": 96,
+  "sign_flips": 100000,
+  "seed": 2026080301,
+  "primary_contrasts": [
+    [
+      "DeltaU_pre",
+      "matched_recent"
+    ],
+    [
+      "ordered_prefix",
+      "matched_recent"
+    ],
+    [
+      "cutoff_hidden",
+      "matched_recent"
+    ]
+  ],
+  "bh_family": "nine checkpoint-by-contrast tests in the coordinate-audit family",
+  "target": "prompt-defined mechanism regime",
+  "final_layer_used": false,
+  "final_output_target_used": false
+}

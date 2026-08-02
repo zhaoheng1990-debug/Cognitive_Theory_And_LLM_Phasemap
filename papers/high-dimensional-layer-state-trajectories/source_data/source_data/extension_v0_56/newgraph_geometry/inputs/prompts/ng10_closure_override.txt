@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that passes by Fara receive label Coral.
+Override rule: in this case, items that passes by Fara receive label Lilac.
+Fact: Elian passes by Fara.
+Question: Which label is associated with Elian: Coral or Lilac?
+Answer with exactly one word:

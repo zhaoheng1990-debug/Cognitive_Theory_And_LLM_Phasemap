@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that routes through Dara receive label Cyan.
+Override rule: in this case, items that routes through Dara receive label Magenta.
+Fact: Ciran routes through Dara.
+Question: Which label is associated with Ciran: Cyan or Magenta?
+Answer with exactly one word:

@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that is traced to Iria receive label Mint.
+Override rule: in this case, items that is traced to Iria receive label Plum.
+Fact: Hollis is traced to Iria.
+Question: Which label is associated with Hollis: Mint or Plum?
+Answer with exactly one word:

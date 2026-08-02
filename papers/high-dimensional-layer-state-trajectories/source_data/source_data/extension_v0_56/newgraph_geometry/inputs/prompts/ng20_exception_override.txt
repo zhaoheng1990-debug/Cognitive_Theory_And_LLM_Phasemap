@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Jorin use label Ivory.
+Exception: Isla is a special case and uses label Onyx.
+Fact: Isla is connected to Jorin.
+Question: Which label is associated with Isla: Ivory or Onyx?
+Answer with exactly one word:

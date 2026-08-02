@@ -1,0 +1,6 @@
+You are given a small relation graph.
+Fact 1: Toren is linked onward to Ulla.
+Fact 2: Ulla is registered under Ruby.
+Direct conflicting fact: Toren is registered under Jade.
+Question: Which label is associated with Toren: Ruby or Jade?
+Answer with exactly one word:

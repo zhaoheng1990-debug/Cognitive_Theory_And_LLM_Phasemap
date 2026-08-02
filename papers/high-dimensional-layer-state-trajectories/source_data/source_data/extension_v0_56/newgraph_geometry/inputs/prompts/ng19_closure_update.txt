@@ -1,0 +1,6 @@
+You are given a small relation graph.
+Fact 1: Fenn is catalogued beside Galia.
+Old record: Galia is indexed as Violet.
+Updated record: Galia is indexed as Amber, not Violet.
+Question: Which label is associated with Fenn: Violet or Amber?
+Answer with exactly one word:

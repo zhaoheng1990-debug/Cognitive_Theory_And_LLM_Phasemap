@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Korin use label Ruby.
+Exception: Jessa is a special case and uses label Jade.
+Fact: Jessa is connected to Korin.
+Question: Which label is associated with Jessa: Ruby or Jade?
+Answer with exactly one word:

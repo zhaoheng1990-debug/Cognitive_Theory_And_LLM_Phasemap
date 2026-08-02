@@ -1,0 +1,5 @@
+You are given a small relation graph.
+Fact 2: Celie is registered under Ruby.
+Fact 1: Bram is linked onward to Celie.
+Question: Which label is associated with Bram: Ruby or Jade?
+Answer with exactly one word:

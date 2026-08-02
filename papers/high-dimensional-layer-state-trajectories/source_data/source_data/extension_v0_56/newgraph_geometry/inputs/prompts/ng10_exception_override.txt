@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Fara use label Coral.
+Exception: Elian is a special case and uses label Lilac.
+Fact: Elian is connected to Fara.
+Question: Which label is associated with Elian: Coral or Lilac?
+Answer with exactly one word:

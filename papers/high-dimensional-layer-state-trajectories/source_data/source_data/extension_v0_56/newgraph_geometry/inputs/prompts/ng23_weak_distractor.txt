@@ -1,0 +1,6 @@
+You are given a small relation graph.
+Fact 1: Riven is traced to Sela.
+Fact 2: Sela is assigned marker Mint.
+Weak note: an unrelated source mentions Plum, but does not update the graph.
+Question: Which label is associated with Riven: Mint or Plum?
+Answer with exactly one word:

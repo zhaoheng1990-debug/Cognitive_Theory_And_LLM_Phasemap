@@ -1,0 +1,6 @@
+You are given a small relation graph.
+Fact 1: Marek passes by Neris.
+Fact 2: Neris is filed at Coral.
+Irrelevant fact: Olan is associated with Mint.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:

@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Wren use label Violet.
+Exception: Vaila is a special case and uses label Amber.
+Fact: Vaila is connected to Wren.
+Question: Which label is associated with Vaila: Violet or Amber?
+Answer with exactly one word:

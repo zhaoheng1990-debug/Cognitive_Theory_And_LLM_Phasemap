@@ -1,0 +1,18 @@
+{
+  "verifier": "verify_predecision_coordinate_audit.py",
+  "passed": true,
+  "checks": {
+    "models": true,
+    "no_final_layer": true,
+    "no_final_output_target": true,
+    "manifests": true,
+    "prediction_columns": true,
+    "row_count": true,
+    "performance": true,
+    "differences": true,
+    "p_values": true,
+    "q_values": true,
+    "gates": true
+  },
+  "claim_boundary": "The audit does not establish DeltaU_pre superiority over matched recent readbacks; it does not use final-layer or final-output targets."
+}

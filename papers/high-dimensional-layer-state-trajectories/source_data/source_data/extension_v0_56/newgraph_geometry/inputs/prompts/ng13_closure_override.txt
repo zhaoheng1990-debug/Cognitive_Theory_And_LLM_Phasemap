@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that is catalogued beside Oria receive label Violet.
+Override rule: in this case, items that is catalogued beside Oria receive label Amber.
+Fact: Nolan is catalogued beside Oria.
+Question: Which label is associated with Nolan: Violet or Amber?
+Answer with exactly one word:

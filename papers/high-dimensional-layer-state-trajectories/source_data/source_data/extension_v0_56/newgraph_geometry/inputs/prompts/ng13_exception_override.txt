@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Oria use label Violet.
+Exception: Nolan is a special case and uses label Amber.
+Fact: Nolan is connected to Oria.
+Question: Which label is associated with Nolan: Violet or Amber?
+Answer with exactly one word:

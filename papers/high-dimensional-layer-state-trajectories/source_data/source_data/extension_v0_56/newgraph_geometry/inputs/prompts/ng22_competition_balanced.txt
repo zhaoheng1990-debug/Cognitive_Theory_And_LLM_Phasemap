@@ -1,0 +1,6 @@
+You are given a small relation graph.
+Fact 1: Oriel passes by Pavo.
+Fact 2: Pavo is filed at Coral.
+Competing fact: Oriel is also associated with Lilac.
+Question: Which label is associated with Oriel: Coral or Lilac?
+Answer with exactly one word:

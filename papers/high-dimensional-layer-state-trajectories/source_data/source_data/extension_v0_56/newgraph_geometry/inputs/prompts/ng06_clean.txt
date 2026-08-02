@@ -1,0 +1,5 @@
+You are given a small relation graph.
+Fact 1: Soren routes through Tavi.
+Fact 2: Tavi terminates at Cyan.
+Question: Which label is associated with Soren: Cyan or Magenta?
+Answer with exactly one word:

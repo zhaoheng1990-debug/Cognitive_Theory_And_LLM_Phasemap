@@ -1,0 +1,6 @@
+You are given a small relation graph.
+Fact 1: Della is catalogued beside Eamon.
+Old record: Eamon is indexed as Violet.
+Updated record: Eamon is indexed as Amber, not Violet.
+Question: Which label is associated with Della: Violet or Amber?
+Answer with exactly one word:

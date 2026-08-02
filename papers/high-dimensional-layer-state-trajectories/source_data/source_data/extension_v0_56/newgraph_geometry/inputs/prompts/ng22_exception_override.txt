@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Pavo use label Coral.
+Exception: Oriel is a special case and uses label Lilac.
+Fact: Oriel is connected to Pavo.
+Question: Which label is associated with Oriel: Coral or Lilac?
+Answer with exactly one word:

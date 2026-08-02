@@ -1,0 +1,7 @@
+You are given a small relation graph.
+Fact 1: Arden routes through Brisa.
+Fact 2: Brisa terminates at Cyan.
+Repeated confirmation: Arden still goes through Brisa.
+Repeated confirmation: Brisa still points to Cyan.
+Question: Which label is associated with Arden: Cyan or Magenta?
+Answer with exactly one word:

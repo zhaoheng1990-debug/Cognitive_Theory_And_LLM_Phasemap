@@ -1,0 +1,6 @@
+You are given a small relation graph.
+Fact 1: Della is catalogued beside Eamon.
+Fact 2: Eamon is indexed as Violet.
+Irrelevant fact: Fiora is associated with Ivory.
+Question: Which label is associated with Della: Violet or Amber?
+Answer with exactly one word:

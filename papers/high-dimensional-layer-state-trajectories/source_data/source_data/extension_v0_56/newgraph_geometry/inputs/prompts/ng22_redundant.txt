@@ -1,0 +1,7 @@
+You are given a small relation graph.
+Fact 1: Oriel passes by Pavo.
+Fact 2: Pavo is filed at Coral.
+Repeated confirmation: Oriel still goes through Pavo.
+Repeated confirmation: Pavo still points to Coral.
+Question: Which label is associated with Oriel: Coral or Lilac?
+Answer with exactly one word:

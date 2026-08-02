@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Xavi use label Coral.
+Exception: Wexla is a special case and uses label Lilac.
+Fact: Wexla is connected to Xavi.
+Question: Which label is associated with Wexla: Coral or Lilac?
+Answer with exactly one word:

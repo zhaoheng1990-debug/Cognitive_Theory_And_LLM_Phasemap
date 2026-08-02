@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that travels via Hesta receive label Ivory.
+Override rule: in this case, items that travels via Hesta receive label Onyx.
+Fact: Garin travels via Hesta.
+Question: Which label is associated with Garin: Ivory or Onyx?
+Answer with exactly one word:

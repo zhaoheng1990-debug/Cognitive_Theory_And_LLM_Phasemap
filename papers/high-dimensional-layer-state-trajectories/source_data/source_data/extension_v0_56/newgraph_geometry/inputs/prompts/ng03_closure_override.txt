@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items that is linked onward to Korin receive label Ruby.
+Override rule: in this case, items that is linked onward to Korin receive label Jade.
+Fact: Jessa is linked onward to Korin.
+Question: Which label is associated with Jessa: Ruby or Jade?
+Answer with exactly one word:

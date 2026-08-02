@@ -1,0 +1,7 @@
+You are given a small relation graph.
+Fact 1: Fenn is catalogued beside Galia.
+Fact 2: Galia is indexed as Violet.
+Repeated confirmation: Fenn still goes through Galia.
+Repeated confirmation: Galia still points to Violet.
+Question: Which label is associated with Fenn: Violet or Amber?
+Answer with exactly one word:

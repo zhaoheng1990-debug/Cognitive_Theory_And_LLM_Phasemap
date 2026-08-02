@@ -1,0 +1,7 @@
+You are given a small relation graph.
+Fact 1: Leda is linked onward to Miro.
+Fact 2: Miro is registered under Ruby.
+Repeated confirmation: Leda still goes through Miro.
+Repeated confirmation: Miro still points to Ruby.
+Question: Which label is associated with Leda: Ruby or Jade?
+Answer with exactly one word:

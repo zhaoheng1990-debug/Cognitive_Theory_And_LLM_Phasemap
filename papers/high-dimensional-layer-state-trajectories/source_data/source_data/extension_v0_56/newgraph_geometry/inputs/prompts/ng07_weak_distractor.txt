@@ -1,0 +1,6 @@
+You are given a small relation graph.
+Fact 1: Vaila is catalogued beside Wren.
+Fact 2: Wren is indexed as Violet.
+Weak note: an unrelated source mentions Amber, but does not update the graph.
+Question: Which label is associated with Vaila: Violet or Amber?
+Answer with exactly one word:

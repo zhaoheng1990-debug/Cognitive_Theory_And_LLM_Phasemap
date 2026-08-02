@@ -1,0 +1,7 @@
+You are given a small relation graph.
+Fact 1: Bram is linked onward to Celie.
+Fact 2: Celie is registered under Ruby.
+Repeated confirmation: Bram still goes through Celie.
+Repeated confirmation: Celie still points to Ruby.
+Question: Which label is associated with Bram: Ruby or Jade?
+Answer with exactly one word:

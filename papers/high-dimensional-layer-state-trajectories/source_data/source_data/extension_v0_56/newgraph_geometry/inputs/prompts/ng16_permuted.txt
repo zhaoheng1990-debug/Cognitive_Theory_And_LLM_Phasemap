@@ -1,0 +1,5 @@
+You are given a small relation graph.
+Fact 2: Xavi is filed at Coral.
+Fact 1: Wexla passes by Xavi.
+Question: Which label is associated with Wexla: Coral or Lilac?
+Answer with exactly one word:

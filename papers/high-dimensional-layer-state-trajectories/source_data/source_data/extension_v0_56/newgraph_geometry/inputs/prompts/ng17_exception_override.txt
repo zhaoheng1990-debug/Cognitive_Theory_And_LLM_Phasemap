@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Arlo use label Mint.
+Exception: Zelia is a special case and uses label Plum.
+Fact: Zelia is connected to Arlo.
+Question: Which label is associated with Zelia: Mint or Plum?
+Answer with exactly one word:

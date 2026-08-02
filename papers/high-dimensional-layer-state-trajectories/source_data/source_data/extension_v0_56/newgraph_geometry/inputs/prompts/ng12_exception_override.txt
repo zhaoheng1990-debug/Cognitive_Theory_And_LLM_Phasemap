@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Lorin use label Cyan.
+Exception: Kessa is a special case and uses label Magenta.
+Fact: Kessa is connected to Lorin.
+Question: Which label is associated with Kessa: Cyan or Magenta?
+Answer with exactly one word:

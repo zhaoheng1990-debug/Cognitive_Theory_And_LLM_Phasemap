@@ -1,0 +1,6 @@
+You are given a rule system.
+General rule: items connected to Sela use label Mint.
+Exception: Riven is a special case and uses label Plum.
+Fact: Riven is connected to Sela.
+Question: Which label is associated with Riven: Mint or Plum?
+Answer with exactly one word:
