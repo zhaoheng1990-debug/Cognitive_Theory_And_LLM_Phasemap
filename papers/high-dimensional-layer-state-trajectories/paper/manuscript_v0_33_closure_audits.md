@@ -1,4 +1,4 @@
-# High-dimensional state trajectories reveal transformer inference dynamics
+# Ordered layer-state trajectories enable process-level analysis of transformer inference
 
 Heng Zhao<sup>1,*</sup>, Yufei Wang<sup>2</sup>, Ruidian Song<sup>3</sup>, Weisheng Chen<sup>4</sup>
 

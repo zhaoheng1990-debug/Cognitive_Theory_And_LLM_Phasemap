@@ -1,6 +1,6 @@
 # Source Data for high-dimensional layer-state trajectories
 
-This directory stages processed, panel-level Source Data for **High-dimensional state trajectories reveal transformer inference dynamics**. The synchronized repository release is **v0.56**.
+This directory stages processed, panel-level Source Data for **Ordered layer-state trajectories enable process-level analysis of transformer inference**. The synchronized repository release is **v0.56**.
 
 ## Citation and access
 

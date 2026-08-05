@@ -1,4 +1,4 @@
-# High-dimensional state trajectories reveal transformer inference dynamics
+# Ordered layer-state trajectories enable process-level analysis of transformer inference
 
 Public paper and reproducibility package. The current synchronized repository release is **v0.56**; the submission route is a full Nature Article, with manuscript source v0.33 and Supplementary Methods v0.18. The former eight-page layout is retained only as a non-primary editor preview.
 
