@@ -1,8 +1,8 @@
-# High-dimensional state trajectories reveal transformer inference dynamics
+# Ordered layer-state trajectories enable process-level analysis of transformer inference
 
 Public paper, Source Data and reproducibility code for the study of ordered high-dimensional layer-state trajectories in transformer inference.
 
-The current repository release is **v0.55**. Start with the [paper-specific README](papers/high-dimensional-layer-state-trajectories/README.md).
+The current repository release is **v0.57**. Start with the [paper-specific README](papers/high-dimensional-layer-state-trajectories/README.md).
 
 ## Repository scope
 
@@ -24,7 +24,7 @@ The evidence does not establish an exact geodesic, a least-action principle, a u
 - Source Data: https://doi.org/10.5281/zenodo.21317355
 - Code: https://doi.org/10.5281/zenodo.21317440
 
-This branch contains the current v0.55 extension. Until the v0.55 Zenodo versions are published, the concept records resolve to the earlier archived release; the v0.52-v0.55 deposit set is prepared for publication as a new version of each existing concept record.
+v0.57 adds the audited full Article v0.37 and Supplementary Methods v0.20. It does not modify the frozen v0.56 source data, code or verifier outputs. Until the v0.57 Zenodo versions are published, the concept records resolve to the earlier archived release.
 
 Model weights and large derivative hidden-state arrays are not redistributed. Full forward reruns require the cited upstream checkpoints and compatible local compute.
 
