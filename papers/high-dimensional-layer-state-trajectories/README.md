@@ -1,14 +1,15 @@
-# Ordered layer-state trajectories enable process-level analysis of transformer inference
+# Ordered layer-state trajectories enable analysis of transformer inference
 
-Public paper and reproducibility package. The current synchronized repository release is **v0.57**; the submission route is a full Nature Article, with manuscript source v0.37 and Supplementary Methods v0.20. The former eight-page layout is retained only as a non-primary editor preview.
+Public paper and reproducibility package. The current synchronized repository release is **v0.58**; the submission route is a full Nature Article, with manuscript source v0.38 and Supplementary Methods v0.20. The former eight-page layout is retained only as a non-primary editor preview.
 
 ## Start here
 
-1. Full Nature Article draft: `paper/nature_initial_submission_v0_37.pdf`
-2. Manuscript source: `paper/manuscript_v0_37_final_polish.md`
+1. Full Nature Article draft: `paper/nature_initial_submission_v0_38.pdf`
+2. Manuscript source: `paper/manuscript_v0_38_process_level_reconstruction.md`
 3. Supplementary Methods: `paper/supplementary_methods_v0_20.pdf`
-4. v0.56 claim-family verification: `code/extension_v0_56/claim_family_verification_matrix_v0_56.md`
-5. v0.56 Source Data: `source_data/source_data/extension_v0_56/README.md`
+4. Narrative reconstruction audit: `paper/narrative_reconstruction_audit_v0_38.md`
+5. v0.56 claim-family verification: `code/extension_v0_56/claim_family_verification_matrix_v0_56.md`
+6. v0.56 Source Data: `source_data/source_data/extension_v0_56/README.md`
 
 Run the three read-only v0.56 verifiers from `code/extension_v0_56/`:
 
@@ -20,9 +21,9 @@ python verify_newgraph_geometry_confirmation.py --output-root ../../source_data/
 
 These scripts recompute the frozen predecision coordinate audit, the matched empirical-subspace direction null and the paired new-graph geometry result from retained processed tables. The earlier mixed-arithmetic transfer audit remains available in `code/extension_v0_55/`.
 
-## What v0.57 adds
+## What v0.58 adds
 
-v0.57 is a documentation-only archive update. It adds the audited Article v0.37, the compiled Supplementary Methods v0.20, their source files and a file-level publication manifest. The frozen v0.56 code, processed Source Data, verification scripts and numerical results are unchanged.
+v0.58 replaces the public Article v0.37 with Article v0.38 and adds the narrative reconstruction audit. The title was shortened to meet Nature Article title-length guidance, and the Abstract, Introduction, Results framing and Discussion were reconstructed for broader readability. The frozen v0.56 code, processed Source Data, verification scripts and numerical results are unchanged.
 
 ## What v0.56 adds
 
@@ -49,7 +50,7 @@ The evidence supports an observable ordered process and bounded control of a dec
 - Source Data concept DOI: https://doi.org/10.5281/zenodo.21317355
 - Code concept DOI: https://doi.org/10.5281/zenodo.21317440
 
-The v0.57 Zenodo upload set preserves the v0.56 evidence package and adds the v0.37/v0.20 publication files. Until that version is published, the concept records may resolve to an earlier archive version.
+The v0.58 Zenodo upload set preserves the v0.56 evidence package and adds the v0.38/v0.20 publication files. Until that version is published, the concept records may resolve to an earlier archive version.
 
 Model weights and large hidden-state arrays are not redistributed. All work was conducted as independent research without employer data, compute, funding, facilities or internal systems.
 
