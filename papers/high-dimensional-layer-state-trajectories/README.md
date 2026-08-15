@@ -1,25 +1,46 @@
-# Reproducibility release v0.59
+# Reproducibility release v0.60
 
-This release is a publication-material successor to the frozen v0.56 source-data and executable-verifier package. It adds the deep-humanized full Nature Article v0.40, synchronized editorial documents and retains Supplementary Methods v0.20 without changing any code, processed Source Data, verifier, result, null distribution or numerical claim. It does not redistribute model weights, commercial/runtime binaries or large raw hidden-state arrays.
+This release accompanies the V1R4 Article **Architecture, training and
+execution organize Transformer computation**. It provides a documented route
+from the final Article to its processed Source Data and portable endpoint
+verification.
 
 ## Start here
 
-- Full Article: `paper/nature_initial_submission_v0_40.pdf`
-- Article source: `paper/manuscript_v0_40_deep_humanized.md`
-- Language audit: `paper/humanizer_audit_v0_40.md`
-- Editorial documents: `paper/presubmission_enquiry_nature_v0_7_deep_humanized.md` and `paper/cover_letter_nature_v0_5_deep_humanized.md`
-- Editorial language audit: `paper/editorial_humanizer_audit_v0_1.md`
-- Supplementary Methods: `paper/supplementary_methods_v0_20.pdf`
-- Claim-family verification map: `code/extension_v0_56/claim_family_verification_matrix_v0_56.md`
+* Article PDF: `paper/nature_initial_submission_v0_60.pdf`
+* Article source: `paper/manuscript_v0_60_nature_initial.md`
+* Full language audit: `paper/humanizer_audit_v0_60.md`
+* V1R4 release notes: `RELEASE_NOTES_v0_60.md`
+* Source Data: `source_data/source_data/v1r4_final/`
+* Portable verifier: `code/release_v0_60/verify_v1r4_source_data.py`
 
-## Verification route
+## One-command verification
 
-Run the three commands in `code/extension_v0_56/README.md` from the repository root. The coordinate and direction verifiers recompute released summaries from processed rows. The geometry verifier operates in processed-source verification mode unless archive-only raw arrays are supplied.
+From this directory, run:
 
-## Archive-only raw intermediates
+```powershell
+./code/release_v0_60/run_v1r4_reproduction.ps1
+```
 
-`source_data/source_data/extension_v0_56/newgraph_geometry/raw_intermediates_manifest_v0_56.csv` records SHA-256 hashes for the large raw geometry arrays. They are excluded from this public package to avoid redistributing derivative captures tied to separately licensed checkpoints. They are retained for controlled archival verification.
+The command recalculates 20 reported endpoints from the processed V1R4 Source
+Data and writes `verification/v1r4_source_data_verification.json`. It requires
+Python 3.9 or later and the standard library only. It does not run inference.
+On Windows systems without long-path support, clone the repository close to a
+drive root.
 
-## Human-review boundary
+## Full-model reruns
 
-`paper/author_numeric_review_checklist_v0_56.md` remains unsigned. No author-level item-by-item numerical-review completion is claimed by this release.
+The earlier model-execution runners remain in `code/extension_v0_51` through
+`code/extension_v0_56`. A full rerun requires the named third-party
+checkpoints, upstream prompt resources, a compatible GPU environment and
+sufficient storage for hidden-state derivatives. Raw hidden states and model
+weights are intentionally not redistributed.
+
+## Scope and archive links
+
+The verifier provides read-only confirmation of the reported numerical
+endpoints. It does not broaden the Article's task-specific claims. Source Data
+and Code are prepared for Zenodo v1.2.0 under the stable concept records
+https://doi.org/10.5281/zenodo.21317355 and
+https://doi.org/10.5281/zenodo.21317440. The release-specific DOI will be
+assigned when the v1.2.0 records are published.

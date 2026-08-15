@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+verification/fresh_unpack*.json
+paper/*.aux
+paper/*.log
+paper/*.out

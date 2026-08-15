@@ -1,0 +1,7 @@
+model,condition,n_prompts,full_vocabulary_top1_agreement,candidate_choice_agreement,jensen_shannon_divergence_mean,condition_display
+Qwen,reverse,48,0,0.479166666666667,0.692093908786774,Reverse
+Qwen,fixed_permutation,48,0,0.479166666666667,0.691866219043732,Fixed permutation
+Llama,reverse,96,0,0.5104166666666666,0.6729873524357876,Reverse
+Llama,frozen_permutation,96,0,0.625,0.6513531655073166,Frozen permutation
+Gemma,reverse,96,0,0.59375,0.6667141669119397,Reverse
+Gemma,frozen_permutation,96,0,0.4583333333333333,0.6771079320460558,Frozen permutation

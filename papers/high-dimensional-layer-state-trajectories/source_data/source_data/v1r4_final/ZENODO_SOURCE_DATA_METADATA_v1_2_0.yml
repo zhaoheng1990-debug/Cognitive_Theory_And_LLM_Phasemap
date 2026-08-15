@@ -1,0 +1,31 @@
+title: Source Data for Architecture, training and execution organize Transformer computation
+version: 1.2.0
+upload_type: dataset
+publication_date: '2026-08-15'
+license: CC-BY-4.0
+creators:
+  - name: Zhao, Heng
+    affiliation: Independent Researcher, Beijing 100071, China
+    orcid: 0009-0004-2395-9393
+  - name: Wang, Yufei
+    affiliation: China Mobile Communications Group Co., Ltd., Beijing 100054, China
+  - name: Song, Ruidian
+    affiliation: Sinotrans Logistics Co., Ltd., Beijing 100054, China
+  - name: Chen, Weisheng
+    affiliation: Independent Researcher
+description: >-
+  Processed panel- and row-level Source Data for the V1R4 Article, including
+  authoritative records, figure-level derivatives, split and null metadata,
+  and checksums. Raw hidden-state arrays and model weights are not redistributed.
+keywords:
+  - Transformer
+  - mechanistic interpretability
+  - layer-state trajectory
+  - source data
+related_identifiers:
+  - identifier: 10.5281/zenodo.21317440
+    relation: isSupplementTo
+    resource_type: software
+  - identifier: 10.5281/zenodo.21317355
+    relation: isVersionOf
+    resource_type: dataset

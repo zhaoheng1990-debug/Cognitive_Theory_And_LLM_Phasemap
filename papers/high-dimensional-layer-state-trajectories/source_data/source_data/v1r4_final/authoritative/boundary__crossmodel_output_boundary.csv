@@ -1,0 +1,4 @@
+﻿model,heldout_closure_n,heldout_nonclosure_n,guarded_strict_conflict_to_clean_top1,guarded_closure_flip_rate,guarded_nonclosure_top1_changes,guarded_nonclosure_top1_change_rate,ungated_strict_conflict_to_clean_top1,ungated_nonclosure_top1_change_rate,shuffled_policy_strict_conflict_to_clean_top1,shuffled_policy_nonclosure_top1_change_rate
+qwen,87,203,17,0.19540229885057472,0,0.0,19,0.0344827586206896,12,0.3645320197044335
+llama,87,203,13,0.14942528735632185,2,0.0098522167487684,13,0.0147783251231527,13,0.2167487684729064
+gemma,87,203,9,0.10344827586206896,0,0.0,9,0.0049261083743842,2,0.2561576354679803

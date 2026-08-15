@@ -1,0 +1,20 @@
+title: Architecture, training and execution organize Transformer computation
+release: reproducibility release v0.60
+manuscript_state: V1R4 Nature initial-submission compliance state
+authors:
+  - name: Heng Zhao
+    affiliation: Independent Researcher, Beijing 100071, China
+    orcid: 0009-0004-2395-9393
+  - name: Yufei Wang
+    affiliation: China Mobile Communications Group Co., Ltd., Beijing 100054, China
+  - name: Ruidian Song
+    affiliation: Sinotrans Logistics Co., Ltd., Beijing 100054, China
+  - name: Weisheng Chen
+    affiliation: Independent Researcher
+source_data_license: CC-BY-4.0
+code_license: MIT
+source_data_concept_doi: 10.5281/zenodo.21317355
+code_concept_doi: 10.5281/zenodo.21317440
+verification_scope: Processed Source Data endpoint verification only; no model inference.
+raw_hidden_states: Not redistributed; regenerate from documented checkpoints where permitted.
+model_weights: Not redistributed.

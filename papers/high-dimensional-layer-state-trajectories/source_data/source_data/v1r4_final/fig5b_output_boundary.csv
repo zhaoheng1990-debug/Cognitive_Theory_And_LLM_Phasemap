@@ -1,0 +1,7 @@
+model,closure_n,nonclosure_n,endpoint,count,rate
+qwen,87,203,crossings,17,0.19540229885057472
+qwen,87,203,non_target,0,0
+llama,87,203,crossings,13,0.14942528735632185
+llama,87,203,non_target,2,0.009852216748768473
+gemma,87,203,crossings,9,0.10344827586206896
+gemma,87,203,non_target,0,0
