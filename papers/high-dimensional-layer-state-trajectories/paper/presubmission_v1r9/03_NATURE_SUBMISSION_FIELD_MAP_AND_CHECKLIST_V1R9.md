@@ -15,7 +15,7 @@
 ## Conditions to reconfirm immediately before clicking submit
 
 - [ ] Every author has approved the V1R9 manuscript, author order, affiliation, contribution statement, funding statement and competing-interest statement.
-- [ ] Weisheng Chen has supplied the approved city and country for the `Independent Researcher` affiliation, or the submission system has accepted the affiliation without this metadata.
+- [ ] Weisheng Chen is listed as `Independent Researcher, Shanghai 200030, China` in the manuscript and submission metadata.
 - [ ] The preprint has not become public. If it has, enter the public DOI or URL exactly where requested.
 - [ ] The Zenodo concept records resolve and the GitHub branch is publicly readable without a login.
 - [ ] The statements in the enquiry remain true: the manuscript is not under consideration elsewhere and the authors declare no competing interests.
