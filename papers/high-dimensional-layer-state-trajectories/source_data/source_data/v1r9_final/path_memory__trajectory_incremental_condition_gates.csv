@@ -1,0 +1,10 @@
+﻿task,model,horizon,passes_incremental_ordered_path_gate
+arithmetic_mixed,gemma,0.25,False
+arithmetic_mixed,gemma,0.5,False
+arithmetic_mixed,gemma,0.75,False
+arithmetic_mixed,llama,0.25,False
+arithmetic_mixed,llama,0.5,False
+arithmetic_mixed,llama,0.75,False
+arithmetic_mixed,qwen,0.25,False
+arithmetic_mixed,qwen,0.5,False
+arithmetic_mixed,qwen,0.75,False

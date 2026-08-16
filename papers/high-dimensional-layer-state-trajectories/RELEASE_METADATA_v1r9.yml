@@ -1,0 +1,11 @@
+title: Architecture, training and execution organize Transformer computation
+release: reproducibility release V1R9
+manuscript_state: V1R9 scale-confirmation addition to the Nature initial-submission package
+source_data_license: CC-BY-4.0
+code_license: MIT
+source_data_concept_doi: 10.5281/zenodo.21317355
+code_concept_doi: 10.5281/zenodo.21317440
+verification_scope: Processed Source Data endpoint and paired 12B geometry verification only; no model inference.
+raw_hidden_states: Not redistributed; regenerate from documented checkpoints where permitted.
+model_weights: Not redistributed.
+claim_boundary: Checkpoint-specific larger-model order-null confirmation; not a pure scale law, quantization-invariance result or universal Transformer conclusion.

@@ -1,0 +1,4 @@
+archive_object,bytes,sha256,public_package_status,reason
+qwen_all_block_states.npy,41287808,fbbabdcb31d69aa9c24d531ee93bcf2673f213895fb28ff4c8f1b9a0386294a7,excluded,Large raw state intermediate retained for controlled archival verification.
+gemma3_12b_all_block_states.npy,176947328,1cfe0fb641c4183bcfbcdb9667abf81a92a6ffca8f57bc9c57da6d3f129eab35,excluded,Large raw state intermediate retained for controlled archival verification.
+gemma3_native_capture_sidecars,177143040,not_applicable,excluded,Duplicate native capture sidecars retained only with the raw extraction archive.

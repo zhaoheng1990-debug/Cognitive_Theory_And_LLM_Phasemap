@@ -1,0 +1,6 @@
+"figure_id","panel_id","model","metric","displayed_value","n_prompts","n_shuffles","source_file","scope_note"
+"Fig. 2","b,c","Gemma-3-12B-it-QAT-Q4_0","native chord alignment","0.08640187233686447","240","50","extension_v0_56/newgraph_geometry/newgraph_geometry_summary.csv","Paired larger-checkpoint confirmation; not a pure within-family scale law."
+"Fig. 2","b,c","Gemma-3-12B-it-QAT-Q4_0","null chord-alignment mean","0.024027262460440398","240","50","extension_v0_56/newgraph_geometry/newgraph_geometry_summary.csv","Endpoint-preserving shared order null."
+"Fig. 2","b,c","Gemma-3-12B-it-QAT-Q4_0","alignment gain","0.06237460987642407","240","50","extension_v0_56/newgraph_geometry/newgraph_geometry_summary.csv","Real minus null mean."
+"Fig. 2","b,c","Gemma-3-12B-it-QAT-Q4_0","null-standardized alignment effect","3.3923245622911318","240","50","extension_v0_56/newgraph_geometry/newgraph_geometry_summary.csv","All 50 null values were below the observed value; empirical P=1/51."
+"Fig. 2","b,c","Qwen2.5-1.5B-Instruct","alignment gain","0.03743745844811201","240","50","extension_v0_56/newgraph_geometry/newgraph_geometry_summary.csv","Paired reference checkpoint under the same frozen prompt and null protocol."

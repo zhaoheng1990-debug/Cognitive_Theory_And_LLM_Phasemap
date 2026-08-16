@@ -1,0 +1,1417 @@
+prompt_id,graph_id,condition,clean_candidate,conflict_candidate,prompt_file,text
+ng00_clean,0,clean,Cyan,Magenta,inputs\prompts\ng00_clean.txt,"You are given a small relation graph.
+Fact 1: Arden routes through Brisa.
+Fact 2: Brisa terminates at Cyan.
+Question: Which label is associated with Arden: Cyan or Magenta?
+Answer with exactly one word:"
+ng00_permuted,0,permuted,Cyan,Magenta,inputs\prompts\ng00_permuted.txt,"You are given a small relation graph.
+Fact 2: Brisa terminates at Cyan.
+Fact 1: Arden routes through Brisa.
+Question: Which label is associated with Arden: Cyan or Magenta?
+Answer with exactly one word:"
+ng00_redundant,0,redundant,Cyan,Magenta,inputs\prompts\ng00_redundant.txt,"You are given a small relation graph.
+Fact 1: Arden routes through Brisa.
+Fact 2: Brisa terminates at Cyan.
+Repeated confirmation: Arden still goes through Brisa.
+Repeated confirmation: Brisa still points to Cyan.
+Question: Which label is associated with Arden: Cyan or Magenta?
+Answer with exactly one word:"
+ng00_irrelevant,0,irrelevant,Cyan,Magenta,inputs\prompts\ng00_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Arden routes through Brisa.
+Fact 2: Brisa terminates at Cyan.
+Irrelevant fact: Cato is associated with Violet.
+Question: Which label is associated with Arden: Cyan or Magenta?
+Answer with exactly one word:"
+ng00_weak_distractor,0,weak_distractor,Cyan,Magenta,inputs\prompts\ng00_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Arden routes through Brisa.
+Fact 2: Brisa terminates at Cyan.
+Weak note: an unrelated source mentions Magenta, but does not update the graph.
+Question: Which label is associated with Arden: Cyan or Magenta?
+Answer with exactly one word:"
+ng00_competition_balanced,0,competition_balanced,Cyan,Magenta,inputs\prompts\ng00_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Arden routes through Brisa.
+Fact 2: Brisa terminates at Cyan.
+Competing fact: Arden is also associated with Magenta.
+Question: Which label is associated with Arden: Cyan or Magenta?
+Answer with exactly one word:"
+ng00_direct_conflict,0,direct_conflict,Cyan,Magenta,inputs\prompts\ng00_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Arden routes through Brisa.
+Fact 2: Brisa terminates at Cyan.
+Direct conflicting fact: Arden terminates at Magenta.
+Question: Which label is associated with Arden: Cyan or Magenta?
+Answer with exactly one word:"
+ng00_closure_update,0,closure_update,Cyan,Magenta,inputs\prompts\ng00_closure_update.txt,"You are given a small relation graph.
+Fact 1: Arden routes through Brisa.
+Old record: Brisa terminates at Cyan.
+Updated record: Brisa terminates at Magenta, not Cyan.
+Question: Which label is associated with Arden: Cyan or Magenta?
+Answer with exactly one word:"
+ng00_closure_override,0,closure_override,Cyan,Magenta,inputs\prompts\ng00_closure_override.txt,"You are given a rule system.
+General rule: items that routes through Brisa receive label Cyan.
+Override rule: in this case, items that routes through Brisa receive label Magenta.
+Fact: Arden routes through Brisa.
+Question: Which label is associated with Arden: Cyan or Magenta?
+Answer with exactly one word:"
+ng00_exception_override,0,exception_override,Cyan,Magenta,inputs\prompts\ng00_exception_override.txt,"You are given a rule system.
+General rule: items connected to Brisa use label Cyan.
+Exception: Arden is a special case and uses label Magenta.
+Fact: Arden is connected to Brisa.
+Question: Which label is associated with Arden: Cyan or Magenta?
+Answer with exactly one word:"
+ng01_clean,1,clean,Violet,Amber,inputs\prompts\ng01_clean.txt,"You are given a small relation graph.
+Fact 1: Della is catalogued beside Eamon.
+Fact 2: Eamon is indexed as Violet.
+Question: Which label is associated with Della: Violet or Amber?
+Answer with exactly one word:"
+ng01_permuted,1,permuted,Violet,Amber,inputs\prompts\ng01_permuted.txt,"You are given a small relation graph.
+Fact 2: Eamon is indexed as Violet.
+Fact 1: Della is catalogued beside Eamon.
+Question: Which label is associated with Della: Violet or Amber?
+Answer with exactly one word:"
+ng01_redundant,1,redundant,Violet,Amber,inputs\prompts\ng01_redundant.txt,"You are given a small relation graph.
+Fact 1: Della is catalogued beside Eamon.
+Fact 2: Eamon is indexed as Violet.
+Repeated confirmation: Della still goes through Eamon.
+Repeated confirmation: Eamon still points to Violet.
+Question: Which label is associated with Della: Violet or Amber?
+Answer with exactly one word:"
+ng01_irrelevant,1,irrelevant,Violet,Amber,inputs\prompts\ng01_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Della is catalogued beside Eamon.
+Fact 2: Eamon is indexed as Violet.
+Irrelevant fact: Fiora is associated with Ivory.
+Question: Which label is associated with Della: Violet or Amber?
+Answer with exactly one word:"
+ng01_weak_distractor,1,weak_distractor,Violet,Amber,inputs\prompts\ng01_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Della is catalogued beside Eamon.
+Fact 2: Eamon is indexed as Violet.
+Weak note: an unrelated source mentions Amber, but does not update the graph.
+Question: Which label is associated with Della: Violet or Amber?
+Answer with exactly one word:"
+ng01_competition_balanced,1,competition_balanced,Violet,Amber,inputs\prompts\ng01_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Della is catalogued beside Eamon.
+Fact 2: Eamon is indexed as Violet.
+Competing fact: Della is also associated with Amber.
+Question: Which label is associated with Della: Violet or Amber?
+Answer with exactly one word:"
+ng01_direct_conflict,1,direct_conflict,Violet,Amber,inputs\prompts\ng01_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Della is catalogued beside Eamon.
+Fact 2: Eamon is indexed as Violet.
+Direct conflicting fact: Della is indexed as Amber.
+Question: Which label is associated with Della: Violet or Amber?
+Answer with exactly one word:"
+ng01_closure_update,1,closure_update,Violet,Amber,inputs\prompts\ng01_closure_update.txt,"You are given a small relation graph.
+Fact 1: Della is catalogued beside Eamon.
+Old record: Eamon is indexed as Violet.
+Updated record: Eamon is indexed as Amber, not Violet.
+Question: Which label is associated with Della: Violet or Amber?
+Answer with exactly one word:"
+ng01_closure_override,1,closure_override,Violet,Amber,inputs\prompts\ng01_closure_override.txt,"You are given a rule system.
+General rule: items that is catalogued beside Eamon receive label Violet.
+Override rule: in this case, items that is catalogued beside Eamon receive label Amber.
+Fact: Della is catalogued beside Eamon.
+Question: Which label is associated with Della: Violet or Amber?
+Answer with exactly one word:"
+ng01_exception_override,1,exception_override,Violet,Amber,inputs\prompts\ng01_exception_override.txt,"You are given a rule system.
+General rule: items connected to Eamon use label Violet.
+Exception: Della is a special case and uses label Amber.
+Fact: Della is connected to Eamon.
+Question: Which label is associated with Della: Violet or Amber?
+Answer with exactly one word:"
+ng02_clean,2,clean,Ivory,Onyx,inputs\prompts\ng02_clean.txt,"You are given a small relation graph.
+Fact 1: Garin travels via Hesta.
+Fact 2: Hesta is marked with Ivory.
+Question: Which label is associated with Garin: Ivory or Onyx?
+Answer with exactly one word:"
+ng02_permuted,2,permuted,Ivory,Onyx,inputs\prompts\ng02_permuted.txt,"You are given a small relation graph.
+Fact 2: Hesta is marked with Ivory.
+Fact 1: Garin travels via Hesta.
+Question: Which label is associated with Garin: Ivory or Onyx?
+Answer with exactly one word:"
+ng02_redundant,2,redundant,Ivory,Onyx,inputs\prompts\ng02_redundant.txt,"You are given a small relation graph.
+Fact 1: Garin travels via Hesta.
+Fact 2: Hesta is marked with Ivory.
+Repeated confirmation: Garin still goes through Hesta.
+Repeated confirmation: Hesta still points to Ivory.
+Question: Which label is associated with Garin: Ivory or Onyx?
+Answer with exactly one word:"
+ng02_irrelevant,2,irrelevant,Ivory,Onyx,inputs\prompts\ng02_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Garin travels via Hesta.
+Fact 2: Hesta is marked with Ivory.
+Irrelevant fact: Ilan is associated with Ruby.
+Question: Which label is associated with Garin: Ivory or Onyx?
+Answer with exactly one word:"
+ng02_weak_distractor,2,weak_distractor,Ivory,Onyx,inputs\prompts\ng02_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Garin travels via Hesta.
+Fact 2: Hesta is marked with Ivory.
+Weak note: an unrelated source mentions Onyx, but does not update the graph.
+Question: Which label is associated with Garin: Ivory or Onyx?
+Answer with exactly one word:"
+ng02_competition_balanced,2,competition_balanced,Ivory,Onyx,inputs\prompts\ng02_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Garin travels via Hesta.
+Fact 2: Hesta is marked with Ivory.
+Competing fact: Garin is also associated with Onyx.
+Question: Which label is associated with Garin: Ivory or Onyx?
+Answer with exactly one word:"
+ng02_direct_conflict,2,direct_conflict,Ivory,Onyx,inputs\prompts\ng02_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Garin travels via Hesta.
+Fact 2: Hesta is marked with Ivory.
+Direct conflicting fact: Garin is marked with Onyx.
+Question: Which label is associated with Garin: Ivory or Onyx?
+Answer with exactly one word:"
+ng02_closure_update,2,closure_update,Ivory,Onyx,inputs\prompts\ng02_closure_update.txt,"You are given a small relation graph.
+Fact 1: Garin travels via Hesta.
+Old record: Hesta is marked with Ivory.
+Updated record: Hesta is marked with Onyx, not Ivory.
+Question: Which label is associated with Garin: Ivory or Onyx?
+Answer with exactly one word:"
+ng02_closure_override,2,closure_override,Ivory,Onyx,inputs\prompts\ng02_closure_override.txt,"You are given a rule system.
+General rule: items that travels via Hesta receive label Ivory.
+Override rule: in this case, items that travels via Hesta receive label Onyx.
+Fact: Garin travels via Hesta.
+Question: Which label is associated with Garin: Ivory or Onyx?
+Answer with exactly one word:"
+ng02_exception_override,2,exception_override,Ivory,Onyx,inputs\prompts\ng02_exception_override.txt,"You are given a rule system.
+General rule: items connected to Hesta use label Ivory.
+Exception: Garin is a special case and uses label Onyx.
+Fact: Garin is connected to Hesta.
+Question: Which label is associated with Garin: Ivory or Onyx?
+Answer with exactly one word:"
+ng03_clean,3,clean,Ruby,Jade,inputs\prompts\ng03_clean.txt,"You are given a small relation graph.
+Fact 1: Jessa is linked onward to Korin.
+Fact 2: Korin is registered under Ruby.
+Question: Which label is associated with Jessa: Ruby or Jade?
+Answer with exactly one word:"
+ng03_permuted,3,permuted,Ruby,Jade,inputs\prompts\ng03_permuted.txt,"You are given a small relation graph.
+Fact 2: Korin is registered under Ruby.
+Fact 1: Jessa is linked onward to Korin.
+Question: Which label is associated with Jessa: Ruby or Jade?
+Answer with exactly one word:"
+ng03_redundant,3,redundant,Ruby,Jade,inputs\prompts\ng03_redundant.txt,"You are given a small relation graph.
+Fact 1: Jessa is linked onward to Korin.
+Fact 2: Korin is registered under Ruby.
+Repeated confirmation: Jessa still goes through Korin.
+Repeated confirmation: Korin still points to Ruby.
+Question: Which label is associated with Jessa: Ruby or Jade?
+Answer with exactly one word:"
+ng03_irrelevant,3,irrelevant,Ruby,Jade,inputs\prompts\ng03_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Jessa is linked onward to Korin.
+Fact 2: Korin is registered under Ruby.
+Irrelevant fact: Luma is associated with Coral.
+Question: Which label is associated with Jessa: Ruby or Jade?
+Answer with exactly one word:"
+ng03_weak_distractor,3,weak_distractor,Ruby,Jade,inputs\prompts\ng03_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Jessa is linked onward to Korin.
+Fact 2: Korin is registered under Ruby.
+Weak note: an unrelated source mentions Jade, but does not update the graph.
+Question: Which label is associated with Jessa: Ruby or Jade?
+Answer with exactly one word:"
+ng03_competition_balanced,3,competition_balanced,Ruby,Jade,inputs\prompts\ng03_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Jessa is linked onward to Korin.
+Fact 2: Korin is registered under Ruby.
+Competing fact: Jessa is also associated with Jade.
+Question: Which label is associated with Jessa: Ruby or Jade?
+Answer with exactly one word:"
+ng03_direct_conflict,3,direct_conflict,Ruby,Jade,inputs\prompts\ng03_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Jessa is linked onward to Korin.
+Fact 2: Korin is registered under Ruby.
+Direct conflicting fact: Jessa is registered under Jade.
+Question: Which label is associated with Jessa: Ruby or Jade?
+Answer with exactly one word:"
+ng03_closure_update,3,closure_update,Ruby,Jade,inputs\prompts\ng03_closure_update.txt,"You are given a small relation graph.
+Fact 1: Jessa is linked onward to Korin.
+Old record: Korin is registered under Ruby.
+Updated record: Korin is registered under Jade, not Ruby.
+Question: Which label is associated with Jessa: Ruby or Jade?
+Answer with exactly one word:"
+ng03_closure_override,3,closure_override,Ruby,Jade,inputs\prompts\ng03_closure_override.txt,"You are given a rule system.
+General rule: items that is linked onward to Korin receive label Ruby.
+Override rule: in this case, items that is linked onward to Korin receive label Jade.
+Fact: Jessa is linked onward to Korin.
+Question: Which label is associated with Jessa: Ruby or Jade?
+Answer with exactly one word:"
+ng03_exception_override,3,exception_override,Ruby,Jade,inputs\prompts\ng03_exception_override.txt,"You are given a rule system.
+General rule: items connected to Korin use label Ruby.
+Exception: Jessa is a special case and uses label Jade.
+Fact: Jessa is connected to Korin.
+Question: Which label is associated with Jessa: Ruby or Jade?
+Answer with exactly one word:"
+ng04_clean,4,clean,Coral,Lilac,inputs\prompts\ng04_clean.txt,"You are given a small relation graph.
+Fact 1: Marek passes by Neris.
+Fact 2: Neris is filed at Coral.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:"
+ng04_permuted,4,permuted,Coral,Lilac,inputs\prompts\ng04_permuted.txt,"You are given a small relation graph.
+Fact 2: Neris is filed at Coral.
+Fact 1: Marek passes by Neris.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:"
+ng04_redundant,4,redundant,Coral,Lilac,inputs\prompts\ng04_redundant.txt,"You are given a small relation graph.
+Fact 1: Marek passes by Neris.
+Fact 2: Neris is filed at Coral.
+Repeated confirmation: Marek still goes through Neris.
+Repeated confirmation: Neris still points to Coral.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:"
+ng04_irrelevant,4,irrelevant,Coral,Lilac,inputs\prompts\ng04_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Marek passes by Neris.
+Fact 2: Neris is filed at Coral.
+Irrelevant fact: Olan is associated with Mint.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:"
+ng04_weak_distractor,4,weak_distractor,Coral,Lilac,inputs\prompts\ng04_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Marek passes by Neris.
+Fact 2: Neris is filed at Coral.
+Weak note: an unrelated source mentions Lilac, but does not update the graph.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:"
+ng04_competition_balanced,4,competition_balanced,Coral,Lilac,inputs\prompts\ng04_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Marek passes by Neris.
+Fact 2: Neris is filed at Coral.
+Competing fact: Marek is also associated with Lilac.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:"
+ng04_direct_conflict,4,direct_conflict,Coral,Lilac,inputs\prompts\ng04_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Marek passes by Neris.
+Fact 2: Neris is filed at Coral.
+Direct conflicting fact: Marek is filed at Lilac.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:"
+ng04_closure_update,4,closure_update,Coral,Lilac,inputs\prompts\ng04_closure_update.txt,"You are given a small relation graph.
+Fact 1: Marek passes by Neris.
+Old record: Neris is filed at Coral.
+Updated record: Neris is filed at Lilac, not Coral.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:"
+ng04_closure_override,4,closure_override,Coral,Lilac,inputs\prompts\ng04_closure_override.txt,"You are given a rule system.
+General rule: items that passes by Neris receive label Coral.
+Override rule: in this case, items that passes by Neris receive label Lilac.
+Fact: Marek passes by Neris.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:"
+ng04_exception_override,4,exception_override,Coral,Lilac,inputs\prompts\ng04_exception_override.txt,"You are given a rule system.
+General rule: items connected to Neris use label Coral.
+Exception: Marek is a special case and uses label Lilac.
+Fact: Marek is connected to Neris.
+Question: Which label is associated with Marek: Coral or Lilac?
+Answer with exactly one word:"
+ng05_clean,5,clean,Mint,Plum,inputs\prompts\ng05_clean.txt,"You are given a small relation graph.
+Fact 1: Pella is traced to Quade.
+Fact 2: Quade is assigned marker Mint.
+Question: Which label is associated with Pella: Mint or Plum?
+Answer with exactly one word:"
+ng05_permuted,5,permuted,Mint,Plum,inputs\prompts\ng05_permuted.txt,"You are given a small relation graph.
+Fact 2: Quade is assigned marker Mint.
+Fact 1: Pella is traced to Quade.
+Question: Which label is associated with Pella: Mint or Plum?
+Answer with exactly one word:"
+ng05_redundant,5,redundant,Mint,Plum,inputs\prompts\ng05_redundant.txt,"You are given a small relation graph.
+Fact 1: Pella is traced to Quade.
+Fact 2: Quade is assigned marker Mint.
+Repeated confirmation: Pella still goes through Quade.
+Repeated confirmation: Quade still points to Mint.
+Question: Which label is associated with Pella: Mint or Plum?
+Answer with exactly one word:"
+ng05_irrelevant,5,irrelevant,Mint,Plum,inputs\prompts\ng05_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Pella is traced to Quade.
+Fact 2: Quade is assigned marker Mint.
+Irrelevant fact: Rumi is associated with Cyan.
+Question: Which label is associated with Pella: Mint or Plum?
+Answer with exactly one word:"
+ng05_weak_distractor,5,weak_distractor,Mint,Plum,inputs\prompts\ng05_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Pella is traced to Quade.
+Fact 2: Quade is assigned marker Mint.
+Weak note: an unrelated source mentions Plum, but does not update the graph.
+Question: Which label is associated with Pella: Mint or Plum?
+Answer with exactly one word:"
+ng05_competition_balanced,5,competition_balanced,Mint,Plum,inputs\prompts\ng05_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Pella is traced to Quade.
+Fact 2: Quade is assigned marker Mint.
+Competing fact: Pella is also associated with Plum.
+Question: Which label is associated with Pella: Mint or Plum?
+Answer with exactly one word:"
+ng05_direct_conflict,5,direct_conflict,Mint,Plum,inputs\prompts\ng05_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Pella is traced to Quade.
+Fact 2: Quade is assigned marker Mint.
+Direct conflicting fact: Pella is assigned marker Plum.
+Question: Which label is associated with Pella: Mint or Plum?
+Answer with exactly one word:"
+ng05_closure_update,5,closure_update,Mint,Plum,inputs\prompts\ng05_closure_update.txt,"You are given a small relation graph.
+Fact 1: Pella is traced to Quade.
+Old record: Quade is assigned marker Mint.
+Updated record: Quade is assigned marker Plum, not Mint.
+Question: Which label is associated with Pella: Mint or Plum?
+Answer with exactly one word:"
+ng05_closure_override,5,closure_override,Mint,Plum,inputs\prompts\ng05_closure_override.txt,"You are given a rule system.
+General rule: items that is traced to Quade receive label Mint.
+Override rule: in this case, items that is traced to Quade receive label Plum.
+Fact: Pella is traced to Quade.
+Question: Which label is associated with Pella: Mint or Plum?
+Answer with exactly one word:"
+ng05_exception_override,5,exception_override,Mint,Plum,inputs\prompts\ng05_exception_override.txt,"You are given a rule system.
+General rule: items connected to Quade use label Mint.
+Exception: Pella is a special case and uses label Plum.
+Fact: Pella is connected to Quade.
+Question: Which label is associated with Pella: Mint or Plum?
+Answer with exactly one word:"
+ng06_clean,6,clean,Cyan,Magenta,inputs\prompts\ng06_clean.txt,"You are given a small relation graph.
+Fact 1: Soren routes through Tavi.
+Fact 2: Tavi terminates at Cyan.
+Question: Which label is associated with Soren: Cyan or Magenta?
+Answer with exactly one word:"
+ng06_permuted,6,permuted,Cyan,Magenta,inputs\prompts\ng06_permuted.txt,"You are given a small relation graph.
+Fact 2: Tavi terminates at Cyan.
+Fact 1: Soren routes through Tavi.
+Question: Which label is associated with Soren: Cyan or Magenta?
+Answer with exactly one word:"
+ng06_redundant,6,redundant,Cyan,Magenta,inputs\prompts\ng06_redundant.txt,"You are given a small relation graph.
+Fact 1: Soren routes through Tavi.
+Fact 2: Tavi terminates at Cyan.
+Repeated confirmation: Soren still goes through Tavi.
+Repeated confirmation: Tavi still points to Cyan.
+Question: Which label is associated with Soren: Cyan or Magenta?
+Answer with exactly one word:"
+ng06_irrelevant,6,irrelevant,Cyan,Magenta,inputs\prompts\ng06_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Soren routes through Tavi.
+Fact 2: Tavi terminates at Cyan.
+Irrelevant fact: Uria is associated with Violet.
+Question: Which label is associated with Soren: Cyan or Magenta?
+Answer with exactly one word:"
+ng06_weak_distractor,6,weak_distractor,Cyan,Magenta,inputs\prompts\ng06_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Soren routes through Tavi.
+Fact 2: Tavi terminates at Cyan.
+Weak note: an unrelated source mentions Magenta, but does not update the graph.
+Question: Which label is associated with Soren: Cyan or Magenta?
+Answer with exactly one word:"
+ng06_competition_balanced,6,competition_balanced,Cyan,Magenta,inputs\prompts\ng06_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Soren routes through Tavi.
+Fact 2: Tavi terminates at Cyan.
+Competing fact: Soren is also associated with Magenta.
+Question: Which label is associated with Soren: Cyan or Magenta?
+Answer with exactly one word:"
+ng06_direct_conflict,6,direct_conflict,Cyan,Magenta,inputs\prompts\ng06_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Soren routes through Tavi.
+Fact 2: Tavi terminates at Cyan.
+Direct conflicting fact: Soren terminates at Magenta.
+Question: Which label is associated with Soren: Cyan or Magenta?
+Answer with exactly one word:"
+ng06_closure_update,6,closure_update,Cyan,Magenta,inputs\prompts\ng06_closure_update.txt,"You are given a small relation graph.
+Fact 1: Soren routes through Tavi.
+Old record: Tavi terminates at Cyan.
+Updated record: Tavi terminates at Magenta, not Cyan.
+Question: Which label is associated with Soren: Cyan or Magenta?
+Answer with exactly one word:"
+ng06_closure_override,6,closure_override,Cyan,Magenta,inputs\prompts\ng06_closure_override.txt,"You are given a rule system.
+General rule: items that routes through Tavi receive label Cyan.
+Override rule: in this case, items that routes through Tavi receive label Magenta.
+Fact: Soren routes through Tavi.
+Question: Which label is associated with Soren: Cyan or Magenta?
+Answer with exactly one word:"
+ng06_exception_override,6,exception_override,Cyan,Magenta,inputs\prompts\ng06_exception_override.txt,"You are given a rule system.
+General rule: items connected to Tavi use label Cyan.
+Exception: Soren is a special case and uses label Magenta.
+Fact: Soren is connected to Tavi.
+Question: Which label is associated with Soren: Cyan or Magenta?
+Answer with exactly one word:"
+ng07_clean,7,clean,Violet,Amber,inputs\prompts\ng07_clean.txt,"You are given a small relation graph.
+Fact 1: Vaila is catalogued beside Wren.
+Fact 2: Wren is indexed as Violet.
+Question: Which label is associated with Vaila: Violet or Amber?
+Answer with exactly one word:"
+ng07_permuted,7,permuted,Violet,Amber,inputs\prompts\ng07_permuted.txt,"You are given a small relation graph.
+Fact 2: Wren is indexed as Violet.
+Fact 1: Vaila is catalogued beside Wren.
+Question: Which label is associated with Vaila: Violet or Amber?
+Answer with exactly one word:"
+ng07_redundant,7,redundant,Violet,Amber,inputs\prompts\ng07_redundant.txt,"You are given a small relation graph.
+Fact 1: Vaila is catalogued beside Wren.
+Fact 2: Wren is indexed as Violet.
+Repeated confirmation: Vaila still goes through Wren.
+Repeated confirmation: Wren still points to Violet.
+Question: Which label is associated with Vaila: Violet or Amber?
+Answer with exactly one word:"
+ng07_irrelevant,7,irrelevant,Violet,Amber,inputs\prompts\ng07_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Vaila is catalogued beside Wren.
+Fact 2: Wren is indexed as Violet.
+Irrelevant fact: Xeran is associated with Ivory.
+Question: Which label is associated with Vaila: Violet or Amber?
+Answer with exactly one word:"
+ng07_weak_distractor,7,weak_distractor,Violet,Amber,inputs\prompts\ng07_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Vaila is catalogued beside Wren.
+Fact 2: Wren is indexed as Violet.
+Weak note: an unrelated source mentions Amber, but does not update the graph.
+Question: Which label is associated with Vaila: Violet or Amber?
+Answer with exactly one word:"
+ng07_competition_balanced,7,competition_balanced,Violet,Amber,inputs\prompts\ng07_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Vaila is catalogued beside Wren.
+Fact 2: Wren is indexed as Violet.
+Competing fact: Vaila is also associated with Amber.
+Question: Which label is associated with Vaila: Violet or Amber?
+Answer with exactly one word:"
+ng07_direct_conflict,7,direct_conflict,Violet,Amber,inputs\prompts\ng07_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Vaila is catalogued beside Wren.
+Fact 2: Wren is indexed as Violet.
+Direct conflicting fact: Vaila is indexed as Amber.
+Question: Which label is associated with Vaila: Violet or Amber?
+Answer with exactly one word:"
+ng07_closure_update,7,closure_update,Violet,Amber,inputs\prompts\ng07_closure_update.txt,"You are given a small relation graph.
+Fact 1: Vaila is catalogued beside Wren.
+Old record: Wren is indexed as Violet.
+Updated record: Wren is indexed as Amber, not Violet.
+Question: Which label is associated with Vaila: Violet or Amber?
+Answer with exactly one word:"
+ng07_closure_override,7,closure_override,Violet,Amber,inputs\prompts\ng07_closure_override.txt,"You are given a rule system.
+General rule: items that is catalogued beside Wren receive label Violet.
+Override rule: in this case, items that is catalogued beside Wren receive label Amber.
+Fact: Vaila is catalogued beside Wren.
+Question: Which label is associated with Vaila: Violet or Amber?
+Answer with exactly one word:"
+ng07_exception_override,7,exception_override,Violet,Amber,inputs\prompts\ng07_exception_override.txt,"You are given a rule system.
+General rule: items connected to Wren use label Violet.
+Exception: Vaila is a special case and uses label Amber.
+Fact: Vaila is connected to Wren.
+Question: Which label is associated with Vaila: Violet or Amber?
+Answer with exactly one word:"
+ng08_clean,8,clean,Ivory,Onyx,inputs\prompts\ng08_clean.txt,"You are given a small relation graph.
+Fact 1: Ysol travels via Zarek.
+Fact 2: Zarek is marked with Ivory.
+Question: Which label is associated with Ysol: Ivory or Onyx?
+Answer with exactly one word:"
+ng08_permuted,8,permuted,Ivory,Onyx,inputs\prompts\ng08_permuted.txt,"You are given a small relation graph.
+Fact 2: Zarek is marked with Ivory.
+Fact 1: Ysol travels via Zarek.
+Question: Which label is associated with Ysol: Ivory or Onyx?
+Answer with exactly one word:"
+ng08_redundant,8,redundant,Ivory,Onyx,inputs\prompts\ng08_redundant.txt,"You are given a small relation graph.
+Fact 1: Ysol travels via Zarek.
+Fact 2: Zarek is marked with Ivory.
+Repeated confirmation: Ysol still goes through Zarek.
+Repeated confirmation: Zarek still points to Ivory.
+Question: Which label is associated with Ysol: Ivory or Onyx?
+Answer with exactly one word:"
+ng08_irrelevant,8,irrelevant,Ivory,Onyx,inputs\prompts\ng08_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Ysol travels via Zarek.
+Fact 2: Zarek is marked with Ivory.
+Irrelevant fact: Amani is associated with Ruby.
+Question: Which label is associated with Ysol: Ivory or Onyx?
+Answer with exactly one word:"
+ng08_weak_distractor,8,weak_distractor,Ivory,Onyx,inputs\prompts\ng08_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Ysol travels via Zarek.
+Fact 2: Zarek is marked with Ivory.
+Weak note: an unrelated source mentions Onyx, but does not update the graph.
+Question: Which label is associated with Ysol: Ivory or Onyx?
+Answer with exactly one word:"
+ng08_competition_balanced,8,competition_balanced,Ivory,Onyx,inputs\prompts\ng08_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Ysol travels via Zarek.
+Fact 2: Zarek is marked with Ivory.
+Competing fact: Ysol is also associated with Onyx.
+Question: Which label is associated with Ysol: Ivory or Onyx?
+Answer with exactly one word:"
+ng08_direct_conflict,8,direct_conflict,Ivory,Onyx,inputs\prompts\ng08_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Ysol travels via Zarek.
+Fact 2: Zarek is marked with Ivory.
+Direct conflicting fact: Ysol is marked with Onyx.
+Question: Which label is associated with Ysol: Ivory or Onyx?
+Answer with exactly one word:"
+ng08_closure_update,8,closure_update,Ivory,Onyx,inputs\prompts\ng08_closure_update.txt,"You are given a small relation graph.
+Fact 1: Ysol travels via Zarek.
+Old record: Zarek is marked with Ivory.
+Updated record: Zarek is marked with Onyx, not Ivory.
+Question: Which label is associated with Ysol: Ivory or Onyx?
+Answer with exactly one word:"
+ng08_closure_override,8,closure_override,Ivory,Onyx,inputs\prompts\ng08_closure_override.txt,"You are given a rule system.
+General rule: items that travels via Zarek receive label Ivory.
+Override rule: in this case, items that travels via Zarek receive label Onyx.
+Fact: Ysol travels via Zarek.
+Question: Which label is associated with Ysol: Ivory or Onyx?
+Answer with exactly one word:"
+ng08_exception_override,8,exception_override,Ivory,Onyx,inputs\prompts\ng08_exception_override.txt,"You are given a rule system.
+General rule: items connected to Zarek use label Ivory.
+Exception: Ysol is a special case and uses label Onyx.
+Fact: Ysol is connected to Zarek.
+Question: Which label is associated with Ysol: Ivory or Onyx?
+Answer with exactly one word:"
+ng09_clean,9,clean,Ruby,Jade,inputs\prompts\ng09_clean.txt,"You are given a small relation graph.
+Fact 1: Bram is linked onward to Celie.
+Fact 2: Celie is registered under Ruby.
+Question: Which label is associated with Bram: Ruby or Jade?
+Answer with exactly one word:"
+ng09_permuted,9,permuted,Ruby,Jade,inputs\prompts\ng09_permuted.txt,"You are given a small relation graph.
+Fact 2: Celie is registered under Ruby.
+Fact 1: Bram is linked onward to Celie.
+Question: Which label is associated with Bram: Ruby or Jade?
+Answer with exactly one word:"
+ng09_redundant,9,redundant,Ruby,Jade,inputs\prompts\ng09_redundant.txt,"You are given a small relation graph.
+Fact 1: Bram is linked onward to Celie.
+Fact 2: Celie is registered under Ruby.
+Repeated confirmation: Bram still goes through Celie.
+Repeated confirmation: Celie still points to Ruby.
+Question: Which label is associated with Bram: Ruby or Jade?
+Answer with exactly one word:"
+ng09_irrelevant,9,irrelevant,Ruby,Jade,inputs\prompts\ng09_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Bram is linked onward to Celie.
+Fact 2: Celie is registered under Ruby.
+Irrelevant fact: Doran is associated with Coral.
+Question: Which label is associated with Bram: Ruby or Jade?
+Answer with exactly one word:"
+ng09_weak_distractor,9,weak_distractor,Ruby,Jade,inputs\prompts\ng09_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Bram is linked onward to Celie.
+Fact 2: Celie is registered under Ruby.
+Weak note: an unrelated source mentions Jade, but does not update the graph.
+Question: Which label is associated with Bram: Ruby or Jade?
+Answer with exactly one word:"
+ng09_competition_balanced,9,competition_balanced,Ruby,Jade,inputs\prompts\ng09_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Bram is linked onward to Celie.
+Fact 2: Celie is registered under Ruby.
+Competing fact: Bram is also associated with Jade.
+Question: Which label is associated with Bram: Ruby or Jade?
+Answer with exactly one word:"
+ng09_direct_conflict,9,direct_conflict,Ruby,Jade,inputs\prompts\ng09_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Bram is linked onward to Celie.
+Fact 2: Celie is registered under Ruby.
+Direct conflicting fact: Bram is registered under Jade.
+Question: Which label is associated with Bram: Ruby or Jade?
+Answer with exactly one word:"
+ng09_closure_update,9,closure_update,Ruby,Jade,inputs\prompts\ng09_closure_update.txt,"You are given a small relation graph.
+Fact 1: Bram is linked onward to Celie.
+Old record: Celie is registered under Ruby.
+Updated record: Celie is registered under Jade, not Ruby.
+Question: Which label is associated with Bram: Ruby or Jade?
+Answer with exactly one word:"
+ng09_closure_override,9,closure_override,Ruby,Jade,inputs\prompts\ng09_closure_override.txt,"You are given a rule system.
+General rule: items that is linked onward to Celie receive label Ruby.
+Override rule: in this case, items that is linked onward to Celie receive label Jade.
+Fact: Bram is linked onward to Celie.
+Question: Which label is associated with Bram: Ruby or Jade?
+Answer with exactly one word:"
+ng09_exception_override,9,exception_override,Ruby,Jade,inputs\prompts\ng09_exception_override.txt,"You are given a rule system.
+General rule: items connected to Celie use label Ruby.
+Exception: Bram is a special case and uses label Jade.
+Fact: Bram is connected to Celie.
+Question: Which label is associated with Bram: Ruby or Jade?
+Answer with exactly one word:"
+ng10_clean,10,clean,Coral,Lilac,inputs\prompts\ng10_clean.txt,"You are given a small relation graph.
+Fact 1: Elian passes by Fara.
+Fact 2: Fara is filed at Coral.
+Question: Which label is associated with Elian: Coral or Lilac?
+Answer with exactly one word:"
+ng10_permuted,10,permuted,Coral,Lilac,inputs\prompts\ng10_permuted.txt,"You are given a small relation graph.
+Fact 2: Fara is filed at Coral.
+Fact 1: Elian passes by Fara.
+Question: Which label is associated with Elian: Coral or Lilac?
+Answer with exactly one word:"
+ng10_redundant,10,redundant,Coral,Lilac,inputs\prompts\ng10_redundant.txt,"You are given a small relation graph.
+Fact 1: Elian passes by Fara.
+Fact 2: Fara is filed at Coral.
+Repeated confirmation: Elian still goes through Fara.
+Repeated confirmation: Fara still points to Coral.
+Question: Which label is associated with Elian: Coral or Lilac?
+Answer with exactly one word:"
+ng10_irrelevant,10,irrelevant,Coral,Lilac,inputs\prompts\ng10_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Elian passes by Fara.
+Fact 2: Fara is filed at Coral.
+Irrelevant fact: Galenna is associated with Mint.
+Question: Which label is associated with Elian: Coral or Lilac?
+Answer with exactly one word:"
+ng10_weak_distractor,10,weak_distractor,Coral,Lilac,inputs\prompts\ng10_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Elian passes by Fara.
+Fact 2: Fara is filed at Coral.
+Weak note: an unrelated source mentions Lilac, but does not update the graph.
+Question: Which label is associated with Elian: Coral or Lilac?
+Answer with exactly one word:"
+ng10_competition_balanced,10,competition_balanced,Coral,Lilac,inputs\prompts\ng10_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Elian passes by Fara.
+Fact 2: Fara is filed at Coral.
+Competing fact: Elian is also associated with Lilac.
+Question: Which label is associated with Elian: Coral or Lilac?
+Answer with exactly one word:"
+ng10_direct_conflict,10,direct_conflict,Coral,Lilac,inputs\prompts\ng10_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Elian passes by Fara.
+Fact 2: Fara is filed at Coral.
+Direct conflicting fact: Elian is filed at Lilac.
+Question: Which label is associated with Elian: Coral or Lilac?
+Answer with exactly one word:"
+ng10_closure_update,10,closure_update,Coral,Lilac,inputs\prompts\ng10_closure_update.txt,"You are given a small relation graph.
+Fact 1: Elian passes by Fara.
+Old record: Fara is filed at Coral.
+Updated record: Fara is filed at Lilac, not Coral.
+Question: Which label is associated with Elian: Coral or Lilac?
+Answer with exactly one word:"
+ng10_closure_override,10,closure_override,Coral,Lilac,inputs\prompts\ng10_closure_override.txt,"You are given a rule system.
+General rule: items that passes by Fara receive label Coral.
+Override rule: in this case, items that passes by Fara receive label Lilac.
+Fact: Elian passes by Fara.
+Question: Which label is associated with Elian: Coral or Lilac?
+Answer with exactly one word:"
+ng10_exception_override,10,exception_override,Coral,Lilac,inputs\prompts\ng10_exception_override.txt,"You are given a rule system.
+General rule: items connected to Fara use label Coral.
+Exception: Elian is a special case and uses label Lilac.
+Fact: Elian is connected to Fara.
+Question: Which label is associated with Elian: Coral or Lilac?
+Answer with exactly one word:"
+ng11_clean,11,clean,Mint,Plum,inputs\prompts\ng11_clean.txt,"You are given a small relation graph.
+Fact 1: Hollis is traced to Iria.
+Fact 2: Iria is assigned marker Mint.
+Question: Which label is associated with Hollis: Mint or Plum?
+Answer with exactly one word:"
+ng11_permuted,11,permuted,Mint,Plum,inputs\prompts\ng11_permuted.txt,"You are given a small relation graph.
+Fact 2: Iria is assigned marker Mint.
+Fact 1: Hollis is traced to Iria.
+Question: Which label is associated with Hollis: Mint or Plum?
+Answer with exactly one word:"
+ng11_redundant,11,redundant,Mint,Plum,inputs\prompts\ng11_redundant.txt,"You are given a small relation graph.
+Fact 1: Hollis is traced to Iria.
+Fact 2: Iria is assigned marker Mint.
+Repeated confirmation: Hollis still goes through Iria.
+Repeated confirmation: Iria still points to Mint.
+Question: Which label is associated with Hollis: Mint or Plum?
+Answer with exactly one word:"
+ng11_irrelevant,11,irrelevant,Mint,Plum,inputs\prompts\ng11_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Hollis is traced to Iria.
+Fact 2: Iria is assigned marker Mint.
+Irrelevant fact: Jarek is associated with Cyan.
+Question: Which label is associated with Hollis: Mint or Plum?
+Answer with exactly one word:"
+ng11_weak_distractor,11,weak_distractor,Mint,Plum,inputs\prompts\ng11_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Hollis is traced to Iria.
+Fact 2: Iria is assigned marker Mint.
+Weak note: an unrelated source mentions Plum, but does not update the graph.
+Question: Which label is associated with Hollis: Mint or Plum?
+Answer with exactly one word:"
+ng11_competition_balanced,11,competition_balanced,Mint,Plum,inputs\prompts\ng11_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Hollis is traced to Iria.
+Fact 2: Iria is assigned marker Mint.
+Competing fact: Hollis is also associated with Plum.
+Question: Which label is associated with Hollis: Mint or Plum?
+Answer with exactly one word:"
+ng11_direct_conflict,11,direct_conflict,Mint,Plum,inputs\prompts\ng11_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Hollis is traced to Iria.
+Fact 2: Iria is assigned marker Mint.
+Direct conflicting fact: Hollis is assigned marker Plum.
+Question: Which label is associated with Hollis: Mint or Plum?
+Answer with exactly one word:"
+ng11_closure_update,11,closure_update,Mint,Plum,inputs\prompts\ng11_closure_update.txt,"You are given a small relation graph.
+Fact 1: Hollis is traced to Iria.
+Old record: Iria is assigned marker Mint.
+Updated record: Iria is assigned marker Plum, not Mint.
+Question: Which label is associated with Hollis: Mint or Plum?
+Answer with exactly one word:"
+ng11_closure_override,11,closure_override,Mint,Plum,inputs\prompts\ng11_closure_override.txt,"You are given a rule system.
+General rule: items that is traced to Iria receive label Mint.
+Override rule: in this case, items that is traced to Iria receive label Plum.
+Fact: Hollis is traced to Iria.
+Question: Which label is associated with Hollis: Mint or Plum?
+Answer with exactly one word:"
+ng11_exception_override,11,exception_override,Mint,Plum,inputs\prompts\ng11_exception_override.txt,"You are given a rule system.
+General rule: items connected to Iria use label Mint.
+Exception: Hollis is a special case and uses label Plum.
+Fact: Hollis is connected to Iria.
+Question: Which label is associated with Hollis: Mint or Plum?
+Answer with exactly one word:"
+ng12_clean,12,clean,Cyan,Magenta,inputs\prompts\ng12_clean.txt,"You are given a small relation graph.
+Fact 1: Kessa routes through Lorin.
+Fact 2: Lorin terminates at Cyan.
+Question: Which label is associated with Kessa: Cyan or Magenta?
+Answer with exactly one word:"
+ng12_permuted,12,permuted,Cyan,Magenta,inputs\prompts\ng12_permuted.txt,"You are given a small relation graph.
+Fact 2: Lorin terminates at Cyan.
+Fact 1: Kessa routes through Lorin.
+Question: Which label is associated with Kessa: Cyan or Magenta?
+Answer with exactly one word:"
+ng12_redundant,12,redundant,Cyan,Magenta,inputs\prompts\ng12_redundant.txt,"You are given a small relation graph.
+Fact 1: Kessa routes through Lorin.
+Fact 2: Lorin terminates at Cyan.
+Repeated confirmation: Kessa still goes through Lorin.
+Repeated confirmation: Lorin still points to Cyan.
+Question: Which label is associated with Kessa: Cyan or Magenta?
+Answer with exactly one word:"
+ng12_irrelevant,12,irrelevant,Cyan,Magenta,inputs\prompts\ng12_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Kessa routes through Lorin.
+Fact 2: Lorin terminates at Cyan.
+Irrelevant fact: Mirae is associated with Violet.
+Question: Which label is associated with Kessa: Cyan or Magenta?
+Answer with exactly one word:"
+ng12_weak_distractor,12,weak_distractor,Cyan,Magenta,inputs\prompts\ng12_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Kessa routes through Lorin.
+Fact 2: Lorin terminates at Cyan.
+Weak note: an unrelated source mentions Magenta, but does not update the graph.
+Question: Which label is associated with Kessa: Cyan or Magenta?
+Answer with exactly one word:"
+ng12_competition_balanced,12,competition_balanced,Cyan,Magenta,inputs\prompts\ng12_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Kessa routes through Lorin.
+Fact 2: Lorin terminates at Cyan.
+Competing fact: Kessa is also associated with Magenta.
+Question: Which label is associated with Kessa: Cyan or Magenta?
+Answer with exactly one word:"
+ng12_direct_conflict,12,direct_conflict,Cyan,Magenta,inputs\prompts\ng12_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Kessa routes through Lorin.
+Fact 2: Lorin terminates at Cyan.
+Direct conflicting fact: Kessa terminates at Magenta.
+Question: Which label is associated with Kessa: Cyan or Magenta?
+Answer with exactly one word:"
+ng12_closure_update,12,closure_update,Cyan,Magenta,inputs\prompts\ng12_closure_update.txt,"You are given a small relation graph.
+Fact 1: Kessa routes through Lorin.
+Old record: Lorin terminates at Cyan.
+Updated record: Lorin terminates at Magenta, not Cyan.
+Question: Which label is associated with Kessa: Cyan or Magenta?
+Answer with exactly one word:"
+ng12_closure_override,12,closure_override,Cyan,Magenta,inputs\prompts\ng12_closure_override.txt,"You are given a rule system.
+General rule: items that routes through Lorin receive label Cyan.
+Override rule: in this case, items that routes through Lorin receive label Magenta.
+Fact: Kessa routes through Lorin.
+Question: Which label is associated with Kessa: Cyan or Magenta?
+Answer with exactly one word:"
+ng12_exception_override,12,exception_override,Cyan,Magenta,inputs\prompts\ng12_exception_override.txt,"You are given a rule system.
+General rule: items connected to Lorin use label Cyan.
+Exception: Kessa is a special case and uses label Magenta.
+Fact: Kessa is connected to Lorin.
+Question: Which label is associated with Kessa: Cyan or Magenta?
+Answer with exactly one word:"
+ng13_clean,13,clean,Violet,Amber,inputs\prompts\ng13_clean.txt,"You are given a small relation graph.
+Fact 1: Nolan is catalogued beside Oria.
+Fact 2: Oria is indexed as Violet.
+Question: Which label is associated with Nolan: Violet or Amber?
+Answer with exactly one word:"
+ng13_permuted,13,permuted,Violet,Amber,inputs\prompts\ng13_permuted.txt,"You are given a small relation graph.
+Fact 2: Oria is indexed as Violet.
+Fact 1: Nolan is catalogued beside Oria.
+Question: Which label is associated with Nolan: Violet or Amber?
+Answer with exactly one word:"
+ng13_redundant,13,redundant,Violet,Amber,inputs\prompts\ng13_redundant.txt,"You are given a small relation graph.
+Fact 1: Nolan is catalogued beside Oria.
+Fact 2: Oria is indexed as Violet.
+Repeated confirmation: Nolan still goes through Oria.
+Repeated confirmation: Oria still points to Violet.
+Question: Which label is associated with Nolan: Violet or Amber?
+Answer with exactly one word:"
+ng13_irrelevant,13,irrelevant,Violet,Amber,inputs\prompts\ng13_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Nolan is catalogued beside Oria.
+Fact 2: Oria is indexed as Violet.
+Irrelevant fact: Perrin is associated with Ivory.
+Question: Which label is associated with Nolan: Violet or Amber?
+Answer with exactly one word:"
+ng13_weak_distractor,13,weak_distractor,Violet,Amber,inputs\prompts\ng13_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Nolan is catalogued beside Oria.
+Fact 2: Oria is indexed as Violet.
+Weak note: an unrelated source mentions Amber, but does not update the graph.
+Question: Which label is associated with Nolan: Violet or Amber?
+Answer with exactly one word:"
+ng13_competition_balanced,13,competition_balanced,Violet,Amber,inputs\prompts\ng13_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Nolan is catalogued beside Oria.
+Fact 2: Oria is indexed as Violet.
+Competing fact: Nolan is also associated with Amber.
+Question: Which label is associated with Nolan: Violet or Amber?
+Answer with exactly one word:"
+ng13_direct_conflict,13,direct_conflict,Violet,Amber,inputs\prompts\ng13_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Nolan is catalogued beside Oria.
+Fact 2: Oria is indexed as Violet.
+Direct conflicting fact: Nolan is indexed as Amber.
+Question: Which label is associated with Nolan: Violet or Amber?
+Answer with exactly one word:"
+ng13_closure_update,13,closure_update,Violet,Amber,inputs\prompts\ng13_closure_update.txt,"You are given a small relation graph.
+Fact 1: Nolan is catalogued beside Oria.
+Old record: Oria is indexed as Violet.
+Updated record: Oria is indexed as Amber, not Violet.
+Question: Which label is associated with Nolan: Violet or Amber?
+Answer with exactly one word:"
+ng13_closure_override,13,closure_override,Violet,Amber,inputs\prompts\ng13_closure_override.txt,"You are given a rule system.
+General rule: items that is catalogued beside Oria receive label Violet.
+Override rule: in this case, items that is catalogued beside Oria receive label Amber.
+Fact: Nolan is catalogued beside Oria.
+Question: Which label is associated with Nolan: Violet or Amber?
+Answer with exactly one word:"
+ng13_exception_override,13,exception_override,Violet,Amber,inputs\prompts\ng13_exception_override.txt,"You are given a rule system.
+General rule: items connected to Oria use label Violet.
+Exception: Nolan is a special case and uses label Amber.
+Fact: Nolan is connected to Oria.
+Question: Which label is associated with Nolan: Violet or Amber?
+Answer with exactly one word:"
+ng14_clean,14,clean,Ivory,Onyx,inputs\prompts\ng14_clean.txt,"You are given a small relation graph.
+Fact 1: Quilla travels via Ronan.
+Fact 2: Ronan is marked with Ivory.
+Question: Which label is associated with Quilla: Ivory or Onyx?
+Answer with exactly one word:"
+ng14_permuted,14,permuted,Ivory,Onyx,inputs\prompts\ng14_permuted.txt,"You are given a small relation graph.
+Fact 2: Ronan is marked with Ivory.
+Fact 1: Quilla travels via Ronan.
+Question: Which label is associated with Quilla: Ivory or Onyx?
+Answer with exactly one word:"
+ng14_redundant,14,redundant,Ivory,Onyx,inputs\prompts\ng14_redundant.txt,"You are given a small relation graph.
+Fact 1: Quilla travels via Ronan.
+Fact 2: Ronan is marked with Ivory.
+Repeated confirmation: Quilla still goes through Ronan.
+Repeated confirmation: Ronan still points to Ivory.
+Question: Which label is associated with Quilla: Ivory or Onyx?
+Answer with exactly one word:"
+ng14_irrelevant,14,irrelevant,Ivory,Onyx,inputs\prompts\ng14_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Quilla travels via Ronan.
+Fact 2: Ronan is marked with Ivory.
+Irrelevant fact: Selka is associated with Ruby.
+Question: Which label is associated with Quilla: Ivory or Onyx?
+Answer with exactly one word:"
+ng14_weak_distractor,14,weak_distractor,Ivory,Onyx,inputs\prompts\ng14_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Quilla travels via Ronan.
+Fact 2: Ronan is marked with Ivory.
+Weak note: an unrelated source mentions Onyx, but does not update the graph.
+Question: Which label is associated with Quilla: Ivory or Onyx?
+Answer with exactly one word:"
+ng14_competition_balanced,14,competition_balanced,Ivory,Onyx,inputs\prompts\ng14_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Quilla travels via Ronan.
+Fact 2: Ronan is marked with Ivory.
+Competing fact: Quilla is also associated with Onyx.
+Question: Which label is associated with Quilla: Ivory or Onyx?
+Answer with exactly one word:"
+ng14_direct_conflict,14,direct_conflict,Ivory,Onyx,inputs\prompts\ng14_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Quilla travels via Ronan.
+Fact 2: Ronan is marked with Ivory.
+Direct conflicting fact: Quilla is marked with Onyx.
+Question: Which label is associated with Quilla: Ivory or Onyx?
+Answer with exactly one word:"
+ng14_closure_update,14,closure_update,Ivory,Onyx,inputs\prompts\ng14_closure_update.txt,"You are given a small relation graph.
+Fact 1: Quilla travels via Ronan.
+Old record: Ronan is marked with Ivory.
+Updated record: Ronan is marked with Onyx, not Ivory.
+Question: Which label is associated with Quilla: Ivory or Onyx?
+Answer with exactly one word:"
+ng14_closure_override,14,closure_override,Ivory,Onyx,inputs\prompts\ng14_closure_override.txt,"You are given a rule system.
+General rule: items that travels via Ronan receive label Ivory.
+Override rule: in this case, items that travels via Ronan receive label Onyx.
+Fact: Quilla travels via Ronan.
+Question: Which label is associated with Quilla: Ivory or Onyx?
+Answer with exactly one word:"
+ng14_exception_override,14,exception_override,Ivory,Onyx,inputs\prompts\ng14_exception_override.txt,"You are given a rule system.
+General rule: items connected to Ronan use label Ivory.
+Exception: Quilla is a special case and uses label Onyx.
+Fact: Quilla is connected to Ronan.
+Question: Which label is associated with Quilla: Ivory or Onyx?
+Answer with exactly one word:"
+ng15_clean,15,clean,Ruby,Jade,inputs\prompts\ng15_clean.txt,"You are given a small relation graph.
+Fact 1: Toren is linked onward to Ulla.
+Fact 2: Ulla is registered under Ruby.
+Question: Which label is associated with Toren: Ruby or Jade?
+Answer with exactly one word:"
+ng15_permuted,15,permuted,Ruby,Jade,inputs\prompts\ng15_permuted.txt,"You are given a small relation graph.
+Fact 2: Ulla is registered under Ruby.
+Fact 1: Toren is linked onward to Ulla.
+Question: Which label is associated with Toren: Ruby or Jade?
+Answer with exactly one word:"
+ng15_redundant,15,redundant,Ruby,Jade,inputs\prompts\ng15_redundant.txt,"You are given a small relation graph.
+Fact 1: Toren is linked onward to Ulla.
+Fact 2: Ulla is registered under Ruby.
+Repeated confirmation: Toren still goes through Ulla.
+Repeated confirmation: Ulla still points to Ruby.
+Question: Which label is associated with Toren: Ruby or Jade?
+Answer with exactly one word:"
+ng15_irrelevant,15,irrelevant,Ruby,Jade,inputs\prompts\ng15_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Toren is linked onward to Ulla.
+Fact 2: Ulla is registered under Ruby.
+Irrelevant fact: Varin is associated with Coral.
+Question: Which label is associated with Toren: Ruby or Jade?
+Answer with exactly one word:"
+ng15_weak_distractor,15,weak_distractor,Ruby,Jade,inputs\prompts\ng15_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Toren is linked onward to Ulla.
+Fact 2: Ulla is registered under Ruby.
+Weak note: an unrelated source mentions Jade, but does not update the graph.
+Question: Which label is associated with Toren: Ruby or Jade?
+Answer with exactly one word:"
+ng15_competition_balanced,15,competition_balanced,Ruby,Jade,inputs\prompts\ng15_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Toren is linked onward to Ulla.
+Fact 2: Ulla is registered under Ruby.
+Competing fact: Toren is also associated with Jade.
+Question: Which label is associated with Toren: Ruby or Jade?
+Answer with exactly one word:"
+ng15_direct_conflict,15,direct_conflict,Ruby,Jade,inputs\prompts\ng15_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Toren is linked onward to Ulla.
+Fact 2: Ulla is registered under Ruby.
+Direct conflicting fact: Toren is registered under Jade.
+Question: Which label is associated with Toren: Ruby or Jade?
+Answer with exactly one word:"
+ng15_closure_update,15,closure_update,Ruby,Jade,inputs\prompts\ng15_closure_update.txt,"You are given a small relation graph.
+Fact 1: Toren is linked onward to Ulla.
+Old record: Ulla is registered under Ruby.
+Updated record: Ulla is registered under Jade, not Ruby.
+Question: Which label is associated with Toren: Ruby or Jade?
+Answer with exactly one word:"
+ng15_closure_override,15,closure_override,Ruby,Jade,inputs\prompts\ng15_closure_override.txt,"You are given a rule system.
+General rule: items that is linked onward to Ulla receive label Ruby.
+Override rule: in this case, items that is linked onward to Ulla receive label Jade.
+Fact: Toren is linked onward to Ulla.
+Question: Which label is associated with Toren: Ruby or Jade?
+Answer with exactly one word:"
+ng15_exception_override,15,exception_override,Ruby,Jade,inputs\prompts\ng15_exception_override.txt,"You are given a rule system.
+General rule: items connected to Ulla use label Ruby.
+Exception: Toren is a special case and uses label Jade.
+Fact: Toren is connected to Ulla.
+Question: Which label is associated with Toren: Ruby or Jade?
+Answer with exactly one word:"
+ng16_clean,16,clean,Coral,Lilac,inputs\prompts\ng16_clean.txt,"You are given a small relation graph.
+Fact 1: Wexla passes by Xavi.
+Fact 2: Xavi is filed at Coral.
+Question: Which label is associated with Wexla: Coral or Lilac?
+Answer with exactly one word:"
+ng16_permuted,16,permuted,Coral,Lilac,inputs\prompts\ng16_permuted.txt,"You are given a small relation graph.
+Fact 2: Xavi is filed at Coral.
+Fact 1: Wexla passes by Xavi.
+Question: Which label is associated with Wexla: Coral or Lilac?
+Answer with exactly one word:"
+ng16_redundant,16,redundant,Coral,Lilac,inputs\prompts\ng16_redundant.txt,"You are given a small relation graph.
+Fact 1: Wexla passes by Xavi.
+Fact 2: Xavi is filed at Coral.
+Repeated confirmation: Wexla still goes through Xavi.
+Repeated confirmation: Xavi still points to Coral.
+Question: Which label is associated with Wexla: Coral or Lilac?
+Answer with exactly one word:"
+ng16_irrelevant,16,irrelevant,Coral,Lilac,inputs\prompts\ng16_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Wexla passes by Xavi.
+Fact 2: Xavi is filed at Coral.
+Irrelevant fact: Yoren is associated with Mint.
+Question: Which label is associated with Wexla: Coral or Lilac?
+Answer with exactly one word:"
+ng16_weak_distractor,16,weak_distractor,Coral,Lilac,inputs\prompts\ng16_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Wexla passes by Xavi.
+Fact 2: Xavi is filed at Coral.
+Weak note: an unrelated source mentions Lilac, but does not update the graph.
+Question: Which label is associated with Wexla: Coral or Lilac?
+Answer with exactly one word:"
+ng16_competition_balanced,16,competition_balanced,Coral,Lilac,inputs\prompts\ng16_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Wexla passes by Xavi.
+Fact 2: Xavi is filed at Coral.
+Competing fact: Wexla is also associated with Lilac.
+Question: Which label is associated with Wexla: Coral or Lilac?
+Answer with exactly one word:"
+ng16_direct_conflict,16,direct_conflict,Coral,Lilac,inputs\prompts\ng16_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Wexla passes by Xavi.
+Fact 2: Xavi is filed at Coral.
+Direct conflicting fact: Wexla is filed at Lilac.
+Question: Which label is associated with Wexla: Coral or Lilac?
+Answer with exactly one word:"
+ng16_closure_update,16,closure_update,Coral,Lilac,inputs\prompts\ng16_closure_update.txt,"You are given a small relation graph.
+Fact 1: Wexla passes by Xavi.
+Old record: Xavi is filed at Coral.
+Updated record: Xavi is filed at Lilac, not Coral.
+Question: Which label is associated with Wexla: Coral or Lilac?
+Answer with exactly one word:"
+ng16_closure_override,16,closure_override,Coral,Lilac,inputs\prompts\ng16_closure_override.txt,"You are given a rule system.
+General rule: items that passes by Xavi receive label Coral.
+Override rule: in this case, items that passes by Xavi receive label Lilac.
+Fact: Wexla passes by Xavi.
+Question: Which label is associated with Wexla: Coral or Lilac?
+Answer with exactly one word:"
+ng16_exception_override,16,exception_override,Coral,Lilac,inputs\prompts\ng16_exception_override.txt,"You are given a rule system.
+General rule: items connected to Xavi use label Coral.
+Exception: Wexla is a special case and uses label Lilac.
+Fact: Wexla is connected to Xavi.
+Question: Which label is associated with Wexla: Coral or Lilac?
+Answer with exactly one word:"
+ng17_clean,17,clean,Mint,Plum,inputs\prompts\ng17_clean.txt,"You are given a small relation graph.
+Fact 1: Zelia is traced to Arlo.
+Fact 2: Arlo is assigned marker Mint.
+Question: Which label is associated with Zelia: Mint or Plum?
+Answer with exactly one word:"
+ng17_permuted,17,permuted,Mint,Plum,inputs\prompts\ng17_permuted.txt,"You are given a small relation graph.
+Fact 2: Arlo is assigned marker Mint.
+Fact 1: Zelia is traced to Arlo.
+Question: Which label is associated with Zelia: Mint or Plum?
+Answer with exactly one word:"
+ng17_redundant,17,redundant,Mint,Plum,inputs\prompts\ng17_redundant.txt,"You are given a small relation graph.
+Fact 1: Zelia is traced to Arlo.
+Fact 2: Arlo is assigned marker Mint.
+Repeated confirmation: Zelia still goes through Arlo.
+Repeated confirmation: Arlo still points to Mint.
+Question: Which label is associated with Zelia: Mint or Plum?
+Answer with exactly one word:"
+ng17_irrelevant,17,irrelevant,Mint,Plum,inputs\prompts\ng17_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Zelia is traced to Arlo.
+Fact 2: Arlo is assigned marker Mint.
+Irrelevant fact: Bex is associated with Cyan.
+Question: Which label is associated with Zelia: Mint or Plum?
+Answer with exactly one word:"
+ng17_weak_distractor,17,weak_distractor,Mint,Plum,inputs\prompts\ng17_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Zelia is traced to Arlo.
+Fact 2: Arlo is assigned marker Mint.
+Weak note: an unrelated source mentions Plum, but does not update the graph.
+Question: Which label is associated with Zelia: Mint or Plum?
+Answer with exactly one word:"
+ng17_competition_balanced,17,competition_balanced,Mint,Plum,inputs\prompts\ng17_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Zelia is traced to Arlo.
+Fact 2: Arlo is assigned marker Mint.
+Competing fact: Zelia is also associated with Plum.
+Question: Which label is associated with Zelia: Mint or Plum?
+Answer with exactly one word:"
+ng17_direct_conflict,17,direct_conflict,Mint,Plum,inputs\prompts\ng17_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Zelia is traced to Arlo.
+Fact 2: Arlo is assigned marker Mint.
+Direct conflicting fact: Zelia is assigned marker Plum.
+Question: Which label is associated with Zelia: Mint or Plum?
+Answer with exactly one word:"
+ng17_closure_update,17,closure_update,Mint,Plum,inputs\prompts\ng17_closure_update.txt,"You are given a small relation graph.
+Fact 1: Zelia is traced to Arlo.
+Old record: Arlo is assigned marker Mint.
+Updated record: Arlo is assigned marker Plum, not Mint.
+Question: Which label is associated with Zelia: Mint or Plum?
+Answer with exactly one word:"
+ng17_closure_override,17,closure_override,Mint,Plum,inputs\prompts\ng17_closure_override.txt,"You are given a rule system.
+General rule: items that is traced to Arlo receive label Mint.
+Override rule: in this case, items that is traced to Arlo receive label Plum.
+Fact: Zelia is traced to Arlo.
+Question: Which label is associated with Zelia: Mint or Plum?
+Answer with exactly one word:"
+ng17_exception_override,17,exception_override,Mint,Plum,inputs\prompts\ng17_exception_override.txt,"You are given a rule system.
+General rule: items connected to Arlo use label Mint.
+Exception: Zelia is a special case and uses label Plum.
+Fact: Zelia is connected to Arlo.
+Question: Which label is associated with Zelia: Mint or Plum?
+Answer with exactly one word:"
+ng18_clean,18,clean,Cyan,Magenta,inputs\prompts\ng18_clean.txt,"You are given a small relation graph.
+Fact 1: Ciran routes through Dara.
+Fact 2: Dara terminates at Cyan.
+Question: Which label is associated with Ciran: Cyan or Magenta?
+Answer with exactly one word:"
+ng18_permuted,18,permuted,Cyan,Magenta,inputs\prompts\ng18_permuted.txt,"You are given a small relation graph.
+Fact 2: Dara terminates at Cyan.
+Fact 1: Ciran routes through Dara.
+Question: Which label is associated with Ciran: Cyan or Magenta?
+Answer with exactly one word:"
+ng18_redundant,18,redundant,Cyan,Magenta,inputs\prompts\ng18_redundant.txt,"You are given a small relation graph.
+Fact 1: Ciran routes through Dara.
+Fact 2: Dara terminates at Cyan.
+Repeated confirmation: Ciran still goes through Dara.
+Repeated confirmation: Dara still points to Cyan.
+Question: Which label is associated with Ciran: Cyan or Magenta?
+Answer with exactly one word:"
+ng18_irrelevant,18,irrelevant,Cyan,Magenta,inputs\prompts\ng18_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Ciran routes through Dara.
+Fact 2: Dara terminates at Cyan.
+Irrelevant fact: Evin is associated with Violet.
+Question: Which label is associated with Ciran: Cyan or Magenta?
+Answer with exactly one word:"
+ng18_weak_distractor,18,weak_distractor,Cyan,Magenta,inputs\prompts\ng18_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Ciran routes through Dara.
+Fact 2: Dara terminates at Cyan.
+Weak note: an unrelated source mentions Magenta, but does not update the graph.
+Question: Which label is associated with Ciran: Cyan or Magenta?
+Answer with exactly one word:"
+ng18_competition_balanced,18,competition_balanced,Cyan,Magenta,inputs\prompts\ng18_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Ciran routes through Dara.
+Fact 2: Dara terminates at Cyan.
+Competing fact: Ciran is also associated with Magenta.
+Question: Which label is associated with Ciran: Cyan or Magenta?
+Answer with exactly one word:"
+ng18_direct_conflict,18,direct_conflict,Cyan,Magenta,inputs\prompts\ng18_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Ciran routes through Dara.
+Fact 2: Dara terminates at Cyan.
+Direct conflicting fact: Ciran terminates at Magenta.
+Question: Which label is associated with Ciran: Cyan or Magenta?
+Answer with exactly one word:"
+ng18_closure_update,18,closure_update,Cyan,Magenta,inputs\prompts\ng18_closure_update.txt,"You are given a small relation graph.
+Fact 1: Ciran routes through Dara.
+Old record: Dara terminates at Cyan.
+Updated record: Dara terminates at Magenta, not Cyan.
+Question: Which label is associated with Ciran: Cyan or Magenta?
+Answer with exactly one word:"
+ng18_closure_override,18,closure_override,Cyan,Magenta,inputs\prompts\ng18_closure_override.txt,"You are given a rule system.
+General rule: items that routes through Dara receive label Cyan.
+Override rule: in this case, items that routes through Dara receive label Magenta.
+Fact: Ciran routes through Dara.
+Question: Which label is associated with Ciran: Cyan or Magenta?
+Answer with exactly one word:"
+ng18_exception_override,18,exception_override,Cyan,Magenta,inputs\prompts\ng18_exception_override.txt,"You are given a rule system.
+General rule: items connected to Dara use label Cyan.
+Exception: Ciran is a special case and uses label Magenta.
+Fact: Ciran is connected to Dara.
+Question: Which label is associated with Ciran: Cyan or Magenta?
+Answer with exactly one word:"
+ng19_clean,19,clean,Violet,Amber,inputs\prompts\ng19_clean.txt,"You are given a small relation graph.
+Fact 1: Fenn is catalogued beside Galia.
+Fact 2: Galia is indexed as Violet.
+Question: Which label is associated with Fenn: Violet or Amber?
+Answer with exactly one word:"
+ng19_permuted,19,permuted,Violet,Amber,inputs\prompts\ng19_permuted.txt,"You are given a small relation graph.
+Fact 2: Galia is indexed as Violet.
+Fact 1: Fenn is catalogued beside Galia.
+Question: Which label is associated with Fenn: Violet or Amber?
+Answer with exactly one word:"
+ng19_redundant,19,redundant,Violet,Amber,inputs\prompts\ng19_redundant.txt,"You are given a small relation graph.
+Fact 1: Fenn is catalogued beside Galia.
+Fact 2: Galia is indexed as Violet.
+Repeated confirmation: Fenn still goes through Galia.
+Repeated confirmation: Galia still points to Violet.
+Question: Which label is associated with Fenn: Violet or Amber?
+Answer with exactly one word:"
+ng19_irrelevant,19,irrelevant,Violet,Amber,inputs\prompts\ng19_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Fenn is catalogued beside Galia.
+Fact 2: Galia is indexed as Violet.
+Irrelevant fact: Hiro is associated with Ivory.
+Question: Which label is associated with Fenn: Violet or Amber?
+Answer with exactly one word:"
+ng19_weak_distractor,19,weak_distractor,Violet,Amber,inputs\prompts\ng19_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Fenn is catalogued beside Galia.
+Fact 2: Galia is indexed as Violet.
+Weak note: an unrelated source mentions Amber, but does not update the graph.
+Question: Which label is associated with Fenn: Violet or Amber?
+Answer with exactly one word:"
+ng19_competition_balanced,19,competition_balanced,Violet,Amber,inputs\prompts\ng19_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Fenn is catalogued beside Galia.
+Fact 2: Galia is indexed as Violet.
+Competing fact: Fenn is also associated with Amber.
+Question: Which label is associated with Fenn: Violet or Amber?
+Answer with exactly one word:"
+ng19_direct_conflict,19,direct_conflict,Violet,Amber,inputs\prompts\ng19_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Fenn is catalogued beside Galia.
+Fact 2: Galia is indexed as Violet.
+Direct conflicting fact: Fenn is indexed as Amber.
+Question: Which label is associated with Fenn: Violet or Amber?
+Answer with exactly one word:"
+ng19_closure_update,19,closure_update,Violet,Amber,inputs\prompts\ng19_closure_update.txt,"You are given a small relation graph.
+Fact 1: Fenn is catalogued beside Galia.
+Old record: Galia is indexed as Violet.
+Updated record: Galia is indexed as Amber, not Violet.
+Question: Which label is associated with Fenn: Violet or Amber?
+Answer with exactly one word:"
+ng19_closure_override,19,closure_override,Violet,Amber,inputs\prompts\ng19_closure_override.txt,"You are given a rule system.
+General rule: items that is catalogued beside Galia receive label Violet.
+Override rule: in this case, items that is catalogued beside Galia receive label Amber.
+Fact: Fenn is catalogued beside Galia.
+Question: Which label is associated with Fenn: Violet or Amber?
+Answer with exactly one word:"
+ng19_exception_override,19,exception_override,Violet,Amber,inputs\prompts\ng19_exception_override.txt,"You are given a rule system.
+General rule: items connected to Galia use label Violet.
+Exception: Fenn is a special case and uses label Amber.
+Fact: Fenn is connected to Galia.
+Question: Which label is associated with Fenn: Violet or Amber?
+Answer with exactly one word:"
+ng20_clean,20,clean,Ivory,Onyx,inputs\prompts\ng20_clean.txt,"You are given a small relation graph.
+Fact 1: Isla travels via Jorin.
+Fact 2: Jorin is marked with Ivory.
+Question: Which label is associated with Isla: Ivory or Onyx?
+Answer with exactly one word:"
+ng20_permuted,20,permuted,Ivory,Onyx,inputs\prompts\ng20_permuted.txt,"You are given a small relation graph.
+Fact 2: Jorin is marked with Ivory.
+Fact 1: Isla travels via Jorin.
+Question: Which label is associated with Isla: Ivory or Onyx?
+Answer with exactly one word:"
+ng20_redundant,20,redundant,Ivory,Onyx,inputs\prompts\ng20_redundant.txt,"You are given a small relation graph.
+Fact 1: Isla travels via Jorin.
+Fact 2: Jorin is marked with Ivory.
+Repeated confirmation: Isla still goes through Jorin.
+Repeated confirmation: Jorin still points to Ivory.
+Question: Which label is associated with Isla: Ivory or Onyx?
+Answer with exactly one word:"
+ng20_irrelevant,20,irrelevant,Ivory,Onyx,inputs\prompts\ng20_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Isla travels via Jorin.
+Fact 2: Jorin is marked with Ivory.
+Irrelevant fact: Kavi is associated with Ruby.
+Question: Which label is associated with Isla: Ivory or Onyx?
+Answer with exactly one word:"
+ng20_weak_distractor,20,weak_distractor,Ivory,Onyx,inputs\prompts\ng20_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Isla travels via Jorin.
+Fact 2: Jorin is marked with Ivory.
+Weak note: an unrelated source mentions Onyx, but does not update the graph.
+Question: Which label is associated with Isla: Ivory or Onyx?
+Answer with exactly one word:"
+ng20_competition_balanced,20,competition_balanced,Ivory,Onyx,inputs\prompts\ng20_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Isla travels via Jorin.
+Fact 2: Jorin is marked with Ivory.
+Competing fact: Isla is also associated with Onyx.
+Question: Which label is associated with Isla: Ivory or Onyx?
+Answer with exactly one word:"
+ng20_direct_conflict,20,direct_conflict,Ivory,Onyx,inputs\prompts\ng20_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Isla travels via Jorin.
+Fact 2: Jorin is marked with Ivory.
+Direct conflicting fact: Isla is marked with Onyx.
+Question: Which label is associated with Isla: Ivory or Onyx?
+Answer with exactly one word:"
+ng20_closure_update,20,closure_update,Ivory,Onyx,inputs\prompts\ng20_closure_update.txt,"You are given a small relation graph.
+Fact 1: Isla travels via Jorin.
+Old record: Jorin is marked with Ivory.
+Updated record: Jorin is marked with Onyx, not Ivory.
+Question: Which label is associated with Isla: Ivory or Onyx?
+Answer with exactly one word:"
+ng20_closure_override,20,closure_override,Ivory,Onyx,inputs\prompts\ng20_closure_override.txt,"You are given a rule system.
+General rule: items that travels via Jorin receive label Ivory.
+Override rule: in this case, items that travels via Jorin receive label Onyx.
+Fact: Isla travels via Jorin.
+Question: Which label is associated with Isla: Ivory or Onyx?
+Answer with exactly one word:"
+ng20_exception_override,20,exception_override,Ivory,Onyx,inputs\prompts\ng20_exception_override.txt,"You are given a rule system.
+General rule: items connected to Jorin use label Ivory.
+Exception: Isla is a special case and uses label Onyx.
+Fact: Isla is connected to Jorin.
+Question: Which label is associated with Isla: Ivory or Onyx?
+Answer with exactly one word:"
+ng21_clean,21,clean,Ruby,Jade,inputs\prompts\ng21_clean.txt,"You are given a small relation graph.
+Fact 1: Leda is linked onward to Miro.
+Fact 2: Miro is registered under Ruby.
+Question: Which label is associated with Leda: Ruby or Jade?
+Answer with exactly one word:"
+ng21_permuted,21,permuted,Ruby,Jade,inputs\prompts\ng21_permuted.txt,"You are given a small relation graph.
+Fact 2: Miro is registered under Ruby.
+Fact 1: Leda is linked onward to Miro.
+Question: Which label is associated with Leda: Ruby or Jade?
+Answer with exactly one word:"
+ng21_redundant,21,redundant,Ruby,Jade,inputs\prompts\ng21_redundant.txt,"You are given a small relation graph.
+Fact 1: Leda is linked onward to Miro.
+Fact 2: Miro is registered under Ruby.
+Repeated confirmation: Leda still goes through Miro.
+Repeated confirmation: Miro still points to Ruby.
+Question: Which label is associated with Leda: Ruby or Jade?
+Answer with exactly one word:"
+ng21_irrelevant,21,irrelevant,Ruby,Jade,inputs\prompts\ng21_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Leda is linked onward to Miro.
+Fact 2: Miro is registered under Ruby.
+Irrelevant fact: Navi is associated with Coral.
+Question: Which label is associated with Leda: Ruby or Jade?
+Answer with exactly one word:"
+ng21_weak_distractor,21,weak_distractor,Ruby,Jade,inputs\prompts\ng21_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Leda is linked onward to Miro.
+Fact 2: Miro is registered under Ruby.
+Weak note: an unrelated source mentions Jade, but does not update the graph.
+Question: Which label is associated with Leda: Ruby or Jade?
+Answer with exactly one word:"
+ng21_competition_balanced,21,competition_balanced,Ruby,Jade,inputs\prompts\ng21_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Leda is linked onward to Miro.
+Fact 2: Miro is registered under Ruby.
+Competing fact: Leda is also associated with Jade.
+Question: Which label is associated with Leda: Ruby or Jade?
+Answer with exactly one word:"
+ng21_direct_conflict,21,direct_conflict,Ruby,Jade,inputs\prompts\ng21_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Leda is linked onward to Miro.
+Fact 2: Miro is registered under Ruby.
+Direct conflicting fact: Leda is registered under Jade.
+Question: Which label is associated with Leda: Ruby or Jade?
+Answer with exactly one word:"
+ng21_closure_update,21,closure_update,Ruby,Jade,inputs\prompts\ng21_closure_update.txt,"You are given a small relation graph.
+Fact 1: Leda is linked onward to Miro.
+Old record: Miro is registered under Ruby.
+Updated record: Miro is registered under Jade, not Ruby.
+Question: Which label is associated with Leda: Ruby or Jade?
+Answer with exactly one word:"
+ng21_closure_override,21,closure_override,Ruby,Jade,inputs\prompts\ng21_closure_override.txt,"You are given a rule system.
+General rule: items that is linked onward to Miro receive label Ruby.
+Override rule: in this case, items that is linked onward to Miro receive label Jade.
+Fact: Leda is linked onward to Miro.
+Question: Which label is associated with Leda: Ruby or Jade?
+Answer with exactly one word:"
+ng21_exception_override,21,exception_override,Ruby,Jade,inputs\prompts\ng21_exception_override.txt,"You are given a rule system.
+General rule: items connected to Miro use label Ruby.
+Exception: Leda is a special case and uses label Jade.
+Fact: Leda is connected to Miro.
+Question: Which label is associated with Leda: Ruby or Jade?
+Answer with exactly one word:"
+ng22_clean,22,clean,Coral,Lilac,inputs\prompts\ng22_clean.txt,"You are given a small relation graph.
+Fact 1: Oriel passes by Pavo.
+Fact 2: Pavo is filed at Coral.
+Question: Which label is associated with Oriel: Coral or Lilac?
+Answer with exactly one word:"
+ng22_permuted,22,permuted,Coral,Lilac,inputs\prompts\ng22_permuted.txt,"You are given a small relation graph.
+Fact 2: Pavo is filed at Coral.
+Fact 1: Oriel passes by Pavo.
+Question: Which label is associated with Oriel: Coral or Lilac?
+Answer with exactly one word:"
+ng22_redundant,22,redundant,Coral,Lilac,inputs\prompts\ng22_redundant.txt,"You are given a small relation graph.
+Fact 1: Oriel passes by Pavo.
+Fact 2: Pavo is filed at Coral.
+Repeated confirmation: Oriel still goes through Pavo.
+Repeated confirmation: Pavo still points to Coral.
+Question: Which label is associated with Oriel: Coral or Lilac?
+Answer with exactly one word:"
+ng22_irrelevant,22,irrelevant,Coral,Lilac,inputs\prompts\ng22_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Oriel passes by Pavo.
+Fact 2: Pavo is filed at Coral.
+Irrelevant fact: Qira is associated with Mint.
+Question: Which label is associated with Oriel: Coral or Lilac?
+Answer with exactly one word:"
+ng22_weak_distractor,22,weak_distractor,Coral,Lilac,inputs\prompts\ng22_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Oriel passes by Pavo.
+Fact 2: Pavo is filed at Coral.
+Weak note: an unrelated source mentions Lilac, but does not update the graph.
+Question: Which label is associated with Oriel: Coral or Lilac?
+Answer with exactly one word:"
+ng22_competition_balanced,22,competition_balanced,Coral,Lilac,inputs\prompts\ng22_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Oriel passes by Pavo.
+Fact 2: Pavo is filed at Coral.
+Competing fact: Oriel is also associated with Lilac.
+Question: Which label is associated with Oriel: Coral or Lilac?
+Answer with exactly one word:"
+ng22_direct_conflict,22,direct_conflict,Coral,Lilac,inputs\prompts\ng22_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Oriel passes by Pavo.
+Fact 2: Pavo is filed at Coral.
+Direct conflicting fact: Oriel is filed at Lilac.
+Question: Which label is associated with Oriel: Coral or Lilac?
+Answer with exactly one word:"
+ng22_closure_update,22,closure_update,Coral,Lilac,inputs\prompts\ng22_closure_update.txt,"You are given a small relation graph.
+Fact 1: Oriel passes by Pavo.
+Old record: Pavo is filed at Coral.
+Updated record: Pavo is filed at Lilac, not Coral.
+Question: Which label is associated with Oriel: Coral or Lilac?
+Answer with exactly one word:"
+ng22_closure_override,22,closure_override,Coral,Lilac,inputs\prompts\ng22_closure_override.txt,"You are given a rule system.
+General rule: items that passes by Pavo receive label Coral.
+Override rule: in this case, items that passes by Pavo receive label Lilac.
+Fact: Oriel passes by Pavo.
+Question: Which label is associated with Oriel: Coral or Lilac?
+Answer with exactly one word:"
+ng22_exception_override,22,exception_override,Coral,Lilac,inputs\prompts\ng22_exception_override.txt,"You are given a rule system.
+General rule: items connected to Pavo use label Coral.
+Exception: Oriel is a special case and uses label Lilac.
+Fact: Oriel is connected to Pavo.
+Question: Which label is associated with Oriel: Coral or Lilac?
+Answer with exactly one word:"
+ng23_clean,23,clean,Mint,Plum,inputs\prompts\ng23_clean.txt,"You are given a small relation graph.
+Fact 1: Riven is traced to Sela.
+Fact 2: Sela is assigned marker Mint.
+Question: Which label is associated with Riven: Mint or Plum?
+Answer with exactly one word:"
+ng23_permuted,23,permuted,Mint,Plum,inputs\prompts\ng23_permuted.txt,"You are given a small relation graph.
+Fact 2: Sela is assigned marker Mint.
+Fact 1: Riven is traced to Sela.
+Question: Which label is associated with Riven: Mint or Plum?
+Answer with exactly one word:"
+ng23_redundant,23,redundant,Mint,Plum,inputs\prompts\ng23_redundant.txt,"You are given a small relation graph.
+Fact 1: Riven is traced to Sela.
+Fact 2: Sela is assigned marker Mint.
+Repeated confirmation: Riven still goes through Sela.
+Repeated confirmation: Sela still points to Mint.
+Question: Which label is associated with Riven: Mint or Plum?
+Answer with exactly one word:"
+ng23_irrelevant,23,irrelevant,Mint,Plum,inputs\prompts\ng23_irrelevant.txt,"You are given a small relation graph.
+Fact 1: Riven is traced to Sela.
+Fact 2: Sela is assigned marker Mint.
+Irrelevant fact: Tarin is associated with Cyan.
+Question: Which label is associated with Riven: Mint or Plum?
+Answer with exactly one word:"
+ng23_weak_distractor,23,weak_distractor,Mint,Plum,inputs\prompts\ng23_weak_distractor.txt,"You are given a small relation graph.
+Fact 1: Riven is traced to Sela.
+Fact 2: Sela is assigned marker Mint.
+Weak note: an unrelated source mentions Plum, but does not update the graph.
+Question: Which label is associated with Riven: Mint or Plum?
+Answer with exactly one word:"
+ng23_competition_balanced,23,competition_balanced,Mint,Plum,inputs\prompts\ng23_competition_balanced.txt,"You are given a small relation graph.
+Fact 1: Riven is traced to Sela.
+Fact 2: Sela is assigned marker Mint.
+Competing fact: Riven is also associated with Plum.
+Question: Which label is associated with Riven: Mint or Plum?
+Answer with exactly one word:"
+ng23_direct_conflict,23,direct_conflict,Mint,Plum,inputs\prompts\ng23_direct_conflict.txt,"You are given a small relation graph.
+Fact 1: Riven is traced to Sela.
+Fact 2: Sela is assigned marker Mint.
+Direct conflicting fact: Riven is assigned marker Plum.
+Question: Which label is associated with Riven: Mint or Plum?
+Answer with exactly one word:"
+ng23_closure_update,23,closure_update,Mint,Plum,inputs\prompts\ng23_closure_update.txt,"You are given a small relation graph.
+Fact 1: Riven is traced to Sela.
+Old record: Sela is assigned marker Mint.
+Updated record: Sela is assigned marker Plum, not Mint.
+Question: Which label is associated with Riven: Mint or Plum?
+Answer with exactly one word:"
+ng23_closure_override,23,closure_override,Mint,Plum,inputs\prompts\ng23_closure_override.txt,"You are given a rule system.
+General rule: items that is traced to Sela receive label Mint.
+Override rule: in this case, items that is traced to Sela receive label Plum.
+Fact: Riven is traced to Sela.
+Question: Which label is associated with Riven: Mint or Plum?
+Answer with exactly one word:"
+ng23_exception_override,23,exception_override,Mint,Plum,inputs\prompts\ng23_exception_override.txt,"You are given a rule system.
+General rule: items connected to Sela use label Mint.
+Exception: Riven is a special case and uses label Plum.
+Fact: Riven is connected to Sela.
+Question: Which label is associated with Riven: Mint or Plum?
+Answer with exactly one word:"

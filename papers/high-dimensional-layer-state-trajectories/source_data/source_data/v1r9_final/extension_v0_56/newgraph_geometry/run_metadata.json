@@ -1,0 +1,28 @@
+{
+  "experiment": "v0_56_newgraph_geometry_confirmation",
+  "status": "confirmatory_checkpoint_specific_geometry_only",
+  "seed": 2026080303,
+  "n_graphs": 24,
+  "fixed_conditions": [
+    "clean",
+    "permuted",
+    "redundant",
+    "irrelevant",
+    "weak_distractor",
+    "competition_balanced",
+    "direct_conflict",
+    "closure_update",
+    "closure_override",
+    "exception_override"
+  ],
+  "n_prompts": 240,
+  "n_shared_endpoint_shuffles": 50,
+  "prompt_wrapping": "raw fixed prompt string in both runtimes",
+  "qwen_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "gemma3_model": "Gemma-3-12B-it-QAT-Q4_0 GGUF",
+  "gemma3_model_sha256": "dd53172ff3a7b1b16c8fb3d944b87f42a6228ff2de3825b8813ae90d988434cd",
+  "gemma3_quantization": "GGUF QAT Q4_0",
+  "gemma3_capture_source_revision": "llama.cpp 1a064ab0921238c1daa397d6f4a900ef33884de2",
+  "prompt_content_sha256": "d952339c84a171b391f125b111d654f9c8674b7c22805a0ab241eb429eef68d1",
+  "claim_boundary": "larger independent checkpoint confirmation; not a pure scale law or quantization-invariant result"
+}

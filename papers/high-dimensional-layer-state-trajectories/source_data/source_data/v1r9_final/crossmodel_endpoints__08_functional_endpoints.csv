@@ -1,0 +1,5 @@
+model,condition,n_prompts,full_vocabulary_top1_agreement,top1_agreement_ci_low,top1_agreement_ci_high,candidate_choice_agreement,jensen_shannon_divergence_mean,native_top1_rank_mean,native_top1_logit_displacement_mean,native_top1_probability_displacement_mean,candidate_margin_loss_mean,functional_disruption
+llama,reverse,96,0.0,0.0,0.0,0.5104166666666666,0.6729873524357876,94627.91666666667,-20.270214398701984,-0.3724267661261062,0.7820134957631429,True
+llama,frozen_permutation,96,0.0,0.0,0.0,0.625,0.6513531655073166,33184.21875,-19.437574068705242,-0.37240689651419717,-1.062515417734782,True
+gemma,reverse,96,0.0,0.0,0.0,0.59375,0.6667141669119397,36941.520833333336,-12.502849578857422,-0.5297482659419378,-1.7189661661783855,True
+gemma,frozen_permutation,96,0.0,0.0,0.0,0.4583333333333333,0.6771079320460558,11697.59375,-8.528896967569986,-0.5294406597192088,-0.36879920959472656,True

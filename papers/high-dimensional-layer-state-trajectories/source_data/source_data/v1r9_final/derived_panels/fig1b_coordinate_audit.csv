@@ -1,0 +1,13 @@
+model,proxy,gain,split
+Qwen,Hidden decision state,0.447769926529315,Five-fold relation-graph-grouped cross-validation
+Qwen,Direct hidden flow,0.444024491278527,Five-fold relation-graph-grouped cross-validation
+Qwen,Learned-W readback,0.406760182257094,Five-fold relation-graph-grouped cross-validation
+Qwen,Gaussian readback,0.343491670621664,Five-fold relation-graph-grouped cross-validation
+Llama,Hidden decision state,0.52031942266584,Five-fold relation-graph-grouped cross-validation
+Llama,Direct hidden flow,0.485292693994357,Five-fold relation-graph-grouped cross-validation
+Llama,Gaussian readback,0.285019252524231,Five-fold relation-graph-grouped cross-validation
+Llama,Learned-W readback,0.267866460621288,Five-fold relation-graph-grouped cross-validation
+Gemma,Hidden decision state,0.240152626075189,Five-fold relation-graph-grouped cross-validation
+Gemma,Direct hidden flow,0.2438059499287,Five-fold relation-graph-grouped cross-validation
+Gemma,Learned-W readback,0.217429051613707,Five-fold relation-graph-grouped cross-validation
+Gemma,Gaussian readback,0.160108170369329,Five-fold relation-graph-grouped cross-validation

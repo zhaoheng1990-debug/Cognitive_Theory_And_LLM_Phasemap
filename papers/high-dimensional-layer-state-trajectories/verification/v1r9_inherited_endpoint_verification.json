@@ -1,0 +1,132 @@
+{
+  "release": "V1R4 / reproducibility release v0.60",
+  "verification_level": "Processed Source Data endpoint reproduction; no model inference was run.",
+  "source_data_root": "provided through --data-root; local path omitted for portability",
+  "checks": [
+    {
+      "check": "Pythia all-trained candidate-pair accuracy",
+      "observed": 0.8490566037735849,
+      "expected": 0.8490566,
+      "status": "PASS"
+    },
+    {
+      "check": "Pythia all-initial candidate-pair accuracy",
+      "observed": 0.4716981132075472,
+      "expected": 0.4716981,
+      "status": "PASS"
+    },
+    {
+      "check": "Pythia strict superadditive support",
+      "observed": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "check": "OLMo all-trained candidate-pair accuracy",
+      "observed": 0.9895833333333334,
+      "expected": 0.9895833,
+      "status": "PASS"
+    },
+    {
+      "check": "OLMo all-initial candidate-pair accuracy",
+      "observed": 0.5208333333333334,
+      "expected": 0.5208333,
+      "status": "PASS"
+    },
+    {
+      "check": "OLMo all-trained standardized-margin gain",
+      "observed": 2.606071136717219,
+      "expected": 2.606071,
+      "status": "PASS"
+    },
+    {
+      "check": "All three random initializations exceed matched trained alignment",
+      "observed": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "check": "All released task-model geometry rows exceed 50 shuffles",
+      "observed": 9,
+      "expected": 9,
+      "status": "PASS"
+    },
+    {
+      "check": "Llama and Gemma non-native full-vocabulary agreement",
+      "observed": 0.0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "Qwen non-native full-vocabulary agreement",
+      "observed": 0.0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "qwen held-out target crossings",
+      "observed": 17,
+      "expected": 17,
+      "status": "PASS"
+    },
+    {
+      "check": "qwen non-target changes",
+      "observed": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "llama held-out target crossings",
+      "observed": 13,
+      "expected": 13,
+      "status": "PASS"
+    },
+    {
+      "check": "llama non-target changes",
+      "observed": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "check": "gemma held-out target crossings",
+      "observed": 9,
+      "expected": 9,
+      "status": "PASS"
+    },
+    {
+      "check": "gemma non-target changes",
+      "observed": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "Functional-window common-role recurrence",
+      "observed": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "Ordered-prefix general-path gate",
+      "observed": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "Direction-null seeds retained",
+      "observed": 153,
+      "expected": 153,
+      "status": "PASS"
+    },
+    {
+      "check": "Mixed-arithmetic strict crossings",
+      "observed": 2,
+      "expected": 2,
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "checks": 20,
+    "passed": 20,
+    "failed": 0
+  }
+}

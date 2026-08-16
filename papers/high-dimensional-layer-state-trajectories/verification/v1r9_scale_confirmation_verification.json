@@ -1,0 +1,132 @@
+{
+  "release": "V1R9 scale confirmation",
+  "verification_level": "Processed Source Data recomputation; no model inference was run.",
+  "scope": "Checkpoint-specific paired larger-model geometry confirmation; not a pure within-family scale law.",
+  "checks": [
+    {
+      "check": "Exactly two paired checkpoints",
+      "observed": [
+        "Gemma-3-12B-it-QAT-Q4_0",
+        "Qwen2.5-1.5B-Instruct"
+      ],
+      "expected": [
+        "Gemma-3-12B-it-QAT-Q4_0",
+        "Qwen2.5-1.5B-Instruct"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "Fixed paired prompt manifest rows",
+      "observed": 240,
+      "expected": 240,
+      "status": "PASS"
+    },
+    {
+      "check": "Declared shared endpoint shuffles",
+      "observed": 50,
+      "expected": 50,
+      "status": "PASS"
+    },
+    {
+      "check": "Qwen2.5-1.5B-Instruct real",
+      "observed": 0.07924080640077591,
+      "expected": 0.07924080640077591,
+      "status": "PASS"
+    },
+    {
+      "check": "Qwen2.5-1.5B-Instruct null_mean",
+      "observed": 0.0418033479526639,
+      "expected": 0.0418033479526639,
+      "status": "PASS"
+    },
+    {
+      "check": "Qwen2.5-1.5B-Instruct gain",
+      "observed": 0.03743745844811201,
+      "expected": 0.03743745844811201,
+      "status": "PASS"
+    },
+    {
+      "check": "Qwen2.5-1.5B-Instruct standardized",
+      "observed": 5.631641158502814,
+      "expected": 5.631641158502814,
+      "status": "PASS"
+    },
+    {
+      "check": "Qwen2.5-1.5B-Instruct null rows",
+      "observed": 50,
+      "expected": 50,
+      "status": "PASS"
+    },
+    {
+      "check": "Qwen2.5-1.5B-Instruct null mean from rows",
+      "observed": 0.0418033479526639,
+      "expected": 0.0418033479526639,
+      "status": "PASS"
+    },
+    {
+      "check": "Qwen2.5-1.5B-Instruct all nulls lower than real",
+      "observed": 50,
+      "expected": 50,
+      "status": "PASS"
+    },
+    {
+      "check": "Qwen2.5-1.5B-Instruct empirical P from rows",
+      "observed": 0.0196078431372549,
+      "expected": 0.0196078431372549,
+      "status": "PASS"
+    },
+    {
+      "check": "Gemma-3-12B-it-QAT-Q4_0 real",
+      "observed": 0.08640187233686447,
+      "expected": 0.08640187233686447,
+      "status": "PASS"
+    },
+    {
+      "check": "Gemma-3-12B-it-QAT-Q4_0 null_mean",
+      "observed": 0.024027262460440398,
+      "expected": 0.024027262460440398,
+      "status": "PASS"
+    },
+    {
+      "check": "Gemma-3-12B-it-QAT-Q4_0 gain",
+      "observed": 0.06237460987642407,
+      "expected": 0.06237460987642407,
+      "status": "PASS"
+    },
+    {
+      "check": "Gemma-3-12B-it-QAT-Q4_0 standardized",
+      "observed": 3.3923245622911318,
+      "expected": 3.3923245622911318,
+      "status": "PASS"
+    },
+    {
+      "check": "Gemma-3-12B-it-QAT-Q4_0 null rows",
+      "observed": 50,
+      "expected": 50,
+      "status": "PASS"
+    },
+    {
+      "check": "Gemma-3-12B-it-QAT-Q4_0 null mean from rows",
+      "observed": 0.024027262460440398,
+      "expected": 0.024027262460440398,
+      "status": "PASS"
+    },
+    {
+      "check": "Gemma-3-12B-it-QAT-Q4_0 all nulls lower than real",
+      "observed": 50,
+      "expected": 50,
+      "status": "PASS"
+    },
+    {
+      "check": "Gemma-3-12B-it-QAT-Q4_0 empirical P from rows",
+      "observed": 0.0196078431372549,
+      "expected": 0.0196078431372549,
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "checks": 19,
+    "passed": 19,
+    "failed": 0
+  }
+}
