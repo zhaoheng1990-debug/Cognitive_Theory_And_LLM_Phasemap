@@ -29,7 +29,7 @@
 | Supplementary Information | Current Supplementary Methods and tables, synchronized to the submitted manuscript version | PENDING VERSION-MATCH AUDIT |
 | Source Data | Zenodo Source Data concept DOI `10.5281/zenodo.21317355` | V1.3.0 PACKAGE PREPARED; PENDING MANUAL DEPOSIT |
 | Code | Zenodo Code concept DOI `10.5281/zenodo.21317440` | V1.3.0 PACKAGE PREPARED; PENDING MANUAL DEPOSIT |
-| Repository landing page | `high-dimensional-layer-state-trajectories` public GitHub branch | V1R9 PDF, Figure 2 scale-confirmation assets, source data and verifier synchronized |
+| Repository landing page | `high-dimensional-layer-state-trajectories` public GitHub branch | V1R9 PDF, Figure 2 multi-scale-confirmation assets, source data and verifier synchronized |
 | Anonymous reviewer materials | Use only if requested by an editor; do not proactively route reviewers through author-identifying accounts | READY IN PRINCIPLE, PENDING EDITOR INSTRUCTION |
 
 ## Editorial declarations
