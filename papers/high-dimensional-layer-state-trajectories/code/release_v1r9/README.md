@@ -8,3 +8,6 @@ processed V1R4 Source Data.
 Use `-Mode full-model` only as a reminder to follow the documented full-model
 runners in the public repository; model weights and raw hidden-state arrays are
 not part of this archive.
+
+For the v2.0.0 eight-family processed-data verification, use
+`../release_v2_0/run_v2_0_reproduction.py` from the repository root.

@@ -121,7 +121,11 @@ def main() -> None:
     root = args.output_root
     manifest = pd.read_csv(root / "newgraph_prompt_manifest.csv")
     metadata = json.loads((root / "run_metadata.json").read_text(encoding="utf-8"))
-    content_hash = hashlib.sha256("\n".join(manifest.text.tolist()).encode("utf-8")).hexdigest()
+    # The archived prompt strings retain their original Windows line endings.
+    # Normalize them before comparing with the platform-independent stored digest.
+    content_hash = hashlib.sha256(
+        "\n".join(text.replace("\r\n", "\n") for text in manifest.text.tolist()).encode("utf-8")
+    ).hexdigest()
     checks: dict[str, bool] = {
         "manifest_rows": len(manifest) == N_PROMPTS,
         "manifest_graphs": manifest.graph_id.nunique() == N_GRAPHS,

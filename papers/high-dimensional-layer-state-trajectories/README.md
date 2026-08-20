@@ -1,31 +1,29 @@
-# Reproducibility release V1R9
+# Reproducibility release v2.0.0
 
-This release accompanies the V1R9 Article **Architecture, training and
-execution organize Transformer computation**. It adds a paired Gemma-3-12B
-geometry confirmation to the V1R4 evidence record and provides a documented
-route from the submitted Article to processed Source Data and portable
-endpoint verification.
+This release accompanies **Architecture, training and execution organize
+Transformer computation**. It provides processed Source Data, portable
+verifiers and documented data provenance for the reported architecture,
+training and execution analyses, including the paired Gemma-3-12B geometry
+confirmation.
 
 ## Start here
 
-* Article PDF: `paper/nature_initial_submission_v1r9.pdf`
-* Article source: `paper/manuscript_v1r9_nature_initial.md`
-* Updated Figure 2: `paper/figures_v1r9/Figure_2_architecture_scaffold.pdf`
-* V1R9 release notes: `RELEASE_NOTES_v1r9.md`
+* v2.0.0 release notes: `RELEASE_NOTES_v2_0.md`
+* Release metadata: `RELEASE_METADATA_v2_0.yml`
 * Source Data: `source_data/source_data/v1r9_final/`
-* Portable verifier: `code/release_v1r9/run_v1r9_reproduction.ps1`
+* Full processed-data verifier: `code/release_v2_0/run_v2_0_reproduction.py`
 
 ## One-command verification
 
 From this directory, run:
 
 ```powershell
-./code/release_v1r9/run_v1r9_reproduction.ps1
+python code/release_v2_0/run_v2_0_reproduction.py
 ```
 
-The command recalculates inherited V1R4 endpoints and the V1R9 paired 12B
-geometry confirmation from processed Source Data. It requires Python 3.9 or
-later and the standard library only. It does not run inference.
+The command recomputes eight documented endpoint families from processed Source
+Data. It requires Python 3.9 or later plus the dependencies listed in
+`requirements.txt`; it does not run model inference.
 On Windows systems without long-path support, clone the repository close to a
 drive root.
 
@@ -40,8 +38,7 @@ weights are intentionally not redistributed.
 ## Scope and archive links
 
 The verifier provides read-only confirmation of the reported numerical
-endpoints. It does not broaden the Article's task-specific claims. Source Data
-and Code are prepared as the V1R9 update under the stable concept records
-https://doi.org/10.5281/zenodo.21317355 and
-https://doi.org/10.5281/zenodo.21317440. The release-specific DOI will be
-assigned when the new record versions are published.
+endpoints. It does not broaden the Article's task-specific claims.
+
+* Source Data, version 2.0.0: https://doi.org/10.5281/zenodo.21813455
+* Reproduction package, version 2.0.0: https://doi.org/10.5281/zenodo.22021200

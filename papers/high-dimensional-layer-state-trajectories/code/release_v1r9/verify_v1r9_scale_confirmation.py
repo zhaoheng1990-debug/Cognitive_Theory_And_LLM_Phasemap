@@ -56,6 +56,10 @@ def main() -> int:
     args = parse_args()
     data_root = args.data_root.resolve()
     geometry_root = data_root / "extension_v0_56" / "newgraph_geometry"
+    package_geometry_root = data_root.parent / "extension_v0_56" / "newgraph_geometry"
+    if (package_geometry_root / "newgraph_geometry_summary.csv").is_file():
+        # Prefer the complete shared extension included in the review package.
+        geometry_root = package_geometry_root
     summary_path = geometry_root / "newgraph_geometry_summary.csv"
     manifest_path = geometry_root / "newgraph_prompt_manifest.csv"
     metadata_path = geometry_root / "run_metadata.json"

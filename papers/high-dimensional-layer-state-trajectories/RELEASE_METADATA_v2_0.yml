@@ -1,0 +1,11 @@
+title: Architecture, training and execution organize Transformer computation
+release: reproducibility release v2.0.0
+publication_date: 2026-08-20
+source_data_version_doi: 10.5281/zenodo.21813455
+reproduction_version_doi: 10.5281/zenodo.22021200
+source_data_license: CC-BY-4.0
+code_license: MIT
+verification_scope: Eight processed-data endpoint families; no model inference.
+raw_hidden_states: Not redistributed; regenerate from documented checkpoints where permitted.
+model_weights: Not redistributed.
+claim_boundary: Recomputes reported endpoint summaries and declared null calculations without extending task-specific or checkpoint-specific claims.

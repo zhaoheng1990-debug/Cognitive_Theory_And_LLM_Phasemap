@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 verification/fresh_unpack*.json
+verification/v2_0/
 paper/*.aux
 paper/*.log
 paper/*.out

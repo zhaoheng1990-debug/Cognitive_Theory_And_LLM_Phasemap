@@ -1,13 +1,16 @@
-# Source Data for high-dimensional layer-state trajectories
+# Source Data for Architecture, training and execution organize Transformer computation
 
-This directory stages processed, panel-level Source Data for **Ordered layer-state trajectories enable process-level analysis of transformer inference**. The synchronized repository release is **v0.57**.
+This directory stages processed, panel-level Source Data for **Architecture,
+training and execution organize Transformer computation**. The synchronized
+repository release is **v2.0.0**.
 
 ## Citation and access
 
-- Source Data concept DOI: https://doi.org/10.5281/zenodo.21317355
-- Public code concept DOI: https://doi.org/10.5281/zenodo.21317440
+- Source Data v2.0.0: https://doi.org/10.5281/zenodo.21813455
+- Reproduction package v2.0.0: https://doi.org/10.5281/zenodo.22021200
 
-The v0.57 archive update adds Article v0.37 and Supplementary Methods v0.20 while retaining the v0.56 Source Data files unchanged. Until that version is published, the concept DOI resolves to an earlier archive and does not yet contain all v0.52-v0.56 extensions. Use the versioned Zenodo record for formal citation once it is published; this GitHub directory is the public mirror and working index.
+This GitHub directory is a browsable mirror and working index. The versioned
+Zenodo records are the citable archives.
 
 ## Contents and scope
 
